@@ -1,66 +1,97 @@
 {
   "date": "2026-05-06",
-  "generated_at": "2026-05-06T17:20:24.625341+00:00",
-  "issue": 1,
-  "executive_summary": "Today's intelligence picture is dominated by an accelerating U.S.-Iran confrontation that is simultaneously straining alliance relationships and creating secondary strategic competitions across multiple domains. The Qods Force threat to the U.S. homeland, combined with Project Freedom's military push through the Strait of Hormuz, signals the conflict has moved beyond a contained regional exchange into a phase with direct domestic security implications, a gap that local law enforcement is now being called upon to help fill given federal capacity limits. China is the clearest third-party beneficiary of this dynamic, exploiting U.S. strategic distraction while Washington's pressure campaign on Seoul is actively degrading the alliance cohesion needed to manage Indo-Pacific competition, even as F-22 deployments to Kadena suggest the military is attempting to hedge against simultaneous theater demands. In the cyber domain, the APT37 Android operation against ethnic Koreans in China ties the intelligence picture together further, suggesting North Korean actors are also opportunistically advancing collection priorities as U.S. attention and alliance bandwidth are consumed by the Iran crisis, while the supply-chain and ransomware activity indicates adversaries across the spectrum are probing for exploitation windows during a period of pronounced strategic stress.",
+  "generated_at": "2026-05-06T18:02:05.936825+00:00",
+  "issue": 2,
+  "executive_summary": "Today's intelligence picture is dominated by two converging crises: an active and escalating U.S.-Iran conflict that is simultaneously straining American strategic bandwidth in the Indo-Pacific, and a persistent cyber threat environment targeting both critical infrastructure and civilian populations. The Iran situation is the most acute driver across all sections — military operations to break the Hormuz blockade, Quds Force homeland attack threats, and Iranian information operations to reframe battlefield losses are unfolding in parallel, while Washington's distraction is measurably weakening alliance cohesion with South Korea and reducing its ability to compete with China in Asia, a dynamic Beijing is almost certainly exploiting. The F-22 deployment to Kadena and Washington's simultaneous push to align Seoul against China suggest the U.S. is attempting to manage both theaters at once, but the alliance friction reported in the geopolitical section calls that balancing act into question. On the cyber front, the overlap between the Cyber and Intel sections on APT37, Daemon Tools, and CI Fortify points to a threat environment where state-linked actors and supply-chain vulnerabilities are active at the same moment CISA is standing up resilience measures — suggesting the U.S. government assesses cyberattacks against critical infrastructure as a realistic near-term contingency, likely connected to the broader Iran conflict and North Korean opportunism during a period of American distraction.",
   "sections": [
+    {
+      "id": "cyber",
+      "title": "Cyber",
+      "intro": "Today's cyber landscape spans nation-state mobile espionage, a major software supply-chain compromise, a landmark regulatory action on data brokers, and new critical infrastructure resilience policy.",
+      "items": [
+        {
+          "headline": "Daemon Tools supply-chain attack delivers malware via official installer",
+          "summary": "Kaspersky researchers found that attackers compromised the official Daemon Tools website to distribute trojanized installers, affecting a globally popular disk-image utility with a broad user base. Supply-chain attacks via legitimate software distribution channels are particularly dangerous because users have no reason to distrust the source. Organizations should audit recent Daemon Tools installations and check for indicators of compromise published by Kaspersky.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/hackers-compromise-daemon-tools-global-supply-chain-attack"
+        },
+        {
+          "headline": "CISA launches CI Fortify to keep critical infrastructure running during network disruptions",
+          "summary": "CISA's new CI Fortify initiative pushes critical infrastructure operators to proactively isolate from third-party dependencies and maintain operations without internet or telecommunications connectivity during a cyberattack. The program reflects a strategic shift from breach prevention toward resilience and continuity under degraded conditions — a direct response to scenarios like the 2021 Colonial Pipeline attack. Watch for forthcoming sector-specific guidance and whether operators will face compliance requirements.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/cisa-initiative-aims-for-critical-infrastructure-to-operate-during-cyberattacks"
+        },
+        {
+          "headline": "North Korea's APT37 deployed Android backdoor against ethnic Korean targets in China",
+          "summary": "ESET attributed a targeted campaign to APT37, in which attackers embedded the 'BirdCall' Android backdoor inside card game apps distributed under the guise of a company called Sqgame, targeting ethnic Koreans in China. The operation reflects North Korea's continued use of culturally tailored lures for intelligence collection against diaspora communities. The campaign underscores the persistent threat APT37 poses to Android users in geopolitically sensitive demographics.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/north-korean-hackers-target-ethnic-koreans-in-china"
+        },
+        {
+          "headline": "FTC permanently bans Kochava from selling sensitive consumer location data",
+          "summary": "The FTC secured a ban on data broker Kochava from selling precise geolocation data that revealed consumers' visits to healthcare facilities and places of worship — data sold without user consent. This is a significant enforcement action establishing that selling sensitive location data constitutes an unfair and deceptive practice under existing law, without requiring new legislation. It sets a precedent that will pressure other data brokers handling similar categories of sensitive location information.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/ftc-bans-kochava-location-data-sales"
+        }
+      ]
+    },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "The ongoing U.S.-Iran war is reshaping alliance structures, homeland security postures, and great power competition simultaneously, while flashpoints from the Korean Peninsula to ASEAN add pressure to an already strained international order.",
+      "intro": "The U.S.-Iran war continues to reshape regional and global dynamics, while Washington faces mounting strategic contradictions across multiple theaters simultaneously.",
       "items": [
         {
-          "headline": "Iran's Qods Force Threatens U.S. Homeland Attacks as War Enters New Phase",
-          "summary": "Iran's Revolutionary Guard has publicly declared intent to deploy Qods Force capabilities against targets inside the United States, raising the threat level for domestic terrorism beyond traditional state-on-state conflict. Analysts are now assessing the gap between Iran's stated intent and its actual capability to execute complex attacks on U.S. soil. Watch for whether this threat accelerates domestic security posture changes and how the intelligence community calibrates response thresholds.",
-          "source": "War on the Rocks",
-          "url": "https://warontherocks.com/between-intent-and-capability-assessing-the-lack-of-iranian-attacks-on-the-u-s-homeland/"
-        },
-        {
-          "headline": "U.S.-Iran War Creates Strategic Openings and Complications for China Competition",
-          "summary": "The war with Iran and the closure of the Strait of Hormuz are forcing Washington to manage two simultaneous strategic theaters, straining resources and attention away from Indo-Pacific priorities. Beijing faces its own dilemmas, including energy supply disruptions, but may exploit U.S. preoccupation to test red lines in East Asia. This dual-front pressure is becoming a defining stress test for U.S. grand strategy.",
+          "headline": "U.S.-Iran War Strains Washington's Ability to Compete with China in Asia",
+          "summary": "The ongoing conflict with Iran and the closure of the Strait of Hormuz are forcing Washington to divide strategic attention and resources at a moment of intensifying U.S.-China rivalry. Analysts warn the war creates both vulnerabilities and potential opportunities for Beijing to test American resolve in East Asia. Watch for whether China exploits the distraction to escalate pressure on Taiwan or assert dominance in regional trade routes.",
           "source": "War on the Rocks",
           "url": "https://warontherocks.com/how-the-war-with-iran-is-shaping-u-s-chinese-competition/"
         },
         {
-          "headline": "Washington's Push to Align Seoul Against Beijing Is Weakening the U.S.-South Korea Alliance",
-          "summary": "By pressuring South Korea to take sides in U.S.-China rivalry, Washington risks undermining the alliance's foundational purpose: deterring North Korea. Seoul's geographic and economic exposure to China creates structural limits on how far it can decouple, and U.S. demands are generating political friction at a sensitive moment. The tension reflects a broader problem of Washington applying a uniform anti-China framework to allies with highly differentiated threat environments.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/06/china-us-south-korea-alliance-military-diplomacy/"
+          "headline": "Iran's Quds Force Threatens Homeland Attacks as War Enters Third Day",
+          "summary": "Iran's Islamic Revolutionary Guard Corps publicly declared intent to target Americans inside the U.S. homeland, signaling a potential escalation beyond the immediate conflict zone. The gap between Iran's stated intent and demonstrated capability remains a critical analytical question, as past plots have been disrupted but the threat posture has materially increased. Intelligence and law enforcement agencies face heightened pressure to detect and interdict operatives before attacks materialize.",
+          "source": "War on the Rocks",
+          "url": "https://warontherocks.com/between-intent-and-capability-assessing-the-lack-of-iranian-attacks-on-the-u-s-homeland/"
         },
         {
-          "headline": "Local Police Emerge as Critical Gap-Fillers in U.S. Counterterrorism Detection",
-          "summary": "A foiled attack plot in Wilmington, uncovered during a routine property check, illustrates how local law enforcement — not federal agencies — are frequently the first to intercept domestic terrorism threats. The case highlights a structural surveillance detection gap in which federal intelligence rarely reaches street-level officers in time to be actionable. Closing this gap requires deliberate integration of local policing into national threat detection architecture, not just information-sharing after the fact.",
-          "source": "War on the Rocks",
-          "url": "https://warontherocks.com/the-cop-on-the-corner-is-our-first-line-of-defense-local-police-and-the-surveillance-detection-gap/"
+          "headline": "Iran Reframes Military Setbacks as Strategic Restraint in Bid to Shape Narrative",
+          "summary": "Tehran is deploying rhetoric that recharacterizes its failure to effectively counter U.S. strikes as a deliberate, sovereign choice rather than military defeat, a classic information operation to preserve domestic legitimacy. Analysts argue this framing masks serious degradation of Iranian state capacity and risks misleading both domestic audiences and regional allies. The propaganda effort signals Iran is preparing for a prolonged conflict rather than negotiated off-ramp in the near term.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/05/06/iran-war-survival-rhetoric-victory/"
+        },
+        {
+          "headline": "Washington's Push to Align Seoul Against Beijing Is Weakening the U.S.-South Korea Alliance",
+          "summary": "By pressuring South Korea to take sides in the U.S.-China rivalry, Washington risks undermining the alliance's foundational purpose of deterring North Korean aggression, according to a new analysis. Seoul's deep economic ties with Beijing make forced alignment costly for Korean leaders domestically and strategically. This tension is a live fault line to monitor as the Iran conflict further strains U.S. bandwidth for managing the Indo-Pacific.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/05/06/china-us-south-korea-alliance-military-diplomacy/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "U.S. forces are actively breaking an Iranian blockade of the Strait of Hormuz while simultaneously accelerating modernization across the Army, Coast Guard, and NATO alliance structures.",
+      "intro": "U.S. forces are actively managing two strategic pressure points — the Strait of Hormuz and the Indo-Pacific — while domestic modernization efforts accelerate across budgets, technology, and force structure.",
       "items": [
         {
-          "headline": "U.S. Military Launches 'Project Freedom' to Force Open Iranian-Blocked Strait of Hormuz",
-          "summary": "The Pentagon has deployed naval escorts and positioned the 82nd Airborne as rapid-response backup to restore commercial shipping through the Strait of Hormuz, which Iran has effectively blockaded with mines and other threats. Secretary Hegseth framed the operation as a temporary U.S. contribution, calling it a 'gift to the world' while pressuring allied nations to assume long-term burden-sharing. The mission's success and duration will hinge on whether Iran escalates and whether U.S. partners step up before Washington withdraws the escort commitment.",
-          "source": "Department of War News Feed / Defense One",
+          "headline": "U.S. Military Launches 'Project Freedom' to Break Iranian Blockade of Strait of Hormuz",
+          "summary": "The Pentagon has initiated a dedicated escort mission to restore commercial shipping through the Strait of Hormuz following Iranian mining activity that triggered urgent safety warnings from U.S. Naval Forces Central Command. Defense Secretary Hegseth framed the operation as a temporary measure, signaling Washington expects allied and partner nations to assume responsibility for long-term maritime security in the region. The operation's success or failure will directly affect global oil flows and test U.S. willingness to sustain military presence amid ongoing Iran tensions.",
+          "source": "Department of War News Feed / Military Times",
           "url": "https://www.war.gov/News/News-Stories/Article/Article/4477864/project-freedom-aims-to-get-thousands-of-commercial-ships-safely-through-strait/"
         },
         {
-          "headline": "F-22 Raptors Deploy to Kadena as Indo-Pacific Posture Intensifies",
-          "summary": "Air Force F-22 Raptors have arrived at Kadena Air Base in Japan as part of a rotational deployment aimed at sustaining high-end airpower presence in the Indo-Pacific and sharpening interoperability with Japanese forces. The timing, alongside Hormuz operations, signals a deliberate effort to demonstrate simultaneous multi-theater capability. Watch whether this rotation becomes a permanent basing solution amid ongoing debates over Kadena's long-term force structure.",
+          "headline": "F-22 Raptors Deploy to Kadena Air Base as Indo-Pacific Airpower Posture Tightens",
+          "summary": "A rotation of F-22 Raptors has arrived at Kadena Air Base in Japan, reinforcing the U.S. Air Force's persistent high-end combat presence in the Indo-Pacific at a moment of sustained regional tension with China. The deployment is designed to strengthen interoperability with Japanese and allied forces and signal deterrence continuity. Watch for how this rotation coordinates with broader Pacific force posture adjustments, including potential basing diversification away from Kadena itself.",
           "source": "Department of War News Feed",
           "url": "https://www.war.gov/News/News-Stories/Article/Article/4478801/f-22-raptors-arrive-in-japan-strengthen-indo-pacific-airpower/"
         },
         {
-          "headline": "Army Budget Surge and Hackathons Signal Push for Integrated, AI-Ready Battlefield",
-          "summary": "The Army is requesting a $2.1 billion increase in R&D spending within its $253 billion budget proposal, a 12.9% jump targeting next-generation systems integration. Separately, the service is running vendor hackathons at Fort Carson to solve a persistent problem: dozens of weapons and business systems that cannot communicate with each other. Together, these moves reflect an institutional acknowledgment that integration failures, not just capability gaps, are the core readiness risk.",
+          "headline": "Army's $2.1B R&D Surge and Hackathon Initiative Signal Push for Battlefield Systems Integration",
+          "summary": "The Army's FY2027 budget request includes a 12.9% increase in R&D spending, and separately, the service is hosting vendor hackathons at Fort Carson to solve the persistent problem of connecting disparate weapons and logistics systems. Both moves reflect recognition that hardware modernization is outpacing software integration, leaving battlefield data fragmented across dozens of platforms. This dual-track approach — funding and rapid prototyping — will be a leading indicator of how quickly the Army can field genuinely networked combined-arms capabilities.",
           "source": "Military Times / Defense One",
           "url": "https://www.militarytimes.com/news/your-military/2026/05/06/heres-whats-behind-the-us-armys-21b-rd-funding-increase/"
         },
         {
-          "headline": "Coast Guard Stands Up Special Missions Command and Deploys Autonomous Saildrones",
-          "summary": "The Coast Guard is consolidating its elite maritime units under a new Special Missions Command while simultaneously fielding autonomous saildrones on the Great Lakes for surveillance and data collection from May through October. Both moves reflect a broader push to expand the service's operational capacity without proportional manpower increases. The Great Lakes drone deployment is notable as a domestic maritime domain awareness effort in an often-overlooked inland theater.",
+          "headline": "Coast Guard Stands Up Special Missions Command and Deploys Autonomous Drones on Great Lakes",
+          "summary": "The U.S. Coast Guard is consolidating its elite maritime units under a new Special Missions Command while simultaneously deploying autonomous saildrones on the Great Lakes for surveillance and data collection through October. The dual announcements reflect a broader effort to modernize and restructure the Coast Guard as a serious security force rather than a purely humanitarian service. The Great Lakes drone deployment in particular marks a notable expansion of autonomous maritime monitoring into interior U.S. waterways.",
           "source": "Military Times",
           "url": "https://www.militarytimes.com/news/your-military/2026/05/06/coast-guard-to-stand-up-special-forces-command/"
         }
@@ -69,38 +100,38 @@
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Today's intelligence picture is dominated by state-linked cyber operations, a significant software supply-chain compromise, and a landmark data broker enforcement action.",
+      "intro": "Today's intelligence picture is dominated by state-linked cyber operations, a fresh supply-chain compromise, and regulatory action on commercial surveillance data.",
       "items": [
         {
-          "headline": "APT37 deploys Android backdoor against ethnic Korean community in China",
-          "summary": "North Korea's APT37 embedded the 'BirdCall' backdoor inside card game apps distributed by a company called Sqgame, targeting ethnic Koreans living in China. The operation reflects Pyongyang's persistent interest in surveilling diaspora and overseas Korean communities for intelligence purposes. Watch for further ESET disclosures on the malware's full capability set and whether related infrastructure is being used in broader campaigns.",
+          "headline": "APT37 deploys 'BirdCall' Android backdoor against ethnic Korean targets in China",
+          "summary": "ESET researchers linked the campaign to North Korea's APT37, which embedded a backdoor into card game apps distributed by a company called Sqgame to surveil ethnic Koreans in China. The targeting profile suggests an intelligence-collection priority rather than financial motivation, consistent with APT37's known focus on Korean diaspora communities. Analysts should watch for further mobile-focused lures from this group across Northeast Asian diaspora networks.",
           "source": "The Record from Recorded Future News",
           "url": "https://therecord.media/north-korean-hackers-target-ethnic-koreans-in-china"
         },
         {
-          "headline": "Official Daemon Tools website used to distribute tampered installers in supply-chain attack",
-          "summary": "Kaspersky researchers found that threat actors compromised the official distribution channel for Daemon Tools, a widely used disk-imaging utility, inserting malicious code into installers served directly from the software's own site. The attack follows a well-established playbook of targeting trusted software vendors to reach a broad, low-suspicion victim pool. Organizations relying on Daemon Tools should audit recent installations and check endpoint telemetry for post-compromise indicators.",
+          "headline": "Daemon Tools official website used to distribute trojanized installers in supply-chain attack",
+          "summary": "Kaspersky researchers found that attackers compromised the official distribution channel for Daemon Tools, a widely used disk-image utility, to push malicious installers to a global user base. The use of a trusted, legitimate software vendor's own website as a delivery vector significantly raises the threat level, as even cautious users downloading from official sources would have been exposed. Organizations should audit recent Daemon Tools installations and monitor for indicators of compromise published by Kaspersky.",
           "source": "The Record from Recorded Future News",
           "url": "https://therecord.media/hackers-compromise-daemon-tools-global-supply-chain-attack"
         },
         {
-          "headline": "FTC permanently bars data broker Kochava from selling sensitive location data",
-          "summary": "The FTC reached a settlement banning Kochava from selling precise geolocation data that tracked consumers to locations including religious sites and medical facilities — data sold without meaningful user consent. The action signals increased regulatory willingness to treat commercial surveillance data as a direct privacy harm rather than an abstract compliance issue. This sets a precedent that could reshape how intelligence-adjacent data brokers operating in the commercial space manage and monetize location datasets.",
+          "headline": "CISA launches 'CI Fortify' to prepare critical infrastructure for offline resilience during cyberattacks",
+          "summary": "The new CI Fortify initiative directs critical infrastructure operators to proactively plan for isolation from third-party dependencies and sustained operation without internet or telecommunications connectivity during a cyberattack. The program reflects a maturation in U.S. critical infrastructure doctrine, shifting from breach-prevention to resilience and continuity under active attack conditions. This signals growing government acknowledgment that network-dependent architectures are a structural vulnerability, particularly relevant given ongoing threats from China and Russia to utilities and industrial control systems.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/ftc-bans-kochava-location-data-sales"
+          "url": "https://therecord.media/cisa-initiative-aims-for-critical-infrastructure-to-operate-during-cyberattacks"
         },
         {
-          "headline": "Conti and Akira ransomware affiliate sentenced to eight years following extradition from Georgia",
-          "summary": "Deniss Zolotarjovs, who pleaded guilty in July 2025 to money laundering and wire fraud tied to his roles in both the Conti and Akira ransomware ecosystems, received an eight-year federal prison sentence. His case is notable as a rare successful extradition of a Russian-speaking cybercriminal, made possible by his arrest in Georgia rather than in Russia. The sentence reinforces that law enforcement is actively pursuing affiliate-level actors, not just ransomware leadership.",
+          "headline": "FTC permanently bars data broker Kochava from selling sensitive consumer location data",
+          "summary": "The FTC's ban on Kochava targets the sale of precise geolocation data tied to visits to healthcare facilities and religious sites, collected without consumer knowledge or consent. The action is significant as a precedent for regulating commercial data brokers whose products can enable surveillance of sensitive personal behaviors at scale. Intelligence and privacy professionals should note this ruling as a marker in the ongoing effort to curtail the grey-market data ecosystem that both commercial actors and foreign intelligence services have been known to exploit.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/conti-akira-ransomware-affiliate-sentenced"
+          "url": "https://therecord.media/ftc-bans-kochava-location-data-sales"
         }
       ]
     }
   ],
   "stats": {
-    "feeds_processed": 25,
-    "articles_reviewed": 74,
-    "items_published": 12
+    "feeds_processed": 41,
+    "articles_reviewed": 86,
+    "items_published": 16
   }
 }
