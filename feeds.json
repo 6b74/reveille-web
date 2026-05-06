@@ -1,0 +1,35 @@
+{
+  "military": [
+    "https://www.defenseone.com/rss/all/",
+    "https://www.militarytimes.com/arc/outboundfeeds/rss/",
+    "https://www.defense.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=1&Site=945&max=10",
+    "https://www.stripes.com/arc/outboundfeeds/rss/",
+    "https://www.defensenews.com/arc/outboundfeeds/rss/",
+    "https://taskandpurpose.com/feed/",
+    "https://breakingdefense.com/feed/",
+    "https://news.usni.org/feed",
+    "https://www.navalnews.com/feed/",
+    "https://aviationweek.com/rss/defense",
+    "https://www.spaceforce.mil/RSS/",
+    "https://news.va.gov/feed/"
+  ],
+  "geopolitical": [
+    "https://warontherocks.com/feed/",
+    "https://foreignpolicy.com/feed/",
+    "https://www.understandingwar.org/rss.xml",
+    "https://www.rand.org/pubs/rss/research_briefs.xml",
+    "https://smallwarsjournal.com/rss.xml"
+  ],
+  "intel_osint": [
+    "https://therecord.media/feed/",
+    "https://www.recordedfuture.com/research/insikt-group/feed",
+    "https://www.bellingcat.com/feed/",
+    "https://www.twz.com/feed",
+    "https://www.oryxspioenkop.com/feeds/posts/default",
+    "https://www.dni.gov/index.php/newsroom/press-releases?format=feed&type=rss"
+  ],
+  "cyber": [
+    "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+    "https://krebsonsecurity.com/feed/"
+  ]
+}
