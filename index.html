@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Daily AI-generated intelligence brief. Cyber, geopolitical, military, and OSINT signal from 25 RSS feeds, distilled.">
+<title>[6B74] Intel // Daily Brief</title>
+<style>
+:root {
+  --bg:#0a0c10; --bg2:#0f1117; --bg3:#161b22; --bg4:#1c2230;
+  --border:#21262d; --border2:#30363d;
+  --text:#e6edf3; --text2:#c9d1d9; --text3:#8b949e; --text4:#6e7681;
+  --accent:#58a6ff; --accent2:#1f6feb;
+  --green:#3fb950; --amber:#d29922; --red:#f85149;
+  --purple:#bc8cff; --teal:#39d353;
+  --phosphor:#7ee787;
+  --glow-green:0 0 6px rgba(126,231,135,.35);
+  --mono:'Cascadia Code','Fira Code','Consolas','Menlo','Courier New',monospace;
+  --crt:'VT323','Cascadia Code',monospace;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;
+  --serif:'Charter','Iowan Old Style','Georgia',serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:14px;line-height:1.65;min-height:100vh;position:relative}
+
+/* subtle CRT scanlines, very light */
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:300;background:repeating-linear-gradient(0deg,transparent 0,transparent 2px,rgba(126,231,135,.012) 2px,rgba(126,231,135,.012) 3px)}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:299;background:radial-gradient(ellipse at center,transparent 60%,rgba(0,0,0,.3) 100%)}
+
+/* HEADER */
+header{background:var(--bg2);border-bottom:1px solid var(--border);padding:10px 20px;position:sticky;top:0;z-index:200;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.logo{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--accent);white-space:nowrap;text-decoration:none}
+.logo span{color:var(--text4);font-weight:400}
+.crumb{font-family:var(--mono);font-size:11px;color:var(--text4);white-space:nowrap}
+.site-switcher{display:inline-flex;align-items:center;background:var(--bg);border:1px solid var(--border2);border-radius:5px;overflow:hidden;font-family:var(--mono);font-size:10px;font-weight:700;margin:0 6px;letter-spacing:.06em}
+.switcher-side{padding:5px 11px;color:var(--text4);text-decoration:none;transition:all .15s;border-right:1px solid var(--border2);cursor:pointer}
+.switcher-side:last-child{border-right:none}
+.switcher-side:hover:not(.active){color:var(--text);background:var(--bg2)}
+.switcher-side.active{background:var(--accent);color:#fff;cursor:default}
+
+.live-dot{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10px;font-weight:700;color:var(--phosphor);text-shadow:var(--glow-green);letter-spacing:.1em;margin-left:auto}
+.live-dot::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--phosphor);box-shadow:var(--glow-green);animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+
+/* MAIN LAYOUT */
+.container{max-width:880px;margin:0 auto;padding:48px 24px 80px;position:relative;z-index:1}
+
+/* MASTHEAD */
+.masthead{border-bottom:2px solid var(--border2);padding-bottom:24px;margin-bottom:36px}
+.masthead-meta{font-family:var(--mono);font-size:10px;font-weight:700;color:var(--text4);letter-spacing:.15em;text-transform:uppercase;margin-bottom:14px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.masthead-meta .issue{color:var(--accent)}
+.masthead-meta .date{color:var(--text2)}
+.masthead-meta .sep{color:var(--text4)}
+
+.masthead-title{font-family:var(--crt);font-size:64px;font-weight:400;color:var(--phosphor);text-shadow:0 0 8px rgba(126,231,135,.4);line-height:1;letter-spacing:.02em;margin-bottom:6px}
+.masthead-sub{font-family:var(--mono);font-size:13px;color:var(--text3);letter-spacing:.05em}
+
+/* EXECUTIVE SUMMARY */
+.exec{background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:0 6px 6px 0;padding:22px 26px;margin-bottom:48px}
+.exec-label{font-family:var(--mono);font-size:10px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.15em;display:block;margin-bottom:10px}
+.exec-text{font-family:var(--serif);font-size:16px;line-height:1.7;color:var(--text)}
+
+/* SECTIONS */
+.section{margin-bottom:48px}
+.section-header{display:flex;align-items:baseline;gap:14px;margin-bottom:8px;padding-bottom:10px;border-bottom:1px solid var(--border2)}
+.section-num{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--accent);background:rgba(31,111,235,.15);border:1px solid rgba(88,166,255,.3);border-radius:4px;padding:2px 8px;text-shadow:0 0 4px rgba(88,166,255,.4)}
+.section-title{font-family:var(--mono);font-size:18px;font-weight:700;color:var(--text);text-transform:uppercase;letter-spacing:.08em}
+.section-count{font-family:var(--mono);font-size:10px;color:var(--text4);margin-left:auto}
+
+.section-intro{font-family:var(--serif);font-size:14px;color:var(--text3);line-height:1.7;margin-bottom:24px;font-style:italic}
+
+/* ITEMS */
+.item{padding:18px 0;border-bottom:1px solid var(--border)}
+.item:last-child{border-bottom:none;padding-bottom:0}
+.item-headline{font-family:var(--mono);font-size:15px;font-weight:700;color:var(--text);line-height:1.4;margin-bottom:8px}
+.item-summary{font-family:var(--serif);font-size:15px;color:var(--text2);line-height:1.7;margin-bottom:10px}
+.item-source{font-family:var(--mono);font-size:11px;color:var(--text4);display:flex;align-items:center;gap:6px}
+.item-source a{color:var(--accent);text-decoration:none;border-bottom:1px dotted transparent;transition:border-color .15s}
+.item-source a:hover{border-bottom-color:var(--accent)}
+.item-source .src-name{color:var(--text3)}
+.item-source .arrow{color:var(--text4)}
+
+/* FOOTER */
+.brief-footer{margin-top:60px;padding-top:24px;border-top:1px solid var(--border);font-family:var(--mono);font-size:11px;color:var(--text4);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;line-height:1.7}
+.brief-footer .stats{display:flex;gap:18px;flex-wrap:wrap}
+.brief-footer .stats span{color:var(--text3)}
+.brief-footer .stats strong{color:var(--text);font-weight:600}
+.brief-footer .colophon{max-width:380px;text-align:right}
+.brief-footer .colophon a{color:var(--accent);text-decoration:none}
+.brief-footer .colophon a:hover{text-decoration:underline}
+
+/* LOADING / ERROR STATES */
+.loading{text-align:center;padding:80px 20px;font-family:var(--mono);font-size:13px;color:var(--text3)}
+.loading .dots{display:inline-block;animation:dots 1.4s infinite;color:var(--phosphor);text-shadow:var(--glow-green)}
+@keyframes dots{0%,20%{content:'.'}40%{content:'..'}60%,100%{content:'...'}}
+.error{background:var(--bg2);border:1px solid var(--red);border-radius:6px;padding:20px;color:var(--text2);font-size:13px;margin:40px 0}
+.error h3{font-family:var(--mono);font-size:12px;color:var(--red);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px}
+
+/* RESPONSIVE */
+@media(max-width:640px){
+  .container{padding:32px 18px 60px}
+  .masthead-title{font-size:44px}
+  .exec{padding:16px 18px}
+  .exec-text{font-size:15px}
+  .section-title{font-size:15px}
+  .item-summary{font-size:14px}
+  .brief-footer{flex-direction:column}
+  .brief-footer .colophon{text-align:left;max-width:none}
+  header .live-dot{display:none}
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <a class="logo" href="https://6b74.dev">[6B74]<span> :: intel</span></a>
+  <div class="crumb">// daily brief</div>
+  <span class="live-dot">FEED LIVE</span>
+</header>
+
+<div class="container">
+  <div id="brief-root">
+    <div class="loading">
+      Loading today's brief<span class="dots">...</span>
+    </div>
+  </div>
+</div>
+
+<script>
+const BRIEF_URL = './briefs/today.json';
+
+const $ = sel => document.querySelector(sel);
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function formatDate(iso) {
+  // 2026-05-06 -> "06 MAY 2026"
+  const [y, m, d] = iso.split('-');
+  const months = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+  return `${d} ${months[parseInt(m, 10) - 1]} ${y}`;
+}
+
+function renderBrief(brief) {
+  const sections = brief.sections.map((s, i) => `
+    <section class="section">
+      <div class="section-header">
+        <span class="section-num">${String(i + 1).padStart(2, '0')}</span>
+        <h2 class="section-title">${escapeHtml(s.title)}</h2>
+        <span class="section-count">${s.items.length} ${s.items.length === 1 ? 'item' : 'items'}</span>
+      </div>
+      <p class="section-intro">${escapeHtml(s.intro)}</p>
+      ${s.items.map(item => `
+        <article class="item">
+          <h3 class="item-headline">${escapeHtml(item.headline)}</h3>
+          <p class="item-summary">${escapeHtml(item.summary)}</p>
+          <div class="item-source">
+            <span class="arrow">▸</span>
+            <a href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">read full article</a>
+            <span class="sep">·</span>
+            <span class="src-name">${escapeHtml(item.source)}</span>
+          </div>
+        </article>
+      `).join('')}
+    </section>
+  `).join('');
+
+  return `
+    <div class="masthead">
+      <div class="masthead-meta">
+        <span class="issue">ISSUE №${String(brief.issue).padStart(3, '0')}</span>
+        <span class="sep">//</span>
+        <span class="date">${formatDate(brief.date)}</span>
+      </div>
+      <h1 class="masthead-title">DAILY BRIEF</h1>
+      <p class="masthead-sub">cyber · geopolitical · military · intel/osint</p>
+    </div>
+
+    <div class="exec">
+      <span class="exec-label">▸ Executive Summary</span>
+      <p class="exec-text">${escapeHtml(brief.executive_summary)}</p>
+    </div>
+
+    ${sections}
+
+    <footer class="brief-footer">
+      <div class="stats">
+        <span><strong>${brief.stats.feeds_processed}</strong> feeds</span>
+        <span><strong>${brief.stats.articles_reviewed}</strong> articles reviewed</span>
+        <span><strong>${brief.stats.items_published}</strong> published</span>
+      </div>
+      <div class="colophon">
+        compiled by <a href="https://github.com/crimsonpistil">reveille-web</a>
+        ·
+        powered by RSS + LLM
+      </div>
+    </footer>
+  `;
+}
+
+function renderError(msg) {
+  return `
+    <div class="error">
+      <h3>▸ Brief Unavailable</h3>
+      <p>${escapeHtml(msg)}</p>
+      <p style="margin-top:10px;color:var(--text4);font-size:12px;">The brief publishes daily. If you're seeing this for more than a few hours, something went wrong with the generator.</p>
+    </div>
+  `;
+}
+
+async function loadBrief() {
+  try {
+    const res = await fetch(BRIEF_URL, { cache: 'no-cache' });
+    if (!res.ok) throw new Error(`fetch failed: ${res.status}`);
+    const brief = await res.json();
+    $('#brief-root').innerHTML = renderBrief(brief);
+    document.title = `[6B74] Intel // ${formatDate(brief.date)}`;
+  } catch (err) {
+    console.error(err);
+    $('#brief-root').innerHTML = renderError("Today's brief could not be loaded. Check back shortly.");
+  }
+}
+
+loadBrief();
+</script>
+
+</body>
+</html>

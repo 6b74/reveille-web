@@ -1,0 +1,113 @@
+{
+  "date": "2026-05-06",
+  "generated_at": "2026-05-06T06:00:00Z",
+  "issue": 142,
+  "executive_summary": "Today's intelligence picture is shaped by three converging stories: a major supply-chain compromise affecting open-source build tooling, escalating cyber operations tied to ongoing tensions in the South China Sea, and a notable shift in NATO posture following yesterday's Brussels communique. The cyber and geopolitical threads are increasingly hard to separate, with state-aligned actors reportedly leveraging the build-tool compromise for downstream access into defense contractors.",
+  "sections": [
+    {
+      "id": "cyber",
+      "title": "Cyber",
+      "intro": "Supply-chain attacks dominate today's cyber news, with implications stretching across open-source ecosystems and into critical infrastructure. Three credential-theft campaigns also worth noting.",
+      "items": [
+        {
+          "headline": "Compromise of popular Node.js build dependency exposes thousands of downstream packages",
+          "summary": "Researchers disclosed that a widely-used build helper package was compromised through a maintainer account takeover roughly six weeks ago. The malicious version exfiltrated environment variables, including cloud credentials and CI tokens, from any project that updated during the window. Estimates put affected downstream packages in the thousands, with some defense contractors among confirmed victims. CISA has issued an emergency directive requiring federal agencies to audit dependency manifests by end of week.",
+          "source": "BleepingComputer",
+          "url": "https://example.com/article-1"
+        },
+        {
+          "headline": "Volt Typhoon activity resurges against US critical infrastructure",
+          "summary": "Microsoft Threat Intelligence published new IOCs tied to Volt Typhoon, the China-aligned actor known for living-off-the-land tradecraft against utilities and ports. The latest campaign uses compromised SOHO routers as relay infrastructure, mirroring patterns from the 2023 disclosure but with refined evasion. Authoring agencies recommend immediate review of router firmware and credential rotation for any internet-facing management interfaces.",
+          "source": "Microsoft Security Blog",
+          "url": "https://example.com/article-2"
+        },
+        {
+          "headline": "Mass exploitation of Ivanti VPN zero-day prompts emergency patch",
+          "summary": "Ivanti released an out-of-band patch for an authentication bypass in Connect Secure appliances after observing active exploitation in the wild. The flaw allows unauthenticated attackers to gain admin access through a crafted request to the management interface. Mandiant attributes early exploitation to a financially motivated cluster, with secondary state-aligned activity following within 48 hours of public disclosure.",
+          "source": "Mandiant",
+          "url": "https://example.com/article-3"
+        },
+        {
+          "headline": "FBI warns of credential phishing wave targeting healthcare sector",
+          "summary": "A flash advisory from the FBI Cyber Division details an ongoing phishing campaign impersonating major EHR vendors to harvest clinician credentials. The campaign uses lookalike domains registered through Namecheap and leverages adversary-in-the-middle infrastructure to capture session tokens, defeating most MFA implementations. At least 12 hospital systems have confirmed credential compromise since late April.",
+          "source": "FBI IC3",
+          "url": "https://example.com/article-4"
+        }
+      ]
+    },
+    {
+      "id": "geopolitical",
+      "title": "Geopolitical",
+      "intro": "NATO statements following yesterday's emergency session signal a meaningful shift in eastern flank posture. Separately, two notable developments in the Pacific.",
+      "items": [
+        {
+          "headline": "NATO communique announces accelerated air policing rotation through Romania and Bulgaria",
+          "summary": "Following yesterday's emergency North Atlantic Council session, NATO announced an accelerated air policing schedule that effectively doubles the persistent fighter presence over the Black Sea region. The communique cites \"unambiguous escalation\" by Russian forces near the Romanian border and references three specific airspace incursions over the past two weeks. The shift is funded through existing posture commitments but represents the most aggressive reshuffling since 2022.",
+          "source": "Reuters",
+          "url": "https://example.com/article-5"
+        },
+        {
+          "headline": "Philippine and Chinese vessels in standoff at Second Thomas Shoal",
+          "summary": "Philippine Coast Guard reports a multi-hour standoff with Chinese maritime militia and Coast Guard vessels near Second Thomas Shoal, where Manila maintains a marine outpost on the BRP Sierra Madre. Water cannons were deployed by Chinese vessels but no injuries reported. The incident comes one day after Beijing announced expanded territorial baseline claims that include the shoal, prompting formal diplomatic protests from Manila and Washington.",
+          "source": "Associated Press",
+          "url": "https://example.com/article-6"
+        },
+        {
+          "headline": "Japan and Australia formalize expanded intelligence-sharing pact",
+          "summary": "Tokyo and Canberra signed a refreshed intelligence-sharing framework that expands cyber and maritime domain awareness cooperation. The agreement includes provisions for joint threat hunting against shared APT targets and a standing liaison cell at Australia's ASD. Analysts read the timing as a direct response to the Second Thomas Shoal incident and broader Pacific posture shifts.",
+          "source": "Nikkei Asia",
+          "url": "https://example.com/article-7"
+        }
+      ]
+    },
+    {
+      "id": "military",
+      "title": "Military",
+      "intro": "Procurement and posture stories dominate today's military feed, with one notable readiness development.",
+      "items": [
+        {
+          "headline": "Air Force selects industry partner for Collaborative Combat Aircraft Increment 2",
+          "summary": "The Air Force announced selection of two industry partners to advance to the next phase of the Collaborative Combat Aircraft program, the unmanned wingman effort intended to fly alongside crewed fighters. Selection narrows the field from five to two and triggers a roughly 18-month detailed design phase before a 2027 prototype flight goal. Estimated program value across both vendors exceeds eight billion dollars.",
+          "source": "Defense News",
+          "url": "https://example.com/article-8"
+        },
+        {
+          "headline": "Army accelerates fielding of Iron Dome-derived M-SHORAD batteries to Pacific",
+          "summary": "The Army confirmed two additional M-SHORAD battalions will be operational by end of fiscal year, with one rotating to INDOPACOM responsibility. The system, derived from Israeli Iron Dome technology, addresses cruise missile and UAS threats that gaps in legacy Stinger-based defenses cannot cover. Pacific posture officials cite lessons from observed Russian and Houthi UAS swarming tactics as the driver for the accelerated schedule.",
+          "source": "Breaking Defense",
+          "url": "https://example.com/article-9"
+        }
+      ]
+    },
+    {
+      "id": "intel-osint",
+      "title": "Intel / OSINT",
+      "intro": "Two analytical pieces and one disclosure worth your time today.",
+      "items": [
+        {
+          "headline": "Bellingcat traces shipment routes for sanctioned electronics into Russian defense industrial base",
+          "summary": "A multi-month investigation by Bellingcat documents how Western-manufactured semiconductors continue to reach Russian defense manufacturers through transshipment hubs in three Central Asian countries and Turkey. The investigation combines customs data, shipping manifests, and satellite imagery to identify specific warehouses serving as consolidation points. The piece names previously unreported front companies and is likely to inform pending sanctions packages.",
+          "source": "Bellingcat",
+          "url": "https://example.com/article-10"
+        },
+        {
+          "headline": "DNI annual threat assessment leaks ahead of formal release",
+          "summary": "Portions of the Director of National Intelligence's annual threat assessment circulated on Capitol Hill ahead of formal release later this week. The leaked sections emphasize cyber and AI-enabled influence operations as growing risks, with explicit naming of four state actors. Notable shift: the assessment elevates supply-chain compromise to a tier-one risk for the first time, reflecting concerns mirrored in today's open-source build-tool incident.",
+          "source": "Washington Post",
+          "url": "https://example.com/article-11"
+        },
+        {
+          "headline": "ENISA publishes updated threat landscape report with focus on hacktivist resurgence",
+          "summary": "The EU cyber agency's annual threat landscape report flags a notable resurgence in hacktivist activity, particularly DDoS and website defacement campaigns aligned with ongoing geopolitical conflicts. The report distinguishes between traditional hacktivists and state-aligned actors operating under hacktivist branding, noting the latter's growing use of more capable tooling. Recommendations emphasize improved attribution capabilities at member-state CERT level.",
+          "source": "ENISA",
+          "url": "https://example.com/article-12"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "feeds_processed": 25,
+    "articles_reviewed": 312,
+    "items_published": 12
+  }
+}
