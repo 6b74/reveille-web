@@ -1,97 +1,97 @@
 {
-  "date": "2026-05-06",
-  "generated_at": "2026-05-06T18:02:05.936825+00:00",
-  "issue": 2,
-  "executive_summary": "Today's intelligence picture is dominated by two converging crises: an active and escalating U.S.-Iran conflict that is simultaneously straining American strategic bandwidth in the Indo-Pacific, and a persistent cyber threat environment targeting both critical infrastructure and civilian populations. The Iran situation is the most acute driver across all sections — military operations to break the Hormuz blockade, Quds Force homeland attack threats, and Iranian information operations to reframe battlefield losses are unfolding in parallel, while Washington's distraction is measurably weakening alliance cohesion with South Korea and reducing its ability to compete with China in Asia, a dynamic Beijing is almost certainly exploiting. The F-22 deployment to Kadena and Washington's simultaneous push to align Seoul against China suggest the U.S. is attempting to manage both theaters at once, but the alliance friction reported in the geopolitical section calls that balancing act into question. On the cyber front, the overlap between the Cyber and Intel sections on APT37, Daemon Tools, and CI Fortify points to a threat environment where state-linked actors and supply-chain vulnerabilities are active at the same moment CISA is standing up resilience measures — suggesting the U.S. government assesses cyberattacks against critical infrastructure as a realistic near-term contingency, likely connected to the broader Iran conflict and North Korean opportunism during a period of American distraction.",
+  "date": "2026-05-07",
+  "generated_at": "2026-05-07T06:03:26.825298+00:00",
+  "issue": 3,
+  "executive_summary": "Today's intelligence picture is dominated by two converging crises: an active military confrontation with Iran that is simultaneously reshaping regional geopolitics and accelerating cyber threat activity. The Iran conflict thread runs across every section — naval engagements in the Strait of Hormuz, French carrier deployment, reported U.S.-Iran negotiations, Israeli nuclear signaling, and the erosion of U.S. credibility driving Southeast Asian states toward China — suggesting a situation in rapid flux where diplomatic and kinetic tracks are running in parallel and outcomes remain highly uncertain. On the cyber front, the convergence of an unpatched Palo Alto zero-day under active exploitation, a supply-chain compromise via trojanized Daemon Tools installers, and North Korean APT37 targeting ethnic Korean communities in China collectively indicate a permissive threat environment in which multiple state and state-affiliated actors are operating offensively and opportunistically; the White House's formal incorporation of offensive cyberattacks into counterterrorism strategy and CISA's CI Fortify launch suggest the U.S. government anticipates escalation and is hardening its posture accordingly. The critical connective thread is that the Iran conflict is likely lowering the threshold for adversarial cyber operations globally — particularly from actors like North Korea, which historically uses periods of Western strategic distraction to intensify its own campaigns — making today's cyber vulnerabilities not isolated technical incidents but potential",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Today's cyber landscape spans nation-state mobile espionage, a major software supply-chain compromise, a landmark regulatory action on data brokers, and new critical infrastructure resilience policy.",
+      "intro": "Active exploitation of a critical Palo Alto firewall zero-day, a North Korean mobile espionage campaign, and a supply-chain compromise of widely-used software define a high-tempo threat environment today.",
       "items": [
         {
-          "headline": "Daemon Tools supply-chain attack delivers malware via official installer",
-          "summary": "Kaspersky researchers found that attackers compromised the official Daemon Tools website to distribute trojanized installers, affecting a globally popular disk-image utility with a broad user base. Supply-chain attacks via legitimate software distribution channels are particularly dangerous because users have no reason to distrust the source. Organizations should audit recent Daemon Tools installations and check for indicators of compromise published by Kaspersky.",
+          "headline": "Critical Palo Alto PAN-OS zero-day under active exploitation with no patch yet available",
+          "summary": "CISA added CVE-2026-0300, an out-of-bounds write vulnerability in Palo Alto Networks PAN-OS, to its Known Exploited Vulnerabilities catalog based on confirmed in-the-wild attacks. Palo Alto has acknowledged the flaw but a patch is not expected for up to two weeks, leaving enterprise firewalls exposed during a critical window. Organizations running affected PAN-OS versions should monitor Palo Alto's mitigations guidance closely and prioritize compensating controls immediately.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/palo-alto-warns-of-critical-software-bug-firewalls"
+        },
+        {
+          "headline": "Daemon Tools official website used to distribute trojanized installers in supply-chain attack",
+          "summary": "Kaspersky researchers found that attackers compromised the official distribution channel for Daemon Tools, a widely installed disk-image utility, replacing legitimate installers with malware-laced versions. The use of a trusted vendor website significantly increases the likelihood of successful infection, as users and security tools are less likely to flag official-source downloads. This follows a persistent pattern of supply-chain intrusions targeting software with large consumer and enterprise install bases.",
           "source": "The Record from Recorded Future News",
           "url": "https://therecord.media/hackers-compromise-daemon-tools-global-supply-chain-attack"
         },
         {
-          "headline": "CISA launches CI Fortify to keep critical infrastructure running during network disruptions",
-          "summary": "CISA's new CI Fortify initiative pushes critical infrastructure operators to proactively isolate from third-party dependencies and maintain operations without internet or telecommunications connectivity during a cyberattack. The program reflects a strategic shift from breach prevention toward resilience and continuity under degraded conditions — a direct response to scenarios like the 2021 Colonial Pipeline attack. Watch for forthcoming sector-specific guidance and whether operators will face compliance requirements.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/cisa-initiative-aims-for-critical-infrastructure-to-operate-during-cyberattacks"
-        },
-        {
           "headline": "North Korea's APT37 deployed Android backdoor against ethnic Korean targets in China",
-          "summary": "ESET attributed a targeted campaign to APT37, in which attackers embedded the 'BirdCall' Android backdoor inside card game apps distributed under the guise of a company called Sqgame, targeting ethnic Koreans in China. The operation reflects North Korea's continued use of culturally tailored lures for intelligence collection against diaspora communities. The campaign underscores the persistent threat APT37 poses to Android users in geopolitically sensitive demographics.",
+          "summary": "ESET attributed a mobile espionage campaign to APT37, in which the group embedded a backdoor called BirdCall within card game apps distributed by a legitimate-appearing company, Sqgame. Targeting ethnic Koreans in China suggests an intelligence-collection focus on diaspora communities of interest to Pyongyang, a consistent strategic priority for North Korean threat actors. The use of trojanized consumer apps underscores the risk of sideloaded or third-party Android software even when sourced from ostensibly real developers.",
           "source": "The Record from Recorded Future News",
           "url": "https://therecord.media/north-korean-hackers-target-ethnic-koreans-in-china"
         },
         {
-          "headline": "FTC permanently bans Kochava from selling sensitive consumer location data",
-          "summary": "The FTC secured a ban on data broker Kochava from selling precise geolocation data that revealed consumers' visits to healthcare facilities and places of worship — data sold without user consent. This is a significant enforcement action establishing that selling sensitive location data constitutes an unfair and deceptive practice under existing law, without requiring new legislation. It sets a precedent that will pressure other data brokers handling similar categories of sensitive location information.",
+          "headline": "CISA launches CI Fortify to help critical infrastructure survive network-severed cyberattacks",
+          "summary": "CISA's new CI Fortify initiative pushes critical infrastructure operators to proactively plan for operating in isolation — disconnected from third-party vendors, cloud services, and internet connectivity — during major cyberattacks. The program reflects lessons from attacks like Colonial Pipeline and Ukraine's power grid incidents, where dependencies on external networks became critical vulnerabilities. Operators in sectors such as energy, water, and communications should treat this as a prompt to audit and stress-test their offline operational capabilities.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/ftc-bans-kochava-location-data-sales"
+          "url": "https://therecord.media/cisa-initiative-aims-for-critical-infrastructure-to-operate-during-cyberattacks"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "The U.S.-Iran war continues to reshape regional and global dynamics, while Washington faces mounting strategic contradictions across multiple theaters simultaneously.",
+      "intro": "The Iran war continues to reshape the global order, with a potential U.S.-Iran deal on the horizon while its ripple effects destabilize alliances, regional politics, and nuclear norms across multiple theaters.",
       "items": [
         {
-          "headline": "U.S.-Iran War Strains Washington's Ability to Compete with China in Asia",
-          "summary": "The ongoing conflict with Iran and the closure of the Strait of Hormuz are forcing Washington to divide strategic attention and resources at a moment of intensifying U.S.-China rivalry. Analysts warn the war creates both vulnerabilities and potential opportunities for Beijing to test American resolve in East Asia. Watch for whether China exploits the distraction to escalate pressure on Taiwan or assert dominance in regional trade routes.",
-          "source": "War on the Rocks",
-          "url": "https://warontherocks.com/how-the-war-with-iran-is-shaping-u-s-chinese-competition/"
-        },
-        {
-          "headline": "Iran's Quds Force Threatens Homeland Attacks as War Enters Third Day",
-          "summary": "Iran's Islamic Revolutionary Guard Corps publicly declared intent to target Americans inside the U.S. homeland, signaling a potential escalation beyond the immediate conflict zone. The gap between Iran's stated intent and demonstrated capability remains a critical analytical question, as past plots have been disrupted but the threat posture has materially increased. Intelligence and law enforcement agencies face heightened pressure to detect and interdict operatives before attacks materialize.",
-          "source": "War on the Rocks",
-          "url": "https://warontherocks.com/between-intent-and-capability-assessing-the-lack-of-iranian-attacks-on-the-u-s-homeland/"
-        },
-        {
-          "headline": "Iran Reframes Military Setbacks as Strategic Restraint in Bid to Shape Narrative",
-          "summary": "Tehran is deploying rhetoric that recharacterizes its failure to effectively counter U.S. strikes as a deliberate, sovereign choice rather than military defeat, a classic information operation to preserve domestic legitimacy. Analysts argue this framing masks serious degradation of Iranian state capacity and risks misleading both domestic audiences and regional allies. The propaganda effort signals Iran is preparing for a prolonged conflict rather than negotiated off-ramp in the near term.",
+          "headline": "U.S. and Iran Reportedly Near Deal to End War and Reopen Hormuz Strait",
+          "summary": "A reported memorandum would halt the conflict, restore navigation through the Strait of Hormuz, and establish a framework for future nuclear negotiations. The terms signal Washington may accept a nuclear enrichment moratorium rather than full dismantlement — a significant concession with long-term proliferation implications. Watch whether the deal holds against domestic opposition in both countries and how Gulf states and Israel respond to the framework.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/06/iran-war-survival-rhetoric-victory/"
+          "url": "https://foreignpolicy.com/2026/05/06/us-iran-war-peace-deal-memorandum-nuclear-enrichment-moratorium-strait-hormuz/"
         },
         {
-          "headline": "Washington's Push to Align Seoul Against Beijing Is Weakening the U.S.-South Korea Alliance",
-          "summary": "By pressuring South Korea to take sides in the U.S.-China rivalry, Washington risks undermining the alliance's foundational purpose of deterring North Korean aggression, according to a new analysis. Seoul's deep economic ties with Beijing make forced alignment costly for Korean leaders domestically and strategically. This tension is a live fault line to monitor as the Iran conflict further strains U.S. bandwidth for managing the Indo-Pacific.",
+          "headline": "Iran War Erodes Israel's Nuclear Ambiguity as Washington Breaks Long-Standing Taboo",
+          "summary": "U.S. officials are now openly discussing Israel's nuclear arsenal in the context of the Iran conflict, dismantling decades of deliberate strategic ambiguity that underwrote Middle East deterrence. This shift could accelerate proliferation pressures among regional actors who previously relied on uncertainty to calibrate their own programs. The long-term consequence may be a fundamentally altered nuclear landscape in the Middle East regardless of how the war concludes.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/06/china-us-south-korea-alliance-military-diplomacy/"
+          "url": "https://foreignpolicy.com/2026/05/06/iran-war-trump-netanyahu-israel-nuclear-weapons/"
+        },
+        {
+          "headline": "China Uses Rare Sanctions Tool Against Washington Ahead of Trump-Xi Summit",
+          "summary": "Beijing is deploying a seldom-used instrument in its economic arsenal to push back on U.S. pressure, likely tied to Washington's posture on the Iran war and trade disputes. The timing ahead of a Trump-Xi summit suggests China is calibrating coercive leverage to extract concessions before high-level talks — a negotiating tactic that raises the risk of miscalculation. The move also signals Beijing is willing to escalate economic friction even as it seeks a diplomatic engagement.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/05/06/china-us-sanctions-ban-trump-xi-iran-war-oil-trade/"
+        },
+        {
+          "headline": "Iran War Drives Southeast Asian Nations Closer to China as U.S. Credibility Wavers",
+          "summary": "Indonesia, the Philippines, and Vietnam are absorbing economic shocks from the Iran conflict that U.S. security guarantees have done nothing to buffer, accelerating a regional pivot toward Beijing for economic stability. For the Philippines and Vietnam — key U.S. partners in countering Chinese maritime expansion — this erosion of confidence carries direct strategic costs. Washington faces a compounding problem: military engagement in the Middle East is weakening its Indo-Pacific posture at precisely the moment China is pressing its advantage.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/05/06/iran-war-southeast-asia-philippines-vietnam-indonesia-china-united-states-geopolitics-economics/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "U.S. forces are actively managing two strategic pressure points — the Strait of Hormuz and the Indo-Pacific — while domestic modernization efforts accelerate across budgets, technology, and force structure.",
+      "intro": "Naval pressure on Iran intensifies as France repositions its carrier strike group, while the U.S. formalizes offensive cyber as a counterterrorism tool and the Coast Guard expands its operational footprint.",
       "items": [
         {
-          "headline": "U.S. Military Launches 'Project Freedom' to Break Iranian Blockade of Strait of Hormuz",
-          "summary": "The Pentagon has initiated a dedicated escort mission to restore commercial shipping through the Strait of Hormuz following Iranian mining activity that triggered urgent safety warnings from U.S. Naval Forces Central Command. Defense Secretary Hegseth framed the operation as a temporary measure, signaling Washington expects allied and partner nations to assume responsibility for long-term maritime security in the region. The operation's success or failure will directly affect global oil flows and test U.S. willingness to sustain military presence amid ongoing Iran tensions.",
-          "source": "Department of War News Feed / Military Times",
-          "url": "https://www.war.gov/News/News-Stories/Article/Article/4477864/project-freedom-aims-to-get-thousands-of-commercial-ships-safely-through-strait/"
+          "headline": "U.S. Navy fires on Iranian tanker attempting to breach blockade of Iranian ports",
+          "summary": "U.S. forces disabled an Iran-flagged tanker that tried to evade the ongoing naval blockade barring vessels from entering or leaving Iranian ports. Despite President Trump signaling a pause to 'Project Freedom,' the blockade remains in active enforcement, indicating a gap between political messaging and operational reality. Watch whether this incident triggers Iranian retaliation or accelerates diplomatic back-channels.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/news/your-navy/2026/05/06/us-forces-fire-at-disable-iran-flagged-tanker-trying-to-evade-blockade/"
         },
         {
-          "headline": "F-22 Raptors Deploy to Kadena Air Base as Indo-Pacific Airpower Posture Tightens",
-          "summary": "A rotation of F-22 Raptors has arrived at Kadena Air Base in Japan, reinforcing the U.S. Air Force's persistent high-end combat presence in the Indo-Pacific at a moment of sustained regional tension with China. The deployment is designed to strengthen interoperability with Japanese and allied forces and signal deterrence continuity. Watch for how this rotation coordinates with broader Pacific force posture adjustments, including potential basing diversification away from Kadena itself.",
-          "source": "Department of War News Feed",
-          "url": "https://www.war.gov/News/News-Stories/Article/Article/4478801/f-22-raptors-arrive-in-japan-strengthen-indo-pacific-airpower/"
+          "headline": "France deploys carrier strike group to Red Sea in preparation for possible Strait of Hormuz operation",
+          "summary": "France repositioned its carrier strike group to the Red Sea as contingency planning advances for a potential multinational mission to keep the Strait of Hormuz open to commercial shipping. The move signals that European NATO allies are treating the Iran standoff as a direct economic security threat requiring military presence. This could be the precursor to a broader coalition framework if the U.S.-Iran standoff escalates further.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/naval/2026/05/06/france-moves-aircraft-carrier-to-red-sea-with-eye-on-hormuz-mission/"
         },
         {
-          "headline": "Army's $2.1B R&D Surge and Hackathon Initiative Signal Push for Battlefield Systems Integration",
-          "summary": "The Army's FY2027 budget request includes a 12.9% increase in R&D spending, and separately, the service is hosting vendor hackathons at Fort Carson to solve the persistent problem of connecting disparate weapons and logistics systems. Both moves reflect recognition that hardware modernization is outpacing software integration, leaving battlefield data fragmented across dozens of platforms. This dual-track approach — funding and rapid prototyping — will be a leading indicator of how quickly the Army can field genuinely networked combined-arms capabilities.",
-          "source": "Military Times / Defense One",
-          "url": "https://www.militarytimes.com/news/your-military/2026/05/06/heres-whats-behind-the-us-armys-21b-rd-funding-increase/"
+          "headline": "White House formally incorporates offensive cyberattacks into U.S. counterterrorism strategy",
+          "summary": "The White House has codified offensive cyber operations as an instrument of counterterrorism policy, framing the move as a deterrence measure against foreign state and non-state hackers. This marks a significant doctrinal shift, moving cyber offense from a largely implicit capability to an explicitly stated strategic tool. The policy raises questions about escalation thresholds and how adversaries will calibrate their own cyber aggression in response.",
+          "source": "Defense One",
+          "url": "https://www.defenseone.com/policy/2026/05/us-lists-offensive-cyberattacks-counterterrorism-strategy/413381/"
         },
         {
-          "headline": "Coast Guard Stands Up Special Missions Command and Deploys Autonomous Drones on Great Lakes",
-          "summary": "The U.S. Coast Guard is consolidating its elite maritime units under a new Special Missions Command while simultaneously deploying autonomous saildrones on the Great Lakes for surveillance and data collection through October. The dual announcements reflect a broader effort to modernize and restructure the Coast Guard as a serious security force rather than a purely humanitarian service. The Great Lakes drone deployment in particular marks a notable expansion of autonomous maritime monitoring into interior U.S. waterways.",
+          "headline": "Coast Guard consolidates elite units under new Special Missions Command",
+          "summary": "The U.S. Coast Guard is establishing a dedicated Special Missions Command to unify its maritime special operations and elite response capabilities under a single command structure. The reorganization reflects growing demand for specialized maritime interdiction, counter-narcotics, and port security missions that exceed conventional Coast Guard roles. Simultaneously, the service announced autonomous saildrone deployments on the Great Lakes, underscoring a broader push toward expanded surveillance with constrained manpower.",
           "source": "Military Times",
           "url": "https://www.militarytimes.com/news/your-military/2026/05/06/coast-guard-to-stand-up-special-forces-command/"
         }
@@ -100,38 +100,38 @@
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Today's intelligence picture is dominated by state-linked cyber operations, a fresh supply-chain compromise, and regulatory action on commercial surveillance data.",
+      "intro": "Today's intelligence picture is dominated by active cyber threats spanning nation-state espionage, an unpatched critical firewall vulnerability, and a software supply-chain compromise, while CISA pushes a new resilience framework for critical infrastructure.",
       "items": [
         {
-          "headline": "APT37 deploys 'BirdCall' Android backdoor against ethnic Korean targets in China",
-          "summary": "ESET researchers linked the campaign to North Korea's APT37, which embedded a backdoor into card game apps distributed by a company called Sqgame to surveil ethnic Koreans in China. The targeting profile suggests an intelligence-collection priority rather than financial motivation, consistent with APT37's known focus on Korean diaspora communities. Analysts should watch for further mobile-focused lures from this group across Northeast Asian diaspora networks.",
+          "headline": "APT37 deploys Android backdoor against ethnic Korean community in China",
+          "summary": "North Korean state-linked group APT37 embedded the 'BirdCall' backdoor inside card game installers from a legitimate-looking software company, targeting ethnic Koreans in China — a population of intelligence interest to Pyongyang. The campaign reflects APT37's continued refinement of mobile-focused intrusion tradecraft against diaspora and minority communities. Defenders should monitor for trojanized Android APKs distributed through nominally legitimate app sources.",
           "source": "The Record from Recorded Future News",
           "url": "https://therecord.media/north-korean-hackers-target-ethnic-koreans-in-china"
         },
         {
+          "headline": "Unpatched critical Palo Alto firewall vulnerability under active exploitation",
+          "summary": "Palo Alto Networks has warned of active attacks exploiting CVE-2026-0300, a critical bug in its firewall software, with no patch available for at least two weeks. The timing gap between disclosure and patch availability creates a significant exposure window for organizations relying on Palo Alto perimeter defenses. Network defenders should implement available mitigations immediately and monitor for anomalous firewall activity.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/palo-alto-warns-of-critical-software-bug-firewalls"
+        },
+        {
           "headline": "Daemon Tools official website used to distribute trojanized installers in supply-chain attack",
-          "summary": "Kaspersky researchers found that attackers compromised the official distribution channel for Daemon Tools, a widely used disk-image utility, to push malicious installers to a global user base. The use of a trusted, legitimate software vendor's own website as a delivery vector significantly raises the threat level, as even cautious users downloading from official sources would have been exposed. Organizations should audit recent Daemon Tools installations and monitor for indicators of compromise published by Kaspersky.",
+          "summary": "Kaspersky researchers found that attackers compromised the official distribution channel for Daemon Tools, a widely used disk-image utility, injecting malicious code into installers served directly from the vendor's website. Delivery through a trusted, official source significantly increases infection likelihood and undermines standard advice to download only from official vendors. Organizations should audit systems where Daemon Tools was recently installed and treat recent downloads as potentially compromised.",
           "source": "The Record from Recorded Future News",
           "url": "https://therecord.media/hackers-compromise-daemon-tools-global-supply-chain-attack"
         },
         {
-          "headline": "CISA launches 'CI Fortify' to prepare critical infrastructure for offline resilience during cyberattacks",
-          "summary": "The new CI Fortify initiative directs critical infrastructure operators to proactively plan for isolation from third-party dependencies and sustained operation without internet or telecommunications connectivity during a cyberattack. The program reflects a maturation in U.S. critical infrastructure doctrine, shifting from breach-prevention to resilience and continuity under active attack conditions. This signals growing government acknowledgment that network-dependent architectures are a structural vulnerability, particularly relevant given ongoing threats from China and Russia to utilities and industrial control systems.",
+          "headline": "CISA launches CI Fortify to keep critical infrastructure operational during cyber disruptions",
+          "summary": "CISA's new CI Fortify initiative directs critical infrastructure operators to proactively isolate systems from third-party dependencies and develop procedures for functioning without internet or telecommunications access during a cyberattack. The initiative signals a strategic shift toward operational resilience over pure prevention, acknowledging that intrusions into critical systems are increasingly a when-not-if scenario. Operators in sectors like energy, water, and finance should expect new CISA guidance and engagement requests tied to this framework.",
           "source": "The Record from Recorded Future News",
           "url": "https://therecord.media/cisa-initiative-aims-for-critical-infrastructure-to-operate-during-cyberattacks"
-        },
-        {
-          "headline": "FTC permanently bars data broker Kochava from selling sensitive consumer location data",
-          "summary": "The FTC's ban on Kochava targets the sale of precise geolocation data tied to visits to healthcare facilities and religious sites, collected without consumer knowledge or consent. The action is significant as a precedent for regulating commercial data brokers whose products can enable surveillance of sensitive personal behaviors at scale. Intelligence and privacy professionals should note this ruling as a marker in the ongoing effort to curtail the grey-market data ecosystem that both commercial actors and foreign intelligence services have been known to exploit.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/ftc-bans-kochava-location-data-sales"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 41,
-    "articles_reviewed": 86,
+    "articles_reviewed": 78,
     "items_published": 16
   }
 }
