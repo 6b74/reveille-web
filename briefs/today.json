@@ -1,137 +1,137 @@
 {
-  "date": "2026-05-07",
-  "generated_at": "2026-05-07T06:03:26.825298+00:00",
-  "issue": 3,
-  "executive_summary": "Today's intelligence picture is dominated by two converging crises: an active military confrontation with Iran that is simultaneously reshaping regional geopolitics and accelerating cyber threat activity. The Iran conflict thread runs across every section — naval engagements in the Strait of Hormuz, French carrier deployment, reported U.S.-Iran negotiations, Israeli nuclear signaling, and the erosion of U.S. credibility driving Southeast Asian states toward China — suggesting a situation in rapid flux where diplomatic and kinetic tracks are running in parallel and outcomes remain highly uncertain. On the cyber front, the convergence of an unpatched Palo Alto zero-day under active exploitation, a supply-chain compromise via trojanized Daemon Tools installers, and North Korean APT37 targeting ethnic Korean communities in China collectively indicate a permissive threat environment in which multiple state and state-affiliated actors are operating offensively and opportunistically; the White House's formal incorporation of offensive cyberattacks into counterterrorism strategy and CISA's CI Fortify launch suggest the U.S. government anticipates escalation and is hardening its posture accordingly. The critical connective thread is that the Iran conflict is likely lowering the threshold for adversarial cyber operations globally — particularly from actors like North Korea, which historically uses periods of Western strategic distraction to intensify its own campaigns — making today's cyber vulnerabilities not isolated technical incidents but potential",
+  "date": "2026-05-08",
+  "generated_at": "2026-05-08T06:02:10.851440+00:00",
+  "issue": 4,
+  "executive_summary": "Today's intelligence picture is defined by two converging crises that risk rapid escalation: direct U.S.-Iran military confrontation near the Strait of Hormuz and a coordinated Iranian cyber campaign employing MuddyWater's false-flag ransomware operations, suggesting Tehran is prosecuting a multi-domain conflict simultaneously across kinetic and digital battlespaces. The cyber and geopolitical threads are tightly linked — Iranian APT activity, attacks on critical infrastructure including water treatment systems, and the massive Canvas platform breach collectively signal an adversary probing for leverage and disruption at scale, potentially timed to complicate U.S. decision-making during an active military exchange. Russia's thread runs parallel but distinct, with Polish intelligence attributing infrastructure cyberattacks to Russian-linked actors amid what appears to be a coordinated broader pressure campaign against Western-aligned states, even as Putin's strategic position weakens — a combination that historically increases the risk of asymmetric escalation by a cornered actor. Underlying all of this is a structural vulnerability: U.S. military and intelligence systems face compounding readiness gaps in space infrastructure, AI strategy, and drone integration at precisely the moment multi-front adversarial pressure is peaking, making today's picture one of simultaneous kinetic, cyber, and strategic stress across multiple theaters with limited margin for error.",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Active exploitation of a critical Palo Alto firewall zero-day, a North Korean mobile espionage campaign, and a supply-chain compromise of widely-used software define a high-tempo threat environment today.",
+      "intro": "A major breach of the Canvas education platform, state-sponsored threat actor activity, and attacks on critical infrastructure dominate today's cyber landscape.",
       "items": [
         {
-          "headline": "Critical Palo Alto PAN-OS zero-day under active exploitation with no patch yet available",
-          "summary": "CISA added CVE-2026-0300, an out-of-bounds write vulnerability in Palo Alto Networks PAN-OS, to its Known Exploited Vulnerabilities catalog based on confirmed in-the-wild attacks. Palo Alto has acknowledged the flaw but a patch is not expected for up to two weeks, leaving enterprise firewalls exposed during a critical window. Organizations running affected PAN-OS versions should monitor Palo Alto's mitigations guidance closely and prioritize compensating controls immediately.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/palo-alto-warns-of-critical-software-bug-firewalls"
+          "headline": "Ransomware attack on Canvas platform threatens data of 275 million students and faculty",
+          "summary": "A cybercrime group defaced the login page of Canvas, one of the most widely used learning management systems in the US, with a ransom demand and threats to leak data from nearly 9,000 institutions. The scale — 275 million potential victims across K-12 and higher education — would make this one of the largest education sector breaches on record. Watch for confirmation of actual data exfiltration volume and whether institutions begin notifying affected individuals.",
+          "source": "Krebs on Security",
+          "url": "https://krebsonsecurity.com/2026/05/canvas-breach-disrupts-schools-colleges-nationwide/"
         },
         {
-          "headline": "Daemon Tools official website used to distribute trojanized installers in supply-chain attack",
-          "summary": "Kaspersky researchers found that attackers compromised the official distribution channel for Daemon Tools, a widely installed disk-image utility, replacing legitimate installers with malware-laced versions. The use of a trusted vendor website significantly increases the likelihood of successful infection, as users and security tools are less likely to flag official-source downloads. This follows a persistent pattern of supply-chain intrusions targeting software with large consumer and enterprise install bases.",
+          "headline": "Iranian APT MuddyWater deploying Chaos ransomware as a false-flag cover",
+          "summary": "Rapid7 researchers attribute a recent intrusion to MuddyWater, a group linked to Iran's Ministry of Intelligence and Security, after it initially appeared to be a standard Chaos ransomware attack. The use of ransomware as cover by a nation-state actor blurs the line between cybercrime and espionage, complicating attribution and incident response. This tactic signals a broader trend of state actors leveraging criminal tooling to obscure geopolitical objectives.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/hackers-compromise-daemon-tools-global-supply-chain-attack"
+          "url": "https://therecord.media/iran-government-hackers-use-chaos-ransomware-as-cover"
         },
         {
-          "headline": "North Korea's APT37 deployed Android backdoor against ethnic Korean targets in China",
-          "summary": "ESET attributed a mobile espionage campaign to APT37, in which the group embedded a backdoor called BirdCall within card game apps distributed by a legitimate-appearing company, Sqgame. Targeting ethnic Koreans in China suggests an intelligence-collection focus on diaspora communities of interest to Pyongyang, a consistent strategic priority for North Korean threat actors. The use of trojanized consumer apps underscores the risk of sideloaded or third-party Android software even when sourced from ostensibly real developers.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/north-korean-hackers-target-ethnic-koreans-in-china"
+          "headline": "CISA flags actively exploited Ivanti EPMM input validation flaw",
+          "summary": "CISA added CVE-2026-6973, an improper input validation vulnerability in Ivanti Endpoint Manager Mobile, to its Known Exploited Vulnerabilities catalog based on evidence of active in-the-wild exploitation. Ivanti products have been a persistent target for both criminal and nation-state actors over the past two years, making rapid patching critical for any organization running EPMM. Federal agencies face a binding patching deadline under BOD 22-01.",
+          "source": "All CISA Advisories",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/05/07/cisa-adds-one-known-exploited-vulnerability-catalog"
         },
         {
-          "headline": "CISA launches CI Fortify to help critical infrastructure survive network-severed cyberattacks",
-          "summary": "CISA's new CI Fortify initiative pushes critical infrastructure operators to proactively plan for operating in isolation — disconnected from third-party vendors, cloud services, and internet connectivity — during major cyberattacks. The program reflects lessons from attacks like Colonial Pipeline and Ukraine's power grid incidents, where dependencies on external networks became critical vulnerabilities. Operators in sectors such as energy, water, and communications should treat this as a prompt to audit and stress-test their offline operational capabilities.",
+          "headline": "Polish intelligence reports hackers targeted water treatment control systems",
+          "summary": "Poland's intelligence services disclosed cyberattacks against water treatment operational technology systems, citing intensified hostile cyber activity in 2024-2025 and pointing implicitly toward Russian Federation special services. Attacks on water infrastructure represent a high-consequence threat to public safety and are consistent with a documented pattern of Russian-linked groups probing Western critical infrastructure. The disclosure without formal attribution suggests ongoing investigation or diplomatic sensitivity.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/cisa-initiative-aims-for-critical-infrastructure-to-operate-during-cyberattacks"
+          "url": "https://therecord.media/polish-intelligence-warns-hackers-attacked-water-treatment"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "The Iran war continues to reshape the global order, with a potential U.S.-Iran deal on the horizon while its ripple effects destabilize alliances, regional politics, and nuclear norms across multiple theaters.",
+      "intro": "Global fault lines are shifting simultaneously across Russia, China, Iran, and the UK, with authoritarian consolidation and strategic competition defining the day's geopolitical picture.",
       "items": [
         {
-          "headline": "U.S. and Iran Reportedly Near Deal to End War and Reopen Hormuz Strait",
-          "summary": "A reported memorandum would halt the conflict, restore navigation through the Strait of Hormuz, and establish a framework for future nuclear negotiations. The terms signal Washington may accept a nuclear enrichment moratorium rather than full dismantlement — a significant concession with long-term proliferation implications. Watch whether the deal holds against domestic opposition in both countries and how Gulf states and Israel respond to the framework.",
+          "headline": "Putin's Strategic Position More Fragile Than His Public Posture Suggests",
+          "summary": "Despite projecting strength through victory parade optics, Putin faces mounting constraints — drone strikes reaching Moscow, stalled battlefield gains, and narrowing diplomatic options. The analysis argues he has less room to maneuver than Western observers typically credit him. Watch whether continued Ukrainian pressure forces a genuine shift in Russian negotiating posture or triggers domestic instability.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/06/us-iran-war-peace-deal-memorandum-nuclear-enrichment-moratorium-strait-hormuz/"
+          "url": "https://foreignpolicy.com/2026/05/07/russsia-ukraine-war-putin-zelensky-victory-parade-attacks-drones-moscow/"
         },
         {
-          "headline": "Iran War Erodes Israel's Nuclear Ambiguity as Washington Breaks Long-Standing Taboo",
-          "summary": "U.S. officials are now openly discussing Israel's nuclear arsenal in the context of the Iran conflict, dismantling decades of deliberate strategic ambiguity that underwrote Middle East deterrence. This shift could accelerate proliferation pressures among regional actors who previously relied on uncertainty to calibrate their own programs. The long-term consequence may be a fundamentally altered nuclear landscape in the Middle East regardless of how the war concludes.",
+          "headline": "Abraham Accords Linked to Escalatory Path Toward Iran War",
+          "summary": "Israeli-Gulf security cooperation normalized under the Abraham Accords accelerated military coordination that contributed to the confrontation with Iran, undermining the framework's original peace narrative. The piece challenges the Trump administration's framing of the Accords as a stabilizing achievement. This matters as the U.S. continues pursuing Gulf normalization with Israel while managing Iranian nuclear diplomacy simultaneously.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/06/iran-war-trump-netanyahu-israel-nuclear-weapons/"
+          "url": "https://foreignpolicy.com/2026/05/07/trump-iran-israel-saudi-arabia-uae-abraham-accords-conflict-palestine/"
         },
         {
-          "headline": "China Uses Rare Sanctions Tool Against Washington Ahead of Trump-Xi Summit",
-          "summary": "Beijing is deploying a seldom-used instrument in its economic arsenal to push back on U.S. pressure, likely tied to Washington's posture on the Iran war and trade disputes. The timing ahead of a Trump-Xi summit suggests China is calibrating coercive leverage to extract concessions before high-level talks — a negotiating tactic that raises the risk of miscalculation. The move also signals Beijing is willing to escalate economic friction even as it seeks a diplomatic engagement.",
+          "headline": "Trump Counterterrorism Strategy Omits Far-Right Domestic Threats",
+          "summary": "The new White House counterterrorism framework prioritizes Iran, Hezbollah, and jihadist networks while explicitly sidelining far-right extremism as a designated threat category. This represents a significant doctrinal departure from the Biden-era strategy and reflects the influence of figures like Gorka in shaping threat definitions. Analysts should watch how intelligence community resourcing and interagency priorities shift to match the new framework.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/06/china-us-sanctions-ban-trump-xi-iran-war-oil-trade/"
+          "url": "https://foreignpolicy.com/2026/05/07/trump-counterterrorism-strategy-gorka-iran-lebanon-israel/"
         },
         {
-          "headline": "Iran War Drives Southeast Asian Nations Closer to China as U.S. Credibility Wavers",
-          "summary": "Indonesia, the Philippines, and Vietnam are absorbing economic shocks from the Iran conflict that U.S. security guarantees have done nothing to buffer, accelerating a regional pivot toward Beijing for economic stability. For the Philippines and Vietnam — key U.S. partners in countering Chinese maritime expansion — this erosion of confidence carries direct strategic costs. Washington faces a compounding problem: military engagement in the Middle East is weakening its Indo-Pacific posture at precisely the moment China is pressing its advantage.",
+          "headline": "China's Affordable AI Models Outcompeting U.S. Equivalents in the Global South",
+          "summary": "While U.S. frontier AI models remain prohibitively expensive for adoption in developing markets, Chinese alternatives are gaining traction globally, quietly expanding Beijing's technological and political influence. This cost-access gap is emerging as a strategic vulnerability the U.S. has yet to address coherently. The trend has implications beyond economics — AI adoption shapes data flows, infrastructure dependencies, and long-term geopolitical alignment.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/06/iran-war-southeast-asia-philippines-vietnam-indonesia-china-united-states-geopolitics-economics/"
+          "url": "https://foreignpolicy.com/2026/05/07/artificial-intelligence-ai-china-us-west-race-silicon-valley-global/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "Naval pressure on Iran intensifies as France repositions its carrier strike group, while the U.S. formalizes offensive cyber as a counterterrorism tool and the Coast Guard expands its operational footprint.",
+      "intro": "A direct U.S.-Iran military exchange dominates today's picture, while longer-term stories reveal a Pentagon rapidly restructuring around AI, drones, and space capabilities.",
       "items": [
         {
-          "headline": "U.S. Navy fires on Iranian tanker attempting to breach blockade of Iranian ports",
-          "summary": "U.S. forces disabled an Iran-flagged tanker that tried to evade the ongoing naval blockade barring vessels from entering or leaving Iranian ports. Despite President Trump signaling a pause to 'Project Freedom,' the blockade remains in active enforcement, indicating a gap between political messaging and operational reality. Watch whether this incident triggers Iranian retaliation or accelerates diplomatic back-channels.",
+          "headline": "U.S. and Iran Trade Strikes in First Direct Military Confrontation",
+          "summary": "U.S. forces conducted retaliatory strikes on Iranian military facilities after Iran attacked three Navy vessels with missiles and drones. Trump signaled confidence the conflict would be short-lived, but any direct exchange between the two militaries carries significant escalation risk. Watch whether Iran responds further and whether Gulf allies are drawn in.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-navy/2026/05/06/us-forces-fire-at-disable-iran-flagged-tanker-trying-to-evade-blockade/"
+          "url": "https://www.militarytimes.com/news/your-navy/2026/05/07/us-and-iran-exchange-fire-as-trump-says-war-will-be-over-quickly/"
         },
         {
-          "headline": "France deploys carrier strike group to Red Sea in preparation for possible Strait of Hormuz operation",
-          "summary": "France repositioned its carrier strike group to the Red Sea as contingency planning advances for a potential multinational mission to keep the Strait of Hormuz open to commercial shipping. The move signals that European NATO allies are treating the Iran standoff as a direct economic security threat requiring military presence. This could be the precursor to a broader coalition framework if the U.S.-Iran standoff escalates further.",
-          "source": "Military Times",
-          "url": "https://www.militarytimes.com/naval/2026/05/06/france-moves-aircraft-carrier-to-red-sea-with-eye-on-hormuz-mission/"
+          "headline": "Pentagon Commits to Multi-Vendor AI Strategy After Single-Provider Risks Exposed",
+          "summary": "Defense Undersecretary Emil Michael announced the Pentagon will never again depend on a single AI provider, framing new Big Tech agreements as a direct rebuke to friction with Anthropic over contract terms. The policy shift prioritizes flexible contracting to avoid vendor lock-in on critical defense systems. This signals a structural change in how DoD procures AI, with broad implications for industry players competing for defense contracts.",
+          "source": "Defense One - All Content",
+          "url": "https://www.defenseone.com/policy/2026/05/pentagon-will-never-again-rely-single-ai-provider-official-says/413409/"
         },
         {
-          "headline": "White House formally incorporates offensive cyberattacks into U.S. counterterrorism strategy",
-          "summary": "The White House has codified offensive cyber operations as an instrument of counterterrorism policy, framing the move as a deterrence measure against foreign state and non-state hackers. This marks a significant doctrinal shift, moving cyber offense from a largely implicit capability to an explicitly stated strategic tool. The policy raises questions about escalation thresholds and how adversaries will calibrate their own cyber aggression in response.",
-          "source": "Defense One",
-          "url": "https://www.defenseone.com/policy/2026/05/us-lists-offensive-cyberattacks-counterterrorism-strategy/413381/"
+          "headline": "Space Force Warns Infrastructure and Workforce Cannot Keep Pace With Hundredfold Launch Surge",
+          "summary": "Space Force officials are calling for additional launch sites, increased funding, more personnel, and AI integration as projected launch volumes threaten to overwhelm facilities built decades ago. The gap between operational demand and physical capacity represents a strategic vulnerability as the U.S. competes with China in space. Budget negotiations and site approval timelines will determine whether the force can scale in time.",
+          "source": "Defense One - All Content",
+          "url": "https://www.defenseone.com/threats/2026/05/launches-slated-grow-hundredfold-space-force-seeks-more-sites-money-people-and-ai/413403/"
         },
         {
-          "headline": "Coast Guard consolidates elite units under new Special Missions Command",
-          "summary": "The U.S. Coast Guard is establishing a dedicated Special Missions Command to unify its maritime special operations and elite response capabilities under a single command structure. The reorganization reflects growing demand for specialized maritime interdiction, counter-narcotics, and port security missions that exceed conventional Coast Guard roles. Simultaneously, the service announced autonomous saildrone deployments on the Great Lakes, underscoring a broader push toward expanded surveillance with constrained manpower.",
+          "headline": "Army Stands Up Drone Training Center as Unmanned Systems Integrate Into Combat Formations",
+          "summary": "Fort Stewart has established the Marne Unmanned Center of Excellence to train soldiers on drone operations as the Army formally incorporates unmanned systems into standard unit formations. The initiative reflects broader doctrinal change, moving drones from specialized assets to routine battlefield tools. How quickly training scales across the force will determine operational readiness in any near-peer conflict scenario.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-military/2026/05/06/coast-guard-to-stand-up-special-forces-command/"
+          "url": "https://www.militarytimes.com/news/your-military/2026/05/08/as-the-us-army-adds-drones-to-formations-heres-how-one-base-trains-its-operators/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Today's intelligence picture is dominated by active cyber threats spanning nation-state espionage, an unpatched critical firewall vulnerability, and a software supply-chain compromise, while CISA pushes a new resilience framework for critical infrastructure.",
+      "intro": "State-backed actors are increasingly blurring the line between espionage and criminal disruption, while critical infrastructure in Europe faces sustained hostile cyber pressure linked to Russia.",
       "items": [
         {
-          "headline": "APT37 deploys Android backdoor against ethnic Korean community in China",
-          "summary": "North Korean state-linked group APT37 embedded the 'BirdCall' backdoor inside card game installers from a legitimate-looking software company, targeting ethnic Koreans in China — a population of intelligence interest to Pyongyang. The campaign reflects APT37's continued refinement of mobile-focused intrusion tradecraft against diaspora and minority communities. Defenders should monitor for trojanized Android APKs distributed through nominally legitimate app sources.",
+          "headline": "Iranian APT MuddyWater deploys Chaos ransomware as a deception layer in espionage operations",
+          "summary": "Rapid7 researchers found that a seemingly routine Chaos ransomware intrusion was actually a MuddyWater operation tied to Iran's Ministry of Intelligence and Security. Using ransomware as cover is a significant tradecraft evolution — it muddies attribution, delays forensic response, and can destroy evidence. Defenders should treat ransomware incidents as potential state-actor operations until attribution is ruled out.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/north-korean-hackers-target-ethnic-koreans-in-china"
+          "url": "https://therecord.media/iran-government-hackers-use-chaos-ransomware-as-cover"
         },
         {
-          "headline": "Unpatched critical Palo Alto firewall vulnerability under active exploitation",
-          "summary": "Palo Alto Networks has warned of active attacks exploiting CVE-2026-0300, a critical bug in its firewall software, with no patch available for at least two weeks. The timing gap between disclosure and patch availability creates a significant exposure window for organizations relying on Palo Alto perimeter defenses. Network defenders should implement available mitigations immediately and monitor for anomalous firewall activity.",
+          "headline": "Polish intelligence reports cyberattacks on water treatment control systems amid escalating Russian threat",
+          "summary": "Poland's security services disclosed that hackers targeted operational technology systems at water treatment facilities, with the agency pointing to intensified Russian hostile cyber activity in 2024-2025 as the broader context. While formal attribution was withheld publicly, the pattern fits Russia's documented strategy of probing Western critical infrastructure. This is a notable escalation signal for NATO member infrastructure operators.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/palo-alto-warns-of-critical-software-bug-firewalls"
+          "url": "https://therecord.media/polish-intelligence-warns-hackers-attacked-water-treatment"
         },
         {
-          "headline": "Daemon Tools official website used to distribute trojanized installers in supply-chain attack",
-          "summary": "Kaspersky researchers found that attackers compromised the official distribution channel for Daemon Tools, a widely used disk-image utility, injecting malicious code into installers served directly from the vendor's website. Delivery through a trusted, official source significantly increases infection likelihood and undermines standard advice to download only from official vendors. Organizations should audit systems where Daemon Tools was recently installed and treat recent downloads as potentially compromised.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/hackers-compromise-daemon-tools-global-supply-chain-attack"
+          "headline": "U.S. military strikes Iranian targets near the Strait of Hormuz in retaliatory action",
+          "summary": "U.S. Central Command confirmed strikes against Iranian positions around the Strait of Hormuz, framing the action as retaliation for Iranian attacks on U.S. forces. The Strait handles roughly 20% of global oil transit, making any kinetic escalation there a major geopolitical and economic flashpoint. Intelligence consumers should monitor for Iranian cyber retaliation against U.S. and allied targets as a likely secondary response vector.",
+          "source": "The War Zone",
+          "url": "https://www.twz.com/news-features/iranian-island-port-in-strait-of-hormuz-attacked-state-media-claims"
         },
         {
-          "headline": "CISA launches CI Fortify to keep critical infrastructure operational during cyber disruptions",
-          "summary": "CISA's new CI Fortify initiative directs critical infrastructure operators to proactively isolate systems from third-party dependencies and develop procedures for functioning without internet or telecommunications access during a cyberattack. The initiative signals a strategic shift toward operational resilience over pure prevention, acknowledging that intrusions into critical systems are increasingly a when-not-if scenario. Operators in sectors like energy, water, and finance should expect new CISA guidance and engagement requests tied to this framework.",
+          "headline": "North Carolina man pleads guilty to doxxing sitting U.S. Supreme Court justices",
+          "summary": "The case highlights how publicly available data can be weaponized to target senior government officials, with the defendant aggregating open-source information to expose justices' personal details. Beyond the immediate legal outcome, the incident illustrates the operational security vulnerabilities faced by high-profile public figures in an era of readily accessible personal data. Protective intelligence teams should treat this as a benchmark case for reviewing official OPSEC protocols.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/cisa-initiative-aims-for-critical-infrastructure-to-operate-during-cyberattacks"
+          "url": "https://therecord.media/north-carolina-man-pleads-guilty-to-doxxing"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 41,
-    "articles_reviewed": 78,
+    "articles_reviewed": 70,
     "items_published": 16
   }
 }
