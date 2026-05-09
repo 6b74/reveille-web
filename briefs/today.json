@@ -1,137 +1,137 @@
 {
-  "date": "2026-05-08",
-  "generated_at": "2026-05-08T06:02:10.851440+00:00",
-  "issue": 4,
-  "executive_summary": "Today's intelligence picture is defined by two converging crises that risk rapid escalation: direct U.S.-Iran military confrontation near the Strait of Hormuz and a coordinated Iranian cyber campaign employing MuddyWater's false-flag ransomware operations, suggesting Tehran is prosecuting a multi-domain conflict simultaneously across kinetic and digital battlespaces. The cyber and geopolitical threads are tightly linked — Iranian APT activity, attacks on critical infrastructure including water treatment systems, and the massive Canvas platform breach collectively signal an adversary probing for leverage and disruption at scale, potentially timed to complicate U.S. decision-making during an active military exchange. Russia's thread runs parallel but distinct, with Polish intelligence attributing infrastructure cyberattacks to Russian-linked actors amid what appears to be a coordinated broader pressure campaign against Western-aligned states, even as Putin's strategic position weakens — a combination that historically increases the risk of asymmetric escalation by a cornered actor. Underlying all of this is a structural vulnerability: U.S. military and intelligence systems face compounding readiness gaps in space infrastructure, AI strategy, and drone integration at precisely the moment multi-front adversarial pressure is peaking, making today's picture one of simultaneous kinetic, cyber, and strategic stress across multiple theaters with limited margin for error.",
+  "date": "2026-05-09",
+  "generated_at": "2026-05-09T06:04:19.460076+00:00",
+  "issue": 5,
+  "executive_summary": "Today's intelligence picture is defined by two converging macro-themes: an escalating confrontation centered on Iran that is reshaping both military posture and global energy markets, and a proliferation of cyber and data threats targeting critical infrastructure, institutional systems, and private sector data simultaneously. The Iran axis is the most consequential thread, with U.S. naval forces actively interdicting Iranian tankers at Hormuz, Iranian civilians rallying behind the regime following strikes on Tehran, and Russia-Iran military integration deepening in ways that directly threaten U.S. partners — suggesting the conflict is entering a more kinetic and ideologically entrenched phase even as ASEAN states hedge against supply disruption by accelerating energy independence. On the cyber front, the convergence of the LiteLLM AI platform vulnerability, the Canvas university network attack, the record GM privacy fine, and the conviction of a federal database saboteur collectively signal that adversaries and insider threats are simultaneously probing AI infrastructure, educational institutions, and government systems — a pattern consistent with opportunistic exploitation during periods of geopolitical distraction. The Trump-brokered Russia-Ukraine ceasefire announcement and parallel evidence of coordinated pro-Ukraine hacking operations against Russian targets warrant close scrutiny together, as offensive cyber activity timed against a diplomatic pause could either reflect rogue actor behavior or deliberate signaling outside official channels — a thread that should be monitored for escalatory potential",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "A major breach of the Canvas education platform, state-sponsored threat actor activity, and attacks on critical infrastructure dominate today's cyber landscape.",
+      "intro": "Today's cyber landscape spans active exploitation of AI infrastructure, a landmark privacy enforcement action, disruptive attacks on educational platforms, and an emerging hacktivist coalition in the Russia-Ukraine cyber conflict.",
       "items": [
         {
-          "headline": "Ransomware attack on Canvas platform threatens data of 275 million students and faculty",
-          "summary": "A cybercrime group defaced the login page of Canvas, one of the most widely used learning management systems in the US, with a ransom demand and threats to leak data from nearly 9,000 institutions. The scale — 275 million potential victims across K-12 and higher education — would make this one of the largest education sector breaches on record. Watch for confirmation of actual data exfiltration volume and whether institutions begin notifying affected individuals.",
-          "source": "Krebs on Security",
-          "url": "https://krebsonsecurity.com/2026/05/canvas-breach-disrupts-schools-colleges-nationwide/"
-        },
-        {
-          "headline": "Iranian APT MuddyWater deploying Chaos ransomware as a false-flag cover",
-          "summary": "Rapid7 researchers attribute a recent intrusion to MuddyWater, a group linked to Iran's Ministry of Intelligence and Security, after it initially appeared to be a standard Chaos ransomware attack. The use of ransomware as cover by a nation-state actor blurs the line between cybercrime and espionage, complicating attribution and incident response. This tactic signals a broader trend of state actors leveraging criminal tooling to obscure geopolitical objectives.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/iran-government-hackers-use-chaos-ransomware-as-cover"
-        },
-        {
-          "headline": "CISA flags actively exploited Ivanti EPMM input validation flaw",
-          "summary": "CISA added CVE-2026-6973, an improper input validation vulnerability in Ivanti Endpoint Manager Mobile, to its Known Exploited Vulnerabilities catalog based on evidence of active in-the-wild exploitation. Ivanti products have been a persistent target for both criminal and nation-state actors over the past two years, making rapid patching critical for any organization running EPMM. Federal agencies face a binding patching deadline under BOD 22-01.",
+          "headline": "CISA flags actively exploited SQL injection flaw in AI proxy platform LiteLLM",
+          "summary": "CISA added CVE-2026-42208, a SQL injection vulnerability in BerriAI's LiteLLM — a widely used open-source tool for routing requests across large language model APIs — to its Known Exploited Vulnerabilities catalog. Active exploitation of AI middleware is a growing attack surface as enterprises rapidly integrate LLM tooling without mature security review. Federal agencies face a patching deadline, and any organization running LiteLLM in production should treat this as urgent.",
           "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/alerts/2026/05/07/cisa-adds-one-known-exploited-vulnerability-catalog"
+          "url": "https://www.cisa.gov/news-events/alerts/2026/05/08/cisa-adds-one-known-exploited-vulnerability-catalog"
         },
         {
-          "headline": "Polish intelligence reports hackers targeted water treatment control systems",
-          "summary": "Poland's intelligence services disclosed cyberattacks against water treatment operational technology systems, citing intensified hostile cyber activity in 2024-2025 and pointing implicitly toward Russian Federation special services. Attacks on water infrastructure represent a high-consequence threat to public safety and are consistent with a documented pattern of Russian-linked groups probing Western critical infrastructure. The disclosure without formal attribution suggests ongoing investigation or diplomatic sensitivity.",
+          "headline": "GM hit with $12 million CCPA fine — largest in the California privacy law's history — over driver data misuse",
+          "summary": "California regulators reached a $12 million settlement with General Motors over unauthorized collection and sale of driver behavioral data, marking the most significant enforcement action under the CCPA since it took effect in 2020. The case signals that regulators are escalating from warnings to substantial penalties, particularly targeting data brokers operating through non-obvious commercial relationships. Automotive and IoT-adjacent industries should expect heightened scrutiny of telematics and in-vehicle data practices.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/polish-intelligence-warns-hackers-attacked-water-treatment"
+          "url": "https://therecord.media/gm-to-pay-12-million-california-privacy-settlement"
+        },
+        {
+          "headline": "Canvas learning platform cyberattack forces exam cancellations across multiple universities",
+          "summary": "A cybercriminal group compromised Instructure's Canvas platform during peak exam season, with students encountering attacker messages mid-session and institutions scrambling to reschedule finals. The timing suggests deliberate targeting of a high-impact window, and the breadth of affected universities points to a platform-level compromise rather than isolated incidents. Education sector infrastructure remains a high-value, low-hardened target, and the incident will likely renew calls for mandatory incident response plans tied to third-party EdTech providers.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/universities-forced-to-reschedule-exams-canvas-incident"
+        },
+        {
+          "headline": "Pro-Ukraine hacker groups BO Team and Head Mare show signs of coordinated operations against Russian targets",
+          "summary": "Kaspersky researchers identified shared command-and-control infrastructure running on the same compromised hosts, suggesting operational coordination between two previously distinct hacktivist groups targeting Russia. If confirmed, this represents a maturation of pro-Ukraine cyber operations from loosely affiliated actors toward structured collaboration with shared tooling — a tactical evolution worth tracking. The finding also illustrates the intelligence value of infrastructure analysis in attributing and anticipating hacktivist campaigns.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/ukraine-bo-team-head-mare-hacktivists-team-up-kaspersky"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "Global fault lines are shifting simultaneously across Russia, China, Iran, and the UK, with authoritarian consolidation and strategic competition defining the day's geopolitical picture.",
+      "intro": "The U.S.-Israeli military campaign against Iran is reshaping alliance dynamics, choking global energy flows, and exposing vulnerabilities from Southeast Asia to the Baltic.",
       "items": [
         {
-          "headline": "Putin's Strategic Position More Fragile Than His Public Posture Suggests",
-          "summary": "Despite projecting strength through victory parade optics, Putin faces mounting constraints — drone strikes reaching Moscow, stalled battlefield gains, and narrowing diplomatic options. The analysis argues he has less room to maneuver than Western observers typically credit him. Watch whether continued Ukrainian pressure forces a genuine shift in Russian negotiating posture or triggers domestic instability.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/07/russsia-ukraine-war-putin-zelensky-victory-parade-attacks-drones-moscow/"
+          "headline": "Russia-Iran Military Integration Is Producing Battlefield-Tested Threats for U.S. Partners",
+          "summary": "Russian refinement of Iranian drone designs through battlefield testing in Ukraine has created a more capable threat system now being deployed against Gulf Arab states. U.S. partners, finding Washington slow to adapt, are reportedly bypassing American channels and seeking solutions directly from Ukraine and others with frontline experience. This signals a deepening fracture in U.S.-led security architecture at the precise moment adversary coordination is accelerating.",
+          "source": "War on the Rocks",
+          "url": "https://warontherocks.com/as-adversaries-integrate-u-s-partners-bypass-washington/"
         },
         {
-          "headline": "Abraham Accords Linked to Escalatory Path Toward Iran War",
-          "summary": "Israeli-Gulf security cooperation normalized under the Abraham Accords accelerated military coordination that contributed to the confrontation with Iran, undermining the framework's original peace narrative. The piece challenges the Trump administration's framing of the Accords as a stabilizing achievement. This matters as the U.S. continues pursuing Gulf normalization with Israel while managing Iranian nuclear diplomacy simultaneously.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/07/trump-iran-israel-saudi-arabia-uae-abraham-accords-conflict-palestine/"
+          "headline": "Risk Pricing, Not Force, Has Effectively Shut Down the Strait of Hormuz",
+          "summary": "Following U.S.-Israeli strikes on Iran, tanker traffic through the Strait of Hormuz collapsed from 56 vessels to fewer than 10 within 48 hours — not due to mines or a naval blockade, but through insurance and liability risk pricing alone. The article raises whether Russia could replicate this 'Hormuz playbook' in the Baltic or Black Seas to strangle European energy supplies without direct military action. This chokepoint-by-perception strategy represents a significant escalation in economic warfare doctrine.",
+          "source": "War on the Rocks",
+          "url": "https://warontherocks.com/could-russia-follow-the-hormuz-playbook-in-the-baltic-and-black-seas/"
         },
         {
-          "headline": "Trump Counterterrorism Strategy Omits Far-Right Domestic Threats",
-          "summary": "The new White House counterterrorism framework prioritizes Iran, Hezbollah, and jihadist networks while explicitly sidelining far-right extremism as a designated threat category. This represents a significant doctrinal departure from the Biden-era strategy and reflects the influence of figures like Gorka in shaping threat definitions. Analysts should watch how intelligence community resourcing and interagency priorities shift to match the new framework.",
+          "headline": "ASEAN States Move Toward Energy Independence Amid Iran War Supply Shocks",
+          "summary": "Southeast Asian leaders are responding to Iran war-driven oil market disruptions by accelerating proposals for a regional power grid and shared emergency fuel stockpile. The urgency reflects how exposure to Hormuz-dependent energy supply chains has become a strategic liability for nations with limited bilateral leverage over the conflict's parties. Watch whether this translates into concrete infrastructure commitments or remains aspirational amid competing national interests.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/07/trump-counterterrorism-strategy-gorka-iran-lebanon-israel/"
+          "url": "https://foreignpolicy.com/2026/05/08/asean-iran-war-regional-power-grid-fuel-stockpile-oil-strait-hormuz/"
         },
         {
-          "headline": "China's Affordable AI Models Outcompeting U.S. Equivalents in the Global South",
-          "summary": "While U.S. frontier AI models remain prohibitively expensive for adoption in developing markets, Chinese alternatives are gaining traction globally, quietly expanding Beijing's technological and political influence. This cost-access gap is emerging as a strategic vulnerability the U.S. has yet to address coherently. The trend has implications beyond economics — AI adoption shapes data flows, infrastructure dependencies, and long-term geopolitical alignment.",
+          "headline": "Iranian Civilians Rally Around the Flag Following U.S.-Israeli Strikes on Tehran",
+          "summary": "Despite sustained military strikes, street-level reporting from Tehran shows a public that has, at least for now, consolidated behind the regime rather than turned against it — a dynamic that historically complicates foreign military pressure campaigns. The nationalist response echoes patterns seen in previous Western air campaigns against adversary states and raises questions about whether strikes are strengthening the regime's domestic legitimacy. How long this rally effect holds will be a key indicator of the campaign's strategic trajectory.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/07/artificial-intelligence-ai-china-us-west-race-silicon-valley-global/"
+          "url": "https://foreignpolicy.com/2026/05/08/iran-war-tehran-streets-normal-life-civilians-internet-protest/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "A direct U.S.-Iran military exchange dominates today's picture, while longer-term stories reveal a Pentagon rapidly restructuring around AI, drones, and space capabilities.",
+      "intro": "U.S. forces are engaged in active operations near the Strait of Hormuz while a fragile three-day ceasefire takes hold in Ukraine, underscoring simultaneous pressure points across two major theaters.",
       "items": [
         {
-          "headline": "U.S. and Iran Trade Strikes in First Direct Military Confrontation",
-          "summary": "U.S. forces conducted retaliatory strikes on Iranian military facilities after Iran attacked three Navy vessels with missiles and drones. Trump signaled confidence the conflict would be short-lived, but any direct exchange between the two militaries carries significant escalation risk. Watch whether Iran responds further and whether Gulf allies are drawn in.",
+          "headline": "U.S. Navy Disables Iranian Tankers Attempting to Break Hormuz Blockade",
+          "summary": "U.S. forces operating near the Strait of Hormuz struck Iranian military facilities and disabled IRGC missiles this week, then moved to neutralize Iranian-flagged tankers attempting to breach a blockade. The action signals an active and escalating U.S. military posture in the Gulf with direct implications for global energy shipping. Watch for Iranian escalation responses and any diplomatic fallout affecting oil markets.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-navy/2026/05/07/us-and-iran-exchange-fire-as-trump-says-war-will-be-over-quickly/"
+          "url": "https://www.militarytimes.com/news/your-navy/2026/05/08/us-forces-disable-iranian-flagged-tankers-trying-to-cross-blockade/"
         },
         {
-          "headline": "Pentagon Commits to Multi-Vendor AI Strategy After Single-Provider Risks Exposed",
-          "summary": "Defense Undersecretary Emil Michael announced the Pentagon will never again depend on a single AI provider, framing new Big Tech agreements as a direct rebuke to friction with Anthropic over contract terms. The policy shift prioritizes flexible contracting to avoid vendor lock-in on critical defense systems. This signals a structural change in how DoD procures AI, with broad implications for industry players competing for defense contracts.",
-          "source": "Defense One - All Content",
-          "url": "https://www.defenseone.com/policy/2026/05/pentagon-will-never-again-rely-single-ai-provider-official-says/413409/"
-        },
-        {
-          "headline": "Space Force Warns Infrastructure and Workforce Cannot Keep Pace With Hundredfold Launch Surge",
-          "summary": "Space Force officials are calling for additional launch sites, increased funding, more personnel, and AI integration as projected launch volumes threaten to overwhelm facilities built decades ago. The gap between operational demand and physical capacity represents a strategic vulnerability as the U.S. competes with China in space. Budget negotiations and site approval timelines will determine whether the force can scale in time.",
-          "source": "Defense One - All Content",
-          "url": "https://www.defenseone.com/threats/2026/05/launches-slated-grow-hundredfold-space-force-seeks-more-sites-money-people-and-ai/413403/"
-        },
-        {
-          "headline": "Army Stands Up Drone Training Center as Unmanned Systems Integrate Into Combat Formations",
-          "summary": "Fort Stewart has established the Marne Unmanned Center of Excellence to train soldiers on drone operations as the Army formally incorporates unmanned systems into standard unit formations. The initiative reflects broader doctrinal change, moving drones from specialized assets to routine battlefield tools. How quickly training scales across the force will determine operational readiness in any near-peer conflict scenario.",
+          "headline": "Trump Announces Three-Day Russia-Ukraine Ceasefire with Prisoner Exchange",
+          "summary": "President Trump declared that Russia and Ukraine will pause hostilities for three days starting Saturday, with a prisoner exchange included in the arrangement. This is the most concrete diplomatic development in the conflict in months, though short-term ceasefires have previously collapsed without producing lasting agreements. Key questions are whether frontline units comply and whether this becomes a framework for broader negotiations.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-military/2026/05/08/as-the-us-army-adds-drones-to-formations-heres-how-one-base-trains-its-operators/"
+          "url": "https://www.militarytimes.com/flashpoints/ukraine/2026/05/08/russia-ukraine-to-enter-temporary-ceasefire-with-prisoner-exchange-trump-says/"
+        },
+        {
+          "headline": "Ukraine Scales Up Unmanned Ground Vehicles for Combat Logistics and Civilian Rescue",
+          "summary": "Ukraine is accelerating domestic production of unmanned ground systems now being used to deliver ammunition, evacuate wounded troops, and extract civilians from active combat zones. The dual-use capability reflects a maturation of battlefield robotics doctrine that reduces risk to personnel in contested areas. This development has significant implications for how peer competitors and Western militaries are rethinking ground force composition.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/unmanned/2026/05/08/ukraine-ramps-up-ground-robot-production-to-spare-soldiers-haul-ammo-and-rescue-grandma/"
+        },
+        {
+          "headline": "India Moves to Establish Strategic Base Near Critical Indo-Pacific Shipping Lane",
+          "summary": "India is developing a strategic outpost positioned near a key Indo-Pacific shipping corridor, a move analysts are linking directly to the disruption of Hormuz traffic as a catalyst for accelerating regional basing decisions. The outpost would extend India's naval reach and complicate Chinese maritime calculations in the region. This aligns with broader Indo-Pacific realignment as traditional choke points face sustained instability.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/global/asia-pacific/2026/05/08/india-to-build-strategic-outpost-near-key-shipping-lane-in-indo-pacific/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "State-backed actors are increasingly blurring the line between espionage and criminal disruption, while critical infrastructure in Europe faces sustained hostile cyber pressure linked to Russia.",
+      "intro": "Today's intelligence picture spans coordinated hacktivist operations in the Russia-Ukraine cyber conflict, a landmark consumer privacy enforcement action, and notable criminal sentencing in the darknet ecosystem.",
       "items": [
         {
-          "headline": "Iranian APT MuddyWater deploys Chaos ransomware as a deception layer in espionage operations",
-          "summary": "Rapid7 researchers found that a seemingly routine Chaos ransomware intrusion was actually a MuddyWater operation tied to Iran's Ministry of Intelligence and Security. Using ransomware as cover is a significant tradecraft evolution — it muddies attribution, delays forensic response, and can destroy evidence. Defenders should treat ransomware incidents as potential state-actor operations until attribution is ruled out.",
+          "headline": "Pro-Ukraine Hacker Groups BO Team and Head Mare Show Signs of Operational Coordination Against Russian Targets",
+          "summary": "Kaspersky researchers identified shared infrastructure and overlapping toolsets between the two groups, including command-and-control servers running on the same compromised hosts — a strong indicator of deliberate coordination rather than coincidence. This marks a meaningful evolution in Ukraine-aligned hacktivist operations, suggesting informal or formal alliance-building among threat actors. Analysts should watch for expanded targeting scope and increased operational tempo as collaboration matures.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/iran-government-hackers-use-chaos-ransomware-as-cover"
+          "url": "https://therecord.media/ukraine-bo-team-head-mare-hacktivists-team-up-kaspersky"
         },
         {
-          "headline": "Polish intelligence reports cyberattacks on water treatment control systems amid escalating Russian threat",
-          "summary": "Poland's security services disclosed that hackers targeted operational technology systems at water treatment facilities, with the agency pointing to intensified Russian hostile cyber activity in 2024-2025 as the broader context. While formal attribution was withheld publicly, the pattern fits Russia's documented strategy of probing Western critical infrastructure. This is a notable escalation signal for NATO member infrastructure operators.",
+          "headline": "GM Hit with Record $12 Million CCPA Fine Over Unauthorized Sharing of Driver Location and Behavior Data",
+          "summary": "California regulators issued the largest penalty in the California Consumer Privacy Act's history against General Motors for sharing detailed driver data — including geolocation and driving behavior — with third parties without adequate consumer consent. The case signals that regulators are prepared to pursue major enforcement actions against large corporations, not just data brokers, under CCPA. Compliance teams across automotive and connected-device industries should treat this as a material precedent.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/polish-intelligence-warns-hackers-attacked-water-treatment"
+          "url": "https://therecord.media/gm-to-pay-12-million-california-privacy-settlement"
         },
         {
-          "headline": "U.S. military strikes Iranian targets near the Strait of Hormuz in retaliatory action",
-          "summary": "U.S. Central Command confirmed strikes against Iranian positions around the Strait of Hormuz, framing the action as retaliation for Iranian attacks on U.S. forces. The Strait handles roughly 20% of global oil transit, making any kinetic escalation there a major geopolitical and economic flashpoint. Intelligence consumers should monitor for Iranian cyber retaliation against U.S. and allied targets as a likely secondary response vector.",
-          "source": "The War Zone",
-          "url": "https://www.twz.com/news-features/iranian-island-port-in-strait-of-hormuz-attacked-state-media-claims"
+          "headline": "Kingdom Market Darknet Administrator Sentenced to 16 Years Following Guilty Plea",
+          "summary": "Slovak national Alan Bill received one of the stiffer sentences seen in recent darknet marketplace prosecutions after admitting to administering Kingdom Market, which facilitated drug sales and cybercriminal activity from 2021 to 2023. The sentence reflects a sustained international law enforcement focus on dismantling illicit marketplace infrastructure and holding administrators personally accountable. The case adds to a growing body of successful prosecutions that may deter future darknet operators.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/kingdom-market-administrator-gets-16-year-sentence"
         },
         {
-          "headline": "North Carolina man pleads guilty to doxxing sitting U.S. Supreme Court justices",
-          "summary": "The case highlights how publicly available data can be weaponized to target senior government officials, with the defendant aggregating open-source information to expose justices' personal details. Beyond the immediate legal outcome, the incident illustrates the operational security vulnerabilities faced by high-profile public figures in an era of readily accessible personal data. Protective intelligence teams should treat this as a benchmark case for reviewing official OPSEC protocols.",
+          "headline": "Virginia Man Convicted of Deliberately Wiping 96 Federal Government Databases",
+          "summary": "A federal jury found the defendant guilty of intentionally destroying 96 government databases and compromising at least one email account through stolen credentials, representing a significant insider-threat or unauthorized access case with direct impact on government data integrity. Details on the affected agency and scope of data loss remain limited, but the scale of deletion — 96 discrete databases — suggests targeted and methodical action rather than opportunistic damage. The case underscores ongoing vulnerability of government systems to destructive attacks from individuals with or who obtain privileged access.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/north-carolina-man-pleads-guilty-to-doxxing"
+          "url": "https://therecord.media/virginia-man-found-guilty-deleting-96-gov-databases"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 41,
-    "articles_reviewed": 70,
+    "articles_reviewed": 68,
     "items_published": 16
   }
 }
