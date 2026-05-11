@@ -1,57 +1,57 @@
 {
-  "date": "2026-05-10",
-  "generated_at": "2026-05-10T06:01:57.923591+00:00",
-  "issue": 6,
-  "executive_summary": "The dominant theme across today's reporting is accelerating military positioning and defense industrial mobilization in anticipation of sustained great-power competition, with the United States, Europe, and Indo-Pacific partners all making concrete moves to expand capacity and forward presence. Vietnam's acquisition of Indian BrahMos systems represents a meaningful realignment in the Indo-Pacific balance, directly complicating Chinese regional calculations, while the U.S. Marine Corps Arctic rotation signals that Washington is simultaneously hardening its northern flank against Russian pressure. The Rheinmetall bid for German Naval Yards Kiel reflects the same underlying logic in Europe, where defense consolidation is accelerating as the continent moves toward genuine industrial self-sufficiency for a prolonged competition. DARPA's pursuit of pre-positioned containerized drone swarms ties these threads together at the operational level, suggesting U.S. planners are actively developing asymmetric tools designed for contested environments where forward basing may be denied or degraded, a capability with obvious relevance to both the Indo-Pacific and Arctic theaters. Taken together, today's picture is one of coordinated, multi-theater preparation rather than reactive crisis management, with allies and partners increasingly integrated into that architecture.",
+  "date": "2026-05-11",
+  "generated_at": "2026-05-11T06:03:39.478952+00:00",
+  "issue": 7,
+  "executive_summary": "The dominant intelligence theme today is the sustained military pressure campaign against Iran, with multiple indicators suggesting the conflict remains active and escalatory rather than winding down. The ongoing 20-warship coalition blockade, UK destroyer repositioning for potential Hormuz escort duties, and UAE defense industry signaling new partnerships all point to a coordinated multinational effort to maintain strategic leverage against Tehran in the aftermath of the nuclear strike. The recognition of F-16 pilots and UAE's public highlighting of UAV contributions suggest both domestic and alliance messaging is being managed carefully, likely to sustain political support for continued operations. The missing U.S. soldier in Morocco is an outlying thread but warrants monitoring as an operational security concern, particularly given heightened regional tensions that could complicate recovery efforts or create exploitation opportunities for adversarial actors.",
   "sections": [
     {
       "id": "military",
       "title": "Military",
-      "intro": "Today's military picture is defined by Indo-Pacific arms realignment, European defense consolidation, and ongoing Arctic force posturing.",
+      "intro": "Post-Iran strike recognition, naval repositioning in the Gulf, and a casualty during a NATO exercise in Morocco define today's military landscape.",
       "items": [
         {
-          "headline": "Vietnam moves to acquire BrahMos missiles and Indian naval vessels in major defense partnership shift",
-          "summary": "Vietnam is set to procure BrahMos supersonic cruise missiles alongside three to four offshore patrol vessels and 14 patrol boats from India, backed by a $500 million Indian line of credit. The deal marks a significant deepening of Indo-Vietnamese defense ties and directly strengthens Hanoi's maritime deterrence posture against Chinese naval pressure in the South China Sea. Watch for formal contract signing timelines and any Chinese diplomatic response.",
-          "source": "Naval News",
-          "url": "https://www.navalnews.com/naval-news/2026/05/vietnam-slated-to-order-brahmos-and-naval-vessels-from-india/"
-        },
-        {
-          "headline": "Rheinmetall bids to acquire German Naval Yards Kiel, accelerating European defense industry consolidation",
-          "summary": "Rheinmetall has submitted a non-binding offer to purchase German Naval Yards Kiel through its recently formed naval division, formerly NVL, confirmed by CEO Armin Papperger at an analyst conference. If completed, the acquisition would give Rheinmetall significant shipbuilding capacity at a moment of surging European naval procurement driven by Russia's war in Ukraine. The deal's progression will be a key indicator of how quickly Europe's defense industrial base is restructuring.",
-          "source": "Naval News",
-          "url": "https://www.navalnews.com/naval-news/2026/05/rheinmetall-plans-to-acquire-german-naval-yards-kiel/"
-        },
-        {
-          "headline": "Marine Corps establishes rotational Arctic force in Alaska as strategic competition in the region intensifies",
-          "summary": "The Marine Corps has stood up a new rotational training presence in Alaska, including a permanent detachment, framed by Commandant Gen. Eric Smith as a response to growing strategic competition in the Arctic. The move reflects broader U.S. military investment in cold-weather capability as Russia and China expand their Arctic activities. Analysts should track force sizing, basing arrangements, and whether this presages a more permanent Marine footprint in the region.",
+          "headline": "F-16 pilots from Iran nuclear strike mission receive Distinguished Flying Crosses",
+          "summary": "Six pilots from the 55th Fighter Squadron have been decorated for their roles in Operation Midnight Hammer, the strike on Iranian nuclear sites, after flying combat missions into heavily defended airspace. The awards provide the first formal, named acknowledgment of the air crews involved in one of the most consequential U.S. air operations in recent memory. Watch for further details to emerge about the mission's scope and the aircraft's specific targeting roles.",
           "source": "Task & Purpose",
-          "url": "https://taskandpurpose.com/news/marines-rotational-force-alaska/"
+          "url": "https://taskandpurpose.com/news/air-force-distinguished-flying-cross-midnight-hammer/"
         },
         {
-          "headline": "Search for two U.S. Army soldiers missing off Morocco's coast enters second week with no recovery",
-          "summary": "American forces continue search operations near the Cap Draa Training Area in Morocco after two soldiers fell into the water on May 2, now more than a week ago. The extended search without recovery underscores the hazardous conditions of the Atlantic coastline in that region. The incident will likely prompt a review of safety protocols governing joint training exercises at overseas partner sites.",
+          "headline": "UK repositions Type 45 destroyer to Gulf ahead of possible Hormuz escort mission",
+          "summary": "HMS Dragon is being forward-deployed to the Middle East to prepare for a potential multinational operation securing commercial shipping through the Strait of Hormuz once active hostilities in the region subside. The move signals Western anticipation that post-conflict maritime security will require a standing naval presence and coalition coordination. This is an early indicator of how NATO-aligned navies are planning for the Gulf's post-war security architecture.",
+          "source": "Naval News",
+          "url": "https://www.navalnews.com/naval-news/2026/05/uk-re-deploys-destroyer-dragon-to-middle-east-for-potential-hormuz-mission/"
+        },
+        {
+          "headline": "One U.S. soldier recovered, one still missing after disappearing during Morocco exercise",
+          "summary": "1st Lt. Kendrick Lamont Key Jr. has been recovered after going missing on May 2 during African Lion 26, a major U.S.-led exercise in Morocco, while a second soldier remains unaccounted for. The incident raises questions about force protection protocols during large-scale multinational exercises in complex terrain. The status of the second missing soldier and the circumstances of both disappearances remain the critical outstanding facts.",
           "source": "Task & Purpose",
-          "url": "https://taskandpurpose.com/news/army-soldiers-search-morocco-remain/"
+          "url": "https://taskandpurpose.com/news/army-soldier-morocco-missing-identified/"
+        },
+        {
+          "headline": "UAE defense giant EDGE highlights UAV contributions to Iran conflict, eyes new partnerships",
+          "summary": "EDGE Group CEO Hamad Al Marar discussed the company's UAV technology role during the recent Gulf conflict and outlined ambitions for expanded international defense partnerships. The disclosure is notable as it positions a Gulf-state defense contractor as an active contributor to a live conflict rather than merely a supplier. Increased EDGE visibility in post-conflict Gulf security arrangements could shift regional defense procurement dynamics.",
+          "source": "Breaking Defense",
+          "url": "https://breakingdefense.com/2026/05/edge-ceo-talks-companys-role-in-iran-conflict-plus-future-partnerships/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Today's intel picture is thin on volume but notable for a significant DARPA program that signals a shift in how the U.S. military is conceptualizing covert, distributed drone warfare.",
+      "intro": "Open-source naval tracking reveals a significant U.S. and allied force posture shift in the Middle East, with a large multinational flotilla enforcing an Iran blockade.",
       "items": [
         {
-          "headline": "DARPA Pursues Covert Containerized Drone Swarms for Pre-Positioned Strikes Behind Enemy Lines",
-          "summary": "DARPA is soliciting development of drone swarms concealed within standard shipping containers that can be pre-positioned in denied or contested territory and remotely triggered on command. The concept exploits the near-ubiquity of cargo containers to make detection and attribution difficult, while creating multi-vector threat scenarios that stress traditional air defense systems. Adversaries with awareness of this program — particularly China and Russia — will likely accelerate countermeasures and their own analogous capabilities.",
+          "headline": "20-Warship Coalition Including Two Carriers Maintains Iran Blockade as of May 11",
+          "summary": "Open-source carrier tracking confirms a substantial multinational naval presence — 20 warships including two carrier strike groups — actively enforcing a blockade against Iran. The scale and composition of the force signals a sustained, high-commitment operation rather than a temporary deterrence posture. Meanwhile, USS Nimitz's port call in Rio de Janeiro during a South America circumnavigation confirms its repositioning to Norfolk and effective removal from the active operational pool.",
           "source": "The War Zone",
-          "url": "https://www.twz.com/news-features/drone-swarms-packed-into-unassuming-containers-sought-by-darpa"
+          "url": "https://www.twz.com/sea/where-are-the-carriers-as-of-may-11-2026-20-warships-including-two-carriers-enforce-iran-blockade"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 41,
-    "articles_reviewed": 7,
+    "articles_reviewed": 8,
     "items_published": 5
   }
 }
