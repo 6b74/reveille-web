@@ -47,5 +47,9 @@
 	  "https://samcurry.net/api/feed.rss",
 	  "http://little-canada.org/feeds/output/synacktiv-publications.rss",
 	  "https://therecord.media/feed/"
-	]
+	],
+  "ICS/SCADA/OT": [
+    "https://www.securityweek.com/feed/",
+    "https://www.darkreading.com/ics-ot-security"
+  ]
 }
