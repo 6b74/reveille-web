@@ -1,66 +1,66 @@
 {
-  "date": "2026-05-11",
-  "generated_at": "2026-05-11T16:29:20.792610+00:00",
-  "issue": 8,
-  "executive_summary": "Today's intelligence picture is defined by two interlocking pressures: a kinetic and diplomatic deterioration around Iran that is simultaneously driving military escalation and global economic stress, and a persistent, elevated cyber threat environment that is exposing critical infrastructure vulnerabilities across Western nations. The Hormuz crisis is the dominant thread, connecting the U.S. Navy's 20-warship taskforce and Iran blockade enforcement to the diesel supply shock threatening global economic stability, while the F-16 strikes on Iranian nuclear sites under Operation Midnight Hammer suggest the confrontation with Tehran has already moved well beyond deterrence posturing. Europe's accelerating push toward defense autonomy and the Latvia drone-spoofing incident both point to a second connective thread: Russian hybrid operations and U.S. strategic retrenchment are forcing NATO partners into reactive postures even as the Ukraine ceasefire collapses, stretching Western military attention across multiple simultaneous theaters. On the cyber front, the Cl0p dwell-time failure at a UK water utility, the back-to-back Linux kernel privilege escalation flaws, and the Canvas education platform breach collectively signal that critical and public-sector infrastructure remains dangerously under-hardened, a vulnerability that state-aligned threat actors are well-positioned to exploit as geopolitical tensions peak. The overall picture is one of compounding risk: military, economic, and cyber stressors are converging",
+  "date": "2026-05-12",
+  "generated_at": "2026-05-12T06:02:20.423518+00:00",
+  "issue": 9,
+  "executive_summary": "Today's intelligence picture is dominated by two reinforcing crisis arcs — an escalating Middle East conflict with cascading global economic consequences, and a deteriorating critical infrastructure security environment that leaves Western nations exposed at a moment of strategic distraction. The Hormuz crisis is functioning as an asymmetric pressure multiplier: it is simultaneously straining U.S. munitions stockpiles, enriching Russia at a critical point in the Ukraine conflict, exposing China's energy vulnerabilities, and destabilizing Turkey-Israel relations in ways that could generate a second regional flashpoint independent of the Iran campaign. Against this backdrop, the cyber picture is deeply concerning — the UK water utility breach demonstrates that ransomware actors are achieving dwell times measured in years inside critical infrastructure, while back-to-back Linux kernel privilege escalation flaws and the FCC's decision to delay router security rules until 2029 suggest systemic Western tolerance for known, compounding risk. The convergence matters: adversaries with the capability and motive to conduct disruptive cyberattacks, including actors linked to states benefiting from the Hormuz crisis, now have a wider window of opportunity precisely when Western governments and militaries are operationally stretched and politically focused elsewhere. The overall picture is one of simultaneous, mutually reinforcing stress across military, economic, and digital domains, with limited evidence that these threads are being managed as a coherent whole.",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Today's cyber landscape is defined by persistent ransomware pressure, critical Linux kernel vulnerabilities, and accountability catching up with organizations that failed to detect intrusions for years.",
+      "intro": "Today's cyber landscape is defined by persistent attacker dwell times in critical infrastructure, a worsening ransomware consolidation trend, and newly discovered Linux kernel vulnerabilities with significant privilege escalation implications.",
       "items": [
         {
-          "headline": "Ransomware volume dips slightly from record highs but remains historically elevated entering 2026",
-          "summary": "Check Point recorded 2,122 ransomware victims listed on data leak sites in Q1 2026, down 12.2% from Q4 2025's all-time record but still the second-highest Q1 ever—117% above pre-pandemic baselines. The data signals consolidation among dominant groups rather than a genuine decline in threat activity. Organizations should not interpret the modest drop as a trend reversal; the operational capacity of ransomware ecosystems remains near peak.",
-          "source": "Check Point Research",
-          "url": "https://research.checkpoint.com/2026/the-state-of-ransomware-q1-2026/"
-        },
-        {
-          "headline": "UK water utility fined after Cl0p ransomware gang went undetected on its network for nearly two years",
-          "summary": "The ICO fined South Staffordshire Water £963,900 after finding that Cl0p operators maintained access to its systems for roughly 22 months before the 2022 breach that exposed data on over 633,000 customers and employees. The case is a stark illustration of detection failure—not just intrusion—as the primary operational risk. Regulators are increasingly willing to penalize insufficient monitoring, not just inadequate perimeter defenses.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/uk-water-company-had-hackers-lurking-for-years"
-        },
-        {
-          "headline": "Second major Linux kernel privilege escalation flaw discovered in two weeks, dubbed Dirty Frag",
-          "summary": "The newly disclosed 'Dirty Frag' vulnerability resides in the same kernel subsystem responsible for last month's Copy Fail bug, and similarly allows any unprivileged local user to gain full root control. Two critical flaws in the same code region within weeks suggests either intensified research scrutiny of that subsystem or underlying structural weaknesses that may yield further discoveries. Administrators running affected Linux systems should prioritize patching immediately and audit exposure of multi-user environments.",
+          "headline": "Second major Linux kernel privilege escalation flaw in two weeks raises alarm",
+          "summary": "A vulnerability dubbed 'Dirty Frag' has been discovered in the same Linux kernel subsystem responsible for last month's 'Copy Fail' bug, allowing any low-privileged local user to gain full root control. The clustering of critical flaws in the same kernel component suggests inadequate remediation scope following the first disclosure. Security teams running Linux-based infrastructure should prioritize patching and audit whether the initial Copy Fail fix was sufficiently comprehensive.",
           "source": "The Record from Recorded Future News",
           "url": "https://therecord.media/dirty-frag-linux-kernel-hit-by-second-major-bug"
         },
         {
-          "headline": "Instructure Canvas breach exposes student and staff data across cloud-hosted education platform",
-          "summary": "Instructure confirmed a significant breach of its Canvas cloud environment, with exposed data including student and staff records and private messages—a sensitive combination given the platform's widespread use in K-12 and higher education. The incident adds to a pattern of education-sector targeting, where data richness and historically underfunded security create attractive conditions for attackers. Affected institutions should assess their data-sharing configurations with third-party edtech vendors.",
+          "headline": "UK water utility harbored Cl0p ransomware attackers undetected for nearly two years",
+          "summary": "The UK's Information Commissioner's Office fined South Staffordshire Water £963,900 after finding that Cl0p ransomware operators maintained undetected access to its network for roughly 22 months before exfiltrating and publishing data on 633,887 customers and staff in 2022. The extended dwell time points to critical failures in network monitoring and anomaly detection within a critical infrastructure operator. The case reinforces growing regulatory appetite to penalize inadequate detection capabilities, not just the breach itself.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/uk-water-company-had-hackers-lurking-for-years"
+        },
+        {
+          "headline": "Ransomware victim count stays near record highs despite slight Q1 2026 dip",
+          "summary": "Check Point Research tracked 2,122 ransomware victims listed on data leak sites in Q1 2026, a 12.2% drop from Q4 2025's all-time record but still the second-highest Q1 on record and 117% above baseline levels, with over 70 active leak sites now operating. The figures indicate the ecosystem is consolidating around a smaller number of highly productive groups rather than collapsing. Organizations should treat the modest decline as statistical noise rather than evidence of diminishing threat.",
           "source": "Check Point Research",
-          "url": "https://research.checkpoint.com/2026/11th-may-threat-intelligence-report/"
+          "url": "https://research.checkpoint.com/2026/the-state-of-ransomware-q1-2026/"
+        },
+        {
+          "headline": "FCC delays ban on security updates for foreign-made routers and drones to 2029",
+          "summary": "The FCC has pushed back its deadline restricting security updates for routers and drones from foreign manufacturers—originally set for March 2027—to January 2029, leaving a potential two-year window of continued exposure on devices flagged as national security risks. The delay prolongs the period during which these devices remain embedded in US networks without a clear remediation mandate. Industry and government observers will need to watch whether the extended timeline leads to meaningful transition planning or simply deferred risk.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/fcc-pushes-ban-on-updates-to-foreign-routers-drones-2029"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "The US-Iran conflict is reshaping global energy markets and regional alignments, while Europe and China recalibrate their strategic postures in response to cascading pressures.",
+      "intro": "The Iran-Hormuz crisis is reshaping energy markets and great-power calculations while Europe, Russia, and Turkey each maneuver to exploit or absorb the fallout.",
       "items": [
         {
-          "headline": "Hormuz Crisis Squeezes Diesel Supply, Threatening Global Economic Stability",
-          "summary": "The US-Iran war is disrupting Strait of Hormuz transit, with diesel markets bearing a disproportionately severe impact compared to crude oil prices. Diesel underpins industrial and freight activity worldwide, meaning prolonged disruption translates quickly into supply chain and inflationary pressure across major economies. Watch whether non-Western shipping routes and alternative suppliers can absorb the shortfall before damage becomes structural.",
+          "headline": "Iran War Squeezes Global Diesel Supply as Hormuz Crisis Deepens",
+          "summary": "The U.S.-Iran conflict is hitting diesel markets harder than crude, threatening a critical input for logistics, agriculture, and manufacturing worldwide. The disruption compounds existing energy fragility across Southeast Asia, where an ASEAN summit in Cebu failed to produce a coordinated regional response. Watch whether major importers accelerate alternative supply arrangements or whether the economic pressure forces diplomatic movement on the conflict itself.",
           "source": "Foreign Policy",
           "url": "https://foreignpolicy.com/2026/05/11/us-iran-war-diesel-fuel-energy-economy/"
         },
         {
-          "headline": "China's Oil Vulnerability Exposed as Western Insurers Leverage Hormuz Crisis",
-          "summary": "With Hormuz disrupted, China's dependence on Western-dominated maritime insurance markets is emerging as a strategic chokepoint more potent than any naval blockade — premiums and coverage denials can effectively halt Beijing's oil imports through the Malacca Strait. This exposes a critical asymmetry: China has limited leverage over financial infrastructure even as it builds military capacity. Beijing's response — whether accelerating alternative payment and insurance systems or seeking diplomatic off-ramps — will be a key signal to watch.",
+          "headline": "Russia Pockets Billions as U.S. Iran Policy Drives Up Oil Revenue for Moscow",
+          "summary": "Tighter global oil supply caused by the Iran war is delivering a significant windfall to Russia, partially offsetting the pressure Western sanctions were designed to maintain. This dynamic undermines the Ukraine war effort indirectly, as Moscow gains fiscal headroom precisely when Western support for Kyiv is under political strain. The strategic irony is acute: U.S. military action against Iran may be subsidizing Russian operations in Ukraine.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/05/11/iran-war-russia-putin-trump-ukraine-oil/"
+        },
+        {
+          "headline": "China's Oil Vulnerability Exposed by Hormuz Closure and Western Insurance Controls",
+          "summary": "The Hormuz crisis has sharpened Beijing's longstanding Malacca Dilemma, but a less-discussed chokepoint may matter more: Western-dominated maritime insurance markets can deny coverage to tankers carrying Chinese oil more efficiently than any naval blockade. This gives Washington and its allies asymmetric economic leverage over Beijing without direct military confrontation. How China responds—through alternative insurance mechanisms, currency arrangements, or accelerated energy diversification—is a key variable to track.",
           "source": "Foreign Policy",
           "url": "https://foreignpolicy.com/2026/05/11/china-oil-economy-insurance-hormuz-strait-malacca-dilemma/"
         },
         {
-          "headline": "Europe Grows Confident in Its Own Defense Capacity as US Withdrawal Looms",
-          "summary": "European leaders are responding to Trump's latest threats of troop withdrawal with notable calm, reflecting genuine progress in continental defense planning and rearmament rather than complacency. The shift marks a significant psychological departure from prior years of transatlantic dependency, suggesting European strategic autonomy is moving from rhetoric toward operational reality. The test will come if withdrawal accelerates faster than European force readiness can compensate, particularly on NATO's eastern flank.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/11/europe-trump-threat-troop-united-kingdom-france-germany-russia/"
-        },
-        {
-          "headline": "Turkey-Israel Tensions Mount Over Syria and Gaza as War Risk Grows",
-          "summary": "Analysts are increasingly treating a potential Turkey-Israel military confrontation as a scenario worthy of serious planning, driven by disputes over post-Assad Syria, Palestinian policy, and broader regional security competition. Israeli PM Netanyahu and Turkish leadership have exchanged escalatory signals since late 2025, and Turkey's ongoing rearmament adds credibility to Ankara's posture. The dynamic could force regional actors and NATO allies into uncomfortable positions if either side miscalculates.",
+          "headline": "Turkey-Israel Tensions Mount as Ankara Weighs Military Options Over Syria and Gaza",
+          "summary": "Analysts are taking seriously the prospect of direct military confrontation between NATO member Turkey and Israel, driven by disputes over post-Assad Syria, Palestinian policy, and regional influence. Israeli Prime Minister Netanyahu's posture since December 2025 has hardened Ankara's calculus, and Turkish rearmament signals Erdogan is preparing for contingencies beyond rhetoric. A Turkey-Israel clash would fracture NATO cohesion, complicate U.S. Middle East posture, and create openings for Russian and Iranian influence.",
           "source": "War on the Rocks",
           "url": "https://warontherocks.com/ankaras-crossroads-rearmament-risk-and-the-prospect-of-war-with-israel/"
         }
@@ -69,69 +69,69 @@
     {
       "id": "military",
       "title": "Military",
-      "intro": "Today's military picture is defined by a collapsing Ukraine ceasefire, NATO alliance friction over drone incursions, and operational lessons reshaping U.S. force structure and procurement.",
+      "intro": "U.S. military posture is stretching across multiple fronts simultaneously—active Iran operations with unresolved endgame, a collapsing Ukraine ceasefire, Indo-Pacific power projection, and accelerating drone warfare innovation at home and abroad.",
       "items": [
         {
-          "headline": "Ukraine-Russia ceasefire collapses almost immediately as frontline fighting continues",
-          "summary": "Despite agreeing to a Trump-brokered ceasefire from May 9–11, both Russia and Ukraine continued combat operations along the front line. The immediate breakdown signals deep distrust between the parties and raises questions about whether U.S.-mediated diplomacy has any near-term leverage. Watch whether Washington responds with pressure on either side or quietly shelves the initiative.",
+          "headline": "Trump signals Iran campaign continues despite formal termination notice, munitions stocks under strain",
+          "summary": "Trump's May 1 Congressional notification terminating Operation Epic Fury appears procedural rather than a genuine ceasefire, with the president stating military action against Iran is not finished. The extended USS Gerald R. Ford deployment has forced the Navy to reassess carrier tempo, and mounting concerns over precision munitions depletion add a resource constraint the Pentagon cannot easily ignore. A new poll showing broad public skepticism—including one-third of Republicans—about whether war goals have been clearly articulated adds political pressure to an already ambiguous strategic posture.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/05/11/trump-says-war-on-iran-not-done-but-concerns-rise-about-munitions-shortages/"
+        },
+        {
+          "headline": "Balikatan exercise delivers multiple missile milestones as Japan, Philippines, U.S., and Canada sink two decommissioned ships",
+          "summary": "The multinational Balikatan exercise achieved significant live-fire benchmarks, including Japan's first-ever sinking of a target vessel using ship-launched missiles in a partner nation's exercise—a notable escalation in Tokyo's regional military engagement. The coordinated two-day strike integrated land, sea, and air platforms across four nations, demonstrating the coalition's ability to prosecute maritime denial operations against PLAN-style surface targets. This signals deepening interoperability among U.S. allies in the South China Sea corridor at a moment of heightened Indo-Pacific tension.",
+          "source": "Defense One - All Content",
+          "url": "https://www.defenseone.com/threats/2026/05/japanese-sinking-philippines-ship-missile/413470/"
+        },
+        {
+          "headline": "Reaper drone successfully employs low-cost air-to-air missiles, pointing toward affordable counter-drone architecture",
+          "summary": "The Air Force demonstrated an MQ-9 Reaper destroying aerial targets using inexpensive air-to-air missiles, a capability test driven by the need to cost-effectively neutralize cheap adversary drones without expending high-value interceptors. The test parallels the selection of five U.S. bases for a directed-energy anti-drone pilot program, two of which are on the southern border, reflecting a dual-threat calculus that encompasses both near-peer conflict and domestic airspace security. Taken together, these moves indicate the Pentagon is accelerating toward a layered, cost-asymmetric drone defense posture.",
+          "source": "Defense One - All Content",
+          "url": "https://www.defenseone.com/defense-systems/2026/05/air-force-missiles-reaper-drones/413469/"
+        },
+        {
+          "headline": "Ukraine-Russia ceasefire collapses immediately as Navy mulls overseas shipbuilding to rebuild depleted capacity",
+          "summary": "Fighting continued along the front line throughout the May 9–11 Trump-brokered ceasefire window, with both sides reporting violations, undermining U.S. diplomatic credibility and suggesting neither party is prepared for a negotiated pause. Separately, the Navy's new shipbuilding strategy explicitly opens the door to constructing vessels in allied foreign yards—a significant doctrinal shift that reflects domestic industrial base limitations exposed by the Iran campaign and sustained Indo-Pacific demands. The two developments together underscore the gap between current U.S. military commitments and available capacity in both personnel and materiel.",
           "source": "Military Times",
           "url": "https://www.militarytimes.com/news/pentagon-congress/2026/05/11/ukraine-and-russia-fight-on-despite-us-mediated-ceasefire/"
-        },
-        {
-          "headline": "Latvian defense minister resigns after Russian spoofing diverts Ukrainian drones into Baltic territory",
-          "summary": "A Ukrainian drone struck an empty fuel depot in Latvia after Russia allegedly spoofed its navigation systems, redirecting it away from its Russian target. Latvia's defense minister resigned amid criticism that military detection systems failed and residents received no mobile warnings. This episode highlights a significant vulnerability: electronic warfare can turn allied territory into collateral damage zones, with direct political consequences inside NATO.",
-          "source": "Breaking Defense",
-          "url": "https://breakingdefense.com/2026/05/latvian-defense-minister-resigns-following-lagging-response-to-drone-incursions/"
-        },
-        {
-          "headline": "F-16 pilots decorated for high-risk strikes on Iranian nuclear sites during Operation Midnight Hammer",
-          "summary": "Six pilots from the 55th Fighter Squadron received Distinguished Flying Crosses for penetrating heavily defended Iranian airspace during last year's strikes on Iranian nuclear facilities. The awards confirm the operational details of a mission that marked a significant escalation in U.S. direct military action against Iran. The recognition will likely intensify scrutiny of Iran's remaining nuclear infrastructure and ongoing U.S. posture in the region.",
-          "source": "Task & Purpose",
-          "url": "https://taskandpurpose.com/news/air-force-distinguished-flying-cross-midnight-hammer/"
-        },
-        {
-          "headline": "USS Gerald R. Ford's record-breaking deployment forces Navy to reconsider carrier tempo and readiness model",
-          "summary": "Exercise Epic Fury, built around the Ford's extended deployment, has reignited internal debate about sustainable carrier deployment cycles and the trade-off between forward presence and crew and maintenance readiness. The Navy is under pressure to sustain global commitments with a carrier fleet that cannot fully meet demand. The outcome of this review could reshape how the service allocates its most powerful and expensive assets.",
-          "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-navy/2026/05/11/epic-fury-has-navy-rethinking-carrier-deployment-tempo/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Today's intelligence picture spans critical infrastructure cyber failures, a new Linux privilege escalation vulnerability, and open-source investigation linking a Colombian politician to transnational neo-Nazi networks.",
+      "intro": "Today's intelligence picture is dominated by open-source investigations linking extremist networks to political figures, critical infrastructure failures enabling prolonged threat actor access, and regulatory delays that leave supply chain vulnerabilities unaddressed.",
       "items": [
         {
-          "headline": "UK Water Utility Fined After Cl0p Ransomware Dwelled Undetected for Nearly Two Years",
-          "summary": "The ICO fined South Staffordshire Water £963,900 after the Cl0p ransomware group breached its network and ultimately exposed personal data on over 633,000 customers and employees in 2022. The nearly two-year dwell time before detection points to fundamental failures in network monitoring and threat detection at a critical infrastructure operator. Regulators and operators across the water sector should treat this as a benchmark case for minimum detection capability requirements.",
+          "headline": "Bellingcat Links Colombian Political Candidate to Neo-Nazi Active Club Network",
+          "summary": "A joint Bellingcat and Colombian outlet Cerosetenta investigation has traced connections between a Colombian political candidate and the Active Club movement, a transnational neo-Nazi organizing model. The use of open-source video, imagery, and logo analysis to surface these links illustrates how OSINT tradecraft is increasingly being applied to far-right network mapping outside traditional Western contexts. Analysts should watch for similar Active Club expansion patterns across Latin America, where the movement has been growing with limited scrutiny.",
+          "source": "Bellingcat",
+          "url": "https://www.bellingcat.com/news/2026/05/11/active-club-colombia-politics/"
+        },
+        {
+          "headline": "UK Water Utility Harbored Cl0p Ransomware Actors Undetected for Nearly Two Years",
+          "summary": "South Staffordshire Water was fined £963,900 after regulators found the Cl0p ransomware group operated inside its network for close to two years before the breach was detected, ultimately exposing data on over 633,000 customers and employees. The dwell time underscores persistent detection failures in critical infrastructure sectors that often lack mature security operations capabilities. This case reinforces the need for continuous network monitoring in utilities, where extended attacker presence can precede catastrophic operational or data impacts.",
           "source": "The Record from Recorded Future News",
           "url": "https://therecord.media/uk-water-company-had-hackers-lurking-for-years"
         },
         {
-          "headline": "Second Major Linux Kernel Privilege Escalation Flaw Discovered in Same Subsystem Within Two Weeks",
-          "summary": "'Dirty Frag' is the second significant local privilege escalation vulnerability found in the same Linux kernel subsystem that produced last month's 'Copy Fail' bug, allowing any low-privilege user to gain full root control. The recurrence in the same code area suggests the initial patch review was incomplete and that systematic auditing of this subsystem is warranted. Administrators running multi-user or shared Linux environments should prioritize patching immediately.",
+          "headline": "FCC Delays Ban on Security Updates for Foreign Routers and Drones Until 2029",
+          "summary": "The FCC has pushed back a rule that would have restricted security updates for foreign-manufactured routers and drones from 2027 to January 2029, extending the window during which potentially compromised devices remain in operational use across U.S. networks. The delay is significant given ongoing concerns about Chinese-manufactured networking equipment being used as persistent access vectors by state-linked threat actors. Supply chain risk managers should treat the extended timeline as a gap requiring compensating controls rather than regulatory assurance.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/fcc-pushes-ban-on-updates-to-foreign-routers-drones-2029"
+        },
+        {
+          "headline": "Second Major Linux Kernel Privilege Escalation Flaw in Two Weeks Raises Systemic Concerns",
+          "summary": "A new Linux kernel vulnerability dubbed 'Dirty Frag' has been disclosed, allowing any local user to escalate to full administrative control—the second such critical flaw in the same kernel subsystem within a fortnight. The clustering of high-severity bugs in the same code region suggests either concentrated researcher attention or underlying architectural weaknesses that may yield further discoveries. Organizations running Linux on multi-user or shared infrastructure should prioritize patch deployment and audit for indicators of local exploitation attempts.",
           "source": "The Record from Recorded Future News",
           "url": "https://therecord.media/dirty-frag-linux-kernel-hit-by-second-major-bug"
-        },
-        {
-          "headline": "Bellingcat OSINT Investigation Ties Colombian Political Candidate to Active Club Neo-Nazi Network",
-          "summary": "A joint Bellingcat and Cerosetenta investigation used open-source methods to establish connections between a Colombian political candidate and the Active Club movement, a transnational neo-Nazi organizing framework. The findings illustrate how far-right extremist networks documented primarily in North America and Europe are extending their footprint into Latin American political spheres. This case reinforces the value of OSINT tradecraft in surfacing extremist political affiliations that conventional reporting may miss.",
-          "source": "bellingcat",
-          "url": "https://www.bellingcat.com/news/2026/05/11/active-club-colombia-politics/"
-        },
-        {
-          "headline": "U.S. Navy Deploys 20-Warship Taskforce Including Two Carriers to Enforce Iran Blockade",
-          "summary": "As of May 11, 2026, the U.S. Navy has positioned 20 warships, including two carrier strike groups, to enforce a blockade against Iran, representing a significant escalation in naval posture in the region. The scale of the deployment signals a sustained operational commitment rather than a short-term show of force. Analysts should monitor for Iranian asymmetric responses, including proxy activity, mining operations, or cyber actions targeting regional energy infrastructure.",
-          "source": "The War Zone",
-          "url": "https://www.twz.com/sea/where-are-the-carriers-as-of-may-11-2026-20-warships-including-two-carriers-enforce-iran-blockade"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 43,
-    "articles_reviewed": 52,
+    "articles_reviewed": 88,
     "items_published": 16
   }
 }
