@@ -1,137 +1,137 @@
 {
-  "date": "2026-05-12",
-  "generated_at": "2026-05-12T06:02:20.423518+00:00",
-  "issue": 9,
-  "executive_summary": "Today's intelligence picture is dominated by two reinforcing crisis arcs — an escalating Middle East conflict with cascading global economic consequences, and a deteriorating critical infrastructure security environment that leaves Western nations exposed at a moment of strategic distraction. The Hormuz crisis is functioning as an asymmetric pressure multiplier: it is simultaneously straining U.S. munitions stockpiles, enriching Russia at a critical point in the Ukraine conflict, exposing China's energy vulnerabilities, and destabilizing Turkey-Israel relations in ways that could generate a second regional flashpoint independent of the Iran campaign. Against this backdrop, the cyber picture is deeply concerning — the UK water utility breach demonstrates that ransomware actors are achieving dwell times measured in years inside critical infrastructure, while back-to-back Linux kernel privilege escalation flaws and the FCC's decision to delay router security rules until 2029 suggest systemic Western tolerance for known, compounding risk. The convergence matters: adversaries with the capability and motive to conduct disruptive cyberattacks, including actors linked to states benefiting from the Hormuz crisis, now have a wider window of opportunity precisely when Western governments and militaries are operationally stretched and politically focused elsewhere. The overall picture is one of simultaneous, mutually reinforcing stress across military, economic, and digital domains, with limited evidence that these threads are being managed as a coherent whole.",
+  "date": "2026-05-13",
+  "generated_at": "2026-05-13T06:04:28.265351+00:00",
+  "issue": 10,
+  "executive_summary": "Today's intelligence picture is defined by two converging pressures: accelerating adversarial activity across both cyber and physical domains, and a U.S. national security posture that is simultaneously overextended and underfunded. The ransomware strikes on West Pharmaceutical Services and Foxconn, both confirmed across multiple reporting channels, suggest a coordinated or at minimum opportunistic campaign targeting critical manufacturing infrastructure at a moment when U.S. military and industrial capacity is already strained by an active Iran conflict costing $29 billion and climbing. China and Russia are exploiting this window strategically — Beijing consolidating regional hegemony as Trump arrives in a weakened negotiating posture, while Moscow and Beijing jointly pursue legal mechanisms to reshape Arctic sovereignty, a long-game maneuver that carries little short-term cost while U.S. attention and resources are absorbed elsewhere. Underlying all of this is a systemic readiness concern: the Army acknowledges its battlefield network integration lags behind Ukraine's, the Golden Dome program carries a price tag seven times the stated figure, and Congress still lacks basic cost transparency on the Iran campaign, meaning U.S. decision-makers are operating under compounding strategic and fiscal blind spots precisely when adversaries are moving with coordinated intent.",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Today's cyber landscape is defined by persistent attacker dwell times in critical infrastructure, a worsening ransomware consolidation trend, and newly discovered Linux kernel vulnerabilities with significant privilege escalation implications.",
+      "intro": "A heavy patch cycle dominated by AI-assisted vulnerability discovery coincides with high-profile ransomware and cyberattack disclosures against major manufacturers.",
       "items": [
         {
-          "headline": "Second major Linux kernel privilege escalation flaw in two weeks raises alarm",
-          "summary": "A vulnerability dubbed 'Dirty Frag' has been discovered in the same Linux kernel subsystem responsible for last month's 'Copy Fail' bug, allowing any low-privileged local user to gain full root control. The clustering of critical flaws in the same kernel component suggests inadequate remediation scope following the first disclosure. Security teams running Linux-based infrastructure should prioritize patching and audit whether the initial Copy Fail fix was sufficiently comprehensive.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/dirty-frag-linux-kernel-hit-by-second-major-bug"
+          "headline": "Microsoft, Apple, and others release unusually large patch volumes amid AI-driven bug discovery",
+          "summary": "Microsoft's May 2026 Patch Tuesday addresses 112 vulnerabilities including 16 critical, while Apple separately patched 82 CVEs across three macOS versions. Analysts note that AI tools are accelerating the rate at which security flaws are found in production code, compressing patch cycles across the industry. No vulnerabilities are currently confirmed as actively exploited, but the sheer volume raises prioritization pressure for security teams.",
+          "source": "Krebs on Security",
+          "url": "https://krebsonsecurity.com/2026/05/patch-tuesday-may-2026-edition/"
         },
         {
-          "headline": "UK water utility harbored Cl0p ransomware attackers undetected for nearly two years",
-          "summary": "The UK's Information Commissioner's Office fined South Staffordshire Water £963,900 after finding that Cl0p ransomware operators maintained undetected access to its network for roughly 22 months before exfiltrating and publishing data on 633,887 customers and staff in 2022. The extended dwell time points to critical failures in network monitoring and anomaly detection within a critical infrastructure operator. The case reinforces growing regulatory appetite to penalize inadequate detection capabilities, not just the breach itself.",
+          "headline": "West Pharmaceutical Services hit by ransomware, data stolen and systems encrypted",
+          "summary": "West Pharmaceutical Services disclosed via an SEC filing that attackers breached its network on May 4, exfiltrating data before encrypting systems — a classic double-extortion pattern. The company manufactures drug delivery components, making operational disruption a potential downstream risk to pharmaceutical supply chains. Watch for ransom demands and whether the stolen data surfaces on leak sites.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/uk-water-company-had-hackers-lurking-for-years"
+          "url": "https://therecord.media/west-pharmaceutical-warns-of-ransomware-attack-impacting-operations"
         },
         {
-          "headline": "Ransomware victim count stays near record highs despite slight Q1 2026 dip",
-          "summary": "Check Point Research tracked 2,122 ransomware victims listed on data leak sites in Q1 2026, a 12.2% drop from Q4 2025's all-time record but still the second-highest Q1 on record and 117% above baseline levels, with over 70 active leak sites now operating. The figures indicate the ecosystem is consolidating around a smaller number of highly productive groups rather than collapsing. Organizations should treat the modest decline as statistical noise rather than evidence of diminishing threat.",
-          "source": "Check Point Research",
-          "url": "https://research.checkpoint.com/2026/the-state-of-ransomware-q1-2026/"
+          "headline": "Foxconn confirms cyberattack affecting North American manufacturing operations",
+          "summary": "Foxconn acknowledged a cyberattack disrupting factories across multiple U.S. states and Mexico, though it withheld specifics on the scope of impact. Given Foxconn's role as a critical electronics contract manufacturer, even limited operational disruption carries supply chain implications. The nature of the attack — ransomware, espionage, or other — has not been publicly confirmed.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/foxconn-confirms-cyberattack-north-american-factories"
         },
         {
-          "headline": "FCC delays ban on security updates for foreign-made routers and drones to 2029",
-          "summary": "The FCC has pushed back its deadline restricting security updates for routers and drones from foreign manufacturers—originally set for March 2027—to January 2029, leaving a potential two-year window of continued exposure on devices flagged as national security risks. The delay prolongs the period during which these devices remain embedded in US networks without a clear remediation mandate. Industry and government observers will need to watch whether the extended timeline leads to meaningful transition planning or simply deferred risk.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/fcc-pushes-ban-on-updates-to-foreign-routers-drones-2029"
+          "headline": "CISA and G7 partners release joint guidance on AI software transparency requirements",
+          "summary": "CISA and G7 allies published minimum element standards for Software Bills of Materials applied to AI systems, aiming to improve supply chain visibility for AI-integrated products. The guidance reflects growing concern that opaque AI dependencies create unmanaged risk in both public and private sector deployments. Organizations building or procuring AI-enabled software should treat this as an early signal of incoming compliance expectations.",
+          "source": "All CISA Advisories",
+          "url": "https://www.cisa.gov/resources-tools/resources/software-bill-materials-ai-minimum-elements"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "The Iran-Hormuz crisis is reshaping energy markets and great-power calculations while Europe, Russia, and Turkey each maneuver to exploit or absorb the fallout.",
+      "intro": "The Trump-Xi summit in Beijing dominates the global stage as the U.S.-Iran war reshapes energy markets, tests alliances, and hardens Tehran's resolve.",
       "items": [
         {
-          "headline": "Iran War Squeezes Global Diesel Supply as Hormuz Crisis Deepens",
-          "summary": "The U.S.-Iran conflict is hitting diesel markets harder than crude, threatening a critical input for logistics, agriculture, and manufacturing worldwide. The disruption compounds existing energy fragility across Southeast Asia, where an ASEAN summit in Cebu failed to produce a coordinated regional response. Watch whether major importers accelerate alternative supply arrangements or whether the economic pressure forces diplomatic movement on the conflict itself.",
+          "headline": "Trump Heads to Beijing in Dealmaking Mode as Chinese Hegemony Consolidates",
+          "summary": "President Trump's summit with Xi Jinping centers on trade, Taiwan, and the Iran war, with Beijing holding significant leverage through rare-earth export controls that expose deep U.S. vulnerabilities. Analysts note that China's regional dominance in Asia is increasingly difficult to dismiss as theoretical, with American credibility strained by the Iran conflict and trade turbulence. Watch whether Trump extracts concrete concessions or returns with symbolic agreements that obscure a weakened U.S. negotiating position.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/11/us-iran-war-diesel-fuel-energy-economy/"
+          "url": "https://foreignpolicy.com/2026/05/12/trump-xi-china-summit-visit-taiwan-trade-japan/"
         },
         {
-          "headline": "Russia Pockets Billions as U.S. Iran Policy Drives Up Oil Revenue for Moscow",
-          "summary": "Tighter global oil supply caused by the Iran war is delivering a significant windfall to Russia, partially offsetting the pressure Western sanctions were designed to maintain. This dynamic undermines the Ukraine war effort indirectly, as Moscow gains fiscal headroom precisely when Western support for Kyiv is under political strain. The strategic irony is acute: U.S. military action against Iran may be subsidizing Russian operations in Ukraine.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/11/iran-war-russia-putin-trump-ukraine-oil/"
-        },
-        {
-          "headline": "China's Oil Vulnerability Exposed by Hormuz Closure and Western Insurance Controls",
-          "summary": "The Hormuz crisis has sharpened Beijing's longstanding Malacca Dilemma, but a less-discussed chokepoint may matter more: Western-dominated maritime insurance markets can deny coverage to tankers carrying Chinese oil more efficiently than any naval blockade. This gives Washington and its allies asymmetric economic leverage over Beijing without direct military confrontation. How China responds—through alternative insurance mechanisms, currency arrangements, or accelerated energy diversification—is a key variable to track.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/11/china-oil-economy-insurance-hormuz-strait-malacca-dilemma/"
-        },
-        {
-          "headline": "Turkey-Israel Tensions Mount as Ankara Weighs Military Options Over Syria and Gaza",
-          "summary": "Analysts are taking seriously the prospect of direct military confrontation between NATO member Turkey and Israel, driven by disputes over post-Assad Syria, Palestinian policy, and regional influence. Israeli Prime Minister Netanyahu's posture since December 2025 has hardened Ankara's calculus, and Turkish rearmament signals Erdogan is preparing for contingencies beyond rhetoric. A Turkey-Israel clash would fracture NATO cohesion, complicate U.S. Middle East posture, and create openings for Russian and Iranian influence.",
+          "headline": "UAE Exits OPEC as Iran War Closes Strait of Hormuz, Raising Questions About Cartel's Future",
+          "summary": "The UAE's departure from OPEC on May 1—ending nearly 60 years of membership—is the most consequential exit in the group's history, arriving precisely as the U.S.-Iran war shuts the Strait of Hormuz and sends oil markets into turmoil. The timing suggests Abu Dhabi is positioning itself to act independently on production decisions rather than remain bound by a cartel increasingly unable to enforce discipline. OPEC's relevance now hinges on whether remaining members can coordinate effectively without one of the Gulf's largest producers.",
           "source": "War on the Rocks",
-          "url": "https://warontherocks.com/ankaras-crossroads-rearmament-risk-and-the-prospect-of-war-with-israel/"
+          "url": "https://warontherocks.com/does-opec-still-matter/"
+        },
+        {
+          "headline": "Iran's Hardliners Now Control Policy as Washington Prepares for a Protracted Conflict",
+          "summary": "With moderate factions marginalized and the regime facing existential pressure, Tehran's decision-making is dominated by hardliners who see nothing left to lose in sustaining the conflict with the United States. Analysts argue this dynamic makes a negotiated off-ramp structurally difficult, increasing the probability of a drawn-out war rather than a rapid resolution. The JCPOA's collapse is now a central reference point for debating whether U.S. maximum-pressure strategy created the conditions for the current crisis.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/05/12/mohsen-rezaei-iran-war-hard-liners-trump-nuclear-negotiations/"
+        },
+        {
+          "headline": "Russia and China Wage Legal Warfare to Reshape Arctic Sovereignty",
+          "summary": "Moscow and Beijing are coordinating a sustained lawfare campaign in the Arctic—imposing excessive maritime regulations, contesting Western continental shelf claims, and deploying shadow fleets to evade accountability—mirroring tactics used to gradually normalize Chinese control in the South China Sea. The strategy exploits legal ambiguity to create facts on the ground without triggering a military response from NATO members. As Arctic sea lanes grow strategically vital, Western states face pressure to counter these moves before legal precedents solidify.",
+          "source": "War on the Rocks",
+          "url": "https://warontherocks.com/the-other-border-problem-how-russia-and-chinas-lawfare-threaten-the-arctic/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "U.S. military posture is stretching across multiple fronts simultaneously—active Iran operations with unresolved endgame, a collapsing Ukraine ceasefire, Indo-Pacific power projection, and accelerating drone warfare innovation at home and abroad.",
+      "intro": "U.S. defense policy is in flux across multiple fronts, with major cost revelations, strategic reversals, and growing questions about whether American forces are keeping pace with modern warfare.",
       "items": [
         {
-          "headline": "Trump signals Iran campaign continues despite formal termination notice, munitions stocks under strain",
-          "summary": "Trump's May 1 Congressional notification terminating Operation Epic Fury appears procedural rather than a genuine ceasefire, with the president stating military action against Iran is not finished. The extended USS Gerald R. Ford deployment has forced the Navy to reassess carrier tempo, and mounting concerns over precision munitions depletion add a resource constraint the Pentagon cannot easily ignore. A new poll showing broad public skepticism—including one-third of Republicans—about whether war goals have been clearly articulated adds political pressure to an already ambiguous strategic posture.",
+          "headline": "CBO pegs Golden Dome missile defense cost at $1.2 trillion — seven times Trump's original figure",
+          "summary": "The Congressional Budget Office estimates the proposed national missile defense shield would cost $1.2 trillion to build and sustain over 20 years, nearly double even the CBO's own earlier projection. The gap between this figure and the administration's initial pitch underscores the fiscal credibility problem facing the program before it clears Congress. With the $1.5T defense budget request already under scrutiny, lawmakers will face difficult tradeoffs between Golden Dome and other priorities.",
+          "source": "Defense One",
+          "url": "https://www.defenseone.com/defense-systems/2026/05/golden-dome-cost-trillion-cbo/413485/"
+        },
+        {
+          "headline": "Iran war costs hit $29B with Pentagon seeking more funds and Congress still lacking cost details",
+          "summary": "The Pentagon's latest accounting puts the Iran operation at $29 billion — up $4 billion in just two weeks — driven by equipment repair, replacement, and operational costs. Congress is being asked to weigh this against a $1.5 trillion defense request while the Defense Department has still not provided lawmakers the detailed cost breakdown they've requested. The opacity and rapid cost escalation raise oversight red flags heading into budget negotiations.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/05/11/trump-says-war-on-iran-not-done-but-concerns-rise-about-munitions-shortages/"
+          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/05/12/pentagon-seeks-additional-funding-as-cost-of-iran-war-tops-29-billon/"
         },
         {
-          "headline": "Balikatan exercise delivers multiple missile milestones as Japan, Philippines, U.S., and Canada sink two decommissioned ships",
-          "summary": "The multinational Balikatan exercise achieved significant live-fire benchmarks, including Japan's first-ever sinking of a target vessel using ship-launched missiles in a partner nation's exercise—a notable escalation in Tokyo's regional military engagement. The coordinated two-day strike integrated land, sea, and air platforms across four nations, demonstrating the coalition's ability to prosecute maritime denial operations against PLAN-style surface targets. This signals deepening interoperability among U.S. allies in the South China Sea corridor at a moment of heightened Indo-Pacific tension.",
-          "source": "Defense One - All Content",
-          "url": "https://www.defenseone.com/threats/2026/05/japanese-sinking-philippines-ship-missile/413470/"
-        },
-        {
-          "headline": "Reaper drone successfully employs low-cost air-to-air missiles, pointing toward affordable counter-drone architecture",
-          "summary": "The Air Force demonstrated an MQ-9 Reaper destroying aerial targets using inexpensive air-to-air missiles, a capability test driven by the need to cost-effectively neutralize cheap adversary drones without expending high-value interceptors. The test parallels the selection of five U.S. bases for a directed-energy anti-drone pilot program, two of which are on the southern border, reflecting a dual-threat calculus that encompasses both near-peer conflict and domestic airspace security. Taken together, these moves indicate the Pentagon is accelerating toward a layered, cost-asymmetric drone defense posture.",
-          "source": "Defense One - All Content",
-          "url": "https://www.defenseone.com/defense-systems/2026/05/air-force-missiles-reaper-drones/413469/"
-        },
-        {
-          "headline": "Ukraine-Russia ceasefire collapses immediately as Navy mulls overseas shipbuilding to rebuild depleted capacity",
-          "summary": "Fighting continued along the front line throughout the May 9–11 Trump-brokered ceasefire window, with both sides reporting violations, undermining U.S. diplomatic credibility and suggesting neither party is prepared for a negotiated pause. Separately, the Navy's new shipbuilding strategy explicitly opens the door to constructing vessels in allied foreign yards—a significant doctrinal shift that reflects domestic industrial base limitations exposed by the Iran campaign and sustained Indo-Pacific demands. The two developments together underscore the gap between current U.S. military commitments and available capacity in both personnel and materiel.",
+          "headline": "Army Secretary acknowledges U.S. battlefield network integration lags behind Ukraine",
+          "summary": "Army Secretary Dan Driscoll told Congress that Ukraine has surpassed the U.S. military in integrating battlefield networks — a striking admission given the volume of American investment in command-and-control technology. The statement adds urgency to ongoing Army transformation debates, particularly as Hegseth is now reviewing and potentially rolling back elements of the Army Transformation Initiative launched just a year ago. The combination of admitted capability gaps and policy reversal signals strategic uncertainty at the top of Army leadership.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/05/11/ukraine-and-russia-fight-on-despite-us-mediated-ceasefire/"
+          "url": "https://www.militarytimes.com/news/your-military/2026/05/13/ukraines-battlefield-integration-surpasses-us-militarys-army-secretary-says/"
+        },
+        {
+          "headline": "Navy's 30-year shipbuilding plan formally incorporates drone vessels, targeting 450-hull fleet by 2031",
+          "summary": "For the first time, unmanned surface vessels are embedded in the Navy's long-range shipbuilding blueprint, with planners projecting a 450-hull fleet within five years. The inclusion formalizes a strategic shift toward distributed, lower-cost maritime assets that has been debated for years but lacked official planning commitment. How drone boats are funded alongside traditional capital ships — especially under a constrained budget — will be the critical near-term test of whether this vision is strategy or aspiration.",
+          "source": "Defense One",
+          "url": "https://www.defenseone.com/defense-systems/2026/05/drone-boats-navy-shipbuilding-plan/413504/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Today's intelligence picture is dominated by open-source investigations linking extremist networks to political figures, critical infrastructure failures enabling prolonged threat actor access, and regulatory delays that leave supply chain vulnerabilities unaddressed.",
+      "intro": "Open-source verification, surveillance technology exports, and ransomware disclosures dominate today's intelligence picture, with industrial targets and conflict-zone resource control drawing the most analytical attention.",
       "items": [
         {
-          "headline": "Bellingcat Links Colombian Political Candidate to Neo-Nazi Active Club Network",
-          "summary": "A joint Bellingcat and Colombian outlet Cerosetenta investigation has traced connections between a Colombian political candidate and the Active Club movement, a transnational neo-Nazi organizing model. The use of open-source video, imagery, and logo analysis to surface these links illustrates how OSINT tradecraft is increasingly being applied to far-right network mapping outside traditional Western contexts. Analysts should watch for similar Active Club expansion patterns across Latin America, where the movement has been growing with limited scrutiny.",
+          "headline": "OSINT Investigation Confirms Deadly Landslides at M23-Controlled Coltan Mines in DRC",
+          "summary": "Bellingcat has geoverified at least four landslides at the Rubaya coltan mines in eastern DRC since early 2026, with casualties in the hundreds, at sites now under control of the Rwandan-backed M23 armed group. The findings matter because coltan is a critical mineral in consumer electronics and EVs, meaning supply chain exposure to conflict-controlled extraction is documentable and traceable. Watch for downstream pressure on tech manufacturers and potential sanctions implications as open-source evidence accumulates.",
           "source": "Bellingcat",
-          "url": "https://www.bellingcat.com/news/2026/05/11/active-club-colombia-politics/"
+          "url": "https://www.bellingcat.com/news/africa/2026/05/12/congos-coltan-belt-verifying-deadly-landslides-at-mines-under-m23-control/"
         },
         {
-          "headline": "UK Water Utility Harbored Cl0p Ransomware Actors Undetected for Nearly Two Years",
-          "summary": "South Staffordshire Water was fined £963,900 after regulators found the Cl0p ransomware group operated inside its network for close to two years before the breach was detected, ultimately exposing data on over 633,000 customers and employees. The dwell time underscores persistent detection failures in critical infrastructure sectors that often lack mature security operations capabilities. This case reinforces the need for continuous network monitoring in utilities, where extended attacker presence can precede catastrophic operational or data impacts.",
+          "headline": "European Surveillance Tech Continues Flowing to Human Rights Abusers Despite 2021 Export Rules",
+          "summary": "A Human Rights Watch report finds EU member states are still exporting surveillance technology to countries with documented human rights abuses, with the European Commission failing to enforce the updated dual-use export regulations adopted in 2021. This represents both a policy enforcement failure and an intelligence concern, as adversarial or repressive regimes acquiring European-origin surveillance capabilities can direct them against dissidents, journalists, and foreign nationals. The gap between regulation and enforcement is the key issue to track as Brussels faces pressure to tighten oversight.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/uk-water-company-had-hackers-lurking-for-years"
+          "url": "https://therecord.media/eu-countries-export-surveillance-tech-to-countries-with-human-rights-issues"
         },
         {
-          "headline": "FCC Delays Ban on Security Updates for Foreign Routers and Drones Until 2029",
-          "summary": "The FCC has pushed back a rule that would have restricted security updates for foreign-manufactured routers and drones from 2027 to January 2029, extending the window during which potentially compromised devices remain in operational use across U.S. networks. The delay is significant given ongoing concerns about Chinese-manufactured networking equipment being used as persistent access vectors by state-linked threat actors. Supply chain risk managers should treat the extended timeline as a gap requiring compensating controls rather than regulatory assurance.",
+          "headline": "West Pharmaceutical Discloses Ransomware Breach Involving Data Theft and System Encryption",
+          "summary": "West Pharmaceutical Services, a major supplier of drug delivery components, filed an SEC disclosure confirming a May 4 ransomware intrusion in which attackers both exfiltrated data and encrypted systems, disrupting business operations. The targeting of pharmaceutical supply chain infrastructure is a high-consequence pattern, given the company's role in manufacturing components used in injectable drug packaging and delivery systems. The SEC filing obligation means more details will likely surface; watch for attribution and ransom payment disclosures.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/fcc-pushes-ban-on-updates-to-foreign-routers-drones-2029"
+          "url": "https://therecord.media/west-pharmaceutical-warns-of-ransomware-attack-impacting-operations"
         },
         {
-          "headline": "Second Major Linux Kernel Privilege Escalation Flaw in Two Weeks Raises Systemic Concerns",
-          "summary": "A new Linux kernel vulnerability dubbed 'Dirty Frag' has been disclosed, allowing any local user to escalate to full administrative control—the second such critical flaw in the same kernel subsystem within a fortnight. The clustering of high-severity bugs in the same code region suggests either concentrated researcher attention or underlying architectural weaknesses that may yield further discoveries. Organizations running Linux on multi-user or shared infrastructure should prioritize patch deployment and audit for indicators of local exploitation attempts.",
+          "headline": "Foxconn Confirms Cyberattack Hitting Multiple North American Manufacturing Sites",
+          "summary": "Foxconn has acknowledged a cyberattack affecting its North American factory network, which spans facilities across Wisconsin, Ohio, Texas, Virginia, Indiana, and Mexico, though the company has not disclosed the number of sites affected or the nature of the intrusion. Given Foxconn's role as a tier-one electronics manufacturer for major global brands, any operational disruption carries supply chain risk beyond the company itself. The lack of transparency from Foxconn makes it difficult to assess scope, and attribution has not been publicly established.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/dirty-frag-linux-kernel-hit-by-second-major-bug"
+          "url": "https://therecord.media/foxconn-confirms-cyberattack-north-american-factories"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 43,
-    "articles_reviewed": 88,
+    "articles_reviewed": 99,
     "items_published": 16
   }
 }
