@@ -1,137 +1,137 @@
 {
-  "date": "2026-05-13",
-  "generated_at": "2026-05-13T06:04:28.265351+00:00",
-  "issue": 10,
-  "executive_summary": "Today's intelligence picture is defined by two converging pressures: accelerating adversarial activity across both cyber and physical domains, and a U.S. national security posture that is simultaneously overextended and underfunded. The ransomware strikes on West Pharmaceutical Services and Foxconn, both confirmed across multiple reporting channels, suggest a coordinated or at minimum opportunistic campaign targeting critical manufacturing infrastructure at a moment when U.S. military and industrial capacity is already strained by an active Iran conflict costing $29 billion and climbing. China and Russia are exploiting this window strategically — Beijing consolidating regional hegemony as Trump arrives in a weakened negotiating posture, while Moscow and Beijing jointly pursue legal mechanisms to reshape Arctic sovereignty, a long-game maneuver that carries little short-term cost while U.S. attention and resources are absorbed elsewhere. Underlying all of this is a systemic readiness concern: the Army acknowledges its battlefield network integration lags behind Ukraine's, the Golden Dome program carries a price tag seven times the stated figure, and Congress still lacks basic cost transparency on the Iran campaign, meaning U.S. decision-makers are operating under compounding strategic and fiscal blind spots precisely when adversaries are moving with coordinated intent.",
+  "date": "2026-05-14",
+  "generated_at": "2026-05-14T06:02:09.667163+00:00",
+  "issue": 11,
+  "executive_summary": "Today's intelligence picture is defined by a growing tension between accelerating technological capability and the institutional and strategic frameworks struggling to keep pace with it. The cyber domain illustrates this most sharply, with AI-driven vulnerability disclosure outrunning patch cycles, a new ransomware affiliate network expanding the criminal attack surface, and a critical zero-click exploit on widely deployed consumer hardware, all arriving simultaneously with the first meaningful cybercrime legal reform in the UK in over three decades. This technology-outpacing-governance dynamic extends into the military sphere, where AI is already influencing combat outcomes in Iran operations even as the Navy faces a funding cliff and the Army is quietly reducing its European footprint, signaling a strategic posture that is shifting inward at precisely the moment U.S. adversaries are probing for gaps. The geopolitical threads reinforce this vulnerability: Iran remains weeks from weapons-grade uranium despite a U.S. military strike, a U.S.-Iran ceasefire holds in name only, Pakistan's nuclear doctrine is evolving toward more dangerous thresholds, and the Trump administration is subordinating all of these security concerns to trade priorities in Beijing. Taken together, the picture is one of compressing timelines across multiple domains simultaneously, with cyber actors, nuclear states, and non-state armed groups all moving faster than the policy and resource responses currently being assembled to meet them.",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "A heavy patch cycle dominated by AI-assisted vulnerability discovery coincides with high-profile ransomware and cyberattack disclosures against major manufacturers.",
+      "intro": "Today's cyber landscape is defined by active exploitation research, a maturing ransomware-as-a-service ecosystem, and legislative moves that will reshape how defenders and researchers operate.",
       "items": [
         {
-          "headline": "Microsoft, Apple, and others release unusually large patch volumes amid AI-driven bug discovery",
-          "summary": "Microsoft's May 2026 Patch Tuesday addresses 112 vulnerabilities including 16 critical, while Apple separately patched 82 CVEs across three macOS versions. Analysts note that AI tools are accelerating the rate at which security flaws are found in production code, compressing patch cycles across the industry. No vulnerabilities are currently confirmed as actively exploited, but the sheer volume raises prioritization pressure for security teams.",
-          "source": "Krebs on Security",
-          "url": "https://krebsonsecurity.com/2026/05/patch-tuesday-may-2026-edition/"
+          "headline": "Google Project Zero chains two exploits for zero-click root access on Pixel 10",
+          "summary": "Google's Project Zero team successfully developed a zero-click exploit chain targeting the Pixel 10, building on a prior chain against the Pixel 9 that leveraged a Dolby vulnerability patched in January 2026. The research demonstrates that even with one attack surface closed, determined researchers can find equivalent paths to full device compromise. This matters beyond Google: it signals that zero-click, zero-interaction Android exploitation remains a realistic threat model for high-value targets.",
+          "source": "Project Zero",
+          "url": "https://projectzero.google/2026/05/pixel-10-exploit.html"
         },
         {
-          "headline": "West Pharmaceutical Services hit by ransomware, data stolen and systems encrypted",
-          "summary": "West Pharmaceutical Services disclosed via an SEC filing that attackers breached its network on May 4, exfiltrating data before encrypting systems — a classic double-extortion pattern. The company manufactures drug delivery components, making operational disruption a potential downstream risk to pharmaceutical supply chains. Watch for ransom demands and whether the stolen data surfaces on leak sites.",
+          "headline": "Microsoft on track to shatter its own annual vulnerability record as AI accelerates patch volume",
+          "summary": "Microsoft has patched over 500 vulnerabilities in just five months of 2026, putting it on pace to exceed any prior annual total — a trend analysts attribute partly to AI-assisted code auditing surfacing flaws faster. The sheer volume strains enterprise patch management operations, widening the window of exposure for organizations that cannot keep pace. Watch whether the severity distribution shifts alongside the volume increase, which would be the more dangerous signal.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/west-pharmaceutical-warns-of-ransomware-attack-impacting-operations"
+          "url": "https://therecord.media/microsoft-on-pace-to-break-annual-vulnerability-record-ai"
         },
         {
-          "headline": "Foxconn confirms cyberattack affecting North American manufacturing operations",
-          "summary": "Foxconn acknowledged a cyberattack disrupting factories across multiple U.S. states and Mexico, though it withheld specifics on the scope of impact. Given Foxconn's role as a critical electronics contract manufacturer, even limited operational disruption carries supply chain implications. The nature of the attack — ransomware, espionage, or other — has not been publicly confirmed.",
+          "headline": "New 'Gentlemen' ransomware-as-a-service group targets enterprises through affiliate recruitment",
+          "summary": "Check Point Research has profiled The Gentlemen, a RaaS operation that emerged in mid-2025 and is actively recruiting technically skilled affiliates — including penetration testers — via underground forums. The group's data leak site already lists multiple victims in 2026, indicating it has moved beyond recruitment into active operations. The deliberate targeting of pen testers as affiliates is a notable tactic, potentially lowering the technical barrier for high-sophistication intrusions.",
+          "source": "Check Point Research",
+          "url": "https://research.checkpoint.com/2026/thus-spoke-the-gentlemen/"
+        },
+        {
+          "headline": "UK proposes legal protections for security researchers in first major Computer Misuse Act reform since 1990",
+          "summary": "The UK government has outlined plans to update the Computer Misuse Act 1990 as part of its national security legislative package, with explicit provisions to shield good-faith security researchers from criminal liability. The current law's broad language has long deterred legitimate vulnerability disclosure and bug bounty participation in the UK. If passed, the reform would bring UK law closer to frameworks already operating in the US and EU, and could meaningfully expand the pool of researchers willing to disclose domestically.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/foxconn-confirms-cyberattack-north-american-factories"
-        },
-        {
-          "headline": "CISA and G7 partners release joint guidance on AI software transparency requirements",
-          "summary": "CISA and G7 allies published minimum element standards for Software Bills of Materials applied to AI systems, aiming to improve supply chain visibility for AI-integrated products. The guidance reflects growing concern that opaque AI dependencies create unmanaged risk in both public and private sector deployments. Organizations building or procuring AI-enabled software should treat this as an early signal of incoming compliance expectations.",
-          "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/resources-tools/resources/software-bill-materials-ai-minimum-elements"
+          "url": "https://therecord.media/uk-moves-to-shield-security-researchers-cybercrime"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "The Trump-Xi summit in Beijing dominates the global stage as the U.S.-Iran war reshapes energy markets, tests alliances, and hardens Tehran's resolve.",
+      "intro": "A Trump-Xi summit in Beijing, a fragile U.S.-Iran ceasefire, and escalating South Asian nuclear signaling define a geopolitical landscape under acute stress across multiple theaters simultaneously.",
       "items": [
         {
-          "headline": "Trump Heads to Beijing in Dealmaking Mode as Chinese Hegemony Consolidates",
-          "summary": "President Trump's summit with Xi Jinping centers on trade, Taiwan, and the Iran war, with Beijing holding significant leverage through rare-earth export controls that expose deep U.S. vulnerabilities. Analysts note that China's regional dominance in Asia is increasingly difficult to dismiss as theoretical, with American credibility strained by the Iran conflict and trade turbulence. Watch whether Trump extracts concrete concessions or returns with symbolic agreements that obscure a weakened U.S. negotiating position.",
+          "headline": "Trump Heads to Beijing with Trade as the Singular Priority, Security Issues Sidelined",
+          "summary": "Trump is expected to pursue new trade deals on rare earths and AI during his Beijing summit with Xi, deliberately downplaying flashpoints like Taiwan, human rights, and military competition to secure economic wins. Both leaderships are assessed as overestimating their own leverage, raising the risk that any agreement will be shallower and more fragile than publicly presented. Watch for whether rare earth export controls are formally eased and how Congress and U.S. allies respond to any concessions made.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/12/trump-xi-china-summit-visit-taiwan-trade-japan/"
+          "url": "https://foreignpolicy.com/2026/05/13/trump-china-xi-jinping-summit-trade-rare-earths-artificial-intelligence/"
         },
         {
-          "headline": "UAE Exits OPEC as Iran War Closes Strait of Hormuz, Raising Questions About Cartel's Future",
-          "summary": "The UAE's departure from OPEC on May 1—ending nearly 60 years of membership—is the most consequential exit in the group's history, arriving precisely as the U.S.-Iran war shuts the Strait of Hormuz and sends oil markets into turmoil. The timing suggests Abu Dhabi is positioning itself to act independently on production decisions rather than remain bound by a cartel increasingly unable to enforce discipline. OPEC's relevance now hinges on whether remaining members can coordinate effectively without one of the Gulf's largest producers.",
-          "source": "War on the Rocks",
-          "url": "https://warontherocks.com/does-opec-still-matter/"
-        },
-        {
-          "headline": "Iran's Hardliners Now Control Policy as Washington Prepares for a Protracted Conflict",
-          "summary": "With moderate factions marginalized and the regime facing existential pressure, Tehran's decision-making is dominated by hardliners who see nothing left to lose in sustaining the conflict with the United States. Analysts argue this dynamic makes a negotiated off-ramp structurally difficult, increasing the probability of a drawn-out war rather than a rapid resolution. The JCPOA's collapse is now a central reference point for debating whether U.S. maximum-pressure strategy created the conditions for the current crisis.",
+          "headline": "U.S.-Iran Ceasefire Holds in Name Only as Structural Vulnerabilities Persist",
+          "summary": "A mediation analyst warns the current U.S.-Iran ceasefire lacks the verification mechanisms and mutual confidence-building measures needed to prevent collapse, while Congress remains constitutionally sidelined from constraining executive war-making due to decades of legislative erosion. The Strait of Hormuz crisis—triggered in part by the conflict—is simultaneously exposing the limits of U.S. Indo-Pacific partnerships, with South Korea and other Asian nations declining to commit naval assets despite being the primary economic victims of the waterway's closure. The combination of a fragile ceasefire and absent allied burden-sharing significantly narrows Washington's escalation management options.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/12/mohsen-rezaei-iran-war-hard-liners-trump-nuclear-negotiations/"
+          "url": "https://foreignpolicy.com/2026/05/13/cease-fire-definition-meaning-iran-war-trump/"
         },
         {
-          "headline": "Russia and China Wage Legal Warfare to Reshape Arctic Sovereignty",
-          "summary": "Moscow and Beijing are coordinating a sustained lawfare campaign in the Arctic—imposing excessive maritime regulations, contesting Western continental shelf claims, and deploying shadow fleets to evade accountability—mirroring tactics used to gradually normalize Chinese control in the South China Sea. The strategy exploits legal ambiguity to create facts on the ground without triggering a military response from NATO members. As Arctic sea lanes grow strategically vital, Western states face pressure to counter these moves before legal precedents solidify.",
+          "headline": "Pakistan's Deliberate Nuclear Restraint in India Conflict Points to a More Dangerous Escalation Doctrine",
+          "summary": "During May 2025 Indian BrahMos strikes on Pakistani air bases, Islamabad chose to withhold its Babur cruise missile specifically because its dual-use capability risked being misread as nuclear signaling—a calculated restraint that reveals a new and more complex escalation logic in South Asia. This doctrine of managed ambiguity may reduce accidental nuclear escalation in one scenario while creating dangerous new thresholds in others, as each side calibrates responses based on assumptions about the other's red lines. Analysts should watch whether this precedent hardens into formal doctrine and how India interprets Pakistani restraint in future crisis planning.",
           "source": "War on the Rocks",
-          "url": "https://warontherocks.com/the-other-border-problem-how-russia-and-chinas-lawfare-threaten-the-arctic/"
+          "url": "https://warontherocks.com/pakistans-new-logic-of-limited-war-may-not-keep-war-limited/"
+        },
+        {
+          "headline": "Mali's Security Collapse Exposes Critical Flaws in Russia's Mercenary Model in the Sahel",
+          "summary": "Recent violence in Mali has laid bare the structural inadequacy of Wagner-style mercenary forces as a substitute for state-building and legitimate security sector reform. Moscow's model—trading military presence for political influence and resource access—has failed to deliver durable stability, undermining its appeal to other African governments considering similar arrangements. This erosion of the Russian security brand in the Sahel could create openings for competing actors but also risks prolonged instability in a region already under severe humanitarian pressure.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/05/13/mali-attacks-security-russia-france-partnership-sahel/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "U.S. defense policy is in flux across multiple fronts, with major cost revelations, strategic reversals, and growing questions about whether American forces are keeping pace with modern warfare.",
+      "intro": "U.S. military posture is under simultaneous pressure from Iran's near-nuclear status, a surprise European drawdown, Navy budget crisis, and combat-driven innovation in the Indo-Pacific.",
       "items": [
         {
-          "headline": "CBO pegs Golden Dome missile defense cost at $1.2 trillion — seven times Trump's original figure",
-          "summary": "The Congressional Budget Office estimates the proposed national missile defense shield would cost $1.2 trillion to build and sustain over 20 years, nearly double even the CBO's own earlier projection. The gap between this figure and the administration's initial pitch underscores the fiscal credibility problem facing the program before it clears Congress. With the $1.5T defense budget request already under scrutiny, lawmakers will face difficult tradeoffs between Golden Dome and other priorities.",
-          "source": "Defense One",
-          "url": "https://www.defenseone.com/defense-systems/2026/05/golden-dome-cost-trillion-cbo/413485/"
-        },
-        {
-          "headline": "Iran war costs hit $29B with Pentagon seeking more funds and Congress still lacking cost details",
-          "summary": "The Pentagon's latest accounting puts the Iran operation at $29 billion — up $4 billion in just two weeks — driven by equipment repair, replacement, and operational costs. Congress is being asked to weigh this against a $1.5 trillion defense request while the Defense Department has still not provided lawmakers the detailed cost breakdown they've requested. The opacity and rapid cost escalation raise oversight red flags heading into budget negotiations.",
+          "headline": "Navy Faces Potential Funding Collapse by July, CNO Tells Congress",
+          "summary": "Chief of Naval Operations Adm. Daryl Caudle warned lawmakers that the Navy may exhaust its operating budget as early as July, potentially forcing cutbacks to training and fleet operations. This comes as the service is already absorbing MQ-9 combat losses from Operation Epic Fury against Iran, with the Reaper fleet down to 135 aircraft. The convergence of a budget cliff and active combat attrition signals a readiness crisis that Congress cannot defer.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/05/12/pentagon-seeks-additional-funding-as-cost-of-iran-war-tops-29-billon/"
+          "url": "https://www.militarytimes.com/news/your-navy/2026/05/13/us-navy-could-run-out-of-money-by-july-top-officer-warns/"
         },
         {
-          "headline": "Army Secretary acknowledges U.S. battlefield network integration lags behind Ukraine",
-          "summary": "Army Secretary Dan Driscoll told Congress that Ukraine has surpassed the U.S. military in integrating battlefield networks — a striking admission given the volume of American investment in command-and-control technology. The statement adds urgency to ongoing Army transformation debates, particularly as Hegseth is now reviewing and potentially rolling back elements of the Army Transformation Initiative launched just a year ago. The combination of admitted capability gaps and policy reversal signals strategic uncertainty at the top of Army leadership.",
+          "headline": "Army Abruptly Cancels 4,000-Troop Deployment to Poland, Reverting to Pre-Ukraine Invasion Levels",
+          "summary": "The U.S. Army has halted a planned deployment to Poland with no public explanation, reducing American troop presence in Europe to levels not seen since before Russia's 2022 invasion of Ukraine. The timing raises immediate questions about U.S. commitment to NATO's eastern flank at a moment of continued Russian aggression. Allies dependent on forward U.S. presence for deterrence will be watching closely for whether this reflects budget constraints, a strategic pivot, or a political signal.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-military/2026/05/13/ukraines-battlefield-integration-surpasses-us-militarys-army-secretary-says/"
+          "url": "https://www.militarytimes.com/news/your-army/2026/05/13/us-army-abruptly-cancels-deployment-of-4000-soldiers-to-poland/"
         },
         {
-          "headline": "Navy's 30-year shipbuilding plan formally incorporates drone vessels, targeting 450-hull fleet by 2031",
-          "summary": "For the first time, unmanned surface vessels are embedded in the Navy's long-range shipbuilding blueprint, with planners projecting a 450-hull fleet within five years. The inclusion formalizes a strategic shift toward distributed, lower-cost maritime assets that has been debated for years but lacked official planning commitment. How drone boats are funded alongside traditional capital ships — especially under a constrained budget — will be the critical near-term test of whether this vision is strategy or aspiration.",
-          "source": "Defense One",
-          "url": "https://www.defenseone.com/defense-systems/2026/05/drone-boats-navy-shipbuilding-plan/413504/"
+          "headline": "Iran Remains Weeks Away from Weapons-Grade Uranium Despite U.S. Military Operation",
+          "summary": "Energy Secretary Chris Wright told a Senate committee that Iran is only a small number of weeks from enriching uranium to weapons grade, even after Operation Epic Fury struck Iranian targets. The admission underscores that military strikes have degraded but not eliminated Iran's nuclear timeline, keeping the proliferation threat acute. Decision-makers now face a narrow window to determine whether diplomatic, economic, or further military options can close the remaining gap.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/05/13/energy-secretary-iran-frighteningly-close-to-nuclear-weapon-despite-operation-epic-fury/"
+        },
+        {
+          "headline": "AI Tool Credited with Preserving Aircraft Losses During Iran Combat Operations",
+          "summary": "AFSOC commander Lt. Gen. Michael Conley stated that a machine learning tool has demonstrably reduced aircraft losses during Operation Epic Fury, describing its rapid battlefield adoption as combat-driven necessity. The disclosure is notable as one of the first specific operational claims about AI preventing U.S. asset attrition in active conflict. If validated, it will accelerate service-wide pressure to field similar AI decision-support systems across other combat domains.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/news/your-military/2026/05/13/ai-tool-has-saved-a-lot-of-aircraft-in-epic-fury-afsoc-chief-says/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Open-source verification, surveillance technology exports, and ransomware disclosures dominate today's intelligence picture, with industrial targets and conflict-zone resource control drawing the most analytical attention.",
+      "intro": "Today's intelligence picture is shaped by law enforcement action against dark web infrastructure, a surge in Microsoft vulnerability disclosures, and a landmark shift in UK cyber law that could redefine the legal standing of security researchers.",
       "items": [
         {
-          "headline": "OSINT Investigation Confirms Deadly Landslides at M23-Controlled Coltan Mines in DRC",
-          "summary": "Bellingcat has geoverified at least four landslides at the Rubaya coltan mines in eastern DRC since early 2026, with casualties in the hundreds, at sites now under control of the Rwandan-backed M23 armed group. The findings matter because coltan is a critical mineral in consumer electronics and EVs, meaning supply chain exposure to conflict-controlled extraction is documentable and traceable. Watch for downstream pressure on tech manufacturers and potential sanctions implications as open-source evidence accumulates.",
-          "source": "Bellingcat",
-          "url": "https://www.bellingcat.com/news/africa/2026/05/12/congos-coltan-belt-verifying-deadly-landslides-at-mines-under-m23-control/"
+          "headline": "Alleged Administrator of Dark Web Marketplace Dream Market Arrested in Germany",
+          "summary": "Owe Martin Andresen, alleged co-founder of Dream Market — one of the largest criminal online marketplaces since its 2013 launch — has been arrested in Germany following a US federal indictment. The takedown signals continued transatlantic law enforcement coordination targeting legacy dark web infrastructure operators. Analysts should watch for potential cooperation agreements that could expose additional platform participants.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/dream-market-admin-arrested-in-germany"
         },
         {
-          "headline": "European Surveillance Tech Continues Flowing to Human Rights Abusers Despite 2021 Export Rules",
-          "summary": "A Human Rights Watch report finds EU member states are still exporting surveillance technology to countries with documented human rights abuses, with the European Commission failing to enforce the updated dual-use export regulations adopted in 2021. This represents both a policy enforcement failure and an intelligence concern, as adversarial or repressive regimes acquiring European-origin surveillance capabilities can direct them against dissidents, journalists, and foreign nationals. The gap between regulation and enforcement is the key issue to track as Brussels faces pressure to tighten oversight.",
+          "headline": "Microsoft Projected to Set Annual Vulnerability Patching Record Amid AI-Accelerated Disclosure Pace",
+          "summary": "With over 500 vulnerabilities patched in just the first five months of 2026, Microsoft is on track to surpass its annual record — a trend analysts attribute in part to AI-assisted vulnerability discovery accelerating the pace of both research and disclosure. The volume creates compounding pressure on enterprise patch management teams who must triage and deploy fixes faster than ever. Organizations relying on Microsoft products should reassess their patch cadence and prioritization frameworks given this trajectory.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/eu-countries-export-surveillance-tech-to-countries-with-human-rights-issues"
+          "url": "https://therecord.media/microsoft-on-pace-to-break-annual-vulnerability-record-ai"
         },
         {
-          "headline": "West Pharmaceutical Discloses Ransomware Breach Involving Data Theft and System Encryption",
-          "summary": "West Pharmaceutical Services, a major supplier of drug delivery components, filed an SEC disclosure confirming a May 4 ransomware intrusion in which attackers both exfiltrated data and encrypted systems, disrupting business operations. The targeting of pharmaceutical supply chain infrastructure is a high-consequence pattern, given the company's role in manufacturing components used in injectable drug packaging and delivery systems. The SEC filing obligation means more details will likely surface; watch for attribution and ransom payment disclosures.",
+          "headline": "UK Proposes Legal Protections for Security Researchers in First Major Cybercrime Law Reform in Decades",
+          "summary": "Proposed amendments to the UK's Computer Misuse Act 1990, tabled alongside the King's Speech, would introduce explicit legal safe harbors for good-faith security researchers — a protection long sought by the infosec community. The reform is part of a broader national security legislative package and represents a significant shift in how the UK intends to treat defensive cyber activity. If enacted, the changes could encourage more domestic vulnerability research and reduce legal exposure for professionals currently operating in a legal grey zone.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/west-pharmaceutical-warns-of-ransomware-attack-impacting-operations"
+          "url": "https://therecord.media/uk-moves-to-shield-security-researchers-cybercrime"
         },
         {
-          "headline": "Foxconn Confirms Cyberattack Hitting Multiple North American Manufacturing Sites",
-          "summary": "Foxconn has acknowledged a cyberattack affecting its North American factory network, which spans facilities across Wisconsin, Ohio, Texas, Virginia, Indiana, and Mexico, though the company has not disclosed the number of sites affected or the nature of the intrusion. Given Foxconn's role as a tier-one electronics manufacturer for major global brands, any operational disruption carries supply chain risk beyond the company itself. The lack of transparency from Foxconn makes it difficult to assess scope, and attribution has not been publicly established.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/foxconn-confirms-cyberattack-north-american-factories"
+          "headline": "UAE Deploys Large-Scale Physical Drone Countermeasures Around Critical Energy Infrastructure",
+          "summary": "The UAE is constructing substantial metal cage structures — known as 'cope cages' — over key oil and gas facilities following Iranian drone and missile strikes that have caused significant infrastructure damage. The deployment reflects a broader regional shift toward layered passive and active drone defense as low-cost aerial threats outpace traditional air defense economics. This development is an intelligence indicator of how state and near-peer actors are adapting physical security doctrine in response to drone warfare lessons from multiple active conflict zones.",
+          "source": "The War Zone",
+          "url": "https://www.twz.com/news-features/uae-building-massive-cope-cages-to-protect-energy-facilities-from-iranian-drone-attacks"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 43,
-    "articles_reviewed": 99,
+    "articles_reviewed": 90,
     "items_published": 16
   }
 }
