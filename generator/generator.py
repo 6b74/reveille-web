@@ -119,13 +119,17 @@ def generate_executive_summary(sections):
 def generate_brief(feeds_by_section, issue_number):
     today = datetime.now(timezone.utc)
     sections = []
+    used_urls = set()
 
-    for section_id in ["cyber", "geopolitical", "military", "intel_osint"]:
+    for section_id in ["cyber", "geopolitical", "military", "intel_osint", "ics_scada_ot"]:
         print(f"  generating {section_id}...")
         articles = feeds_by_section.get(section_id, [])
+        articles = [a for a in articles if a["url"] not in used_urls]
         section = generate_section(section_id, articles)
         if section:
             sections.append(section)
+            for item in section.get("items", []):
+                used_urls.add(item["url"])
 
     print("  generating executive summary...")
     exec_summary = generate_executive_summary(sections)

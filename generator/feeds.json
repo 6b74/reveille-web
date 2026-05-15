@@ -48,7 +48,7 @@
     "http://little-canada.org/feeds/output/synacktiv-publications.rss",
     "https://therecord.media/feed/"
   ],
-  "ICS/SCADA/OT": [
+  "ics_scada_ot": [
     "https://www.securityweek.com/feed/",
     "https://www.darkreading.com/ics-ot-security",
     "https://industrialcyber.co/feed/",
