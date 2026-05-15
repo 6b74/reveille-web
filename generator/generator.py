@@ -9,6 +9,7 @@ SECTION_TITLES = {
     "geopolitical": "Geopolitical",
     "military": "Military",
     "intel_osint": "Intel / OSINT",
+    "ics_scada_ot": "ICS / SCADA / OT",
 }
 
 SECTION_PROMPT = """You are an intelligence analyst writing a daily brief for a public-facing website.
