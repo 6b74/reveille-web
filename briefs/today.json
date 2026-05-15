@@ -1,35 +1,35 @@
 {
   "date": "2026-05-15",
-  "generated_at": "2026-05-15T17:07:53.554581+00:00",
-  "issue": 14,
-  "executive_summary": "Today's intelligence picture is defined by converging technological and geopolitical pressures that are straining both U.S. defensive capacity and alliance credibility simultaneously. The Cisco SD-WAN vulnerability thread is the most operationally urgent cross-cutting issue, appearing across both the cyber and OT/ICS sectors, with sophisticated actor UAT-8616 actively exploiting the flaw and ransomware groups accelerating attacks on industrial infrastructure at precisely the moment AI-accelerated vulnerability discovery is threatening to outpace enterprise and federal patching cycles. The Trump-Xi summit's failure to produce breakthroughs on Taiwan, trade, or Iran — paired with Xi's direct warning that Taiwan missteps risk military confrontation — suggests U.S.-China competition is entering a more overtly coercive phase, a context that makes the CMU finding on China-linked risks to U.S. energy grid infrastructure and the supply chain compromise of widely-used developer tools strategically significant rather than incidental. Domestically, institutional reliability is quietly emerging as a second-order concern: the GAO finding that the Air Force is masking maintenance failures with revised metrics, NATO's identified gaps in ground robot integration, and CENTCOM publicly contradicting open-source assessments on Iran's arsenal all point to a pattern of measurement and transparency problems inside Western defense establishments at a moment when accurate threat assessment is most critical.",
+  "generated_at": "2026-05-15T17:32:17.870211+00:00",
+  "issue": 15,
+  "executive_summary": "Today's intelligence picture is defined by two converging strategic pressures: accelerating technical vulnerability across critical infrastructure and a geopolitical environment where the major flashpoints — U.S.-China, the Middle East, and European cohesion — remain unresolved and actively deteriorating. The cyber and ICS threads are directly linked: the same Cisco SD-WAN platform is being actively exploited by sophisticated threat actors across both IT and OT environments, while AI-assisted vulnerability discovery and supply chain attacks are compressing the window for enterprise defense at exactly the moment ransomware groups are accelerating their targeting of industrial sectors. The China thread cuts across nearly every domain simultaneously — Beijing is applying military pressure on Taiwan at the diplomatic level while Twill Typhoon conducts active industrial espionage in the Indo-Pacific, and a CMU assessment flags Chinese-linked grid technologies as a long-term strategic threat to U.S. energy infrastructure, suggesting a coordinated, multi-vector posture rather than isolated incidents. Taken together, the day's reporting suggests the United States is managing compounding exposure: a cyber-physical attack surface that is widening faster than it can be patched, a diplomatic track with China that produced no concessions, and a CENTCOM operational picture where Iran's capabilities are degraded but not neutralized — all while ODNI stands up election threat monitoring, signaling that the domestic threat landscape is also being treated as",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Active exploitation of a critical Cisco SD-WAN authentication bypass is driving emergency federal patching requirements, while a widening supply chain attack is targeting AI developer toolchains.",
+      "intro": "Active exploitation of Cisco SD-WAN systems, a spreading supply chain attack targeting AI-linked packages, and record-breaking zero-day discoveries at Pwn2Own define a high-pressure day across enterprise and developer security.",
       "items": [
         {
-          "headline": "Critical Cisco SD-WAN authentication bypass under active exploitation, CISA mandates federal patch by Sunday",
-          "summary": "Attackers are actively exploiting CVE-2026-20182, a flaw in Cisco Catalyst SD-WAN Controller and Manager that allows unauthenticated remote attackers to gain administrative access. CISA's emergency directive gives federal agencies until Sunday to apply Cisco's patch, signaling high confidence that exploitation is widespread or escalating. SD-WAN systems are core network infrastructure, making administrative compromise a potentially severe pivot point for lateral movement or traffic manipulation.",
+          "headline": "CISA mandates emergency patching of actively exploited Cisco SD-WAN authentication bypass",
+          "summary": "Cisco's Catalyst SD-WAN Controller and Manager are under active exploitation via CVE-2026-20182, a critical authentication bypass that grants unauthenticated remote attackers full administrative access. CISA has ordered all federal agencies to apply the patch—released Thursday—by Sunday, signaling high confidence in widespread threat actor activity. Organizations running Cisco SD-WAN infrastructure should treat this as a priority-zero remediation given the administrative access exposure.",
           "source": "The Record from Recorded Future News",
           "url": "https://therecord.media/cisa-orders-all-federal-agencies-to-patch-cisco-sd-wan-bug"
         },
         {
-          "headline": "Cisco Talos details ongoing exploitation mechanics behind Catalyst SD-WAN vulnerability",
-          "summary": "Talos researchers are actively tracking exploitation of the Cisco Catalyst SD-WAN authentication bypass, providing technical depth on attacker behavior and indicators of compromise. The parallel Talos advisory reinforces that this is an active, monitored threat rather than a theoretical risk. Organizations running affected SD-WAN deployments should treat Talos guidance as a primary source for detection and response.",
-          "source": "Cisco Talos Blog",
-          "url": "https://blog.talosintelligence.com/sd-wan-ongoing-exploitation/"
-        },
-        {
           "headline": "Supply chain attack on TanStack npm library prompts OpenAI to push emergency macOS update",
-          "summary": "A campaign compromising the widely used TanStack open-source library has expanded to additional npm and PyPI packages, with several AI companies' toolchains caught in the blast radius. OpenAI has urged macOS users to update immediately, indicating its own software was affected. The targeting of AI developer ecosystems is notable — poisoning foundational libraries used in AI workflows could introduce backdoors or data exfiltration into a broad range of downstream applications.",
+          "summary": "A campaign compromising the widely used TanStack open-source library has expanded to additional npm and PyPI packages linked to multiple AI companies, prompting OpenAI to urgently push a macOS client update. Supply chain attacks targeting AI-adjacent tooling represent an increasingly high-value vector, given the rapid adoption of these libraries across developer ecosystems. Watch for further scope expansion as investigators identify additional affected packages.",
           "source": "The Record from Recorded Future News",
           "url": "https://therecord.media/openai-asks-macos-users-to-update-tanstack-npm"
         },
         {
-          "headline": "AI-accelerated vulnerability discovery may soon overwhelm enterprise patching capacity",
-          "summary": "Cisco Talos analysts warn that next-generation AI tools are poised to dramatically accelerate the rate at which vulnerabilities are discovered, potentially outpacing organizations' ability to patch at scale. If the discovery-to-exploitation window compresses further, patch prioritization frameworks and automated remediation pipelines will become critical rather than optional. This is a strategic risk that CISOs and security architects should be factoring into long-term planning now.",
+          "headline": "Pwn2Own Berlin Day Two: over $523,000 awarded as researchers chain 0-days against enterprise systems",
+          "summary": "Day Two of Pwn2Own Berlin 2026 follows a first day that awarded $523,000 for 24 unique zero-days against enterprise targets, with DEVCORE holding the lead for Master of Pwn. The volume and value of discoveries underscore persistent, exploitable weaknesses in widely deployed enterprise software. Vendors whose products were targeted face an imminent patching burden as Talos and others have noted AI tooling is accelerating the pace of vulnerability discovery industry-wide.",
+          "source": "Zero Day Initiative - Blog",
+          "url": "https://www.thezdi.com/blog/2026/5/15/pwn2own-berlin-2026-day-two-results"
+        },
+        {
+          "headline": "AI-assisted vulnerability discovery threatens to overwhelm enterprise patch management capacity",
+          "summary": "Cisco Talos analysts warn that next-generation AI tools are materially accelerating the rate at which vulnerabilities are found, potentially outpacing organizations' ability to triage and deploy patches at scale. This structural risk is compounded by the simultaneous active exploitation seen in Cisco SD-WAN and the zero-day volume at Pwn2Own, illustrating the gap between discovery speed and remediation capacity. Enterprises should evaluate whether current patch prioritization workflows can absorb a sustained increase in critical disclosures.",
           "source": "Cisco Talos Blog",
           "url": "https://blog.talosintelligence.com/the-time-of-much-patching-is-coming/"
         }
@@ -38,29 +38,29 @@
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "The Trump-Xi summit in Beijing yielded little of substance, while U.S.-brokered Lebanon talks expose deep contradictions in Washington's Middle East approach, and nuclear strategy debates intensify amid a collapsing arms control architecture.",
+      "intro": "Global diplomacy is under strain as the Trump-Xi summit yields little, Lebanon negotiations fracture, and U.S. nuclear strategy faces a fundamental rethink in a two-peer threat environment.",
       "items": [
         {
-          "headline": "Trump-Xi Beijing Summit Ends Without Major Breakthroughs on Trade, Taiwan, or Iran",
-          "summary": "Despite the high-profile staging, Trump failed to extract meaningful concessions from Xi Jinping across key flashpoints including trade terms, Taiwan arms sales, and Chinese support for Iran. A more self-assured Beijing treated the visit as routine diplomatic business rather than a pivotal moment, reflecting China's growing comfort with managing U.S. pressure on its own terms. Watch whether the lack of deliverables prompts Washington to escalate economic or military signaling in the South China Sea or Taiwan Strait.",
+          "headline": "Trump-Xi Beijing Summit Ends Without Major Concessions on Trade, Taiwan, or Iran",
+          "summary": "Two days of high-level talks in Beijing produced no breakthrough agreements, with China declining to make significant concessions on trade terms, Taiwan arms sales, or its relationship with Iran. A more confident Beijing appears content to treat presidential summits as routine diplomatic maintenance rather than transformative moments, signaling a shift in how China calibrates leverage with Washington. Watch whether the lack of deliverables hardens U.S. hawk positions on Taiwan and economic decoupling.",
           "source": "Foreign Policy",
           "url": "https://foreignpolicy.com/2026/05/15/trump-xi-summit-china-us-presidential-visit/"
         },
         {
-          "headline": "U.S.-Brokered Israel-Lebanon Talks Place Impossible Demands on Beirut",
-          "summary": "A third round of direct Israel-Lebanon negotiations is underway, with Washington pushing for a comprehensive security agreement contingent on Lebanese action against Hezbollah — a condition Beirut lacks the political and military capacity to fulfill. Rather than serving as a neutral mediator, the U.S. posture is effectively coercing the most damaged party in the conflict, risking collapse of the Lebanese government's domestic legitimacy. If talks break down, Israeli military operations are likely to resume or intensify, with no viable diplomatic off-ramp in place.",
+          "headline": "U.S.-Brokered Lebanon-Israel Talks Risk Destabilizing Beirut Rather Than Securing It",
+          "summary": "A third round of direct Israel-Lebanon negotiations is underway, covering border demarcation, Hezbollah disarmament, and ongoing Israeli military operations, but analysts warn the U.S. approach is extracting maximalist concessions from Lebanon while offering little protection in return. Israel's strategy of pressuring a weakened Lebanese state to disarm Hezbollah is internally contradictory — a government too fragile to govern cannot coerce an armed militia. The talks' failure could accelerate Lebanon's political collapse and entrench Hezbollah's position.",
           "source": "War on the Rocks",
           "url": "https://warontherocks.com/in-talks-with-israel-lebanon-is-walking-a-thin-line/"
         },
         {
-          "headline": "Analysts Argue U.S. Nuclear Buildup Could Undermine Rather Than Strengthen Security",
-          "summary": "With New START expired and China rapidly expanding its nuclear arsenal, a growing debate among strategists centers on whether matching adversary buildups is counterproductive — potentially accelerating a three-way arms race rather than restoring deterrence stability. The proposed 'restrain and hedge' framework argues for selective modernization paired with arms control outreach, rather than across-the-board expansion. The outcome of this debate will shape U.S. defense spending and alliance commitments for decades, with significant implications for extended deterrence in Europe and the Indo-Pacific.",
+          "headline": "U.S. Nuclear Strategists Argue Expanding Arsenal Could Increase Vulnerability, Not Deter It",
+          "summary": "With New START expired and both Russia and China modernizing nuclear forces, analysts are challenging the assumption that matching adversary capabilities enhances deterrence, arguing instead for a restrain-and-hedge posture that avoids a destabilizing arms race. The core concern is that a three-way nuclear competition — without arms control architecture — creates crisis instability scenarios with no precedent in Cold War strategy. The outcome of this debate will shape U.S. defense budgets and alliance commitments across the Indo-Pacific and Europe for decades.",
           "source": "War on the Rocks",
           "url": "https://warontherocks.com/restrain-and-hedge-a-new-u-s-nuclear-strategy-for-a-two-peer-world/"
         },
         {
-          "headline": "Hungary's Political Realignment Removes Key Veto on EU Sanctions Against Israel",
-          "summary": "The erosion of Viktor Orbán's grip on Hungarian politics has eliminated the most consistent blocker of EU measures targeting Israeli settlement activity in the West Bank, potentially opening the door to a new round of bloc-level sanctions. This shift is significant because EU unanimity requirements have long allowed single member states to neutralize collective action on Israel policy. Whether the remaining member states move to capitalize on this opening will be an early test of the EU's post-Orbán foreign policy cohesion.",
+          "headline": "Hungary's Weakened Orban Removes Key EU Veto Blocking Israel Sanctions Over West Bank",
+          "summary": "A domestic power shift in Hungary has eroded Viktor Orban's ability to unilaterally block EU consensus, opening the door for the bloc to impose sanctions targeting Israeli settlement expansion in the West Bank. This marks a potential inflection point in EU-Israel relations, as European institutions had long been stymied by Budapest's veto in foreign policy votes requiring unanimity. Whether the EU moves swiftly will test the bloc's cohesion and its willingness to act independently of U.S. diplomatic signaling on Israel.",
           "source": "Foreign Policy",
           "url": "https://foreignpolicy.com/2026/05/15/eu-israel-sanctions-west-bank-hungary-orban-magyar/"
         }
@@ -69,88 +69,94 @@
     {
       "id": "military",
       "title": "Military",
-      "intro": "Today's military picture is defined by capability gaps, strategic posturing, and mounting pressure on Pentagon readiness and accountability.",
+      "intro": "U.S. military readiness and force modernization dominate the picture, with drone warfare scaling up, carrier construction falling behind, and Xi Jinping issuing a direct warning to Trump over Taiwan.",
       "items": [
         {
-          "headline": "Xi Warns Trump That Taiwan Missteps Risk Direct U.S.-China Confrontation",
-          "summary": "Chinese President Xi Jinping delivered a direct verbal warning to President Trump that any miscalculation over Taiwan could trigger open conflict between the two powers. The statement signals Beijing is sharpening its red lines as U.S.-China tensions remain elevated. Watch for whether this changes the tempo of U.S. arms sales to Taiwan or naval freedom-of-navigation operations in the strait.",
+          "headline": "Xi Jinping warns Trump that Taiwan miscalculation could trigger direct U.S.-China conflict",
+          "summary": "Chinese President Xi Jinping delivered an explicit warning to President Trump that any misstep over Taiwan risks pulling both nations into direct confrontation. The statement raises the diplomatic temperature at a sensitive moment for cross-strait relations and U.S. Indo-Pacific posture. Watch whether this prompts a recalibration of U.S. arms sales or force positioning near Taiwan.",
           "source": "Military Times",
           "url": "https://www.militarytimes.com/news/pentagon-congress/2026/05/14/china-fires-verbal-warning-shot-at-us-over-taiwan/"
         },
         {
-          "headline": "U.S. Infantry Scales Drone Warfare Experiments to Hundreds of Simultaneous Units",
-          "summary": "Project Flytrap 5.0 pushed Army infantry experimentation into coordinating drone operations across teams of hundreds, with even larger exercises planned. The progression mirrors lessons absorbed from Ukraine and signals a doctrinal shift toward mass, low-cost aerial assets at the tactical level. The pace of these experiments will determine how quickly drone integration reaches operational units.",
+          "headline": "U.S. Army's drone warfare experiments scale to hundreds of simultaneous systems",
+          "summary": "Project Flytrap 5.0 advanced U.S. infantry drone-warfare testing to coordinating teams of hundreds of drones, with even larger exercises planned. The experiments reflect an urgent effort to match adversary drone tactics observed in Ukraine and anticipate high-intensity Pacific scenarios. The trajectory suggests drone swarm integration into standard infantry doctrine is accelerating faster than procurement cycles.",
           "source": "Defense One - All Content",
           "url": "https://www.defenseone.com/defense-systems/2026/05/us-infantrys-drone-warfare-experiments-are-getting-bigger/413568/"
         },
         {
-          "headline": "NATO Confronts Ground Robot Integration Gaps Near Russian Border",
-          "summary": "NATO exercises near the Russian border exposed a significant lag in ground robotic systems, with a Latvian commander acknowledging the alliance has over-indexed on aerial drones at the expense of surface platforms. The gap is strategically relevant given the terrain and force-protection demands of the eastern flank. Accelerating allied ground robotics procurement and doctrine will be a key test of NATO's adaptation to modern warfare.",
+          "headline": "Navy's next Ford-class carrier Doris Miller pushed back to 2034 amid cascading construction delays",
+          "summary": "Shipyard bottlenecks on the future USS Enterprise have rippled forward, delaying the Doris Miller by a year to 2034. The slip compounds existing concerns about the Navy's ability to maintain carrier strike group availability as older ships age out. Congress is simultaneously pressing the Navy on its FY2027 plan that floats building warships at foreign yards—a sign domestic shipbuilding capacity is under serious strain.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/global/europe/2026/05/15/near-russian-border-nato-grapples-with-ground-robots-in-combat/"
+          "url": "https://www.militarytimes.com/news/your-navy/2026/05/15/future-aircraft-carrier-doris-miller-delayed-until-2034/"
         },
         {
-          "headline": "GAO Finds Air Force Masking Maintenance Delays With Revised Tracking Metrics",
-          "summary": "A GAO investigation found the Air Force was resetting target dates for aircraft maintenance to conceal the true extent of delays, understating readiness problems across the fleet. The practice raises serious questions about how accurately Congress and senior leadership are being briefed on operational availability. Expect oversight pressure to mount and potential mandates for standardized, unalterable baseline metrics in reporting.",
+          "headline": "CENTCOM chief: Israeli and U.S. strikes gutted Iran's naval mine stockpile by 90%, but threat persists",
+          "summary": "Admiral Brad Cooper told lawmakers that Iran's warfighting capacity has been severely degraded, with roughly 90% of its naval mine inventory eliminated. Despite the degradation, Cooper cautioned that Iran's military threat has not been removed entirely, leaving residual capability to threaten Gulf shipping lanes. The assessment will shape near-term U.S. naval presence decisions in the Persian Gulf and Strait of Hormuz.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-air-force/2026/05/15/air-force-underestimating-aircraft-maintenance-delays-gao-finds/"
+          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/05/14/iran-military-threat-is-diminished-but-not-eliminated-centcom-chief-says/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "The U.S. intelligence community is moving to reinforce election security infrastructure while a public dispute over Iran's post-strike military readiness highlights gaps between open-source reporting and classified assessments.",
+      "intro": "Today's intelligence picture centers on gaps between official assessments and open-source reporting, with the U.S. standing up new election threat coordination while CENTCOM pushes back on OSINT conclusions about Iranian military readiness.",
       "items": [
         {
-          "headline": "ODNI Designates Coordinators to Counter Foreign Threats to 2026 Midterms",
-          "summary": "DNI Tulsi Gabbard has appointed two officials to lead cross-agency monitoring of foreign interference threats ahead of the 2026 midterm elections. The move signals that the intelligence community is standing up dedicated coordination structures earlier in the election cycle than seen in prior years. Watch whether these appointments reflect continuity with previous election security frameworks or a restructured approach under Gabbard's leadership.",
+          "headline": "ODNI Stands Up Dedicated Coordination Role for 2026 Election Threat Monitoring",
+          "summary": "DNI Tulsi Gabbard has appointed two officials to lead interagency efforts tracking foreign threats to the 2026 midterm elections. The move signals institutional continuity in election security functions despite broader intelligence community restructuring under the current administration. Watch whether these coordinators receive the interagency access and resources needed to be effective, or whether the appointments are largely symbolic.",
           "source": "The Record from Recorded Future News",
           "url": "https://therecord.media/odni-taps-officials-to-coordinate-response-to-election-threats"
         },
         {
-          "headline": "CENTCOM Commander Contradicts Open-Source Estimates on Iran's Surviving Arsenal",
-          "summary": "Admiral Brad Cooper publicly disputed open-source assessments suggesting Iran retained the bulk of its missile and drone stockpiles following recent strikes, stating the figures circulating in public reporting are inaccurate. The discrepancy between classified and open-source intelligence assessments is significant, as it affects strategic calculations around deterrence and Iran's residual strike capacity. This tension between OSINT community conclusions and official military statements warrants close scrutiny as Iran's true readiness posture directly shapes regional risk calculations.",
+          "headline": "CENTCOM Chief Contradicts Open-Source Assessments of Iran's Post-Strike Arsenal",
+          "summary": "Admiral Brad Cooper stated publicly that open-source figures on Iran's retained missile and drone inventory following recent strikes are inaccurate, without providing alternative numbers. This is a notable instance of a senior commander directly challenging OSINT-based conclusions circulating in public reporting, raising questions about whether classified assessments paint a significantly different damage picture. The divergence between official and open-source estimates will be a key analytical fault line to monitor as post-strike assessments mature.",
           "source": "The War Zone",
           "url": "https://www.twz.com/news-features/centcom-commander-dismisses-reports-that-iran-retains-most-of-its-missile-and-drone-arsenal"
+        },
+        {
+          "headline": "Ukraine's Low-Cost Interceptor Drone Program Claims Thousands of Shahed Kills",
+          "summary": "Ukraine's Brave1 defense tech cluster CEO provided rare operational detail on the country's interceptor drone program, which has developed cheap autonomous systems specifically designed to counter Russia's Shahed one-way attack drones at scale. The program represents a broader doctrinal shift toward cost-asymmetric air defense, using inexpensive kinetic interceptors to reduce reliance on expensive surface-to-air missiles. This model is being watched closely by NATO partners as a potential template for layered drone defense.",
+          "source": "The War Zone",
+          "url": "https://www.twz.com/news-features/inside-ukraines-interceptor-drone-innovations-swatting-down-thousands-of-shahed-drones"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
-      "title": "ics_scada_ot",
-      "intro": "OT and industrial environments face a convergence of threats today, from escalating ransomware pressure on operational networks to strategic warnings about Chinese technology embedded in US energy infrastructure.",
+      "title": "ICS / SCADA / OT",
+      "intro": "OT and industrial environments face mounting pressure from ransomware convergence, state-linked espionage, and critical network infrastructure vulnerabilities being actively exploited.",
       "items": [
         {
-          "headline": "Ransomware Targeting OT-Heavy Industrial Sectors Is Accelerating as IT/OT Boundaries Erode",
-          "summary": "NCC Group reports that ransomware actors are increasingly pivoting from IT networks into OT environments as convergence expands the attack surface in sectors like manufacturing, energy, and utilities. The trend reflects adversaries recognizing that OT disruption creates stronger leverage for ransom demands. Security teams in industrial environments should treat IT-side compromises as potential precursors to OT-stage attacks.",
+          "headline": "Sixth Cisco SD-WAN Zero-Day of 2026 Exploited by Sophisticated Threat Actor",
+          "summary": "CVE-2026-20182, an authentication bypass in Cisco Catalyst SD-WAN Controller and Manager, is being actively exploited by UAT-8616 in targeted attacks — marking the sixth SD-WAN zero-day weaponized this year alone. Cisco Talos confirmed ongoing exploitation, raising serious concerns about the security posture of SD-WAN deployments that often underpin OT network segmentation and remote site connectivity. Organizations relying on Cisco SD-WAN for industrial site interconnects should treat patching as urgent and audit for indicators of compromise immediately.",
+          "source": "Cisco Talos Blog",
+          "url": "https://blog.talosintelligence.com/sd-wan-ongoing-exploitation/"
+        },
+        {
+          "headline": "NCC Group: Ransomware Attacks on OT-Heavy Industrial Sectors Accelerating with IT/OT Convergence",
+          "summary": "NCC Group's latest warning highlights that IT/OT convergence is systematically expanding the attack surface for ransomware operators targeting industrial environments, with OT-heavy sectors increasingly in the crosshairs. As traditional air gaps dissolve in favor of connected industrial operations, ransomware that previously disrupted IT systems is now capable of cascading into process control environments. The trend underscores the urgency of network segmentation, OT-specific incident response planning, and vendor patch management.",
           "source": "Industrial Cyber",
           "url": "https://industrialcyber.co/news/ncc-group-warns-ransomware-attacks-on-ot-heavy-industrial-environments-are-intensifying-amid-it-ot-convergence/"
         },
         {
-          "headline": "CMU Research Flags China-Linked AI and Grid Technologies as Systemic Risk to US Energy Infrastructure",
-          "summary": "Carnegie Mellon's Electrotech Moneyball paper argues that Chinese-manufactured AI systems, inverters, and grid modernization components embedded in US energy infrastructure represent a latent threat that could be activated during geopolitical escalation. The report highlights how electrification and grid digitization are outpacing supply chain security vetting. This is a strategic-level warning relevant to utilities, regulators, and national security planners.",
+          "headline": "CMU Paper Flags China-Linked AI and Grid Technologies as Strategic Threat to US Energy Infrastructure",
+          "summary": "Carnegie Mellon University's Electrotech Moneyball paper argues that Chinese-manufactured AI systems and grid technologies embedded in US energy modernization efforts represent a latent national security risk, potentially enabling remote access or data exfiltration at scale. The research ties the rapid build-out of AI data centers, EV charging infrastructure, and smart grid components to supply chain dependencies that adversaries could exploit. Energy sector operators and regulators should treat this as a long-cycle threat requiring supply chain vetting and contingency planning now.",
           "source": "Industrial Cyber",
           "url": "https://industrialcyber.co/reports/cmus-electrotech-moneyball-paper-warns-china-linked-ai-grid-technologies-threaten-us-energy-infrastructure-security/"
         },
         {
-          "headline": "Cisco SD-WAN Zero-Day Exploitation Reaches Six Incidents in 2026 as Sophisticated Actor UAT-8616 Remains Active",
-          "summary": "Cisco has patched CVE-2026-20182, the sixth SD-WAN zero-day exploited in targeted attacks this year, attributed to threat actor UAT-8616. SD-WAN infrastructure is widely deployed at the IT/OT boundary in industrial and critical infrastructure environments, making repeated exploitation of this platform particularly significant. The pace of zero-day use against Cisco SD-WAN suggests UAT-8616 holds a deep vulnerability research capability and may have additional unpatched vectors.",
-          "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/cisco-patches-another-sd-wan-zero-day-the-sixth-exploited-in-2026/"
-        },
-        {
-          "headline": "NIST Advances Nine Post-Quantum Signature Algorithms Toward Standardization",
-          "summary": "NIST has moved nine digital signature candidates into the third round of its post-quantum cryptography evaluation, pushing the standardization process closer to completion. For OT and ICS environments, where legacy systems may run for decades and cryptographic transitions are slow and complex, early awareness of emerging standards is operationally critical. Asset owners and vendors should begin assessing migration timelines now to avoid being caught with cryptographically obsolete systems.",
+          "headline": "China-Linked Twill Typhoon Deploys Novel Backdoor in APAC Espionage Campaign Targeting Industrial Sectors",
+          "summary": "Darktrace researchers exposed a Twill Typhoon campaign across Asia-Pacific and Japan using DLL sideloading, living-off-the-land Windows tools, and a previously undocumented backdoor called FDMTP to evade detection. The use of legitimate system utilities makes behavioral detection difficult and is consistent with China-linked actors targeting organizations with OT and critical infrastructure footprints. Industrial operators in the APAC region should audit for unusual LOLBin activity and review lateral movement patterns within OT-adjacent network segments.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/nist/nist-advances-nine-post-quantum-signature-algorithms-as-race-to-secure-data-from-quantum-attacks-intensifies/"
+          "url": "https://industrialcyber.co/industrial-cyber-attacks/twill-typhoon-used-legitimate-windows-tools-dll-sideloading-fdmtp-backdoor-in-apac-espionage-campaign/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 91,
-    "items_published": 18
+    "articles_reviewed": 93,
+    "items_published": 19
   }
 }
