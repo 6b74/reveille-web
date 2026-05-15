@@ -1,137 +1,131 @@
 {
   "date": "2026-05-15",
-  "generated_at": "2026-05-15T06:04:00.331902+00:00",
-  "issue": 12,
-  "executive_summary": "Today's intelligence picture is dominated by two converging pressures: a deteriorating U.S.-China-Iran diplomatic environment increasingly backed by credible military signaling, and a broadening attack surface across critical digital and industrial infrastructure. The Trump-Xi summit's failure to produce concessions on Taiwan, combined with Xi's direct warning of potential military confrontation and the near-collapse of Iran nuclear talks following Operation Epic Fury's reported degradation of Iranian naval capacity, suggests the United States is simultaneously managing escalation risks on two major fronts with limited diplomatic runway. On the cyber side, the active exploitation of Cisco SD-WAN, critical ICS vulnerabilities in Siemens and industrial robotics systems, and a confirmed supply chain attack targeting AI-linked npm packages collectively indicate that adversaries are probing both operational technology and AI development pipelines — an alignment that warrants particular concern given the geopolitical tensions with actors known to prioritize these target sets. The TanStack supply chain incident appearing in both the Cyber and Intel sections underscores a recurring theme today: open-source and commercial software ecosystems are a live attack vector requiring emergency response even from major AI firms like OpenAI. Taken together, the overall picture is one of compounding risk — diplomatic stagnation, active military posturing, and infrastructure-targeting cyber operations are advancing in parallel rather than in isolation, reducing decision space across multiple domains simultaneously.",
+  "generated_at": "2026-05-15T13:12:38.608783+00:00",
+  "issue": 13,
+  "executive_summary": "Today's intelligence picture is defined by two converging pressures: accelerating vulnerabilities in critical digital infrastructure and a volatile geopolitical environment where military miscalculation risks are rising simultaneously. On the cyber front, the active exploitation of Cisco SD-WAN authentication flaws, the TanStack supply chain compromise affecting OpenAI systems, and sweeping ICS vulnerabilities in Siemens and robotics platforms collectively suggest adversaries are probing enterprise and operational technology networks at scale, a concern amplified by Pwn2Own researchers continuing to surface zero-days in enterprise systems. The Taiwan thread connects the geopolitical and military sections directly, with Xi's personal warning to Trump about confrontation risk emerging from the same Beijing summit that produced no substantive agreements, indicating that diplomatic friction and military signaling are now running in parallel rather than sequence. A secondary cross-cutting thread involves Iran, where CENTCOM's assessment of severely degraded military capacity is explicitly contradicted by open-source evaluations, a rare public intelligence divergence that complicates both the Lebanon talks and U.S. force posture decisions in the region. Taken together, today's picture reflects an environment of compounding instability: cyber attackers are moving faster than defenders, diplomatic guardrails on great-power competition are weakening, and key intelligence assessments on Iran are contested internally, leaving policymakers with degraded confidence across multiple critical domains.",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Active exploitation of enterprise network infrastructure, a major supply chain attack targeting AI toolchains, and a record-breaking zero-day competition define today's threat landscape.",
+      "intro": "Active exploitation of enterprise network infrastructure, a broadening software supply chain attack, and a wave of ICS vulnerabilities define today's threat landscape.",
       "items": [
         {
-          "headline": "Cisco SD-WAN Authentication Bypass Under Active Exploitation",
-          "summary": "Cisco Talos confirmed threat actors are actively exploiting CVE-2026-20182, an authentication bypass flaw in Cisco Catalyst SD-WAN Controller and SD-WAN Manager. These products are core to enterprise and service-provider WAN infrastructure, making successful exploitation a high-impact event that could allow unauthenticated access to network management planes. Organizations running affected versions should treat patching as urgent and audit access logs for anomalous authentication patterns.",
+          "headline": "Cisco SD-WAN authentication bypass under active exploitation",
+          "summary": "Cisco Talos is tracking live exploitation of CVE-2026-20182, an authentication bypass flaw affecting Cisco Catalyst SD-WAN Controller and Manager — core components for enterprise WAN management. Successful exploitation could give attackers unauthenticated access to network orchestration infrastructure, with potentially severe downstream impact on connected branch networks. Organizations running affected SD-WAN versions should treat patching as urgent and audit access logs for anomalous activity.",
           "source": "Cisco Talos Blog",
           "url": "https://blog.talosintelligence.com/sd-wan-ongoing-exploitation/"
         },
         {
-          "headline": "TanStack npm Supply Chain Attack Prompts OpenAI Emergency MacOS Update",
-          "summary": "A supply chain campaign has compromised the widely used TanStack open-source library along with additional npm and PyPI packages linked to several AI companies, prompting OpenAI to push an emergency update to macOS users. The attack's targeting of AI-adjacent developer tooling is significant — these packages sit deep in software build pipelines, potentially exposing model infrastructure and developer endpoints alike. Watch for further package disclosures as researchers continue mapping the full scope of affected libraries.",
+          "headline": "Supply chain attack on TanStack npm library prompts OpenAI macOS update warning",
+          "summary": "A supply chain campaign targeting the widely used TanStack open-source library has expanded to additional npm and PyPI packages linked to several AI companies, leading OpenAI to urge macOS users to update immediately. The breadth of the campaign — spanning multiple package ecosystems and AI-adjacent tooling — signals a deliberate targeting of developer environments where AI tools are integrated. Teams using TanStack or related packages should audit dependency trees and check for malicious versions.",
           "source": "The Record from Recorded Future News",
           "url": "https://therecord.media/openai-asks-macos-users-to-update-tanstack-npm"
         },
         {
-          "headline": "Pwn2Own Berlin Pays Out $523,000 on Day One Across AI and NVIDIA Targets",
-          "summary": "Researchers claimed $523,000 in prizes on the first day of Pwn2Own Berlin 2026, demonstrating 24 unique zero-days across AI databases, coding agents, local inference engines, and NVIDIA products. The AI-focused categories are new additions reflecting growing concern about the security of AI infrastructure as it moves into production environments. The volume and value of successful exploits signals that AI tooling remains significantly under-hardened against determined adversaries.",
-          "source": "Zero Day Initiative - Blog",
-          "url": "https://www.thezdi.com/blog/2026/5/13/pwn2own-berlin-2026-day-one-results"
-        },
-        {
-          "headline": "CISA Issues Wave of ICS Advisories Covering Critical Siemens and Industrial Robot Flaws",
-          "summary": "CISA published more than a dozen ICS advisories covering vulnerabilities across Siemens product lines — including Ruggedcom Rox, SIMATIC, Teamcenter, and Solid Edge — as well as Universal Robots' Polyscope 5 controller, which is susceptible to authentication bypass and code execution. Several Ruggedcom Rox flaws allow authenticated remote attackers to execute commands with root privileges, a serious risk in operational technology environments where privileged access can translate to physical process disruption. OT asset owners should cross-reference affected version lists and prioritize updates given the breadth of exposed product categories.",
+          "headline": "CISA issues sweeping ICS advisories covering critical Siemens and robotics vulnerabilities",
+          "summary": "CISA published more than a dozen ICS advisories today, with Siemens products — including Ruggedcom Rox, SIMATIC CN 4100, Teamcenter, Solid Edge, and gWAP — accounting for the majority of findings ranging from remote code execution and authentication bypass to privilege escalation and path traversal. A separate advisory flagged authentication bypass and code execution flaws in Universal Robots Polyscope 5, used in industrial automation environments. The volume and severity of these disclosures underscores persistent risk in OT/ICS environments where patch cycles are slow and exposure can be wide.",
           "source": "All CISA Advisories",
           "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-12"
+        },
+        {
+          "headline": "Pwn2Own Berlin Day Two raises zero-day tally as researchers target enterprise systems",
+          "summary": "Day Two of Pwn2Own Berlin 2026 continued a strong showing following Day One's $523,000 in awards for 24 unique zero-days, with DEVCORE holding a commanding lead in Master of Pwn standings. The competition's focus on enterprise systems means the vulnerabilities being demonstrated have direct relevance to corporate and government network defenders. Vendors whose products are successfully exploited will face pressure to issue emergency patches in the coming days.",
+          "source": "Zero Day Initiative - Blog",
+          "url": "https://www.thezdi.com/blog/2026/5/15/pwn2own-berlin-2026-day-two-results"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "The Trump-Xi Beijing summit, stalled US-Iran nuclear talks, and Lebanon's fragile border negotiations define a geopolitical landscape where major diplomatic initiatives are producing more friction than resolution.",
+      "intro": "The Trump-Xi Beijing summit underwhelms, Lebanon negotiations grow increasingly coercive, and U.S. nuclear strategy faces a structural rethink as arms control frameworks collapse.",
       "items": [
         {
-          "headline": "Trump-Xi Summit Ends Day One Without Meaningful Concessions on Trade, Iran, or Taiwan",
-          "summary": "The first day of the Beijing summit yielded no significant breakthroughs, with China declining to offer major concessions on trade terms, Iran policy, or Taiwan's status. The divergent readouts released by each side signal fundamental differences in how both governments are framing the meeting's purpose and outcomes. Watch whether day two produces any framework agreements or whether the summit solidifies into a symbolic encounter that hardens rather than narrows the gap between Washington and Beijing.",
+          "headline": "Trump-Xi Beijing Summit Yields No Major Breakthroughs on Trade, Iran, or Taiwan",
+          "summary": "Day one of the Trump-Xi summit produced no significant concessions from Beijing on trade terms, Iran policy, or Taiwan arms sales, with the two sides offering divergent readouts of discussions. The absence of deliverables signals that Xi is willing to absorb diplomatic pressure without substantive compromise. Watch whether subsequent days produce face-saving announcements or whether the summit hardens into a public display of strategic deadlock.",
           "source": "Foreign Policy",
           "url": "https://foreignpolicy.com/2026/05/14/trump-xi-jinping-china-summit-taiwan-iran-trade-beef/"
         },
         {
-          "headline": "US-Iran Nuclear Talks Near Collapse as Washington Tightens Pressure",
-          "summary": "Despite historic high-level talks in Pakistan last month, the US-Iran diplomatic track is trending toward breakdown rather than agreement, with the US maintaining a blockade on Iranian shipping alongside maximalist negotiating demands. Tehran faces compounding pressure just as the diplomatic channel it agreed to is proving unable to deliver sanctions relief. The trajectory suggests the April 7 ceasefire framework is at serious risk, with implications for regional escalation and the broader US posture in the Middle East.",
-          "source": "War on the Rocks",
-          "url": "https://warontherocks.com/the-adversarial-maximalist-demands-victory-day-and-a-summit/"
+          "headline": "U.S.-Brokered Israel-Lebanon Talks Strain Beirut's Government With Maximalist Demands",
+          "summary": "Direct Israel-Lebanon talks, now in a third round and driven by Washington, are demanding Lebanese action against Hezbollah as a precondition for any security agreement — placing the burden squarely on the most war-damaged party. Critics argue the U.S. is functioning as a pressure mechanism for Israeli interests rather than a neutral mediator, risking collapse of a fragile Lebanese state. The central question is whether Beirut can deliver on Hezbollah disarmament without triggering internal political disintegration.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/05/15/trump-lebanon-beirut-israel-hezbollah-negotiations-ceasefire/"
         },
         {
-          "headline": "Lebanon Caught Between Israeli Military Pressure and Demands to Disarm Hezbollah",
-          "summary": "A third round of direct Israel-Lebanon talks, brokered by Washington, is pressing Beirut to act against Hezbollah as a precondition for any security or border agreement — even as Israeli military operations continue against Lebanese territory. The paradox is stark: Lebanon is the most damaged party yet bears the greatest burden of compliance, with its government too weak to forcibly disarm a militia that outguns its own armed forces. Whether Washington will offer Beirut meaningful security guarantees or economic incentives to offset this asymmetry will determine whether these talks produce a durable framework or collapse under their own contradictions.",
+          "headline": "Analysts Argue Expanding U.S. Nuclear Arsenal Could Undermine Rather Than Enhance Security",
+          "summary": "With New START expired and China rapidly expanding its nuclear forces, U.S. strategists are debating whether matching both Russia and China warhead-for-warhead would be fiscally and strategically counterproductive. A 'restrain and hedge' framework proposes maintaining deterrence without full-scale buildup, instead leveraging conventional and technological asymmetries. The outcome of this debate will shape arms control diplomacy — or its absence — for the next decade.",
           "source": "War on the Rocks",
-          "url": "https://warontherocks.com/in-talks-with-israel-lebanon-is-walking-a-thin-line/"
+          "url": "https://warontherocks.com/restrain-and-hedge-a-new-u-s-nuclear-strategy-for-a-two-peer-world/"
         },
         {
-          "headline": "Russia's Domestic Narrative Management Has Become as Central to the War Effort as Battlefield Operations",
-          "summary": "The Kremlin has now announced the 'liberation' of the Luhansk People's Republic three separate times since 2022, illustrating how Russia's information architecture for domestic consumption has decoupled almost entirely from ground realities. Senior officials who fabricated or exaggerated battlefield reports faced no accountability, signaling that internal political cohesion now takes priority over operational honesty. This matters because a leadership culture that punishes accurate reporting over comfortable fiction is increasingly ill-equipped to adapt strategy when conditions deteriorate.",
+          "headline": "South Korea's Drone Expansion Plans Risk Scaling Numbers Without Combat Readiness",
+          "summary": "Seoul's ambition to field 500,000 drone operators mirrors lessons from Ukraine, but analysts warn the program risks becoming a hollow force lacking doctrine, logistics, and experienced personnel. Meanwhile, North Korean troops rotating through Russia's front lines are gaining direct drone warfare experience — an asymmetric advantage Seoul's paper numbers won't offset. The gap between procurement scale and operational effectiveness will be the defining test of South Korea's drone strategy.",
           "source": "War on the Rocks",
-          "url": "https://warontherocks.com/what-is-russia-actually-fighting-for-now/"
+          "url": "https://warontherocks.com/south-koreas-500000-drone-warriors-will-be-a-hollow-force/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "Today's military picture spans a degraded but persistent Iranian threat, escalating China-Taiwan tensions, growing U.S. drone warfare ambitions, and a congressional fight over how to rebuild American shipbuilding capacity.",
+      "intro": "Today's military picture is defined by escalating great-power tensions, accelerating autonomous systems development, and reassessments of U.S. force posture and procurement across multiple domains.",
       "items": [
         {
-          "headline": "Xi warns Trump that Taiwan missteps could trigger direct U.S.-China confrontation",
-          "summary": "Chinese President Xi Jinping directly cautioned Trump that any miscalculation over Taiwan risks pulling both nations into open conflict — a rare and pointed diplomatic warning. The statement signals Beijing is watching U.S. posture closely amid ongoing regional tensions. Watch whether the White House adjusts its Taiwan arms sales or freedom-of-navigation posture in response.",
+          "headline": "Xi warns Trump directly that Taiwan missteps could trigger U.S.-China confrontation",
+          "summary": "Chinese President Xi Jinping delivered a pointed warning to President Trump that any miscalculation over Taiwan risks direct military conflict between the two powers. The statement signals Beijing is raising the diplomatic stakes as U.S. policy toward the island remains under scrutiny. Watch for whether the warning produces any visible shift in U.S. arms sales to Taiwan or freedom-of-navigation operations in the strait.",
           "source": "Military Times",
           "url": "https://www.militarytimes.com/news/pentagon-congress/2026/05/14/china-fires-verbal-warning-shot-at-us-over-taiwan/"
         },
         {
-          "headline": "CENTCOM chief says Operation Epic Fury gutted Iran's military capacity, including 90% of naval mines",
-          "summary": "Admiral Brad Cooper testified that U.S. operations under Operation Epic Fury have severely degraded Iran's warfighting capability, with roughly 90% of its naval mine inventory eliminated. While the threat is diminished, Cooper emphasized it is not gone — Iran retains residual capacity and proxies throughout the region. The key question is whether Tehran reconstitutes capabilities or recalibrates its strategy in response.",
+          "headline": "CENTCOM chief says Iran's military capacity severely degraded but threat persists",
+          "summary": "Admiral Brad Cooper told lawmakers the U.S. has eliminated roughly 90% of Iran's naval mine inventory and substantially degraded its broader warfighting capability. The assessment suggests recent operations have meaningfully shifted the regional balance, but the caveat that the threat is 'not eliminated' indicates continued U.S. commitment in the Gulf. The framing may be intended to justify ongoing force posture rather than signal drawdown.",
           "source": "Military Times",
           "url": "https://www.militarytimes.com/news/pentagon-congress/2026/05/14/iran-military-threat-is-diminished-but-not-eliminated-centcom-chief-says/"
         },
         {
-          "headline": "U.S. Army scales up drone swarm experiments toward hundred-unit team operations",
-          "summary": "Project Flytrap 5.0 advanced U.S. infantry drone experimentation to coordinating teams of hundreds of drones simultaneously, with even larger exercises planned. The program reflects a deliberate push to integrate autonomous systems into ground combat doctrine before peer-conflict scenarios materialize. Progress here directly affects U.S. battlefield competitiveness against adversaries like China and Russia who are investing heavily in similar capabilities.",
-          "source": "Defense One",
-          "url": "https://www.defenseone.com/defense-systems/2026/05/us-infantrys-drone-warfare-experiments-are-getting-bigger/413568/"
+          "headline": "NATO struggles to integrate ground robots near Russia's border as air drone doctrine matures",
+          "summary": "A Latvian commander acknowledged the alliance is lagging on ground-based autonomous systems, having concentrated its learning on aerial drones while Russia's war in Ukraine demonstrated the battlefield value of both. NATO exercises near the Russian border are now surfacing doctrinal and interoperability gaps that must be closed before any real contingency. The admission is notable given how central autonomous systems have become to modern force planning.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/global/europe/2026/05/15/near-russian-border-nato-grapples-with-ground-robots-in-combat/"
         },
         {
-          "headline": "Congress resists Navy plan to build warships at foreign shipyards as domestic capacity lags",
-          "summary": "The Navy's fiscal 2027 shipbuilding plan floated the possibility of constructing vessels at overseas yards, drawing immediate pushback from lawmakers prioritizing domestic industrial base recovery. The tension exposes a real constraint: U.S. shipyards currently cannot meet the Navy's demand, but outsourcing construction carries strategic and supply-chain risks. How Congress responds in the budget process will shape American naval procurement for years.",
-          "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/2026/05/14/lawmakers-push-for-domestic-shipbuilding-fixes-as-us-navy-explores-overseas-options/"
+          "headline": "U.S. Army scales up drone swarm experiments to hundreds of coordinated units",
+          "summary": "Project Flytrap 5.0 moved infantry drone-warfare testing into multi-hundred-unit coordinated operations, a significant leap from earlier small-unit trials. The scale reflects urgency to close the gap with adversaries already fielding mass drone tactics in active combat zones. Larger exercises are already planned, suggesting the Army is accelerating its path from experimentation to fielded doctrine.",
+          "source": "Defense One",
+          "url": "https://www.defenseone.com/defense-systems/2026/05/us-infantrys-drone-warfare-experiments-are-getting-bigger/413568/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Today's intelligence picture spans open-source verification of post-ceasefire destruction in Lebanon, conflicting assessments of Iran's remaining military capacity, a widening software supply chain attack targeting AI-adjacent infrastructure, and renewed U.S. institutional focus on foreign election interference ahead of 2026.",
+      "intro": "Today's intelligence picture is defined by gaps between official assessments and open-source reporting, with the ODNI moving to shore up domestic election threat monitoring ahead of 2026.",
       "items": [
         {
-          "headline": "Satellite Analysis Reveals Systematic Demolition of Southern Lebanese Villages Under IDF Control",
-          "summary": "Bellingcat's analysis of commercial satellite imagery finds that 46 of 54 towns and villages within the IDF's 'Yellow Line' zone in southern Lebanon have been heavily damaged or leveled, with much of the destruction occurring after the ceasefire took effect. The scale and pattern of demolition suggests deliberate, organized activity rather than residual conflict damage, raising serious questions about post-ceasefire conduct. This is a strong example of OSINT serving as an accountability mechanism where ground-level access remains restricted.",
-          "source": "Bellingcat",
-          "url": "https://www.bellingcat.com/news/2026/05/14/satellite-imagery-shows-ongoing-demolitions-across-southern-lebanon/"
+          "headline": "ODNI Assigns Coordinators to Track Foreign Interference Ahead of 2026 Midterms",
+          "summary": "DNI Tulsi Gabbard has designated two officials to synchronize foreign election threat monitoring across the U.S. intelligence community ahead of the 2026 midterm cycle. The move signals institutional recognition that election threat coordination — fragmented since post-2020 restructuring — needs a dedicated architecture. Watch whether these appointments translate into interagency information sharing or remain largely symbolic given current tensions between the IC and political leadership.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/odni-taps-officials-to-coordinate-response-to-election-threats"
         },
         {
-          "headline": "CENTCOM Chief Disputes Open-Source Estimates of Iran's Surviving Missile Arsenal",
-          "summary": "Admiral Brad Cooper publicly contradicted circulating open-source assessments that Iran retained the majority of its missile and drone inventory following recent strikes, stating the figures in open-source reporting are inaccurate. The pushback from a senior operational commander against OSINT-derived conclusions is notable and creates an intelligence credibility gap — without declassified data to support his claim, the dispute itself becomes a signal worth tracking. Watch for whether the IC releases any corroborating assessments or whether this remains an unresolved divergence between official and open-source pictures.",
+          "headline": "CENTCOM Chief Contradicts Open-Source Assessments of Iran's Post-Strike Arsenal",
+          "summary": "Admiral Brad Cooper publicly disputed OSINT-based estimates suggesting Iran retained the bulk of its missile and drone inventory following recent strikes, stating open-source numbers are inaccurate. The contradiction between classified military assessments and open-source intelligence is analytically significant — either OSINT analysts are missing degradation data, or the statement reflects information operations aimed at managing escalation dynamics. This gap will be a key test case for the credibility of open-source battlefield damage assessment.",
           "source": "The War Zone",
           "url": "https://www.twz.com/news-features/centcom-commander-dismisses-reports-that-iran-retains-most-of-its-missile-and-drone-arsenal"
         },
         {
-          "headline": "Supply Chain Attack on TanStack and AI-Linked npm Packages Prompts OpenAI Emergency Update",
-          "summary": "A campaign compromising the widely used TanStack open-source library has expanded to additional npm and PyPI packages with ties to multiple AI companies, prompting OpenAI to issue an urgent update advisory to macOS users. Supply chain attacks targeting AI-adjacent tooling represent a high-leverage threat vector, as compromise at the dependency level can propagate silently across developer environments and production systems. The breadth of affected packages suggests a deliberate targeting of the AI development ecosystem rather than opportunistic infection.",
+          "headline": "TanStack Supply Chain Compromise Prompts OpenAI to Push Emergency macOS Update",
+          "summary": "A widening software supply chain attack targeting the TanStack npm library and additional npm and PyPI packages has hit multiple AI companies, prompting OpenAI to issue an urgent patch advisory for macOS users. Supply chain attacks targeting AI development tooling are particularly high-value given the sensitive data and model infrastructure these environments touch. Developers across the AI ecosystem using affected packages should audit dependencies immediately, as the full scope of the campaign remains under investigation.",
           "source": "The Record from Recorded Future News",
           "url": "https://therecord.media/openai-asks-macos-users-to-update-tanstack-npm"
-        },
-        {
-          "headline": "ODNI Designates Election Threat Coordinators Ahead of 2026 Midterms",
-          "summary": "DNI Tulsi Gabbard has appointed two officials to synchronize monitoring of foreign interference threats across U.S. intelligence agencies in preparation for the 2026 election cycle. The move signals institutional continuity on election security despite broader ODNI restructuring under the current administration, though the identity and authorities of the appointees remain undisclosed. How effectively these coordinators can integrate signals across agencies — and whether findings will be shared with election administrators and the public — will determine the practical impact of this appointment.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/odni-taps-officials-to-coordinate-response-to-election-threats"
         }
       ]
     }
   ],
   "stats": {
-    "feeds_processed": 43,
-    "articles_reviewed": 90,
-    "items_published": 16
+    "feeds_processed": 47,
+    "articles_reviewed": 101,
+    "items_published": 15
   }
 }
