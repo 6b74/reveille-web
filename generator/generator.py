@@ -32,7 +32,8 @@ Write a section of the daily brief with the following structure, returned as JSO
 }}
 
 Rules:
-- Select the 3-4 most significant articles. Skip duplicates and low-signal items.
+- Select the 3-4 most significant articles. Skip duplicates and low-signal items. 
+- Do not duplicate articles across different sections. If an article appears in cyber, do not also present it in military, or osint, etc.
 - Write all headlines and summaries in your own words.
 - Be direct and analytical. No filler phrases.
 - Return JSON only. No markdown, no preamble.

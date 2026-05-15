@@ -28,28 +28,32 @@
     "https://www.oryxspioenkop.com/feeds/posts/default",
     "https://www.dni.gov/index.php/newsroom/press-releases?format=feed&type=rss"
   ],
-	"cyber": [
-	  "https://research.checkpoint.com/feed/",
-	  "http://feeds.feedburner.com/feedburner/Talos",
-	  "https://www.cisa.gov/cybersecurity-advisories/all.xml",
-	  "https://krebsonsecurity.com/feed/",
-	  "https://portswigger.net/research/rss",
-	  "https://rhinosecuritylabs.com/feed/",
-	  "https://www.zerodayinitiative.com/blog?format=rss",
-	  "http://googleprojectzero.blogspot.com/feeds/posts/default",
-	  "https://blog.assetnote.io/feed.xml",
-	  "https://labs.watchtowr.com/rss/",
-	  "https://www.mdsec.co.uk/feed/",
-	  "https://embracethered.com/blog/index.xml",
-	  "https://github.blog/tag/github-security-lab/feed/",
-	  "https://rtx.meta.security/feed.xml",
-	  "https://blog.ret2.io/feed.xml",
-	  "https://samcurry.net/api/feed.rss",
-	  "http://little-canada.org/feeds/output/synacktiv-publications.rss",
-	  "https://therecord.media/feed/"
-	],
+  "cyber": [
+    "https://research.checkpoint.com/feed/",
+    "http://feeds.feedburner.com/feedburner/Talos",
+    "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+    "https://krebsonsecurity.com/feed/",
+    "https://portswigger.net/research/rss",
+    "https://rhinosecuritylabs.com/feed/",
+    "https://www.zerodayinitiative.com/blog?format=rss",
+    "http://googleprojectzero.blogspot.com/feeds/posts/default",
+    "https://blog.assetnote.io/feed.xml",
+    "https://labs.watchtowr.com/rss/",
+    "https://www.mdsec.co.uk/feed/",
+    "https://embracethered.com/blog/index.xml",
+    "https://github.blog/tag/github-security-lab/feed/",
+    "https://rtx.meta.security/feed.xml",
+    "https://blog.ret2.io/feed.xml",
+    "https://samcurry.net/api/feed.rss",
+    "http://little-canada.org/feeds/output/synacktiv-publications.rss",
+    "https://therecord.media/feed/"
+  ],
   "ICS/SCADA/OT": [
     "https://www.securityweek.com/feed/",
-    "https://www.darkreading.com/ics-ot-security"
+    "https://www.darkreading.com/ics-ot-security",
+    "https://industrialcyber.co/feed/",
+    "https://feeds.feedburner.com/feedburner/Talos",
+    "https://cert-portal.siemens.com/productcert/rss/advisories.atom",
+    "https://cert-portal.siemens.com/productcert/rss/alerts.atom"
   ]
 }
