@@ -71,7 +71,6 @@ def generate_section(section_id, articles):
     if not articles:
         return None
 
-    # trim to top 15 candidates to keep prompt size manageable
     candidates = articles[:15]
     articles_text = "\n\n".join([
         f"Title: {a['title']}\nSource: {a['source']}\nURL: {a['url']}\nSummary: {a['summary']}"
@@ -86,20 +85,34 @@ def generate_section(section_id, articles):
     )
 
     response = api_call_with_retry(lambda: get_client().messages.create(
-        model="claude-sonnet-4-6",
+        model="claude-sonnet-4-20250514",
         max_tokens=1500,
         messages=[{"role": "user", "content": prompt}],
     ))
 
+    if not response.content:
+        print(f"  WARNING: empty content list for {section_id}, skipping")
+        return None
+
     raw = response.content[0].text.strip()
 
-    # strip any accidental markdown fences
-    if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json"):
-            raw = raw[4:]
+    if not raw:
+        print(f"  WARNING: empty response text for {section_id}, skipping")
+        return None
 
-    return json.loads(raw.strip())
+    # strip markdown fences robustly
+    if raw.startswith("```"):
+        lines = raw.splitlines()
+        # drop first line (``` or ```json) and last line (```)
+        inner_lines = lines[1:-1] if lines[-1].strip() == "```" else lines[1:]
+        raw = "\n".join(inner_lines).strip()
+
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError as e:
+        print(f"  ERROR: JSON parse failed for {section_id}: {e}")
+        print(f"  Raw response preview: {raw[:200]}")
+        return None
 
 
 def generate_executive_summary(sections):
