@@ -1,150 +1,156 @@
 {
-  "date": "2026-05-22",
-  "generated_at": "2026-05-22T06:02:21.909280+00:00",
-  "issue": 22,
-  "executive_summary": "Today's intelligence picture is defined by two converging macro-themes: accelerating great power competition playing out simultaneously in the diplomatic, military, and technological domains, and a broadening attack surface against critical infrastructure that state and criminal actors are actively exploiting. The geopolitical and military sections are tightly linked, with Washington repositioning assets and alliances in both the Indo-Pacific and Western Hemisphere in direct response to Chinese and Cuban pressure, while the USS Nimitz deployment to the Caribbean and the Poland troop reversal together suggest an administration managing multiple deterrence commitments at once under significant internal political pressure. The cyber and ICS sections reinforce this threat picture rather than running parallel to it, as Microsoft's disruption of Fox Tempest targeting critical infrastructure and the disclosure of critical vulnerabilities in ABB and Hitachi Energy industrial systems indicate that adversaries are probing the same sectors that military planners are trying to protect, and Beijing's push to dominate global AI standards through UN frameworks adds a longer-range strategic dimension to what might otherwise appear as isolated technical incidents. Analysts should watch for whether the Fox Tempest disruption and the industrial control system vulnerabilities connect to state-sponsored actors aligned with any of the geopolitical pressure points identified today, particularly given China's documented interest in pre-positioning within Western critical infrastructure as a strategic deterrent.",
+  "date": "2026-05-23",
+  "generated_at": "2026-05-23T06:01:54.381534+00:00",
+  "issue": 23,
+  "executive_summary": "Today's intelligence picture is defined by two converging macro-themes: accelerating adversarial pressure on US critical infrastructure and a fracturing of Western strategic cohesion at precisely the moment that pressure is intensifying. Iran stands out as the sharpest immediate threat, with Nimbus Manticore's expanded cyber operations, active exploitation of ICS and SCADA systems through weak authentication and known vulnerabilities in Exchange and Fortinet products, and the broader backdrop of Middle East tensions all pointing to a coordinated campaign against US infrastructure rather than opportunistic intrusions. Simultaneously, the US national security architecture is showing unusual signs of internal strain, with CISA under congressional investigation, the Intelligence Director's resignation after just 16 months, NATO confusion triggered by a Poland troop reversal, and Operation Epic Fury exposing critical vulnerabilities in unmanned systems doctrine, all of which collectively signal institutional instability that adversaries will be actively assessing for exploitation opportunities. On the strategic competitor front, China and Russia are deepening alignment while Beijing simultaneously expands its diplomatic footprint through a potential Xi-Kim summit, suggesting a coordinated effort to consolidate influence in the window created by perceived US disengagement. The thread connecting all four sections is timing: adversarial actors, both state and criminal, appear to be probing and accelerating operations during a moment when US oversight bodies, alliance structures, and intelligence leadership are visibly unsettled.",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Today's cyber landscape features major law enforcement action against IoT botnets, significant industrial control system vulnerabilities, and regulatory developments affecting security research.",
+      "intro": "Today's cyber landscape shows escalating Iranian state-sponsored operations alongside significant U.S. government security failures and law enforcement actions against cybercriminal infrastructure.",
       "items": [
         {
-          "headline": "Canadian authorities arrest alleged Kimwolf botnet operator after months-long DDoS campaign",
-          "summary": "A 23-year-old Ottawa man faces criminal charges in both the U.S. and Canada for allegedly building and operating the Kimwolf IoT botnet that enslaved millions of devices for massive DDoS attacks over six months. The suspect also targeted cybersecurity researchers with harassment campaigns, demonstrating the personal risks faced by those investigating cybercrime operations.",
+          "headline": "Iranian Nimbus Manticore Group Accelerates Cyber Operations During Middle East Tensions",
+          "summary": "Check Point Research documented intensified activities by the Iran-nexus threat group during recent geopolitical conflicts, including attacks on internet-connected cameras, destructive operations against U.S. and Israeli targets, and cloud data exfiltration. These operations demonstrate how state actors synchronize cyber campaigns with kinetic military actions to advance strategic objectives.",
+          "source": "Check Point Research",
+          "url": "https://research.checkpoint.com/2026/fast-and-furious-nimbus-manticore-operations-during-the-iranian-conflict/"
+        },
+        {
+          "headline": "CISA Faces Congressional Investigation Over Contractor's GitHub Secrets Leak",
+          "summary": "Lawmakers from both parties are demanding answers after a CISA contractor intentionally published AWS GovCloud keys and sensitive agency data on a public GitHub repository. The agency is still working to contain the breach and invalidate compromised credentials, highlighting serious oversight failures in contractor security practices.",
           "source": "Krebs on Security",
-          "url": "https://krebsonsecurity.com/2026/05/alleged-kimwolf-botmaster-dort-arrested-charged-in-u-s-and-canada/"
+          "url": "https://krebsonsecurity.com/2026/05/lawmakers-demand-answers-as-cisa-tries-to-contain-data-leak/"
         },
         {
-          "headline": "CISA opens vulnerability reporting channel for Known Exploited Vulnerabilities catalog",
-          "summary": "CISA launched a nomination form allowing researchers, vendors, and industry partners to directly report actively exploited vulnerabilities for inclusion in the KEV catalog. This move could significantly accelerate the identification and cataloging of in-the-wild exploits, improving defensive prioritization across organizations.",
+          "headline": "FBI Disrupts Kali365 Phishing Service Targeting Microsoft 365 Environments",
+          "summary": "The Bureau issued an advisory on a Telegram-based phishing-as-a-service operation that captures OAuth tokens to gain persistent access to Microsoft 365 accounts. The service represents the commercialization of advanced credential theft techniques, making sophisticated attacks accessible to lower-skilled cybercriminals.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/cisa-to-allow-researchers-to-report-vulnerabilities-kev"
+          "url": "https://therecord.media/fbi-warns-of-kali365-phishing-attacks"
         },
         {
-          "headline": "Multiple critical vulnerabilities disclosed in ABB and Hitachi Energy industrial systems",
-          "summary": "CISA published advisories covering vulnerabilities in ABB's Terra AC Wallbox charging stations, B&R automation products, and Hitachi Energy's GMS600 systems. The flaws range from heap memory corruption enabling remote control to OpenSSL timing attacks, highlighting ongoing security challenges in operational technology environments critical to infrastructure.",
-          "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-141-05"
-        },
-        {
-          "headline": "UK cybercrime law reform proposals could severely restrict security research",
-          "summary": "Proposed UK legislation would require security researchers to halt activity immediately upon discovering vulnerabilities, preventing confirmation, severity assessment, or exploitability testing. Experts warn these restrictions could undermine legitimate security research while providing little protection to potential victims of cybercrime.",
+          "headline": "Canadian National Charged for Operating Million-Device KimWolf DDoS Botnet",
+          "summary": "Jacob Butler was arrested for running KimWolf, a DDoS-for-hire service that infected over one million devices globally according to unsealed court documents. The case demonstrates continued law enforcement focus on dismantling cybercriminal infrastructure that enables attacks against critical services.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/uk-plans-for-cybercrime-law-reform-limited-protections"
+          "url": "https://therecord.media/canadian-man-arrested-charged-running-kimwolf-botnet"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "China's strategic initiatives challenge U.S. influence across multiple domains while European anxieties about American commitment persist amid shifting regional security calculations.",
+      "intro": "Strategic uncertainties mount as Trump's NATO policy reversals confuse allies while China and Russia deepen their asymmetric partnership amid Xi's expanded diplomatic outreach.",
       "items": [
         {
-          "headline": "Beijing Launches Diplomatic Push to Control Global AI Standards Through UN Framework",
-          "summary": "Chinese officials are actively working to shape international AI governance through UN-led initiatives, with top AI experts even appearing at U.S. Capitol Hill discussions. This represents a strategic effort to establish China as the leader in setting global standards for AI development and deployment. The campaign could undermine U.S. technological leadership by embedding Chinese priorities into international regulatory frameworks.",
-          "source": "War on the Rocks",
-          "url": "https://warontherocks.com/cogs-of-war/chinas-ai-governance-offensive-threatens-u-s-tech-leadership/"
+          "headline": "Trump Administration's Poland Troop Reversal Creates NATO Confusion",
+          "summary": "The Trump administration abruptly reversed course on U.S. troop deployments to Poland, leaving NATO allies questioning America's commitment to European defense. The policy flip highlights broader uncertainty about U.S. strategic reliability under the new administration. Watch for further clarifications from Defense Secretary Hegseth and potential ripple effects on broader NATO planning.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/05/22/trump-troops-poland-deployment-hegseth-nato-rutte-rubio/"
         },
         {
-          "headline": "Philippines Displaces India as Washington's Primary Anti-China Partner in Indo-Pacific",
-          "summary": "The Quad partnership appears to be failing as the Philippines has effectively replaced India in U.S. strategic planning against China. This shift reflects India's reluctance to fully align with American containment efforts and Manila's growing importance as a frontline partner. The realignment signals a fundamental change in how Washington approaches Indo-Pacific security architecture.",
+          "headline": "Xi Jinping Prepares Potential North Korea Visit as China Expands Post-Trump Diplomacy",
+          "summary": "Chinese President Xi Jinping appears to be preparing for a rare visit to Pyongyang as part of accelerated diplomatic engagement following Trump's return to office. The potential trip signals China's effort to strengthen regional partnerships amid renewed U.S.-China tensions. Monitor for official announcements and implications for Korean Peninsula dynamics.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/22/quad-rubio-india-china/"
+          "url": "https://foreignpolicy.com/2026/05/22/xi-north-korea-putin-trump-beijing-visit/"
         },
         {
-          "headline": "European NATO Allies Remain Anxious Over Trump's Continued Greenland Ambitions",
-          "summary": "Trump has not abandoned his interest in acquiring Greenland, keeping European allies on edge about U.S. territorial ambitions within NATO. The persistent focus on Greenland reflects broader concerns about American reliability and respect for allied sovereignty. This ongoing tension could complicate transatlantic relations and NATO cohesion as allies question U.S. commitment to established partnerships.",
+          "headline": "China Escalates Military Purge with Death Sentences for Fallen Generals",
+          "summary": "Xi Jinping has dramatically increased punishment severity for purged military officials, with some generals now facing death sentences rather than traditional imprisonment. This represents a significant escalation in Xi's anti-corruption campaign within the People's Liberation Army. The harsh penalties suggest deeper concerns about military loyalty and institutional control.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/21/trump-greenland-nato-ben-gvir-israel-gaza-qatar/"
+          "url": "https://foreignpolicy.com/2026/05/22/china-xi-jinping-purge-generals-punishment-death-sentence/"
         },
         {
-          "headline": "Florida Republicans Push Trump Administration Toward Military Action Against Cuba",
-          "summary": "Republican lawmakers from Florida are increasingly calling for Trump to take military action to seize former Cuban President Raúl Castro, who faces U.S. indictment. The pressure campaign represents a significant escalation in anti-Cuba rhetoric and could force the administration into considering direct intervention. Such action would mark a dramatic departure from decades of diplomatic approaches to the island nation.",
+          "headline": "Russia-China Partnership Deepens Despite Fundamental Asymmetries",
+          "summary": "Putin's ongoing engagement with China reveals Russia's increasing dependence on an fundamentally unequal partnership, particularly in energy and economic sectors. Despite proclaimed 'no limits' cooperation, Russia appears to be the junior partner with limited leverage. This dynamic will likely intensify as Western sanctions continue to constrain Russian options.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/21/cuba-raul-castro-indictment-us-war-republicans-trump-rubio/"
+          "url": "https://foreignpolicy.com/2026/05/22/russia-china-meeting-xi-putin-gas-oil-asymmetry/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "Today's military developments center on force posture shifts in Europe, advanced weapons testing resumption, and budget battles over key modernization programs.",
+      "intro": "Major defense initiatives and alliance tensions dominate today's military developments, with the Pentagon launching a massive autonomous warfare program while diplomatic rifts emerge within NATO.",
       "items": [
         {
-          "headline": "Trump reverses course, announces 5,000-troop deployment to Poland after initial cancellation",
-          "summary": "The President announced a major troop deployment to Poland just one week after cancelling a previous Army deployment to the country. This abrupt policy reversal highlights continued strategic uncertainty in European force posture planning and could signal shifting priorities in NATO alliance commitments amid regional security concerns.",
-          "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/05/22/in-shift-trump-announces-deployment-of-5000-us-troops-to-poland/"
-        },
-        {
-          "headline": "General Atomics restarts drone wingman testing after software-related flight mishap",
-          "summary": "The defense contractor has resumed autonomous drone wingman flights following a joint Air Force investigation that identified software issues requiring corrective updates. This program represents critical progress toward manned-unmanned teaming capabilities, making flight safety and software reliability essential for future military aviation operations.",
+          "headline": "Pentagon launches $54 billion autonomous warfare initiative to overhaul broken acquisition system",
+          "summary": "The Defense Department's new DAWG initiative represents a massive investment in autonomous military capabilities. The program aims to address the Pentagon's notoriously slow and inefficient procurement processes that have hindered modernization efforts. This marks a significant shift toward AI-driven warfare systems and could reshape how the military develops and deploys future technologies.",
           "source": "Defense One",
-          "url": "https://www.defenseone.com/defense-systems/2026/05/general-atomics-resumes-drone-wingman-flights-after-mishap/413717/"
+          "url": "https://www.defenseone.com/ideas/2026/05/pentagons-54-billion-bet-autonomous-warfare/413735/"
         },
         {
-          "headline": "Army modernization programs face funding uncertainty tied to Congressional budget reconciliation",
-          "summary": "Critical Army initiatives including munitions production and industrial base development are contingent on lawmakers' willingness to pass a new reconciliation bill. The White House's precedent-breaking funding request places key military capabilities at the mercy of complex Congressional budget negotiations, potentially delaying essential modernization efforts.",
-          "source": "Defense One",
-          "url": "https://www.defenseone.com/policy/2026/05/key-army-efforts-pinned-lawmakers-taste-new-reconciliation-bill/413703/"
-        },
-        {
-          "headline": "USS Nimitz deploys to Caribbean as US-Cuba tensions escalate over war crimes charges",
-          "summary": "The carrier's arrival coincides with Justice Department charges against former Cuban president Raúl Castro for the 1996 shootdown of civilian aircraft that killed three Americans. This naval deployment signals heightened US resolve in the region and demonstrates how decades-old incidents continue to shape current military positioning and diplomatic relations.",
+          "headline": "NATO alliance faces growing strain as Rubio questions relevance after Operation Epic Fury fallout",
+          "summary": "Secretary of State Marco Rubio is openly challenging NATO's effectiveness following allied resistance to supporting Washington's recent military operation. This diplomatic pressure campaign signals a potential shift in U.S.-NATO relations and could reshape the alliance's structure. The tensions highlight fundamental disagreements over military intervention strategies among member nations.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-navy/2026/05/21/uss-nimitz-arrives-in-caribbean-as-us-cuba-tension-mounts/"
+          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/05/22/rubio-ratchets-up-pressure-on-nato-at-key-summit/"
+        },
+        {
+          "headline": "Operation Epic Fury aircraft losses reveal vulnerability of unmanned systems in combat",
+          "summary": "Congressional analysis shows 42 U.S. aircraft were lost or damaged during recent operations, with drones comprising nearly 60% of the losses at 25 units. These casualty figures highlight the current limitations of unmanned systems in contested environments and may influence future procurement decisions. The losses underscore the ongoing challenges of operating advanced technology in real combat scenarios.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/05/22/congressional-report-tallies-42-us-aircraft-lost-or-damaged-in-operation-epic-fury/"
+        },
+        {
+          "headline": "Intelligence Director Gabbard resigns after 16 months overseeing national security agencies",
+          "summary": "Director of National Intelligence Tulsi Gabbard is stepping down citing her husband's health concerns, ending her tenure managing America's intelligence community. Her departure creates a leadership vacuum at a critical time when intelligence coordination faces multiple global challenges. The resignation will trigger a new confirmation process for one of the most sensitive positions in national security.",
+          "source": "Defense One",
+          "url": "https://www.defenseone.com/policy/2026/05/gabbard-resign-director-national-intelligence-citing-husbands-health/413736/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Today's intelligence landscape reveals significant developments in U.S. special operations capabilities and cross-border fraud enforcement efforts.",
+      "intro": "Today's intelligence landscape features significant developments in vulnerability disclosure processes, digital privacy rights, and previously classified aerial incidents coming to light.",
       "items": [
         {
-          "headline": "U.S. Military Develops Swarming Capability for Shahed-136 Drone Clone",
-          "summary": "Shield AI is integrating hivemind swarming software into the U.S. military's LUCAS kamikaze drone, a reverse-engineered version of Iran's combat-proven Shahed-136. This cooperative swarming capability could dramatically enhance the system's lethality by enabling coordinated multi-drone attacks. The development signals America's commitment to matching and exceeding adversary drone capabilities proven effective in Ukraine.",
-          "source": "The War Zone",
-          "url": "https://www.twz.com/air/u-s-militarys-lucas-kamikaze-drone-is-getting-hivemind-swarming-capability"
-        },
-        {
-          "headline": "Americans Sentenced for Supporting India-Based Tech Support Scam Operations",
-          "summary": "Two U.S. citizens pleaded guilty to providing critical infrastructure services to India-based telemarketing fraud centers, including phone routing and call tracking tools. The case highlights the transnational nature of tech support scams and the role of U.S.-based facilitators in enabling overseas fraud operations. This represents a rare prosecution targeting the technical infrastructure supporting international scam centers rather than just the scammers themselves.",
+          "headline": "CISA Opens Direct Channel for Security Researchers to Submit Exploited Vulnerability Reports",
+          "summary": "The cybersecurity agency launched a new nomination form allowing researchers and industry partners to directly report vulnerabilities for inclusion in the Known Exploited Vulnerabilities catalog. This represents a shift toward more collaborative vulnerability intelligence gathering, potentially accelerating the identification of actively exploited bugs that pose immediate threats to critical infrastructure.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/two-americans-plead-guilty-india-call-center-scams"
+          "url": "https://therecord.media/cisa-to-allow-researchers-to-report-vulnerabilities-kev"
         },
         {
-          "headline": "White House Reveals Extensive Underground Bunker and Advanced Drone Defense System",
-          "summary": "New details emerge about the White House's fortified structure extending six floors underground, coupled with plans for what officials describe as Washington's most extensive protective drone network. The revelation provides rare insight into the layered security architecture protecting the nation's executive leadership. The underground facility's depth and the emphasis on drone defenses reflect evolving threat assessments in the current security environment.",
+          "headline": "Supreme Court's Pending Chatrie Decision Could Reshape Digital Privacy Rights Nationwide",
+          "summary": "The high court case examining geofence search warrants may fundamentally alter how law enforcement can access location data from tech companies. Legal experts warn the ruling could either strengthen Fourth Amendment protections in the digital age or significantly expand government surveillance capabilities over American citizens' movements.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/why-supreme-court-chatrie-case-could-reshape-privacy"
+        },
+        {
+          "headline": "First Images Released of Unidentified Object Shot Down Over Lake Huron in 2023",
+          "summary": "Previously classified footage shows the mysterious aerial object intercepted by F-16s during the wave of shoot-downs following the Chinese spy balloon incident. The object was one of three unidentified aerial phenomena destroyed over North America in a three-day period, marking a significant escalation in air defense responses to unknown aerial threats.",
           "source": "The War Zone",
-          "url": "https://www.twz.com/news-features/the-white-house-ballroom-is-a-deep-fortress-in-disguise"
+          "url": "https://www.twz.com/air/we-finally-see-the-mysterious-object-shot-down-by-f-16s-over-lake-huron"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "Today's OT security landscape features critical vulnerabilities in enterprise security platforms and major disruptions to cybercrime infrastructure targeting industrial organizations.",
+      "intro": "Industrial infrastructure faces mounting pressure from Iranian state actors exploiting weak authentication and exposed systems, while industrial router vulnerabilities create additional attack vectors.",
       "items": [
         {
-          "headline": "Critical Authentication Bypass Vulnerability Patched in Cisco Secure Workload Platform",
-          "summary": "Cisco fixed a critical vulnerability in its Secure Workload platform that allows remote attackers to gain Site Admin privileges through insufficient validation in REST APIs. This flaw affects enterprise security infrastructure that often protects industrial environments. Organizations using Cisco Secure Workload should prioritize patching as the vulnerability provides administrative access without proper authentication.",
-          "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/cisco-patches-critical-vulnerability-in-secure-workload/"
+          "headline": "Iranian Hackers Target US Critical Infrastructure Through Weak Authentication and Exposed ICS Systems",
+          "summary": "Iranian-aligned cyber actors are increasingly exploiting basic security gaps in U.S. critical infrastructure, focusing on weakly secured industrial control systems with poor authentication controls. The attacks highlight persistent vulnerabilities in fundamental cyber hygiene practices across critical sectors, raising concerns about the resilience of essential services against state-sponsored threats.",
+          "source": "Industrial Cyber",
+          "url": "https://industrialcyber.co/industrial-cyber-attacks/weak-authentication-exposed-ics-environments-heighten-concerns-over-iranian-cyber-intrusions-into-us-critical-infrastructure/"
         },
         {
-          "headline": "Microsoft Disrupts Fox Tempest Cybercrime Platform Targeting Critical Infrastructure",
-          "summary": "Microsoft successfully dismantled Fox Tempest, a malware-signing-as-a-service platform that facilitated ransomware attacks against hospitals and other critical organizations. The platform provided cybercriminals with digitally signed malware that could bypass security controls in industrial and healthcare environments. This disruption removes a significant threat vector that has been enabling attacks on critical infrastructure sectors.",
+          "headline": "Iranian State Hackers Leverage Microsoft Exchange and Fortinet Vulnerabilities for Infrastructure Access",
+          "summary": "A Congressional Research Service report reveals Iranian state-sponsored groups are systematically exploiting known vulnerabilities in Microsoft Exchange and Fortinet systems to penetrate U.S. infrastructure networks. The findings underscore how nation-state actors continue leveraging unpatched enterprise systems as entry points into critical infrastructure environments.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/ransomware/microsoft-dismantles-fox-tempest-cybercrime-platform-tied-to-ransomware-attacks-on-hospitals-critical-organizations/"
+          "url": "https://industrialcyber.co/reports/iranian-state-sponsored-hackers-exploit-microsoft-exchange-fortinet-flaws-to-access-us-infrastructure-networks-crs-finds/"
+        },
+        {
+          "headline": "Industrial Router Exploitation and Gas Station Hacking Incidents Surface",
+          "summary": "Security researchers report active exploitation of industrial router vulnerabilities, with one case involving a Huawei router flaw that triggered a telecommunications blackout. The incidents highlight the cascading risks when network infrastructure components in industrial environments become attack vectors, potentially disrupting essential services.",
+          "source": "SecurityWeek",
+          "url": "https://www.securityweek.com/in-other-news-industrial-router-exploitation-cisa-kev-nomination-form-gas-station-hacking/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 87,
-    "items_published": 17
+    "articles_reviewed": 84,
+    "items_published": 18
   }
 }
