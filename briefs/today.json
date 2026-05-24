@@ -1,156 +1,51 @@
 {
-  "date": "2026-05-23",
-  "generated_at": "2026-05-23T06:01:54.381534+00:00",
-  "issue": 23,
-  "executive_summary": "Today's intelligence picture is defined by two converging macro-themes: accelerating adversarial pressure on US critical infrastructure and a fracturing of Western strategic cohesion at precisely the moment that pressure is intensifying. Iran stands out as the sharpest immediate threat, with Nimbus Manticore's expanded cyber operations, active exploitation of ICS and SCADA systems through weak authentication and known vulnerabilities in Exchange and Fortinet products, and the broader backdrop of Middle East tensions all pointing to a coordinated campaign against US infrastructure rather than opportunistic intrusions. Simultaneously, the US national security architecture is showing unusual signs of internal strain, with CISA under congressional investigation, the Intelligence Director's resignation after just 16 months, NATO confusion triggered by a Poland troop reversal, and Operation Epic Fury exposing critical vulnerabilities in unmanned systems doctrine, all of which collectively signal institutional instability that adversaries will be actively assessing for exploitation opportunities. On the strategic competitor front, China and Russia are deepening alignment while Beijing simultaneously expands its diplomatic footprint through a potential Xi-Kim summit, suggesting a coordinated effort to consolidate influence in the window created by perceived US disengagement. The thread connecting all four sections is timing: adversarial actors, both state and criminal, appear to be probing and accelerating operations during a moment when US oversight bodies, alliance structures, and intelligence leadership are visibly unsettled.",
+  "date": "2026-05-24",
+  "generated_at": "2026-05-24T06:04:14.245643+00:00",
+  "issue": 24,
+  "executive_summary": "Today's intelligence picture reflects a United States in active strategic competition posture across multiple domains simultaneously. The USS Nimitz deployment to the Caribbean and the Space Force lunar development push both signal Washington responding to near-peer pressure on two distinct fronts — Cuba-linked instability in the Western Hemisphere and Chinese expansion in cislunar space — suggesting decision-makers are managing concurrent deterrence challenges rather than a single focal point. The DNS vulnerability identified as Underminr is particularly concerning in this context, as adversaries with both the motive and capability to challenge U.S. interests — China and potentially Cuba's backers — have demonstrated willingness to target industrial control systems to create asymmetric leverage during periods of elevated conventional tension, meaning the timing of this disclosure warrants scrutiny. The Army's recruiting success provides a rare positive indicator, suggesting domestic institutional resilience at a moment when the overall picture points toward a prolonged, multi-domain competition requiring sustained force readiness rather than short-term crisis response.",
   "sections": [
-    {
-      "id": "cyber",
-      "title": "Cyber",
-      "intro": "Today's cyber landscape shows escalating Iranian state-sponsored operations alongside significant U.S. government security failures and law enforcement actions against cybercriminal infrastructure.",
-      "items": [
-        {
-          "headline": "Iranian Nimbus Manticore Group Accelerates Cyber Operations During Middle East Tensions",
-          "summary": "Check Point Research documented intensified activities by the Iran-nexus threat group during recent geopolitical conflicts, including attacks on internet-connected cameras, destructive operations against U.S. and Israeli targets, and cloud data exfiltration. These operations demonstrate how state actors synchronize cyber campaigns with kinetic military actions to advance strategic objectives.",
-          "source": "Check Point Research",
-          "url": "https://research.checkpoint.com/2026/fast-and-furious-nimbus-manticore-operations-during-the-iranian-conflict/"
-        },
-        {
-          "headline": "CISA Faces Congressional Investigation Over Contractor's GitHub Secrets Leak",
-          "summary": "Lawmakers from both parties are demanding answers after a CISA contractor intentionally published AWS GovCloud keys and sensitive agency data on a public GitHub repository. The agency is still working to contain the breach and invalidate compromised credentials, highlighting serious oversight failures in contractor security practices.",
-          "source": "Krebs on Security",
-          "url": "https://krebsonsecurity.com/2026/05/lawmakers-demand-answers-as-cisa-tries-to-contain-data-leak/"
-        },
-        {
-          "headline": "FBI Disrupts Kali365 Phishing Service Targeting Microsoft 365 Environments",
-          "summary": "The Bureau issued an advisory on a Telegram-based phishing-as-a-service operation that captures OAuth tokens to gain persistent access to Microsoft 365 accounts. The service represents the commercialization of advanced credential theft techniques, making sophisticated attacks accessible to lower-skilled cybercriminals.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/fbi-warns-of-kali365-phishing-attacks"
-        },
-        {
-          "headline": "Canadian National Charged for Operating Million-Device KimWolf DDoS Botnet",
-          "summary": "Jacob Butler was arrested for running KimWolf, a DDoS-for-hire service that infected over one million devices globally according to unsealed court documents. The case demonstrates continued law enforcement focus on dismantling cybercriminal infrastructure that enables attacks against critical services.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/canadian-man-arrested-charged-running-kimwolf-botnet"
-        }
-      ]
-    },
-    {
-      "id": "geopolitical",
-      "title": "Geopolitical",
-      "intro": "Strategic uncertainties mount as Trump's NATO policy reversals confuse allies while China and Russia deepen their asymmetric partnership amid Xi's expanded diplomatic outreach.",
-      "items": [
-        {
-          "headline": "Trump Administration's Poland Troop Reversal Creates NATO Confusion",
-          "summary": "The Trump administration abruptly reversed course on U.S. troop deployments to Poland, leaving NATO allies questioning America's commitment to European defense. The policy flip highlights broader uncertainty about U.S. strategic reliability under the new administration. Watch for further clarifications from Defense Secretary Hegseth and potential ripple effects on broader NATO planning.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/22/trump-troops-poland-deployment-hegseth-nato-rutte-rubio/"
-        },
-        {
-          "headline": "Xi Jinping Prepares Potential North Korea Visit as China Expands Post-Trump Diplomacy",
-          "summary": "Chinese President Xi Jinping appears to be preparing for a rare visit to Pyongyang as part of accelerated diplomatic engagement following Trump's return to office. The potential trip signals China's effort to strengthen regional partnerships amid renewed U.S.-China tensions. Monitor for official announcements and implications for Korean Peninsula dynamics.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/22/xi-north-korea-putin-trump-beijing-visit/"
-        },
-        {
-          "headline": "China Escalates Military Purge with Death Sentences for Fallen Generals",
-          "summary": "Xi Jinping has dramatically increased punishment severity for purged military officials, with some generals now facing death sentences rather than traditional imprisonment. This represents a significant escalation in Xi's anti-corruption campaign within the People's Liberation Army. The harsh penalties suggest deeper concerns about military loyalty and institutional control.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/22/china-xi-jinping-purge-generals-punishment-death-sentence/"
-        },
-        {
-          "headline": "Russia-China Partnership Deepens Despite Fundamental Asymmetries",
-          "summary": "Putin's ongoing engagement with China reveals Russia's increasing dependence on an fundamentally unequal partnership, particularly in energy and economic sectors. Despite proclaimed 'no limits' cooperation, Russia appears to be the junior partner with limited leverage. This dynamic will likely intensify as Western sanctions continue to constrain Russian options.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/22/russia-china-meeting-xi-putin-gas-oil-asymmetry/"
-        }
-      ]
-    },
     {
       "id": "military",
       "title": "Military",
-      "intro": "Major defense initiatives and alliance tensions dominate today's military developments, with the Pentagon launching a massive autonomous warfare program while diplomatic rifts emerge within NATO.",
+      "intro": "Military developments today span strategic positioning in the Caribbean, space warfare preparation, and improved recruitment performance.",
       "items": [
         {
-          "headline": "Pentagon launches $54 billion autonomous warfare initiative to overhaul broken acquisition system",
-          "summary": "The Defense Department's new DAWG initiative represents a massive investment in autonomous military capabilities. The program aims to address the Pentagon's notoriously slow and inefficient procurement processes that have hindered modernization efforts. This marks a significant shift toward AI-driven warfare systems and could reshape how the military develops and deploys future technologies.",
-          "source": "Defense One",
-          "url": "https://www.defenseone.com/ideas/2026/05/pentagons-54-billion-bet-autonomous-warfare/413735/"
+          "headline": "USS Nimitz carrier group deploys to Caribbean as Cuba tensions escalate",
+          "summary": "The Navy's longest-serving aircraft carrier has arrived in Caribbean waters alongside other U.S. warships amid rising tensions with Cuba. This deployment represents a significant show of force in Latin American waters and signals potential concerns about regional stability.",
+          "source": "Task & Purpose",
+          "url": "https://taskandpurpose.com/news/uss-nimitz-caribbean-cuba/"
         },
         {
-          "headline": "NATO alliance faces growing strain as Rubio questions relevance after Operation Epic Fury fallout",
-          "summary": "Secretary of State Marco Rubio is openly challenging NATO's effectiveness following allied resistance to supporting Washington's recent military operation. This diplomatic pressure campaign signals a potential shift in U.S.-NATO relations and could reshape the alliance's structure. The tensions highlight fundamental disagreements over military intervention strategies among member nations.",
-          "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/05/22/rubio-ratchets-up-pressure-on-nato-at-key-summit/"
+          "headline": "Space Force urged to develop human lunar capabilities to counter China threat",
+          "summary": "A new Mitchell Institute report calls for Space Force to establish a human spaceflight program specifically to prepare for potential in-person conflicts with China on the moon. The recommendation highlights growing concerns about militarization of lunar space as both nations advance their space capabilities.",
+          "source": "Defense One - All Content",
+          "url": "https://www.defenseone.com/threats/2026/05/space-force-needs-prepare-person-moon-conflict-china-new-report-argues/413747/"
         },
         {
-          "headline": "Operation Epic Fury aircraft losses reveal vulnerability of unmanned systems in combat",
-          "summary": "Congressional analysis shows 42 U.S. aircraft were lost or damaged during recent operations, with drones comprising nearly 60% of the losses at 25 units. These casualty figures highlight the current limitations of unmanned systems in contested environments and may influence future procurement decisions. The losses underscore the ongoing challenges of operating advanced technology in real combat scenarios.",
-          "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/05/22/congressional-report-tallies-42-us-aircraft-lost-or-damaged-in-operation-epic-fury/"
-        },
-        {
-          "headline": "Intelligence Director Gabbard resigns after 16 months overseeing national security agencies",
-          "summary": "Director of National Intelligence Tulsi Gabbard is stepping down citing her husband's health concerns, ending her tenure managing America's intelligence community. Her departure creates a leadership vacuum at a critical time when intelligence coordination faces multiple global challenges. The resignation will trigger a new confirmation process for one of the most sensitive positions in national security.",
-          "source": "Defense One",
-          "url": "https://www.defenseone.com/policy/2026/05/gabbard-resign-director-national-intelligence-citing-husbands-health/413736/"
-        }
-      ]
-    },
-    {
-      "id": "intel_osint",
-      "title": "Intel / OSINT",
-      "intro": "Today's intelligence landscape features significant developments in vulnerability disclosure processes, digital privacy rights, and previously classified aerial incidents coming to light.",
-      "items": [
-        {
-          "headline": "CISA Opens Direct Channel for Security Researchers to Submit Exploited Vulnerability Reports",
-          "summary": "The cybersecurity agency launched a new nomination form allowing researchers and industry partners to directly report vulnerabilities for inclusion in the Known Exploited Vulnerabilities catalog. This represents a shift toward more collaborative vulnerability intelligence gathering, potentially accelerating the identification of actively exploited bugs that pose immediate threats to critical infrastructure.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/cisa-to-allow-researchers-to-report-vulnerabilities-kev"
-        },
-        {
-          "headline": "Supreme Court's Pending Chatrie Decision Could Reshape Digital Privacy Rights Nationwide",
-          "summary": "The high court case examining geofence search warrants may fundamentally alter how law enforcement can access location data from tech companies. Legal experts warn the ruling could either strengthen Fourth Amendment protections in the digital age or significantly expand government surveillance capabilities over American citizens' movements.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/why-supreme-court-chatrie-case-could-reshape-privacy"
-        },
-        {
-          "headline": "First Images Released of Unidentified Object Shot Down Over Lake Huron in 2023",
-          "summary": "Previously classified footage shows the mysterious aerial object intercepted by F-16s during the wave of shoot-downs following the Chinese spy balloon incident. The object was one of three unidentified aerial phenomena destroyed over North America in a three-day period, marking a significant escalation in air defense responses to unknown aerial threats.",
-          "source": "The War Zone",
-          "url": "https://www.twz.com/air/we-finally-see-the-mysterious-object-shot-down-by-f-16s-over-lake-huron"
+          "headline": "Army exceeds 2026 recruiting target months ahead of schedule",
+          "summary": "The Army has signed 61,500 new recruits, surpassing its annual goal with several months remaining in the fiscal year. This marks a significant turnaround from recent recruiting challenges across military branches and suggests improved public perception or incentive programs are working.",
+          "source": "Task & Purpose",
+          "url": "https://taskandpurpose.com/military-life/army-beats-2026-recruiting-goal/"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "Industrial infrastructure faces mounting pressure from Iranian state actors exploiting weak authentication and exposed systems, while industrial router vulnerabilities create additional attack vectors.",
+      "intro": "Industrial cybersecurity faces heightened risk as a new DNS vulnerability enables attackers to disguise malicious traffic behind legitimate domains, potentially bypassing security controls protecting critical infrastructure.",
       "items": [
         {
-          "headline": "Iranian Hackers Target US Critical Infrastructure Through Weak Authentication and Exposed ICS Systems",
-          "summary": "Iranian-aligned cyber actors are increasingly exploiting basic security gaps in U.S. critical infrastructure, focusing on weakly secured industrial control systems with poor authentication controls. The attacks highlight persistent vulnerabilities in fundamental cyber hygiene practices across critical sectors, raising concerns about the resilience of essential services against state-sponsored threats.",
-          "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/industrial-cyber-attacks/weak-authentication-exposed-ics-environments-heighten-concerns-over-iranian-cyber-intrusions-into-us-critical-infrastructure/"
-        },
-        {
-          "headline": "Iranian State Hackers Leverage Microsoft Exchange and Fortinet Vulnerabilities for Infrastructure Access",
-          "summary": "A Congressional Research Service report reveals Iranian state-sponsored groups are systematically exploiting known vulnerabilities in Microsoft Exchange and Fortinet systems to penetrate U.S. infrastructure networks. The findings underscore how nation-state actors continue leveraging unpatched enterprise systems as entry points into critical infrastructure environments.",
-          "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/reports/iranian-state-sponsored-hackers-exploit-microsoft-exchange-fortinet-flaws-to-access-us-infrastructure-networks-crs-finds/"
-        },
-        {
-          "headline": "Industrial Router Exploitation and Gas Station Hacking Incidents Surface",
-          "summary": "Security researchers report active exploitation of industrial router vulnerabilities, with one case involving a Huawei router flaw that triggered a telecommunications blackout. The incidents highlight the cascading risks when network infrastructure components in industrial environments become attack vectors, potentially disrupting essential services.",
+          "headline": "DNS Vulnerability 'Underminr' Threatens Industrial Network Security by Hiding Malicious Traffic",
+          "summary": "A newly discovered vulnerability called 'Underminr' affects approximately 88 million domains and allows attackers to bypass DNS filtering systems by hiding command-and-control communications behind trusted domains. This technique poses significant risks to industrial control systems that rely on DNS-based security controls to protect against external threats. Organizations operating critical infrastructure should assess their DNS filtering capabilities and consider additional network monitoring measures.",
           "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/in-other-news-industrial-router-exploitation-cisa-kev-nomination-form-gas-station-hacking/"
+          "url": "https://www.securityweek.com/underminr-vulnerability-lets-attackers-hide-malicious-connections-behind-trusted-domains/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 84,
-    "items_published": 18
+    "articles_reviewed": 7,
+    "items_published": 4
   }
 }
