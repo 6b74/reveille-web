@@ -1,51 +1,89 @@
 {
-  "date": "2026-05-24",
-  "generated_at": "2026-05-24T06:04:14.245643+00:00",
-  "issue": 24,
-  "executive_summary": "Today's intelligence picture reflects a United States in active strategic competition posture across multiple domains simultaneously. The USS Nimitz deployment to the Caribbean and the Space Force lunar development push both signal Washington responding to near-peer pressure on two distinct fronts — Cuba-linked instability in the Western Hemisphere and Chinese expansion in cislunar space — suggesting decision-makers are managing concurrent deterrence challenges rather than a single focal point. The DNS vulnerability identified as Underminr is particularly concerning in this context, as adversaries with both the motive and capability to challenge U.S. interests — China and potentially Cuba's backers — have demonstrated willingness to target industrial control systems to create asymmetric leverage during periods of elevated conventional tension, meaning the timing of this disclosure warrants scrutiny. The Army's recruiting success provides a rare positive indicator, suggesting domestic institutional resilience at a moment when the overall picture points toward a prolonged, multi-domain competition requiring sustained force readiness rather than short-term crisis response.",
+  "date": "2026-05-25",
+  "generated_at": "2026-05-25T06:03:00.625944+00:00",
+  "issue": 25,
+  "executive_summary": "Today's intelligence picture is defined by a convergence of eroding institutional capacity and growing strategic vulnerability across both military and domestic fronts. The U.S. military faces compounding readiness concerns — extended Pacific supply lines, a 25-year low in peacekeeping participation, and a fatal incident at Fort Hood — that together suggest systemic stress within the force at a moment when allied partners like the Royal Navy are accelerating autonomous capabilities to compensate for gaps in collective Western deterrence. The Pentagon's exploration of nuclear carriers as emergency power infrastructure, combined with the industrial sector's pivot toward network segmentation under zero trust frameworks, signals that critical infrastructure resilience is an active and unresolved concern, not a future planning problem. Threading across all of this is a broader pattern of institutional strain — democratic norms under legal pressure, multilateral commitments contracting, and legacy Cold War-era surveillance disclosures surfacing — suggesting that both adversaries and domestic actors are operating in an environment where traditional safeguards and alliances are weaker than at any recent point, creating windows of exploitation that today's reporting collectively illuminates but does not yet resolve.",
   "sections": [
+    {
+      "id": "geopolitical",
+      "title": "Geopolitical",
+      "intro": "Democratic institutions face constitutional challenges as the Supreme Court potentially undermines fundamental voting principles.",
+      "items": [
+        {
+          "headline": "Supreme Court Decision Challenges Core Democratic Voting Principle",
+          "summary": "A recent Supreme Court ruling threatens the \"one person, one vote\" standard that has governed American electoral districts since the Warren Court era. This constitutional shift could fundamentally alter how legislative representation is allocated across the United States. The decision represents a significant departure from decades of precedent governing democratic participation and electoral equality.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/05/25/warren-court-one-man-one-vote-supreme-court/"
+        }
+      ]
+    },
     {
       "id": "military",
       "title": "Military",
-      "intro": "Military developments today span strategic positioning in the Caribbean, space warfare preparation, and improved recruitment performance.",
+      "intro": "Military forces worldwide grapple with evolving operational challenges from Pacific supply line vulnerabilities to declining peacekeeping commitments and emerging technology integration.",
       "items": [
         {
-          "headline": "USS Nimitz carrier group deploys to Caribbean as Cuba tensions escalate",
-          "summary": "The Navy's longest-serving aircraft carrier has arrived in Caribbean waters alongside other U.S. warships amid rising tensions with Cuba. This deployment represents a significant show of force in Latin American waters and signals potential concerns about regional stability.",
-          "source": "Task & Purpose",
-          "url": "https://taskandpurpose.com/news/uss-nimitz-caribbean-cuba/"
+          "headline": "U.S. Pacific command warns 5,000-mile supply lines pose critical vulnerability in potential conflict",
+          "summary": "The U.S. Forces Korea commander highlighted the fundamental challenge of maintaining extended logistics chains across the Pacific theater. This assessment underscores growing concerns about America's ability to sustain prolonged operations against near-peer adversaries in the Indo-Pacific region. The logistics challenge represents one of the most significant strategic vulnerabilities in current U.S. military planning.",
+          "source": "Defense One",
+          "url": "https://www.defenseone.com/threats/2026/05/military-says-its-ready-fight-tonight-pacific-can-it-sustain-fight/413750/"
         },
         {
-          "headline": "Space Force urged to develop human lunar capabilities to counter China threat",
-          "summary": "A new Mitchell Institute report calls for Space Force to establish a human spaceflight program specifically to prepare for potential in-person conflicts with China on the moon. The recommendation highlights growing concerns about militarization of lunar space as both nations advance their space capabilities.",
-          "source": "Defense One - All Content",
-          "url": "https://www.defenseone.com/threats/2026/05/space-force-needs-prepare-person-moon-conflict-china-new-report-argues/413747/"
+          "headline": "Global peacekeeping forces reach 25-year low amid U.S. withdrawal from UN operations",
+          "summary": "International peacekeeping troop deployments have fallen to their lowest levels in at least 25 years, according to SIPRI analysis. The decline coincides with significant U.S. actions in 2025 to withdraw from, defund, or challenge various UN peacekeeping bodies. This trend signals a broader shift away from multilateral security arrangements and could create power vacuums in conflict zones.",
+          "source": "Defense News",
+          "url": "https://www.defensenews.com/global/2026/05/24/peacekeeping-troop-numbers-fall-to-lowest-in-at-least-25-years-sipri-says/"
         },
         {
-          "headline": "Army exceeds 2026 recruiting target months ahead of schedule",
-          "summary": "The Army has signed 61,500 new recruits, surpassing its annual goal with several months remaining in the fiscal year. This marks a significant turnaround from recent recruiting challenges across military branches and suggests improved public perception or incentive programs are working.",
+          "headline": "Royal Navy accelerates shift to autonomous hybrid fleet for North Atlantic operations",
+          "summary": "The UK's First Sea Lord declared that transitioning to an increasingly uncrewed and autonomous naval force is essential for achieving necessary lethality and survivability in future conflicts. This strategic pivot reflects broader recognition that traditional naval platforms face growing vulnerability to advanced threats. The emphasis on North Atlantic and High North operations suggests renewed focus on potential peer adversary scenarios.",
+          "source": "Naval News",
+          "url": "https://www.navalnews.com/event-news/cne-2026/2026/05/first-sea-lord-insists-no-alternative-to-hybrid-navy/"
+        },
+        {
+          "headline": "Fatal shooting at Fort Hood follows confrontation involving military police",
+          "summary": "One person died and others were wounded in a shooting at a Fort Hood recreation area Saturday night after military police responded to a fight and became engaged in a firefight. The incident marks another security concern at the Texas installation, which has experienced multiple violent incidents in recent years. Details about the circumstances leading to the fatal encounter remain under investigation.",
           "source": "Task & Purpose",
-          "url": "https://taskandpurpose.com/military-life/army-beats-2026-recruiting-goal/"
+          "url": "https://taskandpurpose.com/news/fort-hood-recreation-area-shooting/"
+        }
+      ]
+    },
+    {
+      "id": "intel_osint",
+      "title": "Intel / OSINT",
+      "intro": "Today's intelligence developments highlight both modern resilience planning and historical Cold War espionage operations.",
+      "items": [
+        {
+          "headline": "Pentagon Tests Nuclear-Powered Aircraft Carrier as Emergency Power Source for Critical Facilities",
+          "summary": "The USS Gerald R. Ford will demonstrate its capability to provide electrical power to land-based military installations during emergencies or after attacks. This initiative reflects growing Pentagon concerns about infrastructure vulnerability and the need for resilient backup power systems at critical bases. The concept builds on historical precedent of naval vessels providing emergency power during disasters.",
+          "source": "The War Zone",
+          "url": "https://www.twz.com/nuclear/supercarrier-uss-gerald-r-ford-to-act-as-floating-nuclear-power-plant-for-facilities-on-land"
+        },
+        {
+          "headline": "Declassified Records Reveal Cold War Surveillance Operations Using Modified Training Aircraft",
+          "summary": "Previously classified documents show the British Chipmunk trainer aircraft was extensively used for intelligence gathering missions over Soviet forces in divided Berlin during the Cold War. The small propeller-driven trainer's unassuming appearance made it an effective platform for covert surveillance operations spanning several decades. This case study demonstrates how intelligence agencies repurposed civilian aircraft for sensitive collection missions.",
+          "source": "The War Zone",
+          "url": "https://www.twz.com/air/the-tiny-chipmunk-trainer-was-the-cold-wars-most-unlikely-spyplane"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "Industrial cybersecurity faces heightened risk as a new DNS vulnerability enables attackers to disguise malicious traffic behind legitimate domains, potentially bypassing security controls protecting critical infrastructure.",
+      "intro": "Industrial operators are expanding zero trust security models beyond traditional identity controls to address growing connectivity risks in operational technology environments.",
       "items": [
         {
-          "headline": "DNS Vulnerability 'Underminr' Threatens Industrial Network Security by Hiding Malicious Traffic",
-          "summary": "A newly discovered vulnerability called 'Underminr' affects approximately 88 million domains and allows attackers to bypass DNS filtering systems by hiding command-and-control communications behind trusted domains. This technique poses significant risks to industrial control systems that rely on DNS-based security controls to protect against external threats. Organizations operating critical infrastructure should assess their DNS filtering capabilities and consider additional network monitoring measures.",
-          "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/underminr-vulnerability-lets-attackers-hide-malicious-connections-behind-trusted-domains/"
+          "headline": "Industrial operators shift zero trust focus from identity to network visibility and segmentation",
+          "summary": "Operational technology environments are adopting broader zero trust approaches that prioritize network segmentation and asset visibility over traditional identity-based controls. This evolution reflects the unique challenges of industrial systems where devices often lack standard authentication mechanisms and operational continuity takes precedence over access restrictions. The shift indicates maturation in OT security thinking as organizations recognize that classical IT security models require significant adaptation for industrial environments.",
+          "source": "Industrial Cyber",
+          "url": "https://industrialcyber.co/features/zero-trust-in-ot-moves-beyond-identity-as-industrial-operators-prioritize-visibility-segmentation-operational-resilience/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 7,
-    "items_published": 4
+    "articles_reviewed": 12,
+    "items_published": 8
   }
 }
