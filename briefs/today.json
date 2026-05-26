@@ -1,89 +1,126 @@
 {
-  "date": "2026-05-25",
-  "generated_at": "2026-05-25T06:03:00.625944+00:00",
-  "issue": 25,
-  "executive_summary": "Today's intelligence picture is defined by a convergence of eroding institutional capacity and growing strategic vulnerability across both military and domestic fronts. The U.S. military faces compounding readiness concerns — extended Pacific supply lines, a 25-year low in peacekeeping participation, and a fatal incident at Fort Hood — that together suggest systemic stress within the force at a moment when allied partners like the Royal Navy are accelerating autonomous capabilities to compensate for gaps in collective Western deterrence. The Pentagon's exploration of nuclear carriers as emergency power infrastructure, combined with the industrial sector's pivot toward network segmentation under zero trust frameworks, signals that critical infrastructure resilience is an active and unresolved concern, not a future planning problem. Threading across all of this is a broader pattern of institutional strain — democratic norms under legal pressure, multilateral commitments contracting, and legacy Cold War-era surveillance disclosures surfacing — suggesting that both adversaries and domestic actors are operating in an environment where traditional safeguards and alliances are weaker than at any recent point, creating windows of exploitation that today's reporting collectively illuminates but does not yet resolve.",
+  "date": "2026-05-26",
+  "generated_at": "2026-05-26T06:05:08.827296+00:00",
+  "issue": 26,
+  "executive_summary": "Today's intelligence picture is defined by two reinforcing dynamics: a sharpening of great power confrontation across multiple domains, and a simultaneous acceleration of defensive posturing by US allies acting with greater strategic independence. The direct US military strikes against Iranian naval assets at Bandar Abbas, corroborated by open-source imagery of battle-damaged US aircraft at RAF Mildenhall, confirm active kinetic engagement with Iran and suggest operations are broader or more intense than publicly acknowledged, while concurrent USAF drone deployments to the Middle East following MQ-9 losses indicate a theater adapting under attrition pressure. In the Euro-Atlantic space, Dutch seizure of 800 servers linked to Russian cyber operations runs parallel to European leaders accelerating strategic autonomy plans, suggesting European capitals are connecting the dots between Russian hybrid warfare and their dependence on US security guarantees that may no longer be reliable under current US policy. Meanwhile, the China ground-effect weapons prototype sighting, combined with the US-Japan missile exercise planning and South Korea's trans-Pacific submarine deployment, points to a coordinated Allied effort to harden Pacific deterrence as Beijing advances novel power projection capabilities. The industrial cybersecurity items, while tactical in isolation, carry strategic weight in this context, as adversaries with demonstrated cyber aggression and the capacity to strike critical infrastructure represent a compounding risk at a moment when Western military and industrial systems are already operating under elevated stress.",
   "sections": [
+    {
+      "id": "cyber",
+      "title": "Cyber",
+      "intro": "Major infrastructure seizures and retail breaches dominated cyber developments, with Dutch authorities dismantling Russian attack infrastructure while convenience store chains face significant data compromises.",
+      "items": [
+        {
+          "headline": "Dutch Police Seize 800 Servers Used in Russian Cyber Operations Against EU",
+          "summary": "Netherlands authorities arrested two hosting company co-owners and seized their server infrastructure that was being used by Russia to conduct cyberattacks, influence operations, and disinformation campaigns targeting the European Union. The companies had taken control of technical infrastructure previously operated by Stark Industries Solutions, an internet service provider sanctioned by the EU in 2025. This represents a significant disruption of Russian cyber capabilities operating from European soil.",
+          "source": "Krebs on Security",
+          "url": "https://krebsonsecurity.com/2026/05/netherlands-seizes-800-servers-arrests-2-for-aiding-cyberattacks/"
+        },
+        {
+          "headline": "7-Eleven Confirms Data Breach Affecting 600,000 Salesforce Records",
+          "summary": "The global convenience store chain acknowledged unauthorized access to systems containing franchisee documents, with threat group ShinyHunters claiming responsibility for stealing over 600,000 Salesforce records containing personal information. This breach highlights ongoing vulnerabilities in retail supply chain data management and the persistence of established threat actors targeting customer databases. Organizations should review their Salesforce security configurations and franchisee data protection protocols.",
+          "source": "Check Point Research",
+          "url": "https://research.checkpoint.com/2026/25th-may-threat-intelligence-report/"
+        }
+      ]
+    },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "Democratic institutions face constitutional challenges as the Supreme Court potentially undermines fundamental voting principles.",
+      "intro": "Memorial Day brings reflection on ongoing military commitments while Europe accelerates preparations for reduced American leadership.",
       "items": [
         {
-          "headline": "Supreme Court Decision Challenges Core Democratic Voting Principle",
-          "summary": "A recent Supreme Court ruling threatens the \"one person, one vote\" standard that has governed American electoral districts since the Warren Court era. This constitutional shift could fundamentally alter how legislative representation is allocated across the United States. The decision represents a significant departure from decades of precedent governing democratic participation and electoral equality.",
+          "headline": "US Military Maintains Global Deployment Despite Memorial Day Remembrance",
+          "summary": "American servicemembers remain deployed in combat zones worldwide, making Memorial Day observances particularly poignant for current operations. The ongoing deployments underscore that military sacrifice continues beyond historical conflicts, creating immediate obligations for policymakers and the public. This reality bridges the gap between honoring past losses and managing present risks to deployed forces.",
+          "source": "War on the Rocks",
+          "url": "https://warontherocks.com/the-lessons-of-sacrifice/"
+        },
+        {
+          "headline": "European Leaders Accelerate Strategic Autonomy Plans Amid Trump Policies",
+          "summary": "European nations are intensifying efforts to reduce dependence on American leadership following what officials describe as problematic bargaining approaches from the Trump administration. The shift represents a fundamental recalibration of transatlantic relations rather than temporary policy adjustments. Watch for concrete steps in defense spending, technology partnerships, and diplomatic initiatives that bypass traditional US-led frameworks.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/25/warren-court-one-man-one-vote-supreme-court/"
+          "url": "https://foreignpolicy.com/2026/05/25/europe-trump-nato-leadership/"
+        },
+        {
+          "headline": "Morocco's Colonial Legacy Remains Contested Century After Rif Rebellion",
+          "summary": "The interpretation of Abd el-Karim's anti-colonial resistance continues to shape contemporary Moroccan politics and regional identity. Competing narratives about the Rif Rebellion reflect ongoing tensions between monarchist legitimacy and populist nationalism. This historical debate influences current policy toward regional autonomy and Morocco's relationship with former colonial powers.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/05/25/abd-el-karim-morocco-rif-colonialism-rebellion-monarchy/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "Military forces worldwide grapple with evolving operational challenges from Pacific supply line vulnerabilities to declining peacekeeping commitments and emerging technology integration.",
+      "intro": "Military developments today span active operations in the Middle East, strengthening Pacific alliances, and continued concerns over China's nuclear capabilities.",
       "items": [
         {
-          "headline": "U.S. Pacific command warns 5,000-mile supply lines pose critical vulnerability in potential conflict",
-          "summary": "The U.S. Forces Korea commander highlighted the fundamental challenge of maintaining extended logistics chains across the Pacific theater. This assessment underscores growing concerns about America's ability to sustain prolonged operations against near-peer adversaries in the Indo-Pacific region. The logistics challenge represents one of the most significant strategic vulnerabilities in current U.S. military planning.",
-          "source": "Defense One",
-          "url": "https://www.defenseone.com/threats/2026/05/military-says-its-ready-fight-tonight-pacific-can-it-sustain-fight/413750/"
-        },
-        {
-          "headline": "Global peacekeeping forces reach 25-year low amid U.S. withdrawal from UN operations",
-          "summary": "International peacekeeping troop deployments have fallen to their lowest levels in at least 25 years, according to SIPRI analysis. The decline coincides with significant U.S. actions in 2025 to withdraw from, defund, or challenge various UN peacekeeping bodies. This trend signals a broader shift away from multilateral security arrangements and could create power vacuums in conflict zones.",
-          "source": "Defense News",
-          "url": "https://www.defensenews.com/global/2026/05/24/peacekeeping-troop-numbers-fall-to-lowest-in-at-least-25-years-sipri-says/"
-        },
-        {
-          "headline": "Royal Navy accelerates shift to autonomous hybrid fleet for North Atlantic operations",
-          "summary": "The UK's First Sea Lord declared that transitioning to an increasingly uncrewed and autonomous naval force is essential for achieving necessary lethality and survivability in future conflicts. This strategic pivot reflects broader recognition that traditional naval platforms face growing vulnerability to advanced threats. The emphasis on North Atlantic and High North operations suggests renewed focus on potential peer adversary scenarios.",
-          "source": "Naval News",
-          "url": "https://www.navalnews.com/event-news/cne-2026/2026/05/first-sea-lord-insists-no-alternative-to-hybrid-navy/"
-        },
-        {
-          "headline": "Fatal shooting at Fort Hood follows confrontation involving military police",
-          "summary": "One person died and others were wounded in a shooting at a Fort Hood recreation area Saturday night after military police responded to a fight and became engaged in a firefight. The incident marks another security concern at the Texas installation, which has experienced multiple violent incidents in recent years. Details about the circumstances leading to the fatal encounter remain under investigation.",
+          "headline": "U.S. Forces Conduct Defensive Strikes Against Iranian Naval Assets in Bandar Abbas",
+          "summary": "Central Command launched strikes targeting Iranian boats and launch sites in response to threats from Iranian forces. The action represents a significant escalation in Gulf tensions and demonstrates continued U.S. willingness to respond militarily to Iranian provocations. Watch for Iranian retaliation and potential broader regional impacts.",
           "source": "Task & Purpose",
-          "url": "https://taskandpurpose.com/news/fort-hood-recreation-area-shooting/"
+          "url": "https://taskandpurpose.com/news/us-strikes-iran-bandar-abbas/"
+        },
+        {
+          "headline": "Japan and U.S. Plan Major Pacific Exercises with Advanced Missile Systems",
+          "summary": "Two major exercises scheduled for late June will include deployment of the containerized Typhon missile system, which will remain stored in Japan afterward rather than being removed as in previous deployments. This marks a significant shift in U.S. regional military posture and demonstrates deepening Japan-U.S. defense integration amid China tensions.",
+          "source": "USNI News",
+          "url": "https://news.usni.org/2026/05/25/japan-announces-2-major-western-pacific-exercises-with-u-s"
+        },
+        {
+          "headline": "South Korea Achieves Historic Trans-Pacific Submarine Deployment to Canada",
+          "summary": "The ROKS Dosan Ahn Changho completed South Korea's first trans-Pacific submarine voyage, arriving at Canadian Forces Base Esquimalt. This milestone demonstrates South Korea's expanding blue-water naval capabilities and strengthening ties with Pacific allies beyond the immediate region. The deployment signals Seoul's growing confidence in projecting naval power globally.",
+          "source": "Naval News",
+          "url": "https://www.navalnews.com/naval-news/2026/05/south-koreas-first-trans-pacific-submarine-deployment-reaches-canada/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Today's intelligence developments highlight both modern resilience planning and historical Cold War espionage operations.",
+      "intro": "Open source intelligence reveals escalating operational tempo in Middle East conflicts, Chinese military modernization advances, and US surveillance capability adjustments.",
       "items": [
         {
-          "headline": "Pentagon Tests Nuclear-Powered Aircraft Carrier as Emergency Power Source for Critical Facilities",
-          "summary": "The USS Gerald R. Ford will demonstrate its capability to provide electrical power to land-based military installations during emergencies or after attacks. This initiative reflects growing Pentagon concerns about infrastructure vulnerability and the need for resilient backup power systems at critical bases. The concept builds on historical precedent of naval vessels providing emergency power during disasters.",
+          "headline": "Battle-damaged US KC-135 tanker photographed at RAF Mildenhall shows Iran attack effects",
+          "summary": "Visual evidence captured at the UK base reveals shrapnel damage to another US Air Force KC-135 tanker, providing concrete assessment of Iranian weapons effectiveness during recent Middle East operations. The public visibility of such damage offers rare insight into operational impacts typically classified, suggesting either deliberate transparency or intelligence collection opportunities for adversaries.",
           "source": "The War Zone",
-          "url": "https://www.twz.com/nuclear/supercarrier-uss-gerald-r-ford-to-act-as-floating-nuclear-power-plant-for-facilities-on-land"
+          "url": "https://www.twz.com/news-features/another-battle-damaged-kc-135-tanker-seen-passing-through-raf-mildenhall"
         },
         {
-          "headline": "Declassified Records Reveal Cold War Surveillance Operations Using Modified Training Aircraft",
-          "summary": "Previously classified documents show the British Chipmunk trainer aircraft was extensively used for intelligence gathering missions over Soviet forces in divided Berlin during the Cold War. The small propeller-driven trainer's unassuming appearance made it an effective platform for covert surveillance operations spanning several decades. This case study demonstrates how intelligence agencies repurposed civilian aircraft for sensitive collection missions.",
+          "headline": "China's ground-effect aircraft prototype spotted with weapons mounting points",
+          "summary": "New imagery of China's experimental 'Bohai Sea Monster' ground-effect vehicle shows apparent weapons hardpoints, indicating development beyond transport toward potential combat roles. This wing-in-ground-effect platform could provide unique low-altitude capabilities for littoral operations, particularly relevant to Taiwan Strait scenarios where conventional aircraft face increasing air defense threats.",
           "source": "The War Zone",
-          "url": "https://www.twz.com/air/the-tiny-chipmunk-trainer-was-the-cold-wars-most-unlikely-spyplane"
+          "url": "https://www.twz.com/air/chinas-bohai-sea-monster-reappears-with-apparent-weapons-hardpoints"
+        },
+        {
+          "headline": "USAF deploys ULTRA surveillance drones to Middle East following MQ-9 losses",
+          "summary": "The Air Force is sending its new high-altitude ULTRA glider drones to the Middle East theater, responding to persistent surveillance gaps created by Iranian-inflicted MQ-9 Reaper losses. These turbocharged platforms offer extended loiter capabilities that could prove harder for adversaries to target, representing tactical adaptation to evolving threat environments.",
+          "source": "The War Zone",
+          "url": "https://www.twz.com/news-features/usafs-new-turbocharged-ultra-surveillance-drones-are-heading-to-the-middle-east"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "Industrial operators are expanding zero trust security models beyond traditional identity controls to address growing connectivity risks in operational technology environments.",
+      "intro": "Industrial cybersecurity advances today focus on improving defensive capabilities, with new AI-powered penetration testing tools and updated NIST guidance for ransomware recovery in manufacturing environments.",
       "items": [
         {
-          "headline": "Industrial operators shift zero trust focus from identity to network visibility and segmentation",
-          "summary": "Operational technology environments are adopting broader zero trust approaches that prioritize network segmentation and asset visibility over traditional identity-based controls. This evolution reflects the unique challenges of industrial systems where devices often lack standard authentication mechanisms and operational continuity takes precedence over access restrictions. The shift indicates maturation in OT security thinking as organizations recognize that classical IT security models require significant adaptation for industrial environments.",
+          "headline": "AI-Powered Penetration Testing Tools for Industrial Systems Transition from Research to Practical Implementation",
+          "summary": "Researcher Isiah Jones has consolidated multiple AI-driven security testing projects into a comprehensive methodology specifically designed for industrial control systems. This development represents a significant advancement in automated vulnerability assessment capabilities for OT environments. The toolkit could enable more systematic and efficient security testing of critical infrastructure systems.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/features/zero-trust-in-ot-moves-beyond-identity-as-industrial-operators-prioritize-visibility-segmentation-operational-resilience/"
+          "url": "https://industrialcyber.co/ai/ai-powered-penetration-testing-for-industrial-systems-moves-from-experimental-concept-to-practical-toolkit/"
+        },
+        {
+          "headline": "NIST Issues Draft Guidance on Ransomware Response and Recovery for Manufacturing Networks",
+          "summary": "The National Institute of Standards and Technology released the initial public draft of Special Publication 1800-41, focusing specifically on ransomware incident response and operational recovery in manufacturing environments. This guidance addresses the unique challenges of restoring production systems while maintaining safety and operational integrity. The publication fills a critical gap in sector-specific ransomware recovery procedures for industrial organizations.",
+          "source": "Industrial Cyber",
+          "url": "https://industrialcyber.co/nist/nist-publishes-sp-1800-41-draft-to-focus-on-ransomware-response-operational-recovery-in-manufacturing-networks/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 12,
-    "items_published": 8
+    "articles_reviewed": 28,
+    "items_published": 13
   }
 }
