@@ -1,162 +1,162 @@
 {
-  "date": "2026-05-28",
-  "generated_at": "2026-05-28T06:02:22.533220+00:00",
-  "issue": 28,
-  "executive_summary": "The most prominent cross-cutting theme today is Iran, which appears simultaneously across the military, cyber, geopolitical, and domestic security domains: U.S. forces are conducting active strikes against Iranian military facilities, the administration is navigating internal tensions over war strategy, Iranian state hackers are confirmed behind the Los Angeles Metro cyberattack, and munitions depletion warnings suggest the U.S. may be entering a period of reduced conventional strike capacity precisely when Iranian retaliation in cyberspace is escalating. This convergence strongly suggests Iran is pursuing a parallel-track response strategy, absorbing kinetic pressure while intensifying cyber operations against U.S. critical infrastructure, a pattern consistent with past Iranian behavior during periods of military confrontation. The failure of the NPT Review Conference for the third consecutive time, combined with China moving to deepen North Korea ties after a seven-year gap, adds a secondary proliferation thread that could complicate U.S. strategic bandwidth if the Iran situation intensifies. Taken together, today's picture reflects a threat environment where adversaries are deliberately exploiting the seam between conventional military operations and cyber and gray-zone activity, and where U.S. allies and institutions appear fragmented in their ability to coordinate a unified response.",
+  "date": "2026-05-29",
+  "generated_at": "2026-05-29T06:05:40.462111+00:00",
+  "issue": 29,
+  "executive_summary": "Today's intelligence picture is defined by a dangerous convergence of great power competition, supply chain vulnerability, and critical infrastructure exposure operating simultaneously across physical, digital, and geopolitical domains. China's quiet acquisition of Indonesian mineral assets, North Korea's constitutional pivot toward confrontation, and GCHQ's warnings about escalating Russian operations collectively signal that U.S. adversaries are pursuing coordinated, multi-domain pressure strategies rather than isolated provocations. The supply chain thread is particularly striking as a cross-cutting vulnerability: Iranian conflict disruptions are cascading through global commercial supply chains, cyber actors are targeting developer and software supply chains, Chinese-linked fraud networks are exploiting mass public events, and the commercial location data exploitation of U.S. forces in combat zones reveals that everyday data ecosystems have become active threat vectors against military personnel. Against this backdrop, both the cyber and OT sectors are showing signs of a defensive posture shift, with CISA advisories, White House mandates for centralized logging, and new AI-driven OT security tools suggesting the U.S. government is beginning to treat critical infrastructure protection with greater urgency, though the reported depletion of U.S. weapons stockpiles raises serious questions about whether American deterrence capacity can keep pace with the accelerating threat environment.",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Today's cyber landscape features a mix of law enforcement victories, government infrastructure targeting, and new security research tools.",
+      "intro": "Today's cyber landscape shows major supply chain compromises targeting developer tools alongside widespread industrial control system vulnerabilities and a significant data breach affecting millions.",
       "items": [
         {
-          "headline": "Iranian intelligence services linked to Los Angeles transit system cyberattack",
-          "summary": "Security researchers at Gambit Security traced a hack of LA's transit system to Iran's Ministry of Intelligence, despite the attacking group's claims of being independent hacktivists. This attribution highlights Iran's continued use of proxy groups to target critical U.S. infrastructure while maintaining plausible deniability.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/iranian-intelligence-behind-hack-of-la-transit-system"
+          "headline": "CISA warns of multiple supply chain attacks targeting developer ecosystems including GitHub and Nx Console",
+          "summary": "Federal cybersecurity officials are responding to emerging supply chain intrusion campaigns targeting CI/CD pipelines, including a malicious Nx Console Visual Studio Code extension and the \"Megalodon\" campaign. These incidents demonstrate how threat actors are increasingly targeting developer tools and processes that support enterprise and cloud environments. Organizations using these development tools should immediately review their CI/CD security postures.",
+          "source": "All CISA Advisories",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/05/28/supply-chain-compromises-impact-nx-console-and-github-repositories"
         },
         {
-          "headline": "FBI alerts law firms to targeted extortion campaigns involving physical surveillance",
-          "summary": "A hacking group is using social engineering tactics against U.S. law firms to gain remote access and steal sensitive data for extortion purposes. The FBI's warning suggests these attacks may involve physical reconnaissance of target firms, representing an escalation in threat actor tactics beyond traditional remote operations.",
+          "headline": "Carnival Corporation breached affecting nearly 6 million customers",
+          "summary": "The cruise line confirmed that attackers compromised an employee account in April and copied personal information from its systems. The breach impacted a limited portion of Carnival's IT environment but affected millions of customers' personal data. This incident highlights ongoing risks from credential-based attacks against major consumer-facing companies.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/fbi-warns-hackers-visit-law-firms-to-steal-data"
+          "url": "https://therecord.media/cruise-giant-carnival-confirms-data-breach-affecting-6-million"
         },
         {
-          "headline": "Romanian hacker receives four-year sentence for breaching Oregon emergency management systems",
-          "summary": "A Romanian national was sentenced for hacking into Oregon's Office of Emergency Management network, following his arrest and extradition to the U.S. The case demonstrates continued international cooperation in prosecuting cybercriminals who target critical government infrastructure.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/romanian-national-sentenced-to-over-4-years-oregon-hack"
+          "headline": "CISA releases multiple ICS advisories covering critical infrastructure vulnerabilities",
+          "summary": "Federal advisories cover vulnerabilities in ABB building systems, Schneider Electric HVAC controllers, medical devices, and security cameras that could allow unauthorized access or device control. The advisories span sectors from healthcare to maritime operations, with several vulnerabilities enabling administrator-level access to critical systems. Organizations should prioritize patching these industrial control systems given their potential for physical impact.",
+          "source": "All CISA Advisories",
+          "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-03"
         },
         {
-          "headline": "Cisco Talos releases synthetic security log generator to improve training datasets",
-          "summary": "The new EvidenceForge tool creates realistic security logs across multiple formats, addressing a key challenge in cybersecurity training and detection model validation. This development could significantly improve the quality of security team exercises and threat detection capabilities without requiring complex manual simulation setups.",
+          "headline": "Security researchers advocate for precision over panic in vulnerability patching strategies",
+          "summary": "Cisco Talos recommends organizations move beyond relying solely on CVSS scores and incorporate EPSS and GCVE metrics to prioritize patching efforts. This approach focuses resources on vulnerabilities that pose actual threats rather than theoretical risks. The guidance comes as organizations struggle with overwhelming numbers of disclosed vulnerabilities and limited patching resources.",
           "source": "Cisco Talos Blog",
-          "url": "https://blog.talosintelligence.com/introducing-evidenceforge-synthetic-security-logs-that-dont-look-as-fake/"
+          "url": "https://blog.talosintelligence.com/less-panic-patching-more-precision/"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "Today's geopolitical landscape is marked by strained diplomatic efforts, with nuclear arms control failing to reach consensus while regional conflicts and great power competition intensify across multiple theaters.",
+      "intro": "Global tensions focus on emerging cease-fire negotiations in the Middle East while strategic competition intensifies across Asia-Pacific supply chains and alliance structures.",
       "items": [
         {
-          "headline": "Nuclear Non-Proliferation Treaty Review Conference Fails for Third Consecutive Time",
-          "summary": "The 11th NPT Review Conference concluded on May 22 without reaching consensus on a final document, marking the third straight failure since 2015. This breakdown occurs amid heightened nuclear tensions and technological developments that challenge the treaty's 50-year-old framework. The repeated failures signal weakening global commitment to nuclear disarmament and non-proliferation at a critical juncture.",
+          "headline": "US and Iran Near Cease-Fire Extension Deal Pending Trump Administration Approval",
+          "summary": "Negotiators have reached a tentative agreement to extend the seven-week cease-fire that ended the US-Israel war against Iran, though both Trump and Tehran's leadership have yet to formally approve the deal. The negotiations represent a critical test of whether diplomatic momentum can break the cyclical pattern of escalation that has characterized the conflict. Success or failure of this extension will likely determine whether the broader regional war can be contained or will reignite with greater intensity.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/05/28/us-iran-reach-deal-cease-fire-mou-kuwait-strikes-trump/"
+        },
+        {
+          "headline": "Chinese State-Owned Enterprises Quietly Expand Control Over Indonesian Critical Mineral Assets",
+          "summary": "China First Heavy Industries and other state enterprises absorbed key Indonesian mining assets following the 2024 bankruptcy of major stainless steel producer Jiangsu Delong, extending Beijing's influence over military-grade metal supply chains. This represents China's strategy of gaining operational control over critical resources without direct ownership, particularly concerning given China First Heavy's role in supplying materials for nuclear submarine reactor vessels. The expansion highlights how China leverages corporate distress to deepen strategic resource dependencies in Southeast Asia.",
           "source": "War on the Rocks",
-          "url": "https://warontherocks.com/what-did-the-npt-review-conference-achieve/"
+          "url": "https://warontherocks.com/cogs-of-war/control-without-ownership-how-chinas-party-business-networks-dominate-indonesias-mineral-supply-chains/"
         },
         {
-          "headline": "China Prepares to Strengthen North Korea Ties After Seven-Year Diplomatic Gap",
-          "summary": "Xi Jinping is likely planning a visit to Pyongyang soon, ending a seven-year absence of high-level Chinese engagement with North Korea. Beijing's renewed focus on the alliance reflects China's need for reliable partners amid escalating tensions with the US and its allies. This diplomatic reset could significantly alter Northeast Asian security dynamics and complicate denuclearization efforts.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/27/xi-jinping-kim-jong-un-china-north-korea-visit/"
+          "headline": "North Korea's Constitutional Changes Signal Shift Toward Confrontation Strategy Rather Than Reunification Abandonment",
+          "summary": "Pyongyang's removal of reunification language from its constitution and formal recognition of South Korea as a foreign state represents a tactical pivot rather than abandonment of unification goals, contrary to widespread Western analysis. The changes concentrate nuclear authority directly under Kim Jong-un while positioning North Korea to pursue unification through confrontation rather than cooperation. This constitutional restructuring suggests North Korea is preparing for a more aggressive phase of inter-Korean relations while maintaining long-term territorial ambitions.",
+          "source": "War on the Rocks",
+          "url": "https://warontherocks.com/what-everyone-is-missing-about-north-koreas-reunification-strategy/"
         },
         {
-          "headline": "Trump Administration Faces Opposition Tensions Over Iran War Strategy",
-          "summary": "President Trump accused Iran of deliberately stalling peace negotiations while the White House maintains optimism about reaching a deal to end the ongoing conflict. The mixed messaging reflects internal disagreements over diplomatic versus military approaches to Iran. NATO allies, including Lithuania, are pressing for greater burden-sharing in the Iran conflict as the war's regional implications expand.",
+          "headline": "Iran War Disruptions Cascade Through Global Supply Chains Beyond Energy Sector",
+          "summary": "The ongoing Middle East conflict has created unexpected supply chain disruptions affecting everyday consumer goods from Diet Coke to condoms, demonstrating the war's reach beyond traditional energy and shipping concerns. These downstream effects highlight the interconnected nature of global commerce and the vulnerability of seemingly unrelated industries to geopolitical shocks in critical transit zones. The breadth of affected commodities suggests the economic impact of the Iran war extends far deeper into civilian life than initially anticipated.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/27/trump-iran-us-war-peace-talks-stalling-midterm-elections/"
-        },
-        {
-          "headline": "Indonesia's Resource Nationalization Push Threatens Global Commodity Markets",
-          "summary": "President Prabowo's government is implementing an aggressive economic nationalism policy focused on nationalizing resource exports under the Danantara framework. The messy rollout is already disrupting global commodity supply chains and raising concerns among international investors. This shift represents a broader trend of resource-rich nations asserting greater control over their natural wealth amid global supply chain vulnerabilities.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/27/indonesia-nationalize-resource-exports-prabowo-danantara/"
+          "url": "https://foreignpolicy.com/2026/05/28/iran-war-hormuz-commodities-supply-chain-fossil-fuels-semiconductors-diet-coke-fertilizer/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "Military developments focus on immediate Iran conflict operations, long-term Indo-Pacific preparations, and critical munitions shortfalls that could impact readiness for years.",
+      "intro": "U.S. military forces face operational security challenges while accelerating drone warfare investments and addressing institutional oversight gaps from ongoing conflicts.",
       "items": [
         {
-          "headline": "U.S. Conducts Fresh Military Strikes Against Iranian Military Facility",
-          "summary": "American forces launched overnight strikes on an Iranian military site believed to pose threats to U.S. personnel, marking continued escalation in direct military confrontation. The strikes demonstrate ongoing operational tempo despite previous exchanges, indicating sustained military pressure on Iranian capabilities.",
-          "source": "Military Times",
-          "url": "https://www.militarytimes.com/breaking-news/2026/05/28/us-carries-out-new-strikes-in-iran-against-military-site-official-says/"
-        },
-        {
-          "headline": "Iran War Munitions Depletion Creates Multi-Year U.S. Vulnerability Window",
-          "summary": "New analysis reveals critical weapons stockpiles depleted by Iran operations won't be fully restored until 2030-2031, creating significant strategic risk. The extended replenishment timeline exposes potential gaps in U.S. readiness for other global contingencies, particularly concerning given rising Indo-Pacific tensions.",
-          "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/05/27/us-munitions-depleted-by-iran-war-will-take-years-to-restore-analysis-finds/"
-        },
-        {
-          "headline": "Army Adapts Medical Operations for Indo-Pacific Combat Challenges",
-          "summary": "Combat medics are restructuring protocols to address unique Indo-Pacific battlefield conditions including vast distances, contested airspace, and limited evacuation options. The service is also integrating veterinarians into human combat care to maximize medical expertise in anticipated large-scale Pacific operations.",
-          "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-military/2026/05/27/how-us-army-combat-medics-are-preparing-for-an-indo-pacific-fight/"
-        },
-        {
-          "headline": "House Defense Bill Omits Key Trump Administration Military Priorities",
-          "summary": "The draft House defense authorization excludes reconciliation funding for several Trump administration military initiatives, signaling potential Congressional resistance to executive priorities. This legislative gap could delay implementation of new defense programs and force the administration to seek alternative funding mechanisms.",
+          "headline": "Pentagon Allocates $50 Billion for Comprehensive Drone Warfare Expansion",
+          "summary": "The Defense Department has outlined spending priorities for a massive drone warfare investment as new startups enter the market. Pentagon leaders are focusing on building \"drone dominance\" capabilities across multiple domains. This represents one of the largest single investments in unmanned systems technology to date.",
           "source": "Defense One",
-          "url": "https://www.defenseone.com/policy/2026/05/house-draft-defense-policy-bill-leaves-some-trump-admins-top-priorities-unfunded/413799/"
+          "url": "https://www.defenseone.com/technology/2026/05/how-pentagon-plans-spend-50-billion-drone-warfare/413805/"
+        },
+        {
+          "headline": "Commercial Location Data Used to Target U.S. Forces in Combat Zones",
+          "summary": "Pentagon officials confirm that deployed U.S. troops have been targeted using commercially available location data from mobile devices and apps. This represents a significant operational security vulnerability that exposes service members to enemy tracking and targeting. The disclosure highlights the growing threat of commercially sourced intelligence being weaponized against military personnel.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/05/28/us-troops-are-reportedly-being-targeted-using-location-data-pentagon-says/"
+        },
+        {
+          "headline": "Senator Demands Inspector General Appointment for Iran Military Operations",
+          "summary": "A senator is pushing for compliance with federal law requiring an inspector general for overseas contingency operations exceeding 60 days. The Iran conflict appears to have crossed this threshold without the mandatory oversight appointment. This could signal either administrative oversight or deliberate avoidance of formal conflict designation.",
+          "source": "Defense One",
+          "url": "https://www.defenseone.com/policy/2026/05/iran-war-inspector-general/413828/"
+        },
+        {
+          "headline": "Army Tests Weaponized Resupply Drones in Multi-Role Capability Expansion",
+          "summary": "The U.S. Army has successfully converted logistics drones into rocket-launching platforms during recent testing. This dual-use approach could provide combat units with additional firepower from existing supply chain assets. The test reflects broader military interest in maximizing utility from unmanned systems across multiple mission sets.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/news/your-military/2026/05/28/army-turns-resupply-drone-into-rocket-launcher-in-new-test/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Today's intelligence landscape features organizational reforms at U.S. Cyber Command and open-source investigations revealing Myanmar's systematic village destruction.",
+      "intro": "Intelligence developments today span from Russia's escalating multi-domain operations against the UK to America's renewed focus on Pacific surveillance capabilities amid strategic weapons shortfalls.",
       "items": [
         {
-          "headline": "New Cyber Command chief initiates comprehensive organizational review through MITRE",
-          "summary": "General Joshua Rudd has commissioned MITRE to conduct a potentially sweeping assessment of U.S. Cyber Command operations and structure. This review signals possible significant changes to America's premier cyber warfare organization as it adapts to evolving digital threats. The timing suggests urgency in modernizing cyber capabilities amid growing geopolitical tensions.",
+          "headline": "GCHQ Director Warns of Escalating Russian Operations Across All Domains",
+          "summary": "Britain's signals intelligence chief revealed Russia is conducting daily attacks spanning cyberspace to seabed operations, forcing GCHQ to expand protection of critical subsea cables and energy infrastructure. The warning underscores how Russia has shifted from discrete cyber operations to comprehensive multi-domain warfare targeting Western critical infrastructure. This represents a significant escalation in the scope and persistence of Russian intelligence operations against NATO allies.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/rudd-orders-cyber-command-reviews-as-pentagon-presses-reform-agenda"
+          "url": "https://therecord.media/russia-conducting-attacks-on-uk-gchq-briefing"
         },
         {
-          "headline": "Open-source investigation documents systematic destruction of Myanmar villages in Rakhine state",
-          "summary": "New OSINT analysis reveals evidence of mass killings and village destruction in western Myanmar's Rakhine region during 2024 attacks. Survivor testimony describes systematic violence including the killing of 20 relatives in Htan Shauk Khan village alone. This demonstrates how open-source intelligence continues exposing human rights violations in conflict zones where traditional reporting faces restrictions.",
-          "source": "bellingcat",
-          "url": "https://www.bellingcat.com/news/2026/05/27/the-lost-villages-of-myanmars-rakhine/"
+          "headline": "U.S. Army Expands Pacific Surveillance Balloon Program",
+          "summary": "The Army is requesting additional high-altitude surveillance balloons for Pacific operations as part of its evolving combat strategy. These sensor-laden platforms will provide critical networking, intelligence collection, and potentially kinetic capabilities across the vast Pacific theater. The expansion signals growing recognition that traditional surveillance assets may be insufficient for the scale and complexity of potential Pacific conflicts.",
+          "source": "The War Zone",
+          "url": "https://www.twz.com/air/army-wants-more-sensor-laden-surveillance-balloons-over-the-pacific"
         },
         {
-          "headline": "Dutch authorities arrest suspect in Ajax football club cyberattack investigation",
-          "summary": "Police detained a suspect in Buren and seized multiple digital storage devices in connection with a cyber breach targeting the prominent Amsterdam football club. The arrest demonstrates European law enforcement's continued focus on prosecuting cybercriminals targeting high-profile organizations. This case highlights the vulnerability of sports organizations to cyber threats and the investigative capabilities of Dutch cyber units.",
+          "headline": "New Report Reveals Critical U.S. Weapons Stockpile Depletion",
+          "summary": "America's inventory of advanced standoff weapons and air defense systems has reached critically low levels, creating a strategic vulnerability that adversaries could exploit. The depletion affects key missile systems essential for deterrence and defense in potential high-intensity conflicts. This stockpile crisis could significantly impact U.S. military planning and alliance commitments, particularly in the Pacific theater.",
+          "source": "The War Zone",
+          "url": "https://www.twz.com/news-features/severity-of-americas-depleted-advanced-weapons-stockpiles-detailed-in-new-report"
+        },
+        {
+          "headline": "Chinese-Speaking Fraud Network Targets 2026 World Cup Fans",
+          "summary": "Cybercriminals have registered over 4,300 fraudulent domains impersonating FIFA's official presence since August 2025, positioning for large-scale fraud campaigns targeting World Cup ticket buyers. The operation demonstrates sophisticated advance planning and domain infrastructure development typical of organized cybercrime groups. This early positioning suggests the potential for millions in losses as the tournament approaches and ticket sales intensify.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/dutch-police-arrest-man-over-cyber-breach-ajax-football"
+          "url": "https://therecord.media/chinese-speaking-fraud-gang-fifa-world-cup-scam"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "Industrial control system security developments today center on regulatory frameworks, AI-enhanced threats, and infrastructure-targeted attacks from state-sponsored actors.",
+      "intro": "Industrial cybersecurity advances through AI-powered protection platforms while government directives mandate enhanced logging and detection across OT environments.",
       "items": [
         {
-          "headline": "CISA Schedules June Town Halls for Critical Infrastructure Cyber Incident Reporting Requirements",
-          "summary": "CISA announced virtual town hall meetings to discuss the CIRCIA cyber incident reporting rule affecting critical infrastructure operators. These sessions will provide clarity on mandatory reporting obligations that could significantly impact how OT incidents are disclosed. Organizations should prepare for new compliance requirements that may reshape incident response procedures.",
+          "headline": "Claroty Debuts AI Security Agent Purpose-Built for Critical Infrastructure Protection",
+          "summary": "Claroty launched Claire, the first cyber-physical systems-native AI security agent designed specifically for mission-critical infrastructure environments. This represents a significant evolution in OT security, moving beyond traditional IT-focused AI tools to address the unique requirements of industrial control systems. The platform could reshape how organizations monitor and protect operational technology networks.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/news/cisa-sets-june-town-hall-meetings-on-circia-cyber-incident-reporting-rule-for-critical-infrastructure-stakeholders/"
+          "url": "https://industrialcyber.co/news/claroty-launches-claire-a-cps-native-ai-security-agent-designed-to-protect-mission-critical-infrastructure/"
         },
         {
-          "headline": "Iranian State Hackers Behind Los Angeles Metro Transit System Attack",
-          "summary": "The LA Metro cyberattack was attributed to Iranian government-backed threat actors despite initial claims by hacktivist groups. This represents a concerning escalation in state-sponsored targeting of critical transportation infrastructure. The incident highlights the growing threat to public transit OT systems from nation-state actors using proxy groups for plausible deniability.",
-          "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/la-metro-cyberattack-linked-to-iranian-state-sponsored-hackers/"
+          "headline": "White House Mandates Centralized Logging and AI Detection for Federal IoT and OT Systems",
+          "summary": "The Office of Management and Budget issued a new cybersecurity directive requiring federal agencies to implement centralized logging and AI-driven threat detection across Internet of Things and operational technology systems. This mandate signals a government-wide recognition of OT vulnerabilities and could drive similar requirements in critical infrastructure sectors. Agencies must now treat OT security with the same rigor as traditional IT environments.",
+          "source": "Industrial Cyber",
+          "url": "https://industrialcyber.co/regulation-standards-and-compliance/omb-cyber-directive-pushes-centralized-logging-ai-driven-detection-to-counter-cyber-threats-across-iot-and-ot-systems/"
         },
         {
-          "headline": "India's CERT-In Warns of AI-Enhanced Threats to Critical Infrastructure",
-          "summary": "India's national cyber response agency issued guidance warning that AI is amplifying adversaries' ability to conduct lateral movement and data exfiltration across critical systems. The advisory specifically highlights threats to industrial control systems where AI assists attackers in exploiting complex OT environments. This represents a new phase where AI tools are making sophisticated OT attacks more accessible to threat actors.",
+          "headline": "Dispel Launches Automated Compliance Platform to Streamline OT Audit Processes",
+          "summary": "Dispel released a new compliance automation capability designed to reduce the cost and complexity of industrial cybersecurity audits. The platform addresses a persistent challenge in OT environments where manual compliance processes often create operational disruptions. This development reflects growing demand for governance tools that can operate within the constraints of industrial control systems.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/ai/cert-in-warns-ai-assisted-adversaries-amplifying-lateral-movement-exploitation-data-exfiltration-across-critical-systems/"
-        },
-        {
-          "headline": "NIST Releases Cybersecurity Framework Updates Covering Critical Infrastructure Resilience",
-          "summary": "NIST's FY2025 annual report outlines new cybersecurity initiatives spanning AI, 5G, IoT, and critical infrastructure resilience. The framework updates provide guidance for securing emerging technologies increasingly integrated into industrial environments. Organizations should review these standards as they likely influence future regulatory requirements for OT security.",
-          "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/nist/nist-fy2025-report-highlights-cybersecurity-and-privacy-initiatives-spanning-ai-5g-iot-critical-infrastructure-resilience/"
+          "url": "https://industrialcyber.co/news/dispel-compliance-launches-to-automate-ot-audit-readiness-and-reduce-industrial-compliance-costs/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 93,
+    "articles_reviewed": 102,
     "items_published": 19
   }
 }
