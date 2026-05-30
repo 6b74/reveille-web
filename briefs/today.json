@@ -1,162 +1,144 @@
 {
-  "date": "2026-05-29",
-  "generated_at": "2026-05-29T06:05:40.462111+00:00",
-  "issue": 29,
-  "executive_summary": "Today's intelligence picture is defined by a dangerous convergence of great power competition, supply chain vulnerability, and critical infrastructure exposure operating simultaneously across physical, digital, and geopolitical domains. China's quiet acquisition of Indonesian mineral assets, North Korea's constitutional pivot toward confrontation, and GCHQ's warnings about escalating Russian operations collectively signal that U.S. adversaries are pursuing coordinated, multi-domain pressure strategies rather than isolated provocations. The supply chain thread is particularly striking as a cross-cutting vulnerability: Iranian conflict disruptions are cascading through global commercial supply chains, cyber actors are targeting developer and software supply chains, Chinese-linked fraud networks are exploiting mass public events, and the commercial location data exploitation of U.S. forces in combat zones reveals that everyday data ecosystems have become active threat vectors against military personnel. Against this backdrop, both the cyber and OT sectors are showing signs of a defensive posture shift, with CISA advisories, White House mandates for centralized logging, and new AI-driven OT security tools suggesting the U.S. government is beginning to treat critical infrastructure protection with greater urgency, though the reported depletion of U.S. weapons stockpiles raises serious questions about whether American deterrence capacity can keep pace with the accelerating threat environment.",
+  "date": "2026-05-30",
+  "generated_at": "2026-05-30T06:05:13.593624+00:00",
+  "issue": 30,
+  "executive_summary": "Today's intelligence picture is defined by two converging pressures: accelerating adversary aggression across both physical and digital domains, and growing structural vulnerabilities in Western defensive posture. Iran is the most active cross-cutting thread, simultaneously pursuing sanctions relief through diplomatic channels, positioning Syria as a transit alternative to reduce Hormuz exposure, and conducting escalating destructive cyberattacks on U.S. critical infrastructure through Black Shadow — a combination that suggests Tehran is playing a sophisticated dual-track strategy, extracting concessions while maintaining offensive leverage. The cyber and OT picture is particularly concerning, with an unpatched Palo Alto authentication bypass, published Microsoft zero-days now in the wild, and AI-expanded attack surfaces in industrial networks all converging at a moment when government modernization efforts are stalled by resource constraints, leaving critical infrastructure exposed precisely when Iranian and other adversary cyber operations are intensifying. On the military and geopolitical side, U.S. power projection faces compounding headwinds: economic fragility is eroding hard power, Mexico's pivot toward the EU signals softening influence on the southern flank, Russian forces are demonstrating NATO air defense gaps as close as Romanian territory, and the SpaceX satellite contract — while significant — reflects a reactive scramble toward autonomous and space-based capabilities that are years from full operational effect. The overall assessment is one of adversaries, particularly Iran and Russia, deliberately probing and explo",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Today's cyber landscape shows major supply chain compromises targeting developer tools alongside widespread industrial control system vulnerabilities and a significant data breach affecting millions.",
+      "intro": "Today's cybersecurity landscape is dominated by vulnerability disclosure tensions, with both official catalog updates and controversial researcher releases highlighting ongoing exploitation risks.",
       "items": [
         {
-          "headline": "CISA warns of multiple supply chain attacks targeting developer ecosystems including GitHub and Nx Console",
-          "summary": "Federal cybersecurity officials are responding to emerging supply chain intrusion campaigns targeting CI/CD pipelines, including a malicious Nx Console Visual Studio Code extension and the \"Megalodon\" campaign. These incidents demonstrate how threat actors are increasingly targeting developer tools and processes that support enterprise and cloud environments. Organizations using these development tools should immediately review their CI/CD security postures.",
+          "headline": "CISA flags actively exploited Palo Alto Networks authentication bypass vulnerability",
+          "summary": "The Cybersecurity and Infrastructure Security Agency added CVE-2026-0257, a Palo Alto Networks PAN-OS authentication bypass flaw, to its Known Exploited Vulnerabilities catalog based on evidence of active exploitation. Authentication bypass vulnerabilities in network security appliances pose significant risks as they can allow attackers to gain unauthorized access to protected networks. Organizations using affected PAN-OS versions should prioritize patching immediately.",
           "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/alerts/2026/05/28/supply-chain-compromises-impact-nx-console-and-github-repositories"
+          "url": "https://www.cisa.gov/news-events/alerts/2026/05/29/cisa-adds-one-known-exploited-vulnerability-catalog"
         },
         {
-          "headline": "Carnival Corporation breached affecting nearly 6 million customers",
-          "summary": "The cruise line confirmed that attackers compromised an employee account in April and copied personal information from its systems. The breach impacted a limited portion of Carnival's IT environment but affected millions of customers' personal data. This incident highlights ongoing risks from credential-based attacks against major consumer-facing companies.",
+          "headline": "Security researcher escalates Microsoft dispute by publishing zero-days with exploit code",
+          "summary": "A security researcher published multiple Microsoft zero-day vulnerabilities with working proof-of-concept exploit code on GitHub, making them immediately accessible to both attackers and defenders. Microsoft condemned the releases as 'never justifiable' while the researcher threatens to publish additional vulnerabilities. This incident highlights ongoing tensions in the cybersecurity community over responsible disclosure practices and vendor response times.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/cruise-giant-carnival-confirms-data-breach-affecting-6-million"
-        },
-        {
-          "headline": "CISA releases multiple ICS advisories covering critical infrastructure vulnerabilities",
-          "summary": "Federal advisories cover vulnerabilities in ABB building systems, Schneider Electric HVAC controllers, medical devices, and security cameras that could allow unauthorized access or device control. The advisories span sectors from healthcare to maritime operations, with several vulnerabilities enabling administrator-level access to critical systems. Organizations should prioritize patching these industrial control systems given their potential for physical impact.",
-          "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-03"
-        },
-        {
-          "headline": "Security researchers advocate for precision over panic in vulnerability patching strategies",
-          "summary": "Cisco Talos recommends organizations move beyond relying solely on CVSS scores and incorporate EPSS and GCVE metrics to prioritize patching efforts. This approach focuses resources on vulnerabilities that pose actual threats rather than theoretical risks. The guidance comes as organizations struggle with overwhelming numbers of disclosed vulnerabilities and limited patching resources.",
-          "source": "Cisco Talos Blog",
-          "url": "https://blog.talosintelligence.com/less-panic-patching-more-precision/"
+          "url": "https://therecord.media/microsoft-calls-zero-day-releases-never-justifiable-as-researcher-threatens-more"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "Global tensions focus on emerging cease-fire negotiations in the Middle East while strategic competition intensifies across Asia-Pacific supply chains and alliance structures.",
+      "intro": "Global power dynamics are shifting as the United States grapples with economic vulnerabilities while trade relationships realign amid growing authoritarianism and conflict.",
       "items": [
         {
-          "headline": "US and Iran Near Cease-Fire Extension Deal Pending Trump Administration Approval",
-          "summary": "Negotiators have reached a tentative agreement to extend the seven-week cease-fire that ended the US-Israel war against Iran, though both Trump and Tehran's leadership have yet to formally approve the deal. The negotiations represent a critical test of whether diplomatic momentum can break the cyclical pattern of escalation that has characterized the conflict. Success or failure of this extension will likely determine whether the broader regional war can be contained or will reignite with greater intensity.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/28/us-iran-reach-deal-cease-fire-mou-kuwait-strikes-trump/"
-        },
-        {
-          "headline": "Chinese State-Owned Enterprises Quietly Expand Control Over Indonesian Critical Mineral Assets",
-          "summary": "China First Heavy Industries and other state enterprises absorbed key Indonesian mining assets following the 2024 bankruptcy of major stainless steel producer Jiangsu Delong, extending Beijing's influence over military-grade metal supply chains. This represents China's strategy of gaining operational control over critical resources without direct ownership, particularly concerning given China First Heavy's role in supplying materials for nuclear submarine reactor vessels. The expansion highlights how China leverages corporate distress to deepen strategic resource dependencies in Southeast Asia.",
+          "headline": "Economic Fragility Exposes New Vulnerabilities in American Power Projection",
+          "summary": "Supply chain disruptions and tariff impacts are revealing structural weaknesses in the U.S. economy that could limit America's ability to project power globally. The convergence of trade costs, energy price volatility, and manufacturing dependencies is creating a 'glass jaw' effect where economic shocks have outsized impacts on American strategic capabilities. This economic fragility represents a fundamental shift in how American power operates in an interconnected world.",
           "source": "War on the Rocks",
-          "url": "https://warontherocks.com/cogs-of-war/control-without-ownership-how-chinas-party-business-networks-dominate-indonesias-mineral-supply-chains/"
+          "url": "https://warontherocks.com/glass-jaw-the-new-economic-fragility-recasting-american-power/"
         },
         {
-          "headline": "North Korea's Constitutional Changes Signal Shift Toward Confrontation Strategy Rather Than Reunification Abandonment",
-          "summary": "Pyongyang's removal of reunification language from its constitution and formal recognition of South Korea as a foreign state represents a tactical pivot rather than abandonment of unification goals, contrary to widespread Western analysis. The changes concentrate nuclear authority directly under Kim Jong-un while positioning North Korea to pursue unification through confrontation rather than cooperation. This constitutional restructuring suggests North Korea is preparing for a more aggressive phase of inter-Korean relations while maintaining long-term territorial ambitions.",
-          "source": "War on the Rocks",
-          "url": "https://warontherocks.com/what-everyone-is-missing-about-north-koreas-reunification-strategy/"
-        },
-        {
-          "headline": "Iran War Disruptions Cascade Through Global Supply Chains Beyond Energy Sector",
-          "summary": "The ongoing Middle East conflict has created unexpected supply chain disruptions affecting everyday consumer goods from Diet Coke to condoms, demonstrating the war's reach beyond traditional energy and shipping concerns. These downstream effects highlight the interconnected nature of global commerce and the vulnerability of seemingly unrelated industries to geopolitical shocks in critical transit zones. The breadth of affected commodities suggests the economic impact of the Iran war extends far deeper into civilian life than initially anticipated.",
+          "headline": "Mexico Pivots to EU Partnership as USMCA Trade Talks Deteriorate",
+          "summary": "Mexico is pursuing deeper economic ties with the European Union as bilateral relations with the United States reach a breaking point during crucial USMCA review negotiations. The timing of Mexico's Atlantic pivot coincides with deteriorating U.S.-Mexico relations over cartel issues and trade disputes. This realignment could reshape North American economic integration and reduce Mexico's dependence on U.S. markets.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/05/28/iran-war-hormuz-commodities-supply-chain-fossil-fuels-semiconductors-diet-coke-fertilizer/"
+          "url": "https://foreignpolicy.com/2026/05/29/eu-mexico-trade-deal-investment-sheinbaum-trump-usmca/"
+        },
+        {
+          "headline": "Iran Positions for Major Sanctions Relief in Potential U.S. Truce Agreement",
+          "summary": "Tehran stands to gain significant economic benefits from ongoing negotiations with Washington, including unfrozen assets and removal of oil sanctions. The potential deal represents a major shift in U.S.-Iran relations that could reshape Middle Eastern geopolitics and energy markets. Key indicators to monitor include oil price reactions and regional ally responses, particularly from Israel and Gulf states.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/05/29/iran-economy-war-oil-assets-trump-united-states-israel/"
+        },
+        {
+          "headline": "Syria Seeks to Challenge Iran's Hormuz Chokepoint Through New Transit Hub Strategy",
+          "summary": "Damascus is positioning itself as an alternative Middle Eastern logistics and transit center to reduce regional dependence on the Strait of Hormuz. This ambitious reconstruction strategy could alter regional trade flows and diminish Iran's leverage over global energy supplies. Success would require massive infrastructure investment and regional stability that remains uncertain.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/05/29/syria-iran-hormuz-shipping-reconstruction/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "U.S. military forces face operational security challenges while accelerating drone warfare investments and addressing institutional oversight gaps from ongoing conflicts.",
+      "intro": "Military developments today span from major strategic shifts in autonomous warfare doctrine to concerning security vulnerabilities affecting troops worldwide.",
       "items": [
         {
-          "headline": "Pentagon Allocates $50 Billion for Comprehensive Drone Warfare Expansion",
-          "summary": "The Defense Department has outlined spending priorities for a massive drone warfare investment as new startups enter the market. Pentagon leaders are focusing on building \"drone dominance\" capabilities across multiple domains. This represents one of the largest single investments in unmanned systems technology to date.",
+          "headline": "SOUTHCOM Commander Advocates for Embracing Autonomous Warfare Capabilities",
+          "summary": "General Frank Donovan signals a significant doctrinal shift, emphasizing autonomous warfare over traditional platform-focused approaches. This represents a fundamental change in military thinking about future combat operations. The push suggests autonomous systems may soon play a larger role in U.S. military strategy across all theaters.",
           "source": "Defense One",
-          "url": "https://www.defenseone.com/technology/2026/05/how-pentagon-plans-spend-50-billion-drone-warfare/413805/"
+          "url": "https://www.defenseone.com/technology/2026/05/q-gen-frank-donovan/413870/"
         },
         {
-          "headline": "Commercial Location Data Used to Target U.S. Forces in Combat Zones",
-          "summary": "Pentagon officials confirm that deployed U.S. troops have been targeted using commercially available location data from mobile devices and apps. This represents a significant operational security vulnerability that exposes service members to enemy tracking and targeting. The disclosure highlights the growing threat of commercially sourced intelligence being weaponized against military personnel.",
+          "headline": "Foreign Adversaries Threaten U.S. Military Families Using Personal Information",
+          "summary": "Troops and their families are receiving targeted threats from foreign actors following U.S. strikes against Iran. The threats include specific identifying details about service members, spouses, and children, indicating sophisticated intelligence gathering capabilities. This escalation represents a new front in adversarial tactics targeting military personnel beyond traditional operational theaters.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/05/28/us-troops-are-reportedly-being-targeted-using-location-data-pentagon-says/"
+          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/05/29/scary-and-silencing-troops-families-receive-threats-from-foreign-bad-actors/"
         },
         {
-          "headline": "Senator Demands Inspector General Appointment for Iran Military Operations",
-          "summary": "A senator is pushing for compliance with federal law requiring an inspector general for overseas contingency operations exceeding 60 days. The Iran conflict appears to have crossed this threshold without the mandatory oversight appointment. This could signal either administrative oversight or deliberate avoidance of formal conflict designation.",
-          "source": "Defense One",
-          "url": "https://www.defenseone.com/policy/2026/05/iran-war-inspector-general/413828/"
-        },
-        {
-          "headline": "Army Tests Weaponized Resupply Drones in Multi-Role Capability Expansion",
-          "summary": "The U.S. Army has successfully converted logistics drones into rocket-launching platforms during recent testing. This dual-use approach could provide combat units with additional firepower from existing supply chain assets. The test reflects broader military interest in maximizing utility from unmanned systems across multiple mission sets.",
+          "headline": "UK Intelligence Reports Nearly 500,000 Russian Military Casualties in Ukraine",
+          "summary": "British intelligence chief declares unprecedented Russian losses, marking the highest casualty estimate from Western officials to date. The figure reinforces Western assessments that Russia faces serious military degradation for the first time since the 2022 invasion. These losses could significantly impact Russia's long-term military capabilities and strategic planning.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-military/2026/05/28/army-turns-resupply-drone-into-rocket-launcher-in-new-test/"
+          "url": "https://www.militarytimes.com/global/europe/2026/05/29/nearly-500000-russian-soldiers-killed-in-ukraine-top-uk-intel-chief-says/"
+        },
+        {
+          "headline": "SpaceX Receives $4 Billion Contract for Global Threat Tracking Constellation",
+          "summary": "Space Force awards major contract for space-based missile tracking and targeting system under the SB-AMTI program. The constellation will provide global coverage for airborne threat detection and tracking capabilities. This investment signals a significant expansion of U.S. space-based defense infrastructure amid growing missile threats from peer adversaries.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/industry/techwatch/2026/05/29/spacex-awarded-4-billion-space-force-contract-to-track-airborne-threats/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Intelligence developments today span from Russia's escalating multi-domain operations against the UK to America's renewed focus on Pacific surveillance capabilities amid strategic weapons shortfalls.",
+      "intro": "Today's intelligence picture shows significant developments in space-based surveillance capabilities and escalating NATO border security challenges.",
       "items": [
         {
-          "headline": "GCHQ Director Warns of Escalating Russian Operations Across All Domains",
-          "summary": "Britain's signals intelligence chief revealed Russia is conducting daily attacks spanning cyberspace to seabed operations, forcing GCHQ to expand protection of critical subsea cables and energy infrastructure. The warning underscores how Russia has shifted from discrete cyber operations to comprehensive multi-domain warfare targeting Western critical infrastructure. This represents a significant escalation in the scope and persistence of Russian intelligence operations against NATO allies.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/russia-conducting-attacks-on-uk-gchq-briefing"
-        },
-        {
-          "headline": "U.S. Army Expands Pacific Surveillance Balloon Program",
-          "summary": "The Army is requesting additional high-altitude surveillance balloons for Pacific operations as part of its evolving combat strategy. These sensor-laden platforms will provide critical networking, intelligence collection, and potentially kinetic capabilities across the vast Pacific theater. The expansion signals growing recognition that traditional surveillance assets may be insufficient for the scale and complexity of potential Pacific conflicts.",
+          "headline": "Pentagon Accelerates Global Aircraft Tracking Via $4B SpaceX Satellite Contract",
+          "summary": "The Department of Defense has awarded SpaceX a $4 billion contract to develop a satellite constellation capable of tracking aircraft globally from orbit. This system could fundamentally alter surveillance capabilities by providing persistent coverage without relying on traditional airborne early warning platforms. The technology represents a major shift toward space-based intelligence collection with implications for both military operations and civil aviation monitoring.",
           "source": "The War Zone",
-          "url": "https://www.twz.com/air/army-wants-more-sensor-laden-surveillance-balloons-over-the-pacific"
+          "url": "https://www.twz.com/space/pentagons-plans-to-track-aircraft-from-orbit-accelerated-with-new-4b-spacex-deal"
         },
         {
-          "headline": "New Report Reveals Critical U.S. Weapons Stockpile Depletion",
-          "summary": "America's inventory of advanced standoff weapons and air defense systems has reached critically low levels, creating a strategic vulnerability that adversaries could exploit. The depletion affects key missile systems essential for deterrence and defense in potential high-intensity conflicts. This stockpile crisis could significantly impact U.S. military planning and alliance commitments, particularly in the Pacific theater.",
+          "headline": "Russian Drone Strike on Romanian Apartment Building Exposes NATO Air Defense Gaps",
+          "summary": "A Russian drone struck a civilian apartment building in Romania, injuring multiple civilians and marking a direct attack on NATO territory. The incident highlights critical vulnerabilities in alliance air defenses against small, low-cost unmanned systems. This represents a significant escalation that tests NATO's Article 5 commitments and reveals intelligence gaps in tracking cross-border drone incursions.",
           "source": "The War Zone",
-          "url": "https://www.twz.com/news-features/severity-of-americas-depleted-advanced-weapons-stockpiles-detailed-in-new-report"
+          "url": "https://www.twz.com/news-features/russian-drone-impacts-apartment-building-in-nato-state-romania-injuring-civilians"
         },
         {
-          "headline": "Chinese-Speaking Fraud Network Targets 2026 World Cup Fans",
-          "summary": "Cybercriminals have registered over 4,300 fraudulent domains impersonating FIFA's official presence since August 2025, positioning for large-scale fraud campaigns targeting World Cup ticket buyers. The operation demonstrates sophisticated advance planning and domain infrastructure development typical of organized cybercrime groups. This early positioning suggests the potential for millions in losses as the tournament approaches and ticket sales intensify.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/chinese-speaking-fraud-gang-fifa-world-cup-scam"
+          "headline": "Trump Announces End to Iranian Naval Blockade Without Clear Strategic Framework",
+          "summary": "President Trump declared the lifting of naval blockade operations against Iran, though no formal agreement appears to have been reached. Iranian media sources are disputing the characterization and scope of any blockade changes. The announcement creates uncertainty about U.S. maritime posture in the Persian Gulf and potential shifts in intelligence collection operations around Iranian naval activities.",
+          "source": "The War Zone",
+          "url": "https://www.twz.com/news-features/trump-declares-he-is-lifting-the-naval-blockade-on-iran"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "Industrial cybersecurity advances through AI-powered protection platforms while government directives mandate enhanced logging and detection across OT environments.",
+      "intro": "Industrial organizations face mounting cyber risks as AI integration accelerates in manufacturing while Iranian threat actors intensify destructive campaigns targeting critical infrastructure.",
       "items": [
         {
-          "headline": "Claroty Debuts AI Security Agent Purpose-Built for Critical Infrastructure Protection",
-          "summary": "Claroty launched Claire, the first cyber-physical systems-native AI security agent designed specifically for mission-critical infrastructure environments. This represents a significant evolution in OT security, moving beyond traditional IT-focused AI tools to address the unique requirements of industrial control systems. The platform could reshape how organizations monitor and protect operational technology networks.",
+          "headline": "AI Integration in Manufacturing Creates New Attack Surfaces for Industrial Networks",
+          "summary": "Darktrace research reveals manufacturers are rapidly embedding AI into production scheduling, quality inspection, and logistics optimization, creating expanded cyber exposure. The convergence of AI and operational technology introduces new vulnerabilities that traditional OT security measures may not address. Organizations must reassess their industrial cybersecurity frameworks to account for AI-driven attack vectors.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/news/claroty-launches-claire-a-cps-native-ai-security-agent-designed-to-protect-mission-critical-infrastructure/"
+          "url": "https://industrialcyber.co/threats-attacks/darktrace-identifies-rising-cyber-exposure-tied-to-ai-driven-manufacturing-operations/"
         },
         {
-          "headline": "White House Mandates Centralized Logging and AI Detection for Federal IoT and OT Systems",
-          "summary": "The Office of Management and Budget issued a new cybersecurity directive requiring federal agencies to implement centralized logging and AI-driven threat detection across Internet of Things and operational technology systems. This mandate signals a government-wide recognition of OT vulnerabilities and could drive similar requirements in critical infrastructure sectors. Agencies must now treat OT security with the same rigor as traditional IT environments.",
+          "headline": "Iranian Black Shadow Group Escalates Destructive Attacks on US Critical Infrastructure",
+          "summary": "Gambit Security links the Iran-affiliated Black Shadow group to an intensified destructive cyber campaign targeting US and Middle Eastern organizations. The campaign demonstrates Iran's continued focus on critical infrastructure as a strategic target for disruptive operations. This escalation coincides with heightened geopolitical tensions and suggests potential for broader infrastructure targeting.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/regulation-standards-and-compliance/omb-cyber-directive-pushes-centralized-logging-ai-driven-detection-to-counter-cyber-threats-across-iot-and-ot-systems/"
+          "url": "https://industrialcyber.co/industrial-cyber-attacks/gambit-links-iran-linked-black-shadow-group-to-destructive-cyber-campaign-targeting-us-middle-east-organizations/"
         },
         {
-          "headline": "Dispel Launches Automated Compliance Platform to Streamline OT Audit Processes",
-          "summary": "Dispel released a new compliance automation capability designed to reduce the cost and complexity of industrial cybersecurity audits. The platform addresses a persistent challenge in OT environments where manual compliance processes often create operational disruptions. This development reflects growing demand for governance tools that can operate within the constraints of industrial control systems.",
+          "headline": "Government Cybersecurity Modernization Stalled by Resource Constraints",
+          "summary": "SANS Institute survey finds only a fraction of public sector organizations have adequate funding and staffing for cybersecurity modernization efforts. These resource gaps directly impact the security posture of government-operated critical infrastructure and industrial control systems. The findings highlight systemic vulnerabilities in public sector OT environments that adversaries may exploit.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/news/dispel-compliance-launches-to-automate-ot-audit-readiness-and-reduce-industrial-compliance-costs/"
+          "url": "https://industrialcyber.co/training-development/sans-finds-funding-gaps-and-staffing-shortages-are-slowing-government-cybersecurity-modernization/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 102,
-    "items_published": 19
+    "articles_reviewed": 76,
+    "items_published": 16
   }
 }
