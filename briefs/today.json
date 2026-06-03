@@ -1,162 +1,156 @@
 {
-  "date": "2026-06-02",
-  "generated_at": "2026-06-02T06:04:34.044922+00:00",
-  "issue": 33,
-  "executive_summary": "Today's intelligence picture is defined by two converging pressures: the accelerating militarization of emerging technologies and a widening gap between the pace of threats and institutional capacity to respond. Across cyber, military, and geopolitical domains, adversaries are actively weaponizing AI, autonomous systems, and electronic warfare — from Russian anti-AI camouflage paint countering Ukrainian drone offensives, to attackers exploiting Meta's AI infrastructure, to GPS jamming threatening global aviation and shipping — while defenders are visibly struggling to keep pace, as seen in NIST's doubled vulnerability backlog, GAO criticism of Pentagon workforce cuts, and inconsistent EU critical infrastructure maturity. The undersea cable attacks and GPS disruption campaigns are particularly notable in conjunction with the South Korea nuclear submarine acceleration and Germany's military buildup, suggesting a coordinated or at minimum opportunistic exploitation of a moment of Western strategic distraction while the Israel-Hezbollah ceasefire and Iran negotiations consume U.S. diplomatic bandwidth. Critical infrastructure sits at the center of this threat convergence, with the Gentlemen ransomware campaign targeting OT environments, the Oracle WebLogic exploitation, and Turkish electronic warfare capabilities all emerging simultaneously, pointing to a threat environment that is broadening faster than defensive institutions can organize against it.",
+  "date": "2026-06-03",
+  "generated_at": "2026-06-03T06:02:37.683473+00:00",
+  "issue": 34,
+  "executive_summary": "Today's intelligence picture is dominated by two reinforcing themes: the accelerating militarization of emerging technologies and a fragile, deteriorating security environment across multiple domains simultaneously. The cyber and ICS/SCADA reporting collectively signals a surge in infrastructure risk, with active exploitation of Linux systems, a compromised open-source supply chain affecting 32 packages, and critical vulnerabilities in industrial controllers and communications hardware — all of which, taken together, suggest adversaries are actively pre-positioning for disruption of critical systems rather than simply conducting espionage. The geopolitical and military threads connect directly to this risk calculus: U.S. strikes on an Iranian ground control station following Iranian attacks on Gulf partners represent a significant escalation that, combined with Iran's novel cryptocurrency-based Hormuz toll mechanism, suggests Tehran is simultaneously probing military and economic coercion levers while potentially motivating retaliatory cyber operations against U.S. and allied infrastructure. The broader alliance picture is quietly deteriorating — uncertainty around the Quad, Lithuania's hedging on U.S. troop presence, and Japan's energy strategy rethink all point to partners recalibrating confidence in U.S. commitments — while Washington's own strategic coherence is complicated by the Special Operations surveillance aircraft cancellation and ongoing legislative battles over military AI governance. The throughline today is a convergence of kinetic escalation with Iran, eroding deterrence architecture among",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Critical infrastructure vulnerabilities and AI-enabled attacks dominated cybersecurity concerns, while government agencies faced organizational challenges in vulnerability management.",
+      "intro": "Critical infrastructure vulnerabilities and supply chain compromises dominate today's threat landscape as agencies issue new security guidance and attackers target both government systems and software pipelines.",
       "items": [
         {
-          "headline": "Attackers exploit Meta's AI support bot to compromise high-profile Instagram accounts",
-          "summary": "Hackers successfully seized Instagram accounts belonging to the Obama White House and U.S. Space Force Chief Master Sergeant by manipulating Meta's AI support assistant to reset passwords. The technique spread via Telegram instructions, demonstrating how AI-powered customer service tools can become attack vectors against even high-security accounts. This represents a new class of social engineering attacks targeting automated support systems.",
-          "source": "Krebs on Security",
-          "url": "https://krebsonsecurity.com/2026/06/hackers-used-metas-ai-support-bot-to-seize-instagram-accounts/"
-        },
-        {
-          "headline": "NIST vulnerability database backlog doubles to 27,000 unprocessed entries",
-          "summary": "The National Vulnerability Database's unprocessed security vulnerabilities grew from 13,000 in February 2024 to over 27,000 by end of 2025, according to an inspector general report. This massive backlog undermines the database's effectiveness as a critical resource for cybersecurity professionals and erodes public trust in government vulnerability tracking capabilities.",
+          "headline": "Red Hat Supply Chain Compromised Through GitHub Account, Affecting 32 Packages",
+          "summary": "A compromised GitHub account enabled attackers to inject malicious code into Red Hat's software distribution pipeline, contaminating 32 packages that were downloaded approximately 117,000 times weekly. This supply chain attack demonstrates the ongoing vulnerability of software development ecosystems and the potential for widespread impact through trusted distribution channels. Organizations using Red Hat packages should verify their installations and review recent downloads.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/nist-mistakes-vulnerability-database-inspector-general"
+          "url": "https://therecord.media/red-hat-removes-tainted-packages-after-software-pipeline-compromise"
         },
         {
-          "headline": "CISA flags actively exploited Oracle WebLogic Server vulnerability",
-          "summary": "CISA added CVE-2024-21182, an Oracle WebLogic Server vulnerability, to its Known Exploited Vulnerabilities catalog based on evidence of active exploitation. WebLogic servers are common enterprise infrastructure components, making this a significant threat to organizations running Oracle environments. Federal agencies must patch by CISA's binding operational directive deadline.",
+          "headline": "CISA Identifies Two Actively Exploited Vulnerabilities Including Linux Kernel Flaw",
+          "summary": "CISA added CVE-2022-0492 affecting the Linux kernel and CVE-2025-48595 targeting Android systems to its Known Exploited Vulnerabilities catalog based on confirmed active exploitation. The Linux vulnerability involves improper authentication controls, while the Android flaw affects the framework component. Federal agencies must patch these vulnerabilities by CISA's binding directive deadlines.",
           "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/alerts/2026/06/01/cisa-adds-one-known-exploited-vulnerability-catalog"
+          "url": "https://www.cisa.gov/news-events/alerts/2026/06/02/cisa-adds-two-known-exploited-vulnerabilities-catalog"
         },
         {
-          "headline": "Microsoft reverses course on legal threats against security researchers",
-          "summary": "Microsoft clarified it has no intention to pursue legal action against individuals conducting or publishing security research, following significant backlash from the cybersecurity community. The statement comes after researchers criticized the company's perceived hostile stance toward vulnerability disclosure. This policy clarification is crucial for maintaining collaborative relationships between vendors and the security research community.",
+          "headline": "Russia's FSB Claims Discovery of Foreign Intelligence Mobile Phone Hacking Campaign",
+          "summary": "Russia's Federal Security Service alleges it uncovered a large-scale foreign intelligence operation targeting senior Russian officials' mobile devices with malicious software. While the FSB's claims should be viewed with skepticism given Russia's information warfare tactics, the allegation highlights the ongoing cyber espionage activities between nation-states. The incident underscores the continued targeting of government communications infrastructure.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/microsoft-says-it-will-not-pursue-security-researchers-disclosure"
+          "url": "https://therecord.media/russia-claims-foreign-spy-agencies-hacked-gov-officials"
+        },
+        {
+          "headline": "Federal Agencies Issue Joint Advisory on Securing Automatic Tank Gauge Systems",
+          "summary": "CISA, FBI, NSA, DOE, and EPA released guidance urging operators to harden automatic tank gauge systems used in fuel storage facilities. These industrial control systems are critical infrastructure components that monitor fuel levels and can be vulnerable to cyber attacks that could disrupt energy supplies or cause environmental damage. The multi-agency coordination signals heightened concern about threats to energy sector operational technology.",
+          "source": "All CISA Advisories",
+          "url": "https://www.cisa.gov/resources-tools/resources/cisa-and-partners-urge-hardening-automatic-tank-gauge-systems"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "Regional tensions dominate as Trump-era diplomacy reshapes Middle East dynamics while NATO faces mounting infrastructure security challenges and defense procurement pressures.",
+      "intro": "Regional tensions dominate as Iran monetizes Strait of Hormuz control, Taiwan breaks defense budget deadlock amid U.S. pressure, and the Quad partnership faces uncertain prospects under new leadership.",
       "items": [
         {
-          "headline": "Trump Brokers Temporary Israel-Hezbollah Ceasefire Amid Broader Iran Negotiations",
-          "summary": "The Trump administration has secured a halt to attacks between Israel and Hezbollah as part of ongoing diplomatic efforts with Iran, though Tehran had previously suspended talks over Israeli strikes in Lebanon. A potential U.S.-Iran deal could significantly complicate Israeli Prime Minister Netanyahu's political position ahead of crucial upcoming elections. The diplomatic breakthrough highlights Trump's early focus on Middle East crisis management.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/06/01/israel-attacks-lebanon-hezbollah-trump-iran-talks-netanyahu/"
-        },
-        {
-          "headline": "Germany Accelerates Military Buildup Amid NATO Defense Spending Pressures",
-          "summary": "Berlin is rushing to expand its rearmament efforts despite having already committed substantial resources to military modernization, facing new domestic and international obstacles. The acceleration reflects growing pressure from the Trump administration for European allies to shoulder greater defense burdens. Germany's scramble illustrates the broader challenge facing NATO members to rapidly rebuild military capabilities after decades of reduced spending.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/06/01/germany-merz-military-trump-rearm-bundeswehr-nato-europe/"
-        },
-        {
-          "headline": "Critical Undersea Cable Attacks Surge Across Multiple Theaters",
-          "summary": "NATO faces an escalating threat to critical undersea infrastructure, with multiple incidents damaging pipelines and data cables across the Baltic Sea and Red Sea regions between 2024-2025. The attacks have disrupted significant portions of Asia-Europe data traffic and highlight vulnerabilities in global communications networks. The pattern suggests coordinated efforts to target Western critical infrastructure beneath international waters.",
+          "headline": "Iran Establishes Cryptocurrency-Based Toll System for Strait of Hormuz Transit",
+          "summary": "Iran has formalized control over the Strait of Hormuz by launching the Persian Gulf Strait Authority, transforming a wartime closure into a sovereign toll regime priced in cryptocurrency. This development represents a significant escalation in Tehran's leverage over global energy flows, as roughly 20% of world oil passes through the waterway. The institutionalization of this chokepoint control creates a new geopolitical reality that could reshape maritime trade and energy security calculations globally.",
           "source": "War on the Rocks",
-          "url": "https://warontherocks.com/deterring-russia-beneath-the-waves-securing-natos-critical-undersea-infrastructure/"
+          "url": "https://warontherocks.com/the-toll-booth-at-the-throat-of-world-trade/"
         },
         {
-          "headline": "Global GPS Jamming Operations Threaten Commercial Aviation and Shipping",
-          "summary": "Systematic GPS signal disruption is occurring worldwide, particularly around strategic waterways like the Strait of Hormuz and in the Baltic region, endangering civilian air and maritime traffic. The jamming appears coordinated with geopolitical tensions and represents a new front in hybrid warfare tactics. Commercial operators are struggling to maintain safe navigation as traditional backup systems prove inadequate against sophisticated electronic interference.",
+          "headline": "Taiwan Passes $25 Billion Defense Budget After Six-Month Legislative Standoff",
+          "summary": "Taiwan's Legislative Yuan approved a landmark defense budget following intense U.S. pressure, including an unprecedented bipartisan Senate letter demanding action. The six-month delay had strained U.S.-Taiwan relations and highlighted domestic political obstacles to defense modernization. This breakthrough provides critical funding for Taiwan's military capabilities amid growing Chinese pressure, but underlying political divisions over defense priorities remain unresolved.",
+          "source": "War on the Rocks",
+          "url": "https://warontherocks.com/between-beijing-and-the-budget-the-domestic-realities-of-taiwans-defense-spending-drama/"
+        },
+        {
+          "headline": "Quad Partnership Faces Uncertain Future Under Second Trump Administration",
+          "summary": "Despite a recent foreign ministers meeting in India, analysts express growing pessimism about the Quad's effectiveness as a counterweight to Chinese influence under Trump's return to office. The partnership between the U.S., Australia, India, and Japan has struggled to demonstrate concrete results since its 2017 revival. Shifting U.S. foreign policy priorities and differing regional approaches among members raise questions about the forum's strategic relevance going forward.",
+          "source": "War on the Rocks",
+          "url": "https://warontherocks.com/does-the-quad-still-matter/"
+        },
+        {
+          "headline": "Energy Crisis Forces Japan to Reconsider Decades of Diversification Strategy",
+          "summary": "The Gulf crisis has exposed limitations in Japan's carefully constructed energy security framework, despite decades of preparation for supply disruptions. Tokyo now faces narrowing options as traditional diversification strategies prove insufficient against sustained regional instability. This energy rethink could accelerate Japan's nuclear restart plans and reshape its broader strategic partnerships in the Indo-Pacific region.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/06/01/gps-jamming-hormuz-russia-baltic-aviation-shipping-trade/"
+          "url": "https://foreignpolicy.com/2026/06/02/gulf-energy-iran-oil-crisis-japan-strategy-nuclear/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "Military innovation accelerates with autonomous systems reshaping Ukraine's battlefield strategy while Pentagon leadership warns allies about China's growing military capabilities.",
+      "intro": "Military AI governance takes center stage as Congress pushes new regulations while Ukraine's robotic warfare success reshapes battlefield dynamics and geopolitical calculations.",
       "items": [
         {
-          "headline": "Ukrainian Forces Shift to Offensive Strategy Through Robotic Warfare Integration",
-          "summary": "Ukraine's military leadership now speaks of winning rather than merely surviving, largely due to successful deployment of uncrewed and autonomous systems that have neutralized Russian numerical advantages. The rapid adaptation to robotic warfare represents a fundamental shift in battlefield dynamics. This technological evolution could reshape modern military doctrine beyond the current conflict.",
+          "headline": "Senate introduces comprehensive legislation to regulate military AI deployment",
+          "summary": "Senator Kirsten Gillibrand's new bill would establish strict oversight of artificial intelligence in military operations, including mandatory human accountability chains for battlefield AI decisions. This legislative push reflects growing congressional concern about autonomous weapons systems and the need for clear governance frameworks as military AI capabilities rapidly advance.",
+          "source": "Defense One",
+          "url": "https://www.defenseone.com/policy/2026/06/bill-regulate-military-ai/413917/"
+        },
+        {
+          "headline": "Ukraine's robot warfare capabilities shift focus from survival to victory",
+          "summary": "Ukrainian forces are now discussing winning rather than merely surviving their conflict with Russia, largely due to their effective deployment of uncrewed and autonomous systems. These robotic capabilities have successfully neutralized traditional Russian military advantages, demonstrating how rapid technological adaptation can alter strategic balance in active conflicts.",
           "source": "Defense One",
           "url": "https://www.defenseone.com/technology/2026/06/ukraine-robots-winning/413902/"
         },
         {
-          "headline": "Defense Secretary Issues China Warning While Pressing Asian Allies on Military Spending",
-          "summary": "Pentagon chief Hegseth sounded alarms over China's military buildup during discussions with Asian allies, specifically urging increased defense spending to counter Beijing's growing power. The warning reflects growing concerns about the military balance in the Pacific region. This pressure campaign suggests the U.S. is seeking to distribute defense burden-sharing beyond traditional NATO frameworks.",
+          "headline": "US military sets 2028 target for operational directed energy weapons demonstration",
+          "summary": "The Pentagon plans to showcase battle-ready laser weapon systems during summer 2028 as part of the Golden Dome demonstration series. This timeline represents a critical milestone for directed energy programs that have faced years of development challenges and questions about battlefield viability.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/06/01/pentagon-chief-sounds-alarm-over-chinas-buildup-urges-allies-to-boost-defense-spending/"
+          "url": "https://www.militarytimes.com/industry/techwatch/2026/06/02/the-us-military-wants-to-showcase-battle-ready-laser-weapons-by-2028/"
         },
         {
-          "headline": "South Korea Accelerates Nuclear Submarine Development Timeline",
-          "summary": "Seoul announced plans to launch its first nuclear-powered submarine in the mid-2030s with commissioning planned for the late 2030s, marking a significant expansion of regional naval capabilities. This development adds another nuclear submarine operator in the increasingly contested Pacific theater. The timeline suggests South Korea views nuclear propulsion as essential for its strategic deterrence posture.",
-          "source": "Defense News",
-          "url": "https://www.defensenews.com/naval/2026/06/01/south-korea-goes-full-steam-ahead-on-nuclear-powered-submarines/"
-        },
-        {
-          "headline": "GAO Criticizes Pentagon Workforce Reductions as Poorly Analyzed",
-          "summary": "Government auditors found the Pentagon conducted workforce cuts with minimal analysis before implementation and little assessment since, raising questions about strategic planning. Defense officials acknowledged lessons should be drawn but provided no commitment to apply them. The finding highlights ongoing challenges in Pentagon management practices during a period of strategic competition.",
-          "source": "Defense One",
-          "url": "https://www.defenseone.com/policy/2026/06/ready-fire-aim-pentagon-cut-workforce-little-analysis-or-gao-finds/413892/"
+          "headline": "Lithuania reviews future US troop presence amid deployment uncertainty",
+          "summary": "The Lithuanian defense minister confirmed that scheduled US forces are not arriving as planned, with the future American military presence now under review. This development occurs as current US troops complete their expected departure, potentially affecting NATO's eastern flank security arrangements.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/news/your-military/2026/06/02/future-presence-of-us-troops-in-lithuania-is-under-review-says-minister/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Today's intelligence landscape features significant leadership changes at NSA, innovative countermeasures against AI-powered weapons systems, and new revelations about classified military platforms.",
+      "intro": "Today's intelligence landscape shows escalating Middle East tensions alongside significant shifts in U.S. surveillance capabilities and AI governance frameworks.",
       "items": [
         {
-          "headline": "NSA Names Permanent Leaders for Critical Cybersecurity Directorates",
-          "summary": "David Imbordino has been confirmed as the new chief of NSA's cybersecurity directorate, while Bruce Jones takes command of the Cybersecurity Collaboration Center. These appointments solidify leadership continuity at the agency's most public-facing cybersecurity functions during a period of heightened threats to critical infrastructure.",
+          "headline": "U.S. Strikes Iranian Ground Control Station After Iran Attacks Kuwait and Bahrain",
+          "summary": "U.S. Central Command conducted defensive strikes on an Iranian military ground control station on Qeshm Island following Iranian attacks on Kuwait and Bahrain. This escalation demonstrates Iran's willingness to target Gulf allies and highlights the continued volatility in regional proxy conflicts. The targeting of ground control infrastructure suggests efforts to degrade Iranian surveillance and command capabilities.",
+          "source": "The War Zone",
+          "url": "https://www.twz.com/news-features/iran-launches-new-attacks-on-kuwait-bahrain"
+        },
+        {
+          "headline": "White House Issues Streamlined AI Executive Order Focusing on Federal Model Access",
+          "summary": "The administration released a more limited AI executive order emphasizing federal access to AI models with requirements for confidentiality, cybersecurity, and intellectual property protections. This scaled-back approach suggests a shift toward targeted regulatory measures rather than broad AI governance mandates. The focus on federal access indicates growing government interest in leveraging private sector AI capabilities for national security applications.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/nsa-selects-new-leads-for-cyber-posts"
+          "url": "https://therecord.media/white-house-unveils-ai-executive-order"
         },
         {
-          "headline": "Russian Forces Deploy Anti-AI Camouflage Paint to Counter Autonomous Drones",
-          "summary": "Russian military vehicles are now using disruptive 'dazzle' paint schemes specifically designed to confuse machine-vision targeting systems on autonomous drones. This tactical adaptation reflects the growing battlefield prevalence of AI-enabled weapons and the rapid development of countermeasures to neutralize their effectiveness.",
+          "headline": "U.S. Special Operations Abandons Plans for Dedicated Surveillance Aircraft Replacement",
+          "summary": "The military has scrapped plans to replace the U-28 Draco special operations surveillance plane, signaling a potential end to crewed dedicated surveillance aircraft in special operations. This shift likely reflects the growing reliance on unmanned systems and satellite-based intelligence collection. The decision could impact close-support intelligence gathering capabilities in sensitive operations where real-time human analysis remains critical.",
           "source": "The War Zone",
-          "url": "https://www.twz.com/news-features/russian-trucks-get-dazzle-paint-to-throw-off-ai-enabled-drones"
-        },
-        {
-          "headline": "Turkey's HAVA SOJ Electronic Warfare Aircraft Emerges in New Satellite Imagery",
-          "summary": "Fresh imagery reveals Turkey's previously secretive HAVA SOJ electronic warfare platform, designed to suppress enemy air defenses from standoff distances. The aircraft's public appearance suggests Turkey is advancing its indigenous electronic warfare capabilities amid regional tensions and evolving defense partnerships.",
-          "source": "The War Zone",
-          "url": "https://www.twz.com/air/turkeys-secretive-hava-soj-electronic-warfare-jet-appears-in-new-imagery"
-        },
-        {
-          "headline": "Questions Surface About Possible U.S. MQ-1 Predator Return to Operations",
-          "summary": "Reports of an MQ-1 drone loss to Iran have raised questions about whether the U.S. has quietly returned the officially retired Predator to active service. The incident highlights ongoing intelligence gaps about U.S. unmanned operations in contested regions and potential changes to drone deployment strategies.",
-          "source": "The War Zone",
-          "url": "https://www.twz.com/air/is-the-u-s-flying-mq-1-predator-drones-again"
+          "url": "https://www.twz.com/air/any-plans-for-direct-u-28-draco-special-ops-surveillance-plane-replacement-abandoned"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "Industrial cybersecurity consolidation accelerates as new ransomware threats target critical infrastructure while EU assessments reveal uneven security maturity across essential sectors.",
+      "intro": "Industrial control system vulnerabilities dominated today's landscape with critical flaws in Phoenix Contact PLCs and HP VoIP phones creating new pathways for enterprise network compromise.",
       "items": [
         {
-          "headline": "Dragos Expands Industrial Security Platform Through Phosphorus Acquisition",
-          "summary": "Industrial cybersecurity leader Dragos acquired xIoT security firm Phosphorus to extend protection beyond traditional OT environments. The acquisition will provide enhanced asset visibility and integrated device intelligence across extended operational technology networks. This consolidation reflects the growing recognition that industrial cybersecurity must encompass broader IoT ecosystems beyond classic SCADA and control systems.",
+          "headline": "Phoenix Contact PLCnext Controllers Vulnerable to Root Access Through Privilege Escalation Chain",
+          "summary": "Nozomi Networks researchers disclosed privilege escalation vulnerabilities in Phoenix Contact PLCnext industrial controllers that could allow attackers to gain root access. The vulnerability chain represents a significant risk to industrial automation systems where these controllers are deployed. Organizations using PLCnext systems should prioritize patching and access control reviews.",
+          "source": "Industrial Cyber",
+          "url": "https://industrialcyber.co/vulnerabilities/privilege-escalation-flaws-in-phoenix-contact-plcnext-controllers-could-enable-attackers-to-gain-root-access/"
+        },
+        {
+          "headline": "Critical Buffer Overflow Vulnerability Exposes HP VoIP Phones to Remote Code Execution",
+          "summary": "A stack-based buffer overflow vulnerability in HP VoIP phones enables remote code execution, potentially allowing attackers to breach enterprise networks through compromised devices. VoIP phones often operate on the same networks as critical business systems, making this vulnerability a significant lateral movement risk. The flaw highlights the ongoing challenge of securing IoT and communication devices in corporate environments.",
           "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/dragos-acquires-xiot-security-firm-phosphorus/"
+          "url": "https://www.securityweek.com/critical-vulnerability-in-hp-voip-phones-enables-enterprise-network-breaches/"
         },
         {
-          "headline": "New Gentlemen Ransomware Campaign Targets Critical Infrastructure with Self-Propagation",
-          "summary": "Microsoft identified an emerging ransomware-as-a-service operation called The Gentlemen that combines advanced encryption with self-propagation capabilities specifically targeting critical sectors. The threat group demonstrates sophisticated techniques that could rapidly spread through industrial networks once initial access is gained. Organizations in critical infrastructure should prioritize network segmentation and endpoint detection capabilities to prevent lateral movement.",
+          "headline": "Asimily Launches Automated Network Segmentation Tool for Connected Device Security",
+          "summary": "Asimily released Segmentation Orchestration, a new capability designed to automatically identify, classify, and enforce network policies for connected devices. The solution addresses the growing challenge of securing IoT and OT devices across enterprise networks by automating previously manual segmentation processes. This reflects industry recognition that traditional network security approaches are insufficient for managing diverse connected device environments.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/ransomware/the-gentlemen-ransomware-combines-advanced-encryption-with-self-propagation-targeting-critical-sectors/"
-        },
-        {
-          "headline": "EU Critical Sector Cybersecurity Maturity Shows Improvement But Remains Inconsistent",
-          "summary": "ENISA's NIS360 report found rising cybersecurity maturity across high-criticality sectors in the EU, but progress remains uneven between different industries and member states. The assessment highlights persistent gaps in cybersecurity preparedness that could leave critical infrastructure vulnerable to sophisticated attacks. The findings underscore the need for more standardized security frameworks and accelerated investment in defensive capabilities across essential services.",
-          "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/reports/enisa-nis360-report-finds-cybersecurity-maturity-rising-across-critical-sectors-but-progress-remains-uneven/"
+          "url": "https://industrialcyber.co/news/asimily-rolls-out-segmentation-orchestration-to-automate-network-policy-enforcement-for-connected-devices/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 79,
-    "items_published": 19
+    "articles_reviewed": 84,
+    "items_published": 18
   }
 }
