@@ -1,162 +1,156 @@
 {
-  "date": "2026-06-04",
-  "generated_at": "2026-06-04T06:01:19.597635+00:00",
-  "issue": 35,
-  "executive_summary": "Today's intelligence picture is defined by a dangerous convergence of eroding institutional capacity and escalating threats across multiple domains: the proposed downsizing of CISA, elimination of federal civil service protections, and reduced US military presence in Africa collectively weaken the defensive architecture precisely as adversaries grow bolder. On the cyber and critical infrastructure front, threat actors are actively shifting from passive data theft toward operational disruption of industrial systems, a strategic escalation that carries significant national security implications, while known vulnerabilities continue to be exploited faster than governance frameworks can respond. Geopolitically, the expansion of conflict in the Middle East with Iran striking Kuwait, instability in the Horn of Africa, and surging terrorism across the continent suggest a coordinated opportunism among adversarial actors who may be testing US resolve during a period of perceived internal distraction and institutional reorganization. The Chinese submarine development revealed in satellite imagery, combined with Ukrainian strikes on Russian Baltic Fleet facilities, further signals that near-peer competitors are advancing military capabilities and accepting higher operational risks, a thread that connects directly to US demands for increased NATO burden-sharing and the $11 billion proposal for a dedicated cyber military branch — both indicators that American planners are quietly acknowledging a widening capability gap they are not yet resourced to close.",
+  "date": "2026-06-05",
+  "generated_at": "2026-06-05T06:01:08.372311+00:00",
+  "issue": 36,
+  "executive_summary": "Today's intelligence picture is dominated by two converging pressures: an accelerating threat environment targeting critical infrastructure and industrial control systems, paired with significant institutional turbulence across U.S. defense, intelligence, and regulatory bodies at a moment when adversary activity is intensifying. Active intrusions against fuel tank monitoring systems and a seventh Cisco SD-WAN zero-day under exploitation, combined with broad industrial system vulnerabilities disclosed in the cyber section, suggest a sustained and coordinated campaign against operational technology that is outpacing defensive responses. These infrastructure threats intersect directly with the geopolitical threads, as the Bellingcat exposure of Russian state media linked to UAE-based operations and Russia's move to criminalize anti-Kremlin hacker collectives both signal Moscow is simultaneously tightening information control at home while expanding gray-zone operations abroad, likely including the infrastructure targeting. Meanwhile, U.S. capacity to respond is complicated by internal disarray, including Navy leadership dismissals, a Space Force launch vulnerability exposed by the Blue Origin explosion, unresolved CISA leadership, and a Congress still debating whether to fund conventional platforms or next-generation systems, all of which collectively signal a window of strategic vulnerability that both Russia and an increasingly confident China appear positioned to exploit.",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Today's cyber landscape is marked by sophisticated malware distribution tactics exploiting search results, new vulnerability warnings from CISA, and major organizational shifts across federal cybersecurity agencies.",
+      "intro": "Today's cyber landscape features significant federal regulatory developments alongside critical infrastructure vulnerabilities spanning maritime navigation and industrial control systems.",
       "items": [
         {
-          "headline": "Threat actors exploit Google search rankings to distribute malware through fake software sites",
-          "summary": "Check Point Research exposed a sophisticated malware distribution ecosystem using impersonation, click hijacking, and traffic distribution systems to target users searching for popular software. Attackers leverage high-ranking fake sites with professional designs to trick users into downloading malicious payloads instead of legitimate applications. This research highlights how cybercriminals are exploiting user trust in search engine rankings to scale their operations.",
-          "source": "Check Point Research",
-          "url": "https://research.checkpoint.com/2026/impersonation-click-hijacking-and-tds-inside-a-malware-distribution-ecosystem/"
+          "headline": "Trump Administration Eyes Palantir CTO for CISA Director Role",
+          "summary": "Shyam Sankar, Palantir's chief technology officer, has emerged as the leading candidate to fill the long-vacant CISA director position. This potential appointment would place a private sector technology executive at the helm of the nation's cybersecurity agency during a period of heightened infrastructure threats. The selection signals the Trump administration's preference for industry leadership in critical cybersecurity roles.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/trump-considers-palantir-exec-to-lead-cisa"
         },
         {
-          "headline": "CISA adds Mirasvit Full Page Cache vulnerability to actively exploited list",
-          "summary": "The Cybersecurity and Infrastructure Security Agency flagged CVE-2026-45247, a deserialization vulnerability in Mirasvit Full Page Cache Warmer, for active exploitation. The addition to CISA's Known Exploited Vulnerabilities catalog indicates threat actors are currently leveraging this flaw in real-world attacks. Organizations using this software should prioritize patching immediately.",
+          "headline": "CISA Prepares AI Security Directive Following Biden Executive Order",
+          "summary": "CISA will release a binding operational directive this week focusing on vulnerability management requirements stemming from Biden's AI executive order. The directive will specifically address vulnerability alleviation protocols for AI systems across federal agencies. This represents the first formal regulatory implementation of the administration's AI security framework.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/cisa-directive-for-ai-exec-order-release"
+        },
+        {
+          "headline": "Multiple Critical Infrastructure Vulnerabilities Disclosed Across Industrial Systems",
+          "summary": "CISA released advisories for vulnerabilities affecting maritime navigation systems (NAVTOR NavBox), power grid tools (Hitachi Energy products), and industrial automation platforms (B&R PPT30). These flaws could enable denial-of-service attacks, unauthorized system access, and potential code execution in operational technology environments. The simultaneous disclosure highlights ongoing security gaps in critical infrastructure components.",
           "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/alerts/2026/06/03/cisa-adds-one-known-exploited-vulnerability-catalog"
+          "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-01"
         },
         {
-          "headline": "DHS Secretary proposes significant downsizing of CISA workforce despite cybersecurity threats",
-          "summary": "Homeland Security Secretary Mullin announced plans to reduce CISA's target workforce to approximately 2,800 employees, well below the agency's authorized capacity of 3,400. This downsizing comes as CISA faces expanding responsibilities, including upcoming AI-focused operational directives. The staffing reduction signals a strategic shift in how the administration views federal cybersecurity resource allocation.",
+          "headline": "Supreme Court Upholds FCC Authority to Fine Telecoms for Location Data Sharing",
+          "summary": "The Supreme Court ruled that FCC fines against telecommunications companies for improperly sharing customer location data were legally justified. The decision reinforces federal regulatory authority over telecom privacy practices and validates enforcement mechanisms for customer data protection. This ruling strengthens precedent for future privacy violations in the telecommunications sector.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/dhs-chief-signals-efforts-to-reshape-cisa"
-        },
-        {
-          "headline": "Pentagon commission estimates $11 billion startup cost for dedicated cyber military branch",
-          "summary": "A defense commission detailed the financial requirements for establishing an independent cyber force, projecting 12-18 months for implementation with roughly 11,000 total personnel including National Guard and civilian components. The proposal represents a major restructuring of U.S. military cyber capabilities currently housed within existing service branches. The substantial cost estimate reflects the complexity of creating new military infrastructure and recruiting specialized cyber talent.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/new-cyber-force-would-cost-11-billion-commission"
+          "url": "https://therecord.media/supreme-court-rules-fcc-fines-telecom-location-data-legal"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "Regional conflicts escalate with Iran attacking Kuwaiti infrastructure while domestic unrest spreads across key nations from India to Ethiopia.",
+      "intro": "Strategic patience faces mounting tests as China's rise challenges established powers while the U.S. navigates complex regional conflicts from the Middle East to Latin America.",
       "items": [
         {
-          "headline": "Iran Strikes Kuwait Airport as Regional War Expands",
-          "summary": "Iran launched a deadly attack on Kuwait's main airport, marking a significant escalation that threatens to derail ongoing peace negotiations. The strike demonstrates Iran's willingness to target civilian infrastructure in neutral Gulf states, potentially drawing more regional actors into the broader conflict. Congressional votes on Iran war powers this week will test American resolve as Tehran appears to be betting on U.S. war fatigue.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/06/03/iran-attack-kuwait-airport-us-war-cease-fire-talks-oecd"
+          "headline": "China's domestic AI competition reveals state-driven innovation strategy amid U.S. rivalry",
+          "summary": "Analysis of China's brutal domestic AI market shows how Beijing's 2017 plan to dominate AI by 2030 has evolved into a state-directed ecosystem of competing firms. The internal competition model challenges Western assumptions about Chinese innovation capabilities. This development has significant implications for U.S.-China tech competition and military applications.",
+          "source": "War on the Rocks",
+          "url": "https://warontherocks.com/cogs-of-war/forged-in-a-knife-fight-chinas-brutal-domestic-ai-competition/"
         },
         {
-          "headline": "Trump Administration Designates Brazilian Criminal Groups as Terrorist Organizations",
-          "summary": "The U.S. formally labeled two major Brazilian crime syndicates as foreign terrorist organizations, severely straining bilateral relations with Brazil. This unprecedented move targeting transnational criminal networks rather than ideological groups signals a new approach to combating organized crime through counterterrorism tools. The designation gives U.S. authorities expanded powers to target the groups' financial networks but risks diplomatic blowback from Brazil's government.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/06/03/us-brazil-gangs-first-command-capital-red-fto"
+          "headline": "Trump's Abraham Accords expansion efforts meet Arab resistance over Palestinian issue",
+          "summary": "Regional leaders remain silent on Trump's push for Arab-Israeli normalization expansion, citing the unresolved Palestinian conflict. Arab states maintain their position through the Arab Peace Initiative, creating a fundamental mismatch between U.S. expectations and regional priorities. This resistance complicates broader Middle East diplomatic efforts and Iran containment strategies.",
+          "source": "War on the Rocks",
+          "url": "https://warontherocks.com/wrong-audience-wrong-ask-why-trumps-abraham-accords-gambit-falls-on-deaf-ears/"
         },
         {
-          "headline": "Ethiopia's Rigged Election Threatens Regional Stability",
-          "summary": "Prime Minister Abiy Ahmed's virtually guaranteed electoral victory is raising concerns about renewed instability in the Horn of Africa. The election's predetermined outcome undermines democratic legitimacy and could reignite ethnic tensions that have already displaced millions. Ethiopia's internal fragility has broader implications for regional security, given its role in peacekeeping operations and strategic position near critical shipping lanes.",
+          "headline": "U.S. escalates Cuba blockade amid broader Latin American military operations",
+          "summary": "Trump administration implements unprecedented blockade measures against Cuba while maintaining extensive military activity across Latin America. The policy risks prolonged regional upheaval and challenges traditional hemispheric relationships. Combined with drug interdiction operations, these actions signal a more aggressive U.S. posture in the Western Hemisphere.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/06/03/ethiopia-election-abiy-ahmed-tigray-eritrea"
+          "url": "https://foreignpolicy.com/2026/06/04/trump-us-cuba-policy-blockade-oil/"
         },
         {
-          "headline": "Satirical 'Cockroach Party' Channels Youth Anger in India",
-          "summary": "A mock political movement using cockroach imagery has gained traction among India's unemployed youth, highlighting growing economic discontent beneath the country's political stability. The satirical party's popularity reflects deeper frustrations with job creation and economic opportunities for young Indians. While appearing humorous, the movement represents a potential challenge to established political parties if economic grievances remain unaddressed.",
+          "headline": "Beijing's confidence grows as China snubs key regional security forum",
+          "summary": "China's decision to effectively bypass the Shangri-La Dialogue demonstrates Beijing's increasing confidence in its regional position. The move signals China's belief it no longer needs to engage in multilateral security frameworks dominated by Western powers. This shift reflects broader changes in Asia-Pacific power dynamics and China's approach to regional diplomacy.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/06/03/india-cockroach-janta-party-youth-unemployment-protest"
+          "url": "https://foreignpolicy.com/2026/06/04/china-shangri-la-dong-jun-defense-minister/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "Congressional oversight intensifies around Trump administration defense policies while operational challenges emerge from Africa to the Indo-Pacific.",
+      "intro": "Congressional battles over defense priorities intensified as lawmakers clashed over battleship funding versus drone investments, while chemical weapons discoveries in Syria and space launch vulnerabilities highlighted ongoing security challenges.",
       "items": [
         {
-          "headline": "Democratic lawmakers probe $620 million Pentagon loan linked to Trump Jr.",
-          "summary": "Congressional Democrats are demanding answers about a Defense Department loan to a company with ties to Donald Trump Jr., citing ProPublica reporting that allegedly reveals corruption and influence peddling. The scrutiny highlights growing tensions over potential conflicts of interest in defense contracting. This investigation could signal broader congressional oversight of Pentagon financial decisions under the current administration.",
-          "source": "Defense One",
-          "url": "https://www.defenseone.com/policy/2026/06/lawmakers-pentagon-loan-trump-jr/413962/"
-        },
-        {
-          "headline": "Trump eliminates civil service protections for thousands of federal workers",
-          "summary": "The administration has converted thousands of federal positions at Defense, State, and DHS into at-will employment, stripping traditional civil service protections. This move allows for easier hiring and firing of federal workers but may impact institutional knowledge and continuity. The change particularly affects defense and national security agencies where career professionals often provide continuity across administrations.",
-          "source": "Defense One",
-          "url": "https://www.defenseone.com/policy/2026/06/trump-civil-service/413958/"
-        },
-        {
-          "headline": "US demands NATO allies increase air and naval force contributions",
-          "summary": "American officials are pressing European and Canadian allies to boost their air and naval capabilities assigned to NATO operations. The push reflects ongoing concerns about burden-sharing within the alliance as security threats evolve. NATO military headquarters indicates that many nations have the required capabilities but need to formally assign them to alliance command structures.",
+          "headline": "Democrats fail to block $1 billion Trump-class battleship funding in favor of drone programs",
+          "summary": "House lawmakers rejected a Democratic amendment that would have redirected $1 billion from the proposed Trump-class battleship program to drone capabilities. The vote reflects a broader strategic debate over whether traditional naval platforms or unmanned systems better serve modern warfare needs. This funding decision will shape Navy force structure for decades.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/global/europe/2026/06/03/us-tells-europe-canada-to-boost-nato-air-and-naval-forces/"
+          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/06/04/the-us-needs-drones-not-trump-class-battleships-democrats-argue/"
         },
         {
-          "headline": "Terrorism threats surge across Africa as US military presence decreases",
-          "summary": "A new analysis from the Center for Strategic and International Studies warns that jihadist groups are expanding across Africa while American military engagement in the region declines. The annual risk assessment highlights a growing terrorist front that could threaten regional stability and US interests. This trend raises questions about the effectiveness of reduced military footprints in counterterrorism operations.",
+          "headline": "Blue Origin rocket explosion exposes vulnerability in Space Force launch strategy",
+          "summary": "A recent Blue Origin rocket failure highlighted the Pentagon's struggle to diversify its space launch capabilities amid growing demand. The Space Force's efforts to cultivate multiple commercial providers haven't kept pace with national security mission requirements. This incident underscores the risks of relying on a limited number of launch providers for critical military satellites.",
+          "source": "Defense One",
+          "url": "https://www.defenseone.com/defense-systems/2026/06/blue-origin-rocket-explosion-launch-plans/413993/"
+        },
+        {
+          "headline": "International inspectors uncover hidden Syrian chemical weapons sites during transition",
+          "summary": "More than a decade after Syria pledged to eliminate its chemical arsenal, investigators have discovered previously undisclosed weapons materials across multiple locations. The findings emerge as Syria undergoes a fragile security transition, raising concerns about weapons accountability and potential proliferation. This discovery complicates international efforts to verify complete disarmament compliance.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/06/03/experts-warn-terrorism-threat-is-rising-in-africa-as-us-pulls-back/"
+          "url": "https://www.militarytimes.com/global/mideast-africa/2026/06/04/hidden-chemical-weapons-sites-emerge-in-syria-amid-fragile-security-transition/"
+        },
+        {
+          "headline": "Navy dismisses entire leadership team at Japanese ship repair facility",
+          "summary": "The Navy fired three senior leaders at a ship repair facility in Japan without specifying the reasons for their removal. The mass leadership change suggests significant operational or administrative failures at a critical maintenance hub for Pacific Fleet operations. This action could impact ship readiness in a strategically vital theater.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/news/your-navy/2026/06/04/navy-fires-leadership-trio-of-ship-repair-facility-in-japan/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Today's intelligence picture reveals significant developments in open-source collection capabilities, from satellite reconnaissance identifying new Chinese naval assets to Ukrainian drone operations expanding their reach into previously secure Russian territories.",
+      "intro": "Today's intelligence landscape features significant developments in information warfare operations, regulatory challenges for tech platforms, and state responses to hacktivist activities.",
       "items": [
         {
-          "headline": "Satellite imagery reveals unknown Chinese submarine with novel design features",
-          "summary": "Open-source intelligence analysis of commercial satellite imagery has identified a new large Chinese submarine with unique characteristics that analysts believe could serve as a high-speed naval interceptor. The discovery demonstrates the growing capability of OSINT practitioners to identify and analyze military developments through commercially available imagery. This highlights both the intelligence value of satellite reconnaissance and China's continued naval modernization efforts.",
-          "source": "The War Zone",
-          "url": "https://www.twz.com/sea/new-large-chinese-submarine-with-very-unique-feature-just-caught-on-satellite-imagery"
+          "headline": "Bellingcat Investigation Exposes Digital Infrastructure Linking Russian State Media to UAE-Based Video Operations",
+          "summary": "New research reveals connections between Russian state broadcaster RT's subsidiary Ruptly and Abu Dhabi-registered entity Viory, highlighting sophisticated cross-border information operations infrastructure. The investigation demonstrates how state-sponsored media entities leverage international jurisdictions to obscure their operational networks. This case underscores the complexity of tracking modern propaganda distribution systems across multiple jurisdictions.",
+          "source": "bellingcat",
+          "url": "https://www.bellingcat.com/news/2026/06/04/viory-ruptly-rt-russia-uae-propaganda-video-news/"
         },
         {
-          "headline": "Ukrainian long-range drone strikes reach Russian Baltic Fleet facilities",
-          "summary": "Ukrainian forces successfully conducted drone attacks against Russia's Baltic Fleet, marking a significant expansion of their strike capabilities into previously secure Russian territory. The operation demonstrates Ukraine's growing ability to project force across vast distances and threatens what Moscow considered a sanctuary for naval operations. This development signals a new phase in the conflict where geographic distance no longer guarantees security for Russian military assets.",
-          "source": "The War Zone",
-          "url": "https://www.twz.com/sea/russias-baltic-fleet-successfully-attacked-by-ukrainian-drones"
-        },
-        {
-          "headline": "CISA prepares binding AI directive focusing on vulnerability management",
-          "summary": "The Cybersecurity and Infrastructure Security Agency will release a binding operational directive this week implementing AI-related provisions from the executive order, with emphasis on vulnerability identification and remediation. The directive represents the first concrete regulatory framework for AI security in critical infrastructure. Organizations should prepare for new compliance requirements that will likely mandate specific AI risk assessment and vulnerability management protocols.",
+          "headline": "Russia Moves to Designate Anti-Kremlin Hacker Collectives as Extremist Organizations",
+          "summary": "Russian authorities are pursuing extremist labels for hacker groups that have conducted cyberattacks against Russian and Belarusian critical infrastructure and government systems. This legal maneuver represents an escalation in state responses to hacktivist activities and could set precedent for how nations classify cyber resistance groups. The designation would formalize Russia's treatment of these digital adversaries under domestic extremism laws.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/cisa-directive-for-ai-exec-order-release"
+          "url": "https://therecord.media/russia-seeks-extremist-label-for-hacker-groups"
+        },
+        {
+          "headline": "X Challenges $150 Million FTC Privacy Penalty Based on Corporate Identity Change",
+          "summary": "Elon Musk's X platform is petitioning to modify or set aside the privacy settlement inherited from Twitter, arguing the penalty applies to a company that no longer exists. The legal strategy centers on corporate transformation claims and personnel changes since the original violations occurred. This case could establish important precedent for how regulatory settlements transfer through major corporate restructuring.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/ftc-considers-modifying-150-million-twitter-privacy-fine"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "Industrial cybersecurity faces mounting pressure as adversaries shift tactics toward operational disruption while new governance frameworks emerge to address interconnected OT risks.",
+      "intro": "Critical infrastructure operators face mounting pressure from both active cyber intrusions targeting fuel systems and a seventh zero-day vulnerability in Cisco's widely-deployed SD-WAN infrastructure.",
       "items": [
         {
-          "headline": "Threat Actors Pivot from Data Theft to Disrupting Industrial Operations",
-          "summary": "Cybercriminals are increasingly targeting operational technology systems for disruption rather than traditional data exfiltration. This tactical shift poses greater risks to critical infrastructure and manufacturing operations that rely on continuous uptime. Organizations must reassess their OT security strategies to account for adversaries seeking to cause physical damage or operational chaos.",
+          "headline": "CISA Issues Warning After Active Intrusions Target Fuel Tank Monitoring Systems",
+          "summary": "Federal cybersecurity officials are urging operators to secure automatic tank gauge systems following a recent investigation into cyber intrusions targeting these critical fuel infrastructure components. The systems monitor fuel levels and tank conditions at gas stations and other facilities, making them potential targets for supply chain disruption. Organizations should immediately review network segmentation and access controls for these operational technology systems.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/features/cyber-adversaries-shift-from-data-theft-to-operational-disruption-as-industrial-crown-jewels-come-under-siege/"
+          "url": "https://industrialcyber.co/cisa/cisa-and-partners-urge-operators-to-secure-automatic-tank-gauge-systems-against-ongoing-cyber-threats/"
         },
         {
-          "headline": "CISA Expands ChemLock Program for Chemical Facility Security Assessments",
-          "summary": "The Cybersecurity and Infrastructure Security Agency advanced its information request process to support security consultations and onsite assessments for chemical facilities. This expansion of the ChemLock program indicates heightened federal focus on protecting critical chemical infrastructure from cyber threats. Chemical sector operators should prepare for potential CISA engagement and voluntary security evaluations.",
-          "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/critical-infrastructure/cisa-advances-chemlock-information-request-to-support-security-consultations-onsite-assessments-risk-reduction-activities/"
+          "headline": "Cisco Discloses Seventh SD-WAN Zero-Day Under Active Exploitation",
+          "summary": "Cisco's SD-WAN infrastructure faces another critical vulnerability (CVE-2026-20245) allowing arbitrary command execution with root privileges, marking the seventh such zero-day in recent months. The vulnerability is already being exploited in the wild with no patch currently available. This represents a significant risk to organizations relying on Cisco's SD-WAN technology for critical network infrastructure.",
+          "source": "SecurityWeek",
+          "url": "https://www.securityweek.com/cisco-warns-of-7th-sd-wan-zero-day-exploited-in-2026/"
         },
         {
-          "headline": "Growing Industrial Connectivity Demands New Cyber Risk Governance Models",
-          "summary": "Increased interconnection between industrial operations, supply chains, and public infrastructure is fundamentally changing how cyber risks propagate across systems. Traditional risk management approaches are proving inadequate for these complex, interdependent environments. Industry leaders must develop new governance frameworks that account for cascading failures and shared vulnerabilities across operational technology networks.",
+          "headline": "Data Diode Technology Integration Strengthens SCADA Security Architecture",
+          "summary": "Owl Cyber Defense and Trihedral have integrated hardware-enforced data diode technology with VTScada systems to create unidirectional data flows from operational networks. This partnership addresses the critical need for secure data extraction from OT environments without creating pathways for cyber attacks to reach control systems. The solution provides air-gap-level security while maintaining operational visibility requirements.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/risk-management/industrial-cyber-risk-demands-new-governance-approaches-as-operational-environments-become-more-interconnected/"
-        },
-        {
-          "headline": "Trump Administration Prioritizes AI Innovation and Cybersecurity Modernization",
-          "summary": "President Trump signed an executive order focusing on artificial intelligence advancement while strengthening government cybersecurity posture and frontier AI protections. The order signals potential policy shifts affecting how federal agencies approach both AI deployment and cybersecurity requirements. Industrial organizations should monitor implementation details for new compliance requirements or security mandates.",
-          "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/ai/trump-signs-executive-order-advancing-ai-innovation-cybersecurity-modernization-and-frontier-ai-protections/"
+          "url": "https://industrialcyber.co/news/owl-cyber-defense-trihedral-integrate-data-diode-technology-with-vtscada-to-strengthen-ot-data-security/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 80,
-    "items_published": 19
+    "articles_reviewed": 88,
+    "items_published": 18
   }
 }
