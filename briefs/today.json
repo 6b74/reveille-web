@@ -1,44 +1,89 @@
 {
-  "date": "2026-06-07",
-  "generated_at": "2026-06-07T06:03:33.743868+00:00",
-  "issue": 38,
-  "executive_summary": "I notice the ICS/SCADA/OT section appears to be empty or missing content. I can only synthesize what has actually been reported, so I'll work with the three substantive military items provided.\n\nToday's intelligence picture is dominated by escalating kinetic and technological competition centered on the Middle East and NATO alliance posture. The U.S. strike on Iranian radar sites following a drone provocation near the Strait of Hormuz signals a deliberate but calibrated escalatory step, raising near-term concerns about Iranian retaliatory options across the region, including potential proxy actions against critical maritime infrastructure. Simultaneously, France's deployment of AI-powered command systems in a NATO exercise underscores the alliance's accelerating integration of autonomous decision-support tools into high-stakes operational environments, a development that Iran and other adversaries will be watching closely for exploitable dependencies or failure points. The Pentagon's administrative overhaul of its faith recognition list is a lower-tier item in isolation, but in the context of active combat operations and troop morale considerations, internal institutional friction of this kind warrants monitoring for downstream effects on unit cohesion and readiness. The connecting thread across all three items is the tension between U.S. and allied military modernization and the live operational pressures that test those systems in real time.",
+  "date": "2026-06-08",
+  "generated_at": "2026-06-08T06:03:49.858863+00:00",
+  "issue": 39,
+  "executive_summary": "Today's intelligence picture is dominated by a rapidly escalating Iran-Israel conflict that is generating cascading effects across multiple domains simultaneously. Iran's direct ballistic missile strikes against Israeli targets are the sharpest immediate development, and the US military's posture under sustained alert reflects an operational environment in which American forces are already treating this as an active theater concern rather than a monitoring situation. The military section reinforces this threat orientation broadly, with accelerated unmanned vessel deployment, drone-specific base defense systems, and France's nuclear umbrella expansion to Nordic partners collectively signaling that Western defense establishments are repositioning for a more dangerous, multi-front security environment rather than a single crisis. Domestically, Trump's consolidation of the Republican Party represents a structural political shift that could affect the long-term coherence of US foreign policy consensus, while the F-47 configuration leak via unit patch analysis is a notable counterintelligence failure that underscores persistent vulnerabilities in open-source exposure of sensitive programs at precisely the moment US advanced air assets are most strategically relevant.",
   "sections": [
+    {
+      "id": "geopolitical",
+      "title": "Geopolitical",
+      "intro": "Domestic political realignments are reshaping American governance structures with potential long-term implications for party dynamics and international positioning.",
+      "items": [
+        {
+          "headline": "Trump's Republican Party Purge Succeeds Where FDR Failed But Risks Long-Term GOP Viability",
+          "summary": "President Trump has achieved unprecedented success in removing dissenting voices from the Republican Party, accomplishing a level of internal control that eluded even Franklin D. Roosevelt during his attempts to reshape the Democratic Party. While this consolidation strengthens Trump's immediate political control, analysts warn it could weaken the GOP's electoral prospects and institutional resilience over time. The purge represents a fundamental shift in how American political parties manage internal dissent and could influence the party's ability to adapt to changing voter demographics.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/06/08/trump-republican-party-purge-fdr/"
+        }
+      ]
+    },
     {
       "id": "military",
       "title": "Military",
-      "intro": "U.S.-Iran tensions escalated in the Persian Gulf while NATO allies advance military AI capabilities and the Pentagon implements administrative changes affecting service members.",
+      "intro": "Military developments today span congressional pressure for faster naval drone deployment, new anti-drone defense systems, and expanding nuclear cooperation frameworks amid ongoing operational stress from the Iran conflict.",
       "items": [
         {
-          "headline": "U.S. Forces Strike Iranian Radar Sites After Drone Attack Near Strait of Hormuz",
-          "summary": "American forces conducted retaliatory strikes against Iranian coastal radar installations following Iran's launch of drones toward the strategically critical Strait of Hormuz shipping lane. The exchange represents a significant escalation in Gulf tensions and demonstrates continued Iranian willingness to threaten global energy chokepoints. Watch for potential Iranian counter-escalation and impacts on regional oil transport.",
+          "headline": "US Forces Adapt Operations Under Sustained Alert During Iran Conflict",
+          "summary": "American troops and their families are adjusting to prolonged high-alert status as the Iran war creates sustained operational pressure. Military personnel describe the challenge of maintaining \"Level 10\" vigilance continuously, creating significant stress on forces and families. This operational tempo represents a new baseline for US military readiness posture.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/flashpoints/middle-east/2026/06/06/us-strikes-iranian-sites-after-iran-launches-drones-in-latest-gulf-flare-up/"
+          "url": "https://www.militarytimes.com/news/your-military/2026/06/07/us-troops-families-adjust-to-new-normal-of-iran-war/"
         },
         {
-          "headline": "France Deploys AI-Powered Military Command System in NATO Exercise",
-          "summary": "The French Army will test 'Berthier,' its proprietary large language model designed for battlefield staff operations, during upcoming NATO exercises this month. This marks a significant step in military AI adoption by a major NATO ally, potentially setting precedents for alliance-wide artificial intelligence integration. The system's performance could influence broader NATO AI strategy and interoperability standards.",
-          "source": "Defense News",
-          "url": "https://www.defensenews.com/global/europe/2026/06/06/france-to-test-its-own-ai-powered-battlefield-command-in-june-nato-exercise/"
+          "headline": "Congress Pushes Navy to Accelerate Unmanned Surface Vessel Deployment",
+          "summary": "House lawmakers are drafting legislation requiring the Navy to develop clearer strategies for fielding autonomous maritime platforms more rapidly. The 2027 defense policy bill would compel service leaders to establish concrete timelines for drone boat operations. This reflects growing congressional frustration with the pace of naval modernization amid increasing maritime threats.",
+          "source": "Defense One",
+          "url": "https://www.defenseone.com/policy/2026/06/house-lawmakers-want-navy-deploy-drone-boats-faster/414018/"
         },
         {
-          "headline": "Pentagon Removes 180 Faiths from Official Recognition List in Administrative Overhaul",
-          "summary": "The Department of Defense eliminated 180 religious and belief categories from its official recognition system, citing administrative complexity as the primary driver. While Pentagon officials characterize this as routine administrative streamlining, the change affects religious accommodation processes for service members. Monitor for potential legal challenges and impacts on military chaplaincy services.",
+          "headline": "Army Fields Container-Based Missile System for Base Defense Against Drones",
+          "summary": "The Army has deployed the Grizzly weapons platform, a containerized system capable of firing Hellfire and AGM-179 missiles specifically designed for counter-drone operations. The mobile platform addresses growing threats to fixed military installations from unmanned aerial systems. This represents a shift toward modular, rapidly deployable air defense capabilities for forward operating bases.",
           "source": "Task & Purpose",
-          "url": "https://taskandpurpose.com/military-life/pentagon-cuts-religious-faiths-180/"
+          "url": "https://taskandpurpose.com/tech-tactics/army-grizzily-anti-drone-container/"
+        },
+        {
+          "headline": "France Expands Nuclear Deterrence Umbrella Initiative to Nordic Partners",
+          "summary": "Norway has joined discussions with France regarding extended nuclear deterrence arrangements, expanding President Macron's nuclear cooperation framework into Scandinavia. This initiative represents a significant shift in European security architecture beyond traditional NATO nuclear arrangements. The expansion suggests growing European desire for independent nuclear deterrence options amid evolving threat perceptions.",
+          "source": "Breaking Defense",
+          "url": "https://breakingdefense.com/2026/06/macrons-nuclear-pact-expands-across-scandinavia-as-global-forces-surges/"
+        }
+      ]
+    },
+    {
+      "id": "intel_osint",
+      "title": "Intel / OSINT",
+      "intro": "Today's intelligence picture is dominated by escalating Middle East tensions as Iran launches direct ballistic missile strikes against Israel, while open-source analysis reveals previously hidden details about classified U.S. aircraft programs.",
+      "items": [
+        {
+          "headline": "Iran Conducts Direct Ballistic Missile Strikes Against Israeli Targets",
+          "summary": "Tehran launched ballistic missiles at Israel in retaliation for IDF strikes on Beirut Sunday, marking a significant escalation in direct confrontation between the two nations. This represents a shift from proxy warfare to direct military engagement, dramatically increasing regional conflict risks. Intelligence analysts will closely monitor Iranian missile performance, Israeli defensive capabilities, and potential for further escalation.",
+          "source": "The War Zone",
+          "url": "https://www.twz.com/news-features/iran-launches-ballistic-missile-attacks-on-israel"
+        },
+        {
+          "headline": "Classified Boeing F-47 Aircraft Configuration Revealed Through Unit Patch Analysis",
+          "summary": "Open-source investigators discovered that Boeing's NGAD demonstrator aircraft's distinctive planform was inadvertently disclosed on a military unit patch, following a pattern similar to the Bird of Prey program. This highlights ongoing operational security challenges where classified aircraft details leak through seemingly innocuous military insignia. The discovery demonstrates the continued value of patch analysis in revealing classified aerospace programs.",
+          "source": "The War Zone",
+          "url": "https://www.twz.com/air/f-47s-exotic-shape-was-hiding-in-plain-sight-on-a-unit-patch"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "Today's operational technology landscape shows limited significant security developments, with most activity centered around broader cybersecurity funding rather than specific ICS threats.",
-      "items": []
+      "intro": "Today's industrial cybersecurity landscape shows limited new developments, with activity focused on general vulnerability management solutions that may impact operational technology environments.",
+      "items": [
+        {
+          "headline": "Startup Secures Funding for AI-Based Vulnerability Remediation Platform",
+          "summary": "Emphere raised $2.1 million to develop AI-powered vulnerability remediation tools for software companies. While targeting traditional software development, such platforms could eventually address critical patch management challenges in industrial control systems where downtime constraints complicate security updates. The funding reflects growing investor interest in automated security solutions that could benefit OT environments.",
+          "source": "SecurityWeek",
+          "url": "https://www.securityweek.com/emphere-raises-2-1-million-for-ai-powered-vulnerability-remediation/"
+        }
+      ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 8,
-    "items_published": 3
+    "articles_reviewed": 12,
+    "items_published": 8
   }
 }
