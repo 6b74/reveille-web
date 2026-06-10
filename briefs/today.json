@@ -1,162 +1,156 @@
 {
-  "date": "2026-06-09",
-  "generated_at": "2026-06-09T06:03:42.890328+00:00",
-  "issue": 40,
-  "executive_summary": "Today's intelligence picture is dominated by a single accelerating theme: artificial intelligence is rapidly becoming both a weapon and a shield across every domain of national security, from industrial control systems and military platforms to geopolitical influence operations and domestic surveillance. The convergence of the White House AI security strategy, Congressional hearings on critical infrastructure, the Trump administration's push to integrate AI across national security agencies, and simultaneous moves by Russia to upgrade surveillance capabilities and China to expand AI influence in Africa and Latin America signals that great power competition is increasingly being contested in the cognitive and digital layers rather than exclusively on traditional battlefields. Active threats remain acute in the near term, with CISA flagging exploited vulnerabilities including an AI platform flaw, a major healthcare data breach, and an insider threat case involving ISIS financing all pointing to a persistent and diversified attack surface against US interests. The fragile Iran-Israel pause and the Navy strike on an oil tanker in the Gulf of Oman serve as reminders that kinetic escalation risk has not receded, and any deterioration in that theater would compound stress on supply chains and critical infrastructure already identified as vulnerable to detection evasion and cyberattack.",
+  "date": "2026-06-10",
+  "generated_at": "2026-06-10T06:01:28.004119+00:00",
+  "issue": 41,
+  "executive_summary": "Today's intelligence picture is dominated by two converging crises: an active U.S.-Iran military confrontation in the Strait of Hormuz and a deteriorating cyber threat environment that collectively strain American strategic capacity at a dangerous moment. The Apache helicopter incident has escalated into direct U.S. retaliatory strikes against Iran, while simultaneously China is accelerating its military buildup and Xi Jinping moves to consolidate influence in North Korea against Russia — suggesting adversaries are deliberately exploiting U.S. attention and resource commitments in the Middle East theater. The cyber front compounds this pressure, with Microsoft's record-breaking patch release, active Ivanti pre-authentication vulnerabilities, and CISA overhauling its vulnerability methodology all signaling a federal infrastructure under significant stress, while the romance-themed espionage campaign targeting Russian soldiers hints at a broader information operations tempo across multiple theaters. Domestic political dysfunction — a looming government shutdown, Senate resistance to defense funding, and unresolved budget disputes — threatens to hollow out U.S. response capacity precisely when military, cyber, and geopolitical demands are peaking simultaneously, a confluence that sophisticated adversaries in Beijing, Moscow, and Tehran are almost certainly monitoring and prepared to exploit.",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Today's cyber landscape shows continued vulnerability exploitation, regulatory enforcement actions, and state-level digital surveillance expansion.",
+      "intro": "A record-breaking Patch Tuesday overshadowed other significant developments as Microsoft released fixes for nearly 200 vulnerabilities while CISA announced major changes to federal vulnerability assessment protocols.",
       "items": [
         {
-          "headline": "DentaQuest Breach Exposes 2.6 Million Dental Benefits Records",
-          "summary": "ShinyHunters threat group leaked data from DentaQuest, a major U.S. dental benefits administrator owned by Sun Life, affecting 2.6 million accounts including names and emails. The incident highlights ongoing risks to healthcare sector data and the persistence of established cybercriminal groups in targeting high-value datasets. This breach adds to growing concerns about healthcare data protection amid increasing digitization.",
-          "source": "Check Point Research",
-          "url": "https://research.checkpoint.com/2026/8th-june-threat-intelligence-report/"
+          "headline": "Microsoft delivers largest Patch Tuesday ever with nearly 200 security fixes",
+          "summary": "Microsoft patched a record-breaking number of vulnerabilities in June 2026, with nearly three dozen earning critical ratings and exploit code already available for at least three flaws. The massive release represents the largest monthly security update cycle in the company's history, indicating either improved vulnerability discovery processes or a significant accumulation of security debt.",
+          "source": "Krebs on Security",
+          "url": "https://krebsonsecurity.com/2026/06/a-record-breaking-patch-tuesday-for-june-2026/"
         },
         {
-          "headline": "CISA Flags Two Actively Exploited Vulnerabilities Including AI Platform Flaw",
-          "summary": "CISA added CVE-2026-42271 affecting BerriAI LiteLLM and CVE-2026-50751 in Check Point Security Gateway to its Known Exploited Vulnerabilities catalog based on confirmed active exploitation. The inclusion of an AI platform vulnerability signals expanding attack surfaces as organizations integrate AI tools. Federal agencies now have binding deadlines to patch these flaws.",
-          "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/alerts/2026/06/08/cisa-adds-two-known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "headline": "WhatsApp Seeks Contempt Order Against NSO for Violating Spyware Injunction",
-          "summary": "WhatsApp filed a federal contempt motion alleging NSO Group violated a permanent court injunction by conducting new spearphishing attacks against its users. This escalation in the long-running legal battle could result in additional penalties for the Israeli spyware firm and sets precedent for enforcing court orders against surveillance technology companies. The case tests judicial oversight of commercial spyware operations.",
+          "headline": "CISA overhauls federal vulnerability assessment methodology in new directive",
+          "summary": "CISA is releasing a binding operational directive that fundamentally changes how federal agencies prioritize and address cybersecurity vulnerabilities, elevating some threats while deprioritizing others. This represents a significant shift in the government's approach to vulnerability management and could influence private sector practices.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/whatsapp-says-nso-targeted-users-with-attacks-against-court-order"
+          "url": "https://therecord.media/cisa-to-transform-how-it-assesses-cyber-vulns-risks"
         },
         {
-          "headline": "Russia Updates SORM Digital Surveillance System for Enhanced Citizen Monitoring",
-          "summary": "Russia's Ministry of Digital Development published new technical standards for its SORM surveillance system, upgrading capabilities to track citizens' online activities more comprehensively. The regulatory changes reflect Russia's continued expansion of domestic digital monitoring infrastructure amid geopolitical tensions. These updates may influence global discussions about state surveillance boundaries and digital rights.",
+          "headline": "Ivanti Sentry vulnerabilities include pre-authentication command injection flaw",
+          "summary": "Ivanti disclosed two new vulnerabilities in its Sentry product, including CVE-2026-10520, a pre-authentication OS command injection vulnerability that allows remote code execution. Given Ivanti's history of widely exploited vulnerabilities in enterprise products, this disclosure warrants immediate attention from organizations using Sentry.",
+          "source": "watchTowr Labs",
+          "url": "https://labs.watchtowr.com/more-evidence-that-words-dont-mean-what-we-thought-they-meant-ivanti-sentry-pre-auth-os-command-injection-cve-2026-10520/"
+        },
+        {
+          "headline": "Espionage group targets Russian soldiers through romance-themed social engineering",
+          "summary": "The SiribClone group has been conducting sustained intelligence operations since summer 2025, using fake female personas to establish romantic relationships with Russian military personnel in border regions and combat zones. This operation demonstrates the continued effectiveness of social engineering tactics against high-value military targets.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/russia-upgrades-rules-for-digital-spy-system-sorm"
+          "url": "https://therecord.media/hackers-pose-as-women-seeking-romance-russian-military"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "Global tensions simmer as Iran-Israel hostilities pause precariously, China expands digital influence in Africa, and complex supply chains challenge traditional security approaches.",
+      "intro": "Global power dynamics shift as the U.S. confronts military overstretch amid simultaneous crises in Iran and the Middle East, while China leverages the moment to expand influence in North Korea.",
       "items": [
         {
-          "headline": "Iran-Israel War Reaches Fragile Pause After Escalating Attacks",
-          "summary": "Iran and Israel have stepped back from the brink following recent military exchanges, but the ceasefire remains extremely fragile with another Israeli assault on Beirut potentially collapsing the truce entirely. Trump's attempt to end the conflict faces resistance from all parties involved, highlighting the limits of presidential influence over entrenched regional adversaries. The situation demonstrates how quickly localized conflicts can spiral beyond any single actor's control.",
+          "headline": "U.S. Military Capacity Strained by Iran War as China's Military Buildup Accelerates",
+          "summary": "Extended conflict in Iran has significantly depleted Pentagon resources and weapons stockpiles at a critical moment when China's military capabilities are reaching maturity. This overstretch highlights fundamental weaknesses in U.S. defense industrial capacity, particularly in shipbuilding where decades of decline now threaten maritime power projection. The timing creates strategic vulnerabilities as the U.S. faces potential simultaneous challenges across multiple theaters.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/06/08/iran-israel-attacks-lebanon-hezbollah-beirut-us-trump-netanyahu/"
+          "url": "https://foreignpolicy.com/2026/06/09/iran-war-trump-china-united-states-military-defense-weapons-geopolitics-strategy-taiwan"
         },
         {
-          "headline": "China Dominates African AI Development Through Local Language Models",
-          "summary": "Chinese AI systems have become the predominant choice for African developers by offering models literate in local African languages, giving Beijing significant technological influence across the continent. This linguistic advantage represents a strategic soft power tool that Western competitors have largely overlooked. The development signals China's comprehensive approach to digital infrastructure expansion in emerging markets.",
+          "headline": "Trump Orders Self-Defense Strikes Against Iran Following Apache Helicopter Downing",
+          "summary": "The U.S. launched new military strikes on Iranian targets after an Apache helicopter was reportedly shot down, though Iranian officials claim the incident was not deliberate. The escalation comes amid broader regional tensions involving Israel and Lebanon, suggesting the conflict's scope continues expanding. The incident tests diplomatic boundaries as both sides navigate between retaliation and preventing full-scale war.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/06/08/china-africa-ai-languages/"
+          "url": "https://foreignpolicy.com/2026/06/09/trump-apache-helicopter-attack-iran-oman-lebanon-israel"
         },
         {
-          "headline": "Distributed Supply Chains Evade Detection Despite Advanced Port Security",
-          "summary": "New scanning technology at Beirut's port successfully identified individual components like lithium batteries and drone parts but missed the threat when militants spread purchases across multiple containers, vessels, and timeframes. The case illustrates how modern AI-powered security systems struggle with threats distributed across extended supply networks rather than concentrated in single shipments. This vulnerability has implications for ports worldwide relying on similar detection methods.",
+          "headline": "Xi Jinping Visits North Korea to Counter Growing Russian Influence",
+          "summary": "Chinese President Xi's long-awaited visit to Pyongyang represents a strategic effort to reassert China's traditional dominance over North Korea as Russian ties have strengthened. The visit comes as North Korea has increasingly aligned with Moscow, particularly regarding Ukraine, threatening China's preferred role as Pyongyang's primary patron. Success or failure in drawing Kim Jong Un back into China's orbit will significantly impact regional power balance and sanctions enforcement.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/06/09/xi-china-north-korea-xi-kim-jong-un-visit-russia"
+        },
+        {
+          "headline": "Russia's Shadow Fleet Operations Reveal Systematic Sanctions Evasion Architecture",
+          "summary": "Russia has developed a sophisticated network of vessels, shell companies, and service providers that systematically circumvent sanctions, with most ships successfully avoiding detection. The visible tanker seizures and sanctions represent only a small fraction of a larger fleet that continues moving sanctioned goods through constantly shifting registries and corporate structures. This shadow fleet demonstrates how sanctions evasion has evolved from opportunistic workarounds to engineered systems designed for sustained economic warfare.",
           "source": "War on the Rocks",
-          "url": "https://warontherocks.com/what-beiruts-port-scanners-miss-about-militant-supply-chains/"
-        },
-        {
-          "headline": "Washington Urged to Compete Rather Than Exclude China in Latin America",
-          "summary": "U.S. strategy toward Chinese influence in Latin America should focus on offering better alternatives rather than attempting to push Beijing out entirely, according to new analysis of regional dynamics. The approach recognizes that exclusionary tactics have proven ineffective while countries in the region benefit from Chinese investment and trade relationships. Success requires Washington to provide more attractive strategic partnerships rather than demanding zero-sum choices.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/06/08/latin-america-us-china-national-security-strategic-displacement/"
+          "url": "https://warontherocks.com/from-pyongyang-to-primorsk-when-sanctions-evasion-becomes-system-design/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "Military operations intensify in the Gulf of Oman while Congress advances AI modernization and extends legacy platform lifespans amid ongoing security challenges.",
+      "intro": "Military developments today range from escalating tensions with Iran following helicopter downing to breakthrough autonomous rescue operations and congressional budget disputes.",
       "items": [
         {
-          "headline": "Navy F/A-18 Super Hornet disables oil tanker in Gulf of Oman strike",
-          "summary": "A carrier-based F/A-18 from USS Abraham Lincoln fired precision munitions into a vessel's engineering and steering compartments in the Gulf of Oman. The strike represents escalating military action in critical maritime shipping lanes. This follows recent Iranian attacks on Kuwait, indicating broader regional tensions.",
+          "headline": "US Retaliates Against Iran After Apache Helicopter Shot Down in Strait of Hormuz",
+          "summary": "The United States launched strikes on Iran Tuesday following Tehran's downing of a US Apache helicopter in the strategic Strait of Hormuz waterway. The escalation marks a significant uptick in US-Iran tensions under the Trump administration. Watch for Iranian counter-responses and potential impacts on Gulf shipping lanes.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/flashpoints/2026/06/08/us-navy-fa-18-super-hornet-strikes-disables-oil-tanker-in-gulf-of-oman/"
+          "url": "https://www.militarytimes.com/news/your-military/2026/06/09/us-launches-new-strikes-on-iran-after-helicopter-downed/"
         },
         {
-          "headline": "Trump administration accelerates AI integration across national security agencies",
-          "summary": "New presidential directive orders FBI and intelligence agencies to build \"deep, proactive\" partnerships with frontier AI companies. The memo signals aggressive push to modernize defense capabilities amid global AI competition. Implementation speed will test agencies' ability to balance innovation with security protocols.",
+          "headline": "Navy Drone Boat Conducts First-Ever Autonomous Rescue of Downed Helicopter Crew",
+          "summary": "An unmanned surface vessel successfully rescued helicopter crew members from the sea in what appears to be the first such autonomous rescue operation. The drone boat, manufactured by Texas-based Saronic, was deployed to the region in March as part of expanding naval robotics capabilities. This milestone demonstrates the maturation of unmanned systems for critical life-saving missions.",
           "source": "Defense One",
-          "url": "https://www.defenseone.com/policy/2026/06/trump-memo-pushes-national-security-agencies-move-faster-ai/414047/"
+          "url": "https://www.defenseone.com/defense-systems/2026/06/apparent-first-navy-drone-boat-rescues-helicopter-crew-downed-sea/414066/"
         },
         {
-          "headline": "Congress extends A-10 Warthog operations through 2030 with AI upgrade studies",
-          "summary": "House panel approved keeping the aging close-air-support aircraft operational beyond planned retirement while exploring AI and electronic warfare capabilities. Lawmakers question whether new mission profiles could justify continued investment in the platform. Decision reflects broader tension between modernization costs and proven capabilities.",
-          "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/06/08/house-panel-backs-a-10-warthog-through-2030-eyes-autonomous-successors/"
+          "headline": "Senate Appropriators Signal Resistance to Trump's Extra-Budgetary Defense Funding Plans",
+          "summary": "Senate appropriators are pushing back against another defense reconciliation bill that would fund Trump's shipbuilding, munitions, and Golden Dome missile defense initiatives outside normal budget processes. Key appropriators warn of 'terrible risk' in bypassing traditional funding mechanisms. Congressional resistance could force the administration to scale back ambitious defense programs or accept slower implementation timelines.",
+          "source": "Defense One",
+          "url": "https://www.defenseone.com/policy/2026/06/senate-appropriators-defense-reconciliation-bill/414080/"
         },
         {
-          "headline": "Navy sailor charged with financing ISIS attack plan against US troops",
-          "summary": "Seaman Bareen Dzayee allegedly attempted to pay ISIS operatives to conduct drone and RPG attacks on American service members overseas. The case highlights ongoing insider threat challenges within military ranks. Separately, Navy investigators are examining a fatal shooting aboard USS John F. Kennedy with one sailor in custody.",
+          "headline": "Government Shutdown Looms Over Defense Budget Disagreements",
+          "summary": "Senator John Kennedy warns lawmakers should prepare for a potential government shutdown as Congress remains deadlocked over fiscal 2027 defense spending levels. The dispute centers on the scale of defense budget increases amid competing priorities. A shutdown would disrupt military operations and delay critical procurement programs during heightened global tensions.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-navy/2026/06/08/sailor-charged-for-isis-conspiracy-to-kill-us-troops/"
+          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/06/09/senator-warns-of-government-shutdown-over-dispute-on-fiscal-2027-defense-budget/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Today's intelligence landscape shows significant geopolitical shifts with Armenia's pro-Western electoral victory despite Russian disinformation efforts, while new surveillance footage highlights evolving NATO counter-drone operations.",
+      "intro": "Today's intelligence picture reveals escalating Middle East tensions, breakthrough autonomous rescue operations, and advanced AI-enabled warfare tactics across multiple theaters.",
       "items": [
         {
-          "headline": "Armenia's Pro-Western Government Survives Russian Information Warfare Campaign",
-          "summary": "Prime Minister Pashinyan's Civil Contract party secured nearly 50% of votes in Sunday's election, decisively defeating the pro-Russian Strong Armenia party backed by billionaire Samvel Karapetyan. The victory demonstrates resilience against Moscow's disinformation operations as Armenia continues its pivot toward European integration. This outcome likely intensifies Russia's concerns about losing influence in the South Caucasus.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/armenia-pro-europe-party-wins-election-despite-russia-disinformation"
-        },
-        {
-          "headline": "First Combat Footage Shows NATO Fighter Engaging Drone Over Baltic Sea",
-          "summary": "Video evidence captures a French Rafale fighter intercepting and destroying an unidentified drone during Baltic air policing operations. This appears to be the first documented aerial engagement of this type in European airspace, highlighting the growing challenge unmanned systems pose to traditional air defense. The incident underscores NATO's evolving counter-drone tactics in contested airspace.",
+          "headline": "Trump Claims Iran Shot Down U.S. Apache Helicopter, Threatens Retaliation",
+          "summary": "President Trump asserted that Iran was responsible for downing an AH-64 Apache in the Gulf of Oman, marking a significant escalation in U.S.-Iran tensions. The crew was successfully rescued by an unmanned drone boat in what appears to be the first operational use of autonomous vessels for aircrew recovery. This incident could trigger direct military retaliation and fundamentally alter Middle East security dynamics.",
           "source": "The War Zone",
-          "url": "https://www.twz.com/air/video-captures-rafale-fighters-drone-kill-over-baltic"
+          "url": "https://www.twz.com/news-features/ah-64-apache-shot-down-by-iran-u-s-will-retaliate-trump"
         },
         {
-          "headline": "UK Mandates Technical Child Protection Controls on Consumer Devices",
-          "summary": "The British government has given technology companies three months to implement built-in detection and blocking capabilities for nude images of children on smartphones and tablets. This regulatory mandate represents a significant shift toward mandatory technical safeguards rather than voluntary compliance. The requirement will test the industry's ability to deploy effective content filtering without compromising user privacy or device performance.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/uk-gives-big-tech-3-months-to-create-device-controls-kid-images"
+          "headline": "Ukrainian Forces Deploy AI-Guided Drones for Deep Strike Operations Against Russian Supply Lines",
+          "summary": "Ukrainian military officers provided rare insights into their AI-enabled drone campaign targeting Russian logistics networks far behind front lines. These mid-range autonomous systems represent a significant evolution in warfare, combining artificial intelligence with long-range strike capabilities to disrupt enemy supply chains. The campaign demonstrates how smaller military forces can leverage advanced technology to achieve strategic effects against larger adversaries.",
+          "source": "The War Zone",
+          "url": "https://www.twz.com/news-features/inside-ukraines-ai-enabled-drone-campaign-targeting-russian-logistics-deep-behind-the-lines"
+        },
+        {
+          "headline": "Airbus Unveils Ravenstorm Combat Drone Portfolio as European Fighter Program Struggles",
+          "summary": "Airbus is pivoting toward unmanned collaborative combat aircraft centered around its Ravenstorm platform as Europe's next-generation fighter development faces significant challenges. This strategic shift reflects broader industry trends toward autonomous systems and suggests traditional manned fighter programs may be losing priority. The move could reshape European defense capabilities and alter the balance of military aviation development between crewed and uncrewed platforms.",
+          "source": "The War Zone",
+          "url": "https://www.twz.com/air/ravenstorm-at-the-center-of-airbuss-new-combat-drone-portfolio"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "Industrial cybersecurity advances through AI integration while regulatory focus intensifies on critical infrastructure protection.",
+      "intro": "Industrial control system security faces critical patching demands as Rockwell enhances OT visibility tools while manufacturers struggle with remediation implementation gaps.",
       "items": [
         {
-          "headline": "Honeywell Launches AI-Enhanced OT Cybersecurity Suite for Industrial Protection",
-          "summary": "Honeywell expanded its Operational Technology Cybersecurity Suite with AI-powered threat detection capabilities designed for industrial environments. The enhancement represents a significant step toward proactive OT security as industrial control systems face increasing cyber threats. Organizations should evaluate how AI-driven OT security tools can strengthen their operational resilience.",
+          "headline": "Rockwell Automation Unveils Enhanced SecureOT Platform for Manufacturing Cybersecurity",
+          "summary": "Rockwell Automation launched three enhanced SecureOT solutions designed to strengthen cybersecurity posture and improve operational technology visibility for manufacturers. The enhanced platform addresses growing industrial cybersecurity needs as manufacturing environments face increasing digital transformation pressures. These tools aim to provide better asset discovery and threat detection capabilities across industrial control networks.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/news/honeywell-expands-ot-cybersecurity-suite-with-ai-powered-threat-detection-and-critical-infrastructure-protection/"
+          "url": "https://industrialcyber.co/news/rockwell-launches-enhanced-secureot-solutions-to-help-manufacturers-strengthen-cybersecurity-improve-ot-visibility/"
         },
         {
-          "headline": "Dragos Partners with Anthropic to Test AI Vulnerability Discovery in OT Security Software",
-          "summary": "Industrial cybersecurity firm Dragos joined Anthropic's Project Glasswing to apply Claude Mythos Preview AI model for discovering vulnerabilities in its own OT security products. This collaboration demonstrates how AI can be leveraged to identify weaknesses in industrial security tools themselves. The initiative highlights the dual-edged nature of AI in OT security - both as a defensive tool and potential attack vector.",
+          "headline": "Manufacturing OT Security Programs Stall After Initial Assessments",
+          "summary": "Industrial organizations consistently struggle to move beyond technical assessments into actual remediation of operational technology vulnerabilities. The transition from identifying security gaps to implementing fixes represents a critical bottleneck where many OT security programs lose momentum. Manufacturers are developing new strategies to bridge this implementation gap and maintain security program continuity.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/news/dragos-applies-claude-mythos-preview-to-uncover-vulnerabilities-in-ot-security-software/"
+          "url": "https://industrialcyber.co/features/why-ot-security-remediation-stalls-after-assessment-and-what-manufacturers-are-doing-to-move-programs-forward/"
         },
         {
-          "headline": "White House Issues AI Security Strategy Targeting Critical Infrastructure Defense",
-          "summary": "The White House released a comprehensive AI security strategy emphasizing frontier models, cyber defense, and critical infrastructure protection. This policy development follows recent executive orders strengthening cybersecurity requirements for both government and private sector entities. Critical infrastructure operators should prepare for enhanced regulatory scrutiny and compliance requirements around AI integration in OT environments.",
-          "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/regulation-standards-and-compliance/white-house-unveils-ai-security-strategy-focused-on-frontier-models-cyber-defense-critical-infrastructure-protection/"
-        },
-        {
-          "headline": "Congressional Hearing Examines AI's Role in Critical Infrastructure Cybersecurity",
-          "summary": "The House Homeland Security Subcommittee on Cybersecurity and Infrastructure Protection conducted hearings on frontier AI applications for cyber defense and critical infrastructure resilience. The hearing reflects growing legislative interest in how advanced AI capabilities can both protect and potentially threaten industrial systems. Expect increased congressional oversight of AI deployment in critical infrastructure sectors.",
-          "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/ai/frontier-ai-cyber-defense-and-critical-infrastructure-resilience-take-center-stage-in-house-hearing/"
+          "headline": "SAP Addresses Critical Vulnerabilities in NetWeaver and Commerce Platforms",
+          "summary": "SAP patched critical security flaws in NetWeaver and Commerce systems that could enable sensitive information disclosure, memory corruption, and service disruption. These vulnerabilities pose significant risks to enterprise resource planning systems that often integrate with industrial operations. Organizations running SAP infrastructure should prioritize these patches given the potential for operational impact.",
+          "source": "SecurityWeek",
+          "url": "https://www.securityweek.com/sap-patches-critical-netweaver-commerce-vulnerabilities/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 89,
-    "items_published": 19
+    "articles_reviewed": 90,
+    "items_published": 18
   }
 }
