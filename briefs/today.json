@@ -1,156 +1,156 @@
 {
-  "date": "2026-06-12",
-  "generated_at": "2026-06-12T09:05:40.174141+00:00",
-  "issue": 43,
-  "executive_summary": "Today's intelligence picture is defined by two reinforcing macro-themes: accelerating technological vulnerability across critical infrastructure, and a simultaneous erosion of the Western alliance architecture that would be needed to respond to a major crisis. On the cyber and OT side, the convergence of actively exploited enterprise VPN and endpoint flaws, critical ICS vulnerabilities in data center power management, and weaknesses in AI development frameworks collectively suggests that adversaries have multiple viable pathways into both government and commercial critical infrastructure right now, with CISA warnings indicating exploitation is not theoretical. The geopolitical and military signals compound this risk considerably — delayed U.S. action on Iran, allied contingency planning for an unreliable American partner, UK defense leadership in flux, and Gulf states failing crisis-speed coordination tests all point to a Western deterrence posture that is visibly fracturing at the moment threat actors have the most technical opportunity to exploit it. The Russian thread is particularly worth tracking as a connective tissue across domains: a charged U.S. court case linking Moscow to the Void Blizzard espionage campaign, combined with exposed grain smuggling networks suggesting sanctions evasion at scale, indicates Russia is actively operating across intelligence, economic, and likely cyber vectors simultaneously. Taken together, today's reporting describes a threat environment where offensive actors are probing hardened systems with increasing sophistication while the defensive coalitions meant to deter them are distracted by",
+  "date": "2026-06-13",
+  "generated_at": "2026-06-13T09:04:50.950733+00:00",
+  "issue": 44,
+  "executive_summary": "Today's intelligence picture is defined by a dangerous convergence of eroding Western defense capabilities and escalating adversarial pressure across multiple domains. The United States faces simultaneous self-inflicted degradation of its security architecture — the F-35 readiness collapse, planned NATO force reductions, rejection of a Cyber Force, and the historic lapse of Section 702 surveillance authority — at precisely the moment Iran is driving instability at the G-7 level and allied cohesion under the Trump administration is visibly fracturing. The cyber and OT threat threads are particularly alarming and interconnected: Iranian actors are actively exploiting both enterprise software vulnerabilities and industrial control systems targeting water utilities, while the CISA Oracle PeopleSoft exploitation and the Australian sugar producer attack underscore that critical infrastructure operators are under sustained, coordinated pressure with no sign of abatement. The broader synthesis suggests adversaries — Iran in particular — are reading Western institutional weakness accurately and accelerating operations across kinetic, cyber, and information domains while the US voluntarily reduces the intelligence and military tools needed to respond, creating a window of exploitability that may define the near-term threat environment.",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Critical vulnerabilities in enterprise infrastructure dominate today's threat landscape, with new authentication bypass flaws in Check Point VPNs and widespread IoT device compromises highlighting the persistent challenge of securing network perimeters.",
+      "intro": "Critical vulnerabilities in enterprise systems dominate today's threat landscape as regulators impose record penalties for data protection failures.",
       "items": [
         {
-          "headline": "Check Point VPN Authentication Bypass Allows Complete Network Infiltration",
-          "summary": "Researchers disclosed a critical IKEv1 authentication bypass vulnerability (CVE-2026-50751) in Check Point Remote Access VPNs that allows attackers to completely circumvent authentication mechanisms. The flaw exemplifies the recurring pattern of security devices becoming the primary attack vector for network compromise. Organizations using Check Point VPN solutions should prioritize immediate patching.",
+          "headline": "Critical Pre-Authentication RCE Vulnerability Discovered in Splunk Enterprise",
+          "summary": "Researchers identified CVE-2026-20253, a pre-authentication remote code execution flaw in Splunk Enterprise that bypasses application-level authentication by exploiting database authentication mechanisms. The vulnerability represents a significant threat to organizations relying on Splunk for security monitoring and log analysis. Organizations should prioritize patching given Splunk's widespread deployment in enterprise security operations.",
           "source": "watchTowr Labs",
-          "url": "https://labs.watchtowr.com/marking-your-own-homework-check-point-remote-access-vpn-ikev1-authentication-bypass-cve-2026-50751/"
+          "url": "https://labs.watchtowr.com/why-use-app-level-auth-when-every-database-has-auth-splunk-enterprise-cve-2026-20253-pre-auth-rce/"
         },
         {
-          "headline": "CISA Warns of Active Exploitation of Ivanti Sentry Command Injection Flaw",
-          "summary": "CISA added CVE-2026-10520, an OS command injection vulnerability in Ivanti Sentry, to its Known Exploited Vulnerabilities catalog based on evidence of active exploitation. This marks another critical vulnerability in Ivanti's enterprise security portfolio being weaponized by threat actors. Federal agencies and organizations must patch by the binding operational directive deadline.",
+          "headline": "CISA Flags Oracle PeopleSoft Critical Authentication Bypass Under Active Exploitation",
+          "summary": "CISA added CVE-2026-35273 to its Known Exploited Vulnerabilities catalog, a missing authentication flaw in Oracle PeopleSoft Enterprise PeopleTools that allows attackers to bypass critical security functions. The vulnerability is being actively exploited in the wild, making it an immediate priority for organizations running PeopleSoft systems. Federal agencies must patch by CISA's binding operational directive deadline.",
           "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/alerts/2026/06/11/cisa-adds-one-known-exploited-vulnerability-catalog"
+          "url": "https://www.cisa.gov/news-events/alerts/2026/06/12/cisa-adds-one-known-exploited-vulnerability-catalog"
         },
         {
-          "headline": "Multiple IoT Platforms Expose Critical Infrastructure to Remote Takeover",
-          "summary": "CISA issued advisories for severe vulnerabilities across Yarbo robotic systems, Naxclow IoT platforms, and Brickcom cameras that enable credential harvesting, device impersonation, and unauthorized access to video feeds. The flaws affect entire product lines and demonstrate the systemic security failures in IoT device development. Organizations should audit their IoT deployments and implement network segmentation immediately.",
-          "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-162-01"
+          "headline": "South Korea Issues Record $409 Million Fine Against Coupang for Data Breach",
+          "summary": "South Korean regulators levied the largest personal data breach penalty in the country's history against e-commerce giant Coupang, nearly five times larger than the previous record. The unprecedented fine signals escalating regulatory enforcement of data protection laws across Asia-Pacific markets. The penalty amount suggests the breach involved significant personal data exposure or systematic compliance failures.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/south-korea-data-breach-record-fine-coupang"
         },
         {
-          "headline": "AI Framework LangGraph Contains SQL Injection Leading to Code Execution",
-          "summary": "Security researchers identified a critical vulnerability chain in LangGraph's checkpointer persistence layer that allows SQL injection attacks to escalate to remote code execution. The flaw affects the popular AI agent framework's memory storage mechanism, potentially compromising AI applications at scale. Developers using LangGraph should review their checkpointer implementations and apply available patches.",
-          "source": "Check Point Research",
-          "url": "https://research.checkpoint.com/2026/from-sqli-to-rce-exploiting-langgraphs-checkpointer/"
+          "headline": "23andMe Breach Settlement Approved for $47 Million After Genetic Data Theft",
+          "summary": "A bankruptcy administrator approved a settlement fund for approximately 7 million 23andMe customers whose genetic and personal data was stolen and posted on dark web markets starting in April 2023. The breach exposed highly sensitive biometric information that cannot be changed, creating permanent privacy risks for victims. The settlement amount reflects the unique and irreversible nature of genetic data compromise.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/bankruptcy-admin-approves-settlement-for-23andme-breach-victims"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "Global tensions intensify as Trump navigates potential Iran strikes while regional defense architectures face critical tests and Taiwan's semiconductor dominance emerges as a key deterrent factor.",
+      "intro": "Global tensions intensify as Iran conflict reshapes international summits, Trump's policies fragment Western unity, and regional security challenges expose institutional weaknesses.",
       "items": [
         {
-          "headline": "Trump Delays Iran Military Action Amid Conflicting Diplomatic Signals",
-          "summary": "The Trump administration has postponed planned strikes against Iran, citing progress in ongoing negotiations, though Iranian sources dispute any agreement has been reached. This escalation-deescalation pattern follows three months of increased hostilities that effectively ended the U.S.-Iranian détente maintained since April. The uncertainty reflects Iran's increasingly desperate position after extended conflict, making Tehran both more dangerous and potentially more willing to negotiate.",
+          "headline": "Iran War Threatens to Overshadow G-7 Summit as Trump Pursues Separate Deal",
+          "summary": "The ongoing Iran conflict is dominating the G-7 leaders' summit agenda, with Trump's potential bilateral negotiations creating uncertainty among allies. Whether Trump secures a deal or not, the war's implications are reshaping traditional multilateral diplomacy. This dynamic threatens to undermine coordinated Western responses to the crisis.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/06/11/trump-cancels-strikes-iran-deal-kharg-island-blockade/"
+          "url": "https://foreignpolicy.com/2026/06/12/trump-iran-war-peace-talks-deal-g7-leaders-summit/"
         },
         {
-          "headline": "Gulf States' Defense Integration Fails Crisis Speed Test",
-          "summary": "Recent attacks in the Red Sea, Strait of Hormuz, and Gulf airspace have exposed critical flaws in Gulf Cooperation Council defense coordination, with national permission requirements slowing response times to missile and drone threats. Despite decades of institutional development and rhetoric about indivisible Gulf security, the defense architecture remains inadequately structured for rapid cross-border crisis response. This gap represents a fundamental vulnerability as regional threats increasingly transcend national boundaries.",
+          "headline": "Trump Administration's Imperial Turn Undermines Western Alliance Cohesion",
+          "summary": "The current administration's shift toward what analysts call \"imperial civilizationalism\" is fracturing traditional Western partnerships and shared values. Trump's approach paradoxically weakens the very Western institutions and unity it claims to champion. This realignment has significant implications for NATO, transatlantic relations, and collective responses to global challenges.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/06/12/trump-west-china-rome-civilization-vance-iran-hegseth-russia/"
+        },
+        {
+          "headline": "Gulf States' Defense Systems Fail Crisis Speed Test Despite Decades of Integration",
+          "summary": "Recent attacks in the Red Sea, Strait of Hormuz, and Gulf airspace have exposed critical flaws in regional defense coordination among Gulf Cooperation Council members. Despite years of building joint institutions, national approval processes still delay rapid response to cross-border missile and drone threats. The gap between institutional frameworks and operational reality undermines collective security when speed is essential.",
           "source": "War on the Rocks",
           "url": "https://warontherocks.com/the-gulf-arab-states-need-a-shield-built-for-limited-trust/"
         },
         {
-          "headline": "Dutch Semiconductor Monopoly Could Deter Taiwan Conflict",
-          "summary": "ASML's exclusive production of extreme ultraviolet lithography machines necessary for advanced semiconductor manufacturing creates a unique deterrent dynamic, as any Taiwan conflict would disrupt global chip production including China's access to cutting-edge technology. This supply chain chokepoint represents a new form of economic deterrence where critical infrastructure dependencies may prove more effective than traditional military threats. The concentration of advanced semiconductor production in Taiwan, dependent on Dutch technology, creates mutual vulnerabilities that could prevent rather than enable conflict.",
-          "source": "War on the Rocks",
-          "url": "https://warontherocks.com/the-chain-of-peace-do-supply-chain-chokepoints-deter-war/"
-        },
-        {
-          "headline": "Asian Allies Prepare Contingencies for Unreliable U.S. Partnership",
-          "summary": "Washington's Asian partners are developing backup strategies amid growing concerns about American reliability under shifting U.S. leadership priorities. This strategic recalibration reflects broader doubts about sustained U.S. commitment to traditional alliance structures in the Indo-Pacific. Regional powers are hedging their security bets as they assess whether American strategic focus will remain consistent across different administrations.",
+          "headline": "South Africa's Anti-Migrant Policies Create Continental Security Ripple Effects",
+          "summary": "Rising xenophobia and restrictive migration policies in South Africa are destabilizing population movements across the continent. As Africa's economic anchor, South Africa's internal tensions over foreign nationals threaten regional stability and economic integration efforts. The crisis highlights how domestic political pressures in key regional powers can undermine broader continental cooperation.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/06/11/trump-asia-strategy-rethink/"
+          "url": "https://foreignpolicy.com/2026/06/12/south-africa-migrants-xenophobia-protests-attacks/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "Defense leaders are pushing major organizational changes while tensions escalate with Iran and European allies grapple with funding pressures.",
+      "intro": "Military readiness faces critical challenges as F-35 availability plummets while services pivot toward technology integration and force restructuring.",
       "items": [
         {
-          "headline": "Senate Committees Propose Radical Pentagon Restructuring with Robot Warfare Command and War Department Rename",
-          "summary": "Senate Armed Services Committee approved renaming the Department of Defense to Department of War while separately backing creation of a new combatant command focused on robotic warfare under a four-star general. These parallel organizational shifts signal Congress's intent to restructure military leadership for future conflicts and return to more traditional military branding.",
+          "headline": "F-35 Fleet Readiness Drops to Critical 25% Mission Capable Rate",
+          "summary": "GAO findings reveal only one in four F-35 Lightning II fighters is fully mission capable, representing a continued decline through fiscal 2025. This readiness crisis affects the backbone of U.S. and allied air power, raising questions about maintenance capacity and supply chain resilience for the world's most expensive weapons program.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/06/11/senate-committee-backs-department-of-war-name-change/"
+          "url": "https://www.militarytimes.com/industry/techwatch/2026/06/12/only-1-in-4-f-35s-is-fully-mission-capable-gao-finds/"
         },
         {
-          "headline": "Trump Announces Plans to Seize Iran's Critical Oil Export Hub as Ceasefire Deteriorates",
-          "summary": "The president declared intentions to capture Kharg Island, which handles the majority of Iran's oil exports, as regional ceasefire agreements show signs of breaking down. This represents a significant escalation in U.S.-Iran tensions and could trigger broader Middle East conflict given the island's strategic importance to Iran's economy.",
+          "headline": "US Plans Major Reduction in NATO-Allocated Aircraft and Warships",
+          "summary": "The Pentagon reportedly intends to significantly cut the number of jets and naval vessels designated for NATO operations in Europe. This force posture shift comes amid broader strategic realignment discussions and could signal either budget constraints or a pivot toward Indo-Pacific priorities.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/06/11/trump-vows-to-seize-irans-kharg-island/"
+          "url": "https://www.militarytimes.com/pentagon/2026/06/12/us-plans-major-cut-to-jets-warships-for-nato-operations-in-europe-nyt-reports/"
         },
         {
-          "headline": "UK Defense Secretary Resigns Over Inadequate Military Spending Plans",
-          "summary": "Defense Secretary Healey stepped down in protest after reviewing classified defense funding proposals that he deemed insufficient for current security threats. His resignation highlights growing tension between fiscal constraints and defense needs across NATO allies, potentially weakening Western military coordination as global threats intensify.",
-          "source": "Defense News",
-          "url": "https://www.defensenews.com/global/europe/2026/06/11/uk-defense-secretary-resigns-over-government-spending-plan/"
+          "headline": "Senate Rejects Proposal for Independent Cyber Force Service Branch",
+          "summary": "Senator Kirsten Gillibrand's amendment to establish a new cyber service under Army oversight failed in Senate voting. The defeat maintains current cyber organizational structure across existing services while highlighting ongoing debates about optimal military cyber command structures as digital warfare becomes increasingly central to national security.",
+          "source": "Defense One",
+          "url": "https://www.defenseone.com/policy/2026/06/cyber-force-service-branch-fails-senate/414149/"
         },
         {
-          "headline": "Air Force Cancels Veterans Ceremony Citing New DEI Restrictions",
-          "summary": "The service cancelled a planned wreath-laying ceremony honoring women veterans, explicitly citing compliance with executive orders banning diversity, equity and inclusion programs. This marks the first publicized case of military ceremonies being affected by the administration's DEI restrictions, signaling broader changes to military commemorative practices.",
+          "headline": "Ukraine's AI Defense Chief Warns of Data-Driven Warfare Paradigm",
+          "summary": "Ukraine's defense artificial intelligence leader predicts future military advantage will depend on superior data processing and analysis capabilities rather than traditional metrics. This assessment, informed by real combat experience against Russian forces, suggests militaries must prioritize information superiority and algorithmic decision-making to maintain battlefield effectiveness.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/06/11/air-force-cites-dei-ban-in-cancellation-of-wreath-laying-honoring-women-vets/"
+          "url": "https://www.militarytimes.com/global/europe/2026/06/12/ukraines-defense-ai-chief-predicts-new-paradigm-of-warfare/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Intelligence developments span from breakthrough OSINT techniques tracking Russian grain smuggling to legal action against state-sponsored cyber operatives.",
+      "intro": "Today's intelligence landscape features major disruptions to US surveillance capabilities alongside innovative OSINT techniques exposing international grain smuggling operations.",
       "items": [
         {
-          "headline": "New OSINT methodology exposes Russian grain smuggling operations to Libya",
-          "summary": "Bellingcat researchers documented the bulk carrier Grumant loading stolen Ukrainian grain from occupied Feodosia port before delivering it to Benghazi, demonstrating expanded Russian sanctions evasion networks. The investigation showcases advanced vessel tracking techniques that could be applied to monitor other illicit maritime activities across conflict zones.",
+          "headline": "Section 702 FISA Surveillance Authority Expires for First Time Since 2008",
+          "summary": "The Foreign Intelligence Surveillance Act's Section 702 program has lapsed due to congressional deadlock, marking the first interruption of this major US surveillance capability since its enactment. This disruption affects the intelligence community's ability to conduct warrantless surveillance of foreign targets' communications that transit US networks. The lapse creates immediate operational gaps while Congress debates reforms to balance national security needs with privacy protections.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/major-us-surveillance-program-set-to-lapse-702-fisa"
+        },
+        {
+          "headline": "New OSINT Methods Track Russian Grain Smuggling Operations to Libya",
+          "summary": "Bellingcat researchers developed novel AIS tracking techniques to document the bulk carrier Grumant's journey from occupied Ukrainian ports in Crimea to Libya's Port of Benghazi. The investigation demonstrates how open-source intelligence can expose shadow fleet operations used to smuggle stolen Ukrainian grain through extended maritime routes. This methodology could enhance monitoring of sanctions evasion and illicit commodity flows across other theaters.",
           "source": "bellingcat",
           "url": "https://www.bellingcat.com/news/2026/06/12/shadow-fleet-russian-grain-stolen-ukraine-libya-ais-technique-grumant/"
         },
         {
-          "headline": "Russian intelligence operative charged in US court for Void Blizzard espionage campaign",
-          "summary": "Denis Obrezko, 36, appeared in federal court after extradition from Thailand, marking a significant law enforcement victory against Russian state-sponsored cyber operations. His prosecution demonstrates improved international cooperation in pursuing cybercriminals and may provide insights into Void Blizzard's operational methods and targeting strategies.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/hacker-linked-to-void-blizzard-faces-charges"
-        },
-        {
-          "headline": "F-22 testbed aircraft reveals new infrared sensor capabilities in open-source imagery",
-          "summary": "The 'Catfish' 757 test platform was photographed carrying external infrared sensor pods designed for the F-22 Raptor program. This open-source intelligence find highlights how aircraft modifications and capability developments can be tracked through visual observation, providing insights into evolving military sensor technologies.",
+          "headline": "Congressional Bill Seeks to Restore Four U-2 Spy Planes to Active Fleet",
+          "summary": "Lawmakers are again moving to block Air Force plans to retire the U-2 Dragon Lady reconnaissance aircraft, with proposed legislation that would restore four planes to service. The action reflects ongoing concerns about intelligence collection capability gaps as the military transitions surveillance missions to newer platforms. The debate highlights tensions between modernization goals and maintaining proven high-altitude reconnaissance capabilities in contested environments.",
           "source": "The War Zone",
-          "url": "https://www.twz.com/air/f-22s-catfish-757-testbed-spotted-carrying-raptors-new-infrared-sensor-pod"
+          "url": "https://www.twz.com/air/four-u-2s-spy-planes-would-be-restored-in-bill-that-would-save-the-dragon-lady-fleet"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "Critical infrastructure faces immediate threats from newly disclosed vulnerabilities in data center equipment and building management systems, while government initiatives expand OT security capabilities.",
+      "intro": "Critical infrastructure faces mounting pressure as agricultural operations suffer major disruptions while regulatory frameworks struggle to keep pace with AI-enhanced threats.",
       "items": [
         {
-          "headline": "Critical Vulnerabilities Discovered in Vertiv Data Center UPS Management Cards",
-          "summary": "Claroty researchers disclosed two critical flaws in Vertiv Liebert IS-UNITY-DP and RDU101 network cards that could allow attackers to bypass authentication and execute remote code. These vulnerabilities pose significant risks to data center operations by potentially compromising uninterruptible power supply management systems. Organizations using these systems should immediately assess their exposure and apply available mitigations.",
+          "headline": "Cyberattack Forces Australia's Second-Largest Sugar Producer Offline",
+          "summary": "Mackay Sugar, a major Australian raw sugar producer, shut down operations following a cyberattack that disrupted industrial systems. The incident highlights the growing vulnerability of agricultural processing facilities that combine traditional industrial control systems with modern connectivity. This attack demonstrates how food production infrastructure remains an attractive target for cybercriminals seeking maximum operational disruption.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/control-device-security/claroty-finds-authentication-bypass-rce-flaws-in-vertiv-ups-management-cards-that-could-disrupt-data-center-operations/"
+          "url": "https://industrialcyber.co/industrial-cyber-attacks/cyberattack-disrupts-mackay-sugar-operations-exposing-growing-agri-industrial-cyber-risks/"
         },
         {
-          "headline": "Siemens Building Management System Patches Trigger False Malware Alerts",
-          "summary": "Siemens Desigo CC building automation system patch files are being incorrectly flagged as malware by multiple security engines due to a PowerShell script component. This false positive situation could delay critical security updates for building management systems across various facilities. Organizations should work with their security teams to whitelist legitimate Siemens patches while maintaining proper validation processes.",
+          "headline": "Iranian Hackers Target Water Utility with Customer Data and Control System Credentials Stolen",
+          "summary": "The Handala group claimed responsibility for breaching Cal Water, publishing 5GB of data including customer personal information and credentials for the RTKBase platform. Water utilities represent critical infrastructure where operational disruption can have immediate public safety implications. The exposure of control system credentials suggests potential for deeper operational technology compromise beyond data theft.",
           "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/siemens-says-desigo-cc-files-flagged-as-malware-by-security-engines/"
+          "url": "https://www.securityweek.com/iranian-cyber-group-handala-claims-cal-water-hack/"
         },
         {
-          "headline": "SANS Launches Dedicated ICS/OT Security Training Program in Maryland",
-          "summary": "The SANS Cyber Workforce Academy expanded its Maryland program to include specialized tracks for industrial control systems and operational technology security alongside AI security training. This initiative addresses the critical skills gap in OT security as industrial organizations face increasing cyber threats. The program represents a significant investment in building specialized expertise for protecting critical infrastructure.",
+          "headline": "Senate Bill Would Mandate CISA Critical Infrastructure Plans Address AI Threats",
+          "summary": "Senator Warner introduced legislation requiring CISA to update cybersecurity plans for critical infrastructure sectors to account for AI-driven attack vectors. The bill reflects growing recognition that current defensive frameworks may be inadequate against AI-enhanced threats targeting industrial systems. Legislative action signals potential for new compliance requirements across critical infrastructure operators.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/news/sans-expands-maryland-cyber-workforce-program-with-new-ics-ot-and-ai-security-tracks-applications-open/"
+          "url": "https://industrialcyber.co/critical-infrastructure/warner-proposes-bill-to-force-cisa-updates-to-critical-infrastructure-cybersecurity-plans-amid-ai-driven-threats/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 95,
+    "articles_reviewed": 83,
     "items_published": 18
   }
 }
