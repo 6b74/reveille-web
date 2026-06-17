@@ -1,66 +1,60 @@
 {
   "date": "2026-06-17",
-  "generated_at": "2026-06-17T13:05:39.445809+00:00",
-  "issue": 47,
-  "executive_summary": "Today's intelligence picture is defined by two reinforcing themes: accelerating adversary opportunism against underdefended systems, and a fraying of Western institutional readiness at precisely the moment when strategic competition is intensifying. On the cyber and OT front, the convergence of active supply-chain exploitation, newly catalogued vulnerabilities in Joomla and Rockwell Automation ICS products, a ransomware strike on maritime port infrastructure, and congressional alarm over CISA staffing cuts collectively suggest that critical infrastructure defenses are thinning while attack surfaces are widening. The military readiness picture compounds this concern, with the GAO flagging overstated Air Force tanker availability and a disordered Navy autonomous systems program, indicating that U.S. force projection capability may be less reliable than reported at a time when France is quietly extending its nuclear umbrella over European allies and Taiwan is visibly hedging its bets on Washington's security commitments. China's deliberate absorption of lessons from the Iran conflict, combined with its deepening foothold in Myanmar, points to a power conducting careful strategic learning while its principal adversary navigates institutional and material shortfalls. The through-line connecting these threads is a convergence of eroding Western deterrence credibility, institutional underinvestment in both cyber and conventional readiness, and adversaries actively probing and exploiting the resulting gaps in real time.",
+  "generated_at": "2026-06-17T14:18:09.700443+00:00",
+  "issue": 48,
+  "executive_summary": "Today's intelligence picture is defined by two reinforcing themes: eroding Western institutional cohesion and accelerating adversary exploitation of the gaps that follow. The transatlantic rift is widening on multiple fronts simultaneously — Trump's disengagement at the G7 on Ukraine, Taiwan's growing doubts about U.S. alliance commitments, and France's quiet nuclear doctrine expansion all reflect a moment where European and Indo-Pacific partners are hedging against American reliability, while China is positioned as the clearest strategic beneficiary of this disorder, gaining ground as both the Iran conflict winds down and U.S. credibility contracts. Domestically, the security architecture shows compounding stress: CISA staffing cuts are degrading cyber defense at precisely the moment active supply-chain attacks are exploiting unpatched vulnerabilities, maritime OT infrastructure is under ransomware attack, and GAO findings reveal overstated readiness across Air Force and Navy platforms — suggesting the gap between reported and actual military capability may be wider than acknowledged. The drone plot targeting the White House UFC event, Russian naval provocations in the English Channel, and open-source confirmation of China's advanced tiltrotor drone program collectively underscore that the threshold for kinetic and hybrid action is dropping across multiple threat actors, at a moment when the institutional mechanisms designed to detect and respond to these threats are under-resourced and politically contested.",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Industrial control system vulnerabilities dominate today's threat landscape, while a GitHub supply-chain worm highlights persistent risks in developer ecosystems and CISA faces mounting institutional pressure.",
+      "intro": "Today's cyber landscape is defined by institutional gaps enabling attackers — from GitHub dismissing supply-chain vulnerability reports to CISA facing potentially crippling staffing cuts.",
       "items": [
         {
-          "headline": "GitHub ignored vulnerability reports now enabling active supply-chain worm campaign",
-          "summary": "Researchers say GitHub formally rejected two bug reports identifying design flaws that are now being exploited by variants of the Shai-Hulud worm, compromising hundreds of software packages and developer accounts globally. The dismissals raise serious questions about GitHub's vulnerability triage process and its downstream consequences for open-source software integrity. Organizations relying on public GitHub packages should audit dependencies and monitor for unauthorized commits or account activity.",
+          "headline": "GitHub ignored researcher warnings on flaws now driving active supply-chain worm infections",
+          "summary": "Researchers say GitHub rejected two formal vulnerability disclosures identifying design flaws that threat actors are now exploiting via the Shai-Hulud supply-chain worm, which has compromised hundreds of software packages and developer accounts globally. The dismissals represent a significant institutional failure: known, reported vulnerabilities left open long enough to be weaponized at scale. Watch for downstream impact on any organizations consuming affected open-source packages, and pressure on GitHub to revise its vulnerability triage process.",
           "source": "The Record from Recorded Future News",
           "url": "https://therecord.media/github-dismissed-reports-shai-hulud-deep-specter"
         },
         {
-          "headline": "CISA adds actively exploited Joomla access control flaw to known exploited vulnerabilities catalog",
-          "summary": "CISA added CVE-2026-48907, an improper access control vulnerability in the Widget Factory Joomla Content Editor, to its KEV catalog based on confirmed active exploitation. Joomla-based sites remain a recurring target due to the CMS's wide deployment and historically slow patching rates among administrators. Federal agencies under BOD 22-01 must remediate promptly; broader web operators should treat this as high priority.",
-          "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/alerts/2026/06/16/cisa-adds-one-known-exploited-vulnerability-catalog"
-        },
-        {
-          "headline": "CISA issues batch of advisories covering critical Rockwell Automation OT product vulnerabilities",
-          "summary": "CISA published five advisories covering Rockwell Automation products including Logix 5370/5570 controllers, RSLinx Classic, FLEX I/O EtherNet/IP adapters, FactoryTalk Analytics PavilionX, and CompactLogix — with risks ranging from denial-of-service causing major nonrecoverable faults to unauthorized access and privilege escalation. The breadth of affected products across a single vendor signals systemic exposure in industrial environments where Rockwell equipment is widely deployed. Operators should assess network segmentation and patch availability immediately, particularly for internet-adjacent OT assets.",
-          "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-167-05"
-        },
-        {
-          "headline": "Senator Warner presses CISA leadership over staffing cuts and MS-ISAC funding gap",
-          "summary": "Senator Mark Warner sent letters to CISA's acting chief and DHS Secretary Markwayne Mullin warning that workforce reductions and failure to fund the Multi-State ISAC are degrading the nation's cyber defense capacity. The MS-ISAC provides threat intelligence and incident response support to state and local governments, making its defunding particularly consequential below the federal level. The political pressure comes at a moment when adversary targeting of critical infrastructure is intensifying, amplifying the operational stakes of institutional hollowing.",
+          "headline": "Senator Warner raises alarm over CISA staffing cuts threatening national cyber defense",
+          "summary": "Senator Mark Warner wrote to acting CISA leadership and DHS Secretary Markwayne Mullin warning that ongoing staff reductions and potential loss of MS-ISAC funding are eroding the U.S. government's core civilian cyber defense capacity. CISA serves as the primary coordinator for critical infrastructure protection, and hollowing it out creates measurable gaps adversaries can exploit. This signals a growing congressional-executive tension over cybersecurity resourcing that could shape agency capabilities through the rest of the fiscal year.",
           "source": "The Record from Recorded Future News",
           "url": "https://therecord.media/warner-warns-of-cisa-cuts-staffing-shortages"
+        },
+        {
+          "headline": "Fake GitHub stars and Reddit upvotes used to legitimize crypto clipboard hijacker campaign",
+          "summary": "Check Point Research uncovered a campaign embedding clipboard hijackers inside fraudulent crypto trading tools — including Solana sniper bots and Pump.fun utilities — promoted using artificially inflated GitHub stars and social media upvotes to manufacture credibility. When victims copy a crypto wallet address, the malware silently replaces it with an attacker-controlled address, redirecting funds. The use of fake reputation signals to bootstrap trust is an escalating tactic that makes traditional user vigilance increasingly insufficient.",
+          "source": "Check Point Research",
+          "url": "https://research.checkpoint.com/2026/from-stars-to-upvotes-fake-reputation-fueling-a-crypto-clipboard-hijacker/"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "The post-Iran conflict order is reshaping alliance calculations from Taipei to Berlin, while Washington's attention deficit on multiple fronts is creating openings rivals are moving quickly to fill.",
+      "intro": "The post-Iran war strategic landscape is reshaping alliance calculations from Taipei to Berlin, while Washington's attention deficit on multiple fronts creates openings for Beijing and others to consolidate influence.",
       "items": [
         {
           "headline": "France Quietly Rewrites Nuclear Doctrine to Cover European Allies",
-          "summary": "Macron has initiated three simultaneous breaks from decades of French nuclear policy: expanding the warhead stockpile, ending public transparency on arsenal size, and opening the door to extended deterrence coverage for European partners. This represents a structural shift in European security architecture driven by eroding confidence in U.S. security guarantees. Watch whether Germany and other NATO members formally engage with Paris on burden-sharing arrangements, and whether domestic French opposition can derail the initiative before it takes institutional root.",
+          "summary": "Macron has simultaneously expanded France's warhead count, ended transparency on force de frappe size, and signaled French nuclear weapons could defend Germany — three breaks from four decades of doctrine in a single policy shift. The move reflects a calculated bet that European strategic autonomy must be locked in before French domestic politics or a change in government reverses course. Watch whether Berlin formally responds or whether NATO allies push back on the ambiguity this creates in extended deterrence architecture.",
           "source": "War on the Rocks",
           "url": "https://warontherocks.com/macrons-nuclear-gamble-building-a-european-deterrent-faster-than-french-politics-can-tear-down/"
         },
         {
-          "headline": "Iran Survives the War but Faces a Harder Road Ahead",
-          "summary": "Despite sustaining significant damage, the Islamic Republic has emerged from the conflict intact as a political entity — but survival is not victory. The regime now faces compounding economic pressure, degraded military capacity, and a population whose patience for hardship has limits. The more consequential question is whether Tehran can leverage its survival narrative to reconsolidate domestic control or whether the post-war period accelerates internal fracturing.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/06/17/irans-victory-war-pyrrhic/"
-        },
-        {
-          "headline": "China Absorbs Iran War Lessons While Deepening Myanmar Influence",
-          "summary": "Beijing is conducting a systematic assessment of the Iran conflict — particularly around energy vulnerability, sanctions exposure, and the operational limits of U.S. and Israeli airpower — to inform its own strategic posture. Separately, China's reported financing of Myanmar's junta-linked electoral process illustrates how it fills governance vacuums in neighboring states through economic and political leverage rather than military presence. Both developments point to a China that is learning, adapting, and expanding influence while the U.S. is distracted.",
+          "headline": "China Emerges as Strategic Beneficiary as Iran War Winds Down",
+          "summary": "Beijing has been cataloguing lessons from the Iran conflict — particularly around energy supply chain vulnerabilities, Western escalation thresholds, and the limits of U.S. coercive power — that will directly inform its Taiwan calculus and broader regional posture. Iran's survival, however pyrrhic, demonstrated that a sanctioned, isolated state can absorb significant military pressure, a data point China will not ignore. The critical question now is whether Washington conducts its own lessons-learned exercise with the same rigor.",
           "source": "Foreign Policy",
           "url": "https://foreignpolicy.com/2026/06/16/china-iran-war-lessons-energy-oil-diplomacy/"
         },
         {
-          "headline": "Taiwan Reassessing Washington Dependence as Trump Signals Ally Disposability",
-          "summary": "Trump's willingness to deprioritize allied commitments — most visibly in the Ukraine context at the G7 — is forcing a strategic rethink in Taipei about the reliability of U.S. security guarantees against a Chinese invasion scenario. Taiwan's heavy diplomatic and economic investment in Washington as its primary security anchor looks increasingly risky given demonstrated U.S. transactionalism. The key watch point is whether Taipei accelerates indigenous defense development and diversifies its security relationships with Japan, Australia, and Europe.",
+          "headline": "Trump's G7 Disengagement on Ukraine Signals Deepening Transatlantic Rift",
+          "summary": "Trump's low-energy posture toward Russia-Ukraine at the G7 summit exposed a structural divide between the U.S. and European allies who remain far more committed to a negotiated Ukrainian victory. With U.S. attention consumed by the Iran aftermath, Kyiv faces the risk of being strategically deprioritized at precisely the moment Russia may seek to exploit fatigue. European capitals will need to decide how much military and financial support they can sustain without credible American backing.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/06/16/trump-g7-summit-russia-ukraine-zelensky-iran-war/"
+        },
+        {
+          "headline": "Taiwan Reassessing Washington Reliability as Trump's Alliance Credibility Erodes",
+          "summary": "Trump's demonstrated willingness to subordinate ally interests to transactional deals is forcing a strategic rethink in Taipei about the durability of U.S. security guarantees. Taiwan's decade-long assumption that Washington would intervene militarily in a PRC assault now looks like a single-point-of-failure strategy. Taipei's most urgent task is accelerating indigenous defense capacity and diversifying diplomatic relationships before any cross-strait crisis forces the question.",
           "source": "Foreign Policy",
           "url": "https://foreignpolicy.com/2026/06/16/taiwan-trump-xi-china-invasion/"
         }
@@ -69,54 +63,60 @@
     {
       "id": "military",
       "title": "Military",
-      "intro": "U.S. military readiness and modernization dominate today's picture, with serious questions raised about Air Force tanker capacity, Navy autonomous systems development, and a deadly B-52 crash at a major test facility.",
+      "intro": "U.S. defense institutions are accelerating AI integration across operations, readiness, and logistics while grappling with fleet reliability and autonomous systems development gaps.",
       "items": [
         {
-          "headline": "B-52 Crash at Edwards AFB Kills 8, Including Two Boeing Contractors",
-          "summary": "A B-52 bomber went down at Edwards Air Force Base, killing all eight people on board, including two Boeing employees—indicating the aircraft was likely on a test or maintenance flight. Edwards is the Air Force's premier flight test center, making this incident particularly significant for ongoing bomber programs. Investigators will need to determine whether this was a test anomaly, mechanical failure, or crew error, with potential implications for the B-52 modernization program.",
+          "headline": "B-52 crash at Edwards AFB kills 8, including two Boeing contractors",
+          "summary": "A B-52 bomber crashed at Edwards Air Force Base, killing all eight people on board, including two Boeing employees likely involved in the aircraft's modernization program. The loss of life at a premier flight test installation raises immediate questions about airworthiness and test protocols. Investigators will scrutinize whether the crash is linked to ongoing B-52J upgrades, which are central to the bomber's long-term viability.",
           "source": "Military Times",
           "url": "https://www.militarytimes.com/news/your-military/2026/06/16/2-boeing-employees-among-8-killed-in-b-52-crash/"
         },
         {
-          "headline": "GAO Finds Air Force Tanker Fleet Availability Rates Likely Overstated, Sustainment in Trouble",
-          "summary": "A Government Accountability Office study concludes that U.S. Air Force tanker availability metrics may be inflated, compounding already severe sustainment problems across the fleet. This directly undermines force projection capability, since tankers are a critical enabler for virtually every long-range air operation. The finding adds pressure on the KC-46A program, which separately saw a boom mishap attributed to dual operator and F-22 pilot error in a July 2025 incident.",
+          "headline": "GAO finds Air Force tanker availability rates likely overstated, fleet sustainment in serious trouble",
+          "summary": "A Government Accountability Office study concludes that reported availability figures for the Air Force's tanker fleet — including the KC-46A — may be inflated and mask deep sustainment shortfalls. This compounds existing concerns about the KC-46A program following a confirmed boom mishap attributed to both operator and F-22 pilot error. Aerial refueling is a force-multiplier underpinning global power projection, and reliability gaps here directly limit operational reach.",
           "source": "Military Times",
           "url": "https://www.militarytimes.com/news/your-military/2026/06/16/us-air-force-tanker-availability-figures-may-be-inflated-study-finds/"
         },
         {
-          "headline": "GAO Tells Navy to Overhaul Its Autonomous Systems Development Process",
-          "summary": "The GAO has released a declassified version of a 2025 classified report finding that the Navy's process for developing robotic and autonomous systems is insufficiently mature and coordinated. As unmanned platforms become central to naval competition with China, structural weaknesses in acquisition and development pipelines represent a strategic vulnerability. Watch for Congressional pressure and potential Navy reorganization in response.",
+          "headline": "GAO warns Navy's autonomous systems acquisition process is inadequate",
+          "summary": "A newly declassified GAO report from 2025 finds the Navy lacks a coherent, repeatable process for developing and fielding robotic and autonomous systems, a critical gap as unmanned platforms become central to Indo-Pacific deterrence strategy. The critique arrives alongside the Marine Corps standing up its first dedicated unmanned aviation maintenance squadron, highlighting the institutional tension between ambition and process maturity. Watch for congressional pressure on the Navy to produce a structured RAS roadmap.",
           "source": "Military Times",
           "url": "https://www.militarytimes.com/news/your-navy/2026/06/16/us-navy-must-improve-process-for-developing-autonomous-systems-watchdog-says/"
         },
         {
-          "headline": "Army's 25th Infantry Division Draws Transformation Lessons from Philippine Exercises",
-          "summary": "The 'Tropic Lightning' Division used war games in the Philippines to test doctrinal and organizational changes, with HIMARS-enabled division artillery emerging as the most significantly transformed element. The exercises reflect broader Army efforts to adapt combined arms formations for Indo-Pacific terrain and competition with China. How the lessons are institutionalized will signal whether the Army can translate exercise insights into durable structural change before a potential near-peer conflict.",
-          "source": "Military Times",
-          "url": "https://www.militarytimes.com/global/asia-pacific/2026/06/17/us-armys-tropic-lightning-division-ponders-transformation-lessons-from-philippine-war-games/"
+          "headline": "AI slashes security clearance processing times from months to hours, DCSA says",
+          "summary": "The Defense Counterintelligence and Security Agency reports that AI tools are compressing background investigation timelines dramatically, reducing what once took months to a matter of hours for initial decision points. The system keeps humans in the loop for final determinations, addressing longstanding concerns about fully automated adjudication of sensitive national security decisions. If scalable, this could significantly reduce the classified workforce backlog that has hampered defense hiring for years.",
+          "source": "Defense One - All Content",
+          "url": "https://www.defenseone.com/technology/2026/06/background-checks-clearance/414225/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Today's intelligence picture is shaped by platform access controls, emerging drone threats, and open-source tracking of Russian naval activity in European waters.",
+      "intro": "Today's intelligence picture highlights platform manipulation as a state control tool, a credible domestic drone threat against high-profile targets, and Chinese unmanned aviation advances surfacing through open-source footage.",
       "items": [
         {
-          "headline": "India temporarily blocked Telegram to prevent exam cheating, sparking legal challenge from Durov",
-          "summary": "Indian authorities ordered a nationwide Telegram restriction ahead of a major medical entrance exam, citing a scheme where scammers posted fake questions before the test and swapped in real ones afterward to fabricate a credible leak. Telegram's founder Pavel Durov is contesting the order in court, raising questions about government authority over encrypted platforms. The case is a notable test of how democracies use platform suppression as an operational countermeasure rather than a policy response.",
+          "headline": "India temporarily blocks Telegram nationwide to prevent medical exam leaks, Durov contests order in court",
+          "summary": "Indian authorities ordered a blanket Telegram restriction ahead of a major medical entrance exam, citing a scam technique where fraudsters pre-posted fake questions then swapped in real ones post-exam to fabricate a 'leak' narrative. Telegram's legal challenge signals the platform's increasing friction with national governments over compliance demands. The case illustrates how encrypted messaging apps are now direct vectors for high-stakes academic fraud, forcing governments toward blunt access restrictions.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/india-telegram-ban-challenged-in-court"
+          "url": "https://therecord.media/india-blocks-telegram-over-cheating-fears"
         },
         {
-          "headline": "Alleged drone attack plot targeting White House UFC event highlights growing UAS threat landscape",
-          "summary": "Arrests tied to an alleged plot to deploy drones during a high-profile event near the White House underscore how commercially available UAS technology is lowering the barrier for complex attacks on protected spaces. Analysts note the operational feasibility remains unclear, but the intent and planning sophistication warrant serious assessment. The incident reinforces the need for layered counter-UAS frameworks at major public events and critical infrastructure.",
+          "headline": "Alleged drone attack plot targeting White House UFC event underscores growing threat from commercially available UAS",
+          "summary": "Arrests tied to an alleged plot to deploy drones over a White House UFC event highlight how accessible commercial drone technology is lowering the barrier for complex airspace attacks against hardened targets. Whether the suspects had genuine operational capacity remains unclear, but the incident forces a reassessment of counter-UAS protocols at high-profile outdoor events near sensitive government facilities. The frequency of such plots suggests C-UAS gap analysis around temporary event security perimeters is overdue.",
           "source": "The War Zone",
           "url": "https://www.twz.com/news-features/alleged-plot-on-white-house-ufc-fight-puts-drone-threat-in-the-spotlight"
         },
         {
-          "headline": "Russian warship reportedly fired warning shots at a civilian yacht in the English Channel",
-          "summary": "The UK Ministry of Defence is investigating reports that a Russian Navy vessel fired warning shots near a yacht south of the Isle of Wight, a provocative incident in one of the world's busiest maritime corridors. If confirmed, it would represent an escalatory act in UK territorial waters and a significant data point for tracking Russian naval posture in European seas. Open-source maritime trackers and AIS data will be critical to independently corroborating the vessel's movements and timeline.",
+          "headline": "Open-source footage confirms China's R6000 tiltrotor drone has advanced to full free-flight testing",
+          "summary": "New publicly available video confirms the large R6000 uncrewed tiltrotor has transitioned from tethered hover tests to full flight trials, marking a significant development milestone for Chinese unmanned aviation. The R6000's tiltrotor configuration offers both vertical takeoff capability and fixed-wing range, making it relevant for ISR, logistics, and potentially strike roles. OSINT-confirmed progression of this program warrants tracking alongside other Chinese UAS developments as a signal of accelerating capability maturation.",
+          "source": "The War Zone",
+          "url": "https://www.twz.com/air/chinas-big-r6000-tiltrotor-drone-has-entered-full-flight-testing"
+        },
+        {
+          "headline": "Russian naval vessel allegedly fires warning shots at civilian yacht in the English Channel",
+          "summary": "The UK MoD is investigating a reported incident south of the Isle of Wight in which a Russian Navy ship fired warning shots near a civilian yacht transiting the English Channel. If confirmed, the incident represents a direct and provocative use of force in one of the world's busiest maritime corridors, raising questions about Russian escalation posture in European waters. The episode will likely intensify UK and NATO maritime surveillance of Russian naval transit activity through the Channel.",
           "source": "The War Zone",
           "url": "https://www.twz.com/sea/u-k-mod-investigating-reports-of-russian-warship-firing-warning-shots-in-english-channel"
         }
@@ -125,38 +125,38 @@
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "Today's OT/ICS landscape combines active patching activity across major industrial platforms, a ransomware strike on maritime infrastructure, and new training and policy developments aimed at hardening critical systems.",
+      "intro": "The ICS/OT landscape today spans active patching of widely deployed industrial controllers, ransomware hitting maritime port infrastructure, new federal cybersecurity governance for national security systems, and expanded OT-specific training tooling.",
       "items": [
         {
-          "headline": "Rockwell Automation releases patches for multiple ICS controller and software vulnerabilities",
-          "summary": "Rockwell Automation has addressed security flaws across a broad range of its industrial product lines, including Logix and CompactLogix controllers, RSLinx, and FactoryTalk software. Vulnerabilities in these platforms are high-value targets given their widespread deployment in manufacturing, energy, and critical infrastructure environments. Operators should prioritize patch assessment and deployment, particularly for internet-adjacent or remotely managed systems.",
+          "headline": "Rockwell Automation releases patches across multiple ICS controller and software product lines",
+          "summary": "Rockwell has addressed security vulnerabilities affecting Logix, CompactLogix, Flex, RSLinx, and FactoryTalk — a broad swath of products found in manufacturing, energy, and critical infrastructure environments. The breadth of affected platforms elevates urgency, as unpatched Logix controllers in particular represent direct risk to physical process control. Operators should prioritize patch assessment and consider compensating network controls where immediate patching is not feasible.",
           "source": "SecurityWeek",
           "url": "https://www.securityweek.com/rockwell-automation-patches-vulnerabilities-in-ics-controllers-and-software/"
         },
         {
           "headline": "Anubis ransomware group hits Adriatic Port Authority, highlighting maritime OT exposure",
-          "summary": "Resecurity has published threat intelligence detailing an Anubis ransomware attack targeting the Adriatic Port Authority, underscoring persistent ransomware interest in maritime and port infrastructure. Port environments typically blend IT and OT systems including cargo management, vessel traffic, and logistics automation, making them high-impact targets where operational disruption can cascade quickly. Watch for further Anubis activity against European transport infrastructure as the group establishes its targeting pattern.",
+          "summary": "Resecurity's threat intelligence details an Anubis ransomware attack on the Adriatic Port Authority, a sector where OT systems governing logistics, cargo handling, and vessel traffic converge with IT networks. Port infrastructure remains a high-value target due to its economic criticality and historically fragmented cybersecurity posture. The incident reinforces the need for maritime operators to segment OT environments and maintain offline incident response playbooks.",
           "source": "Industrial Cyber",
           "url": "https://industrialcyber.co/transport/resecurity-details-anubis-ransomware-attack-on-adriatic-port-authority-exposing-maritime-infrastructure-risks/"
         },
         {
-          "headline": "MITRE adds DNP3 power grid simulator to Caldera for OT, expanding hands-on ICS training capability",
-          "summary": "MITRE's Caldera for OT platform has gained a new Grid Watch module — a software-only DNP3 outstation simulator that enables defenders to practice adversarial techniques against realistic power grid protocol environments without physical hardware. DNP3 remains a dominant protocol in electric utility SCADA systems and is a known target for nation-state actors. The tool lowers the barrier for utilities and security teams to run red-team exercises against grid-specific attack scenarios.",
-          "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/training-development/mitre-expands-caldera-for-ot-with-grid-watch-dnp3-simulator-for-hands-on-power-grid-cybersecurity-training/"
-        },
-        {
-          "headline": "White House NSPM-12 establishes new cybersecurity governance framework for national security systems",
-          "summary": "The White House has issued National Security Presidential Memorandum 12, creating a structured governance and accountability framework specifically for national security systems, which include classified and mission-critical government networks with OT and ICS components. The directive signals an intent to close oversight gaps that have historically left national security infrastructure with inconsistent cyber standards relative to civilian federal systems. Its implementation timeline and agency-level requirements will be key indicators of real-world impact.",
+          "headline": "White House issues NSPM-12 establishing new cybersecurity governance framework for national security systems",
+          "summary": "The new National Security Presidential Memorandum formalizes oversight and accountability structures for cybersecurity across national security systems, which include classified and sensitive government OT and ICS assets. This signals the administration is tightening governance above and beyond standard NIST or CISA frameworks for the most sensitive infrastructure. Agencies and contractors operating national security-adjacent OT environments should expect updated compliance expectations to follow.",
           "source": "Industrial Cyber",
           "url": "https://industrialcyber.co/regulation-standards-and-compliance/white-house-rolls-out-nspm-12-to-boost-cybersecurity-governance-oversight-accountability-for-national-security-systems/"
+        },
+        {
+          "headline": "MITRE adds DNP3 power grid simulator to Caldera for OT, expanding hands-on ICS training capability",
+          "summary": "MITRE's new Grid Watch module brings a software-only DNP3 outstation simulator into the Caldera for OT adversary emulation platform, enabling defenders to train against realistic power grid protocol attacks without physical hardware. DNP3 is ubiquitous in electric utility SCADA environments and has historically been targeted by nation-state actors. This free tooling lowers the barrier for utilities and grid operators to build and test detection capabilities against ICS-specific attack techniques.",
+          "source": "Industrial Cyber",
+          "url": "https://industrialcyber.co/training-development/mitre-expands-caldera-for-ot-with-grid-watch-dnp3-simulator-for-hands-on-power-grid-cybersecurity-training/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 100,
+    "articles_reviewed": 96,
     "items_published": 19
   }
 }
