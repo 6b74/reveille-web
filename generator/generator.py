@@ -85,7 +85,7 @@ def generate_section(section_id, articles):
     )
 
     response = api_call_with_retry(lambda: get_client().messages.create(
-        model="claude-sonnet-6",
+        model="claude-sonnet-4-6",
         max_tokens=1500,
         messages=[{"role": "user", "content": prompt}],
     ))
