@@ -1,156 +1,138 @@
 {
-  "date": "2026-06-24",
-  "generated_at": "2026-06-24T09:01:29.607214+00:00",
-  "issue": 55,
-  "executive_summary": "Today's intelligence picture is defined by two converging pressures: the accelerating integration of AI across both offensive and defensive domains, and a fragile, legally contested diplomatic settlement with Iran that has not resolved the underlying military and economic tensions in the Gulf. On the technology front, the Five Eyes warning on AI-enabled cyberattacks, the Anthropic model's rapid identification of classified system vulnerabilities, new CISA catalog additions, and the deployment of AI tools by both the Marines and Dragos in OT environments collectively signal that the window between AI capability development and operational exploitation is closing fast, with critical infrastructure sectors particularly exposed given the active Lantronix, Ubiquiti, and FFmpeg flaws currently being weaponized. The Iran thread runs directly from the geopolitical and diplomatic layer into hard military reality: Congress's historic war authorization vote and the interim deal's legal scrutiny sit alongside a reported F-15E loss to an Iranian drone swarm, Strait of Hormuz disruption, and Gulf skepticism about the ceasefire's durability, suggesting the diplomatic framework is outpacing actual threat reduction on the ground. Taken together, the dominant risk today is institutional overconfidence in both diplomatic and technological guardrails, as adversaries, whether Iranian proxies exploiting ceasefire ambiguity or threat actors leveraging AI before federal post-quantum transitions are complete, are actively operating in the gap between policy",
+  "date": "2026-06-25",
+  "generated_at": "2026-06-25T09:05:33.238074+00:00",
+  "issue": 56,
+  "executive_summary": "Today's intelligence picture is dominated by a converging set of pressures across the US-China-Iran strategic triangle, with military spending, alliance management, and supply chain vulnerability all tightening simultaneously. The $87.6B emergency package and accelerated munitions push signal Washington is operationalizing for a potential Iran contingency, even as the nuclear memorandum remains diplomatically undefined and Middle East states hedge between US and Chinese alignment. A critical and underappreciated thread runs through the geopolitical and military reporting: US next-generation submarine deterrence depends heavily on Chinese-refined rare earths, meaning the same adversary the Navy is implicitly postured against in Taiwan Strait condemnations holds leverage over the platforms intended to deter it. On the infrastructure and cyber front, the Microsoft-Europol takedown, active exploitation of Ubiquiti and Cisco SD-WAN vulnerabilities, and Germany's rail communications failure collectively suggest that both criminal and potentially state-aligned actors are probing and degrading critical infrastructure at pace, while CISA and NIST guidance responses remain necessarily reactive and bureaucratic by comparison.",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Today's cyber landscape is dominated by accelerating threats to critical infrastructure, a landmark Scattered Spider guilty plea, and urgent warnings from Five Eyes about AI-enabled attacks arriving within months.",
+      "intro": "Today's cyber landscape features a notable coordinated infrastructure takedown, a major ransomware hit on an industrial giant, and new federal guidance on zero-trust architecture.",
       "items": [
         {
-          "headline": "Five Eyes issues urgent warning: AI will transform cyberattack capabilities within months, not years",
-          "summary": "The Five Eyes intelligence alliance published a joint alert stating that AI poses an imminent and escalating threat to cybersecurity, with a timeline measured in months rather than years. The warning signals that AI is already lowering the barrier for sophisticated attacks, enabling threat actors to automate reconnaissance, exploitation, and social engineering at scale. Governments and critical infrastructure operators should treat this as an active operational risk, not a horizon threat.",
+          "headline": "Microsoft and Europol dismantle cybercrime-as-a-service infrastructure across 300+ servers",
+          "summary": "A joint operation targeting the StealC, Amadey, and SocGholish malware ecosystems took down over 300 servers in what Microsoft describes as a supply-chain-focused disruption strategy. The approach signals a shift from targeting individual malware variants to dismantling the broader service infrastructure enabling multiple threat actors. Watch whether this model becomes a template for future public-private takedown operations.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/five-eyes-alert-artificial-intelligence"
+          "url": "https://therecord.media/stealc-amadey-socgholish-malware-takedown-europol-microsoft"
         },
         {
-          "headline": "Scattered Spider members plead guilty on trial's opening day for crippling London's transit network",
-          "summary": "Two members of the Scattered Spider cybercrime group — aged 18 and 20 — pleaded guilty in the UK to charges stemming from the August 2024 cyberattack on Transport for London, which disrupted public transit services for months. The guilty pleas, arriving on day one of a scheduled six-week trial, represent a rare successful prosecution of a group that has targeted dozens of high-profile organizations. Watch for whether cooperation agreements yield intelligence on remaining members still operating or facing charges in the United States.",
-          "source": "Krebs on Security",
-          "url": "https://krebsonsecurity.com/2026/06/scattered-spider-hackers-plead-guilty-on-day-1-of-trial/"
+          "headline": "Bajaj Auto discloses ransomware attack, containment measures underway",
+          "summary": "Indian automotive manufacturer Bajaj Auto confirmed a ransomware incident in a regulatory filing, stating it detected the intrusion Tuesday morning and activated containment protocols. The attack on a major industrial manufacturer highlights continued ransomware targeting of critical manufacturing sector companies in Asia. Operational and data exfiltration impact remains unclear and warrants close monitoring.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/indian-auto-giant-bajaj-auto-hit-by-ransomware"
         },
         {
-          "headline": "CISA adds four actively exploited vulnerabilities to its known-exploited catalog, including Lantronix and Ubiquiti flaws",
-          "summary": "CISA flagged four vulnerabilities under active exploitation, including a code injection flaw in Lantronix EDS5000 devices and an improper authentication issue in Ubiquiti UniFi OS — both widely deployed in enterprise and OT environments. Active exploitation designations carry binding operational directives for federal agencies and serve as strong indicators of adversary activity that private sector defenders should treat as priority patches. The inclusion of OT-adjacent network hardware underscores continued threat actor interest in network edge devices as initial access vectors.",
+          "headline": "CISA publishes guidance on integrating SASE into federal zero-trust frameworks",
+          "summary": "CISA released a new document detailing how Secure Access Service Edge architecture can be incorporated into the Trusted Internet Connections 3.0 framework as part of the federal zero-trust migration path. The guidance is practically significant for federal agencies navigating the convergence of network security and cloud access controls. It provides a concrete roadmap at a time when agencies face mounting pressure to modernize legacy perimeter-based security models.",
           "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/alerts/2026/06/23/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "headline": "Trump executive order mandates federal transition to post-quantum cryptography on accelerated timeline",
-          "summary": "A White House executive order signed Monday directs federal agencies to expedite migration to post-quantum cryptographic standards, responding to the long-anticipated threat that quantum computers will render current public-key encryption obsolete. The order aligns with NIST's recently finalized PQC standards and adds executive pressure to what has been a slow-moving federal modernization effort. Critical infrastructure operators and defense contractors with long data-sensitivity windows should treat this as a signal to accelerate their own PQC roadmaps.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/trump-directs-federal-agencies-quantum-cryptography"
+          "url": "https://www.cisa.gov/resources-tools/resources/using-sase-modern-tic-30-solution"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "The fragile U.S.-Iran ceasefire is dominating the geopolitical landscape, with legal ambiguities, Gulf anxieties, and Strait of Hormuz disruptions defining the post-conflict moment.",
+      "intro": "The US-Iran nuclear memorandum dominates today's geopolitical landscape, while structural questions about NATO cohesion, Middle East realignment, and US defense supply chains compound broader strategic uncertainty.",
       "items": [
         {
-          "headline": "U.S.-Iran Interim Deal Faces Legal Scrutiny and Gulf Skepticism",
-          "summary": "Washington and Tehran are actively courting regional partners to shore up support for their memorandum of understanding, but Gulf states remain uneasy over competing interpretations of the agreement's terms and durability. The MOU's ambiguous legal language — unclear whether it constitutes a treaty or executive agreement — raises questions about enforceability and congressional oversight. Watch whether the deal holds through implementation milestones or fractures along definitional fault lines.",
+          "headline": "US-Iran nuclear memorandum faces legitimacy test as Washington struggles to define baseline",
+          "summary": "The Trump administration's memorandum of understanding with Iran has triggered an internal selling campaign, with Treasury Secretary Bessent joining VP Vance in defending terms that remain broadly unpopular. Before formal diplomacy can advance, US negotiators must first reestablish what Iran's actual nuclear status is — a daunting baseline problem given enrichment activity during and after the conflict. Watch whether the MOU holds through domestic political pressure and whether Iran's compliance posture shifts.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/06/23/us-iran-peace-deal-rubio-uae-kuwait-bahrain-pezeshkian-pakistan/"
+          "url": "https://foreignpolicy.com/2026/06/24/iran-us-war-negotiations-nuclear-weapons-uranium-enrichment-diplomacy-mou/"
         },
         {
-          "headline": "Strait of Hormuz Disruption Demonstrates Iran's Enduring Leverage Despite Ceasefire",
-          "summary": "Iran's partial closure of the Strait of Hormuz in response to U.S. and Israeli strikes sent global energy markets into shock, and while Tehran has eased restrictions as negotiations progressed, shipping traffic remains well below pre-conflict levels. The episode confirmed Iran's asymmetric capacity to impose severe economic costs without conventional military parity. The longer-term question is whether Washington extracted sufficient concessions to deter future Hormuz threats, or merely paused them.",
-          "source": "War on the Rocks",
-          "url": "https://warontherocks.com/adapting-to-uncertainty-in-the-strait-of-hormuz/"
-        },
-        {
-          "headline": "Trump's Iran Diplomacy Echoes the Paris Peace Accords Framework",
-          "summary": "Analysts are drawing parallels between the Trump administration's MOU with Iran and the 1973 Paris Peace Accords — both representing staged, provisional arrangements rather than definitive settlements, designed more to create political off-ramps than durable peace. The comparison carries a cautionary undertone: the Paris Accords ultimately failed to end the underlying conflict. The current framework's longevity will depend on whether both sides treat it as a foundation or a face-saving pause.",
-          "source": "War on the Rocks",
-          "url": "https://warontherocks.com/from-vietnam-to-iran-wartime-diplomacy-and-secret-deals/"
-        },
-        {
-          "headline": "Russia Deepens Energy Ties in Southeast Asia as ASEAN Summit Approaches",
-          "summary": "Moscow is leveraging its role as an energy supplier to expand influence across fuel-hungry Southeast Asian economies, using the Kazan summit process to build bilateral arrangements that sidestep Western pressure. The strategy mirrors Russia's broader pivot to the Global South — offering commodities over ideology to countries unwilling to align with either Washington or Beijing. Watch for whether ASEAN members formalize energy deals that create long-term strategic dependencies on Russian supply.",
+          "headline": "Middle East realignment accelerates as regional states weigh US-China split",
+          "summary": "The post-conflict Middle East is showing signs of a structural divergence, with states increasingly separating economic relationships with China from security dependencies on the US. This bifurcation creates leverage opportunities for regional actors but complicates Washington's ability to enforce sanctions or sustain coalition cohesion. Pakistan's emergence as a mediator between Iran and outside powers adds another variable to an already fragmented regional order.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/06/24/russia-asean-kazan-summit-energy-southeast-asia/"
+          "url": "https://foreignpolicy.com/2026/06/24/iran-war-middle-east-us-china-military-economy-diplomacy/"
+        },
+        {
+          "headline": "NATO chief Rutte navigates Trump pressure and alliance anxieties simultaneously",
+          "summary": "Secretary General Rutte is playing a double role — managing Trump's transactional demands while reassuring European members rattled by US unpredictability over Iran and burden-sharing. His effectiveness hinges on continued access to Trump, a relationship that could erode quickly if US domestic politics shift. NATO's structural credibility is at stake if Rutte cannot translate personal diplomacy into binding commitments.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/06/24/rutte-nato-trump-whisperer-iran-war-europe-us-military/"
+        },
+        {
+          "headline": "US Navy's next-generation submarine deterrent relies almost entirely on Chinese-refined rare earths",
+          "summary": "The Columbia-class ballistic missile submarine program — the cornerstone of future US nuclear deterrence — depends on rare earth elements processed predominantly in China for its propulsion, stealth, and precision strike systems. This single-point supply chain vulnerability sits at the intersection of nuclear strategy and economic coercion, giving Beijing potential leverage without firing a shot. Resolving it requires domestic mining and refining capacity that does not yet exist at the necessary scale.",
+          "source": "War on the Rocks",
+          "url": "https://warontherocks.com/cogs-of-war/the-u-s-navys-subsea-rare-earth-vulnerability/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "Congressional pushback on the Iran war, Space Force readiness debates, and AI-driven battlefield modernization define today's military landscape.",
+      "intro": "U.S. military posture is defined today by urgent wartime spending, allied pressure on China over Taiwan, and large-scale multinational exercises focused on interoperability.",
       "items": [
         {
-          "headline": "Both chambers of Congress vote to end U.S. war with Iran in historic first",
-          "summary": "The Senate joined the House in approving a directive to withdraw U.S. forces from hostilities with Iran, marking the first time both chambers have successfully invoked the War Powers Act since its 1973 passage. The rebuke is a significant constitutional challenge to Trump's war authority, though whether he will comply or veto remains the critical question. Public opinion is running sharply against the conflict, with only 23% of Americans believing the war improved the U.S. position vis-à-vis Iran.",
-          "source": "Defense One",
-          "url": "https://www.defenseone.com/policy/2026/06/senate-house-rebuke-trump-war-iran/414370/"
-        },
-        {
-          "headline": "Army targets end-of-year deadline to synchronize two divisions with next-generation command and control",
-          "summary": "The Army is pushing to link two full divisions under its Next Generation Command and Control architecture by year's end, with Anduril leading the effort following its NGC2 prototype work with the 4th Infantry Division. Success would represent a meaningful leap in large-scale joint coordination capability, reducing the latency between sensor data and command decisions. Watch whether the timeline holds given the historical friction between defense acquisition schedules and operational fielding.",
-          "source": "Defense One",
-          "url": "https://www.defenseone.com/defense-systems/2026/06/army-aims-sync-two-divisions-using-next-gen-c2-years-end/414367/"
-        },
-        {
-          "headline": "Think tank calls on Space Force to orient for full-scale warfighting, not just deterrence",
-          "summary": "A new Mitchell Institute report argues that Space Force must actively prepare for all-out conflict across a range of war scenarios, signaling a strategic shift from space as a support domain to space as a contested warfighting environment. The report reflects growing concern that adversaries — particularly China and Russia — have developed capabilities to deny U.S. space assets at the onset of conflict. The findings add pressure on Space Force leadership to accelerate offensive and defensive space capabilities before a crisis forces the issue.",
-          "source": "Defense One",
-          "url": "https://www.defenseone.com/threats/2026/06/space-force-must-prepare-all-out-warfare-think-tank-says/414374/"
-        },
-        {
-          "headline": "Marines deploy AI-powered operational reporting tool built on Maven Smart System",
-          "summary": "The Marine Corps has expanded its use of the Maven Smart System with a new AI tool designed to automate and improve operational reporting, addressing a persistent problem of data abundance without actionable insight. The move positions Marines closer to real-time information superiority in dynamic environments and mirrors broader DoD investment in AI-assisted command functions. The tool's performance under combat or near-combat conditions will be the real test of whether it delivers on the information superiority promise.",
+          "headline": "White House requests $87.6B emergency package, bulk earmarked for Iran conflict costs",
+          "summary": "The supplemental spending request allocates $67.15B to the military, including $21B specifically for munitions replenishment and industrial base expansion — a direct reflection of consumption rates from operations against Iran. The request signals that the administration views current stockpile levels as critically low and is betting on congressional support to accelerate production. Watch for debate over the remaining ~$20B and how quickly Congress moves given ongoing hostilities.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-marine-corps/2026/06/23/marines-expand-use-of-maven-with-new-ai-operational-reporting-tool/"
+          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/06/24/white-house-asks-congress-for-876-billion-mostly-for-iran-war/"
+        },
+        {
+          "headline": "Trump hosts defense contractors as Pentagon pushes hard for faster munitions output",
+          "summary": "The White House meeting with munitions manufacturers underscores that demand is outpacing current production capacity, with Pentagon negotiators applying direct pressure to accelerate timelines. This follows the emergency budget request and suggests a broader industrial mobilization effort is taking shape. The key friction point will be whether suppliers can realistically compress production cycles without sacrificing quality or straining supply chains.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/06/25/trump-meets-munitions-makers-amid-push-to-replenish-weapons-stockpiles/"
+        },
+        {
+          "headline": "US and European allies formally condemn Chinese naval patrols east of Taiwan",
+          "summary": "A joint statement from the US, UK, France, and Germany calling out Chinese patrols off Taiwan's eastern coast represents a notable escalation in coordinated diplomatic signaling — the eastern side is strategically critical as it faces the open Pacific and would be central to any blockade scenario. The statement invokes freedom of navigation, framing China's activity as a regional stability threat rather than a bilateral US-China issue. Watch whether Beijing responds with additional patrol activity or diplomatic retaliation against any of the four signatories.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/global/asia-pacific/2026/06/24/us-uk-france-germany-raise-alarm-about-chinese-patrols-off-eastern-taiwan/"
+        },
+        {
+          "headline": "RIMPAC 2026 launches in Hawaii with experimentation as its central theme",
+          "summary": "The biennial exercise, the world's largest international maritime drill, is centering this iteration on integrated partner readiness and operational experimentation — a deliberate shift toward testing new concepts rather than rehearsing established ones. With the Taiwan situation escalating and US munitions stocks under strain, the timing gives RIMPAC outsized strategic relevance as a signal of coalition cohesion in the Indo-Pacific. New systems, command structures, and interoperability protocols tested here will directly inform real-world contingency planning.",
+          "source": "Defense One - All Content",
+          "url": "https://www.defenseone.com/technology/2026/06/rimpac-kicks-hawaii-focus-experimentation/414415/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Today's intelligence picture centers on enforcement actions against cybercrime infrastructure and accountability for high-profile threat actors, with open-source reporting surfacing novel Iranian drone capabilities.",
+      "intro": "Today's Intel/OSINT picture is thin on high-signal items, with the most notable development being a critical infrastructure disruption to Germany's national rail communications network.",
       "items": [
         {
-          "headline": "DOJ seizes cloud infrastructure tied to Huione Group's cyber-scam network",
-          "summary": "The Justice Department seized cloud computing accounts used by subsidiaries of Cambodia-based Huione Group, a conglomerate already cut off from the U.S. financial system for facilitating cyber fraud. The action signals continued pressure on the infrastructure layer enabling Southeast Asian scam operations, which have been linked to billions in global fraud losses. Watch for follow-on designations targeting other Huione-adjacent entities as investigators map the broader network.",
+          "headline": "Germany's National Rail Network Hit by GSM-R Communications Failure",
+          "summary": "Deutsche Bahn experienced a nationwide rail service disruption traced to a failure in its GSM-R system, the 2G-based wireless communications standard used to coordinate train movements across Europe. The incident highlights a systemic vulnerability in railway infrastructure that relies on aging, single-point communications protocols. Watch for whether this is attributed to equipment failure, sabotage, or interference — each carries different implications for critical infrastructure resilience.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/feds-seize-alleged-cyber-scam-infrastructure-southeast-asia"
-        },
-        {
-          "headline": "Two Scattered Spider members plead guilty to 2024 Transport for London attack",
-          "summary": "A 20-year-old and an 18-year-old have admitted to breaching Transport for London's network in 2024, an intrusion that disrupted transit services for months and exposed sensitive customer data. The guilty pleas confirm Scattered Spider's operational reach extends well beyond U.S. targets and that its membership skews notably young. Sentencing outcomes will serve as a data point on deterrence effectiveness against juvenile threat actors in high-impact cybercrime cases.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/guilty-plea-tfl-cyberattack-scattered-spider-members"
-        },
-        {
-          "headline": "Downed F-15E pilot reportedly encountered dense Iranian drone swarm before loss of aircraft",
-          "summary": "Open-source reporting describes the pilot of the F-15E lost over Iran as encountering a 'jellyfish-like' swarm of drones—characterized by one source as a 'minefield'—immediately before the aircraft went down. If accurate, this suggests Iran deployed a coordinated, volumetric drone tactic capable of threatening fourth-generation fighters in contested airspace. The account warrants close OSINT scrutiny, as the specific swarm configuration and command-and-control method would carry significant implications for U.S. and allied air operations planning.",
-          "source": "TWZ",
-          "url": "https://www.twz.com/air/what-was-the-jellyfish-like-drone-swarm-the-downed-f-15e-pilot-reportedly-saw-over-iran"
+          "url": "https://therecord.media/deutsche-bahn-railroad-gsmr-outage"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "The OT security space is seeing increased AI integration as defenders race to match the growing automation on the offensive side.",
+      "intro": "Today's OT/ICS-relevant landscape centers on network device vulnerabilities and updated federal IoT security standards, with limited dedicated ICS-specific incident reporting but meaningful policy and infrastructure risk signals.",
       "items": [
         {
-          "headline": "Dragos launches AI-powered threat analysis capability purpose-built for OT environments",
-          "summary": "Dragos introduced EmberAI, an AI capability trained on its proprietary OT cybersecurity dataset — one of the largest in the industry. The tool is designed to accelerate threat detection and analyst workflows specific to industrial control system environments, where context and protocol knowledge differ substantially from IT security. Watch whether EmberAI's OT-specific training gives it a meaningful edge over general-purpose AI tools being adapted for industrial use.",
+          "headline": "NIST Releases Updated Federal IoT Cybersecurity Guidance for Public Comment",
+          "summary": "NIST has opened revised IoT security guidance to public review, targeting product cybersecurity requirements for devices connected to federal agency networks. This is directly relevant to OT and ICS operators who supply or integrate IoT-adjacent devices into government-facing infrastructure. Organizations should review the draft now to anticipate compliance expectations and shape final requirements through the comment process.",
           "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/dragos-unveils-ai-for-ot-security/"
+          "url": "https://www.securityweek.com/nist-opens-updated-iot-security-guidance-to-public-review/"
         },
         {
-          "headline": "FFmpeg remote code execution flaw puts media servers and NAS appliances at risk",
-          "summary": "A vulnerability dubbed PixelSmash in FFmpeg's libavcodec library allows attackers to execute arbitrary code by delivering a crafted media file to any application using the library. NAS appliances and media servers — commonly found in OT-adjacent network segments — are among the affected device classes. Organizations running FFmpeg-dependent software on operational networks should prioritize patching given the broad attack surface and straightforward delivery mechanism.",
+          "headline": "Active Exploitation Underway Against Critical Ubiquiti Network Device Flaws",
+          "summary": "Critical vulnerabilities in Ubiquiti networking equipment are now being actively targeted, allowing unauthenticated remote attackers to alter system configurations, access accounts, and inject commands. Ubiquiti gear is widely deployed in industrial and operational environments as edge networking infrastructure, making these flaws a credible pivot point toward OT network segments. Operators using Ubiquiti devices should audit exposure and apply patches immediately.",
           "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/ffmpeg-pixelsmash-flaw-allows-rce-on-video-players-media-servers-nas-appliances/"
+          "url": "https://www.securityweek.com/critical-ubiquiti-vulnerabilities-in-attackers-crosshairs/"
         },
         {
-          "headline": "Anthropic AI model identified vulnerabilities in classified US government systems within hours",
-          "summary": "A government official confirmed that Anthropic's Mythos model was used to find vulnerabilities in classified US government systems, with some findings surfacing within hours of deployment. Critically, the official noted discovery does not equate to exploitation capability within the same timeframe. This development signals accelerating AI-assisted vulnerability discovery against sensitive infrastructure, raising the bar for how quickly critical system owners — including those in OT sectors — must remediate known weaknesses.",
+          "headline": "Cisco SD-WAN Zero-Day Exploited for Months Before Vendor Disclosure",
+          "summary": "CVE-2026-20245, the seventh exploited Cisco SD-WAN vulnerability this year, was actively used by attackers for an extended period before Cisco disclosed or patched it, highlighting a persistent gap in vendor detection and response timelines. SD-WAN technology is increasingly used to connect OT sites and remote industrial facilities, making prolonged silent exploitation particularly dangerous for critical infrastructure operators. This pattern warrants a broader review of SD-WAN deployment posture in OT-adjacent network architectures.",
           "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/anthropics-mythos-model-found-vulnerabilities-in-classified-us-government-systems-official-says/"
+          "url": "https://www.securityweek.com/cisco-sd-wan-zero-day-exploited-months-before-patching/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 94,
-    "items_published": 18
+    "articles_reviewed": 87,
+    "items_published": 15
   }
 }
