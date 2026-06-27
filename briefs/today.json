@@ -1,156 +1,138 @@
 {
-  "date": "2026-06-26",
-  "generated_at": "2026-06-26T09:04:38.305889+00:00",
-  "issue": 57,
-  "executive_summary": "Today's intelligence picture is defined by converging pressure on critical infrastructure across cyber, military, and industrial domains, with adversary activity accelerating at a pace that is outrunning Western institutional readiness. Russia continues a deliberate campaign of infrastructure attrition — striking Ukrainian postal services, agricultural systems, and potentially probing industrial control systems — while simultaneously facing battlefield setbacks that analysts warn could drive escalatory behavior, creating a volatile feedback loop between conventional and hybrid warfare. The exploitation of PTC Windchill and Lantronix vulnerabilities in the wild, combined with the Iranian Handala Group's attempted reach into California water utility OT systems, signals that ICS and critical infrastructure remain high-priority targets across multiple threat actors simultaneously — and this is occurring precisely as CISA lacks confirmed leadership and Pentagon research capacity is in documented decline, raising serious questions about institutional resilience. Underlying all of this is a strategic materials vulnerability: China's dominance of rare earth refining, threatening U.S. nuclear submarine production, connects directly to the broader theme of Western defense industrial capacity struggling to keep pace with a security environment that is deteriorating faster than procurement, leadership, and research infrastructure can respond.",
+  "date": "2026-06-27",
+  "generated_at": "2026-06-27T09:02:31.899643+00:00",
+  "issue": 58,
+  "executive_summary": "Today's intelligence picture is dominated by two converging pressures: an active and escalating military confrontation with Iran, and a broad, sustained Russian information and cyber operations campaign. On the Iran front, the resumption of U.S. Central Command strikes against Iranian missile, drone, and radar infrastructure — conducted despite an active peace memorandum — signals a significant breakdown in diplomatic restraint, while Gulf States positioning themselves to lead diplomacy suggests Washington may be recalibrating its regional role even as kinetic operations intensify; the simultaneous erosion of Hezbollah's capacity as an Iranian proxy further compounds Tehran's strategic position. On the Russia front, the threads are tightly linked: Turla's deployment of new StockStay malware against Ukraine, the Russian fake tech-support credential harvesting scheme, and the FBI/CISA warning about targeting of commercial messaging platforms collectively reflect a coordinated, multi-vector Russian effort to sustain intelligence collection and information operations, with the Apple removal of VK apps adding a secondary front in the information space. The active exploitation of the PTC Windchill RCE flaw and FCC action on undersea cable infrastructure underscore that critical infrastructure remains under pressure from both criminal and state-affiliated actors, likely benefiting from geopolitical distraction. The overarching theme today is simultaneous crisis management across two major adversary tracks — Iran kinetically and Russia through hybrid means —",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Today's cyber landscape is defined by active exploitation of industrial and enterprise systems, emerging AI agent vulnerabilities, and continued targeting of Russian critical infrastructure.",
+      "intro": "Russian cyber operations dominate today's threat landscape, spanning espionage malware, social engineering campaigns against messaging apps, and a diplomatic row over Apple's removal of Russian services.",
       "items": [
         {
-          "headline": "CISA flags actively exploited flaws in PTC and Cisco products, issues broad ICS advisory wave",
-          "summary": "CISA added two vulnerabilities to its Known Exploited Vulnerabilities catalog — an improper input validation flaw in PTC Windchill/FlexPLM and a separate Cisco vulnerability — both confirmed under active exploitation. Alongside these, CISA released over ten ICS advisories covering industrial and medical systems from Schneider Electric, Delta Electronics, Yokogawa, and others, several enabling unauthenticated root access or arbitrary code execution. Organizations running OT environments should treat this advisory cluster as a prioritized patching signal given the breadth of affected vendors.",
-          "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/alerts/2026/06/25/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+          "headline": "CISA and FBI warn of sustained Russian targeting of commercial messaging platforms",
+          "summary": "An updated joint advisory from CISA and the FBI details ongoing Russian Intelligence Services phishing campaigns aimed at compromising accounts on commercial messaging apps. The update builds on a March 2026 warning, signaling the threat has not subsided and may be intensifying. Organizations relying on consumer-grade messaging tools for sensitive communications should treat this as an active, not theoretical, risk.",
+          "source": "CISA",
+          "url": "https://www.cisa.gov/resources-tools/resources/russian-intelligence-services-continue-target-commercial-messaging-applications"
         },
         {
-          "headline": "Race condition attack on AI computer-use agents enables bait-and-switch manipulation",
-          "summary": "Security researcher Johann Rehberger reproduced a TOCTOU (time-of-check to time-of-use) attack against AI computer-use agents like ChatGPT Operator, demonstrating that malicious content can swap what the agent acts on between user confirmation and execution. The attack exploits the gap between what a user approves visually and what the agent actually processes — a structural vulnerability in agentic AI workflows rather than a one-off bug. As autonomous AI agents are increasingly deployed in enterprise settings, this class of vulnerability warrants serious attention from developers and security architects.",
-          "source": "Embrace The Red",
-          "url": "https://embracethered.com/blog/posts/2026/toctou-agent-what-you-click-is-not-what-you-get/"
-        },
-        {
-          "headline": "Russian dairy sector hit by another cyberattack as agricultural targeting continues",
-          "summary": "A dairy manufacturer in Russia's Bashkortostan republic has been disrupted by a cyberattack, becoming the latest in a pattern of strikes against Russian food and agricultural companies. The incidents suggest a sustained campaign against civilian economic infrastructure, likely by pro-Ukrainian hacktivists or affiliated actors. The trend is worth monitoring as a barometer of how cyber operations are being used to impose economic costs on Russia beyond traditional military or energy targets.",
+          "headline": "Ukraine documents Russian fake tech-support scheme used to harvest messaging credentials",
+          "summary": "Ukraine's SBU has detailed a sustained Russian operation in which actors posing as technical support staff socially engineered targets into surrendering credentials for their messaging accounts. The campaign complements the phishing tactics flagged in the CISA advisory, showing Russia is combining technical and human manipulation vectors. Ukrainian officials and partner governments are likely primary targets, making this a significant counterintelligence concern.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/russia-dairy-producter-cyberattack-ufa"
+          "url": "https://therecord.media/russia-ukraine-social-engineering-messaging-accounts"
         },
         {
-          "headline": "CISA leadership vacuum persists as DHS secretary confirms White House is vetting a director nominee",
-          "summary": "DHS Secretary Markwayne Mullin told Congress that President Trump has met with a potential CISA director nominee, though no announcement has been made, leaving the agency without confirmed leadership. CISA plans to hire approximately 600 staff once a director is confirmed, signaling the administration intends to rebuild capacity after significant workforce reductions. The prolonged vacancy at the top of the nation's civilian cyber defense agency remains a strategic vulnerability at a time of heightened threat activity.",
+          "headline": "Turla deploys new StockStay malware to deepen espionage operations against Ukraine",
+          "summary": "Google threat intelligence researchers have identified StockStay, a new malware strain developed by Turla, one of Russia's most sophisticated state-linked cyber-espionage groups. The addition expands Turla's already extensive toolkit and indicates continued investment in persistent access operations targeting Ukrainian networks. Security teams should update detection rules and threat hunt for indicators of compromise associated with this group given the active conflict context.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/cisa-director-nominee-workforce-hires-mullin-house-hearing"
+          "url": "https://therecord.media/russia-turla-espionage-ukraine-stockstay-malware"
+        },
+        {
+          "headline": "FCC moves to impose new licensing requirements on undersea cable infrastructure operators",
+          "summary": "The FCC voted to strengthen regulations governing submarine cables, including an unprecedented proposal to require licensing for owners and operators of submarine line terminal equipment. Undersea cables carry the vast majority of global internet traffic, making them a high-value target for state actors seeking to surveil or disrupt communications. This regulatory push reflects growing concern about the physical security layer of critical internet infrastructure.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/fcc-votes-to-toughen-rules-undersea-cables"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "Post-Iran ceasefire stabilization, a wobbling Putin, and structural vulnerabilities in U.S. defense supply chains define today's geopolitical landscape.",
+      "intro": "U.S. military action against Iran dominates today's geopolitical landscape, with cascading effects reshaping Middle East dynamics, proxy relationships, and regional power arrangements.",
       "items": [
         {
-          "headline": "US-Iran Memorandum of Understanding Reopens Strait of Hormuz, But Leaves Core Tensions Unresolved",
-          "summary": "A Pakistan- and Qatar-mediated agreement signed June 17 by Trump and Iranian President Pezeshkian has halted hostilities and restored shipping traffic through the Strait of Hormuz. The deal delivers near-term wins for both sides but stops short of addressing Iran's nuclear program or regional proxy networks. Watch whether the MOU hardens into a durable framework or fractures under domestic pressure in Tehran and Washington.",
-          "source": "War on the Rocks",
-          "url": "https://warontherocks.com/open-strait-unsettled-waters/"
-        },
-        {
-          "headline": "Analysts Warn Putin's Battlefield Setbacks May Drive Escalatory Desperation",
-          "summary": "As military momentum shifts against Russia in Ukraine, analysts caution that a cornered Putin poses heightened escalation risk — drawing on the analogy of a drowning man making dangerous, unpredictable moves. The warning is directed squarely at NATO planners who may be tempted to ease pressure assuming the war is winding down. The next 60-90 days of battlefield dynamics and any Russian signaling toward nuclear or infrastructure escalation are the key indicators to track.",
+          "headline": "U.S. Strikes Iranian Targets After Tehran Violates Hormuz Ceasefire",
+          "summary": "Washington launched strikes against Iran following what it characterized as a ceasefire violation involving an attack on a vessel in the Strait of Hormuz. The move marks a significant escalation and tests whether the existing diplomatic framework can survive direct military confrontation. Watch for Iranian retaliation options, potential Strait closure threats, and how Gulf states respond to renewed instability.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/06/25/russia-ukraine-war-putin-escalation-nato-europe/"
+          "url": "https://foreignpolicy.com/2026/06/26/us-strikes-iran-cease-fire-violation-hormuz-ever-lovely-mou-trump/"
         },
         {
-          "headline": "China's Chokehold on Rare Earth Refining Creates Critical Vulnerability in U.S. Nuclear Submarine Program",
-          "summary": "The Columbia-class ballistic missile submarine — America's next-generation nuclear deterrent — relies on rare earth materials that are almost entirely refined in China, exposing a structural supply chain risk at the heart of U.S. strategic deterrence. The dependency spans propulsion, acoustic stealth systems, and strike precision, meaning any deterioration in U.S.-China relations could threaten the program's timeline and operational readiness. Congress and the Pentagon have yet to produce a credible domestic alternative supply chain at the scale the program requires.",
-          "source": "War on the Rocks",
-          "url": "https://warontherocks.com/cogs-of-war/the-u-s-navys-subsea-rare-earth-vulnerability/"
-        },
-        {
-          "headline": "Post-Iran War, Trump Pushes Defense Industry to Accelerate Weapons Output",
-          "summary": "Following the Iran conflict, the Trump administration is pressing major defense contractors including Lockheed Martin to surge production capacity to replenish depleted munitions stockpiles and meet commitments to Ukraine and NATO allies. The push reflects how quickly high-intensity conflict consumes precision weapons inventories — a lesson that defense planners had flagged but not fully acted on. How quickly the industrial base can actually respond will directly affect U.S. credibility in any near-term deterrence scenario.",
+          "headline": "Iran's War Costs Are Eroding Hezbollah's Value as a Strategic Asset",
+          "summary": "The ongoing conflict has fundamentally altered Tehran's calculus on its proxy network, with Hezbollah shifting from a force-multiplier to a costly obligation the Iranian state struggles to sustain. This recalibration weakens a cornerstone of Iran's regional deterrence architecture built over four decades. The degree to which Tehran can reconstitute or redirect its proxy investments will define its post-war strategic posture.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/06/25/trump-weapons-iran-lockheed-ukraine-nato-rutte/"
+          "url": "https://foreignpolicy.com/2026/06/26/iran-hezbollah-united-states-war-israel-lebanon-proxies/"
+        },
+        {
+          "headline": "Gulf States Signal Readiness to Lead Iran Diplomacy as U.S. Steps Back from Primary Role",
+          "summary": "Analysis indicates the UAE and Saudi Arabia have developed sufficient institutional capacity and strategic interest to manage Iran containment without relying on Washington as the primary broker, repositioning the U.S. as a guarantor of last resort rather than first responder. This reflects a broader restructuring of Middle East security architecture accelerated by the current conflict. The shift has significant implications for burden-sharing negotiations and U.S. force posture in the region.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/06/26/united-states-middle-east-iran-gulf-uae-saudi-last-resort/"
+        },
+        {
+          "headline": "Colombia Elects Right-Wing President, Extending Latin America's Conservative Wave",
+          "summary": "Colombia has voted in a Trump-aligned right-wing leader, continuing a regional trend that has seen multiple Latin American governments shift toward conservative, nationalist governance. The result represents a direct repudiation of outgoing leftist President Gustavo Petro and his policies. Washington will likely leverage the election outcome to consolidate hemispheric alignment on trade, migration, and counter-narcotics priorities.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/06/26/colombia-presidential-vote-espriella-tigre-cepeda-petro-trump/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "Today's military picture is defined by congressional budget maneuvering over key platforms, Ukraine's accelerating weapons innovation, and growing concerns about the Pentagon's eroding research base.",
+      "intro": "U.S. forces resumed strikes on Iran while the Army accelerates drone integration and space organizational reforms signal broader modernization momentum.",
       "items": [
         {
-          "headline": "House approves $1.55B to resurrect E-7 Wedgetail airborne radar aircraft, blocks Navy raid",
-          "summary": "The House backed White House-backed funding to revive the E-7 Wedgetail program by tapping classified Air Force accounts, but rejected a parallel move to pull funds from the Navy's E-2 Hawkeye radar-plane program. The split decision signals congressional willingness to restore the Air Force's airborne battle management capability while protecting existing naval aviation assets. Watch whether the Senate accepts the funding mechanism or demands a cleaner appropriation.",
+          "headline": "U.S. Central Command resumes strikes against Iranian missile, drone, and radar infrastructure",
+          "summary": "CENTCOM struck multiple Iranian military sites on Friday, targeting missile systems, drone facilities, and radar installations. The resumption of strikes signals continued pressure on Iran's military capacity and raises questions about escalation dynamics and Iranian retaliation options. Watch for Iranian responses targeting regional U.S. assets or proxy activity across the Middle East.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/06/25/house-backs-155-billion-to-revive-e-7-wedgetail-spares-navy-hawkeye/"
+          "url": "https://www.militarytimes.com/news/your-military/2026/06/26/us-resumes-attacks-on-iran/"
         },
         {
-          "headline": "Ukraine's leading drone manufacturer pivots to ballistic missile defense with German partner",
-          "summary": "Fire Point, responsible for the majority of Ukraine's long-range strike sorties inside Russia, is partnering with Germany's Hensoldt to develop Freyja, a domestically produced ballistic missile defense system. The move reflects a deliberate Ukrainian strategy to build sovereign defense-industrial capacity across the full kill chain, from offense to defense. This dual-track development model could become a template for other conflict-tested nations seeking to reduce dependency on external suppliers.",
+          "headline": "101st Airborne soldiers employ drones for obstacle breaching, signaling a shift in infantry doctrine",
+          "summary": "Soldiers from the 101st Airborne are using drones to drop grappling hooks and breach razor wire, with one officer arguing brigades will need 1,000–1,500 drones per week in sustained combat. The Infantry Squad Vehicle is also being explored as a mobile power source to keep drone systems operational in the field. This operational experimentation is pushing the Army toward treating drones as expendable consumables rather than managed equipment assets.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/unmanned/2026/06/25/ukraines-top-strike-drone-maker-moves-into-ballistic-missile-defense/"
+          "url": "https://www.militarytimes.com/news/your-army/2026/06/26/101st-soldiers-use-drones-to-drop-grappling-hooks-breach-razor-wire/"
         },
         {
-          "headline": "Ukraine deploys wind-borne balloon weapons to saturate Russian air defenses",
-          "summary": "Ukraine is now employing wind-drifting balloons capable of baiting and launching missiles against Russian air defense systems, a low-cost asymmetric tactic also being explored by the U.S. and Russia. The convergence of all three militaries around the same concept underscores how battlefield innovation in Ukraine is reshaping broader strategic thinking. The tactic's effectiveness at degrading expensive integrated air defense networks with cheap platforms will be closely watched by defense planners.",
+          "headline": "Army establishes dedicated branch for space operations officers",
+          "summary": "The U.S. Army has formally created a new branch to house its space operations officers, following the service's previously announced space vision strategy. The move institutionalizes space as a distinct warfighting function within Army force structure rather than a collateral specialty. This mirrors broader inter-service competition over space roles as the Space Force continues to define its own domain boundaries.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/global/europe/2026/06/25/ukraines-newest-strike-weapon-drifts-into-russia-on-the-wind/"
+          "url": "https://www.militarytimes.com/news/your-military/2026/06/26/army-launches-new-branch-for-military-space-operations/"
         },
         {
-          "headline": "Pentagon research infrastructure in serious decline, new study warns",
-          "summary": "A new study finds DoD's research base is deteriorating due to a backlog of security clearance processing, underfunded lab facilities, and a dysfunctional hiring pipeline that drives talent away. The findings carry long-term strategic risk: a weakened research infrastructure directly undermines the Pentagon's ability to develop and field next-generation capabilities at competitive speed. Congress and DoD leadership will face pressure to address structural workforce and facilities deficits before they compound further.",
+          "headline": "Air Force seeks industry proposals for a long-range strike weapon exceeding 1,000 miles",
+          "summary": "The Air Force held an Industry Day soliciting concepts for a next-generation weapon with both air-to-air and air-to-surface variants at ranges beyond 1,000 miles. The requirement reflects a strategic priority to hold targets at standoff distances that stress adversary air defenses, particularly relevant to a potential Taiwan contingency or high-end peer conflict. The dual-variant requirement is notable, suggesting the Air Force wants a single weapons family capable of prosecuting both aerial and ground threats at extreme range.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/06/25/the-pentagons-research-infrastructure-is-deteriorating-study-finds/"
+          "url": "https://www.militarytimes.com/industry/techwatch/2026/06/26/air-force-solicits-ideas-for-over-1000-mile-range-weapon-from-industry/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Today's intelligence picture is shaped by digital forensics revealing authoritarian tool misuse, AI-assisted open-source conflict monitoring, and continued Russian cyber operations against Ukrainian infrastructure.",
+      "intro": "Today's intelligence picture is dominated by a rare direct U.S.-Iran kinetic exchange and a significant platform access dispute between Apple and Russia.",
       "items": [
         {
-          "headline": "Russia continued using Cellebrite extraction tools years after vendor's exit, researchers find",
-          "summary": "Despite Cellebrite's March 2021 announcement that it would cease operations in Russia, evidence shows the company's phone-cracking technology was subsequently used against a dissident, indicating Russia retained functional copies. This exposes a critical gap in vendor exit strategies: cutting off support and licensing does not guarantee removal of already-deployed capabilities from authoritarian customers. The finding raises urgent questions about accountability mechanisms for dual-use surveillance technology exports.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/russia-used-cellebrite-tool-after-company-pulled-out-of-country"
+          "headline": "U.S. Conducts Direct Strike on Iranian Forces Despite Active Peace Memorandum",
+          "summary": "The U.S. military struck Iranian assets in response to an Iranian attack on a commercial vessel transiting the Strait of Hormuz, marking the first direct kinetic exchange since a peace memorandum was signed between the two countries. The strike signals that the memorandum has not deterred Iranian aggression against maritime traffic in one of the world's most strategically critical chokepoints. Analysts should monitor whether this triggers Iranian retaliation, shifts in Houthi or proxy activity, or formal diplomatic fallout from the memorandum parties.",
+          "source": "TWZ",
+          "url": "https://www.twz.com/news-features/u-s-carries-out-first-strike-on-iran-since-peace-memorandum-signed"
         },
         {
-          "headline": "Bellingcat details AI-assisted pipeline for detecting civilian harm incidents on Telegram",
-          "summary": "Bellingcat developed and tested a machine learning model trained on over 2,500 geolocated civilian harm incidents from Russia's invasion of Ukraine to automatically rank Telegram posts by their likelihood of documenting such events. The approach offers a scalable method for OSINT researchers to triage high-volume social media streams in active conflict zones, reducing manual review burden. Watch for broader adoption of similar triage models by human rights documentation organizations and war crimes investigators.",
-          "source": "bellingcat",
-          "url": "https://www.bellingcat.com/resources/2026/06/25/how-to-use-ai-to-help-find-civilian-harm-conflict-report-monitor-war-machine-learning-telegram/"
-        },
-        {
-          "headline": "Cyberattack disrupts Ukrainian state postal service app amid ongoing infrastructure targeting",
-          "summary": "Ukraine's national postal operator reported service disruptions to its mobile application following a suspected cyberattack, with no attribution made public. The incident fits an established pattern of Russian-aligned actors targeting Ukrainian civilian infrastructure and public-facing services to erode public trust and operational continuity. Attribution and scope remain unclear, making this one to monitor as technical details emerge.",
+          "headline": "Apple Removes VK Ecosystem Apps from App Store, Russia Cries Political Censorship",
+          "summary": "Apple pulled VKontakte, VK Music, VK Messenger, VK Video, Odnoklassniki, and Mail.ru from its App Store, effectively cutting off iOS users from Russia's dominant social and communication platforms. Moscow characterized the removals as politically motivated censorship, a framing that will likely fuel domestic narratives justifying further Russian internet sovereignty measures. This move has intelligence relevance as VK platforms have historically been monitored for open-source collection on Russian public sentiment and military-related discourse.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/ukraine-state-postal-operator-reports-disruption"
+          "url": "https://therecord.media/russia-accuses-apple-of-political-censorship-after-vk-removal"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "Active exploitation of OT-adjacent vulnerabilities and a contested water utility breach claim highlight an elevated threat environment for industrial systems.",
+      "intro": "The ICS/OT threat landscape today centers on active exploitation of industrial software, with CISA confirming the first known in-the-wild attacks against a widely used product lifecycle management platform.",
       "items": [
         {
-          "headline": "Lantronix Serial-to-IP Converter Vulnerability Actively Exploited Following BRIDGE:BREAK Research Disclosure",
-          "summary": "CVE-2025-67038, a flaw in Lantronix serial-to-IP converters identified during the BRIDGE:BREAK research project in April, is now being actively exploited in the wild. These devices sit at the boundary between legacy serial OT equipment and IP networks, making them a high-value pivot point for attackers seeking to reach operational technology systems. Organizations using Lantronix converters in industrial environments should treat this as a priority patch given the direct OT exposure.",
-          "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/lantronix-serial-to-ip-converter-flaw-exploited-in-attacks-after-ot-threat-warning/"
-        },
-        {
-          "headline": "PTC Windchill RCE Vulnerability Sees First Confirmed In-the-Wild Exploitation",
-          "summary": "CISA has added CVE-2026-12569, a remote code execution flaw in PTC Windchill, to its Known Exploited Vulnerabilities catalog after confirming active exploitation. Windchill is widely used as a product lifecycle management platform in manufacturing and defense supply chains, meaning successful exploitation could expose sensitive engineering data or provide initial access into industrial networks. Organizations running Windchill should apply patches immediately and audit for signs of compromise.",
+          "headline": "CISA Confirms Active Exploitation of PTC Windchill Remote Code Execution Flaw",
+          "summary": "CISA has added CVE-2026-12569, a remote code execution vulnerability in PTC Windchill, to its Known Exploited Vulnerabilities catalog — marking the first confirmed in-the-wild exploitation of this flaw. Windchill is a widely deployed product lifecycle management (PLM) system used across manufacturing, defense, and critical infrastructure sectors, making a working RCE exploit particularly serious. Organizations running Windchill should treat patching as urgent and audit for signs of compromise, as PLM systems often hold sensitive engineering and design data.",
           "source": "SecurityWeek",
           "url": "https://www.securityweek.com/first-ever-exploitation-of-ptc-windchill-vulnerability-discovered-in-the-wild/"
-        },
-        {
-          "headline": "Iranian Handala Group Failed to Reach OT Systems in California Water Utility Attack",
-          "summary": "California Water Service confirmed, following a Mandiant-assisted investigation, that the Iranian threat group Handala did not breach any operational technology systems despite claiming the ability to disrupt water supply. While the outcome is reassuring, the incident underscores that water utilities remain active targets for Iranian actors seeking to demonstrate disruptive capability. The gap between attacker claims and actual OT access is worth monitoring, as future intrusions may not stay confined to IT networks.",
-          "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/cal-water-finds-no-evidence-of-ot-activity-after-hackers-claimed-they-could-disrupt-water-supply/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 98,
-    "items_published": 18
+    "articles_reviewed": 71,
+    "items_published": 15
   }
 }
