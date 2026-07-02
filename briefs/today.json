@@ -1,156 +1,150 @@
 {
-  "date": "2026-07-01",
-  "generated_at": "2026-07-01T09:05:29.637601+00:00",
-  "issue": 62,
-  "executive_summary": "Today's intelligence picture is defined by two reinforcing macro-themes: accelerating vulnerability of critical infrastructure to cyber exploitation, and intensifying great-power competition reshaping both military posture and institutional intelligence priorities. The cyber and ICS/OT sections together paint a serious picture of systemic exposure across industrial control systems, healthcare networks, cloud environments, and enterprise software, with active exploitation already underway in several cases — notably the Microsoft Defender zero-day and Oracle EBS payment module — suggesting threat actors are moving faster than defenders can patch. The military and geopolitical sections are directly connected: U.S. and allied investment in AI-guided autonomous systems, long-range strike capabilities, and Pacific operational readiness maps almost precisely onto the identified gaps in Taiwan contingency planning and Hezbollah's evolving drone threat, indicating that policymakers and military planners are responding — however incrementally — to the same threat vectors analysts are flagging. The intelligence community itself appears to be in a moment of structural transition, with the CIA signaling a major AI pivot and OMB absorbing budget oversight of the intelligence enterprise, which raises legitimate questions about whether institutional reorganization is keeping pace with the operational demands reflected across every other section of today's report.",
+  "date": "2026-07-02",
+  "generated_at": "2026-07-02T09:01:59.159271+00:00",
+  "issue": 63,
+  "executive_summary": "Today's intelligence picture is dominated by two reinforcing themes: an accelerating and increasingly accessible cyber threat environment, and a shifting strategic landscape in the Indo-Pacific that carries direct implications for critical infrastructure and national security. On the cyber side, the convergence of LLM-assisted ransomware development, Phishing-as-a-Service platforms, actively exploited Microsoft and Citrix vulnerabilities, and the simultaneous breach of multiple major Japanese corporations suggests a threat environment where offensive tools are commoditizing faster than defenses are maturing — a concern amplified by the watchdog warning that Pentagon weapons fielding is already outpacing quality controls. The Japan breach wave is a thread worth treating as a potential coordinated campaign rather than coincidence, particularly given China's known targeting of Japanese industry and the broader Indo-Pacific military posturing visible in the Marine Littoral Regiment exercises and the Pentagon's new autonomous systems office — both signals of accelerating U.S. preparation for a Taiwan contingency. Geopolitically, Bangladesh's pivot toward Beijing and NATO's structural evolution under American political pressure together suggest that U.S. alliance architecture is under simultaneous stress at both the Indo-Pacific and transatlantic seams, meaning adversaries may be probing for opportunity across multiple theaters at once.",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "A wave of ICS/OT advisories dominates the threat landscape today, while a new CitrixBleed-variant vulnerability signals continued risk to enterprise network infrastructure.",
+      "intro": "Today's threat picture is defined by increasingly sophisticated phishing infrastructure, active exploitation of enterprise software, and a wave of corporate data breaches across multiple sectors.",
       "items": [
         {
-          "headline": "New CitrixBleed-style pre-auth memory overread vulnerability found in Citrix NetScaler",
-          "summary": "WatchTowr Labs has disclosed CVE-2026-8451, a pre-authentication memory overread vulnerability in Citrix NetScaler, drawing explicit comparisons to the original CitrixBleed flaw that was heavily exploited by ransomware groups in 2023-2024. The vulnerability requires no credentials to exploit, raising the risk profile significantly for any internet-exposed NetScaler instances. Organizations should treat this as high priority for patching, as prior CitrixBleed iterations saw rapid weaponization within days of public disclosure.",
-          "source": "watchTowr Labs",
-          "url": "https://labs.watchtowr.com/citrixbleed-to-infinity-and-beyond-citrix-netscaler-pre-auth-memory-overread-cve-2026-8451/"
+          "headline": "Phishing-as-a-Service Platform Targets Microsoft 365 with Token Theft and BEC Capabilities",
+          "summary": "Cisco Talos has exposed ARToken, an affiliate panel for the EvilTokens phishing-as-a-service operation offering over 80 API endpoints enabling device code phishing, Primary Refresh Token hijacking, and SharePoint data exfiltration against Microsoft 365 environments. The platform's affiliate model lowers the barrier for business email compromise operations significantly. Security teams should audit conditional access policies and monitor for anomalous device code authentication flows.",
+          "source": "Cisco Talos Blog",
+          "url": "https://blog.talosintelligence.com/artoken-inside-an-eviltokens-affiliate-panel-targeting-microsoft-365/"
         },
         {
-          "headline": "CISA warns of critical Delta Electronics PLC flaws enabling unauthenticated remote control",
-          "summary": "CISA's advisory on the Delta Electronics DVP12SE PLC identifies vulnerabilities that allow remote attackers to issue commands, modify operational values, and alter device behavior without any authentication. This class of flaw is particularly dangerous in industrial environments where PLCs directly manage physical processes. Operators of affected Delta devices should isolate or patch immediately, as unauthenticated control-plane access represents a direct path to operational disruption or sabotage.",
+          "headline": "CISA Flags Actively Exploited Microsoft SharePoint Deserialization Flaw",
+          "summary": "CISA added CVE-2026-45659, a deserialization of untrusted data vulnerability in Microsoft SharePoint Server, to its Known Exploited Vulnerabilities catalog based on evidence of active in-the-wild exploitation. SharePoint's broad enterprise deployment makes this a high-priority patching target, particularly for organizations with internet-facing SharePoint instances. Federal agencies face mandatory remediation deadlines; private sector organizations should treat this with equivalent urgency.",
           "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-181-07"
+          "url": "https://www.cisa.gov/news-events/alerts/2026/07/01/cisa-adds-one-known-exploited-vulnerability-catalog"
         },
         {
-          "headline": "StoneFly Storage Concentrator vulnerabilities allow root-level command execution across networked systems",
-          "summary": "CISA flagged critical flaws in StoneFly Storage Concentrator that could let attackers gain broad unauthorized access, execute arbitrary commands with root privileges, and pivot across interconnected systems. Storage infrastructure is a high-value target for ransomware actors, and root-level access compounds the risk of data exfiltration alongside operational disruption. The multi-vector nature of these vulnerabilities — spanning access control, command injection, and cross-system action — makes them a priority for enterprise storage administrators.",
-          "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-181-06"
+          "headline": "Researchers Demonstrate Functional Browser-Only Ransomware Built with LLM Assistance",
+          "summary": "Check Point Research has documented a practical ransomware attack technique that operates entirely within the browser, developed in part by leveraging large language model assistance to overcome implementation hurdles. The research illustrates a maturation of AI-assisted malware development from theoretical exercises to deployable attack tools. This raises the floor for what less-skilled threat actors can build and signals that browser-based ransomware should be incorporated into enterprise threat models.",
+          "source": "Check Point Research",
+          "url": "https://research.checkpoint.com/2026/browser-only-ransomware-from-llm-hallucinations-to-a-practical-attack-technique/"
         },
         {
-          "headline": "OFFIS DCMTK medical imaging toolkit carries multiple exploitable flaws affecting healthcare infrastructure",
-          "summary": "CISA issued a medical advisory covering several CVEs in the OFFIS DCMTK Toolkit (versions 3.7.0 and below), a widely used open-source library for DICOM medical imaging, with vulnerabilities enabling file writes, unauthorized data access, memory exhaustion, and process crashes. DCMTK's broad deployment across hospital PACS systems and imaging devices means the attack surface is significant. Healthcare organizations should audit their DCMTK versions and apply patches, given that medical device exploitation can directly affect patient care continuity.",
-          "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-181-01"
+          "headline": "Scattered Spider Teen Extradited to US as Japanese Corporate Breach Wave Continues",
+          "summary": "A 19-year-old suspect tied to the Scattered Spider hacking collective has been extradited to the United States, with charges including a 2025 breach of a luxury jewelry retailer, signaling continued law enforcement pressure on the group. Separately, major Japanese firms including Aflac's Tokyo operations, brewer Sapporo, Nidec, and KDDI have disclosed recent data breaches, pointing to sustained targeting of large corporate entities across sectors. The confluence of enforcement actions and ongoing breaches underscores that neither deterrence nor corporate hardening is yet keeping pace with threat actor activity.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/teen-suspect-in-scattered-spider-hacks-extradited-to-us"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "A Chinese think tank's framing of U.S.-China competition, unresolved Hezbollah threats, Taiwan invasion analysis, and Kurdish realignment define today's geopolitical landscape as major power dynamics and regional fault lines shift simultaneously.",
+      "intro": "Today's geopolitical picture is defined by shifting alliances and strategic recalibrations across Asia, the Atlantic, and the Western Hemisphere.",
       "items": [
         {
-          "headline": "Chinese Think Tank Quietly Reframes U.S.-China Rivalry During Trump's Beijing Summit",
-          "summary": "On the day of Trump's May 2026 state visit to China, the China Institutes of Contemporary International Relations — a think tank with direct ties to Chinese intelligence — published a report outlining Beijing's preferred framework for coexistence with Washington. The report drew almost no media attention despite offering a rare window into how China's strategic community conceptualizes the bilateral competition. Analysts should treat this document as a primary source for understanding Beijing's negotiating posture and red lines heading into any post-summit diplomatic process.",
-          "source": "War on the Rocks",
-          "url": "https://warontherocks.com/lost-in-translation-how-a-premier-chinese-think-tank-views-u-s-chinese-competition/"
+          "headline": "Bangladesh pivots toward Beijing, signaling a realignment away from India",
+          "summary": "Prime Minister Tarique Rahman's visit to China produced a declared 'new era' in bilateral ties, a pointed signal given Bangladesh's historically close relationship with New Delhi. The shift reflects broader regional competition between China and India for influence in South Asia. Watch whether India responds with economic or diplomatic countermeasures, and whether Rahman uses Chinese leverage to extract concessions from New Delhi.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/07/01/bangladesh-china-rahman-visit-diplomacy-india/"
         },
         {
-          "headline": "China Would Need to Achieve Three Military Firsts to Successfully Invade Taiwan",
-          "summary": "A new analysis argues that a Chinese amphibious assault on Taiwan would require accomplishing three operational feats never achieved in modern military history — not scale alone, but simultaneous complexity in combined arms, logistics, and contested maritime projection. Even with lessons drawn from Normandy, the operational conditions facing the PLA are categorically different and far less permissive. This analysis matters for defense planners calibrating deterrence timelines and capability investment priorities.",
+          "headline": "NATO's transatlantic framework survives Trump but emerges structurally different",
+          "summary": "Analysis ahead of the NATO summit argues the alliance is not dissolving but undergoing a fundamental renegotiation of burden-sharing, threat prioritization, and U.S. commitment levels. European members have accelerated defense spending and strategic autonomy initiatives precisely because American reliability is now conditional. The summit's outcomes will test whether renegotiation produces durable architecture or managed ambiguity that China and Russia can exploit.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/07/01/nato-summit-transatlantic-alliance-dead-alive-trump-russia-defense-geopolitics/"
+        },
+        {
+          "headline": "Venezuela's earthquake disasters expose fractures in Maduro regime's inner circle",
+          "summary": "The political response to recent earthquakes has revealed Delcy Rodríguez's weakening grip on power within the Maduro government, suggesting internal competition is intensifying. Natural disasters often act as stress tests for authoritarian regimes, accelerating succession dynamics and foreign patron calculations. With U.S. midterms approaching and Cuba also in Washington's sights, instability in Caracas could prompt sharper intervention debates.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/07/01/venezuela-earthquakes-us-politics-rodriguez-maduro-machado/"
+        },
+        {
+          "headline": "China would need to overcome three historically unprecedented military challenges to invade Taiwan",
+          "summary": "A new analysis argues that a Chinese amphibious assault on Taiwan would require simultaneous feats of operational scale, joint coordination, and sustained logistics that no military in history has achieved together — framing the threat as real but the execution bar as extraordinarily high. The piece pushes back on both alarmist and dismissive assessments by grounding the discussion in historical amphibious precedent. The key watch item is whether China's continued military modernization is closing any of these three gaps faster than Western planners assume.",
           "source": "War on the Rocks",
           "url": "https://warontherocks.com/the-three-nevers-to-invade-taiwan-china-would-have-to-make-military-history-thrice/"
-        },
-        {
-          "headline": "Israel Lacks a Credible Answer to Hezbollah's Evolving Drone Campaign",
-          "summary": "Israeli military officials have publicly acknowledged they have no current solution to Hezbollah's FPV drone threat coming from Lebanon, a significant admission given Israel's reputation for air defense innovation. The drones, influenced by Iranian and battlefield-tested designs, represent a tactical evolution that conventional interception systems were not designed to address cost-effectively. Watch for this gap to accelerate Israeli R&D investment in counter-UAS systems and potentially shape the terms of any future ceasefire arrangement.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/06/30/israel-hezbollah-drones-lebanon-fpv-iran-idf/"
-        },
-        {
-          "headline": "PKK Dissolution and Assad's Fall Reshape Kurdish Strategic Outlook Across the Region",
-          "summary": "The PKK's 2025 decision to dissolve and enter talks with Ankara, combined with the collapse of the Assad regime, has fundamentally altered the political terrain for Kurdish communities across Syria, Turkey, Iraq, and Iran. Experts assess these shifts as creating both openings for autonomy and new vulnerabilities depending on how regional powers respond. The trajectory of Kurdish-Turkish negotiations and U.S. posture toward Syrian Kurdish factions will be the key variables to monitor in the coming months.",
-          "source": "War on the Rocks",
-          "url": "https://warontherocks.com/the-shifting-fortunes-of-the-kurds/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "The U.S. military is accelerating its integration of autonomous systems, AI talent, and classified cloud infrastructure while conducting high-profile joint exercises across the Pacific.",
+      "intro": "The Pentagon is restructuring autonomous systems oversight, grappling with watchdog warnings on accelerated acquisition, and advancing high-end warfighting capabilities across the Indo-Pacific and beyond.",
       "items": [
         {
-          "headline": "Army deploys AI-guided robotic boats for Pacific logistics operations",
-          "summary": "The U.S. Army is fielding autonomous vessels powered by AI to handle logistics in the Indo-Pacific theater, reflecting a broader push to reduce personnel exposure in high-risk resupply missions. The Pacific focus is deliberate — commanders view the region as the most demanding operational environment globally. Watch for how this scales alongside other unmanned ground and air systems being tested under the Army's autonomous breach experiments.",
+          "headline": "Pentagon creates new autonomous systems oversight office under Hegseth directive",
+          "summary": "Defense Secretary Hegseth established the DRPM-UxS, a direct reporting portfolio manager responsible for unmanned offensive and defensive systems, via memo. The move centralizes oversight of a rapidly expanding and strategically critical domain that has previously lacked unified management. Watch whether this office gains meaningful acquisition authority or remains a coordination layer with limited teeth.",
           "source": "Defense One",
-          "url": "https://www.defenseone.com/technology/2026/06/army-using-ai-robot-boats-pacific-logistics/414525/"
+          "url": "https://www.defenseone.com/defense-systems/2026/07/under-new-management-pentagons-autonomous-systems-get-new-oversight/414584/"
         },
         {
-          "headline": "Pentagon's 'War Force' initiative recruits tech talent for AI implementation roles",
-          "summary": "The Defense Department is launching a two-year recruitment program to bring in technologists specifically for AI policy and implementation, operating under OPM's broader Tech Force framework. The initiative signals Pentagon recognition that warfighting increasingly requires software expertise alongside traditional military skills. Scrutiny from lawmakers skeptical of Silicon Valley influence on defense contracting could complicate or constrain how these recruits are deployed.",
+          "headline": "Watchdog warns Pentagon's faster weapons fielding is outpacing its own quality controls",
+          "summary": "A government watchdog found that workforce reductions have led to weapon systems reaching warfighters with undocumented shortfalls in effectiveness, suitability, and survivability. The findings directly challenge the Pentagon's accelerated acquisition push, suggesting speed gains are coming at the cost of systemic rigor. Congressional oversight and contractor accountability are the immediate pressure points to monitor.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/07/01/pentagons-push-to-field-weapons-faster-risks-outrunning-its-own-oversight-watchdog-finds/"
+        },
+        {
+          "headline": "Marine Littoral Regiment validates Indo-Pacific design in Philippine exercise",
+          "summary": "The 3rd Marine Littoral Regiment performed its intended stand-in force mission during a Philippine exercise, demonstrating the unit's maturing ability to operate within an adversary's weapons engagement zone. The MLR concept is central to U.S. strategy for a potential Taiwan Strait or South China Sea contingency, and this validation signals operational readiness is advancing. RIMPAC multilateral marine infantry drills running in parallel reinforce the broader allied integration effort.",
           "source": "Defense One",
-          "url": "https://www.defenseone.com/technology/2026/06/pentagon-launches-war-force-initiative-onboard-tech-talent/414523/"
+          "url": "https://www.defenseone.com/threats/2026/07/philippine-exercise-showcased-marine-littoral-regiments-growth/414557/"
         },
         {
-          "headline": "Japan sinks decommissioned U.S. ship in live-fire Pacific exercise",
-          "summary": "A Japanese torpedo struck and sank the USS Juneau during the Valiant Shield 2026 multinational SINKEX exercise off Guam, demonstrating allied interoperability and precision strike capability. SINKEX events serve dual purposes — weapons validation and joint force coordination — and this one carries strategic signaling value given rising tensions in the Pacific. The choice of Guam as the operational area underscores the island's centrality to U.S. Indo-Pacific posture.",
+          "headline": "Navy aviator missing after Arabian Sea helicopter emergency landing",
+          "summary": "A U.S. Navy aircrewman went missing after a helicopter carrying four personnel made an emergency landing in the Arabian Sea, triggering a search and rescue operation. The incident highlights operational risk in a maritime theater that remains persistently active for U.S. naval forces. Details on the aircraft type, unit, and circumstances of the emergency have not yet been fully disclosed.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-navy/2026/06/30/japanese-torpedo-sends-us-ship-to-the-ocean-floor-during-valiant-shield-exercise/"
-        },
-        {
-          "headline": "SOCOM seeks long-range loitering munitions deployable from MC-130J gunships",
-          "summary": "U.S. Special Operations Command is soliciting designs for extended-range kamikaze drones that can be launched from MC-130J aircraft, enabling deep-strike capability against high-value targets without exposing special operations forces. The requirement reflects lessons absorbed from Ukraine and other theaters where loitering munitions have reshaped offensive strike dynamics. Vendors able to combine range, payload, and air-launch compatibility will be best positioned to compete for this contract.",
-          "source": "Military Times",
-          "url": "https://www.militarytimes.com/industry/techwatch/2026/06/30/socom-is-seeking-a-long-range-kamikaze-drone/"
+          "url": "https://www.militarytimes.com/news/your-navy/2026/07/01/us-navy-aviator-missing-after-helicopter-makes-emergency-landing-in-arabian-sea/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "The U.S. intelligence community is undergoing significant structural and technological shifts, while open-source tools continue to expand analytical capabilities for tracking real-world events.",
+      "intro": "Today's intelligence picture centers on AI export policy shifts and a wave of corporate data breaches in Japan, with limited high-signal OSINT items in the feed.",
       "items": [
         {
-          "headline": "CIA Director frames AI as existential-grade threat, signals major agency tech pivot",
-          "summary": "Director John Ratcliffe publicly compared AI capabilities to 'digital nuclear weapons,' signaling the CIA is treating AI as both a transformative tool and a top-tier threat vector. The framing elevates AI from an operational asset to a strategic concern at the highest levels of U.S. intelligence. Watch for downstream policy shifts in how the IC funds, governs, and competes for AI talent.",
+          "headline": "US government removes export restrictions on Anthropic's advanced cybersecurity AI models",
+          "summary": "The Biden-era export controls on Anthropic's frontier AI models have been lifted following agreements between the company and the U.S. government, expanding the potential international availability of powerful cybersecurity-capable AI tools. This marks a notable policy reversal that could affect how allied and partner nations access and deploy AI for defensive cyber operations. Watch for how competitors and adversaries respond to broader proliferation of these capabilities.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/cia-chief-ratcliffe-highlights-major-shifts-in-agencys-tech-approach"
+          "url": "https://therecord.media/us-lifts-export-controls-anthropic-cyber-models"
         },
         {
-          "headline": "OMB Director Vought absorbs intelligence budget oversight role after senior official's departure",
-          "summary": "Russell Vought has assumed direct control over intelligence community spending plans following the exit of Amaryllis Fox Kennedy, who had held overlapping roles across the IC and OMB. Centralizing intelligence budget authority in a politically appointed OMB director is an unusual structural move with potential implications for IC independence and resource allocation. Analysts should monitor whether this consolidation affects funding priorities for technical collection, human intelligence, or emerging programs.",
+          "headline": "Major Japanese corporations across multiple sectors report simultaneous data breaches",
+          "summary": "Aflac's Japan arm, brewer Sapporo, manufacturer Nidec, and telecom KDDI have all disclosed recent data breaches, suggesting either a coordinated campaign targeting Japanese industry or systemic security deficiencies across the country's corporate sector. The cross-sector spread — insurance, consumer goods, manufacturing, and telecoms — indicates threat actors are opportunistically exploiting Japanese enterprises rather than targeting a single vertical. Analysts should watch for attribution indicators linking these incidents to known APT groups with a history of targeting Japanese firms.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/intelligence-budget-super-user-job-russ-vought-omb"
-        },
-        {
-          "headline": "Bellingcat publishes OSINT field guide for tracking and assessing wildfire damage",
-          "summary": "Bellingcat has released a practical methodology guide covering open-source tools for detecting, locating, and assessing wildfire damage, starting with NASA's fire-tracking systems and extending to post-detection analysis. The guide has direct utility for journalists, emergency responders, and analysts tracking environmental events in near real time. As climate-related crises increasingly intersect with humanitarian and security concerns, standardized OSINT frameworks for natural disasters are becoming operationally relevant.",
-          "source": "bellingcat",
-          "url": "https://www.bellingcat.com/resources/how-tos/2026/06/30/burning-forests-tools-for-tracking-and-reporting-wildfire-damage/"
+          "url": "https://therecord.media/japan-cyber-breaches-aflac-sapporo-nidec-kddi"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "Today's ICS/OT-relevant threat landscape is thin on dedicated industrial control system news, but broader vulnerabilities in enterprise software and authentication systems carry direct risk for operational technology environments.",
+      "intro": "Today's ICS/OT threat picture is thin on sector-specific incidents, though enterprise-facing vulnerabilities in widely deployed network and cloud infrastructure carry indirect risk to operational technology environments.",
       "items": [
         {
-          "headline": "Oracle E-Business Suite Payment Module Under Active Exploitation",
-          "summary": "Attackers have begun exploiting a critical unauthenticated vulnerability in Oracle E-Business Suite's Payments product, allowing full system takeover without credentials. Oracle EBS is widely deployed in enterprise environments that often intersect with OT procurement and operational workflows, making this a lateral movement risk for hybrid IT/OT networks. Organizations running EBS should treat patching as urgent and audit for signs of compromise.",
+          "headline": "Citrix NetScaler Flaws Include DoS 'HTTP/2 Bomb' and Memory Disclosure Bug Reminiscent of CitrixBleed",
+          "summary": "Citrix patched six NetScaler vulnerabilities, notably an HTTP/2 resource exhaustion attack capable of taking appliances offline and a high-severity memory disclosure flaw echoing the 2023 CitrixBleed bug. NetScaler is widely deployed as a network gateway in industrial and critical infrastructure environments, making unpatched instances a meaningful pivot risk for OT network access. Organizations using NetScaler in front of OT DMZs should treat patching as urgent.",
           "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/exploitation-of-recent-oracle-e-business-suite-vulnerability-begins/"
+          "url": "https://www.securityweek.com/citrix-patches-netscaler-vulnerabilities-including-new-http-2-bomb-attack/"
         },
         {
-          "headline": "Microsoft Defender Zero-Day Leveraged in Live Ransomware Campaigns",
-          "summary": "CVE-2026-33825, dubbed BlueHammer, was exploited as a zero-day in ransomware attacks before Microsoft issued a patch, targeting the Defender endpoint protection platform. Many OT environments rely on Windows-based engineering workstations and HMIs protected by Defender, making this a direct exposure vector for industrial networks. Operators should verify patch deployment across all Windows assets in both IT and OT segments.",
-          "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/bluehammer-vulnerability-exploited-in-ransomware-attacks/"
-        },
-        {
-          "headline": "Massive Azure Credential Spray Campaign Signals Escalating Cloud-to-OT Risk",
-          "summary": "A large-scale password spray operation generated over 81 million login attempts against Azure CLI environments, originating from infrastructure tied to hosting provider LSHIY. As industrial organizations increasingly adopt cloud-connected SCADA and remote monitoring platforms integrated with Azure, compromised cloud credentials can serve as entry points into OT management interfaces. Organizations should enforce MFA on all Azure accounts and audit CLI access logs for anomalous authentication patterns.",
+          "headline": "81 Million-Attempt Password Spray Campaign Targets Azure CLI Accounts",
+          "summary": "A large-scale credential stuffing campaign directed at Azure CLI made over 81 million login attempts, sourced primarily from infrastructure tied to hosting provider LSHIY. Azure is increasingly used as a management and monitoring plane for hybrid OT/IT environments, meaning compromised cloud credentials can translate directly into access to industrial telemetry, historian data, or remote access tools. Organizations should audit Azure CLI access logs and enforce MFA on all accounts with OT-adjacent permissions.",
           "source": "SecurityWeek",
           "url": "https://www.securityweek.com/massive-password-spray-campaign-targeting-azure-cli/"
+        },
+        {
+          "headline": "Adobe Patches Seven Maximum-Severity ColdFusion and Campaign Classic Flaws Enabling Remote Code Execution",
+          "summary": "Adobe released fixes for critical vulnerabilities in ColdFusion and Campaign Classic, with seven bugs rated 10/10 and capable of arbitrary code execution. While not OT-native software, ColdFusion is present in legacy HMI and plant-floor web application stacks at some industrial facilities, particularly older deployments that have not been modernized. Asset owners should audit internet-exposed ColdFusion instances in or adjacent to OT networks.",
+          "source": "SecurityWeek",
+          "url": "https://www.securityweek.com/adobe-patches-critical-coldfusion-campaign-classic-vulnerabilities/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 99,
-    "items_published": 18
+    "articles_reviewed": 89,
+    "items_published": 17
   }
 }
