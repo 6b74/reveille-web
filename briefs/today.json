@@ -1,150 +1,162 @@
 {
-  "date": "2026-07-02",
-  "generated_at": "2026-07-02T09:01:59.159271+00:00",
-  "issue": 63,
-  "executive_summary": "Today's intelligence picture is dominated by two reinforcing themes: an accelerating and increasingly accessible cyber threat environment, and a shifting strategic landscape in the Indo-Pacific that carries direct implications for critical infrastructure and national security. On the cyber side, the convergence of LLM-assisted ransomware development, Phishing-as-a-Service platforms, actively exploited Microsoft and Citrix vulnerabilities, and the simultaneous breach of multiple major Japanese corporations suggests a threat environment where offensive tools are commoditizing faster than defenses are maturing — a concern amplified by the watchdog warning that Pentagon weapons fielding is already outpacing quality controls. The Japan breach wave is a thread worth treating as a potential coordinated campaign rather than coincidence, particularly given China's known targeting of Japanese industry and the broader Indo-Pacific military posturing visible in the Marine Littoral Regiment exercises and the Pentagon's new autonomous systems office — both signals of accelerating U.S. preparation for a Taiwan contingency. Geopolitically, Bangladesh's pivot toward Beijing and NATO's structural evolution under American political pressure together suggest that U.S. alliance architecture is under simultaneous stress at both the Indo-Pacific and transatlantic seams, meaning adversaries may be probing for opportunity across multiple theaters at once.",
+  "date": "2026-07-03",
+  "generated_at": "2026-07-03T09:01:30.460188+00:00",
+  "issue": 64,
+  "executive_summary": "Today's intelligence picture is defined by two reinforcing dynamics: a degradation of Western institutional coherence at precisely the moment adversaries are operating with greater coordination and aggression. Russia is conducting large-scale kinetic strikes against Ukraine while simultaneously attributed with drone overflights of US bases in England and likely leveraging the residential proxy networks dismantled today to obscure offensive cyber operations, suggesting a multi-domain campaign that blurs the line between war and grey-zone activity. On the institutional side, US credibility as a security guarantor is under concurrent strain across multiple theatres - NATO allies face burden-shift signals ahead of Ankara, Iran is extracting economic concessions from talks described as a memorandum of misunderstanding, and the unexplained departure of the US Army Europe and Africa commander introduces leadership uncertainty at a critical moment. The cyber and OT picture compounds this: critical infrastructure attack surfaces are widening, with exploits of Cisco, Citrix, and FortiGate vulnerabilities moving from theoretical to active within hours of disclosure, the GAO confirming real problems with nuclear command aircraft, and the discovery of Pegasus on an MEP investigating spyware abuse suggesting that the oversight mechanisms designed to constrain these tools have themselves been compromised. The thread connecting all four sections is institutional erosion - of alliances, of oversight bodies, of cyber defenses, and of policy continuity - creating windows of opportunity that adversaries",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Today's threat picture is defined by increasingly sophisticated phishing infrastructure, active exploitation of enterprise software, and a wave of corporate data breaches across multiple sectors.",
+      "intro": "Today's cyber landscape is defined by a major law enforcement takedown of a multimillion-device botnet, fresh spyware revelations targeting European legislators, and a wave of critical ICS/OT vulnerabilities demanding immediate attention.",
       "items": [
         {
-          "headline": "Phishing-as-a-Service Platform Targets Microsoft 365 with Token Theft and BEC Capabilities",
-          "summary": "Cisco Talos has exposed ARToken, an affiliate panel for the EvilTokens phishing-as-a-service operation offering over 80 API endpoints enabling device code phishing, Primary Refresh Token hijacking, and SharePoint data exfiltration against Microsoft 365 environments. The platform's affiliate model lowers the barrier for business email compromise operations significantly. Security teams should audit conditional access policies and monitor for anomalous device code authentication flows.",
-          "source": "Cisco Talos Blog",
-          "url": "https://blog.talosintelligence.com/artoken-inside-an-eviltokens-affiliate-panel-targeting-microsoft-365/"
+          "headline": "FBI seizes NetNut proxy service and dismantles Popa botnet tied to two million compromised devices",
+          "summary": "The FBI, working with industry partners, seized hundreds of domains belonging to NetNut, a residential proxy platform operated by Nasdaq-listed Israeli firm Alarum Technologies, following reporting linking it to the Popa botnet — a network of at least two million malware-infected devices. The action signals growing law enforcement willingness to target legitimate-seeming proxy services with criminal infrastructure underneath. Watch whether Alarum faces securities or regulatory consequences given its public listing.",
+          "source": "Krebs on Security",
+          "url": "https://krebsonsecurity.com/2026/07/fbi-seizes-netnut-proxy-platform-popa-botnet/"
         },
         {
-          "headline": "CISA Flags Actively Exploited Microsoft SharePoint Deserialization Flaw",
-          "summary": "CISA added CVE-2026-45659, a deserialization of untrusted data vulnerability in Microsoft SharePoint Server, to its Known Exploited Vulnerabilities catalog based on evidence of active in-the-wild exploitation. SharePoint's broad enterprise deployment makes this a high-priority patching target, particularly for organizations with internet-facing SharePoint instances. Federal agencies face mandatory remediation deadlines; private sector organizations should treat this with equivalent urgency.",
-          "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/alerts/2026/07/01/cisa-adds-one-known-exploited-vulnerability-catalog"
-        },
-        {
-          "headline": "Researchers Demonstrate Functional Browser-Only Ransomware Built with LLM Assistance",
-          "summary": "Check Point Research has documented a practical ransomware attack technique that operates entirely within the browser, developed in part by leveraging large language model assistance to overcome implementation hurdles. The research illustrates a maturation of AI-assisted malware development from theoretical exercises to deployable attack tools. This raises the floor for what less-skilled threat actors can build and signals that browser-based ransomware should be incorporated into enterprise threat models.",
-          "source": "Check Point Research",
-          "url": "https://research.checkpoint.com/2026/browser-only-ransomware-from-llm-hallucinations-to-a-practical-attack-technique/"
-        },
-        {
-          "headline": "Scattered Spider Teen Extradited to US as Japanese Corporate Breach Wave Continues",
-          "summary": "A 19-year-old suspect tied to the Scattered Spider hacking collective has been extradited to the United States, with charges including a 2025 breach of a luxury jewelry retailer, signaling continued law enforcement pressure on the group. Separately, major Japanese firms including Aflac's Tokyo operations, brewer Sapporo, Nidec, and KDDI have disclosed recent data breaches, pointing to sustained targeting of large corporate entities across sectors. The confluence of enforcement actions and ongoing breaches underscores that neither deterrence nor corporate hardening is yet keeping pace with threat actor activity.",
+          "headline": "Pegasus spyware found on phone of MEP who sat on the EU committee investigating commercial spyware abuse",
+          "summary": "Researchers confirmed that Stelios Kouloglou, a former member of the European Parliament's PEGA committee — the body specifically tasked with probing illegal spyware use — was infected with Pegasus on two separate occasions while serving. The targeting of a legislator overseeing spyware oversight is a direct affront to democratic accountability and raises acute questions about who ordered the surveillance. This finding is likely to reignite EU-level calls for tougher export controls on commercial surveillance tools.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/teen-suspect-in-scattered-spider-hacks-extradited-to-us"
+          "url": "https://therecord.media/pegasus-spyware-european-parliament-pega-committee-member"
+        },
+        {
+          "headline": "CISA flags critical firmware upload flaw in CubeSpace satellite reaction wheel used in spacecraft",
+          "summary": "CISA issued an advisory for the CubeSpace CW0057 Reaction Wheel, warning that successful exploitation allows an attacker to upload arbitrary malicious firmware to the device — a significant risk given its use in small satellite systems. Alongside this, advisories for the Gardyn IoT Hub (unauthenticated device control) and ST Engineering iDirect satellite terminals (unauthorized access and denial-of-service) highlight a broad OT/ICS vulnerability disclosure day. The space and satellite sector's expanding attack surface warrants close monitoring as exploitation of such hardware could have mission-critical consequences.",
+          "source": "All CISA Advisories",
+          "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-183-02"
+        },
+        {
+          "headline": "Max Schrems moves to invalidate EU-US Data Privacy Framework following Supreme Court ruling",
+          "summary": "Privacy advocate Max Schrems has notified European officials of plans to legally challenge the EU-U.S. Data Privacy Framework in the wake of a recent U.S. Supreme Court decision, potentially gutting the legal basis for transatlantic personal data transfers by thousands of companies. This is at least the third iteration of this dispute — previous Schrems challenges killed both Safe Harbor and Privacy Shield — and a successful challenge would force a fundamental reassessment of how U.S. firms handle EU user data. Organizations dependent on DPF should begin contingency planning around Standard Contractual Clauses.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/supreme-court-decision-threatens-eu-us-data-sharing"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "Today's geopolitical picture is defined by shifting alliances and strategic recalibrations across Asia, the Atlantic, and the Western Hemisphere.",
+      "intro": "NATO cohesion, Russian escalation against Ukraine, and a murky US-Iran diplomatic track dominate today's geopolitical landscape as Washington's commitments to allies remain under scrutiny.",
       "items": [
         {
-          "headline": "Bangladesh pivots toward Beijing, signaling a realignment away from India",
-          "summary": "Prime Minister Tarique Rahman's visit to China produced a declared 'new era' in bilateral ties, a pointed signal given Bangladesh's historically close relationship with New Delhi. The shift reflects broader regional competition between China and India for influence in South Asia. Watch whether India responds with economic or diplomatic countermeasures, and whether Rahman uses Chinese leverage to extract concessions from New Delhi.",
+          "headline": "Russia launches one of its longest drone and missile barrages against Kyiv in retaliation for Ukrainian infrastructure strikes",
+          "summary": "An 11-hour assault on Kyiv using missiles and drones targeted critical infrastructure and caused significant casualties, framed by Moscow as payback for Ukrainian strikes on Russian energy and logistics assets. The tit-for-tat escalation signals a dangerous cycle of deep-strike exchanges that risks broadening infrastructure warfare on both sides. Watch whether Western allies respond with accelerated air defense transfers or impose new constraints on Ukrainian long-range strike operations.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/01/bangladesh-china-rahman-visit-diplomacy-india/"
+          "url": "https://foreignpolicy.com/2026/07/02/russia-ukraine-missiles-drones-kyiv-oil-energy-critical-infrastructure-strikes/"
         },
         {
-          "headline": "NATO's transatlantic framework survives Trump but emerges structurally different",
-          "summary": "Analysis ahead of the NATO summit argues the alliance is not dissolving but undergoing a fundamental renegotiation of burden-sharing, threat prioritization, and U.S. commitment levels. European members have accelerated defense spending and strategic autonomy initiatives precisely because American reliability is now conditional. The summit's outcomes will test whether renegotiation produces durable architecture or managed ambiguity that China and Russia can exploit.",
+          "headline": "Trump administration's NATO posture creates friction ahead of Ankara summit as Hegseth signals European burden shift",
+          "summary": "Defense Secretary Hegseth's June 18 Brussels speech reinforced the administration's intent to redistribute European defense responsibilities, fueling debate over whether the US is executing a managed strategic rebalance or an uncoordinated withdrawal. With the NATO summit in Ankara approaching, the alliance faces pressure to manage Erdogan's agenda while keeping Trump engaged enough to forestall formal force reductions. The summit's final communiqué language on Article 5 commitments and Ukraine will be the key indicator of alliance cohesion.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/01/nato-summit-transatlantic-alliance-dead-alive-trump-russia-defense-geopolitics/"
+          "url": "https://foreignpolicy.com/2026/07/02/nato-summit-ankara-trump-rutte-erdogan-ukraine-iran/"
         },
         {
-          "headline": "Venezuela's earthquake disasters expose fractures in Maduro regime's inner circle",
-          "summary": "The political response to recent earthquakes has revealed Delcy Rodríguez's weakening grip on power within the Maduro government, suggesting internal competition is intensifying. Natural disasters often act as stress tests for authoritarian regimes, accelerating succession dynamics and foreign patron calculations. With U.S. midterms approaching and Cuba also in Washington's sights, instability in Caracas could prompt sharper intervention debates.",
+          "headline": "US-Iran talks produce a 'memorandum of misunderstanding' as Tehran extracts early economic benefits",
+          "summary": "Despite unresolved core disputes, Iran appears to be leveraging ongoing diplomatic engagement in Doha to ease sanctions pressure and sustain oil exports, gaining tangible economic relief before any formal agreement is reached. Washington's willingness to allow diplomatic momentum to continue without locking in concessions risks validating a pattern where Iran benefits from process rather than outcome. The trajectory of Strait of Hormuz posturing and Iranian export volumes over the next 30 days will reveal whether Tehran is negotiating in good faith or running out the clock.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/01/venezuela-earthquakes-us-politics-rodriguez-maduro-machado/"
+          "url": "https://foreignpolicy.com/2026/07/02/mou-iran-us-talks-doha-strait-hormuz-oil-sanctions-profits-exports/"
         },
         {
-          "headline": "China would need to overcome three historically unprecedented military challenges to invade Taiwan",
-          "summary": "A new analysis argues that a Chinese amphibious assault on Taiwan would require simultaneous feats of operational scale, joint coordination, and sustained logistics that no military in history has achieved together — framing the threat as real but the execution bar as extraordinarily high. The piece pushes back on both alarmist and dismissive assessments by grounding the discussion in historical amphibious precedent. The key watch item is whether China's continued military modernization is closing any of these three gaps faster than Western planners assume.",
+          "headline": "Analysts warn that Western PLA assessments are structurally biased toward US-centric scenario framing",
+          "summary": "A critique from RAND-affiliated researchers argues that Chinese military studies consistently frame analysis around how Beijing reacts to American actions, rather than modeling independent PLA strategic logic and initiative. This methodological blind spot could produce dangerously inaccurate wargame outcomes and policy recommendations, particularly as China develops more autonomous operational concepts. Correcting the bias requires investment in red-team expertise that genuinely internalizes PLA doctrine rather than mirroring US assumptions.",
           "source": "War on the Rocks",
-          "url": "https://warontherocks.com/the-three-nevers-to-invade-taiwan-china-would-have-to-make-military-history-thrice/"
+          "url": "https://warontherocks.com/the-blind-spots-in-chinese-military-studies/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "The Pentagon is restructuring autonomous systems oversight, grappling with watchdog warnings on accelerated acquisition, and advancing high-end warfighting capabilities across the Indo-Pacific and beyond.",
+      "intro": "Pentagon leadership is reshaping defense bureaucracy and acquisition at pace, while personnel and command-level signals point to ongoing turbulence across the services.",
       "items": [
         {
-          "headline": "Pentagon creates new autonomous systems oversight office under Hegseth directive",
-          "summary": "Defense Secretary Hegseth established the DRPM-UxS, a direct reporting portfolio manager responsible for unmanned offensive and defensive systems, via memo. The move centralizes oversight of a rapidly expanding and strategically critical domain that has previously lacked unified management. Watch whether this office gains meaningful acquisition authority or remains a coordination layer with limited teeth.",
-          "source": "Defense One",
-          "url": "https://www.defenseone.com/defense-systems/2026/07/under-new-management-pentagons-autonomous-systems-get-new-oversight/414584/"
-        },
-        {
-          "headline": "Watchdog warns Pentagon's faster weapons fielding is outpacing its own quality controls",
-          "summary": "A government watchdog found that workforce reductions have led to weapon systems reaching warfighters with undocumented shortfalls in effectiveness, suitability, and survivability. The findings directly challenge the Pentagon's accelerated acquisition push, suggesting speed gains are coming at the cost of systemic rigor. Congressional oversight and contractor accountability are the immediate pressure points to monitor.",
+          "headline": "Hegseth centralizes drone acquisition authority in new Pentagon office",
+          "summary": "Defense Secretary Hegseth has established a consolidated drone office, stripping procurement authority from the individual military services to accelerate fielding timelines. The move reflects a broader push to cut bureaucratic friction from weapons development, but centralizing authority also risks creating new bottlenecks and inter-service friction. Watch whether this model gets applied to other emerging technology domains like directed energy or autonomous systems.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/07/01/pentagons-push-to-field-weapons-faster-risks-outrunning-its-own-oversight-watchdog-finds/"
+          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/07/02/hegseth-creates-powerful-new-drone-office-pulling-authority-from-the-military-services/"
         },
         {
-          "headline": "Marine Littoral Regiment validates Indo-Pacific design in Philippine exercise",
-          "summary": "The 3rd Marine Littoral Regiment performed its intended stand-in force mission during a Philippine exercise, demonstrating the unit's maturing ability to operate within an adversary's weapons engagement zone. The MLR concept is central to U.S. strategy for a potential Taiwan Strait or South China Sea contingency, and this validation signals operational readiness is advancing. RIMPAC multilateral marine infantry drills running in parallel reinforce the broader allied integration effort.",
-          "source": "Defense One",
-          "url": "https://www.defenseone.com/threats/2026/07/philippine-exercise-showcased-marine-littoral-regiments-growth/414557/"
-        },
-        {
-          "headline": "Navy aviator missing after Arabian Sea helicopter emergency landing",
-          "summary": "A U.S. Navy aircrewman went missing after a helicopter carrying four personnel made an emergency landing in the Arabian Sea, triggering a search and rescue operation. The incident highlights operational risk in a maritime theater that remains persistently active for U.S. naval forces. Details on the aircraft type, unit, and circumstances of the emergency have not yet been fully disclosed.",
+          "headline": "Commander of US Army Europe and Africa steps down without explanation",
+          "summary": "Gen. Christopher Donahue relinquished command of US Army Europe and Africa, a critical theater command overseeing support to Ukraine, with no reason given by the Army. Ukrainian military chief Syrskyi publicly credited Donahue with saving thousands of Ukrainian lives, suggesting the departure carries significant operational weight beyond a routine rotation. An unexplained leadership change at this command warrants close attention given the ongoing war in Ukraine.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-navy/2026/07/01/us-navy-aviator-missing-after-helicopter-makes-emergency-landing-in-arabian-sea/"
+          "url": "https://www.militarytimes.com/news/your-army/2026/07/02/gen-christopher-donahue-relinquishes-command-of-us-army-europe-and-africa/"
+        },
+        {
+          "headline": "Navy ramps up production request for advanced anti-radar missile to 600 units annually",
+          "summary": "Naval Air Systems Command has issued an industry query on whether suppliers can sustain production of up to 600 Advanced Emission Suppression Missiles per year, signaling a significant demand signal for electronic warfare strike capability. The missile is designed to suppress enemy radar, a mission critical in contested environments like the Indo-Pacific. This production push aligns with broader DoD efforts to build munitions stockpiles ahead of potential high-end conflict.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/industry/techwatch/2026/07/02/us-navy-seeks-to-boost-production-of-new-anti-radar-missile/"
+        },
+        {
+          "headline": "Defense startups tap automotive and energy sector supply chains to accelerate weapons output",
+          "summary": "Emerging defense firms are sourcing automotive chips and fracking-grade components to reduce lead times and costs on Pentagon contracts, bypassing traditional defense-specific supply chains that have struggled with delivery timelines. The approach reflects a maturing dual-use industrial strategy but raises questions about component certification and long-term reliability under operational stress. This trend will likely intensify as DoD pushes primes and non-traditionals alike to compress production schedules.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/industry/techwatch/2026/07/02/defense-startups-raid-auto-and-fracking-sectors-for-parts-to-speed-weapons-output/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Today's intelligence picture centers on AI export policy shifts and a wave of corporate data breaches in Japan, with limited high-signal OSINT items in the feed.",
+      "intro": "Open-source research is surfacing Russian intelligence activity over NATO soil while allied governments struggle with internal political and procurement disruptions.",
       "items": [
         {
-          "headline": "US government removes export restrictions on Anthropic's advanced cybersecurity AI models",
-          "summary": "The Biden-era export controls on Anthropic's frontier AI models have been lifted following agreements between the company and the U.S. government, expanding the potential international availability of powerful cybersecurity-capable AI tools. This marks a notable policy reversal that could affect how allied and partner nations access and deploy AI for defensive cyber operations. Watch for how competitors and adversaries respond to broader proliferation of these capabilities.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/us-lifts-export-controls-anthropic-cyber-models"
+          "headline": "IISS Assessment Attributes Drone Overflights of U.S. Bases in England to Russia",
+          "summary": "The International Institute for Strategic Studies has concluded Russia is 'highly likely' responsible for a series of drone incursions over U.S. military installations in England, situating the incidents within a broader pattern of Russian drone harassment across Europe since 2024. The findings represent a significant OSINT and open-source analytical contribution, moving the attribution from speculation to assessed likelihood. Watch for NATO member responses and whether the UK or U.S. formally adopt this attribution, which would carry diplomatic and potential retaliatory implications.",
+          "source": "TWZ",
+          "url": "https://www.twz.com/air/russia-highly-likely-behind-drone-incursions-over-u-s-bases-in-england-report-concludes"
         },
         {
-          "headline": "Major Japanese corporations across multiple sectors report simultaneous data breaches",
-          "summary": "Aflac's Japan arm, brewer Sapporo, manufacturer Nidec, and telecom KDDI have all disclosed recent data breaches, suggesting either a coordinated campaign targeting Japanese industry or systemic security deficiencies across the country's corporate sector. The cross-sector spread — insurance, consumer goods, manufacturing, and telecoms — indicates threat actors are opportunistically exploiting Japanese enterprises rather than targeting a single vertical. Analysts should watch for attribution indicators linking these incidents to known APT groups with a history of targeting Japanese firms.",
+          "headline": "UK National Cyber Action Plan Shelved as Labour Leadership Uncertainty Stalls Policy",
+          "summary": "The UK government's National Cyber Action Plan, scheduled for release this week, has been postponed due to political turbulence surrounding the Labour Party's leadership contest opening July 9. The delay leaves a gap in publicly communicated cyber strategy at a moment of elevated threat from state actors. Analysts should watch whether the plan's contents leak ahead of formal release and how the leadership transition affects continuity of the UK's cyber posture commitments.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/japan-cyber-breaches-aflac-sapporo-nidec-kddi"
+          "url": "https://therecord.media/launch-of-uk-national-cyber-action-plan-delayed"
+        },
+        {
+          "headline": "GAO Watchdog Confirms Problems with Navy's Nuclear Command Aircraft Program Are No Longer Theoretical",
+          "summary": "The Government Accountability Office has determined that concerns it previously flagged about the Navy's C-130-based replacement for its nuclear command-and-control aircraft have materialized into concrete developmental failures, contributing to program delays. The platform, intended to ensure survivable nuclear communications, sits at the intersection of strategic deterrence and acquisition risk. Continued slippage raises questions about the reliability of U.S. nuclear command architecture during a period of heightened great-power competition.",
+          "source": "TWZ",
+          "url": "https://www.twz.com/nuclear/navys-new-doomsday-plane-delayed-as-watchdog-says-developmental-concerns-are-now-realities"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "Today's ICS/OT threat picture is thin on sector-specific incidents, though enterprise-facing vulnerabilities in widely deployed network and cloud infrastructure carry indirect risk to operational technology environments.",
+      "intro": "Today's OT/ICS threat landscape is dominated by network perimeter vulnerabilities being actively weaponized, with firewall credential theft directly enabling downstream ransomware operations against critical infrastructure.",
       "items": [
         {
-          "headline": "Citrix NetScaler Flaws Include DoS 'HTTP/2 Bomb' and Memory Disclosure Bug Reminiscent of CitrixBleed",
-          "summary": "Citrix patched six NetScaler vulnerabilities, notably an HTTP/2 resource exhaustion attack capable of taking appliances offline and a high-severity memory disclosure flaw echoing the 2023 CitrixBleed bug. NetScaler is widely deployed as a network gateway in industrial and critical infrastructure environments, making unpatched instances a meaningful pivot risk for OT network access. Organizations using NetScaler in front of OT DMZs should treat patching as urgent.",
+          "headline": "Stolen FortiGate Credentials Fueling INC and Lynx Ransomware Campaigns",
+          "summary": "The 'FortiBleed' campaign has leveraged credentials harvested from hundreds of thousands of FortiGate firewall configurations — many belonging to OT-adjacent network segments — to facilitate ransomware intrusions by the INC and Lynx groups. FortiGate devices are widely deployed as perimeter security for industrial networks, making compromised credentials a direct pathway to OT environments. Organizations should audit FortiGate configurations immediately, rotate credentials, and verify segmentation between IT and OT zones.",
           "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/citrix-patches-netscaler-vulnerabilities-including-new-http-2-bomb-attack/"
+          "url": "https://www.securityweek.com/fortibleed-campaign-linked-to-inc-lynx-ransomware-attacks/"
         },
         {
-          "headline": "81 Million-Attempt Password Spray Campaign Targets Azure CLI Accounts",
-          "summary": "A large-scale credential stuffing campaign directed at Azure CLI made over 81 million login attempts, sourced primarily from infrastructure tied to hosting provider LSHIY. Azure is increasingly used as a management and monitoring plane for hybrid OT/IT environments, meaning compromised cloud credentials can translate directly into access to industrial telemetry, historian data, or remote access tools. Organizations should audit Azure CLI access logs and enforce MFA on all accounts with OT-adjacent permissions.",
+          "headline": "New CitrixBleed Variant Exploited Within Hours of Public Disclosure",
+          "summary": "A newly disclosed vulnerability in Citrix NetScaler appliances is being actively exploited using public proof-of-concept code to extract arbitrary memory contents from HTTP responses, a technique capable of leaking session tokens and credentials. NetScaler is commonly used for remote access into OT/ICS management networks, and rapid exploitation leaves a narrow window for patching. Organizations relying on NetScaler for industrial remote access should treat this as a priority patch and monitor for anomalous session activity.",
           "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/massive-password-spray-campaign-targeting-azure-cli/"
+          "url": "https://www.securityweek.com/new-citrixbleed-vulnerability-exploited-immediately-after-public-disclosure/"
         },
         {
-          "headline": "Adobe Patches Seven Maximum-Severity ColdFusion and Campaign Classic Flaws Enabling Remote Code Execution",
-          "summary": "Adobe released fixes for critical vulnerabilities in ColdFusion and Campaign Classic, with seven bugs rated 10/10 and capable of arbitrary code execution. While not OT-native software, ColdFusion is present in legacy HMI and plant-floor web application stacks at some industrial facilities, particularly older deployments that have not been modernized. Asset owners should audit internet-exposed ColdFusion instances in or adjacent to OT networks.",
+          "headline": "Cisco Unified CM Vulnerability Now Confirmed Exploited in the Wild",
+          "summary": "Cisco has confirmed active exploitation of a vulnerability in Unified Communications Manager, a platform used extensively in enterprise and industrial facility communications infrastructure. A public PoC has been available since disclosure, and observed exploitation began within days. In OT contexts, unified communications systems often sit at the IT/OT boundary; compromise can serve as a lateral movement vector or disrupt operational coordination.",
           "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/adobe-patches-critical-coldfusion-campaign-classic-vulnerabilities/"
+          "url": "https://www.securityweek.com/cisco-confirms-in-the-wild-exploitation-of-unified-cm-vulnerability/"
+        },
+        {
+          "headline": "FBI and Google Dismantle Residential Proxy Network Used to Obscure Nation-State Attacks",
+          "summary": "The NetNut residential proxy network, which routed malicious traffic through millions of compromised consumer and IoT devices, has been disrupted in a joint FBI-Google operation. Nation-state actors used the service to mask reconnaissance and attack traffic, including against critical infrastructure targets. The takedown removes a significant anonymization layer but highlights the persistent risk of IoT devices being co-opted as cover for OT-targeted campaigns.",
+          "source": "SecurityWeek",
+          "url": "https://www.securityweek.com/google-fbi-disrupt-netnut-residential-proxy-network-powered-by-millions-of-devices/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 89,
-    "items_published": 17
+    "articles_reviewed": 86,
+    "items_published": 19
   }
 }
