@@ -1,156 +1,168 @@
 {
-  "date": "2026-07-07",
-  "generated_at": "2026-07-07T09:02:42.973073+00:00",
-  "issue": 68,
-  "executive_summary": "Today's intelligence picture is defined by an intensifying convergence of state-sponsored cyber operations and conventional military pressure, with Russia and Iran driving the most acute near-term threats across both domains — Russia escalating hacking campaigns against Ukrainian broadcasters while continuing lethal strikes that expose critical air-defense gaps, and Iran-linked actors deploying sophisticated frameworks against Israeli targets as regional tensions remain elevated. The NATO summit serves as a connective thread across multiple briefs: Ukraine's uncertain membership status, Erdogan's leverage, and the U.S.-India trade negotiations all reflect a broader Western alliance under strain, with allies simultaneously demonstrating offensive cyber transparency — Canada's public acknowledgment of offensive hacking operations signals a notable shift in Five Eyes signaling posture — while procurement delays documented by GAO underscore a systemic readiness deficit. The industrial and critical infrastructure threat surface is expanding dangerously, with Armored Likho targeting electric power grids, public exploit code now available for a Linux flaw affecting industrial systems, and a North Korean supply chain campaign poisoning over 100 open-source packages, collectively suggesting adversaries are pre-positioning for potential escalatory contingencies. The medical device breach affecting four million patients and the DeFi governance exploit further illustrate that civilian and financial infrastructure remain soft targets exploited in parallel with state-level operations, reinforcing that today's threat environment is simultaneously strategic and opportunistic across every domain.",
+  "date": "2026-07-08",
+  "generated_at": "2026-07-08T09:03:16.563606+00:00",
+  "issue": 69,
+  "executive_summary": "Today's intelligence picture is defined by two intersecting strategic currents: China's accelerating assertiveness across military, cyber, and political domains, and a simultaneously fracturing Western alliance architecture struggling to mount a coherent response. China's activities are notably coordinated in character — UAT-7810's expanding cyber relay network, the DF-17 hypersonic missile broadcast, Xi Jinping's political consolidation moves, and new satellite imagery at Chinese missile test facilities collectively suggest a state operating across multiple instruments of power in a deliberate and synchronized fashion, with Taiwan as the most plausible focal point given polling data on Japanese military support reflecting regional anxiety. A second major thread connects the Middle East across all four sections: U.S. strikes against Iran, reinforced naval posture in the Gulf, Houthi-linked maritime expansion into the Horn of Africa, and the resurgence of Somali piracy in the absence of a coordinating multilateral framework together paint a picture of regional maritime and military pressure intensifying without an adequate institutional response. Underlying both threads is a critical vulnerability in Western critical infrastructure — CISA exploitation alerts, the FortiBleed ransomware campaign targeting manufacturers, uneven NIS2 adoption across EU operators, and negligible corporate uptake of the UK's voluntary cyber resilience pledge indicate that adversaries are actively probing systems at a moment when defensive postures remain fragmented and largely voluntary in nature",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Today's cyber landscape features escalating state-linked espionage, a significant healthcare data breach, and Canada's rare public disclosure of offensive cyber operations against criminal networks.",
+      "intro": "Today's cyber landscape is defined by active exploitation of newly catalogued vulnerabilities, a significant data breach at a major Japanese telco, and the UK moving toward AI-driven autonomous cyber defense.",
       "items": [
         {
-          "headline": "Iran-linked APT deploys sophisticated modular C2 framework against Israeli targets",
-          "summary": "Check Point Research has identified Cavern Manticore, an Iranian MOIS-affiliated group active since early 2026, using a previously undocumented modular command-and-control framework to target Israeli IT providers and government entities, with apparent ties to the OilRig cluster. The modular architecture suggests deliberate operational flexibility designed to evade detection and adapt payloads per target. Organizations in Israeli government and IT supply chains should treat this as an active threat requiring immediate defensive review.",
-          "source": "Check Point Research",
-          "url": "https://research.checkpoint.com/2026/cavern-manticore-exposing-iran-linked-modular-c2-framework/"
+          "headline": "CISA flags four actively exploited vulnerabilities, including Adobe ColdFusion path traversal",
+          "summary": "CISA added four vulnerabilities to its Known Exploited Vulnerabilities catalog in a single day, including a path traversal flaw in Adobe ColdFusion and an unrestricted file upload vulnerability in JoomShaper SP Page Builder. Active exploitation confirmed by CISA means federal agencies face mandatory remediation deadlines, and private sector organizations should treat these as high-priority patches. The ColdFusion flaw is particularly concerning given its history as an entry point for ransomware and espionage actors.",
+          "source": "All CISA Advisories",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/07/07/cisa-adds-one-known-exploited-vulnerability-catalog"
         },
         {
-          "headline": "Canada's signals intelligence agency publicly confirms offensive hacks against ransomware gang, extremists, and drug traffickers",
-          "summary": "Canada's Communications Security Establishment (CSE) disclosed it conducted three separate offensive cyber operations in 2025 targeting a ransomware-as-a-service group, a foreign online extremist network, and drug traffickers — a rare level of public transparency from a signals intelligence agency. The disclosure signals a deliberate policy shift toward naming and deterring criminal cyber actors through acknowledged offensive action. Watch for whether allied Five Eyes partners follow suit with similar disclosures as a coordinated deterrence posture.",
+          "headline": "Japanese telco cyberattack exposes 12 million customer emails across five ISPs",
+          "summary": "A major Japanese telecommunications company disclosed that attackers compromised an email management system serving five internet service providers, exposing approximately 12 million email accounts including webmail and stored messages. The breadth of the breach across multiple ISPs suggests a shared backend infrastructure failure with cascading exposure. Watch for follow-on phishing campaigns leveraging compromised email content and potential regulatory action under Japan's data protection framework.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/canada-cse-2025-cyber-operations-ransomware-drugs-extremism"
+          "url": "https://therecord.media/major-japanese-telco-cyberattack-12-million-emails"
         },
         {
-          "headline": "Medical device manufacturer breach exposes sensitive data on nearly 4 million patients",
-          "summary": "A major medical device maker has begun notifying approximately 4 million individuals after attackers accessed records containing Social Security numbers and health-related data. The company claims no evidence of public exposure to date, but the combination of SSNs and medical data creates high-value conditions for identity fraud and targeted phishing. The breach adds to a sustained pattern of healthcare sector compromises and raises questions about cybersecurity standards among critical medical infrastructure suppliers.",
+          "headline": "UK announces autonomous AI 'Cyber Shield' to counter machine-speed attacks",
+          "summary": "Britain's NCSC is developing an AI-driven autonomous defense capability called Cyber Shield, designed to detect and respond to threats operating faster than human analysts can act. The announcement reflects growing institutional recognition that AI-enabled attackers are compressing the response window to near-zero. The initiative comes alongside a UK voluntary cyber pledge that attracted only a handful of major firms despite ministerial pressure, signaling a gap between government ambition and private sector buy-in.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/medical-device-maker-notifies-nearly-4-million-of-breach"
+          "url": "https://therecord.media/britain-plans-autonomous-ai-cyber-shield"
         },
         {
-          "headline": "Russia escalates hacking operations against Ukrainian media, designating broadcasters as priority targets",
-          "summary": "Ukrainian security officials have confirmed two previously unreported cyberattacks on television broadcasters and stated that Russia has systematically elevated media organizations to priority targets alongside military and government infrastructure. Disrupting or manipulating broadcast media serves dual strategic purposes: degrading public communications and creating information vacuums exploitable by influence operations. The escalation suggests Russian cyber operators are deliberately expanding beyond battlefield-support targets as the conflict continues.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/ukraine-media-organizations-priority-hacking-targets-russia"
+          "headline": "China-linked UAT-7810 expands operational relay network with custom malware",
+          "summary": "Cisco Talos researchers report that UAT-7810, a threat actor associated with building operational relay box (ORB) networks to obscure attack infrastructure, continues developing bespoke malware tooling. ORB networks complicate attribution and detection by routing traffic through compromised third-party devices, a technique increasingly favored by state-linked actors. Security teams should monitor for unusual traffic through edge devices and SOHO routers, which are common ORB node candidates.",
+          "source": "Cisco Talos Blog",
+          "url": "https://blog.talosintelligence.com/uat-7810/"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "The NATO summit in Ankara, Ukraine's uncertain path forward, and shifting U.S. bilateral relationships dominate a geopolitical landscape marked by alliance stress and strategic repositioning.",
+      "intro": "From NATO's internal fractures to a resurgence of Somali piracy and Xi Jinping's tightening grip on China's historical narrative, today's geopolitical picture reflects deepening instability in both established alliances and contested regions.",
       "items": [
         {
-          "headline": "Erdogan Positioned to Exploit NATO Summit Regardless of Outcome",
-          "summary": "Turkey's president has structured the Ankara summit dynamics so that any result — from concessions on defense commitments to transatlantic friction — reinforces his leverage within the alliance. Hosting the summit gives Erdogan a platform to extract bilateral concessions while projecting indispensability to both NATO members and potential interlocutors in Moscow and Tehran. Watch whether Trump-Erdogan bilateral optics translate into tangible policy shifts on Sweden, F-16 deliveries, or Ukraine aid corridors.",
+          "headline": "NATO Summit Exposes Franco-German Rift Over Alliance Leadership as Trump Pressure Mounts",
+          "summary": "Germany and France are clashing over the alliance's strategic direction at a moment when European members are scrambling to demonstrate defense spending commitments to head off Trump's criticisms. The internal division undermines Europe's credibility as a potential counterweight to U.S. disengagement. Watch whether the Ankara summit produces substantive spending pledges or devolves into performative reassurance.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/06/erdogan-nato-summit-ankara/"
+          "url": "https://foreignpolicy.com/2026/07/07/europe-germany-france-nato-lead-trump/"
         },
         {
-          "headline": "Ukraine Enters NATO Summit Without Membership Timeline but Seeking Concrete Guarantees",
-          "summary": "Ukraine's ambassador to the U.S. signals Kyiv's expectations for the Ankara summit have shifted from membership aspirations toward securing durable security commitments and sustained military aid pledges. With the war ongoing and Western political fatigue a real factor, Ukraine's diplomatic posture reflects a recalibration toward what is achievable in the near term. The summit outcome will test whether NATO can maintain unity on Ukraine support as defense spending debates and U.S. burden-sharing demands intensify.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/06/nato-summit-ankara-ukraine-zelensky-russia-war/"
+          "headline": "Somali Piracy Returns as the Multinational Framework That Suppressed It Remains Absent",
+          "summary": "Three merchant vessels have been hijacked off the Horn of Africa, signaling a rapid resurgence of piracy after a decade of relative quiet. The naval coalitions and international coordination that drove piracy rates down after 2016 have not reconstituted, and shipping companies that scaled back protective measures are now exposed. The structural conditions—weak Somali governance, commercial shipping vulnerability, reduced naval presence—that enabled the original crisis remain largely intact.",
+          "source": "War on the Rocks",
+          "url": "https://warontherocks.com/somali-pirates-are-back-but-the-coalition-that-beat-them-isnt-coming/"
         },
         {
-          "headline": "U.S.-India Trade Deal Nears Completion Amid Persistent Sticking Points",
-          "summary": "Washington and New Delhi are approaching a framework trade agreement, but unresolved issues — likely spanning tariffs on agriculture, technology transfer rules, and market access — continue to complicate a final deal. A successful agreement would mark a significant deepening of the bilateral relationship at a time when the U.S. is actively courting India as a strategic counterweight to China. Failure to close or a prolonged impasse risks signaling to New Delhi that alignment with Washington carries more friction than benefit.",
+          "headline": "Xi Jinping Rewrites China's Political Vocabulary to Foreclose Reform and Consolidate Authority",
+          "summary": "Xi's entrenchment of the 'new era' framework represents a deliberate departure from the reformist legacy of Deng Xiaoping, repositioning the CCP's legitimacy around national rejuvenation rather than economic liberalization. The shift has concrete policy implications: it narrows the ideological space for technocratic pushback on Xi's priorities and signals that market-oriented reform is off the table. Analysts should treat this as a structural indicator, not rhetorical noise.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/06/us-india-trade-deal-thaw-trump-modi/"
+          "url": "https://foreignpolicy.com/2026/07/07/xi-mao-deng-china-history-new-era/"
         },
         {
-          "headline": "Senior U.S. Democrat Travels to Taiwan with Explicit Warning to Beijing",
-          "summary": "Senator Tammy Duckworth's visit to Taiwan, framed around refusing to cede ground to Xi Jinping, signals continued bipartisan congressional support for Taiwan despite uncertainty over the executive branch's posture toward China. The trip carries both symbolic and practical weight — high-profile congressional visits reinforce deterrence signaling and reassure Taipei of U.S. commitment outside formal treaty obligations. Beijing is likely to respond with diplomatic protests and potentially heightened military activity in the strait.",
+          "headline": "Taiwanese Public Confidence in Japanese Military Support Reaches Unexpected Levels, Poll Shows",
+          "summary": "New polling data reveals that Taiwan's population holds surprisingly deep trust in Japan as a security guarantor in a potential conflict with China, reflecting years of Japanese strategic signaling and defense posture shifts under revised security legislation. This public confidence matters because it shapes Taiwanese risk tolerance and complicates Beijing's information operations aimed at isolating Taipei. Watch whether Tokyo's political leadership moves to either validate or quietly distance itself from these expectations.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/06/senator-duckworth-taiwan-visit-china-trump-xi-jinping/"
+          "url": "https://foreignpolicy.com/2026/07/07/china-taiwan-japan-invasion-polling/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "Procurement failures, combat losses, and a fatal domestic incident dominate today's military picture, with allied defense investment signaling a broader shift in Western security posture.",
+      "intro": "Today's military picture is defined by active U.S. strikes against Iran, a significant NATO procurement upset, and escalating Chinese strategic signaling.",
       "items": [
         {
-          "headline": "GAO: Pentagon's major weapons programs average 12 years behind schedule",
-          "summary": "A new Government Accountability Office report covering 104 of the Defense Department's costliest acquisition programs found systemic delays averaging 12 years — a figure that raises serious questions about readiness timelines and budget credibility. The findings compound existing concerns about the Pentagon's ability to field next-generation capabilities against near-peer competitors. Watch for congressional response and whether DoD offers a credible remediation plan.",
+          "headline": "U.S. Launches Fresh Strike Package Against Iran Amid Renewed Oil Sanctions",
+          "summary": "The U.S. military conducted a new wave of strikes against Iran on Tuesday, simultaneously revoking Tehran's license to sell oil in response to ongoing shipping attacks. The dual military-economic pressure campaign marks a significant escalation in the confrontation with Iran. Watch for Iranian retaliatory moves in the Strait of Hormuz and against regional U.S. assets.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/07/06/pentagons-top-new-weapons-programs-are-12-years-behind-schedule-watchdog/"
+          "url": "https://www.militarytimes.com/news/your-military/2026/07/07/us-launches-new-strikes-on-iran-after-reinstating-oil-sanctions-over-shipping-attacks/"
         },
         {
-          "headline": "Russian strikes kill 20 in Ukraine, laying bare critical air-defense gaps",
-          "summary": "A wave of Russian strikes killed at least 20 people, with Ukrainian President Zelenskyy renewing urgent appeals for additional ballistic missile interceptors — the only systems capable of countering that threat class. The strikes illustrate how inventory shortfalls in Western-supplied air defense continue to translate directly into civilian casualties. The pace of resupply decisions by NATO partners will be the key variable to monitor.",
-          "source": "Defense News",
-          "url": "https://www.defensenews.com/global/europe/2026/07/06/russian-strikes-kill-20-exposing-ukraines-air-defense-shortage/"
+          "headline": "NATO Selects Saab Over Boeing for Next-Generation Airborne Radar Aircraft",
+          "summary": "NATO has awarded Saab the contract to build the alliance's successor to the AWACS radar plane, bypassing American defense giant Boeing in a major procurement upset. An analyst cited the Pentagon's prolonged indecision over the E-7 Wedgetail as a self-inflicted wound that undermined Boeing's position. The decision raises questions about U.S. industrial credibility within NATO at a moment of heightened alliance cohesion demands.",
+          "source": "Defense One",
+          "url": "https://www.defenseone.com/business/2026/07/nato-snubs-boeing-picks-saab-build-alliances-next-radar-plane/414637/"
         },
         {
-          "headline": "Canada selects Germany's TKMS Type 212CD submarine in strategically significant procurement",
-          "summary": "Canada has chosen German shipbuilder TKMS over South Korea's Hanwha Ocean for a landmark submarine acquisition, opting for the Type 212CD already under construction for Germany and Norway. The decision deepens Canada's defense-industrial ties with Europe and aligns its undersea fleet with NATO partners rather than Indo-Pacific suppliers. The contract scale and timeline will be closely watched as Canada works to modernize aging submarine capability.",
-          "source": "Defense News",
-          "url": "https://www.defensenews.com/global/europe/2026/07/07/canada-picks-germanys-tkms-for-historic-submarine-buy-in-nod-to-europe/"
-        },
-        {
-          "headline": "Tennessee National Guard soldiers fatally shoot civilian during armed pursuit",
-          "summary": "Two Tennessee National Guard soldiers conducting a patrol shot and killed a civilian, prompting the Tennessee Bureau of Investigation to open a formal inquiry. The incident raises immediate questions about rules of engagement, the legal framework governing domestic National Guard deployments, and use-of-force training. Outcomes of the investigation will likely influence policy debates around domestic military patrol missions.",
+          "headline": "China Broadcasts DF-17 Hypersonic Missile Footage in Calculated Warning to U.S.",
+          "summary": "Chinese state television aired high-production footage of the DF-17 hypersonic glide vehicle, a missile designed to defeat existing missile defense systems. Analysts assess the broadcast as a deliberate response to recent Asia-Pacific military exercises by the U.S. and allies, signaling China's capacity to impose severe costs in any regional conflict. The timing and production quality suggest a coordinated strategic messaging campaign rather than routine state media content.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-military/2026/07/06/tennessee-national-guard-soldiers-on-patrol-shoot-kill-civilian-during-armed-pursuit/"
+          "url": "https://www.militarytimes.com/global/asia-pacific/2026/07/08/china-shows-snazzy-clip-of-df-17-missile-on-state-tv-in-show-of-force/"
+        },
+        {
+          "headline": "Trump Signals F-35 Sales to Turkey as Washington Moves to Lift CAATSA Sanctions",
+          "summary": "President Trump announced plans to lift sanctions on Turkey imposed in 2020 under CAATSA for its purchase of Russian S-400 air defense systems, and indicated F-35 sales are now possible. Reintegrating Turkey into the F-35 program would mark a major reversal of U.S. policy and could strain relations with Greece and other NATO partners wary of Ankara. The move reflects a transactional approach to alliance management that prioritizes bilateral deals over multilateral arms control norms.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/global/europe/2026/07/07/us-will-lift-sanctions-on-turkey-possibly-sell-f-35-fighter-jets-trump-says/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Open-source intelligence work is filling critical gaps today, from verifying mass casualty management after a natural disaster to tracking aggressive military signaling across multiple theaters.",
+      "intro": "Open-source imagery and maritime intelligence dominate today's picture, with satellite analysis revealing new Chinese strategic capabilities and real-time vessel tracking exposing escalating threats across two critical waterways.",
       "items": [
         {
-          "headline": "Bellingcat geolocates mass burial site from Venezuela earthquake footage",
-          "summary": "Using social media video, Bellingcat identified a two-hectare emergency burial site adjacent to an existing cemetery near La Guaira, Venezuela, following recent deadly earthquakes. The verification underscores how OSINT methods are being used to surface humanitarian realities that governments may be underreporting. Watch for follow-on reporting on official casualty figures versus ground-truth evidence.",
-          "source": "Bellingcat",
-          "url": "https://www.bellingcat.com/news/2026/07/06/between-graves-and-uncertainty-the-management-of-the-dead-after-venezuelas-earthquake/"
+          "headline": "Satellite Imagery Reveals Unexplained Rectangular Structures at Chinese Missile Test Facility",
+          "summary": "Commercial satellite imagery has identified large rectangular structures with retractable roofs at a Chinese missile test base, suggesting development of new strategic delivery systems not yet publicly disclosed. The design diverges from known Chinese silo configurations, complicating attribution to existing weapons programs. Analysts should watch for similar construction signatures appearing at operational deployment sites as an indicator of fielding timelines.",
+          "source": "TWZ",
+          "url": "https://www.twz.com/news-features/mysterious-rectangle-silos-emerge-at-sprawling-chinese-missile-test-base"
         },
         {
-          "headline": "DeFi governance exploit nets attackers $20 million in BONK tokens",
-          "summary": "Attackers accumulated sufficient BONK holdings to push through a fraudulent governance proposal, effectively voting themselves $20 million in cryptocurrency from BonkDAO's treasury. The attack highlights a structural vulnerability in decentralized governance models where token concentration can be weaponized without any traditional system compromise. DAOs relying on token-weighted voting should treat this as a template attack requiring immediate review of proposal thresholds and time-lock mechanisms.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/attackers-vote-themselves-20-million-bonk-crypto"
+          "headline": "Horn of Africa Piracy Resurges as Houthi Proxy Networks Expand Maritime Threat",
+          "summary": "Pirate attacks off the Horn of Africa have spiked sharply, with assessments indicating Houthi backing of proxy maritime actors seeking to exploit reduced naval attention during the post-Iran conflict recovery period. This represents a deliberate expansion of the Houthi threat model beyond the Red Sea corridor into a second maritime chokepoint. The convergence of Iranian-linked disruption in the Strait of Hormuz and Houthi-linked piracy in the Gulf of Aden signals a coordinated effort to maximize pressure on global shipping simultaneously.",
+          "source": "TWZ",
+          "url": "https://www.twz.com/news-features/pirate-attacks-on-shipping-off-the-horn-of-africa-spike"
         },
         {
-          "headline": "Japanese teenager arrested for mass cancellation of anime streaming subscriptions",
-          "summary": "A teenager near Tokyo allegedly exploited a platform vulnerability to fraudulently cancel over 46,000 user subscriptions on a subscription-based anime streaming service, causing significant operational disruption. The case is notable less for its scale than for demonstrating that motivated low-sophistication actors can cause outsized service disruption by targeting business logic flaws rather than core infrastructure. Streaming platforms with large subscriber bases should audit subscription management endpoints for similar abuse vectors.",
+          "headline": "U.S. Naval Posture in Middle East Reinforced as Boxer ARG Re-aggregates Following Hormuz Strikes",
+          "summary": "The Boxer amphibious ready group has re-aggregated in the Middle East as the U.S. builds out its naval force posture following retaliatory strikes on Iran over Strait of Hormuz shipping attacks. Carrier positioning data provides a near-real-time OSINT indicator of U.S. strategic intent and escalation readiness in the region. Watch carrier strike group movements over the next 48–72 hours as a key signal of whether Washington is preparing for sustained operations or signaling de-escalation.",
+          "source": "TWZ",
+          "url": "https://www.twz.com/sea/where-are-the-aircraft-carriers-july-7-2026"
+        },
+        {
+          "headline": "UK Voluntary Cyber Resilience Pledge Attracts Minimal Corporate Buy-In Despite Government Push",
+          "summary": "A UK government-backed cybersecurity pledge targeting major corporations has drawn only a small number of signatories despite direct ministerial appeals, with notable participation from Marks & Spencer—still recovering from a costly breach—and a handful of financial sector firms. The low uptake undermines the government's voluntary-first approach to raising baseline corporate cyber resilience and may accelerate pressure for mandatory reporting or compliance frameworks. This is a useful indicator for how UK cyber policy may shift in the coming legislative cycle.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/japanese-teen-arrested-over-attack-disrupted-streaming-service"
+          "url": "https://therecord.media/uk-cyber-pledge-draws-limited-partners-despite-ministerial-appeal"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "OT-relevant threats are led today by a state-linked APT actively targeting electric power infrastructure alongside a Linux privilege escalation flaw with public exploit code that affects embedded and industrial Linux systems.",
+      "intro": "Industrial and critical infrastructure cyber risk is rising on multiple fronts, with ransomware groups actively targeting manufacturers, national agencies sounding alarms over intensifying threats, and NATO expanding its approved vendor catalog for OT defense.",
       "items": [
         {
-          "headline": "Armored Likho APT Expands Campaigns Against Electric Power and Government Targets",
-          "summary": "The Armored Likho threat actor is deploying modular remote access trojans and information stealers against government agencies and electric power entities in what researchers assess as a blend of financial crime and cyber espionage. Electric grid operators are a consistent target because persistent access enables both data theft and potential disruption capabilities. Defenders in energy and critical infrastructure sectors should review for indicators tied to this group and audit remote access tooling for anomalous lateral movement.",
-          "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/armored-likho-apt-targeting-government-electric-power-entities/"
+          "headline": "FortiBleed Credential Campaign Tied to Ransomware Attacks on Manufacturers",
+          "summary": "SOCRadar has linked the FortiBleed credential-harvesting campaign directly to Lynx ransomware and INC Ransom operations targeting the manufacturing sector. The connection suggests threat actors are using stolen Fortinet credentials as an initial access vector before deploying ransomware payloads against OT-adjacent environments. Manufacturers running unpatched Fortinet devices should treat this as an active threat requiring immediate credential rotation and access audits.",
+          "source": "Industrial Cyber",
+          "url": "https://industrialcyber.co/ransomware/socradar-links-fortibleed-campaign-targeting-manufacturers-to-lynx-and-inc-ransomware-attacks/"
         },
         {
-          "headline": "Public Exploit Code Released for Linux Root Escalation Flaw Affecting Industrial Systems",
-          "summary": "A proof-of-concept exploit for the 'Bad Epoll' Linux kernel vulnerability is now publicly available, lowering the bar for attackers to achieve root-level access on unpatched systems. Many OT environments run Linux-based HMIs, engineering workstations, and edge gateways that are rarely patched on rapid cycles, making this particularly relevant to industrial operators. Organizations should prioritize patching or compensating controls such as network segmentation and privilege restrictions on Linux assets in OT environments.",
-          "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/proof-of-concept-exploit-released-for-linux-bad-epoll-root-access-vulnerability/"
+          "headline": "Canada's CSE Warns of Escalating Foreign Threats to Critical Infrastructure",
+          "summary": "Canada's Communications Security Establishment annual report identifies foreign state adversaries and ransomware operators as the dominant threats to Canadian critical infrastructure, with investigations into ransomware incidents rising year-over-year. The report reinforces a pattern seen across Western intelligence agencies: critical infrastructure operators face simultaneous pressure from financially motivated criminals and state-sponsored actors. OT operators in energy, water, and transport sectors should treat the CSE findings as a benchmark for reassessing their own threat models.",
+          "source": "Industrial Cyber",
+          "url": "https://industrialcyber.co/threats-attacks/canadas-cse-report-details-rising-cyber-threats-ransomware-investigations-critical-infrastructure-protection-efforts/"
         },
         {
-          "headline": "North Korean Supply Chain Campaign Poisons Over 100 Open Source Packages Used by Developers",
-          "summary": "The PolinRider campaign, attributed to North Korean actors, has backdoored more than 100 legitimate open source packages to deliver malware to software developers, posing a downstream risk to any OT or ICS vendor whose engineering tools or firmware incorporate compromised dependencies. Supply chain compromises are a proven pathway into industrial environments, as seen historically with SolarWinds and similar incidents. ICS/OT vendors and system integrators should audit third-party software dependencies and enforce software bill of materials practices.",
-          "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/north-korean-hackers-target-open-source-developers-in-supply-chain-attacks/"
+          "headline": "ECSO Maps Uneven NIS2 Adoption Across EU Critical Infrastructure Operators",
+          "summary": "A new ECSO report surveying EU member states finds significant variation in how national cybersecurity strategies translate NIS2 Directive requirements into practice for critical infrastructure sectors. Gaps in implementation create inconsistent protection levels across interconnected European industrial networks, which adversaries can exploit by targeting the weakest jurisdictions. Organizations operating across EU borders should benchmark their compliance posture against the report's findings ahead of enforcement deadlines.",
+          "source": "Industrial Cyber",
+          "url": "https://industrialcyber.co/threats-attacks/ecso-report-explores-how-eu-member-states-advance-critical-infrastructure-cyber-resilience-nis2-implementation/"
+        },
+        {
+          "headline": "Forescout Earns NATO Approval for Defense and Critical Infrastructure Deployments",
+          "summary": "Forescout Technologies has been added to NATO's cybersecurity catalogue after meeting the alliance's information assurance requirements, making it an approved option for defense and critical infrastructure network visibility deployments. NATO catalogue inclusion signals a level of vetting relevant to both defense contractors and civilian critical infrastructure operators aligned with alliance standards. This expands the pool of NATO-endorsed OT security tools at a time when alliance members are under pressure to harden industrial networks.",
+          "source": "Industrial Cyber",
+          "url": "https://industrialcyber.co/news/forescout-added-to-nato-cybersecurity-catalogue-for-defense-and-critical-infrastructure-deployments/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 81,
-    "items_published": 18
+    "articles_reviewed": 103,
+    "items_published": 20
   }
 }
