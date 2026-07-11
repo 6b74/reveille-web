@@ -1,168 +1,156 @@
 {
-  "date": "2026-07-10",
-  "generated_at": "2026-07-10T09:01:40.863858+00:00",
-  "issue": 71,
-  "executive_summary": "Today's intelligence picture is dominated by two converging crises that cut across multiple domains: the collapse of the US-Iran ceasefire, now entering its third day of exchanges, is simultaneously driving kinetic military escalation in the Middle East, drawing in Hezbollah, and consuming the USS Abraham Lincoln's extended regional deployment, while on the technology front the Chinese J-15T imagery and Germany's Tomahawk acquisition signal that major powers are actively repositioning military capabilities in anticipation of a more contested security environment. The Italian dismantlement of a Russian spy network targeting Western air defense data bound for Ukraine, combined with Zelenskyy's confirmation of active US-Ukraine defense technology testing, suggests Russia is conducting active intelligence operations to surveil and potentially counter Western military assistance pipelines at a critical moment in Ukraine's stated war-winning strategy. Running beneath both geopolitical threads is a deteriorating critical infrastructure security posture: the EU's NIS2 enforcement failures, unpatched ICS vulnerabilities across Schneider Electric and OpenPLC systems, the rise of OT-targeting botnets, and ongoing ransomware pressure on manufacturing collectively indicate that Western nations remain structurally exposed at precisely the moment adversaries have the most incentive to exploit those vulnerabilities. The NSA's symbolic restoration of the Tailored Access Operations name, read alongside Space Force's launch competitor certifications and the Navy's autonomous vessel solicitation,",
+  "date": "2026-07-11",
+  "generated_at": "2026-07-11T09:04:24.680935+00:00",
+  "issue": 72,
+  "executive_summary": "Today's intelligence picture is dominated by two interlocking themes: the accelerating sophistication of offensive cyber and kinetic capabilities, and the intensifying contest over air defense and critical infrastructure as a strategic priority across multiple theaters. The convergence of China and India independently targeting the same Pakistani law enforcement network illustrates how contested states are now simultaneously subject to great power cyber competition, while GigaWiper's combined ransomware-wiper-backdoor architecture and unpatched vulnerabilities in Windows and Dell systems signal that threat actors are compressing the attack lifecycle and raising the destructive ceiling. On the military and geopolitical side, Ukraine's parallel pursuit of licensed Patriot production and domestic air defense development, coupled with Italy's dismantlement of a Russian spy ring specifically targeting Western air defense supply chains, confirms that air defense technology has become a primary espionage and interdiction objective in the European theater. Underlying all of this is a maturing policy environment struggling to keep pace with operational realities, evidenced by the Pentagon codifying counter-drone doctrine, Australia overhauling critical infrastructure law in response to AI threats, new quantum decryption investment, and legal frameworks around surveillance and data scanning creating friction precisely as intelligence collection demands are rising.",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Today's cyber landscape is marked by critical ICS vulnerabilities, a significant ransomware recovery in Europe, a symbolic U.S. intelligence reorganization, and mounting EU enforcement pressure over delayed cybersecurity compliance.",
+      "intro": "Today's cyber landscape features critical unpatched and newly disclosed vulnerabilities alongside notable ransomware prosecutions and a geopolitical espionage overlap targeting Pakistani infrastructure.",
       "items": [
         {
-          "headline": "NSA restores 'Tailored Access Operations' name to its elite offensive hacking unit",
-          "summary": "The NSA has renamed its Office of Computer Network Operations back to Tailored Access Operations (TAO), reverting to the moniker that gained international notoriety after the 2013 Snowden disclosures. The rebranding signals an organizational posture shift under current leadership and may reflect efforts to rebuild institutional identity around offensive cyber capabilities. Watch whether the rename accompanies structural or operational changes that affect how the unit is resourced and tasked.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/nsa-revives-tao-name-for-elite-hacking-unit"
+          "headline": "Windows HTTP.sys kernel-level RCE vulnerability detailed after recent patch",
+          "summary": "Researchers at TrendAI have published a technical breakdown of CVE-2026-47291, a remote code execution flaw in Windows' HTTP protocol stack that can yield kernel-level privileges or cause denial-of-service. The vulnerability's location in HTTP.sys—a core Windows component handling web traffic—gives it broad attack surface across server deployments. Organizations running unpatched Windows servers should treat this as a priority patching target given the potential for unauthenticated exploitation.",
+          "source": "Zero Day Initiative - Blog",
+          "url": "https://www.thezdi.com/blog/2026/7/9/cve-2026-47291-remote-code-execution-in-the-windows-httpsys"
         },
         {
-          "headline": "CISA issues multiple ICS advisories covering Schneider Electric and OpenPLC vulnerabilities",
-          "summary": "CISA published three advisories covering flaws in Schneider Electric's PowerChute Serial Shutdown, Easergy MiCOM Px40 protection relays, and OpenPLC v3, with exploitation risks ranging from arbitrary code execution to credential reset and denial-of-service in operational technology environments. The Easergy MiCOM series is used in medium-to-extra-high voltage grid protection, raising the stakes for energy sector defenders. Asset owners running these systems should prioritize patch review given the direct OT exposure.",
-          "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-190-02"
+          "headline": "Dell BIOS passwords recoverable due to weak XOR encryption flaw",
+          "summary": "Researchers from MDSec and AmberWolf disclosed CVE-2026-40639, revealing that Dell stores BIOS administrator passwords using weak XOR-based encryption in SPI flash memory, allowing physical attackers to recover credentials and bypass firmware-level security controls. This undermines a foundational layer of enterprise endpoint security, particularly in environments relying on BIOS passwords as a theft or tamper deterrent. Dell users should monitor for a firmware patch and evaluate physical security controls in the interim.",
+          "source": "MDSec",
+          "url": "https://www.mdsec.co.uk/2026/07/dell-bios-passwords-weak-xor-encryption-allows-recovery-from-spi-flash-cve-2026-40639/"
         },
         {
-          "headline": "Latvian state forestry company still recovering systems weeks after ransomware hit",
-          "summary": "Latvijas Valsts Mezi, a state-owned forestry firm, continues to restore systems following a ransomware attack attributed to a foreign, financially motivated threat group. The prolonged recovery timeline underscores how ransomware disrupts critical national industries beyond the initial incident, with cascading operational costs. This attack fits a broader pattern of financially driven groups targeting state-linked enterprises in EU member states perceived as soft targets.",
+          "headline": "China and India ran simultaneous, independent cyber-espionage operations against the same Pakistani police force",
+          "summary": "Researchers identified overlapping intrusion campaigns by Chinese and Indian threat actors targeting Pakistani law enforcement responsible for Balochistan, a province with an active separatist insurgency, between February 2024 and April 2026. In some instances both actors breached the exact same systems, highlighting the province's strategic intelligence value and the risk of compound exposure when multiple nation-state actors converge on a single target. The overlap raises questions about operational security for targeted organizations and the difficulty of attributing specific data exfiltration to a single actor.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/latvia-state-owned-foresty-company-lvm-ransomware"
+          "url": "https://therecord.media/china-india-ran-separate-spy-campaigns-against-same-police-force"
         },
         {
-          "headline": "EU sues four member states for failing to implement NIS2 cybersecurity directive over 20 months late",
-          "summary": "The European Commission is taking Ireland, Spain, France, and the Netherlands to court for failing to transpose the NIS2 Directive into national law, more than 20 months past the October 2024 deadline. NIS2 is the EU's primary framework for securing critical infrastructure operators and digital service providers, and non-implementation leaves significant gaps in baseline cyber standards across major economies. Legal proceedings add formal pressure, but enforcement timelines may still leave exposure for months ahead.",
+          "headline": "Ryuk ransomware operator pleads guilty as Blackcat conspirator sentenced to nearly six years",
+          "summary": "A Ryuk ransomware operator entered a guilty plea in Oregon federal court on conspiracy and computer fraud charges, while a separate defendant received a 70-month sentence in Florida for his role facilitating Blackcat/AlphV extortion operations. The concurrent proceedings signal continued U.S. prosecutorial momentum against ransomware networks following earlier law enforcement disruptions of both gangs. Watch for further indictments as cooperation agreements from guilty pleas frequently unlock upstream identifying information.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/eu-cyber-filing-ireland-spain-france-netherlands-nis2"
+          "url": "https://therecord.media/ryuk-operator-pleads-guilty-alphv-conspirator-sentenced"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "The US-Iran ceasefire framework is unraveling under renewed strikes, while Ukraine's emerging war strategy and al-Qaeda's Mali offensive signal a widening global instability picture.",
+      "intro": "The fragile US-Iran ceasefire has collapsed while Ukraine's battlefield innovation and diplomatic maneuvering continue to reshape its war with Russia.",
       "items": [
         {
-          "headline": "US-Iran Ceasefire Collapses as Both Sides Escalate Strikes",
-          "summary": "Three weeks after a memorandum of understanding was signed, the US-Iran deal is disintegrating amid continued military exchanges. The framework had included commitments to halt operations across all fronts including Lebanon, but neither side has held to terms. Watch for whether the Strait of Hormuz reopening and nuclear file commitments survive the breakdown, as further escalation could rapidly expand into a broader regional conflict.",
+          "headline": "US-Iran Ceasefire Breaks Down as Regional Powers Press for Renewed Negotiations",
+          "summary": "Despite a framework agreement reached on June 15 that included commitments to halt military operations across multiple fronts, the ceasefire between the US and Iran has ended, with strikes resuming. Qatar and Pakistan are among regional actors pushing Washington and Tehran back toward the negotiating table. The collapse tests whether the broader diplomatic architecture — including Hormuz access and nuclear commitments — can survive without a durable security arrangement.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/09/us-iran-war-strikes-intensify-cease-fire-over-trump-strait-hormuz/"
+          "url": "https://foreignpolicy.com/2026/07/10/us-iran-war-cease-fire-over-strikes-strait-hormuz-qatar-pakistan/"
         },
         {
-          "headline": "Hezbollah's Calculated Brinkmanship Forced Lebanon Back onto the US-Iran Agenda",
-          "summary": "Hezbollah's deliberate risk escalation strategy made Lebanon impossible for Washington to quarantine from the broader US-Iran negotiations, ultimately securing a ceasefire commitment covering Lebanese operations. The analysis highlights how a non-state actor successfully leveraged controlled escalation to insert itself into a bilateral great-power deal. As the broader MOU unravels, the durability of any Lebanon-specific commitments is now in serious question.",
+          "headline": "How Hezbollah's Brinkmanship Forced Lebanon Onto the US-Iran Agenda",
+          "summary": "Analysis of the June 15 US-Iran framework reveals that Hezbollah's deliberate escalation strategy — designed to raise the cost of ignoring Lebanon — succeeded in embedding the Lebanese front into the broader deal. Washington had sought to compartmentalize Lebanon, but Hezbollah's risk tolerance made that separation untenable. With the ceasefire now collapsed, the fate of Lebanon's inclusion in any resumed talks is a critical variable to watch.",
           "source": "War on the Rocks",
           "url": "https://warontherocks.com/going-over-the-brink-how-hizballahs-risk-strategy-made-lebanon-impossible-to-ignore/"
         },
         {
-          "headline": "Ukraine Develops Coherent War-Winning Strategy Centered on Deep Strikes and Economic Attrition",
-          "summary": "Kyiv has coalesced around a theory of victory built on sustained deep strikes against Russian oil infrastructure, missile production, and logistics to degrade Moscow's war economy faster than it can regenerate. The strategy marks a shift from reactive defense toward deliberate attrition of Russian capacity. Its viability hinges on continued Western weapons supply and whether Ukraine can sustain offensive tempo before battlefield exhaustion sets in.",
+          "headline": "Ukraine's Decentralized Drone Development Is Producing Real Battlefield Gains",
+          "summary": "Front-line adaptation of drone technology by Ukrainian units — outside formal procurement channels — is contributing materially to recent battlefield successes against Russian forces. The model challenges conventional defense acquisition logic, raising questions about whether the innovation is sustainable at scale or dependent on wartime improvisation. Western defense planners are watching closely as the approach may inform future force design doctrine.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/09/ukraine-russia-war-theory-victory-putin-zelensky-crimea-missiles-deep-strikes-oil-refinieries/"
+          "url": "https://foreignpolicy.com/2026/07/10/ukraine-drones-front-battlefield-innovation/"
         },
         {
-          "headline": "Al-Qaeda Affiliate's Advance in Mali Poses a Qualitatively Different Threat Than Syria's HTS Transition",
-          "summary": "Jama'at Nusrat al-Islam wal-Muslimin's potential victory in Mali would not mirror the HTS transition in Syria — it represents a horizontally integrated transnational coalition with active al-Qaeda ties and no plausible path toward governance pragmatism. A JNIM territorial consolidation would provide a launchpad for expanding jihadist influence across the Sahel, threatening multiple fragile states simultaneously. The departure of Western counterterrorism forces and reliance on Russian Wagner-linked personnel has left a critical security vacuum the Malian junta cannot fill.",
-          "source": "War on the Rocks",
-          "url": "https://warontherocks.com/victory-for-al-qaedas-affiliate-in-mali-would-be-a-catastrophe/"
+          "headline": "Former Ukrainian FM Kuleba Reveals How Kyiv Learned to Navigate Trump's White House",
+          "summary": "Dmytro Kuleba, Ukraine's former foreign minister, details how Kyiv recalibrated its diplomatic approach to exploit perceived shifts in the Trump administration's posture toward the war. The account highlights Ukraine's pragmatic lobbying efforts around Patriot missile supplies and NATO positioning. The interview underscores that Kyiv views managing Washington as an ongoing strategic task, not a settled relationship.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/07/10/dmytro-kuleba-ukraine-russia-war-victory-nato-patriot-missile/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "Today's military picture is defined by accelerating Ukraine defense cooperation, expanded space launch competition, and an Italian counterintelligence bust exposing Russian targeting of Western air defense secrets.",
+      "intro": "Air defense dominates today's military picture, with Ukraine pursuing multiple parallel tracks to close its critical gaps while Western nations advance new capabilities of their own.",
       "items": [
         {
-          "headline": "Zelenskyy confirms active testing phase on major U.S.-Ukraine defense technology deals",
-          "summary": "Following a U.S. pledge to license Patriot production to Ukraine, Zelenskyy publicly confirmed that testing is underway on several billion-dollar defense tech agreements. The disclosure signals these deals have moved from negotiation into operational validation, a meaningful escalation in the U.S.-Ukraine defense relationship. Watch whether testing results accelerate formal transfer timelines or surface capability gaps that complicate delivery.",
+          "headline": "Ukraine pursues dual-track air defense strategy: Patriot production license and homegrown Freya system",
+          "summary": "Kyiv is simultaneously pursuing a U.S. license to manufacture Patriot missiles domestically and organizing a European coalition to develop 'Freya,' a lower-cost ballistic missile defense alternative. The Patriot production path could take years to yield results, making Freya a near-term hedge against Russian missile strikes. Watch whether European partners commit meaningful funding at the upcoming France coalition meeting, which will signal real program momentum.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/global/europe/2026/07/10/testing-is-now-underway-zelenskyy-confirms-progress-on-major-us-defense-deals/"
+          "url": "https://www.militarytimes.com/industry/techwatch/2026/07/10/zelenskyy-taps-european-allies-to-build-freya-a-cheaper-patriot-alternative-to-russias-ballistic-missiles/"
         },
         {
-          "headline": "Italy dismantles Russian spy network targeting Western air defense data bound for Ukraine",
-          "summary": "Italian authorities arrested members of a Russian intelligence network tasked specifically with collecting information on Western air defense systems being transferred to Ukraine, including vulnerability assessments. The operation reveals Moscow is actively working to exploit gaps in Ukrainian air defenses before or shortly after Western systems arrive. This underscores the counterintelligence dimension of Western military aid and the risk of technology compromise during transfer pipelines.",
+          "headline": "Italy dismantles Russian spy ring targeting Western air defense shipments to Ukraine",
+          "summary": "Italian authorities broke up a Russian intelligence network specifically tasked with identifying vulnerabilities in Western air defense systems being transferred to Ukraine. The operation underscores that Russia is actively working to exploit gaps in Ukraine's defenses before new capabilities arrive. This directly connects to the Patriot and Freya stories — Moscow's intelligence posture suggests it views Ukraine's air defense shortfall as a strategic window to exploit.",
           "source": "Defense News",
           "url": "https://www.defensenews.com/global/europe/2026/07/10/italy-busts-russian-spy-ring-collecting-data-on-ukrainian-air-defense-vulnerabilities/"
         },
         {
-          "headline": "Space Force certifies two startups as national security launch competitors to SpaceX and Blue Origin",
-          "summary": "Impulse Space and Relativity Federal have been added to the Space Force's list of approved national security launch providers, expanding competition in a market previously dominated by SpaceX and Blue Origin. Adding smaller, newer entrants increases launch resilience and reduces single-point dependency for critical military payloads. Track whether these firms can translate certification into actual contract awards and demonstrated launch cadence.",
-          "source": "Defense One",
-          "url": "https://www.defenseone.com/business/2026/07/space-force-adds-two-startups-militarys-growing-list-national-security-launch-providers/414685/"
+          "headline": "U.S. Marines successfully test new medium-range intercept system from Guam during Valiant Shield",
+          "summary": "Marines conducted a live-fire test of the Medium-Range Intercept Capability system during Exercise Valiant Shield, marking a significant milestone for the Corps' ground-based air defense posture in the Indo-Pacific. Guam's geographic position makes it a critical node in any conflict scenario involving China, and fielding organic medium-range intercept capability there reduces dependence on Navy assets. Successful testing accelerates the path to operational deployment.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/news/your-military/2026/07/10/us-marines-successfully-test-fire-new-medium-range-air-defense-system/"
         },
         {
-          "headline": "Navy signals imminent prototype solicitation for autonomous surface vessel program",
-          "summary": "The Navy indicated a formal request for drone boat prototypes is expected in August, marking a concrete next step in its unmanned surface vessel development effort. Autonomous surface vessels are central to the Navy's distributed maritime operations concept, enabling presence and strike capacity without risking manned platforms. The August solicitation will reveal which capabilities and performance thresholds the Navy is prioritizing as it moves toward fielding.",
-          "source": "Defense One",
-          "url": "https://www.defenseone.com/defense-systems/2026/07/navy-teases-next-step-key-drone-boat-program/414683/"
+          "headline": "Pentagon releases 100-page counter-drone handbook as drone warfare matures into doctrine",
+          "summary": "The Defense Department has published a comprehensive counter-UAS handbook blending operational field guidance with historical context and warfighting philosophy, reflecting how seriously the Pentagon now treats the drone threat. The document signals an institutional effort to standardize counter-drone thinking across services rather than leaving units to improvise. Doctrinal codification at this scale typically precedes procurement and training investment, making this a leading indicator of where C-UAS resources will flow.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/industry/techwatch/2026/07/10/inside-the-pentagons-new-handbook-on-countering-drones/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Open-source imagery and operational tracking are surfacing significant capability shifts across multiple theaters, from Chinese carrier strike evolution to NATO's long-range strike posture.",
+      "intro": "Today's intelligence picture is dominated by surveillance policy debates on both sides of the Atlantic, with significant implications for how governments and platforms monitor communications and movement.",
       "items": [
         {
-          "headline": "OSINT Imagery Catches Chinese J-15T Launching from Carrier Loaded with Four Anti-Ship Missiles",
-          "summary": "Publicly available imagery has confirmed for the first time a J-15T fighter launching from the catapult-equipped carrier Fujian carrying four anti-ship missiles — a weapons load previously impossible under the ski-jump launch constraints of older carriers. This demonstrates that Fujian is operationally unlocking the J-15T's full strike potential, meaningfully expanding China's carrier-based anti-surface warfare reach. Analysts should track sortie rates and exercise patterns from Fujian as indicators of how rapidly the PLAN is integrating this capability.",
-          "source": "TWZ",
-          "url": "https://www.twz.com/sea/chinese-j-15-fighter-seen-launching-from-a-carrier-with-four-anti-ship-missiles-for-first-time"
+          "headline": "EU Parliament passes legislation requiring big tech to scan private messages for child sexual abuse material",
+          "summary": "Chat Control 2.0 cleared the European Parliament, mandating that platforms including Google, Meta, and Microsoft scan users' private messages for CSAM. The law reignites a long-running tension between child safety imperatives and end-to-end encryption, with critics arguing it effectively mandates mass surveillance infrastructure. Watch for legal challenges and potential conflicts with EU privacy law, including GDPR.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/chat-control-2-csam-scans-european-parliament-passage"
         },
         {
-          "headline": "USS Abraham Lincoln Surpasses 200 Days Continuously at Sea in Middle East",
-          "summary": "Carrier Strike Group 3's flagship has not made a port call since December 2025, an operationally significant endurance milestone reflecting sustained demand for U.S. naval presence in the Middle East amid ongoing regional instability. Extended deployments at this scale place measurable stress on crew readiness, maintenance cycles, and equipment reliability — factors adversaries and allies are both watching. The deployment length is a useful indicator of how seriously U.S. planners are weighing deterrence requirements in the theater.",
-          "source": "TWZ",
-          "url": "https://www.twz.com/sea/supercarrier-uss-abraham-lincoln-passes-200-consecutive-days-at-sea-mark"
-        },
-        {
-          "headline": "Germany Moves to Acquire Ground-Launched Tomahawk Missiles, Reshaping NATO Strike Posture",
-          "summary": "Germany's planned purchase of ground-launched Tomahawk cruise missiles marks a significant doctrinal shift, giving a major Continental NATO member an independent long-range conventional strike capability directed at the Russian threat. This follows the U.S. deployment of ground-launched Typhon systems to Europe and signals accelerating allied investment in deep-strike options outside the nuclear threshold. Watch for Russian diplomatic and military responses, as well as whether other NATO members follow with similar acquisitions.",
-          "source": "TWZ",
-          "url": "https://www.twz.com/land/germany-to-buy-ground-launched-tomahawk-missiles"
-        },
-        {
-          "headline": "U.S.-Iran Exchanges Enter Third Day, Clouding Diplomatic Track",
-          "summary": "Tit-for-tat strikes between U.S. and Iranian forces have now extended into a third consecutive day, raising serious questions about whether any ongoing nuclear or security negotiations can survive the escalation cycle. The pattern of reciprocal attacks complicates intelligence assessments of Iranian intent — whether Tehran is signaling resolve for negotiation leverage or pursuing a deliberate escalation strategy. The trajectory of back-channel communications in the next 48–72 hours will be a critical indicator of whether de-escalation remains viable.",
-          "source": "TWZ",
-          "url": "https://www.twz.com/news-features/renewed-attacks-between-u-s-and-iran-stretch-into-third-day"
+          "headline": "Supreme Court ruling on location tracking puts automated license plate reader networks in legal crosshairs",
+          "summary": "Following the Supreme Court's move to restrict warrantless location tracking, legal experts now anticipate ALPR networks—which aggregate vehicle movement data at scale—could face similar Fourth Amendment scrutiny. A warrant requirement for ALPR database searches would fundamentally disrupt how law enforcement uses these systems for real-time and historical vehicle tracking. The outcome could reshape a surveillance tool now deeply embedded in local and federal policing operations.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/license-plate-cameras-may-be-next-target-after-supreme-court-reins-in-location-tracking"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "OT and industrial environments face compounding pressure from IoT-targeting malware families, persistent ransomware focus on manufacturing, and new EU policy efforts to address AI-driven threats to critical infrastructure.",
+      "intro": "The ICS/OT security landscape is being shaped by regulatory reform, post-quantum preparedness investment, and new AI-driven defense tooling as ransomware pressure on critical sectors remains unrelenting.",
       "items": [
         {
-          "headline": "Golang-Based Apex2 and c2c Malware Accelerate IoT Botnet Attacks with Direct OT Implications",
-          "summary": "Nozomi Networks Labs has identified two Golang-based malware families — Apex2 and c2c/meow — that are enabling faster, more scalable IoT botnet campaigns. The use of Golang allows cross-platform compilation and faster deployment cycles, lowering the barrier for attackers to pivot from IoT footholds into adjacent OT environments. OT defenders should treat IoT device hygiene as a front-line priority, particularly in converged IT/OT network architectures.",
+          "headline": "Australia Proposes 21 Reforms to Critical Infrastructure Security Law Amid AI Threat Escalation",
+          "summary": "Australia's Cyber and Infrastructure Security Centre is soliciting industry input on 21 proposed amendments to the Security of Critical Infrastructure (SOCI) Act, targeting AI-enabled threats and streamlining compliance obligations for asset owners. The move signals a broader regulatory push to close gaps between legacy OT security frameworks and the speed of emerging threat vectors. Watch for how industry feedback shapes final obligations, particularly around AI use in both attack and defense contexts.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/ransomware/nozomi-identifies-apex2-and-c2c-golang-malware-driving-faster-iot-botnet-attacks-raising-risks-for-ot-environments/"
+          "url": "https://industrialcyber.co/ai/australias-cisc-advances-soci-act-reforms-to-address-ai-enabled-cyber-threats-critical-infrastructure-risks/"
         },
         {
-          "headline": "Manufacturing Sector Remains Ransomware's Primary Target, ZeroFox Data Confirms",
-          "summary": "ZeroFox's latest threat intelligence identifies manufacturing as the most targeted vertical for ransomware and digital extortion, a trend that has persisted across multiple reporting periods. The concentration of legacy OT systems, operational uptime pressures, and high ransom-payment incentives make the sector structurally attractive to threat actors. Organizations operating production floor environments should treat this as a sustained threat posture, not an episodic risk.",
+          "headline": "QIZ Security Raises $17M Seed Round to Harden Critical Infrastructure Against Quantum Decryption Risks",
+          "summary": "QIZ Security closed a $17 million seed round backed by Bessemer Venture Partners and Merlin Ventures to develop post-quantum cryptographic solutions specifically for critical infrastructure environments. The funding reflects growing investor recognition that OT and ICS systems — many running decades-old protocols — are especially exposed as quantum computing matures. This is an early-stage market but the urgency is real: cryptographic migrations in industrial environments take years and must begin well ahead of quantum capability timelines.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/threats-attacks/zerofox-warns-manufacturing-remains-ransomwares-biggest-target-amid-growing-threats-to-critical-infrastructure/"
+          "url": "https://industrialcyber.co/news/qiz-security-secures-17-million-to-address-post-quantum-cryptographic-risks-facing-critical-infrastructure/"
         },
         {
-          "headline": "EU Releases Action Plan to Counter AI-Driven Cyber Threats Against Critical Infrastructure",
-          "summary": "The European Commission has published a coordinated Action Plan specifically addressing cybersecurity risks from AI-enabled threats targeting critical infrastructure sectors. The plan signals a regulatory shift toward proactive, AI-aware security frameworks for operators of essential services across EU member states. ICS and OT operators in the EU should anticipate this translating into binding compliance requirements tied to existing frameworks like NIS2 and the Cyber Resilience Act.",
+          "headline": "Claroty and Frenos Partner to Deliver AI-Native Attack Simulation for OT Environments",
+          "summary": "Claroty has integrated with Frenos to offer AI-driven simulated attack validation tailored to operational technology networks, allowing industrial organizations to test their defenses without disrupting live systems. The partnership addresses a persistent gap in OT security: traditional penetration testing is often too disruptive or impractical in 24/7 industrial settings. Adoption of continuous validation tools in OT is still nascent, making this a space worth tracking as the vendor ecosystem matures.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/ai/eu-action-plan-sets-roadmap-to-counter-ai-driven-cyber-threats-strengthen-critical-infrastructure-security/"
+          "url": "https://industrialcyber.co/news/claroty-and-frenos-team-up-to-advance-ai-driven-ot-security-validation-for-industrial-organizations/"
         },
         {
-          "headline": "Cisco Talos Discloses Multiple Vulnerabilities in GeoVision, WolfSSL, and VTK-DICOM",
-          "summary": "Cisco Talos researchers disclosed fourteen vulnerabilities in GeoVision hardware — widely deployed in physical security and surveillance contexts common to industrial sites — alongside three in the WolfSSL cryptographic library and one in VTK-DICOM. GeoVision devices have a history of exploitation in OT-adjacent environments, and unpatched instances in facility networks represent a meaningful lateral movement risk. All disclosed vulnerabilities have vendor patches available and should be prioritized in asset inventories.",
-          "source": "Cisco Talos Blog",
-          "url": "https://blog.talosintelligence.com/wolfssl-vulnerabilities/"
+          "headline": "GigaWiper Malware Combines Ransomware, Wiping, and Backdoor Capabilities in One Destructive Package",
+          "summary": "A newly documented malware family called GigaWiper bundles a standalone wiper, ransomware encryption, and a multi-pass data destruction command within a single backdoor framework, raising the destructive ceiling for attacks on industrial and enterprise targets. The modular design allows operators to choose their level of damage — from encrypted extortion to irreversible system destruction — which is particularly concerning for OT environments where recovery time is measured in days or weeks. Organizations should assess whether their incident response plans account for simultaneous encryption and wiping scenarios.",
+          "source": "SecurityWeek",
+          "url": "https://www.securityweek.com/gigawiper-combines-multiple-malware-for-system-level-sabotage/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 83,
-    "items_published": 20
+    "articles_reviewed": 76,
+    "items_published": 18
   }
 }
