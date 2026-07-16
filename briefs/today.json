@@ -1,156 +1,156 @@
 {
-  "date": "2026-07-15",
-  "generated_at": "2026-07-15T09:04:15.548665+00:00",
-  "issue": 76,
-  "executive_summary": "Today's intelligence picture is dominated by a convergent Russian threat operating simultaneously across cyber, physical surveillance, and critical infrastructure domains, with Moscow demonstrating a coordinated campaign that links GRU-attributed APT activity against infrastructure routers, intelligence-gathering via compromised European cameras targeting NATO logistics, and the bulletproof hosting networks enabling broader cybercriminal operations — suggesting these are not isolated incidents but components of a coherent hybrid warfare strategy. The cyber and OT threat landscape is acutely stressed, with CISA's KEV additions, active SharePoint exploitation, SAP ERP exposure, and warnings about pharmaceutical OT environments collectively signaling that adversaries are probing the seam between enterprise IT and industrial control systems at scale. Geopolitically, Iran's ability to dictate peace terms despite military asymmetry, combined with Houthi activation of a second maritime chokepoint at Bab el-Mandeb, points to Tehran successfully leveraging proxy architecture to punch well above its conventional weight — a model that mirrors Russia's own use of proxies and criminal networks in the cyber domain. Against this backdrop, Western procurement signals — the Golden Dome satellite contract, next-generation carrier drone requirements, and medium landing ship investment — suggest defense planners are accelerating toward distributed, multi-domain deterrence, though the persistent 155mm shell production shortfall remains a critical readiness gap that adversaries are almost certainly tracking.",
+  "date": "2026-07-16",
+  "generated_at": "2026-07-16T09:05:07.512576+00:00",
+  "issue": 77,
+  "executive_summary": "Today's intelligence picture is defined by two converging pressures: the accelerating militarization of technology and infrastructure, and the institutional strain on the oversight bodies meant to govern both. U.S. strikes on Iranian military sites, the live-fire validation of autonomous combat drones, and Gulf states modeling AI infrastructure defense on Ukraine's wartime experience all signal that the threshold between conventional conflict and technology-enabled warfare is narrowing rapidly, with adversaries and partners alike recalibrating around that reality. Simultaneously, the domestic governance architecture appears under stress — the DNI nominee faces Senate scrutiny over election integrity, the Space Force contends with budget cuts and a leadership vacuum, Congress is pushing back on Pentagon autonomy through the FY2027 NDAA, and CISA is simultaneously launching new vulnerability programs while adding to its actively exploited catalog, suggesting demand is outpacing institutional capacity. The Iranian thread is particularly worth tracking: U.S. kinetic strikes, Gulf concern about Iranian cyberattacks on AI infrastructure, and the Dutch dismantling of a crypto fraud network with potential state-adjacent financing implications all point to Iran as a through-line across military, geopolitical, and financial domains today. Underlying everything is a systemic vulnerability theme — from post-quantum cryptography standardization and OT security investment to the 23andMe settlement and the LAPD surveillance contract suspension — indicating that both public and private sectors are",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "A historic Microsoft patch volume, active SharePoint exploitation, and Russian intelligence operations against NATO infrastructure define a high-tempo day across the threat landscape.",
+      "intro": "Today's cyber landscape features a new AI-driven vulnerability management initiative from the Trump administration, a major genetic data breach settlement, and fresh additions to CISA's active exploit catalog.",
       "items": [
         {
-          "headline": "Microsoft releases record-breaking patch load with AI-assisted vulnerability discovery cited as driver",
-          "summary": "Microsoft's July 2026 Patch Tuesday addresses at least 570 vulnerabilities—nearly triple last month's record count—with 57 rated critical and two already exploited in the wild. The company attributes the surge in discovered flaws to AI-assisted security research, raising questions about whether the pace of patching can keep up with AI-accelerated vulnerability identification. Organizations should prioritize the two actively exploited CVEs and brace for an increasingly compressed patch cycle.",
-          "source": "Krebs on Security",
-          "url": "https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/"
-        },
-        {
-          "headline": "CISA warns of active exploitation targeting on-premises SharePoint servers across multiple CVEs",
-          "summary": "CISA has flagged three SharePoint vulnerabilities—CVE-2026-32201, CVE-2026-45659, and CVE-2026-56164—being actively exploited to gain unauthorized access to on-premises SharePoint Server instances. The advisory urges immediate hardening measures, making this a critical priority for enterprises that have not migrated to cloud-hosted SharePoint. On-premises deployments remain a persistent soft target given their slower patch adoption rates.",
-          "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/alerts/2026/07/14/cisa-urges-sharepoint-hardening-after-new-exploitations"
-        },
-        {
-          "headline": "CISA adds four actively exploited vulnerabilities to KEV catalog, including SonicWall SSRF flaw",
-          "summary": "CISA's latest KEV update includes a server-side request forgery vulnerability in SonicWall SMA1000 appliances alongside three additional flaws with confirmed in-the-wild exploitation. SonicWall edge devices have been a recurring vector for ransomware and espionage actors, making rapid patching essential for any organization running affected hardware. Federal agencies face binding remediation deadlines; private sector defenders should treat KEV additions as high-priority action items.",
-          "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/alerts/2026/07/14/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "headline": "Russian intelligence compromising internet-connected cameras across Europe to surveil NATO logistics and Ukrainian forces",
-          "summary": "Dutch intelligence has published an advisory revealing that at least one Russian agency is systematically compromising publicly exposed IP cameras to monitor NATO military logistics and Ukrainian personnel movements. The operation reflects a low-cost, high-value collection approach that exploits poor IoT security hygiene at sensitive locations. NATO member states and defense-adjacent facilities should conduct immediate audits of externally accessible camera infrastructure.",
+          "headline": "Trump Administration Launches AI-Powered 'Gold Eagle' Vulnerability Clearinghouse",
+          "summary": "The administration unveiled Gold Eagle, a program using AI to help government, industry, and critical infrastructure operators detect, prioritize, and patch vulnerabilities faster. The initiative signals a shift toward AI-assisted triage at scale, which could meaningfully reduce the window between disclosure and remediation. Watch whether adoption mandates follow for federal agencies and whether private sector uptake is voluntary or incentivized.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/russian-intelligence-compromising-cameras-nato-ukraine-netherlands"
+          "url": "https://therecord.media/gold-eagle-cybersecurity-vulnerabilities-clearinghouse"
+        },
+        {
+          "headline": "CISA Adds Two Actively Exploited Vulnerabilities to Known Exploited Catalog",
+          "summary": "CISA flagged two newly confirmed exploited vulnerabilities, including CVE-2023-4346 affecting the KNX building automation protocol — a sector with direct critical infrastructure exposure. Active exploitation of industrial and building control protocols is a persistent concern given the difficulty of patching operational technology environments. Federal agencies face binding remediation deadlines under BOD 22-01.",
+          "source": "All CISA Advisories",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/07/15/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "headline": "23andMe Pays $18 Million to Settle Multi-State Data Breach Claims",
+          "summary": "A coalition of 42 state attorneys general secured an $18 million settlement from 23andMe over cybersecurity failures that exposed sensitive genetic and personal data in a breach affecting millions of users. The settlement underscores growing state-level enforcement muscle on data security, particularly for companies holding biometric or health-adjacent data. With 23andMe having filed for bankruptcy, the case also raises questions about what protections consumers retain when breached companies become insolvent.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/genetic-testing-settlement-data-breach"
+        },
+        {
+          "headline": "CISA and Allies Release Joint Guidance on Building Vulnerability Disclosure Programs",
+          "summary": "CISA, NSA, and international partners published joint best-practice guidance for software manufacturers and service providers on establishing coordinated vulnerability disclosure programs, including CVE assignment and triage processes. The timing alongside the Gold Eagle announcement suggests a coordinated push to systematize how vulnerabilities flow from discovery to remediation across the ecosystem. Organizations without formal CVD programs should treat this as a baseline benchmark.",
+          "source": "All CISA Advisories",
+          "url": "https://www.cisa.gov/resources-tools/resources/establishing-coordinated-vulnerability-disclosure-program-work-security-researchers"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "The post-Iran conflict order is taking shape unevenly, with Tehran consolidating leverage, NATO fracturing over strategic vision, and the South China Sea marking a decade of unresolved territorial tension.",
+      "intro": "Active conflict zones from the Black Sea to Sudan are reshaping regional power dynamics, while the Iran war's aftershocks continue to reverberate through Gulf infrastructure, U.S. defense policy, and Middle East diplomacy.",
       "items": [
         {
-          "headline": "Iran emerges from conflict dictating peace terms despite military asymmetry",
-          "summary": "Despite facing the combined force of the U.S. and Israel, Iran has leveraged strategic patience and continued strikes to shape the terms of a signed memorandum of understanding — with Trump declaring victory while Iran kept pressure on via Houthi activation and Strait of Hormuz toll disputes. Tehran's theory of victory relied not on battlefield parity but on cost imposition and time, a model that will inform future adversary calculations. Watch whether the MOU holds as Iranian proxies continue operations and Gulf states absorb ongoing targeting.",
+          "headline": "Russia Escalates Economic Warfare Against Ukraine by Targeting Black Sea Trade Infrastructure",
+          "summary": "Moscow has shifted military focus toward Ukraine's deepwater ports and Black Sea trade routes in a deliberate campaign to strangle Kyiv's wartime economy. The strategy mirrors historical naval blockade logic — denying revenue and supply chains rather than contesting front lines. Watch whether NATO allies respond with expanded maritime security commitments or accelerated arms transfers to protect port infrastructure.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/14/trump-strait-hormuz-tolls-investment-trade-gulf-iran-war/"
+          "url": "https://foreignpolicy.com/2026/07/15/russia-ukraine-war-strikes-black-sea-ports-odesa-zelensky-koretskyi-fedorov/"
         },
         {
-          "headline": "Ankara NATO summit exposes deepening strategic split between European and North American visions",
-          "summary": "The 36th NATO summit produced surface-level consensus on Ukraine and European defense spending, but analysts identify a structural bifurcation forming between a Canada-led transatlantic continuity camp and a Rutte-led European strategic autonomy push. The divide reflects not just burden-sharing disputes but fundamentally different threat assessments and alliance purpose. The trajectory of this split will determine whether NATO remains a unified deterrent or fragments into overlapping but misaligned security arrangements.",
+          "headline": "Gulf States Look to Ukraine's Wartime Resilience as Model for Protecting AI Infrastructure from Iranian Attacks",
+          "summary": "Iranian strikes on Gulf infrastructure have raised urgent questions about the viability of ambitious AI investment programs in the region, with Ukraine's experience keeping critical systems operational under sustained bombardment offering a potential playbook. The convergence of kinetic conflict and high-value technology infrastructure marks a new frontier in economic warfare. Gulf states' ability to insulate AI projects from disruption will significantly affect their long-term strategic positioning relative to both Iran and global tech competition.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/15/nato-future-ankara-summit/"
+          "url": "https://foreignpolicy.com/2026/07/16/iranian-attacks-gulf-ai-ambitions/"
         },
         {
-          "headline": "Houthi entry into Bab el-Mandeb signals Iran activating a second maritime chokepoint strategy",
-          "summary": "Iran's contingency plan to simultaneously pressure both the Strait of Hormuz and Bab el-Mandeb appears operational, with Houthi forces re-engaging shipping lanes in a coordinated extension of Tehran's post-conflict leverage. Control or disruption of two critical maritime chokepoints gives Iran asymmetric influence over global energy flows well beyond its conventional military footprint. This development complicates any durable implementation of the U.S.-Iran MOU and raises immediate risk for Gulf state shipping and broader energy markets.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/14/houthis-iran-war-saudi-arabia-bab-el-mandeb-strait-hormuz-oil/"
+          "headline": "FY2027 NDAA Reflects Congress's Effort to Claw Back Oversight of a Pentagon in Political Turmoil",
+          "summary": "Both House and Senate versions of the FY2027 National Defense Authorization Act contain provisions designed to constrain Pentagon policy discretion, driven by congressional anger over the Iran War and politically motivated dismissals of senior military leaders. The legislation signals a deepening civil-military rift at the institutional level, not merely the rhetorical one. How much of this oversight language survives conference and reconciliation will reveal whether Congress can meaningfully check executive control of defense policy in a wartime environment.",
+          "source": "War on the Rocks",
+          "url": "https://warontherocks.com/cogs-of-war/reading-through-the-lines-of-the-fy2027-ndaa/"
         },
         {
-          "headline": "A decade after the nine-dash line ruling, the Philippines accelerates South China Sea defense posture",
-          "summary": "Ten years after the landmark Permanent Court of Arbitration ruling invalidating China's nine-dash line claims, the Philippines is translating legal victory into tangible defense investment, reflecting a broader regional acknowledgment that juridical wins require military credibility to enforce. Beijing never accepted the ruling and has continued incremental expansion, making Manila's renewed buildup a belated but significant shift in how smaller claimants are approaching deterrence. The pace of Philippine militarization and U.S. basing access expansion will be key indicators of whether the South China Sea balance of pressure is genuinely shifting.",
+          "headline": "Sudan Sanctions Expand as UN Evidence of Atrocities Mounts, but Key Enablers Remain Shielded",
+          "summary": "New sanctions have been imposed on Sudan amid accumulating evidence of war crimes and possible genocide, yet the international community continues to avoid directly targeting the foreign actors supplying and sustaining the warring factions. This gap between documented atrocity and enforcement action reflects the same geopolitical constraints that have paralyzed Sudan response efforts since the conflict began. The absence of pressure on external enablers makes a near-term reduction in violence unlikely regardless of UN findings.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/15/south-china-sea-philippines-nine-dash-line-ruling/"
+          "url": "https://foreignpolicy.com/2026/07/15/sudan-civil-war-crimes-sanctions-un-report-genocide/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "U.S. defense investment is accelerating across space, naval, and munitions domains, even as production bottlenecks and readiness gaps expose persistent structural vulnerabilities.",
+      "intro": "U.S. military activity is dominated by active strikes against Iran, accelerating autonomous weapons development, and significant leadership and budget turbulence across multiple services.",
       "items": [
         {
-          "headline": "155mm artillery shell production falls short despite urgent demand",
-          "summary": "A government watchdog has found that manufacturing failures are blocking the Army's push to scale up 155mm howitzer ammunition output — a critical shortfall given ongoing global demand signals from conflicts in Ukraine and elsewhere. The finding underscores a broader gap between stated U.S. defense industrial ambitions and actual production capacity. Watch for congressional pressure and potential contractor accountability measures in response.",
+          "headline": "U.S. Conducts Second Wave of Strikes on Iranian Military Sites",
+          "summary": "American forces struck Iranian military targets in a fresh round of attacks following the reimposition of a naval blockade on Iranian ports. This marks a significant escalation in direct U.S. military action against Iran, raising immediate questions about Iranian retaliation options and regional spillover. Watch for allied responses, Strait of Hormuz shipping disruptions, and any Iranian proxy activation.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-military/2026/07/14/manufacturing-woes-hamper-us-155-mm-ammo-production/"
+          "url": "https://www.militarytimes.com/flashpoints/2026/07/15/us-launches-new-round-of-strikes-against-iran/"
         },
         {
-          "headline": "Space Force awards $1.75B contract for Golden Dome missile warning satellites",
-          "summary": "Two contractors have been selected to build and field missile warning and tracking satellites tied to the Golden Dome initiative, marking a significant step toward a layered space-based defense architecture. The contract signals growing institutional commitment to space as a contested warfighting domain, consistent with themes expected at the upcoming air and space leaders conference. Watch how quickly these programs can move from contract award to on-orbit capability.",
+          "headline": "Air Force Validates Autonomous Combat Drone in First Live-Fire Test",
+          "summary": "The YFQ-44A built by Anduril successfully completed the Air Force's first live-fire test for a Collaborative Combat Aircraft, a milestone in integrating autonomous wingmen alongside crewed fighters. The test validates a core pillar of next-generation air combat doctrine and accelerates procurement decisions. Concurrent Air Force moves toward mass-producible cheap cruise missiles signal a broader shift toward high-volume, lower-cost attritable systems.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/industry/techwatch/2026/07/14/space-force-agency-awards-tech-companies-175-billion-contract-for-missile-warning-tracking-satellites/"
+          "url": "https://www.militarytimes.com/industry/techwatch/2026/07/15/air-force-completes-first-ever-cca-live-fire-test-with-anduril-yfq-44a/"
         },
         {
-          "headline": "Navy defines next-generation carrier drone requirements across strike, ASW, and refueling roles",
-          "summary": "The Navy is shaping requirements for its next carrier-based unmanned system, targeting a platform capable of offensive strikes, anti-submarine warfare, and aerial refueling — a multi-mission profile that would dramatically expand carrier air wing flexibility. This reflects lessons from ongoing drone-centric conflicts and a strategic push to reduce risk to manned aircraft in contested environments. The requirements definition phase will determine whether cost and technical complexity allow a single platform to fulfill all roles.",
-          "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-navy/2026/07/14/the-us-navy-is-eyeing-next-gen-carrier-based-drones-heres-what-they-might-do/"
+          "headline": "Ukraine Dismisses Defense Minister Fedorov After Six Months in a Cabinet Overhaul",
+          "summary": "President Zelenskyy removed Mykhailo Fedorov from the defense ministry just six months after his appointment, signaling internal dissatisfaction with defense management amid ongoing war pressures. Rapid leadership turnover at the top of Ukraine's defense establishment introduces continuity risk at a critical procurement and battlefield planning juncture. The timing and scope of any broader cabinet restructuring will indicate whether this reflects strategic recalibration or political maneuvering.",
+          "source": "Defense News",
+          "url": "https://www.defensenews.com/global/europe/2026/07/15/fedorov-out-as-ukraines-defense-minister-in-major-government-shake-up/"
         },
         {
-          "headline": "Navy commits $2.2B to medium landing ship program ahead of 2029 delivery",
-          "summary": "TOTE has been awarded a $2.2 billion contract to manage construction of the Navy's medium landing ships, with first delivery targeted for fall 2029. The program addresses a recognized gap in distributed amphibious logistics, particularly relevant to Pacific operational concepts. Delivery timelines and shipyard capacity will be key variables to monitor given the Navy's broader shipbuilding backlog.",
-          "source": "Military Times",
-          "url": "https://www.militarytimes.com/industry/techwatch/2026/07/14/navy-awards-tote-22-billion-to-build-medium-landing-ships/"
+          "headline": "Space Force Faces Budget Cuts and Leadership Vacuum as Chief Prepares to Retire",
+          "summary": "General Chance Saltzman's imminent retirement coincides with budget pressure on Space Force priorities and a congressional push to potentially dissolve the Space Development Agency back into the service. The leadership gap arrives at a moment when SDA is resuming delayed satellite launches critical to military communications and targeting infrastructure. How Congress resolves SDA's institutional future will have direct implications for U.S. space-based military capability timelines.",
+          "source": "Defense One - All Content",
+          "url": "https://www.defenseone.com/policy/2026/07/space-force-budget-retirement/414796/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Today's Intel/OSINT picture is dominated by Western law enforcement actions targeting Russian cybercriminal infrastructure and a fugitive hacker linked to one of Europe's most damaging data breaches.",
+      "intro": "Intelligence oversight faces scrutiny on Capitol Hill while law enforcement actions highlight the intersection of surveillance technology, financial crime, and open-source data collection.",
       "items": [
         {
-          "headline": "DOJ indicts operators of Russian bulletproof hosting network that backed major cybercriminal campaigns",
-          "summary": "U.S. prosecutors unsealed charges against individuals allegedly running Media Land and ML Cloud, St. Petersburg-based services that provided infrastructure and technical support to cybercriminals. Bulletproof hosting is a critical enabler of ransomware, fraud, and malware operations, making this indictment a significant disruption attempt against the cybercriminal supply chain. Watch for whether any defendants can be extradited or whether the charges function primarily as a deterrent and asset-freezing mechanism.",
+          "headline": "DNI Nominee Clayton Faces Senate Pressure Over Election Integrity Positions",
+          "summary": "Jay Clayton's confirmation hearing for Director of National Intelligence was dominated by questions about his past statements on voter fraud and the 2020 election, crowding out substantive discussion of intelligence priorities. The hearing signals that partisan tensions over election security will continue to shape oversight of the U.S. intelligence community. Watch whether Clayton's confirmation trajectory affects morale and operational continuity at ODNI during an already turbulent period for the IC.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/us-unseals-indictment-russians-bulletproof-hosting"
+          "url": "https://therecord.media/jay-clayton-odni-nominee-senate-confirmation-hearing"
         },
         {
-          "headline": "Finland issues international wanted notice for hacker behind Vastaamo psychotherapy breach",
-          "summary": "Finnish authorities have issued a formal wanted notice for the individual accused of breaching the Vastaamo psychotherapy clinic, a case involving the theft and attempted extortion of thousands of patients' sensitive mental health records. The suspect's lawyer believes the defendant has fled Finland, complicating prosecution in a case that became a landmark example of particularly harmful data exploitation. The international notice signals Finland is pursuing cross-border legal mechanisms, though apprehension depends heavily on where the suspect has sought refuge.",
+          "headline": "Dutch Police Dismantle Industrialized Crypto Fraud Network Spanning Multiple Countries",
+          "summary": "Dutch authorities arrested the alleged ringleader of a crypto investment fraud operation that ran approximately 24 call centers, employed over 700 people posing as financial advisers, and operated continuously since at least 2021. The scale and corporate-like structure of the operation — resembling a legitimate multinational business — reflects a maturation of organized financial cybercrime that complicates detection and attribution. Investigators and financial regulators should note this as a model for future large-scale fraud enterprises.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/finland-issues-wanted-notice-for-hacker-vastaamo-breach"
+          "url": "https://therecord.media/dutch-police-dismantle-global-crypto-investment-scam"
+        },
+        {
+          "headline": "LAPD Suspends Contract with License Plate Reader Firm Flock Safety Amid Growing Municipal Backlash",
+          "summary": "The Los Angeles Police Department has paused its relationship with automated license plate recognition vendor Flock Safety, joining a growing list of U.S. agencies reconsidering mass surveillance partnerships. The move reflects increasing public and institutional scrutiny of ALPR data retention, sharing practices, and civil liberties implications. How Flock Safety responds — and whether other major cities follow — will shape the near-term trajectory of commercial surveillance infrastructure in U.S. law enforcement.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/lapd-halts-flock-safety-alpr-contract"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "Russian state-sponsored actors dominate the ICS/OT threat landscape today, with Western governments issuing warnings and sanctions as pharmaceutical and defense-industrial sectors face mounting cyber risk.",
+      "intro": "Today's OT/ICS landscape is defined more by market and standards developments than active incidents, with post-quantum cryptography reaching a global milestone and vendor-side OT security investment accelerating.",
       "items": [
         {
-          "headline": "US and Allied Intelligence Agencies Warn of Russian APT Campaigns Against Critical Infrastructure Routers",
-          "summary": "A joint advisory from the US and allied governments warns that multiple Russian state-sponsored threat groups are actively compromising poorly secured routers embedded in critical infrastructure networks. The advisory highlights the persistent risk of living-off-the-land techniques that allow adversaries to maintain long-term access across OT-adjacent network segments. Organizations running aging or misconfigured edge devices in energy, water, and transport sectors should treat this as an urgent hardening signal.",
-          "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/us-allies-warn-of-russian-cyberattacks-targeting-critical-infrastructure-routers/"
-        },
-        {
-          "headline": "EU Sanctions GRU Officers and Hacktivist Groups Over Critical Infrastructure Cyberattacks",
-          "summary": "The European Union sanctioned nine individuals and four entities tied to Russian military intelligence and affiliated hacktivist groups for attacks on European critical infrastructure. The designations target both state actors and the proxy hacktivist ecosystem Russia uses to maintain plausible deniability for disruptive OT-sector operations. This represents a broadening of the EU's accountability framework beyond purely state actors to include the enabler network.",
+          "headline": "Classic McEliece Becomes First Post-Quantum Algorithm to Achieve ISO Standardization",
+          "summary": "Post-Quantum's Classic McEliece algorithm has been formally incorporated into an ISO standard, marking the first post-quantum cryptography (PQC) algorithm to reach global standardization. For OT and industrial environments — where long-lived systems and communication protocols often operate for decades — this milestone is directly relevant, as adversaries may already be harvesting encrypted OT traffic for future decryption. Critical infrastructure operators should treat this as a concrete signal to begin PQC transition planning for legacy industrial protocols.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/critical-infrastructure/eu-sanctions-russian-gru-officers-hacktivists-and-hosting-firms-over-cyberattacks-on-critical-infrastructure/"
+          "url": "https://industrialcyber.co/news/post-quantums-classic-mceliece-becomes-first-post-quantum-cryptography-algorithm-to-achieve-global-iso-standardization/"
         },
         {
-          "headline": "Pharmaceutical OT Environments Face Unique and Costly Cyber Incident Consequences Beyond Production Downtime",
-          "summary": "A detailed analysis examines how cyberattacks on pharmaceutical manufacturing environments can invalidate GMP batch records, trigger regulatory re-validation requirements, and compromise product integrity in ways that far exceed simple production halts. Unlike typical IT incidents, OT breaches in pharma can result in product recalls, FDA scrutiny, and loss of manufacturing authorization. The piece is a useful framing for risk quantification in a sector that has historically underinvested in ICS-specific security controls.",
+          "headline": "Tosi Launches OT Network Intelligence Layer Targeting Industrial Traffic Analysis",
+          "summary": "Tosi has expanded its Tosi Insight platform to U.S. customers, adding an intelligence layer designed to analyze OT network traffic and identify anomalies in industrial environments. The move reflects growing demand for passive visibility tools that can operate without disrupting sensitive industrial processes. Watch whether this gains traction in sectors like energy and water utilities, where network blind spots remain a persistent gap flagged by regulators.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/features/pharmaceutical-manufacturing-validation-batch-integrity-and-what-a-cyber-incident-actually-costs/"
+          "url": "https://industrialcyber.co/news/tosi-insight-expands-ot-network-visibility-with-operational-intelligence-for-industrial-environments/"
         },
         {
-          "headline": "SAP NetWeaver Vulnerabilities Patched Amid Ongoing Concerns About ERP Exposure in Industrial Environments",
-          "summary": "SAP addressed critical flaws in NetWeaver, Approuter, and Commerce Cloud that could allow unauthorized data access, modification, and service disruption. NetWeaver is widely deployed as the ERP backbone in manufacturing, utilities, and process industries, meaning these vulnerabilities carry direct relevance to OT-adjacent business systems that feed plant operations. Given active exploitation of prior NetWeaver vulnerabilities in 2025, patching velocity here is critical.",
-          "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/sap-patches-critical-vulnerabilities-in-netweaver-approuter-commerce-cloud/"
+          "headline": "Corsha Expands Executive Team to Accelerate OT Security Product and Market Strategy",
+          "summary": "Corsha, which focuses on machine identity and API security for OT environments, has appointed a new COO, CPO, and Chief Customer Officer — a leadership build-out signaling a push into broader OT market penetration. Machine-to-machine authentication remains a critical weakness in industrial control systems, where legacy devices often communicate with minimal credential verification. The executive investment suggests Corsha is positioning for competitive expansion as OT security spending increases across critical infrastructure sectors.",
+          "source": "Industrial Cyber",
+          "url": "https://industrialcyber.co/news/corsha-appoints-new-coo-cpo-and-chief-customer-officer-to-strengthen-ot-security-strategy-and-customer-growth/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 93,
+    "articles_reviewed": 92,
     "items_published": 18
   }
 }
