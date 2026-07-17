@@ -1,156 +1,168 @@
 {
-  "date": "2026-07-16",
-  "generated_at": "2026-07-16T09:05:07.512576+00:00",
-  "issue": 77,
-  "executive_summary": "Today's intelligence picture is defined by two converging pressures: the accelerating militarization of technology and infrastructure, and the institutional strain on the oversight bodies meant to govern both. U.S. strikes on Iranian military sites, the live-fire validation of autonomous combat drones, and Gulf states modeling AI infrastructure defense on Ukraine's wartime experience all signal that the threshold between conventional conflict and technology-enabled warfare is narrowing rapidly, with adversaries and partners alike recalibrating around that reality. Simultaneously, the domestic governance architecture appears under stress — the DNI nominee faces Senate scrutiny over election integrity, the Space Force contends with budget cuts and a leadership vacuum, Congress is pushing back on Pentagon autonomy through the FY2027 NDAA, and CISA is simultaneously launching new vulnerability programs while adding to its actively exploited catalog, suggesting demand is outpacing institutional capacity. The Iranian thread is particularly worth tracking: U.S. kinetic strikes, Gulf concern about Iranian cyberattacks on AI infrastructure, and the Dutch dismantling of a crypto fraud network with potential state-adjacent financing implications all point to Iran as a through-line across military, geopolitical, and financial domains today. Underlying everything is a systemic vulnerability theme — from post-quantum cryptography standardization and OT security investment to the 23andMe settlement and the LAPD surveillance contract suspension — indicating that both public and private sectors are",
+  "date": "2026-07-17",
+  "generated_at": "2026-07-17T09:04:17.688716+00:00",
+  "issue": 78,
+  "executive_summary": "Today's intelligence picture is dominated by two converging pressure points: a degrading security environment across both cyber and physical infrastructure, and mounting institutional stress within Western defense and alliance structures. On the cyber-physical side, Russian-linked actors are running simultaneous campaigns against financial networks and Ukrainian users via social engineering, while active exploitation of Fortinet and ICS vulnerabilities in Rockwell and Siemens systems, combined with ransomware halting Fairlife milk production, signals that adversaries are successfully bridging from digital intrusion to real-world operational disruption. The White House Gold Eagle Initiative and new CISA coordinated disclosure frameworks suggest policymakers recognize the OT threat is outpacing current defenses, though the tension between disclosure speed and operational risk in ICS environments remains unresolved. On the geopolitical-military side, the removal of Ukraine's drone minister Fedorov is the day's most consequential single event, simultaneously triggering domestic political backlash, alarming allied governments, and undermining momentum behind the very drone mass-production model NATO's own deputy commander is urging the alliance to adopt. Taken together, the dominant thread is institutional fragility under adversarial pressure: Russia is exploiting gaps in Western cyber defenses, alliance cohesion, and Ukrainian political stability in parallel, while North Korea's sanctions erosion and congressional friction with Pentagon leadership suggest the broader Western security architecture is absorbing stress",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Today's cyber landscape features a new AI-driven vulnerability management initiative from the Trump administration, a major genetic data breach settlement, and fresh additions to CISA's active exploit catalog.",
+      "intro": "Today's cyber landscape is dominated by active exploitation of Fortinet products, a newly disclosed Russian-speaking threat actor targeting Western financial victims, and a wave of ICS/OT vulnerability advisories affecting critical industrial systems.",
       "items": [
         {
-          "headline": "Trump Administration Launches AI-Powered 'Gold Eagle' Vulnerability Clearinghouse",
-          "summary": "The administration unveiled Gold Eagle, a program using AI to help government, industry, and critical infrastructure operators detect, prioritize, and patch vulnerabilities faster. The initiative signals a shift toward AI-assisted triage at scale, which could meaningfully reduce the window between disclosure and remediation. Watch whether adoption mandates follow for federal agencies and whether private sector uptake is voluntary or incentivized.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/gold-eagle-cybersecurity-vulnerabilities-clearinghouse"
+          "headline": "Russian-linked threat actor deploys custom RAT and C2 implant in U.S. and European financial campaign",
+          "summary": "Cisco Talos has exposed UAT-11795, a Russian-speaking, financially motivated group active since at least June 2025, deploying a novel remote access trojan called Starland RAT alongside a bespoke C2 implant dubbed WLDR. The campaign's custom tooling and operational sophistication suggest a well-resourced actor deliberately avoiding commodity malware to reduce detection risk. Security teams in U.S. and European financial sectors should treat indicators from this disclosure as high-priority for threat hunting.",
+          "source": "Cisco Talos Blog",
+          "url": "https://blog.talosintelligence.com/uat-11795-deploys-novel-starland-rat-and-bespoke-wldr-c2-implant-in-financially-motivated-campaign/"
         },
         {
-          "headline": "CISA Adds Two Actively Exploited Vulnerabilities to Known Exploited Catalog",
-          "summary": "CISA flagged two newly confirmed exploited vulnerabilities, including CVE-2023-4346 affecting the KNX building automation protocol — a sector with direct critical infrastructure exposure. Active exploitation of industrial and building control protocols is a persistent concern given the difficulty of patching operational technology environments. Federal agencies face binding remediation deadlines under BOD 22-01.",
+          "headline": "CISA confirms active exploitation of three vulnerabilities, including two in Fortinet products",
+          "summary": "CISA added three CVEs to its Known Exploited Vulnerabilities catalog, prominently including an OS command injection flaw in Fortinet FortiSandbox and a second Fortinet vulnerability, both under active exploitation. Fortinet products have been a persistent target for both state-sponsored and criminal actors, and KEV listings carry binding remediation deadlines for federal agencies. Organizations running affected Fortinet versions should treat patching as urgent regardless of federal status.",
           "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/alerts/2026/07/15/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+          "url": "https://www.cisa.gov/news-events/alerts/2026/07/16/cisa-adds-three-known-exploited-vulnerabilities-catalog"
         },
         {
-          "headline": "23andMe Pays $18 Million to Settle Multi-State Data Breach Claims",
-          "summary": "A coalition of 42 state attorneys general secured an $18 million settlement from 23andMe over cybersecurity failures that exposed sensitive genetic and personal data in a breach affecting millions of users. The settlement underscores growing state-level enforcement muscle on data security, particularly for companies holding biometric or health-adjacent data. With 23andMe having filed for bankruptcy, the case also raises questions about what protections consumers retain when breached companies become insolvent.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/genetic-testing-settlement-data-breach"
-        },
-        {
-          "headline": "CISA and Allies Release Joint Guidance on Building Vulnerability Disclosure Programs",
-          "summary": "CISA, NSA, and international partners published joint best-practice guidance for software manufacturers and service providers on establishing coordinated vulnerability disclosure programs, including CVE assignment and triage processes. The timing alongside the Gold Eagle announcement suggests a coordinated push to systematize how vulnerabilities flow from discovery to remediation across the ecosystem. Organizations without formal CVD programs should treat this as a baseline benchmark.",
+          "headline": "CISA issues advisories for multiple critical ICS flaws across Rockwell, Siemens, and other OT vendors",
+          "summary": "CISA released at least eight ICS advisories in a single day, covering denial-of-service and code execution vulnerabilities in widely deployed Rockwell Automation platforms (CompactLogix, ControlLogix, FactoryTalk, Arena), Siemens SICAM 8 energy systems, and AutomationDirect industrial controllers. The breadth of the release signals coordinated coordinated vendor disclosure and elevates risk for operational technology environments in manufacturing, energy, and critical infrastructure. Asset owners should cross-reference affected version ranges and prioritize network segmentation where immediate patching is not feasible.",
           "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/resources-tools/resources/establishing-coordinated-vulnerability-disclosure-program-work-security-researchers"
+          "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-197-06"
+        },
+        {
+          "headline": "Apple quietly patched a macOS Terminal flaw enabling DNS-based data exfiltration via prompt injection",
+          "summary": "A researcher confirmed Apple has fixed a macOS Terminal vulnerability that allowed indirect prompt injection through ANSI escape codes, which could be chained with LLM-integrated tooling to silently exfiltrate data over DNS. The fix closes a subtle but meaningful attack surface as AI-assisted terminal workflows become more common. The case illustrates how LLM integration into OS-level tooling creates novel exfiltration vectors that traditional endpoint controls may not detect.",
+          "source": "Embrace The Red",
+          "url": "https://embracethered.com/blog/posts/2026/macos-terminal-dillma-dns-exfil-ansi-escape-code-fix/"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "Active conflict zones from the Black Sea to Sudan are reshaping regional power dynamics, while the Iran war's aftershocks continue to reverberate through Gulf infrastructure, U.S. defense policy, and Middle East diplomacy.",
+      "intro": "Global fault lines are sharpening across Europe, East Asia, and the Middle East as alliance cohesion is tested, leadership transitions create uncertainty, and geopolitical fragmentation continues to erode multilateral security frameworks.",
       "items": [
         {
-          "headline": "Russia Escalates Economic Warfare Against Ukraine by Targeting Black Sea Trade Infrastructure",
-          "summary": "Moscow has shifted military focus toward Ukraine's deepwater ports and Black Sea trade routes in a deliberate campaign to strangle Kyiv's wartime economy. The strategy mirrors historical naval blockade logic — denying revenue and supply chains rather than contesting front lines. Watch whether NATO allies respond with expanded maritime security commitments or accelerated arms transfers to protect port infrastructure.",
+          "headline": "Zelensky's removal of Ukraine's popular drone minister triggers domestic backlash",
+          "summary": "Ukrainian President Zelensky reshuffled his cabinet, pushing out Defense Minister Mykhailo Fedorov despite his public popularity for driving Ukraine's drone warfare program. The move raises questions about internal political dynamics in Kyiv at a critical phase of the war. Watch whether the reshuffle signals a strategic pivot in Ukraine's defense posture or reflects factional maneuvering ahead of potential peace negotiations.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/15/russia-ukraine-war-strikes-black-sea-ports-odesa-zelensky-koretskyi-fedorov/"
+          "url": "https://foreignpolicy.com/2026/07/16/ukraine-zelensky-cabinet-reshuffle-protests-fedorov-russia-war-drones/"
         },
         {
-          "headline": "Gulf States Look to Ukraine's Wartime Resilience as Model for Protecting AI Infrastructure from Iranian Attacks",
-          "summary": "Iranian strikes on Gulf infrastructure have raised urgent questions about the viability of ambitious AI investment programs in the region, with Ukraine's experience keeping critical systems operational under sustained bombardment offering a potential playbook. The convergence of kinetic conflict and high-value technology infrastructure marks a new frontier in economic warfare. Gulf states' ability to insulate AI projects from disruption will significantly affect their long-term strategic positioning relative to both Iran and global tech competition.",
+          "headline": "North Korea exploits great-power rivalry to undermine nuclear sanctions regime",
+          "summary": "Geopolitical fragmentation between the US, Russia, and China has effectively paralyzed UN Security Council enforcement of sanctions against Pyongyang, giving North Korea durable strategic cover for its nuclear program. With Russia and China blocking collective action, the multilateral nonproliferation architecture is increasingly hollow. The key risk to watch is whether Pyongyang accelerates weapons transfers or proliferation activity under this permissive environment.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/16/iranian-attacks-gulf-ai-ambitions/"
+          "url": "https://foreignpolicy.com/2026/07/16/north-korea-sanctions-nuclear-weapons-united-states-russia-china-united-nations-security-council/"
         },
         {
-          "headline": "FY2027 NDAA Reflects Congress's Effort to Claw Back Oversight of a Pentagon in Political Turmoil",
-          "summary": "Both House and Senate versions of the FY2027 National Defense Authorization Act contain provisions designed to constrain Pentagon policy discretion, driven by congressional anger over the Iran War and politically motivated dismissals of senior military leaders. The legislation signals a deepening civil-military rift at the institutional level, not merely the rhetorical one. How much of this oversight language survives conference and reconciliation will reveal whether Congress can meaningfully check executive control of defense policy in a wartime environment.",
+          "headline": "FY2027 NDAA reflects deepening congressional friction with Pentagon leadership",
+          "summary": "Both House and Senate versions of the FY2027 National Defense Authorization Act include provisions designed to constrain Pentagon policy discretion, driven by congressional concerns over the Iran War and politically motivated military firings. Innovation funding remains a relative consensus area, but the broader dynamic signals an unusual level of legislative pushback against executive defense authority. This tension could complicate military planning and procurement timelines heading into a period of elevated global risk.",
           "source": "War on the Rocks",
           "url": "https://warontherocks.com/cogs-of-war/reading-through-the-lines-of-the-fy2027-ndaa/"
         },
         {
-          "headline": "Sudan Sanctions Expand as UN Evidence of Atrocities Mounts, but Key Enablers Remain Shielded",
-          "summary": "New sanctions have been imposed on Sudan amid accumulating evidence of war crimes and possible genocide, yet the international community continues to avoid directly targeting the foreign actors supplying and sustaining the warring factions. This gap between documented atrocity and enforcement action reflects the same geopolitical constraints that have paralyzed Sudan response efforts since the conflict began. The absence of pressure on external enablers makes a near-term reduction in violence unlikely regardless of UN findings.",
+          "headline": "Germany urged to build independent military capacity as NATO's collective model shows strain",
+          "summary": "A new analysis argues that NATO's multinational force structure, designed for a post-Cold War security environment, is too slow and unwieldy for the current threat landscape, and that Germany must develop standalone warfighting capability. This reflects a broader European reckoning with defense self-sufficiency amid uncertainty about sustained US commitment. Berlin's political willingness to fund and operationalize that capability remains the central variable to monitor.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/15/sudan-civil-war-crimes-sanctions-un-report-genocide/"
+          "url": "https://foreignpolicy.com/2026/07/16/germany-military-power-bundeswehr-nato-europe-russia/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "U.S. military activity is dominated by active strikes against Iran, accelerating autonomous weapons development, and significant leadership and budget turbulence across multiple services.",
+      "intro": "Ukraine's battlefield and political stability dominate today's military picture, while the Iran war continues to reshape NATO doctrine and U.S. space warfighting priorities.",
       "items": [
         {
-          "headline": "U.S. Conducts Second Wave of Strikes on Iranian Military Sites",
-          "summary": "American forces struck Iranian military targets in a fresh round of attacks following the reimposition of a naval blockade on Iranian ports. This marks a significant escalation in direct U.S. military action against Iran, raising immediate questions about Iranian retaliation options and regional spillover. Watch for allied responses, Strait of Hormuz shipping disruptions, and any Iranian proxy activation.",
+          "headline": "Firing of Ukraine's Defense Minister Draws Allied Alarm and Street Protests",
+          "summary": "Mykhailo Fedorov's dismissal has triggered protests inside Ukraine and sharp concern from Western allies who viewed him as a strategically clear-eyed architect of Ukraine's defense modernization. The timing — mid-war, with no announced successor — raises questions about continuity in procurement and drone strategy. Watch for how NATO partners adjust security assistance coordination in the near term.",
+          "source": "Defense One",
+          "url": "https://www.defenseone.com/policy/2026/07/ukraine-defense-minister-firing-protests/414836/"
+        },
+        {
+          "headline": "Russian Troops Surviving Only Minutes on Ukraine's Front Lines, CIA Director Says",
+          "summary": "CIA Director's public assessment that Russian recruits last 20–30 minutes after reaching the front underscores the catastrophic attrition Moscow is absorbing to sustain offensive pressure. Despite unsustainable losses, Russia has maintained territorial advances through mass mobilization. This metric signals that manpower replenishment, not battlefield competence, is now Russia's primary strategic tool.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/flashpoints/2026/07/15/us-launches-new-round-of-strikes-against-iran/"
+          "url": "https://www.militarytimes.com/global/europe/2026/07/16/russian-troops-survive-just-20-30-minutes-on-ukraines-front-lines-cia-director-says/"
         },
         {
-          "headline": "Air Force Validates Autonomous Combat Drone in First Live-Fire Test",
-          "summary": "The YFQ-44A built by Anduril successfully completed the Air Force's first live-fire test for a Collaborative Combat Aircraft, a milestone in integrating autonomous wingmen alongside crewed fighters. The test validates a core pillar of next-generation air combat doctrine and accelerates procurement decisions. Concurrent Air Force moves toward mass-producible cheap cruise missiles signal a broader shift toward high-volume, lower-cost attritable systems.",
-          "source": "Military Times",
-          "url": "https://www.militarytimes.com/industry/techwatch/2026/07/15/air-force-completes-first-ever-cca-live-fire-test-with-anduril-yfq-44a/"
+          "headline": "NATO Must Absorb Ukraine's Drone Mass-Production Model, Deputy Commander Warns",
+          "summary": "NATO's deputy commander cited Ukraine's projected 5 million drone build in 2026 as a doctrinal benchmark the alliance must urgently replicate, while also drawing lessons from U.S. operations against Iran. The statement reflects a broader shift in NATO thinking toward industrial-scale autonomous systems as a core warfighting requirement. Farnborough will serve as an immediate test of whether allied industry is aligned with that demand signal.",
+          "source": "Defense One",
+          "url": "https://www.defenseone.com/threats/2026/07/ukraine-will-build-more-5-million-drones-year-nato-must-take-notes-deputy-chief-says/414819/"
         },
         {
-          "headline": "Ukraine Dismisses Defense Minister Fedorov After Six Months in a Cabinet Overhaul",
-          "summary": "President Zelenskyy removed Mykhailo Fedorov from the defense ministry just six months after his appointment, signaling internal dissatisfaction with defense management amid ongoing war pressures. Rapid leadership turnover at the top of Ukraine's defense establishment introduces continuity risk at a critical procurement and battlefield planning juncture. The timing and scope of any broader cabinet restructuring will indicate whether this reflects strategic recalibration or political maneuvering.",
-          "source": "Defense News",
-          "url": "https://www.defensenews.com/global/europe/2026/07/15/fedorov-out-as-ukraines-defense-minister-in-major-government-shake-up/"
-        },
-        {
-          "headline": "Space Force Faces Budget Cuts and Leadership Vacuum as Chief Prepares to Retire",
-          "summary": "General Chance Saltzman's imminent retirement coincides with budget pressure on Space Force priorities and a congressional push to potentially dissolve the Space Development Agency back into the service. The leadership gap arrives at a moment when SDA is resuming delayed satellite launches critical to military communications and targeting infrastructure. How Congress resolves SDA's institutional future will have direct implications for U.S. space-based military capability timelines.",
-          "source": "Defense One - All Content",
-          "url": "https://www.defenseone.com/policy/2026/07/space-force-budget-retirement/414796/"
+          "headline": "Space Force Nominee Frames China as Existential Budget Justification Amid GAO Workforce Concerns",
+          "summary": "Lt. Gen. Douglas Schiess sailed through his Senate confirmation hearing by pointing to Chinese and adversary space aggression — highlighted in the Iran conflict — as core justification for Space Force expansion. The hearing came the same day a GAO report found the service cannot adequately define its own personnel requirements, with thousands of authorized positions unfilled in 2025. The contrast between the nominee's confident posture and the GAO's structural critique is a tension lawmakers will need to resolve before approving budget increases.",
+          "source": "Defense One",
+          "url": "https://www.defenseone.com/threats/2026/07/china-justifies-space-forces-budget-nominee-tells-lawmakers-smooth-confirmation-hearing/414823/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Intelligence oversight faces scrutiny on Capitol Hill while law enforcement actions highlight the intersection of surveillance technology, financial crime, and open-source data collection.",
+      "intro": "Today's intelligence picture is dominated by state-linked cyber operations targeting Ukraine, open-source investigative work exposing CSAM-adjacent networks, and transatlantic friction over surveillance legislation.",
       "items": [
         {
-          "headline": "DNI Nominee Clayton Faces Senate Pressure Over Election Integrity Positions",
-          "summary": "Jay Clayton's confirmation hearing for Director of National Intelligence was dominated by questions about his past statements on voter fraud and the 2020 election, crowding out substantive discussion of intelligence priorities. The hearing signals that partisan tensions over election security will continue to shape oversight of the U.S. intelligence community. Watch whether Clayton's confirmation trajectory affects morale and operational continuity at ODNI during an already turbulent period for the IC.",
+          "headline": "Russia's Sandworm deploys fake CAPTCHA to trick Ukrainians into running malicious PowerShell commands",
+          "summary": "GRU-linked Sandworm is using spoofed CAPTCHA prompts that instruct victims to paste PowerShell code directly into Windows — bypassing traditional phishing detection entirely. The technique exploits user habit and trust in CAPTCHA interfaces, requiring no exploit or attachment. This marks a continued evolution in Sandworm's social engineering tradecraft specifically targeting Ukrainian users.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/jay-clayton-odni-nominee-senate-confirmation-hearing"
+          "url": "https://therecord.media/ukraine-sandworm-hacks-captcha-powershell"
         },
         {
-          "headline": "Dutch Police Dismantle Industrialized Crypto Fraud Network Spanning Multiple Countries",
-          "summary": "Dutch authorities arrested the alleged ringleader of a crypto investment fraud operation that ran approximately 24 call centers, employed over 700 people posing as financial advisers, and operated continuously since at least 2021. The scale and corporate-like structure of the operation — resembling a legitimate multinational business — reflects a maturation of organized financial cybercrime that complicates detection and attribution. Investigators and financial regulators should note this as a model for future large-scale fraud enterprises.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/dutch-police-dismantle-global-crypto-investment-scam"
+          "headline": "Bellingcat OSINT investigation unmasks crypto entrepreneur behind major non-consensual image trading forum",
+          "summary": "A joint Bellingcat and New Zealand Press investigation used open-source methods to identify a cryptocurrency entrepreneur linked to a forum trading in leaked and non-consensual explicit images, including CSAM-adjacent material. The case illustrates how crypto pseudonymity is increasingly being pierced through on-chain analysis and digital footprint correlation. Watch for potential law enforcement follow-on action across multiple jurisdictions.",
+          "source": "Bellingcat",
+          "url": "https://www.bellingcat.com/news/2026/07/16/leakedbb-crypto-entrepreneur/"
         },
         {
-          "headline": "LAPD Suspends Contract with License Plate Reader Firm Flock Safety Amid Growing Municipal Backlash",
-          "summary": "The Los Angeles Police Department has paused its relationship with automated license plate recognition vendor Flock Safety, joining a growing list of U.S. agencies reconsidering mass surveillance partnerships. The move reflects increasing public and institutional scrutiny of ALPR data retention, sharing practices, and civil liberties implications. How Flock Safety responds — and whether other major cities follow — will shape the near-term trajectory of commercial surveillance infrastructure in U.S. law enforcement.",
+          "headline": "Senator Wyden urges Trump administration to oppose Canadian lawful-access surveillance bill",
+          "summary": "Sen. Ron Wyden wrote to Secretary Rubio and Deputy AG Blanche arguing Canada's proposed surveillance legislation would effectively compel American tech infrastructure to serve foreign government interception demands. The letter signals growing bipartisan concern about allied nations leveraging U.S. platforms for domestic surveillance. If enacted, the Canadian bill could set a precedent that other Five Eyes partners seek to replicate.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/lapd-halts-flock-safety-alpr-contract"
+          "url": "https://therecord.media/canada-lawful-access-act-surveillance-wyden-letter"
+        },
+        {
+          "headline": "Ukraine dismisses drone-champion defense minister Fedorov amid public backlash",
+          "summary": "President Zelensky removed Mykhailo Fedorov, the minister most associated with Ukraine's rapid integration of commercial drones and digital warfare tools, sparking protests from technologists and civil society. The timing raises questions about internal political dynamics at a critical juncture in Ukraine's drone-centric warfighting strategy. Loss of Fedorov's institutional advocacy could slow procurement and innovation pipelines that have been operationally significant on the front lines.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/ukraine-fedorov-drones-dismissal"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "Today's OT/ICS landscape is defined more by market and standards developments than active incidents, with post-quantum cryptography reaching a global milestone and vendor-side OT security investment accelerating.",
+      "intro": "OT security faces pressure from multiple directions today, with a ransomware attack halting US food production, a new US government vulnerability coordination initiative targeting critical infrastructure, and a pointed analysis of why legacy OT systems remain dangerously difficult to patch.",
       "items": [
         {
-          "headline": "Classic McEliece Becomes First Post-Quantum Algorithm to Achieve ISO Standardization",
-          "summary": "Post-Quantum's Classic McEliece algorithm has been formally incorporated into an ISO standard, marking the first post-quantum cryptography (PQC) algorithm to reach global standardization. For OT and industrial environments — where long-lived systems and communication protocols often operate for decades — this milestone is directly relevant, as adversaries may already be harvesting encrypted OT traffic for future decryption. Critical infrastructure operators should treat this as a concrete signal to begin PQC transition planning for legacy industrial protocols.",
-          "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/news/post-quantums-classic-mceliece-becomes-first-post-quantum-cryptography-algorithm-to-achieve-global-iso-standardization/"
+          "headline": "Ransomware Forces Coca-Cola to Halt Fairlife Milk Production at US Facilities",
+          "summary": "A ransomware attack has shut down Fairlife production operations across Coca-Cola's US facilities, a direct example of cyber incidents translating into physical operational disruption in food and beverage manufacturing. The attack did not affect product safety or Canadian operations, but the production halt underscores how OT-adjacent IT systems in food manufacturing remain high-value ransomware targets. Watch for details on which systems were encrypted and whether OT networks were directly involved or only impacted through IT-OT integration points.",
+          "source": "SecurityWeek",
+          "url": "https://www.securityweek.com/coca-cola-suspends-us-fairlife-production-due-to-ransomware-attack/"
         },
         {
-          "headline": "Tosi Launches OT Network Intelligence Layer Targeting Industrial Traffic Analysis",
-          "summary": "Tosi has expanded its Tosi Insight platform to U.S. customers, adding an intelligence layer designed to analyze OT network traffic and identify anomalies in industrial environments. The move reflects growing demand for passive visibility tools that can operate without disrupting sensitive industrial processes. Watch whether this gains traction in sectors like energy and water utilities, where network blind spots remain a persistent gap flagged by regulators.",
+          "headline": "White House Gold Eagle Initiative Establishes Centralized Clearinghouse for Critical Infrastructure Vulnerability Coordination",
+          "summary": "The White House launched Gold Eagle, a vulnerability coordination clearinghouse specifically designed to improve how security flaws in critical infrastructure are identified, disclosed, and remediated. This is a significant policy move that directly addresses the fragmented, sector-by-sector approach that has historically slowed OT vulnerability response. The initiative's effectiveness will depend on industry participation and whether it can bridge the gap between IT-focused disclosure norms and the slower patch cycles inherent to OT environments.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/news/tosi-insight-expands-ot-network-visibility-with-operational-intelligence-for-industrial-environments/"
+          "url": "https://industrialcyber.co/threats-attacks/us-launches-gold-eagle-initiative-to-boost-cybersecurity-vulnerability-coordination-bolster-critical-infrastructure-defense/"
         },
         {
-          "headline": "Corsha Expands Executive Team to Accelerate OT Security Product and Market Strategy",
-          "summary": "Corsha, which focuses on machine identity and API security for OT environments, has appointed a new COO, CPO, and Chief Customer Officer — a leadership build-out signaling a push into broader OT market penetration. Machine-to-machine authentication remains a critical weakness in industrial control systems, where legacy devices often communicate with minimal credential verification. The executive investment suggests Corsha is positioning for competitive expansion as OT security spending increases across critical infrastructure sectors.",
+          "headline": "CISA and International Partners Release Coordinated Vulnerability Disclosure Framework for Software Suppliers",
+          "summary": "CISA, NSA, and allied nations have jointly published a coordinated vulnerability disclosure framework aimed at standardizing how software suppliers receive and act on vulnerability reports, with critical infrastructure implications throughout. The multinational approach signals an effort to create consistent remediation pressure across vendors whose products are embedded in OT and ICS environments globally. This complements the Gold Eagle initiative and suggests a concerted US government push to close the loop between vulnerability discovery and patch deployment in critical sectors.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/news/corsha-appoints-new-coo-cpo-and-chief-customer-officer-to-strengthen-ot-security-strategy-and-customer-growth/"
+          "url": "https://industrialcyber.co/cisa/cisa-global-partners-unveil-coordinated-vulnerability-disclosure-framework-to-help-software-suppliers-remediate-vulnerabilities/"
+        },
+        {
+          "headline": "Analysis: OT Vulnerability Disclosure Remains Cybersecurity's Most Difficult Balancing Act",
+          "summary": "A detailed examination of OT security realities highlights why legacy industrial systems create a fundamentally different disclosure challenge compared to IT: patches often cannot be applied without operational downtime, safety validation requirements add months to remediation timelines, and public disclosure of unpatched flaws can directly endanger physical infrastructure. The piece is timely given simultaneous government moves on vulnerability coordination frameworks, and raises the question of whether new disclosure policies will account for OT-specific constraints or apply IT-centric assumptions to industrial environments.",
+          "source": "SecurityWeek",
+          "url": "https://www.securityweek.com/legacy-systems-real-world-impacts-the-reality-of-ot-security/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 92,
-    "items_published": 18
+    "articles_reviewed": 109,
+    "items_published": 20
   }
 }
