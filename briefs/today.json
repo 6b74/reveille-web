@@ -1,168 +1,132 @@
 {
-  "date": "2026-07-17",
-  "generated_at": "2026-07-17T09:04:17.688716+00:00",
-  "issue": 78,
-  "executive_summary": "Today's intelligence picture is dominated by two converging pressure points: a degrading security environment across both cyber and physical infrastructure, and mounting institutional stress within Western defense and alliance structures. On the cyber-physical side, Russian-linked actors are running simultaneous campaigns against financial networks and Ukrainian users via social engineering, while active exploitation of Fortinet and ICS vulnerabilities in Rockwell and Siemens systems, combined with ransomware halting Fairlife milk production, signals that adversaries are successfully bridging from digital intrusion to real-world operational disruption. The White House Gold Eagle Initiative and new CISA coordinated disclosure frameworks suggest policymakers recognize the OT threat is outpacing current defenses, though the tension between disclosure speed and operational risk in ICS environments remains unresolved. On the geopolitical-military side, the removal of Ukraine's drone minister Fedorov is the day's most consequential single event, simultaneously triggering domestic political backlash, alarming allied governments, and undermining momentum behind the very drone mass-production model NATO's own deputy commander is urging the alliance to adopt. Taken together, the dominant thread is institutional fragility under adversarial pressure: Russia is exploiting gaps in Western cyber defenses, alliance cohesion, and Ukrainian political stability in parallel, while North Korea's sanctions erosion and congressional friction with Pentagon leadership suggest the broader Western security architecture is absorbing stress",
+  "date": "2026-07-18",
+  "generated_at": "2026-07-18T09:05:41.750968+00:00",
+  "issue": 79,
+  "executive_summary": "Today's intelligence picture reflects a convergence of escalating geopolitical pressure and systemic vulnerabilities in critical infrastructure, both physical and digital. The U.S. is operating across multiple simultaneous friction points — active military engagement with Iran, contested diplomatic signaling, and a domestic counterterrorism posture being politically reoriented — while adversaries including China and Iran appear to be probing and advancing their positions with deliberate intent. The cyberattacks on Fairlife and Nichirei, combined with the Kudankulam nuclear data leak, suggest a coordinated or opportunistic campaign targeting food supply and energy infrastructure at a moment of heightened geopolitical tension, a pattern consistent with state-adjacent threat actors leveraging crises as cover. China's simultaneous advancement of its largest naval replenishment vessel, information operations through Taiwan's religious culture, and Australia's PLA-simulation training collectively indicate that the Indo-Pacific military competition is accelerating in both hardware and cognitive domains, even as U.S. readiness signals are mixed, with the Zumwalt program delayed, leadership transparency being curtailed across the Navy, and autonomous warship investment still in early stages.",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Today's cyber landscape is dominated by active exploitation of Fortinet products, a newly disclosed Russian-speaking threat actor targeting Western financial victims, and a wave of ICS/OT vulnerability advisories affecting critical industrial systems.",
+      "intro": "Industrial and food supply chain cyber vulnerabilities are in focus as a major U.S. dairy producer halts operations following a cyber incident.",
       "items": [
         {
-          "headline": "Russian-linked threat actor deploys custom RAT and C2 implant in U.S. and European financial campaign",
-          "summary": "Cisco Talos has exposed UAT-11795, a Russian-speaking, financially motivated group active since at least June 2025, deploying a novel remote access trojan called Starland RAT alongside a bespoke C2 implant dubbed WLDR. The campaign's custom tooling and operational sophistication suggest a well-resourced actor deliberately avoiding commodity malware to reduce detection risk. Security teams in U.S. and European financial sectors should treat indicators from this disclosure as high-priority for threat hunting.",
-          "source": "Cisco Talos Blog",
-          "url": "https://blog.talosintelligence.com/uat-11795-deploys-novel-starland-rat-and-bespoke-wldr-c2-implant-in-financially-motivated-campaign/"
-        },
-        {
-          "headline": "CISA confirms active exploitation of three vulnerabilities, including two in Fortinet products",
-          "summary": "CISA added three CVEs to its Known Exploited Vulnerabilities catalog, prominently including an OS command injection flaw in Fortinet FortiSandbox and a second Fortinet vulnerability, both under active exploitation. Fortinet products have been a persistent target for both state-sponsored and criminal actors, and KEV listings carry binding remediation deadlines for federal agencies. Organizations running affected Fortinet versions should treat patching as urgent regardless of federal status.",
-          "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/alerts/2026/07/16/cisa-adds-three-known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "headline": "CISA issues advisories for multiple critical ICS flaws across Rockwell, Siemens, and other OT vendors",
-          "summary": "CISA released at least eight ICS advisories in a single day, covering denial-of-service and code execution vulnerabilities in widely deployed Rockwell Automation platforms (CompactLogix, ControlLogix, FactoryTalk, Arena), Siemens SICAM 8 energy systems, and AutomationDirect industrial controllers. The breadth of the release signals coordinated coordinated vendor disclosure and elevates risk for operational technology environments in manufacturing, energy, and critical infrastructure. Asset owners should cross-reference affected version ranges and prioritize network segmentation where immediate patching is not feasible.",
-          "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-197-06"
-        },
-        {
-          "headline": "Apple quietly patched a macOS Terminal flaw enabling DNS-based data exfiltration via prompt injection",
-          "summary": "A researcher confirmed Apple has fixed a macOS Terminal vulnerability that allowed indirect prompt injection through ANSI escape codes, which could be chained with LLM-integrated tooling to silently exfiltrate data over DNS. The fix closes a subtle but meaningful attack surface as AI-assisted terminal workflows become more common. The case illustrates how LLM integration into OS-level tooling creates novel exfiltration vectors that traditional endpoint controls may not detect.",
-          "source": "Embrace The Red",
-          "url": "https://embracethered.com/blog/posts/2026/macos-terminal-dillma-dns-exfil-ansi-escape-code-fix/"
+          "headline": "Fairlife suspends U.S. dairy production across multiple states after cyberattack",
+          "summary": "Fairlife, a Coca-Cola-owned dairy brand with over $1 billion in retail sales, has suspended production at plants in Michigan, New York, and Arizona following a cyber incident. The disruption highlights the growing exposure of food and beverage manufacturers to operational technology attacks that can directly halt physical production. Watch for disclosure of the attack vector and whether ransomware or data exfiltration is involved, as this could signal broader targeting of the agricultural sector.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/dairy-company-fairlife-suspends-production-us-cyber-incident"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "Global fault lines are sharpening across Europe, East Asia, and the Middle East as alliance cohesion is tested, leadership transitions create uncertainty, and geopolitical fragmentation continues to erode multilateral security frameworks.",
+      "intro": "The U.S.-Iran conflict escalates from nuclear diplomacy to kinetic strikes on civilian infrastructure, while China pursues soft-power and religious influence operations against Taiwan.",
       "items": [
         {
-          "headline": "Zelensky's removal of Ukraine's popular drone minister triggers domestic backlash",
-          "summary": "Ukrainian President Zelensky reshuffled his cabinet, pushing out Defense Minister Mykhailo Fedorov despite his public popularity for driving Ukraine's drone warfare program. The move raises questions about internal political dynamics in Kyiv at a critical phase of the war. Watch whether the reshuffle signals a strategic pivot in Ukraine's defense posture or reflects factional maneuvering ahead of potential peace negotiations.",
+          "headline": "U.S. and Iranian Forces Strike Civilian Infrastructure in Regional Escalation",
+          "summary": "Attacks attributed to U.S. and Iranian forces have targeted bridges, power plants, and desalination facilities, raising serious questions under international humanitarian law. The strikes mark a dangerous expansion of the conflict's scope beyond military targets, with potential for broader regional destabilization. Watch whether allied governments and international bodies formally characterize these as war crimes and whether either side signals restraint or further escalation.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/16/ukraine-zelensky-cabinet-reshuffle-protests-fedorov-russia-war-drones/"
+          "url": "https://foreignpolicy.com/2026/07/17/us-iran-strikes-civilian-infrastructure-bridges-kuwait-desalination-syria/"
         },
         {
-          "headline": "North Korea exploits great-power rivalry to undermine nuclear sanctions regime",
-          "summary": "Geopolitical fragmentation between the US, Russia, and China has effectively paralyzed UN Security Council enforcement of sanctions against Pyongyang, giving North Korea durable strategic cover for its nuclear program. With Russia and China blocking collective action, the multilateral nonproliferation architecture is increasingly hollow. The key risk to watch is whether Pyongyang accelerates weapons transfers or proliferation activity under this permissive environment.",
+          "headline": "Trump-Iran Memorandum Draws Sharp Criticism Over Diplomatic Vagueness",
+          "summary": "Analysts are raising alarms that the U.S.-Iran memorandum of understanding lacks the specificity and verification mechanisms required for durable peacemaking. The gap between the deal's framing and its operational detail creates exploitable ambiguity for both sides. The simultaneous occurrence of infrastructure strikes alongside a supposed diplomatic agreement suggests the MOU may be masking continued conflict rather than resolving it.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/16/north-korea-sanctions-nuclear-weapons-united-states-russia-china-united-nations-security-council/"
+          "url": "https://foreignpolicy.com/2026/07/17/trump-peacemaking-iran-war-mou/"
         },
         {
-          "headline": "FY2027 NDAA reflects deepening congressional friction with Pentagon leadership",
-          "summary": "Both House and Senate versions of the FY2027 National Defense Authorization Act include provisions designed to constrain Pentagon policy discretion, driven by congressional concerns over the Iran War and politically motivated military firings. Innovation funding remains a relative consensus area, but the broader dynamic signals an unusual level of legislative pushback against executive defense authority. This tension could complicate military planning and procurement timelines heading into a period of elevated global risk.",
-          "source": "War on the Rocks",
-          "url": "https://warontherocks.com/cogs-of-war/reading-through-the-lines-of-the-fy2027-ndaa/"
+          "headline": "Beijing Weaponizes Taiwan's Mazu Deity Cult to Advance Unification Narrative",
+          "summary": "China is actively co-opting religious pilgrimages centered on the sea goddess Mazu to cultivate cross-strait cultural affinity and push pro-unification messaging into Taiwanese society. The strategy reflects Beijing's broader gray-zone approach of leveraging shared cultural heritage as a political instrument rather than relying solely on military pressure. Taiwanese authorities will need to balance religious freedom against the risk of state-sponsored influence operations exploiting these channels.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/07/17/china-taiwan-mazu-matsu-goddess-pilgrimage/"
         },
         {
-          "headline": "Germany urged to build independent military capacity as NATO's collective model shows strain",
-          "summary": "A new analysis argues that NATO's multinational force structure, designed for a post-Cold War security environment, is too slow and unwieldy for the current threat landscape, and that Germany must develop standalone warfighting capability. This reflects a broader European reckoning with defense self-sufficiency amid uncertainty about sustained US commitment. Berlin's political willingness to fund and operationalize that capability remains the central variable to monitor.",
+          "headline": "Trump Administration Reportedly Using Cuban Drone Threat as Pretext for Military Action",
+          "summary": "Claims that Cuba has acquired Iranian drones are being assessed by experts as thin on evidence and consistent with a pattern of threat inflation used to justify military posturing. If the administration proceeds on this framing, it would represent a significant escalation in Western Hemisphere policy with unpredictable spillover effects involving Venezuela and Iran. The episode underscores how drone proliferation narratives are increasingly being instrumentalized for geopolitical ends beyond the immediate security context.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/16/germany-military-power-bundeswehr-nato-europe-russia/"
+          "url": "https://foreignpolicy.com/2026/07/17/cuba-iran-drones-trump-venezuela-us-military/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "Ukraine's battlefield and political stability dominate today's military picture, while the Iran war continues to reshape NATO doctrine and U.S. space warfighting priorities.",
+      "intro": "U.S. military readiness and policy are under pressure on multiple fronts, from hypersonic weapons delays to a significant shift in domestic counterterrorism doctrine.",
       "items": [
         {
-          "headline": "Firing of Ukraine's Defense Minister Draws Allied Alarm and Street Protests",
-          "summary": "Mykhailo Fedorov's dismissal has triggered protests inside Ukraine and sharp concern from Western allies who viewed him as a strategically clear-eyed architect of Ukraine's defense modernization. The timing — mid-war, with no announced successor — raises questions about continuity in procurement and drone strategy. Watch for how NATO partners adjust security assistance coordination in the near term.",
+          "headline": "Trump signs memo reorienting U.S. counterterrorism to target domestic 'radical left' threats",
+          "summary": "National Security Presidential Memorandum-7 (NSPM-7) formally redirects U.S. counterterrorism resources toward domestically framed ideological threats, a significant departure from the post-9/11 foreign-threat-centric framework. The move has legal and civil liberties implications, as the apparatus built for foreign terrorism is now being applied inward. Watch for how DoD and the intelligence community operationalize this directive and whether it generates congressional or judicial pushback.",
           "source": "Defense One",
-          "url": "https://www.defenseone.com/policy/2026/07/ukraine-defense-minister-firing-protests/414836/"
+          "url": "https://www.defenseone.com/ideas/2026/07/trump-terrorism-national-security-memo/414853/"
         },
         {
-          "headline": "Russian Troops Surviving Only Minutes on Ukraine's Front Lines, CIA Director Says",
-          "summary": "CIA Director's public assessment that Russian recruits last 20–30 minutes after reaching the front underscores the catastrophic attrition Moscow is absorbing to sustain offensive pressure. Despite unsustainable losses, Russia has maintained territorial advances through mass mobilization. This metric signals that manpower replenishment, not battlefield competence, is now Russia's primary strategic tool.",
+          "headline": "Navy's Zumwalt hypersonic missile program slips two years behind schedule",
+          "summary": "The effort to arm the three Zumwalt-class destroyers with Conventional Prompt Strike hypersonic missiles has fallen two years behind its original timeline, raising questions about cost growth and strategic relevance given China's accelerating hypersonic capabilities. The Zumwalt program has a long history of schedule and cost overruns, and further delays erode the Navy's near-term long-range strike posture. Congressional appropriators are likely to press for revised timelines and accountability at upcoming hearings.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/global/europe/2026/07/16/russian-troops-survive-just-20-30-minutes-on-ukraines-front-lines-cia-director-says/"
+          "url": "https://www.militarytimes.com/industry/techwatch/2026/07/17/us-navy-2-years-behind-on-hypersonic-missile-installation-on-zumwalt-destroyers/"
         },
         {
-          "headline": "NATO Must Absorb Ukraine's Drone Mass-Production Model, Deputy Commander Warns",
-          "summary": "NATO's deputy commander cited Ukraine's projected 5 million drone build in 2026 as a doctrinal benchmark the alliance must urgently replicate, while also drawing lessons from U.S. operations against Iran. The statement reflects a broader shift in NATO thinking toward industrial-scale autonomous systems as a core warfighting requirement. Farnborough will serve as an immediate test of whether allied industry is aligned with that demand signal.",
-          "source": "Defense One",
-          "url": "https://www.defenseone.com/threats/2026/07/ukraine-will-build-more-5-million-drones-year-nato-must-take-notes-deputy-chief-says/414819/"
+          "headline": "Saronic commits $3 billion to build autonomous warship facility in Brownsville, Texas",
+          "summary": "Autonomous vessel startup Saronic has selected Brownsville, Texas, as the site for Port Alpha, a purpose-built shipyard intended to mass-produce unmanned surface vessels at scale. The facility represents a major private-sector bet on the Pentagon's growing appetite for autonomous maritime platforms as a cost-effective counter to adversary naval expansion. Watch whether DoD contracts follow the investment and how traditional shipbuilders respond competitively.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/industry/techwatch/2026/07/17/saronic-picks-brownsville-texas-for-3-billion-port-alpha-shipyard/"
         },
         {
-          "headline": "Space Force Nominee Frames China as Existential Budget Justification Amid GAO Workforce Concerns",
-          "summary": "Lt. Gen. Douglas Schiess sailed through his Senate confirmation hearing by pointing to Chinese and adversary space aggression — highlighted in the Iran conflict — as core justification for Space Force expansion. The hearing came the same day a GAO report found the service cannot adequately define its own personnel requirements, with thousands of authorized positions unfilled in 2025. The contrast between the nominee's confident posture and the GAO's structural critique is a tension lawmakers will need to resolve before approving budget increases.",
-          "source": "Defense One",
-          "url": "https://www.defenseone.com/threats/2026/07/china-justifies-space-forces-budget-nominee-tells-lawmakers-smooth-confirmation-hearing/414823/"
+          "headline": "Navy orders removal of leadership portraits and bios from command websites",
+          "summary": "The Navy has directed commands at the vice admiral level and below to scrub leadership photographs and biographies from public-facing websites, citing security concerns. The move reflects broader U.S. military awareness of open-source intelligence collection by adversaries targeting individual commanders for profiling, influence, or targeting purposes. This is a low-cost but operationally meaningful OPSEC measure likely to spread to other service branches.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/news/your-navy/2026/07/17/navy-instructs-commands-to-remove-portraits-biographies-from-websites/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Today's intelligence picture is dominated by state-linked cyber operations targeting Ukraine, open-source investigative work exposing CSAM-adjacent networks, and transatlantic friction over surveillance legislation.",
+      "intro": "Intelligence and open-source analysis today centers on leadership shifts in Ukraine's defense establishment, adversary military capability signals, and Western training adaptations to near-peer threats.",
       "items": [
         {
-          "headline": "Russia's Sandworm deploys fake CAPTCHA to trick Ukrainians into running malicious PowerShell commands",
-          "summary": "GRU-linked Sandworm is using spoofed CAPTCHA prompts that instruct victims to paste PowerShell code directly into Windows — bypassing traditional phishing detection entirely. The technique exploits user habit and trust in CAPTCHA interfaces, requiring no exploit or attachment. This marks a continued evolution in Sandworm's social engineering tradecraft specifically targeting Ukrainian users.",
+          "headline": "Ukraine's New Acting Defense Minister Comes Straight from the Intelligence and Strike Operations World",
+          "summary": "Zelensky has appointed Major General Yevhenii Khmara, previously acting head of the Security Service of Ukraine (SBU), as acting defense minister — placing an intelligence and counterterrorism specialist atop the defense ministry during an active war. The move signals a potential shift toward integrating intelligence-driven operations more deeply into strategic defense planning. Watch for changes in Ukraine's long-range strike doctrine and interagency coordination as Khmara consolidates the role.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/ukraine-sandworm-hacks-captcha-powershell"
+          "url": "https://therecord.media/ukraine-acting-defense-minister-yevhenii-khmara"
         },
         {
-          "headline": "Bellingcat OSINT investigation unmasks crypto entrepreneur behind major non-consensual image trading forum",
-          "summary": "A joint Bellingcat and New Zealand Press investigation used open-source methods to identify a cryptocurrency entrepreneur linked to a forum trading in leaked and non-consensual explicit images, including CSAM-adjacent material. The case illustrates how crypto pseudonymity is increasingly being pierced through on-chain analysis and digital footprint correlation. Watch for potential law enforcement follow-on action across multiple jurisdictions.",
-          "source": "Bellingcat",
-          "url": "https://www.bellingcat.com/news/2026/07/16/leakedbb-crypto-entrepreneur/"
+          "headline": "Australian Army Uses Abrams Disguised as PLA Tank in Adversary Simulation Training",
+          "summary": "The Australian Army has revealed a modified M1 Abrams configured to visually replicate a Chinese People's Liberation Army tank, used to add realism to exercises against a simulated near-peer adversary. The disclosure is a notable OSINT signal: Australia is openly institutionalizing China as its primary training adversary, reflecting a significant doctrinal and political posture shift. This kind of OPFOR investment typically precedes or accompanies deeper war-gaming and capability development cycles.",
+          "source": "TWZ",
+          "url": "https://www.twz.com/land/australian-army-unveils-abrams-disguised-as-chinese-tank"
         },
         {
-          "headline": "Senator Wyden urges Trump administration to oppose Canadian lawful-access surveillance bill",
-          "summary": "Sen. Ron Wyden wrote to Secretary Rubio and Deputy AG Blanche arguing Canada's proposed surveillance legislation would effectively compel American tech infrastructure to serve foreign government interception demands. The letter signals growing bipartisan concern about allied nations leveraging U.S. platforms for domestic surveillance. If enacted, the Canadian bill could set a precedent that other Five Eyes partners seek to replicate.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/canada-lawful-access-act-surveillance-wyden-letter"
-        },
-        {
-          "headline": "Ukraine dismisses drone-champion defense minister Fedorov amid public backlash",
-          "summary": "President Zelensky removed Mykhailo Fedorov, the minister most associated with Ukraine's rapid integration of commercial drones and digital warfare tools, sparking protests from technologists and civil society. The timing raises questions about internal political dynamics at a critical juncture in Ukraine's drone-centric warfighting strategy. Loss of Fedorov's institutional advocacy could slow procurement and innovation pipelines that have been operationally significant on the front lines.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/ukraine-fedorov-drones-dismissal"
+          "headline": "Satellite Imagery Confirms China Building World's Largest Naval Replenishment Vessel",
+          "summary": "Open-source imagery of a Chinese shipyard shows what analysts assess to be the largest at-sea replenishment ship ever constructed, intended to extend the endurance of Chinese carrier strike groups far from home ports. This is a direct indicator of China's intent to project sustained blue-water naval power, reducing the logistical constraints that have historically limited its carrier operations. The development is a key benchmark for tracking the PLA Navy's timeline toward credible long-range power projection capability.",
+          "source": "TWZ",
+          "url": "https://www.twz.com/sea/china-is-building-a-monster-supply-ship-for-its-carrier-groups"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "OT security faces pressure from multiple directions today, with a ransomware attack halting US food production, a new US government vulnerability coordination initiative targeting critical infrastructure, and a pointed analysis of why legacy OT systems remain dangerously difficult to patch.",
+      "intro": "Critical infrastructure threats are mounting on two fronts today — active cyberattacks hitting food and cold chain logistics, and a nuclear facility data leak — while NIST moves to close long-standing OT visibility gaps.",
       "items": [
         {
-          "headline": "Ransomware Forces Coca-Cola to Halt Fairlife Milk Production at US Facilities",
-          "summary": "A ransomware attack has shut down Fairlife production operations across Coca-Cola's US facilities, a direct example of cyber incidents translating into physical operational disruption in food and beverage manufacturing. The attack did not affect product safety or Canadian operations, but the production halt underscores how OT-adjacent IT systems in food manufacturing remain high-value ransomware targets. Watch for details on which systems were encrypted and whether OT networks were directly involved or only impacted through IT-OT integration points.",
-          "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/coca-cola-suspends-us-fairlife-production-due-to-ransomware-attack/"
-        },
-        {
-          "headline": "White House Gold Eagle Initiative Establishes Centralized Clearinghouse for Critical Infrastructure Vulnerability Coordination",
-          "summary": "The White House launched Gold Eagle, a vulnerability coordination clearinghouse specifically designed to improve how security flaws in critical infrastructure are identified, disclosed, and remediated. This is a significant policy move that directly addresses the fragmented, sector-by-sector approach that has historically slowed OT vulnerability response. The initiative's effectiveness will depend on industry participation and whether it can bridge the gap between IT-focused disclosure norms and the slower patch cycles inherent to OT environments.",
+          "headline": "Nichirei Cyberattack Halts Japanese Cold Chain Operations; Kudankulam Nuclear Plant Data Leak Compounds Infrastructure Concerns",
+          "summary": "Japanese food logistics giant Nichirei was forced to disconnect systems on July 13 after a cyberattack disrupted cold chain and food distribution operations, with gradual restoration still underway. Simultaneously, a data leak linked to India's Kudankulam nuclear power plant has surfaced, raising broader alarms about the vulnerability of critical infrastructure across the food and energy sectors. The combination of two distinct infrastructure incidents in the same reporting window signals an elevated threat tempo against OT-dependent operations.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/threats-attacks/us-launches-gold-eagle-initiative-to-boost-cybersecurity-vulnerability-coordination-bolster-critical-infrastructure-defense/"
+          "url": "https://industrialcyber.co/critical-infrastructure/nichirei-cyberattack-disrupts-food-and-cold-chain-operations-as-kudankulam-data-leak-flags-rising-infrastructure-threats/"
         },
         {
-          "headline": "CISA and International Partners Release Coordinated Vulnerability Disclosure Framework for Software Suppliers",
-          "summary": "CISA, NSA, and allied nations have jointly published a coordinated vulnerability disclosure framework aimed at standardizing how software suppliers receive and act on vulnerability reports, with critical infrastructure implications throughout. The multinational approach signals an effort to create consistent remediation pressure across vendors whose products are embedded in OT and ICS environments globally. This complements the Gold Eagle initiative and suggests a concerted US government push to close the loop between vulnerability discovery and patch deployment in critical sectors.",
+          "headline": "NIST NCCoE Opens Public Comment on OT Asset Management Framework Aimed at Closing Visibility Gaps",
+          "summary": "The National Cybersecurity Center of Excellence has released a draft project on OT asset management, soliciting industry input to improve asset visibility, risk management, and cyber resilience across operational technology environments. Poor asset inventory remains one of the most exploited weaknesses in ICS/SCADA networks, often leaving defenders blind to exposed or unpatched devices. Watch for how vendor and operator feedback shapes the final guidance, which could set a practical benchmark for OT security baselines across sectors.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/cisa/cisa-global-partners-unveil-coordinated-vulnerability-disclosure-framework-to-help-software-suppliers-remediate-vulnerabilities/"
-        },
-        {
-          "headline": "Analysis: OT Vulnerability Disclosure Remains Cybersecurity's Most Difficult Balancing Act",
-          "summary": "A detailed examination of OT security realities highlights why legacy industrial systems create a fundamentally different disclosure challenge compared to IT: patches often cannot be applied without operational downtime, safety validation requirements add months to remediation timelines, and public disclosure of unpatched flaws can directly endanger physical infrastructure. The piece is timely given simultaneous government moves on vulnerability coordination frameworks, and raises the question of whether new disclosure policies will account for OT-specific constraints or apply IT-centric assumptions to industrial environments.",
-          "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/legacy-systems-real-world-impacts-the-reality-of-ot-security/"
+          "url": "https://industrialcyber.co/nist/nist-nccoe-seeks-input-on-ot-asset-management-project-to-improve-visibility-risk-management-cyber-resilience/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 109,
-    "items_published": 20
+    "articles_reviewed": 75,
+    "items_published": 14
   }
 }
