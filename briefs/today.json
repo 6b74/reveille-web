@@ -1,162 +1,162 @@
 {
-  "date": "2026-07-21",
-  "generated_at": "2026-07-21T09:02:21.920756+00:00",
-  "issue": 82,
-  "executive_summary": "Today's intelligence picture is defined by an accelerating convergence of Iranian-linked military aggression, critical infrastructure vulnerability, and state-adjacent cyber operations that together signal a period of elevated and compounding risk. The killing of two U.S. soldiers in Jordan by Iranian ballistic missiles and drones, combined with the Houthi naval blockade of Saudi Arabia and the Iran carrier tracking noted in OSINT reporting, indicates the Iran conflict has entered a more kinetically direct phase despite long diplomatic odds against resolution — a thread with immediate implications for energy markets and U.S. force posture. Simultaneously, the cyber and OT reporting reveals that adversaries are exploiting institutional and infrastructural weak points at scale, from the nine-month undetected exfiltration of South Korean diplomatic data and India's apparent downplaying of nuclear plant access claims, to dangerously exposed electric substations and unpatched OT vulnerabilities — a pattern consistent with pre-conflict or coercive intelligence collection targeting the very systems that underpin energy and defense logistics. The Coast Guard shadowing of a Chinese research vessel toward the Arctic, combined with Central Asia's emergence as a critical minerals battleground and the France-Germany military rift, rounds out a picture of simultaneous great-power friction across multiple domains, suggesting today's threats are not isolated incidents but overlapping pressure points being tested by multiple actors in a coordinated window of Western strategic distraction.",
+  "date": "2026-07-22",
+  "generated_at": "2026-07-22T09:01:20.237879+00:00",
+  "issue": 83,
+  "executive_summary": "Today's intelligence picture is dominated by two converging pressures: an active U.S.-Iran conflict that is simultaneously straining allied cohesion, consuming Pentagon resources at an accelerating pace, and exposing underappreciated vulnerabilities in global oil markets, while adversaries are exploiting the distraction to advance asymmetric campaigns across cyber and physical infrastructure. The ICS and cyber sections tell a related story, with a 51% spike in OT and IoT vulnerabilities, active exploitation of critical industrial control systems, and Russian GRU use of compromised IP cameras to surveil European and Ukrainian infrastructure, suggesting that state and state-aligned actors are actively probing the soft underbelly of Western critical infrastructure during a period of military and political stress. Taiwan's deliberate mobile network throttling during Han Kuang exercises and Chinese military doctrine explicitly targeting Taiwan's will to fight rather than just its defenses are a notable pairing, indicating Taipei is rehearsing for exactly the kind of gray-zone degradation Beijing is preparing to impose. The thread connecting all four sections is systemic overextension: the U.S. is fiscally and diplomatically stretched by the Iran conflict, allies from Seoul to Paris are signaling doubt, adversaries from Moscow to Beijing are probing for exploitable gaps, and domestic oversight mechanisms from TSA cybersecurity roadmaps to Pentagon budget processes are flagging as inadequate to the current threat tempo",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "State-linked intrusions, critical infrastructure attacks, and a major professional services data breach dominate today's threat landscape.",
+      "intro": "Today's cyber landscape is dominated by a wave of ICS/OT vulnerability disclosures and actively exploited flaws, alongside a notable consumer privacy enforcement action and a smart TV supply chain transparency issue.",
       "items": [
         {
-          "headline": "Undetected for nine months: hackers exfiltrate South Korean diplomatic personnel data",
-          "summary": "Unidentified threat actors spent roughly nine months inside an online training platform used by South Korea's diplomatic academy before being discovered, stealing personal data on current and former Foreign Ministry employees. The duration of the intrusion suggests a sophisticated, patient adversary — likely a state-sponsored group — focused on intelligence gathering on South Korean diplomats. Attribution and the full scope of exfiltrated data remain under investigation.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/south-korea-cyberattack-foreign-ministry"
+          "headline": "CISA flags four vulnerabilities under active exploitation, including legacy router flaw and AI platform code execution risk",
+          "summary": "CISA added four CVEs to its Known Exploited Vulnerabilities catalog, including a 2021 stack-based buffer overflow in DD-WRT routers and a 2026 code-inclusion flaw in Langflow, an AI workflow platform. Active exploitation of these vulnerabilities means federal agencies face binding patching deadlines, but the broader risk extends to enterprises using these products. The Langflow flaw is particularly notable given the rapid adoption of AI development tools with limited security vetting.",
+          "source": "All CISA Advisories",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/07/21/cisa-adds-four-known-exploited-vulnerabilities-catalog"
         },
         {
-          "headline": "Ernst & Young discloses client data exposed via compromised third-party IT platform",
-          "summary": "Ernst & Young confirmed a data breach stemming from a compromised third-party IT support platform, with exposed support tickets potentially containing client documents and tax information. The incident highlights persistent supply-chain risk, where a vendor's weak security posture directly endangers a major firm's sensitive client data. Affected clients and regulators will be watching how EY manages disclosure obligations across multiple jurisdictions.",
-          "source": "Check Point Research",
-          "url": "https://research.checkpoint.com/2026/20th-july-threat-intelligence-report/"
+          "headline": "Rockwell Automation ICS products hit with multiple critical vulnerabilities spanning denial-of-service to arbitrary code execution",
+          "summary": "CISA issued three separate advisories covering Rockwell Automation products — POINT I/O, Ex I/O, and Studio 5000 Logix Designer — exposing industrial control systems to denial-of-service attacks and, in Logix Designer's case, arbitrary code execution and configuration tampering. These products are widely deployed in manufacturing and critical infrastructure environments, raising the operational risk profile significantly. OT security teams should prioritize patch assessment given Rockwell's central role in U.S. industrial automation.",
+          "source": "All CISA Advisories",
+          "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-202-10"
         },
         {
-          "headline": "Romania's land registry crippled by worst cyberattack in its institutional history",
-          "summary": "Romania's national land registry agency is still in recovery mode following a cyberattack it described as the most severe technical incident it has ever faced, with ongoing disruption rippling through the country's property transaction market. Attacks on land registry systems carry significant economic consequences, freezing real estate deals and undermining public trust in government digital infrastructure. The incident adds to a growing pattern of ransomware and disruptive attacks targeting European public-sector agencies.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/romania-cyberattack-land-registry"
+          "headline": "LG moves to ban smart TV apps that silently route user traffic as residential proxies",
+          "summary": "LG announced it will suspend webOS apps that convert users' televisions into residential proxy nodes, following researcher findings that over 42% of apps in its store enabled third-party traffic routing without user awareness. This practice is commercially exploited by proxy networks to obscure malicious or fraudulent internet traffic, making unwitting TV owners complicit in abuse. The move sets a precedent for smart TV platform governance, but enforcement credibility will depend on how rigorously LG audits existing and future submissions.",
+          "source": "Krebs on Security",
+          "url": "https://krebsonsecurity.com/2026/07/lg-to-ban-residential-proxies-from-smart-tv-apps/"
         },
         {
-          "headline": "India downplays leaked nuclear plant documents as cybercrime group claims sensitive access",
-          "summary": "Indian authorities responded to claims by the World Leaks cybercrime group that it had obtained and published documents from the Kudankulam Nuclear Power Plant, asserting the files contain no safety or security-relevant information. While the official reassurance aims to prevent panic, the incident raises questions about what level of access the group may have had and whether more sensitive data remains unacknowledged. Nuclear facility targeting — even at the periphery — warrants continued scrutiny regardless of the initial government assessment.",
+          "headline": "Spain fines bankrupt 23andMe nearly $3 million over security failures that enabled 2023 mass data breach",
+          "summary": "Spain's data protection authority levied a €2.8 million fine against 23andMe, citing cybersecurity deficiencies that allowed the 2023 credential-stuffing breach affecting 6.9 million users globally, including over 2,600 Spanish nationals. The fine adds to the company's mounting legal and financial liabilities as it navigates bankruptcy proceedings, raising questions about the practical recoverability of penalties against insolvent data custodians. Regulators across the EU are watching this case as a test of GDPR enforcement against collapsed companies holding sensitive genomic data.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/india-nuclear-plant-kudankulam-world-leaks-documents"
+          "url": "https://therecord.media/spain-fines-23andme-3-million-cyber-failings-data-breach"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "Global flashpoints are multiplying simultaneously, with Houthi escalation in the Red Sea, fractures in European cohesion, and a contested Iran endgame all demanding attention.",
+      "intro": "Global fault lines are deepening across multiple theaters, with China expanding its Taiwan warfare doctrine, Ukraine pressing its drone campaign into Russian territory, and the U.S.-Iran war reverberating through key allied relationships worldwide.",
       "items": [
         {
-          "headline": "Houthis Announce Naval Blockade of Saudi Arabia, Raising Energy Market Risks",
-          "summary": "The Houthi movement has declared a naval blockade targeting Saudi Arabia, extending their Red Sea campaign into a direct threat against the Gulf's largest oil exporter. The move compounds already-strained global energy markets and raises the prospect of broader regional escalation involving Iran-backed forces. Watch whether Saudi Arabia and coalition partners mount a kinetic response and how tanker traffic rerouting affects oil prices in the near term.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/20/houthi-blockade-saudi-iran-war-red-sea-gulf-aden-hormuz/"
+          "headline": "Chinese Military Doctrine Targets Taiwan's Will to Fight, Not Just Its Defenses",
+          "summary": "Restricted PLA research documents outline a strategy to defeat Taipei by collapsing civilian and military cognitive cohesion—blocking external aid, dismantling operational systems, and eliminating recovery capacity rather than relying solely on kinetic force. This signals Beijing is developing a hybrid warfare model that treats psychological and informational degradation as decisive war-winning tools alongside conventional operations. Watch for how Taiwan and U.S. planners adapt deterrence frameworks to account for this population-targeting approach.",
+          "source": "War on the Rocks",
+          "url": "https://warontherocks.com/total-war-on-taipei-china-explores-elevating-cognitive-effects-into-its-vision-of-warfare/"
         },
         {
-          "headline": "Trump Faces Historically Long Odds in Attempting to Close Out the Iran Conflict",
-          "summary": "Historical precedent shows U.S. presidents have consistently failed to diplomatically or militarily conclude wars they initiate, and the Iran conflict follows that pattern. The analysis suggests structural incentives—domestic political pressures, allied entanglement, and Iranian strategic patience—make a clean exit unlikely regardless of White House intent. The key variable to monitor is whether any negotiated off-ramp can be framed as a win before domestic political windows close.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/21/trump-end-iran-war-history/"
+          "headline": "Ukraine's Deep-Strike Drone Campaign Is Shifting War's Momentum Against Russia",
+          "summary": "Ukraine's expanded long-range drone operations are degrading Russian logistics, energy infrastructure, and operational planning deeper inside Russian territory than at any prior point in the conflict. The strikes create compounding pressure on Moscow's rear-area sustainment—but Russia's adaptation capacity and escalation calculus remain key variables. The central question is whether Ukraine can convert tactical disruption into durable strategic leverage before battlefield attrition undermines its position.",
+          "source": "War on the Rocks",
+          "url": "https://warontherocks.com/how-ukraine-put-russia-on-the-backfoot/"
         },
         {
-          "headline": "France-Germany Military Rivalry Signals a Dangerous Regression for European Security",
-          "summary": "Analysts are drawing parallels between current Franco-German tensions and the fractured European security environment of 1952, when national rivalries undermined collective defense before NATO integration took hold. A renewed competition between Europe's two anchor powers would hollow out EU defense cooperation at precisely the moment the continent needs strategic coherence. Watch whether upcoming EU defense spending negotiations become a battleground for bilateral friction rather than a coordinating mechanism.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/20/europe-germany-france-eu-1952/"
+          "headline": "U.S.-Iran War Is Straining Allied Relationships from Seoul to Paris",
+          "summary": "Five expert assessments reveal that the U.S. military conflict with Iran is producing significant diplomatic friction with South Korea, India, Ukraine, France, and the United Kingdom—each resisting or conditioning their support in distinct ways reflecting their own strategic interests. The divergence exposes the limits of U.S. coalition management when a conflict carries high economic and escalatory risk for partners. These fractures could constrain future U.S. flexibility in both the Middle East and in parallel theaters like the Indo-Pacific.",
+          "source": "War on the Rocks",
+          "url": "https://warontherocks.com/how-the-war-with-iran-is-shaping-key-u-s-relations-beyond-the-middle-east/"
         },
         {
-          "headline": "Central Asia Emerges as the New Battleground in the Global Critical Minerals Race",
-          "summary": "Major powers are intensifying competition over Central Asia's rare earth and critical mineral deposits, replicating 19th-century Great Game dynamics in a resource-strategic context. The region's governments are leveraging competing offers from Washington, Beijing, and Moscow to extract concessions, making outcomes uncertain and potentially destabilizing for local governance. The minerals contest intersects directly with broader supply chain vulnerabilities that Western defense industries are scrambling to address.",
+          "headline": "Iran War Exposes Oil Market Vulnerabilities That Washington Is Underestimating",
+          "summary": "Depleted strategic petroleum reserves, altered shipping dynamics around the Strait of Hormuz, and Houthi interdiction activity have left global oil markets far more exposed to price shocks than the Trump administration's posture suggests. Previous assumptions about buffer capacity no longer hold under current conditions, meaning even a modest escalation could trigger disproportionate price spikes. Energy markets and allied governments reliant on stable oil prices should treat this as a near-term systemic risk, not a manageable background variable.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/20/great-game-central-asia-rare-earths/"
+          "url": "https://foreignpolicy.com/2026/07/21/iran-war-oil-markets-crude-prices-hormuz-strait-reserves-houthi-blockade-united-states-saudi-arabia/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "Today's military picture is defined by urgent air defense gaps, autonomous systems expansion, and a deadly Iranian strike on U.S. forces in Jordan.",
+      "intro": "The Iran conflict dominates today's military picture, with rising casualty counts, a $67 billion Pentagon funding request, and diplomatic pressure spreading to NATO's eastern flank.",
       "items": [
         {
-          "headline": "Two U.S. soldiers killed in Iranian ballistic missile and drone strike in Jordan",
-          "summary": "1st Lt. Tyler Feehan and Pvt. Isabella Gonzales were killed in an Iranian ballistic missile and drone attack at a base in Jordan. The strike underscores the persistent threat Iran-aligned forces pose to U.S. personnel in the region and is likely to intensify pressure on the administration to respond. Watch for retaliatory strikes or force posture changes across the Middle East in the coming days.",
+          "headline": "Pentagon seeks $67 billion more as Iran war costs top $37.5 billion and casualties mount",
+          "summary": "Defense Secretary Hegseth told senators the conflict with Iran has cost $37.5 billion to date and submitted a $67.1 billion emergency supplemental funding request. Separately, the Pentagon identified a third soldier killed in an Iranian attack in Jordan — Sgt. Angel Rampersad, 28 — and a fourth soldier, Sgt. Michael Swinton, killed during controlled detonation of an Iranian drone. The compounding human and financial toll will intensify congressional debate over war authority and spending priorities.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/flashpoints/middle-east/2026/07/20/pentagon-identifies-american-soliders-killed-in-iranian-attack-in-jordan/"
+          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/07/21/cost-of-iran-war-rises-to-375-billion-pentagon-requests-671-billion-more/"
         },
         {
-          "headline": "Lockheed unveils smaller, cheaper Patriot interceptor to close critical air defense gap",
-          "summary": "Lockheed Martin introduced a compact, lower-cost Patriot interceptor designed to address the cost-exchange problem of using expensive missiles to defeat cheap drones and ballistic threats. Ukraine and multiple NATO allies have been pressing for more interceptor capacity as existing stockpiles deplete. This system, if fielded at scale, could fundamentally shift the economics of layered air defense.",
-          "source": "Defense One - All Content",
-          "url": "https://www.defenseone.com/technology/2026/07/lockheed-martin-unveils-baby-patriot-missile-address-urgent-gap/414897/"
-        },
-        {
-          "headline": "Anduril unveils autonomous tiltrotor wingman for Army helicopter operations",
-          "summary": "Weeks after securing the Air Force's Collaborative Combat Aircraft contract, Anduril is now pitching an autonomous tiltrotor as a robotic wingman for U.S. Army helicopters. The move signals aggressive expansion of uncrewed teaming concepts beyond fixed-wing aviation into rotary-wing operations. This rapid portfolio growth will test whether Anduril can deliver across multiple simultaneous high-profile programs.",
-          "source": "Defense One - All Content",
-          "url": "https://www.defenseone.com/defense-systems/2026/07/anduril-pitches-robot-wingman-us-army-helicopters/414868/"
-        },
-        {
-          "headline": "Coast Guard shadows Chinese research vessel transiting U.S. exclusive economic zone toward Arctic",
-          "summary": "A Chinese research vessel passed through U.S. sovereign waters last week en route to the Arctic under Coast Guard monitoring. The transit highlights Beijing's sustained interest in Arctic access and the intelligence-collection potential of research vessels operating in sensitive maritime corridors. As Arctic competition intensifies, expect increased scrutiny of dual-use Chinese maritime activity in the region.",
+          "headline": "Iran presses Bulgaria to deny US access to its territory for military operations",
+          "summary": "Iran's foreign ministry warned Bulgaria against permitting American forces to use Bulgarian territory in operations against Iran, signaling Tehran's effort to fracture NATO solidarity and limit US basing options in southeastern Europe. The move reflects a broader Iranian pressure campaign targeting smaller NATO members perceived as more susceptible to coercion. Watch for similar warnings directed at other flank states hosting US logistics or strike assets.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-military/2026/07/20/coast-guard-monitors-chinese-research-vessel-as-it-cuts-through-sovereign-us-waters-to-the-arctic/"
+          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/07/21/iran-warns-bulgaria-against-aiding-us-military-operations/"
+        },
+        {
+          "headline": "USS Charlotte crew honored for role in sinking Iranian frigate during Operation Epic Fury",
+          "summary": "The Navy awarded its Unit Commendation to the crew of the Los Angeles-class submarine USS Charlotte following its reported participation in Operation Epic Fury, which involved sinking an Iranian frigate. The public recognition is notable given submarine operations are rarely acknowledged, suggesting the Navy is deliberately signaling undersea strike capability to Iran and regional partners. The award also underscores the submarine force's central role in the campaign.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/news/your-navy/2026/07/21/uss-charlotte-crew-that-reportedly-sank-iranian-frigate-awarded-navy-unit-commendation/"
+        },
+        {
+          "headline": "US lawmakers at Paris Airshow warn Pentagon budget gridlock threatens Golden Dome and allied confidence",
+          "summary": "Senators attending Europe's largest airshow cautioned that funding for the Golden Dome missile defense initiative may fall short this year due to congressional budget paralysis, a message that lands poorly at a moment when US allies are being asked to deepen defense cooperation. The optics of American legislators airing domestic funding failures at an international defense forum underscores the reputational risk of prolonged appropriations uncertainty. The Golden Dome program's timeline and procurement decisions are now a variable to track closely.",
+          "source": "Defense One - All Content",
+          "url": "https://www.defenseone.com/policy/2026/07/airshow-lawmakers-alarm-pentagon-budget/414911/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Today's open-source intelligence picture is shaped by public surveillance technology rollbacks, domain seizure operations, and open-source naval tracking amid active U.S. military operations against Iran.",
+      "intro": "Today's intelligence picture is shaped by leadership transitions at ODNI, Taiwan stress-testing civilian resilience infrastructure, and opportunistic hackers targeting a sitting head of state.",
       "items": [
         {
-          "headline": "U.S. Carrier Deployments Tracked as Iran Strikes Enter New Phase",
-          "summary": "Open-source naval tracking confirms carrier positioning as the U.S. conducts a second wave of strikes against Iran and maintains a naval blockade of Iranian ports now approaching its first week. The public availability of carrier location data underscores how much of the operational picture adversaries and analysts alike can reconstruct through OSINT alone. Watch for changes in carrier posture as a leading indicator of escalation or de-escalation.",
-          "source": "TWZ",
-          "url": "https://www.twz.com/sea/where-are-the-aircraft-carriers-july-20-2026"
+          "headline": "Jay Clayton's ODNI nomination clears Senate Intelligence Committee on party-line vote",
+          "summary": "The Senate Intelligence Committee advanced Clayton's nomination to lead the Office of the Director of National Intelligence, sending it to the full Senate. The party-line vote signals continued partisan friction over intelligence community oversight at a moment when ODNI's coordination role across 18 agencies carries heightened strategic weight. Confirmation on the Senate floor remains the key milestone to watch.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/jay-clayton-dni-nomination-senate-committee-approval"
         },
         {
-          "headline": "DOJ Seizes Over 1,000 Domains Running Illegal World Cup Streams",
-          "summary": "The Department of Justice took down more than 1,000 domains that were illegally broadcasting World Cup matches, representing one of the larger domain seizure operations tied to a single sporting event. The operation highlights the scale of infrastructure that criminal and gray-market streaming networks can spin up rapidly around high-demand events. The enforcement action also demonstrates continued coordination between rights holders and federal law enforcement on IP-related cyber operations.",
+          "headline": "Taiwan deliberately throttles mobile networks to 1% capacity during Han Kuang resilience exercises",
+          "summary": "As part of its annual Han Kuang civil-military drills, Taiwan is intentionally degrading 4G and 5G networks island-wide to simulate wartime communications disruption. The exercise reveals deliberate thinking about infrastructure fragility under conflict conditions — a direct response to how Russia's invasion exposed Ukraine's communications vulnerabilities. How Taiwan's population and emergency services cope under degraded connectivity is the operational intelligence value being generated here.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/world-cup-illegal-streams-doj"
+          "url": "https://therecord.media/taiwan-mobile-5g-speed-reductions-han-kuang"
         },
         {
-          "headline": "Flock Safety Abandons Audio Surveillance Feature After Community Pushback",
-          "summary": "License plate reader company Flock Safety has discontinued development of an acoustic detection system intended to identify sounds of human distress, citing community consultation concerns. The reversal is notable given the broader expansion of passive sensor networks in public spaces and the increasing convergence of audio, visual, and AI-driven surveillance in law enforcement tools. Privacy advocates will view this as a precedent, though commercial competitors are likely to continue pursuing similar capabilities.",
+          "headline": "Kenyan presidential website defaced with bitcoin ransom demand and data-leak threat",
+          "summary": "Attackers replaced the homepage of President William Ruto's official website with a cryptocurrency wallet address, threatening to release unspecified sensitive information if payment was not made. The incident combines defacement, extortion, and implicit intelligence leverage — a pattern increasingly used against government targets to generate both financial and political pressure. Kenyan authorities have opened an investigation, but the nature of any data potentially exfiltrated remains unconfirmed.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/flock-safety-kills-audio-detection-system-human-distress"
+          "url": "https://therecord.media/kenya-probes-hack-of-presidents-website-after-ransom-demand"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "The OT security landscape is seeing simultaneous movement on legislative, vendor, and strategic fronts, with AI increasingly central to both defense and risk management in industrial environments.",
+      "intro": "OT and IoT infrastructure face a confluence of rising vulnerabilities, state-sponsored exploitation, and governance gaps that collectively raise the risk profile for critical systems.",
       "items": [
         {
-          "headline": "Senate Committee Advances Water Infrastructure Cybersecurity Bill",
-          "summary": "The Senate Environment and Public Works Committee unanimously approved WRDA 2026, which expands cybersecurity support for critical water infrastructure. The bipartisan vote signals growing legislative consensus that water utilities — historically underresourced on cyber defense — need federal backing. Watch for how funding mechanisms and compliance requirements are structured as the bill progresses to the floor.",
+          "headline": "Forescout Data Shows 51% Spike in Vulnerabilities Hitting IoT and OT Networks",
+          "summary": "Forescout's latest research documents a sharp acceleration in vulnerabilities targeting IoT and OT environments, driven by AI-assisted attacks and increasingly sophisticated supply chain intrusions. The scale of the increase signals that passive asset visibility alone is no longer sufficient — defenders need active exposure management tuned to OT protocols and device constraints. Organizations running legacy industrial hardware with long patch cycles are particularly exposed.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/utilities-energy-power-water-waste/us-senate-committee-advances-wrda-2026-expanding-cybersecurity-support-for-critical-water-infrastructure/"
+          "url": "https://industrialcyber.co/industrial-cyber-attacks/forescout-reports-51-surge-in-vulnerabilities-as-ai-supply-chain-attacks-drive-threats-across-iot-ot-infrastructure/"
         },
         {
-          "headline": "Analysis: NERC CIP Compliance Alone Leaves Electric Substations Dangerously Exposed",
-          "summary": "A detailed assessment argues that checkbox-driven NERC CIP compliance fails to address the practical cyber risks facing substations and distribution edge infrastructure, where a compromised relay or gateway can have immediate physical consequences. The piece highlights the gap between regulatory minimum standards and operational security reality in grid environments. This framing is relevant as utilities face increasingly capable adversaries targeting energy OT.",
+          "headline": "Dutch Intelligence Flags Russian GRU Use of Compromised IP Cameras to Surveil European and Ukrainian Infrastructure",
+          "summary": "Dutch security agencies have attributed a systematic campaign of IP camera exploitation to Russian state actors, targeting devices across the Netherlands and other European countries to conduct pre-operational surveillance. Insecure internet-facing cameras on or near critical infrastructure perimeters provide adversaries with physical situational awareness at low cost and risk. Organizations should audit externally visible cameras, enforce credential hygiene, and segment camera networks from OT environments.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/features/moving-beyond-nerc-cip-checklist-to-address-operational-reality-of-securing-substations-and-distribution-edge/"
+          "url": "https://industrialcyber.co/control-device-security/russian-cyber-espionage-campaign-exploits-insecure-ip-cameras-in-europe-and-ukraine-dutch-agencies-say/"
         },
         {
-          "headline": "Nozomi Networks Partners with Anthropic to Bring AI Vulnerability Discovery to OT and CPS",
-          "summary": "Nozomi Networks has joined Anthropic's Project Glasswing, aiming to apply Claude-based AI to vulnerability discovery across OT, IoT, and cyber-physical systems. The partnership reflects accelerating vendor investment in AI-assisted threat detection for industrial environments where traditional security tooling has limited visibility. Separately, Nozomi also integrated with Bastazo to automate OT vulnerability prioritization and remediation workflows, consolidating its AI-driven security positioning.",
+          "headline": "GAO Finds TSA Cybersecurity Roadmap Outdated, FAA Implementation Falling Short in Aviation Sector",
+          "summary": "A GAO review concludes that the TSA's aviation cyber roadmap has not kept pace with the evolving threat landscape, and that the FAA has failed to fully implement key cybersecurity measures — leaving a critical transportation sector with structural governance gaps. Aviation OT systems, including navigation, air traffic control support, and ground infrastructure, remain at risk if oversight frameworks lag behind attacker capabilities. Congress and the agencies will need to reconcile these findings with near-term remediation timelines.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/news/nozomi-networks-joins-anthropics-project-glasswing-to-secure-ot-iot-and-cyber-physical-systems/"
+          "url": "https://industrialcyber.co/transport/gao-warns-outdated-tsa-cyber-roadmap-and-faa-implementation-gaps-could-hinder-aviation-cybersecurity/"
         },
         {
-          "headline": "OpenSSL 'HollowByte' DoS Flaw Patched Quietly — OT Operators Should Audit Exposure",
-          "summary": "OpenSSL silently fixed a denial-of-service vulnerability dubbed HollowByte, which allows attackers to exhaust server memory by triggering unreleased buffer pre-allocations through malicious payload waves. The quiet disclosure is particularly relevant to OT and ICS environments where OpenSSL underpins communications in PLCs, gateways, and engineering workstations that are rarely patched on aggressive timelines. Operators should inventory OpenSSL versions across their environments and prioritize updates on internet-facing or DMZ-adjacent assets.",
+          "headline": "Trump Executive Order Mandates Defense Contractors Map Software and Supplier Cyber Risks End-to-End",
+          "summary": "A new executive order requires defense contractors to build comprehensive visibility into their software dependencies, foreign ownership structures, and supplier-level cyber risks across critical supply chains. For OT-adjacent defense contractors — including those supplying components to weapons systems, energy infrastructure, or communications hardware — this adds a significant compliance burden but also a forcing function for long-overdue SBOM and third-party risk programs. Watch for implementation guidance that may extend requirements deeper into industrial subcontractors.",
           "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/openssl-silently-fixes-hollowbyte-dos-vulnerability/"
+          "url": "https://www.securityweek.com/trump-orders-defense-contractors-to-map-software-suppliers-across-critical-supply-chains/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 101,
+    "articles_reviewed": 114,
     "items_published": 19
   }
 }
