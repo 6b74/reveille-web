@@ -1,168 +1,150 @@
 {
-  "date": "2026-07-23",
-  "generated_at": "2026-07-23T09:02:24.133842+00:00",
-  "issue": 84,
-  "executive_summary": "Today's intelligence picture is dominated by a convergence of Iranian escalation across multiple domains: Iranian-linked actors are actively targeting industrial control systems spanning Siemens, Schneider, and Rockwell platforms while simultaneously, U.S. service members killed in an Iran war are returning home amid eroding public and congressional support for a strategy that Defense Secretary Hegseth has failed to articulate coherently. This operational-strategic disconnect is compounded by the Trump administration's advancing nuclear deal with Saudi Arabia that lacks nonproliferation safeguards, a move that will almost certainly accelerate Iranian calculus around its own nuclear program and further destabilize an already deadlocked Iran policy. A secondary but significant thread connects China and North Korea in a coordinated pressure campaign against U.S. partners: Kimsuky's compromise of South Korean software vendors aligns with Chinese doctrine targeting Taiwan's cognitive cohesion, suggesting allied supply chains and information environments are being systematically softened ahead of potential kinetic contingencies. Against this backdrop, the $1.15 trillion defense budget, the FedRAMP-listed OT zero trust platform, and Australian drone integration in Pacific exercises represent institutional hedging against these threats, but the gap between adversary operational tempo and defensive posture remains the dominant concern across today's reporting.",
+  "date": "2026-07-24",
+  "generated_at": "2026-07-24T09:02:48.026439+00:00",
+  "issue": 85,
+  "executive_summary": "Today's intelligence picture is dominated by two converging strategic pressures: an escalating confrontation with Iran across kinetic, cyber, and diplomatic domains, and a broad deterioration in critical infrastructure security that adversaries are actively exploiting. The Iran thread is particularly significant, running from CENTCOM strikes and Houthi second-front activity in the Gulf, through the nuclear technology deal accelerating Gulf arms race dynamics, to a confirmed Iranian cyber campaign targeting internet-exposed PLCs in U.S. critical infrastructure — suggesting Tehran is pursuing a coordinated, multi-domain pressure strategy rather than isolated actions. The infrastructure vulnerability picture is compounded by Russian cyber operations targeting enterprise platforms via Laundry Bear, a critical RCE flaw in physical security servers, and ransomware actors deploying sophisticated C2-masking techniques, all at a moment when OT and ICS defenses remain under-resourced and inconsistently implemented, as reflected in the reactive posture of Cyber Shield 2026 and the DOE's Stormbreaker initiative. The China AI convergence thread adds a longer-horizon concern: as U.S. military platforms operationalize new capabilities including the F-15EX and F-16 air-to-air combat validation in Ukraine, a closing AI capability gap with Beijing has implications for both the cyber domain and future near-peer conflict readiness that should not be treated as a separate storyl",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Today's cyber landscape features active exploitation of newly catalogued vulnerabilities, escalating Iran-linked infrastructure attacks, and a North Korean espionage campaign targeting software supply chains.",
+      "intro": "Today's cyber landscape is defined by active Russian state espionage against Western email infrastructure, a sophisticated new browser-hijacking malware technique from a ransomware group, and a wave of ICS vulnerability disclosures affecting critical industrial systems.",
       "items": [
         {
-          "headline": "Iran-linked actors escalate attacks on industrial control systems, federal agencies warn",
-          "summary": "A broadened multi-agency advisory details Iranian threat actors manipulating HMI and SCADA displays and interacting maliciously with operational technology project files. The targeting of OT environments—which govern physical infrastructure like water, energy, and manufacturing—represents a higher-risk threat profile than typical IT intrusions. Watch for follow-on advisories with specific indicators of compromise and sector-specific guidance.",
+          "headline": "Russia's Laundry Bear exploits zero-click phishing to compromise Zimbra accounts globally",
+          "summary": "A joint international advisory from CISA and partner agencies attributes a sustained phishing campaign against Zimbra Collaboration Suite users to a Russian state-backed group dubbed Laundry Bear. The technique requires no user interaction beyond receiving a message, making it particularly dangerous for government and commercial organizations. Security teams running Zimbra deployments should treat this as an active threat and audit accounts for unauthorized access immediately.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/federal-agencies-broaden-alert-on-iran-linked-ot-attacks"
+          "url": "https://therecord.media/zimbra-webmail-zero-click-phishing-russia-laundry-bear"
         },
         {
-          "headline": "CISA flags active exploitation of Check Point and Microsoft vulnerabilities",
-          "summary": "CISA added two vulnerabilities to its Known Exploited Vulnerabilities catalog: an improper authentication flaw in Check Point SmartConsole and a separate Microsoft vulnerability, both confirmed under active exploitation. Federal agencies face binding remediation deadlines under BOD 22-01, and private sector organizations should treat KEV additions as prioritization signals for patching. Check Point's SmartConsole is a widely deployed network security management tool, making this flaw particularly high-value for attackers seeking lateral movement.",
+          "headline": "Chaos ransomware group deploys browser-tunneling RAT to mask command-and-control traffic",
+          "summary": "Cisco Talos has detailed msaRAT, a new remote access tool used by the Chaos ransomware group that routes C2 communications through the victim's own browser via WebRTC over TURN, effectively hiding the attacker's IP address and bypassing conventional network detection. The technique — living off the browser rather than the OS — represents a meaningful evasion evolution for a ransomware-affiliated actor. Defenders should scrutinize anomalous browser-initiated outbound connections, particularly to TURN relay infrastructure.",
+          "source": "Cisco Talos Blog",
+          "url": "https://blog.talosintelligence.com/chaos-msarat-living-off-the-browser-to-build-covert-c2-channel/"
+        },
+        {
+          "headline": "CISA flags critical RCE vulnerability in Johnson Controls physical security servers",
+          "summary": "CISA's advisory for Johnson Controls C-CURE 9000 and Victor application servers warns that unpatched versions up to v2.90/v3.0 allow network-adjacent attackers to achieve remote code execution with no physical access required. These platforms are widely deployed in enterprise physical security and access control environments, meaning exploitation could enable attackers to manipulate building security systems. Organizations running these versions should prioritize patching given the convergence of cyber and physical risk.",
           "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/alerts/2026/07/22/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+          "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-204-01"
         },
         {
-          "headline": "North Korea's Kimsuky group compromises South Korean collaboration software vendors",
-          "summary": "The Kimsuky APT, known for intelligence-gathering operations supporting Pyongyang, has pivoted to targeting vendors of groupware and collaborative-work software used widely in South Korean enterprise environments. Compromising software vendors rather than end users is a classic supply-chain approach that can amplify reach across hundreds of downstream customers. Organizations using South Korean-developed collaboration platforms should audit vendor access and monitor for anomalous software updates.",
+          "headline": "Australia's Origin Energy confirms customer data breach amid ongoing investigation",
+          "summary": "Origin Energy, one of Australia's largest energy retailers, has acknowledged that customer data was compromised in a recent breach, with the full scope of affected individuals still being determined. The incident adds to a pattern of critical infrastructure and utility providers facing successful intrusions across the Asia-Pacific region. Watch for regulatory disclosure timelines and whether the breach vector involved third-party suppliers, a recurring theme in recent Australian sector incidents.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/kimsuky-north-korea-espionage-groupware-companies"
-        },
-        {
-          "headline": "House NDAA carries decade-long renewal of cyber information-sharing law",
-          "summary": "A 10-year extension of CISA 2015—the law providing legal liability protections that incentivize private-sector entities to share cyber threat intelligence with government—passed embedded in the House's FY2027 defense authorization bill. The original framework underpins much of the voluntary threat-sharing architecture between industry and DHS, and its lapse would have created uncertainty for participating organizations. The bill still requires Senate passage and reconciliation before becoming law.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/cisa-2015-extension-passes-house-ndaa"
+          "url": "https://therecord.media/australia-origin-energy-data-breach"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "Proliferation risks, cognitive warfare doctrine, and strained regional dynamics define a geopolitical landscape where the margins for miscalculation are narrowing.",
+      "intro": "The Middle East conflict is reshaping regional security architecture, while China's AI surge and internal corruption signal competing pressures on Beijing's global ambitions.",
       "items": [
         {
-          "headline": "Trump-Saudi Nuclear Deal Advances Without Nonproliferation Safeguards",
-          "summary": "The Trump administration has approved a civilian nuclear cooperation agreement with Saudi Arabia that omits the so-called 'gold standard' prohibition on domestic uranium enrichment and reprocessing. Without these constraints, Riyadh retains a potential pathway to weapons-grade material, a precedent that could pressure other regional states to seek similar arrangements. Watch whether Congress pushes back or whether the deal emboldens Iran and others to demand equal treatment in future negotiations.",
+          "headline": "Iran holds strategic leverage as U.S. seeks exit from Hormuz conflict",
+          "summary": "Iran has consolidated a position of strength in the ongoing confrontation with the U.S. and Israel, narrowing Washington's viable options for de-escalation. One emerging proposal involves financial incentives tied to reopening the Strait of Hormuz and freezing Iran's nuclear program — effectively paying Tehran to stand down. Watch whether the Trump administration pursues a transactional off-ramp or escalates further, as either choice carries major precedent-setting consequences for nonproliferation norms.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/22/trump-nuclear-deal-saudi-arabia-uranium-enrichment-gold-standard/"
+          "url": "https://foreignpolicy.com/2026/07/23/iran-us-israel-war-hormuz-trump-options/"
         },
         {
-          "headline": "Chinese Military Doctrine Targets Taipei's Cognitive Cohesion, Not Just Its Defenses",
-          "summary": "Restricted PLA research published in March 2025 outlines a strategy for subduing Taipei by severing external assistance, degrading operational systems, and collapsing public will to resist — prioritizing psychological collapse over conventional military defeat. This signals a doctrinal shift in which information and cognitive effects are elevated to primary objectives, complicating Western deterrence frameworks built around physical force thresholds. The key variable to monitor is how Taiwan and U.S. Indo-Pacific Command adapt civil resilience and counter-influence operations in response.",
-          "source": "War on the Rocks",
-          "url": "https://warontherocks.com/total-war-on-taipei-china-explores-elevating-cognitive-effects-into-its-vision-of-warfare/"
+          "headline": "Houthi strikes on Saudi shipping threaten to open a second front in the Iran war",
+          "summary": "Houthi rebels are targeting Saudi commercial shipping in the Red Sea, raising the risk that the Gulf conflict expands beyond its current theater. Saudi Arabia's exposure adds a major Arab state to the list of active stakeholders, complicating any negotiated settlement and putting global shipping lanes under dual pressure alongside Hormuz. The critical variable is whether Riyadh requests direct U.S. intervention or absorbs the attacks to preserve its own regional positioning.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/07/23/houthi-rebels-saudi-arabia-shipping-red-sea-iran-war/"
         },
         {
-          "headline": "Trump's Iran Policy Faces a Strategic Deadlock as Oil Market Clock Ticks",
-          "summary": "Despite escalatory rhetoric, the Trump administration has no clear mechanism to resolve its standoff with Iran without triggering significant disruption to global oil markets, and Tehran appears content to let time pressure work in its favor. Iran's control over Strait of Hormuz leverage gives it asymmetric patience, particularly as U.S. allies grow wary of energy price shocks. The trajectory of nuclear talks and any Houthi escalation in Yemen will serve as leading indicators of where this impasse moves next.",
+          "headline": "Trump's nuclear technology deal with Saudi Arabia accelerates Gulf arms race fears",
+          "summary": "The Trump administration's agreement to share civilian nuclear technology with Saudi Arabia is drawing criticism for creating a pathway to weapons-grade capability, particularly given Riyadh's stated ambition to match any Iranian nuclear capacity. With Iran already advanced in its program and Israel's deterrence posture in flux, a Saudi nuclear hedge would fundamentally alter the regional balance. Watch for Congressional pushback and whether the deal's terms include meaningful enrichment restrictions.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/22/trump-epic-fury-iran-war-hormuz-oil-energy-price/"
+          "url": "https://foreignpolicy.com/2026/07/23/trump-us-saudi-nuclear-deal-weapons-iran-israel-arms-race/"
         },
         {
-          "headline": "Youth Protests in India Deliver Symbolic Setback to Modi's BJP",
-          "summary": "A grassroots protest movement, dubbed the 'Cockroach Movement,' has gained enough momentum to register as a meaningful political signal against the BJP government's handling of education and youth opportunity. Analysts assess it is unlikely to coalesce into sustained mass mobilization, but it reflects growing discontent among a demographic critical to Modi's electoral coalition. Watch whether the movement finds organizational infrastructure or remains a pressure signal without strategic effect.",
+          "headline": "China's AI sector is closing the gap with U.S. frontier models",
+          "summary": "Chinese AI labs including Moonshot, Alibaba, and DeepSeek are rapidly advancing frontier model capabilities, challenging the assumption that U.S. export controls and chip restrictions have decisively hobbled Beijing's AI development. The competitive narrowing has direct implications for military AI applications, economic productivity, and the effectiveness of Washington's technology denial strategy. The key question is whether China's gains reflect genuine indigenous capability or continued access to restricted inputs through third-party channels.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/22/india-cockroach-protest-movement-youth-modi-bjp-education/"
+          "url": "https://foreignpolicy.com/2026/07/23/china-ai-race-moonshot-kimi-k3-alibaba-qwen-deepseek-openai-anthropic/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "The Iran war's human and political costs are coming into sharper focus as U.S. forces return home, Congress passes a massive defense budget, and allied AI-drone integration advances in the Pacific.",
+      "intro": "Today's military picture is dominated by active U.S. strikes against Iran, a historic Ukrainian air combat milestone, and ongoing capability developments across NATO allies and U.S. services.",
       "items": [
         {
-          "headline": "Four U.S. service members killed in Iran war returned home as public support erodes",
-          "summary": "Flag-draped caskets arrived on American soil Wednesday, marking a tangible toll from the Iran conflict as senators simultaneously expressed mounting frustration with Hegseth's shifting rationales and absent strategy. The combination of casualties and congressional skepticism signals growing political fragility for the administration's war posture. Watch whether the returning dead accelerate calls for a formal authorization debate on Capitol Hill.",
+          "headline": "CENTCOM Conducts Latest Round of Strikes Against Iran",
+          "summary": "U.S. Central Command has completed its most recent strike package targeting Iran, continuing what has become an active kinetic campaign. This signals sustained U.S. offensive pressure rather than a one-off operation, with significant implications for regional escalation dynamics and allied posture in the Gulf. Watch for Iranian retaliatory responses and any diplomatic signaling from Washington or Tehran.",
+          "source": "DefenseGov2 News",
+          "url": "https://www.war.gov/News/News-Stories/Article/Article/4553395/centcom-completes-latest-strikes-against-iran/"
+        },
+        {
+          "headline": "Ukrainian F-16 Scores First Air-to-Air Kill Against Russian Fighter Jet",
+          "summary": "A Ukrainian F-16 pilot downed a Russian fighter jet in aerial combat for the first time, a milestone confirmed by the top U.S. general. The kill demonstrates that Ukraine's nascent F-16 fleet has reached meaningful operational effectiveness, shifting the air combat calculus over Ukraine after years of Russian air superiority. This will likely accelerate Western pressure to expand F-16 deliveries and pilot training pipelines.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-military/2026/07/22/4-us-soldiers-killed-in-iran-war-return-to-american-soil/"
+          "url": "https://www.militarytimes.com/global/europe/2026/07/23/incredible-work-ukrainian-f-16-downs-russian-fighter-jet-for-first-time/"
         },
         {
-          "headline": "Hegseth's evasions on Iran war strategy are eroding bipartisan support in Congress",
-          "summary": "Senators across party lines are losing patience with contradictory White House justifications for the Iran conflict, with no coherent strategy presented to oversight committees. The erosion of congressional support is significant because it could constrain funding, force authorizations, or invite investigations into conduct of the war. This is a leading indicator of whether the administration can sustain political backing for continued operations.",
+          "headline": "German Navy Pushing to Expand P-8 Poseidon Fleet for Russian Surveillance",
+          "summary": "Germany's navy is seeking additional Boeing P-8 Poseidon maritime patrol aircraft to bolster its coverage of Russian naval movements in the High North. The demand reflects a broader NATO trend of prioritizing anti-submarine and maritime surveillance capabilities as Russian submarine activity in the Atlantic and Arctic intensifies. Procurement constraints and industrial capacity will be the primary friction points to watch.",
           "source": "Defense One - All Content",
-          "url": "https://www.defenseone.com/policy/2026/07/hegseths-conflicting-statements-evasions-drain-lawmakers-patience-support/414955/"
+          "url": "https://www.defenseone.com/business/2026/07/german-navy-cant-get-enough-p-8-patrol-aircraft/414988/"
         },
         {
-          "headline": "House passes $1.15 trillion defense budget on near-party-line vote",
-          "summary": "The House approved the defense bill 216-212, reflecting deep partisan divisions over military spending priorities even as the U.S. is engaged in active combat operations. The narrow margin limits the bill's political mandate and sets up a difficult Senate reconciliation process. The final budget shape will determine procurement, readiness, and Iran war sustainment funding for the next fiscal year.",
+          "headline": "F-15EX Operational Squadron Drops Live Bombs for First Time",
+          "summary": "An operational U.S. Air Force squadron achieved a significant readiness milestone, conducting the first live bomb drops from the F-15EX Eagle II outside of dedicated test crews. This marks the transition of the platform from developmental to fully combat-capable status within the operational force. The F-15EX is central to the Air Force's near-term fighter modernization strategy while next-generation platforms remain years away.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/07/22/house-passes-115-trillion-defense-budget-in-near-party-line-vote/"
-        },
-        {
-          "headline": "Australian autonomous combat drone flies in U.S.-led Pacific exercise, signaling allied integration progress",
-          "summary": "Boeing's MQ-28 Ghost Bat participated in a Pacific exercise alongside U.S. forces despite losing the U.S. Air Force's Collaborative Combat Aircraft competition, demonstrating that allied platforms can still plug into American-led operations. This matters for Indo-Pacific deterrence because interoperable autonomous systems multiply effective force mass without requiring U.S. procurement commitments. Watch for expanded multilateral CCA exercises as a barometer of how quickly the alliance network is operationalizing drone teaming concepts.",
-          "source": "Defense One - All Content",
-          "url": "https://www.defenseone.com/business/2026/07/australian-cca-flew-pacific-exercise-boeing-exec-says-its-important-first-step/414951/"
+          "url": "https://www.militarytimes.com/news/your-military/2026/07/23/f-15ex-drops-bombs-from-an-operational-unit-for-the-first-time/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Today's intelligence picture is shaped by confirmed combat disclosures, escalating maritime threat activity, and landmark regulatory moves with significant open-source implications.",
+      "intro": "Today's intelligence picture is thin on OSINT-specific developments, with the most notable policy action being a U.S. State Department move to pressure transnational cyber-scam networks through visa restrictions.",
       "items": [
         {
-          "headline": "U.S. General Confirms Ukrainian F-16 Downed Russian Su-35S in First Air-to-Air Kill",
-          "summary": "General Dan Caine's public confirmation validates earlier open-source reporting that a Ukrainian F-16 destroyed a Russian Su-35S fighter this month, marking a significant operational milestone for Ukraine's Western-equipped air force. The disclosure is notable for coming from a senior U.S. official, lending credibility to OSINT claims that had circulated without official backing. Analysts should watch for Russian tactical adjustments to air operations and how this affects Kyiv's future fighter procurement arguments.",
-          "source": "TWZ",
-          "url": "https://www.twz.com/air/ukrainian-f-16-scored-first-air-to-air-kill-against-a-russian-fighter-top-u-s-general"
-        },
-        {
-          "headline": "Houthis Expand Red Sea Campaign to Target Saudi Oil Tankers",
-          "summary": "Houthi forces have begun targeting Saudi-flagged oil tankers in the Red Sea, escalating a campaign that had previously focused on vessels linked to Israel and Western nations. The timing — coinciding with renewed Iran-related tensions — suggests a deliberate strategic expansion aimed at maximizing pressure on regional energy infrastructure. Energy analysts and shipping intelligence trackers should monitor Lloyd's and commercial vessel-tracking platforms for rerouting patterns and insurance risk recalculations.",
-          "source": "TWZ",
-          "url": "https://www.twz.com/news-features/houthis-now-attacking-saudi-oil-tankers-in-red-sea-major-energy-supply-implications"
-        },
-        {
-          "headline": "France Becomes First EU Nation to Legislate Social Media Ban for Under-15s",
-          "summary": "Both chambers of the French Parliament passed legislation prohibiting social media access for children under 15, a sweeping regulatory step that sets a new European benchmark. From an intelligence perspective, the law will force platforms to implement age-verification systems that generate significant user data, raising questions about how that data is stored, shared, and potentially exposed. Compliance enforcement mechanisms and platform responses will be worth monitoring as other EU states assess whether to follow suit.",
+          "headline": "State Department Uses Visa Restrictions to Target Transnational Cyber-Scam Networks",
+          "summary": "Secretary of State Marco Rubio announced visa restrictions targeting individuals linked to transnational cyber-scam operations, a measure designed to impose personal costs on facilitators who may operate beyond the reach of criminal prosecution. The policy signals a shift toward leveraging diplomatic tools against fraud ecosystems — particularly those tied to Southeast Asian scam compounds — that have proven difficult to dismantle through law enforcement alone. Watch whether allied governments adopt similar measures, which would meaningfully tighten the operational environment for these networks.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/france-social-media-ban-parliament"
-        },
-        {
-          "headline": "Ransomware Group Claims Responsibility for Disruption at Japanese Food Logistics Firm Nichirei",
-          "summary": "Nichirei Logistics Group reports that frozen food warehouse operations are recovering after a cyberattack that disrupted cold-chain logistics across Japan, with an extortion group publicly claiming responsibility. The incident highlights persistent ransomware targeting of food and logistics supply chains — a sector with low tolerance for operational downtime and high leverage for attackers. The group's public claim warrants attribution analysis to determine whether this fits a known threat actor's targeting profile.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/nichirei-japan-food-logistics-cyberattack-recovery"
+          "url": "https://therecord.media/visa-restrictions-cyber-scammers"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "Iranian threat actors targeting major ICS vendors dominate today's OT threat picture, while the sector grapples with AI adoption gaps and emerging access security standards.",
+      "intro": "Iranian PLC targeting, DOE AI testing for power grids, and expanded OT defense exercises dominate today's industrial control system threat landscape.",
       "items": [
         {
-          "headline": "Federal Advisory Details Iranian PLC Targeting Across Siemens, Schneider, and Rockwell Platforms",
-          "summary": "U.S. agencies issued an updated advisory warning that Iranian-linked hackers are actively targeting programmable logic controllers from three of the most widely deployed ICS vendors globally. The advisory details specific techniques used to compromise PLCs, raising the threat level for critical infrastructure operators in energy, water, and manufacturing. Organizations running internet-exposed or poorly segmented OT environments should treat this as an active threat requiring immediate network review and patching prioritization.",
-          "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/us-warns-of-iranian-hackers-targeting-siemens-schneider-and-rockwell-ics-devices/"
+          "headline": "US Agencies Warn of Ongoing Iranian Campaign Against Internet-Exposed PLCs in Critical Infrastructure",
+          "summary": "A joint cybersecurity advisory originally issued in April 2026 has been updated to reflect continued Iranian-affiliated targeting of internet-connected programmable logic controllers in critical infrastructure sectors. The persistence of this campaign underscores the risk posed by OT devices with direct internet exposure and insufficient access controls. Operators running internet-facing PLCs should treat this advisory as an active threat indicator, not a historical warning.",
+          "source": "Industrial Cyber",
+          "url": "https://industrialcyber.co/control-device-security/us-agencies-update-advisory-on-iranian-cyber-campaign-targeting-internet-connected-plcs-in-critical-infrastructure/"
         },
         {
-          "headline": "OT-Focused Zero Trust Remote Access Platform Achieves FedRAMP Listing",
-          "summary": "Dispel's Zero Trust Engine, designed specifically for secure remote access to operational technology environments, has secured a FedRAMP Marketplace listing and is advancing through the FedRAMP 20x program. This is notable because OT remote access remains one of the most exploited attack vectors in industrial environments, and federal certification signals growing regulatory alignment between OT security tools and government standards. Watch for adoption pressure on federal contractors and critical infrastructure operators to align with similarly certified solutions.",
+          "headline": "DOE Launches Stormbreaker Benchmark to Evaluate AI Reliability in Power Grid and OT Environments",
+          "summary": "CESER, working with Lawrence Livermore National Laboratory, has introduced Stormbreaker, a benchmark framework designed to assess how AI systems perform under realistic power system and OT operational conditions. The initiative reflects growing concern that AI tools being integrated into grid management and industrial environments may behave unpredictably under stress or adversarial conditions. Watch for Stormbreaker results to inform procurement and deployment standards for AI in critical infrastructure.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/news/dispel-secures-fedramp-marketplace-listing-as-zero-trust-engine-advances-through-fedramp-20x-program/"
+          "url": "https://industrialcyber.co/utilities-energy-power-water-waste/ceser-introduces-stormbreaker-to-test-ai-performance-in-power-systems-ot-installations/"
         },
         {
-          "headline": "Survey Reveals AI Gaining Traction in OT Security But Deployments Remain Shallow",
-          "summary": "A Takepoint Research survey found that industrial organizations are moving quickly to adopt AI tools for OT cybersecurity, but most deployments are still limited in scope and maturity. The gap between AI enthusiasm and enterprise-scale implementation suggests that while vendors are pushing AI-driven detection and response, operators lack the data infrastructure and OT-specific training sets to fully leverage these tools. This disconnect could leave organizations overestimating their defensive posture as AI-driven attacks against OT infrastructure accelerate.",
+          "headline": "Cyber Shield 2026 Expands OT Defense Training for Military and National Guard Units",
+          "summary": "This year's Cyber Shield exercise, the longest-running unclassified cyber defense exercise run by the U.S. War Department, has sharpened its focus on operational technology defense to address the growing convergence of IT and OT threats. The exercise signals institutional recognition that OT environments are now a primary military concern, not a secondary one. Increased OT-focused training at scale is a meaningful step toward building a ready defensive workforce for infrastructure protection scenarios.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/ai/takepoint-survey-finds-rapid-ai-uptake-in-ot-cybersecurity-despite-limited-enterprise-deployments/"
+          "url": "https://industrialcyber.co/news/cyber-shield-2026-sharpens-military-focus-on-ot-defense-to-address-evolving-cyber-threats-strengthen-resilience/"
         },
         {
-          "headline": "Trump Executive Order Mandates Domestic Sourcing and Tighter Oversight of Defense Supply Chains",
-          "summary": "A new executive order directs federal agencies to increase oversight of defense supply chains and prioritize domestic sourcing of critical materials, with direct implications for ICS and OT hardware used in defense-adjacent infrastructure. Foreign-manufactured components in industrial control systems have long been a supply chain risk vector, and this order signals a policy push to reduce that exposure. Defense contractors and critical infrastructure operators should expect increased scrutiny of third-party OT component sourcing and documentation requirements.",
+          "headline": "A2LA Expands Accreditation Scope to Strengthen ISA/IEC 62443 Certification for Industrial Automation",
+          "summary": "The American Association for Laboratory Accreditation has extended its ISASecure accreditation body status, broadening the certification pipeline for industrial automation products under the ISA/IEC 62443 cybersecurity standard. This matters because 62443 compliance is increasingly a procurement requirement across energy, manufacturing, and water sectors, and accreditation bottlenecks have slowed vendor certification timelines. Expanded accreditation capacity should accelerate the pace at which OT products can be formally vetted for cybersecurity conformance.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/supply-chain-security/trump-executive-order-tightens-defense-supply-chain-oversight-mandates-domestic-sourcing-of-critical-materials/"
+          "url": "https://industrialcyber.co/news/a2la-expands-isasecure-accreditation-to-support-isa-iec-62443-certification-for-industrial-automation-cybersecurity/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 95,
-    "items_published": 20
+    "articles_reviewed": 98,
+    "items_published": 17
   }
 }
