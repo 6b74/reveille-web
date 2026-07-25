@@ -1,150 +1,144 @@
 {
-  "date": "2026-07-24",
-  "generated_at": "2026-07-24T09:02:48.026439+00:00",
-  "issue": 85,
-  "executive_summary": "Today's intelligence picture is dominated by two converging strategic pressures: an escalating confrontation with Iran across kinetic, cyber, and diplomatic domains, and a broad deterioration in critical infrastructure security that adversaries are actively exploiting. The Iran thread is particularly significant, running from CENTCOM strikes and Houthi second-front activity in the Gulf, through the nuclear technology deal accelerating Gulf arms race dynamics, to a confirmed Iranian cyber campaign targeting internet-exposed PLCs in U.S. critical infrastructure — suggesting Tehran is pursuing a coordinated, multi-domain pressure strategy rather than isolated actions. The infrastructure vulnerability picture is compounded by Russian cyber operations targeting enterprise platforms via Laundry Bear, a critical RCE flaw in physical security servers, and ransomware actors deploying sophisticated C2-masking techniques, all at a moment when OT and ICS defenses remain under-resourced and inconsistently implemented, as reflected in the reactive posture of Cyber Shield 2026 and the DOE's Stormbreaker initiative. The China AI convergence thread adds a longer-horizon concern: as U.S. military platforms operationalize new capabilities including the F-15EX and F-16 air-to-air combat validation in Ukraine, a closing AI capability gap with Beijing has implications for both the cyber domain and future near-peer conflict readiness that should not be treated as a separate storyl",
+  "date": "2026-07-25",
+  "generated_at": "2026-07-25T09:05:37.959734+00:00",
+  "issue": 86,
+  "executive_summary": "The dominant thread today is the Iran conflict and its cascading second-order effects: U.S. strikes have now entered a 13th consecutive night, a ceasefire has collapsed, and military planners are openly modeling ground operation scenarios, while Germany's withdrawal of Hormuz-bound naval assets signals allied fatigue and mission creep concerns even as Berlin simultaneously accelerates its P-8 fleet to counter Russia - suggesting European partners are being forced to prioritize and cannot sustain attention on multiple fronts simultaneously. The maritime domain deserves particular scrutiny as a convergence point: the U.S. Coast Guard is countering uncrewed underwater vehicle threats to ports, Germany is repositioning naval assets, Ukrainian drones have logged over 180 naval hits, and new Coast Guard cyber guidance removes legacy waivers for maritime operators - the sea lines of communication and port infrastructure appear under simultaneous physical and cyber pressure across multiple theaters. The OSINT confirmation of Iranian-style kamikaze drones striking Mali villages is a critical proliferation indicator, suggesting Iranian drone technology or doctrine is now reaching sub-Saharan Africa, likely through proxy or gray-market transfer networks that will be difficult to interdict given current focus on the primary Iran theater. Taken together, today's picture is one of a conflict ecosystem under strain: the Iran situation is consuming military and diplomatic bandwidth, adversaries appear to be exploiting that distraction across secondary theaters and domains",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Today's cyber landscape is defined by active Russian state espionage against Western email infrastructure, a sophisticated new browser-hijacking malware technique from a ransomware group, and a wave of ICS vulnerability disclosures affecting critical industrial systems.",
+      "intro": "Today's cyber landscape spans leadership continuity in UK policy and an alarming surge in physical attacks targeting cryptocurrency holders.",
       "items": [
         {
-          "headline": "Russia's Laundry Bear exploits zero-click phishing to compromise Zimbra accounts globally",
-          "summary": "A joint international advisory from CISA and partner agencies attributes a sustained phishing campaign against Zimbra Collaboration Suite users to a Russian state-backed group dubbed Laundry Bear. The technique requires no user interaction beyond receiving a message, making it particularly dangerous for government and commercial organizations. Security teams running Zimbra deployments should treat this as an active threat and audit accounts for unauthorized access immediately.",
+          "headline": "UK's new prime minister preserves cyber policy continuity by retaining key minister",
+          "summary": "Andy Burnham has reappointed Liz Lloyd to a cyber policy role despite restructuring the ministry, signaling that cyber governance will not be disrupted by the political transition. Lloyd's retention is notable as one of the few Starmer-era figures kept on, suggesting Burnham views cyber as a priority requiring institutional continuity. Watch whether this translates into substantive policy momentum or remains a holding pattern.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/zimbra-webmail-zero-click-phishing-russia-laundry-bear"
+          "url": "https://therecord.media/andy-burnham-liz-lloyd-cyber-policy-uk"
         },
         {
-          "headline": "Chaos ransomware group deploys browser-tunneling RAT to mask command-and-control traffic",
-          "summary": "Cisco Talos has detailed msaRAT, a new remote access tool used by the Chaos ransomware group that routes C2 communications through the victim's own browser via WebRTC over TURN, effectively hiding the attacker's IP address and bypassing conventional network detection. The technique — living off the browser rather than the OS — represents a meaningful evasion evolution for a ransomware-affiliated actor. Defenders should scrutinize anomalous browser-initiated outbound connections, particularly to TURN relay infrastructure.",
-          "source": "Cisco Talos Blog",
-          "url": "https://blog.talosintelligence.com/chaos-msarat-living-off-the-browser-to-build-covert-c2-channel/"
-        },
-        {
-          "headline": "CISA flags critical RCE vulnerability in Johnson Controls physical security servers",
-          "summary": "CISA's advisory for Johnson Controls C-CURE 9000 and Victor application servers warns that unpatched versions up to v2.90/v3.0 allow network-adjacent attackers to achieve remote code execution with no physical access required. These platforms are widely deployed in enterprise physical security and access control environments, meaning exploitation could enable attackers to manipulate building security systems. Organizations running these versions should prioritize patching given the convergence of cyber and physical risk.",
-          "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-204-01"
-        },
-        {
-          "headline": "Australia's Origin Energy confirms customer data breach amid ongoing investigation",
-          "summary": "Origin Energy, one of Australia's largest energy retailers, has acknowledged that customer data was compromised in a recent breach, with the full scope of affected individuals still being determined. The incident adds to a pattern of critical infrastructure and utility providers facing successful intrusions across the Asia-Pacific region. Watch for regulatory disclosure timelines and whether the breach vector involved third-party suppliers, a recurring theme in recent Australian sector incidents.",
+          "headline": "Physical 'wrench attacks' on crypto holders escalating as criminals bypass digital defenses",
+          "summary": "Researchers report a growing trend of home invasions and kidnappings targeting individuals known to hold significant cryptocurrency, exploiting the fact that physical coercion can circumvent even strong digital security. These so-called wrench attacks are attractive to criminals because they sidestep encryption and cold storage protections entirely. The trend underscores that operational security for high-value crypto holders now requires physical threat modeling, not just cybersecurity hygiene.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/australia-origin-energy-data-breach"
+          "url": "https://therecord.media/wrench-attacks-against-cryptocurrency-holders"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "The Middle East conflict is reshaping regional security architecture, while China's AI surge and internal corruption signal competing pressures on Beijing's global ambitions.",
+      "intro": "The U.S.-Iran confrontation dominates the geopolitical landscape, with military escalation scenarios, civilian impact, and Washington's broader Middle East strategy all coming into sharp focus simultaneously.",
       "items": [
         {
-          "headline": "Iran holds strategic leverage as U.S. seeks exit from Hormuz conflict",
-          "summary": "Iran has consolidated a position of strength in the ongoing confrontation with the U.S. and Israel, narrowing Washington's viable options for de-escalation. One emerging proposal involves financial incentives tied to reopening the Strait of Hormuz and freezing Iran's nuclear program — effectively paying Tehran to stand down. Watch whether the Trump administration pursues a transactional off-ramp or escalates further, as either choice carries major precedent-setting consequences for nonproliferation norms.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/23/iran-us-israel-war-hormuz-trump-options/"
+          "headline": "U.S.-Iran Ceasefire Collapses, Raising Escalation Risk",
+          "summary": "A ceasefire agreed in April and formalized in a June 17 MOU broke down by early July, with Trump formally declaring it over on July 10 and U.S. strikes resuming. The rapid unraveling of diplomatic progress signals that neither side found the agreement sustainable, and the trajectory now points toward sustained military exchange rather than negotiated de-escalation. Watch for whether regional proxies and U.S. partners recalibrate their postures in response.",
+          "source": "War on the Rocks",
+          "url": "https://warontherocks.com/global-risks-heating-up/"
         },
         {
-          "headline": "Houthi strikes on Saudi shipping threaten to open a second front in the Iran war",
-          "summary": "Houthi rebels are targeting Saudi commercial shipping in the Red Sea, raising the risk that the Gulf conflict expands beyond its current theater. Saudi Arabia's exposure adds a major Arab state to the list of active stakeholders, complicating any negotiated settlement and putting global shipping lanes under dual pressure alongside Hormuz. The critical variable is whether Riyadh requests direct U.S. intervention or absorbs the attacks to preserve its own regional positioning.",
+          "headline": "Military Analysts Outline What a Limited U.S. Ground Operation in Iran Could Look Like",
+          "summary": "Experts assess that limited U.S. raids — potentially targeting facilities like Kharg Island — are plausible, while a large-scale invasion remains unlikely given logistics, political risk, and Iranian defensive depth. The analysis reflects growing seriousness in Washington about kinetic options beyond airstrikes. The key variable is whether Trump's advisors frame limited ground action as strategically controllable or a potential quagmire.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/23/houthi-rebels-saudi-arabia-shipping-red-sea-iran-war/"
+          "url": "https://foreignpolicy.com/2026/07/24/us-ground-operation-iran-invasion-kharg-war-trump/"
         },
         {
-          "headline": "Trump's nuclear technology deal with Saudi Arabia accelerates Gulf arms race fears",
-          "summary": "The Trump administration's agreement to share civilian nuclear technology with Saudi Arabia is drawing criticism for creating a pathway to weapons-grade capability, particularly given Riyadh's stated ambition to match any Iranian nuclear capacity. With Iran already advanced in its program and Israel's deterrence posture in flux, a Saudi nuclear hedge would fundamentally alter the regional balance. Watch for Congressional pushback and whether the deal's terms include meaningful enrichment restrictions.",
+          "headline": "Sanctions and Strikes on Civilian Infrastructure Are Backfiring, Hardening Iranian Regime Support",
+          "summary": "Targeting water and civilian infrastructure has created humanitarian suffering without weakening the regime — and may be consolidating domestic support for Tehran by redirecting public anger toward Washington. This dynamic mirrors historical patterns where external pressure strengthens authoritarian governments rather than empowering opposition. Analysts argue the approach is both strategically counterproductive and ethically indefensible.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/23/trump-us-saudi-nuclear-deal-weapons-iran-israel-arms-race/"
+          "url": "https://foreignpolicy.com/2026/07/24/trump-iran-water-environment-civilians/"
         },
         {
-          "headline": "China's AI sector is closing the gap with U.S. frontier models",
-          "summary": "Chinese AI labs including Moonshot, Alibaba, and DeepSeek are rapidly advancing frontier model capabilities, challenging the assumption that U.S. export controls and chip restrictions have decisively hobbled Beijing's AI development. The competitive narrowing has direct implications for military AI applications, economic productivity, and the effectiveness of Washington's technology denial strategy. The key question is whether China's gains reflect genuine indigenous capability or continued access to restricted inputs through third-party channels.",
+          "headline": "Ukraine's Mass Protests Force Zelensky to Reverse a Ministerial Firing",
+          "summary": "Public demonstrations — dubbed the 'Cardboard Maidan' — compelled Zelensky to walk back the dismissal of a minister with broad popular support, demonstrating that civil society pressure remains a real constraint on executive authority even during wartime. The episode signals underlying political tensions within Ukraine's wartime government and the limits of Zelensky's consolidation of power. It will be worth monitoring whether this emboldens further domestic political opposition.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/23/china-ai-race-moonshot-kimi-k3-alibaba-qwen-deepseek-openai-anthropic/"
+          "url": "https://foreignpolicy.com/2026/07/24/protest-fedorov-zelensky-firing-ukraine/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "Today's military picture is dominated by active U.S. strikes against Iran, a historic Ukrainian air combat milestone, and ongoing capability developments across NATO allies and U.S. services.",
+      "intro": "Today's military picture is shaped by active drone warfare in Ukraine, ongoing U.S. strikes on Iran, and European nations recalibrating their naval postures in response to both conflicts.",
       "items": [
         {
-          "headline": "CENTCOM Conducts Latest Round of Strikes Against Iran",
-          "summary": "U.S. Central Command has completed its most recent strike package targeting Iran, continuing what has become an active kinetic campaign. This signals sustained U.S. offensive pressure rather than a one-off operation, with significant implications for regional escalation dynamics and allied posture in the Gulf. Watch for Iranian retaliatory responses and any diplomatic signaling from Washington or Tehran.",
+          "headline": "U.S. Completes 13th Consecutive Night of Strikes Against Iranian Military Targets",
+          "summary": "The U.S. military has now conducted 13 straight nights of strikes on Iranian military targets, signaling a sustained campaign rather than a limited punitive action. The operational tempo suggests significant degradation objectives are still unmet, and no off-ramp appears imminent. Watch for escalation triggers, Iranian proxy responses, and congressional pressure over war authorization.",
           "source": "DefenseGov2 News",
-          "url": "https://www.war.gov/News/News-Stories/Article/Article/4553395/centcom-completes-latest-strikes-against-iran/"
+          "url": "https://www.war.gov/News/News-Stories/Article/Article/4554671/us-concludes-13th-night-of-strikes-on-iranian-military-targets/"
         },
         {
-          "headline": "Ukrainian F-16 Scores First Air-to-Air Kill Against Russian Fighter Jet",
-          "summary": "A Ukrainian F-16 pilot downed a Russian fighter jet in aerial combat for the first time, a milestone confirmed by the top U.S. general. The kill demonstrates that Ukraine's nascent F-16 fleet has reached meaningful operational effectiveness, shifting the air combat calculus over Ukraine after years of Russian air superiority. This will likely accelerate Western pressure to expand F-16 deliveries and pilot training pipelines.",
+          "headline": "Ukrainian Drone Unit Claims Over 180 Naval Hits in Recent Weeks",
+          "summary": "A Ukrainian drone unit operating deep behind the front line has struck more than 180 Russian vessels and sea-borne targets in a concentrated recent campaign, demonstrating the maturation of Ukraine's long-range maritime drone capability. This represents a significant expansion of Ukraine's ability to contest Russian naval freedom of movement without a conventional navy. The campaign underscores how cheap, distributed drone forces are reshaping naval warfare doctrine.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/global/europe/2026/07/23/incredible-work-ukrainian-f-16-downs-russian-fighter-jet-for-first-time/"
+          "url": "https://www.militarytimes.com/global/europe/2026/07/24/from-steppe-to-sea-a-ukrainian-drone-unit-hunts-russian-ships/"
         },
         {
-          "headline": "German Navy Pushing to Expand P-8 Poseidon Fleet for Russian Surveillance",
-          "summary": "Germany's navy is seeking additional Boeing P-8 Poseidon maritime patrol aircraft to bolster its coverage of Russian naval movements in the High North. The demand reflects a broader NATO trend of prioritizing anti-submarine and maritime surveillance capabilities as Russian submarine activity in the Atlantic and Arctic intensifies. Procurement constraints and industrial capacity will be the primary friction points to watch.",
-          "source": "Defense One - All Content",
+          "headline": "Germany Withdraws Naval Assets Planned for Post-War Hormuz Mission as Iran Conflict Drags On",
+          "summary": "Berlin has recalled two warships originally earmarked to support a stabilization mission in the Strait of Hormuz, reflecting German leadership's assessment that the Iran conflict has no near-term resolution. The decision highlights European uncertainty about committing naval resources to a theater with no defined end state. It also raises questions about allied coordination with the U.S. on post-conflict Gulf security planning.",
+          "source": "Defense News",
+          "url": "https://www.defensenews.com/global/europe/2026/07/24/with-no-iran-war-end-in-sight-germany-pulls-back-two-navy-ships-eyed-for-hormuz-mission/"
+        },
+        {
+          "headline": "Germany Accelerating P-8 Poseidon Fleet Expansion to Counter Russian Naval Activity",
+          "summary": "The German navy is actively seeking additional Boeing P-8 Poseidon maritime patrol aircraft to bolster its surveillance of Russian naval movements in the High North, reflecting Berlin's sharply elevated threat perception since 2022. Demand for P-8s across NATO is already straining Boeing's production capacity, making fleet expansion a medium-term challenge. Germany's investment signals a broader European push to close persistent maritime ISR gaps.",
+          "source": "Defense One",
           "url": "https://www.defenseone.com/business/2026/07/german-navy-cant-get-enough-p-8-patrol-aircraft/414988/"
-        },
-        {
-          "headline": "F-15EX Operational Squadron Drops Live Bombs for First Time",
-          "summary": "An operational U.S. Air Force squadron achieved a significant readiness milestone, conducting the first live bomb drops from the F-15EX Eagle II outside of dedicated test crews. This marks the transition of the platform from developmental to fully combat-capable status within the operational force. The F-15EX is central to the Air Force's near-term fighter modernization strategy while next-generation platforms remain years away.",
-          "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-military/2026/07/23/f-15ex-drops-bombs-from-an-operational-unit-for-the-first-time/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Today's intelligence picture is thin on OSINT-specific developments, with the most notable policy action being a U.S. State Department move to pressure transnational cyber-scam networks through visa restrictions.",
+      "intro": "Open-source verification efforts are surfacing new evidence of drone warfare proliferation in Africa while battlefield intelligence confirms Ukraine's expanding long-range strike arsenal.",
       "items": [
         {
-          "headline": "State Department Uses Visa Restrictions to Target Transnational Cyber-Scam Networks",
-          "summary": "Secretary of State Marco Rubio announced visa restrictions targeting individuals linked to transnational cyber-scam operations, a measure designed to impose personal costs on facilitators who may operate beyond the reach of criminal prosecution. The policy signals a shift toward leveraging diplomatic tools against fraud ecosystems — particularly those tied to Southeast Asian scam compounds — that have proven difficult to dismantle through law enforcement alone. Watch whether allied governments adopt similar measures, which would meaningfully tighten the operational environment for these networks.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/visa-restrictions-cyber-scammers"
+          "headline": "OSINT Analysis Confirms Iranian-Style Kamikaze Drones Striking Mali Villages",
+          "summary": "Bellingcat used geolocation, satellite imagery, and expert analysis to verify that Shahed-136-type loitering munitions were used in attacks on villages in northern Mali, providing the strongest open-source confirmation to date of their battlefield deployment in West Africa. The findings raise serious questions about the supply chain enabling non-state or Wagner-affiliated actors to access Iranian-pattern drone technology in the Sahel. Watch for follow-on analysis identifying operators and potential munitions sourcing routes.",
+          "source": "bellingcat",
+          "url": "https://www.bellingcat.com/news/2026/07/24/shahed-type-drones-filmed-during-attack-on-mali-villages/"
+        },
+        {
+          "headline": "Visual Evidence Surfaces of Ukraine's First Combat Use of Dutch Ruta Block 1 Cruise Missiles",
+          "summary": "Open-source imagery and reporting have confirmed Ukraine's operational debut of the Ruta Block 1, a low-cost Dutch-supplied cruise missile representing a significant addition to Kyiv's long-range strike inventory. The emergence of another mass-producible precision strike weapon underscores Ukraine's deliberate strategy of diversifying and scaling standoff capabilities to sustain pressure on Russian rear areas. Analysts should track whether Ruta variants with improved range or payload follow as the conflict matures.",
+          "source": "TWZ",
+          "url": "https://www.twz.com/news-features/evidence-of-ukraine-using-dutch-ruta-block-1-cruise-missiles-emerges"
+        },
+        {
+          "headline": "U.S. Coast Guard Moves to Counter Growing Uncrewed Underwater Vehicle Threat to Ports",
+          "summary": "The Coast Guard is actively soliciting technology capable of detecting and neutralizing uncrewed underwater vehicles (UUVs) threatening ships and harbor infrastructure, reflecting an intelligence-driven recognition that UUV attack scenarios have moved from theoretical to operationally credible. The request signals concern about adversary or non-state actors exploiting the relatively undefended undersea perimeter of U.S. port environments. The procurement effort is one to watch as a leading indicator of how seriously the U.S. government now assesses this threat vector.",
+          "source": "TWZ",
+          "url": "https://www.twz.com/sea/u-s-coast-guard-seeking-technology-to-hunt-and-kill-uncrewed-underwater-vehicles"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "Iranian PLC targeting, DOE AI testing for power grids, and expanded OT defense exercises dominate today's industrial control system threat landscape.",
+      "intro": "Industrial control system vulnerabilities and maritime cybersecurity enforcement dominate today's OT security landscape.",
       "items": [
         {
-          "headline": "US Agencies Warn of Ongoing Iranian Campaign Against Internet-Exposed PLCs in Critical Infrastructure",
-          "summary": "A joint cybersecurity advisory originally issued in April 2026 has been updated to reflect continued Iranian-affiliated targeting of internet-connected programmable logic controllers in critical infrastructure sectors. The persistence of this campaign underscores the risk posed by OT devices with direct internet exposure and insufficient access controls. Operators running internet-facing PLCs should treat this advisory as an active threat indicator, not a historical warning.",
-          "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/control-device-security/us-agencies-update-advisory-on-iranian-cyber-campaign-targeting-internet-connected-plcs-in-critical-infrastructure/"
+          "headline": "Rockwell Automation fixes remote code execution bugs in Arena industrial simulation software",
+          "summary": "Rockwell Automation has patched multiple code execution vulnerabilities in its Arena simulation software, used widely for modeling industrial processes. A researcher demonstrated how an attacker could weaponize these flaws to target industrial organizations, potentially gaining a foothold in OT environments through engineering workstations. Organizations running Arena should prioritize patching given the direct industrial targeting vector.",
+          "source": "SecurityWeek",
+          "url": "https://www.securityweek.com/rockwell-patches-code-execution-flaws-in-arena-simulation-software/"
         },
         {
-          "headline": "DOE Launches Stormbreaker Benchmark to Evaluate AI Reliability in Power Grid and OT Environments",
-          "summary": "CESER, working with Lawrence Livermore National Laboratory, has introduced Stormbreaker, a benchmark framework designed to assess how AI systems perform under realistic power system and OT operational conditions. The initiative reflects growing concern that AI tools being integrated into grid management and industrial environments may behave unpredictably under stress or adversarial conditions. Watch for Stormbreaker results to inform procurement and deployment standards for AI in critical infrastructure.",
-          "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/utilities-energy-power-water-waste/ceser-introduces-stormbreaker-to-test-ai-performance-in-power-systems-ot-installations/"
+          "headline": "Siemens ROX II industrial switch vulnerabilities surface among this week's under-the-radar security stories",
+          "summary": "Newly disclosed vulnerabilities in Siemens ROX II industrial switches add to a persistent pattern of networking equipment flaws in OT environments, where patching cycles are slow and network segmentation is often incomplete. Compromised industrial switches can facilitate lateral movement and traffic interception across operational networks. Asset owners using ROX II devices should review Siemens advisories and assess exposure on OT network segments.",
+          "source": "SecurityWeek",
+          "url": "https://www.securityweek.com/in-other-news-dolphin-x-ai-powered-malware-car-anti-theft-device-hack-400-linux-kernel-flaws/"
         },
         {
-          "headline": "Cyber Shield 2026 Expands OT Defense Training for Military and National Guard Units",
-          "summary": "This year's Cyber Shield exercise, the longest-running unclassified cyber defense exercise run by the U.S. War Department, has sharpened its focus on operational technology defense to address the growing convergence of IT and OT threats. The exercise signals institutional recognition that OT environments are now a primary military concern, not a secondary one. Increased OT-focused training at scale is a meaningful step toward building a ready defensive workforce for infrastructure protection scenarios.",
+          "headline": "US Coast Guard clarifies that legacy MTSA security waivers do not shield maritime operators from new cyber rules",
+          "summary": "The US Coast Guard confirmed that existing Maritime Transportation Security Act waivers — issued for physical security purposes — do not provide any exemption from recently issued maritime cybersecurity regulations. This is a significant compliance clarification for port operators and vessel owners who may have assumed legacy waivers offered broader regulatory cover. Operators should conduct immediate compliance gap assessments against the cyber-specific requirements before enforcement actions begin.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/news/cyber-shield-2026-sharpens-military-focus-on-ot-defense-to-address-evolving-cyber-threats-strengthen-resilience/"
-        },
-        {
-          "headline": "A2LA Expands Accreditation Scope to Strengthen ISA/IEC 62443 Certification for Industrial Automation",
-          "summary": "The American Association for Laboratory Accreditation has extended its ISASecure accreditation body status, broadening the certification pipeline for industrial automation products under the ISA/IEC 62443 cybersecurity standard. This matters because 62443 compliance is increasingly a procurement requirement across energy, manufacturing, and water sectors, and accreditation bottlenecks have slowed vendor certification timelines. Expanded accreditation capacity should accelerate the pace at which OT products can be formally vetted for cybersecurity conformance.",
-          "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/news/a2la-expands-isasecure-accreditation-to-support-isa-iec-62443-certification-for-industrial-automation-cybersecurity/"
+          "url": "https://industrialcyber.co/regulation-standards-and-compliance/us-coast-guard-existing-mtsa-waivers-do-not-exempt-maritime-operators-from-cybersecurity-rules/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 98,
-    "items_published": 17
+    "articles_reviewed": 67,
+    "items_published": 16
   }
 }
