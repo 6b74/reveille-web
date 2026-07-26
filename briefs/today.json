@@ -1,144 +1,51 @@
 {
-  "date": "2026-07-25",
-  "generated_at": "2026-07-25T09:05:37.959734+00:00",
-  "issue": 86,
-  "executive_summary": "The dominant thread today is the Iran conflict and its cascading second-order effects: U.S. strikes have now entered a 13th consecutive night, a ceasefire has collapsed, and military planners are openly modeling ground operation scenarios, while Germany's withdrawal of Hormuz-bound naval assets signals allied fatigue and mission creep concerns even as Berlin simultaneously accelerates its P-8 fleet to counter Russia - suggesting European partners are being forced to prioritize and cannot sustain attention on multiple fronts simultaneously. The maritime domain deserves particular scrutiny as a convergence point: the U.S. Coast Guard is countering uncrewed underwater vehicle threats to ports, Germany is repositioning naval assets, Ukrainian drones have logged over 180 naval hits, and new Coast Guard cyber guidance removes legacy waivers for maritime operators - the sea lines of communication and port infrastructure appear under simultaneous physical and cyber pressure across multiple theaters. The OSINT confirmation of Iranian-style kamikaze drones striking Mali villages is a critical proliferation indicator, suggesting Iranian drone technology or doctrine is now reaching sub-Saharan Africa, likely through proxy or gray-market transfer networks that will be difficult to interdict given current focus on the primary Iran theater. Taken together, today's picture is one of a conflict ecosystem under strain: the Iran situation is consuming military and diplomatic bandwidth, adversaries appear to be exploiting that distraction across secondary theaters and domains",
+  "date": "2026-07-26",
+  "generated_at": "2026-07-26T09:01:17.883448+00:00",
+  "issue": 87,
+  "executive_summary": "Today's intelligence picture is dominated by two reinforcing themes: accelerating military posture and capability development among Western and allied forces, set against a backdrop of political fragility within a key partner nation. The RIMPAC 2026 dual ship-sinking exercise and the U.S. Navy's live-fire deployment of kamikaze surface drones together signal a deliberate, coordinated push to validate and demonstrate advanced maritime strike capabilities, likely calibrated as a signal toward China in the Pacific. Simultaneously, the reported Zelensky-Umerov rift represents a potentially significant vulnerability in Ukraine's warfighting coherence at a critical juncture, and analysts should monitor whether adversaries, particularly Russia, move to exploit this instability through information operations or accelerated battlefield pressure. The Rockwell Automation vulnerability disclosure stands somewhat apart from the kinetic threads but warrants attention given that ICS and OT systems supporting defense industrial production and critical infrastructure remain high-value targets for state-sponsored actors who would benefit from disrupting Western military supply chains during a period of heightened operational tempo.",
   "sections": [
-    {
-      "id": "cyber",
-      "title": "Cyber",
-      "intro": "Today's cyber landscape spans leadership continuity in UK policy and an alarming surge in physical attacks targeting cryptocurrency holders.",
-      "items": [
-        {
-          "headline": "UK's new prime minister preserves cyber policy continuity by retaining key minister",
-          "summary": "Andy Burnham has reappointed Liz Lloyd to a cyber policy role despite restructuring the ministry, signaling that cyber governance will not be disrupted by the political transition. Lloyd's retention is notable as one of the few Starmer-era figures kept on, suggesting Burnham views cyber as a priority requiring institutional continuity. Watch whether this translates into substantive policy momentum or remains a holding pattern.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/andy-burnham-liz-lloyd-cyber-policy-uk"
-        },
-        {
-          "headline": "Physical 'wrench attacks' on crypto holders escalating as criminals bypass digital defenses",
-          "summary": "Researchers report a growing trend of home invasions and kidnappings targeting individuals known to hold significant cryptocurrency, exploiting the fact that physical coercion can circumvent even strong digital security. These so-called wrench attacks are attractive to criminals because they sidestep encryption and cold storage protections entirely. The trend underscores that operational security for high-value crypto holders now requires physical threat modeling, not just cybersecurity hygiene.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/wrench-attacks-against-cryptocurrency-holders"
-        }
-      ]
-    },
-    {
-      "id": "geopolitical",
-      "title": "Geopolitical",
-      "intro": "The U.S.-Iran confrontation dominates the geopolitical landscape, with military escalation scenarios, civilian impact, and Washington's broader Middle East strategy all coming into sharp focus simultaneously.",
-      "items": [
-        {
-          "headline": "U.S.-Iran Ceasefire Collapses, Raising Escalation Risk",
-          "summary": "A ceasefire agreed in April and formalized in a June 17 MOU broke down by early July, with Trump formally declaring it over on July 10 and U.S. strikes resuming. The rapid unraveling of diplomatic progress signals that neither side found the agreement sustainable, and the trajectory now points toward sustained military exchange rather than negotiated de-escalation. Watch for whether regional proxies and U.S. partners recalibrate their postures in response.",
-          "source": "War on the Rocks",
-          "url": "https://warontherocks.com/global-risks-heating-up/"
-        },
-        {
-          "headline": "Military Analysts Outline What a Limited U.S. Ground Operation in Iran Could Look Like",
-          "summary": "Experts assess that limited U.S. raids — potentially targeting facilities like Kharg Island — are plausible, while a large-scale invasion remains unlikely given logistics, political risk, and Iranian defensive depth. The analysis reflects growing seriousness in Washington about kinetic options beyond airstrikes. The key variable is whether Trump's advisors frame limited ground action as strategically controllable or a potential quagmire.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/24/us-ground-operation-iran-invasion-kharg-war-trump/"
-        },
-        {
-          "headline": "Sanctions and Strikes on Civilian Infrastructure Are Backfiring, Hardening Iranian Regime Support",
-          "summary": "Targeting water and civilian infrastructure has created humanitarian suffering without weakening the regime — and may be consolidating domestic support for Tehran by redirecting public anger toward Washington. This dynamic mirrors historical patterns where external pressure strengthens authoritarian governments rather than empowering opposition. Analysts argue the approach is both strategically counterproductive and ethically indefensible.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/24/trump-iran-water-environment-civilians/"
-        },
-        {
-          "headline": "Ukraine's Mass Protests Force Zelensky to Reverse a Ministerial Firing",
-          "summary": "Public demonstrations — dubbed the 'Cardboard Maidan' — compelled Zelensky to walk back the dismissal of a minister with broad popular support, demonstrating that civil society pressure remains a real constraint on executive authority even during wartime. The episode signals underlying political tensions within Ukraine's wartime government and the limits of Zelensky's consolidation of power. It will be worth monitoring whether this emboldens further domestic political opposition.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/24/protest-fedorov-zelensky-firing-ukraine/"
-        }
-      ]
-    },
     {
       "id": "military",
       "title": "Military",
-      "intro": "Today's military picture is shaped by active drone warfare in Ukraine, ongoing U.S. strikes on Iran, and European nations recalibrating their naval postures in response to both conflicts.",
+      "intro": "Today's military picture spans internal political fractures in Ukraine's wartime leadership, and U.S. forces demonstrating next-generation naval warfare capabilities in the Pacific.",
       "items": [
         {
-          "headline": "U.S. Completes 13th Consecutive Night of Strikes Against Iranian Military Targets",
-          "summary": "The U.S. military has now conducted 13 straight nights of strikes on Iranian military targets, signaling a sustained campaign rather than a limited punitive action. The operational tempo suggests significant degradation objectives are still unmet, and no off-ramp appears imminent. Watch for escalation triggers, Iranian proxy responses, and congressional pressure over war authorization.",
-          "source": "DefenseGov2 News",
-          "url": "https://www.war.gov/News/News-Stories/Article/Article/4554671/us-concludes-13th-night-of-strikes-on-iranian-military-targets/"
-        },
-        {
-          "headline": "Ukrainian Drone Unit Claims Over 180 Naval Hits in Recent Weeks",
-          "summary": "A Ukrainian drone unit operating deep behind the front line has struck more than 180 Russian vessels and sea-borne targets in a concentrated recent campaign, demonstrating the maturation of Ukraine's long-range maritime drone capability. This represents a significant expansion of Ukraine's ability to contest Russian naval freedom of movement without a conventional navy. The campaign underscores how cheap, distributed drone forces are reshaping naval warfare doctrine.",
-          "source": "Military Times",
-          "url": "https://www.militarytimes.com/global/europe/2026/07/24/from-steppe-to-sea-a-ukrainian-drone-unit-hunts-russian-ships/"
-        },
-        {
-          "headline": "Germany Withdraws Naval Assets Planned for Post-War Hormuz Mission as Iran Conflict Drags On",
-          "summary": "Berlin has recalled two warships originally earmarked to support a stabilization mission in the Strait of Hormuz, reflecting German leadership's assessment that the Iran conflict has no near-term resolution. The decision highlights European uncertainty about committing naval resources to a theater with no defined end state. It also raises questions about allied coordination with the U.S. on post-conflict Gulf security planning.",
-          "source": "Defense News",
-          "url": "https://www.defensenews.com/global/europe/2026/07/24/with-no-iran-war-end-in-sight-germany-pulls-back-two-navy-ships-eyed-for-hormuz-mission/"
-        },
-        {
-          "headline": "Germany Accelerating P-8 Poseidon Fleet Expansion to Counter Russian Naval Activity",
-          "summary": "The German navy is actively seeking additional Boeing P-8 Poseidon maritime patrol aircraft to bolster its surveillance of Russian naval movements in the High North, reflecting Berlin's sharply elevated threat perception since 2022. Demand for P-8s across NATO is already straining Boeing's production capacity, making fleet expansion a medium-term challenge. Germany's investment signals a broader European push to close persistent maritime ISR gaps.",
+          "headline": "Zelensky-Umerov rift signals Ukraine's most serious wartime political crisis since 2022",
+          "summary": "A public split between Ukrainian President Zelensky and Defense Minister Umerov has escalated into the country's largest government crisis in four years. The fracture raises questions about civil-military coordination and the durability of Western-backed reform efforts during an active war. Watch whether Kyiv's partners use this moment to pressure institutional changes or whether the crisis destabilizes aid pipelines.",
           "source": "Defense One",
-          "url": "https://www.defenseone.com/business/2026/07/german-navy-cant-get-enough-p-8-patrol-aircraft/414988/"
-        }
-      ]
-    },
-    {
-      "id": "intel_osint",
-      "title": "Intel / OSINT",
-      "intro": "Open-source verification efforts are surfacing new evidence of drone warfare proliferation in Africa while battlefield intelligence confirms Ukraine's expanding long-range strike arsenal.",
-      "items": [
-        {
-          "headline": "OSINT Analysis Confirms Iranian-Style Kamikaze Drones Striking Mali Villages",
-          "summary": "Bellingcat used geolocation, satellite imagery, and expert analysis to verify that Shahed-136-type loitering munitions were used in attacks on villages in northern Mali, providing the strongest open-source confirmation to date of their battlefield deployment in West Africa. The findings raise serious questions about the supply chain enabling non-state or Wagner-affiliated actors to access Iranian-pattern drone technology in the Sahel. Watch for follow-on analysis identifying operators and potential munitions sourcing routes.",
-          "source": "bellingcat",
-          "url": "https://www.bellingcat.com/news/2026/07/24/shahed-type-drones-filmed-during-attack-on-mali-villages/"
+          "url": "https://www.defenseone.com/threats/2026/07/game-thrones-ukraines-president-defense-minister-split/415009/"
         },
         {
-          "headline": "Visual Evidence Surfaces of Ukraine's First Combat Use of Dutch Ruta Block 1 Cruise Missiles",
-          "summary": "Open-source imagery and reporting have confirmed Ukraine's operational debut of the Ruta Block 1, a low-cost Dutch-supplied cruise missile representing a significant addition to Kyiv's long-range strike inventory. The emergence of another mass-producible precision strike weapon underscores Ukraine's deliberate strategy of diversifying and scaling standoff capabilities to sustain pressure on Russian rear areas. Analysts should track whether Ruta variants with improved range or payload follow as the conflict matures.",
-          "source": "TWZ",
-          "url": "https://www.twz.com/news-features/evidence-of-ukraine-using-dutch-ruta-block-1-cruise-missiles-emerges"
+          "headline": "U.S. Navy deploys kamikaze surface drones in live-fire Pacific exercise, sinking former amphibious assault ship",
+          "summary": "During RIMPAC 2026, U.S. Navy one-way attack uncrewed surface vehicles struck and helped sink the decommissioned USS Peleliu at the waterline, alongside Harpoon, Spike, and LRASM missile strikes. The exercise represents a direct integration of Ukraine-war-validated drone tactics into conventional U.S. naval doctrine. This signals the Navy is actively stress-testing low-cost attritable systems as a complement to expensive standoff munitions in contested maritime environments.",
+          "source": "Naval News",
+          "url": "https://www.navalnews.com/naval-news/2026/07/u-s-navy-deploys-ukraine-style-kamikaze-sea-drones-during-pacific-sinkex/"
         },
         {
-          "headline": "U.S. Coast Guard Moves to Counter Growing Uncrewed Underwater Vehicle Threat to Ports",
-          "summary": "The Coast Guard is actively soliciting technology capable of detecting and neutralizing uncrewed underwater vehicles (UUVs) threatening ships and harbor infrastructure, reflecting an intelligence-driven recognition that UUV attack scenarios have moved from theoretical to operationally credible. The request signals concern about adversary or non-state actors exploiting the relatively undefended undersea perimeter of U.S. port environments. The procurement effort is one to watch as a leading indicator of how seriously the U.S. government now assesses this threat vector.",
-          "source": "TWZ",
-          "url": "https://www.twz.com/sea/u-s-coast-guard-seeking-technology-to-hunt-and-kill-uncrewed-underwater-vehicles"
+          "headline": "Multi-service and allied forces conduct dual ship-sinking exercise at RIMPAC 2026",
+          "summary": "Army helicopters, Navy drones, Air Force assets, and partner nation forces combined to sink both the former USS Mobile Bay and USS Peleliu off Hawaii in a joint SINKEX. The exercise demonstrates interoperability across domains and with allied militaries, a priority as the U.S. focuses on Indo-Pacific warfighting readiness. The breadth of platforms involved reflects deliberate efforts to rehearse cross-domain strike coordination under realistic conditions.",
+          "source": "Task & Purpose",
+          "url": "https://taskandpurpose.com/news/us-sinkex-rimpac-2026/"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "Industrial control system vulnerabilities and maritime cybersecurity enforcement dominate today's OT security landscape.",
+      "intro": "Today's ICS landscape is dominated by patching activity, with Rockwell Automation addressing code execution vulnerabilities in widely used industrial simulation software.",
       "items": [
         {
           "headline": "Rockwell Automation fixes remote code execution bugs in Arena industrial simulation software",
-          "summary": "Rockwell Automation has patched multiple code execution vulnerabilities in its Arena simulation software, used widely for modeling industrial processes. A researcher demonstrated how an attacker could weaponize these flaws to target industrial organizations, potentially gaining a foothold in OT environments through engineering workstations. Organizations running Arena should prioritize patching given the direct industrial targeting vector.",
+          "summary": "Rockwell Automation has released patches for multiple code execution vulnerabilities in its Arena simulation software, used by industrial organizations for process modeling and optimization. A researcher demonstrated how an attacker could exploit these flaws to target industrial environments, potentially using simulation software as an initial foothold toward broader OT network compromise. Organizations using Arena should prioritize patching, as simulation tools are often overlooked in OT security assessments despite their connectivity to engineering workstations.",
           "source": "SecurityWeek",
           "url": "https://www.securityweek.com/rockwell-patches-code-execution-flaws-in-arena-simulation-software/"
-        },
-        {
-          "headline": "Siemens ROX II industrial switch vulnerabilities surface among this week's under-the-radar security stories",
-          "summary": "Newly disclosed vulnerabilities in Siemens ROX II industrial switches add to a persistent pattern of networking equipment flaws in OT environments, where patching cycles are slow and network segmentation is often incomplete. Compromised industrial switches can facilitate lateral movement and traffic interception across operational networks. Asset owners using ROX II devices should review Siemens advisories and assess exposure on OT network segments.",
-          "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/in-other-news-dolphin-x-ai-powered-malware-car-anti-theft-device-hack-400-linux-kernel-flaws/"
-        },
-        {
-          "headline": "US Coast Guard clarifies that legacy MTSA security waivers do not shield maritime operators from new cyber rules",
-          "summary": "The US Coast Guard confirmed that existing Maritime Transportation Security Act waivers — issued for physical security purposes — do not provide any exemption from recently issued maritime cybersecurity regulations. This is a significant compliance clarification for port operators and vessel owners who may have assumed legacy waivers offered broader regulatory cover. Operators should conduct immediate compliance gap assessments against the cyber-specific requirements before enforcement actions begin.",
-          "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/regulation-standards-and-compliance/us-coast-guard-existing-mtsa-waivers-do-not-exempt-maritime-operators-from-cybersecurity-rules/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 67,
-    "items_published": 16
+    "articles_reviewed": 6,
+    "items_published": 4
   }
 }
