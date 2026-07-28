@@ -1,94 +1,162 @@
 {
-  "date": "2026-07-27",
-  "generated_at": "2026-07-27T09:01:44.233661+00:00",
-  "issue": 88,
-  "executive_summary": "Today's intelligence picture is defined by a convergence of military escalation, resource strain, and infrastructure vulnerability that collectively suggests major powers and their proxies are operating under increasing stress while adversaries probe for exploitable gaps. The Iran thread is particularly significant: Pentagon acknowledgment of over 600 U.S. wounded signals the Iran conflict is far larger and costlier than publicly framed, and Ukraine's strike on an Iranian vessel in the Caspian directly links the European and Middle Eastern theaters, suggesting Kyiv is actively working to extend pressure on Tehran's logistics and revenue streams. This aligns with the Russia financing story, as Iran is a key Russian partner, and both states now face compounding economic and military attrition that may accelerate risk-taking or miscalculation. Meanwhile, Taiwan's AI military gap alongside its corvette commissioning reflects an uncomfortable paradox where the island advances conventional capabilities but lags in the decisive technology domain, even as South Korea's indigenous missile development signals broader Indo-Pacific allies hedging against U.S. reliability in the wake of the Iran casualty disclosure. The OT cybersecurity items, particularly the surge in ransomware and the push for unified ICS standards, should not be read in isolation from these military and geopolitical stressors, as periods of interstate conflict and great power tension historically correlate with increased state-sponsored targeting of critical infrastructure, and the current regulatory fragmentation across U",
+  "date": "2026-07-28",
+  "generated_at": "2026-07-28T09:04:57.402522+00:00",
+  "issue": 89,
+  "executive_summary": "Today's intelligence picture is defined by two reinforcing dynamics: accelerating technological risk outpacing governance, and strategic alliance stress fracturing Western deterrence architecture. On the technology side, threat actors are deploying increasingly sophisticated tools against high-value targets spanning finance ministries, critical infrastructure OT systems, and supply chains, while the GAO's warning about overlapping federal cybersecurity rules and the AI governance gap in OT security suggest the defensive institutional framework is structurally lagging the threat. The geopolitical and military threads are notably interconnected, with the Trump-Netanyahu confrontation over Iran, the Pentagon's quiet reclassification of Iran war casualties, and continued Iran sanctions pressure collectively painting a picture of a U.S.-Iran tension environment that is more active and less transparent than publicly acknowledged. Europe's posture deserves separate attention as a cross-cutting thread: the EU defense chief's call to absorb Ukraine's military lessons, French wildfire threats to Rafale production and nuclear supply chains, and the USS George Washington's South China Sea deployment all signal that allied militaries are simultaneously managing near-peer competition, active conflict learning, and unexpected domestic vulnerabilities. The aggregate picture today is one of institutional friction on the defensive side meeting an opportunistic and diversified threat environment, with alliance cohesion under enough strain that adversaries have meaningful room to exploit the seams.",
   "sections": [
+    {
+      "id": "cyber",
+      "title": "Cyber",
+      "intro": "AI-enabled espionage, ransomware hitting critical supply chains, and active exploitation of government-facing vulnerabilities define today's threat landscape.",
+      "items": [
+        {
+          "headline": "Hackers deploy autonomous AI agent in espionage operation against Thailand's finance ministry",
+          "summary": "Threat actors used an autonomous AI agent to conduct cyber-espionage against Thailand's Ministry of Finance, marking a significant operational escalation in how AI is being weaponized for state-level intrusions. The use of autonomous agents suggests attackers are moving beyond AI-assisted tasks toward systems capable of independent decision-making during an operation. This is a precedent-setting case to watch as it signals a likely near-term shift in the complexity and scale of espionage campaigns.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/thailand-hackers-ai-finance-ministry"
+        },
+        {
+          "headline": "Ransomware attack on Japanese frozen-food giant Nichirei disrupts supply chain and exposes customer data",
+          "summary": "Nichirei, a major Japanese frozen-food supplier, suffered a ransomware attack that disrupted shipping operations for roughly 5,000 customers and triggered warnings of KFC Japan shortages. Personal data theft was confirmed, underscoring the dual extortion dynamic now standard in ransomware operations. The incident illustrates continued targeting of logistics and food supply infrastructure, sectors with low tolerance for operational downtime.",
+          "source": "Check Point Research",
+          "url": "https://research.checkpoint.com/2026/27th-july-threat-intelligence-report/"
+        },
+        {
+          "headline": "CISA flags active exploitation of Fortinet FortiOS vulnerability alongside second critical flaw",
+          "summary": "CISA added two vulnerabilities to its Known Exploited Vulnerabilities catalog, including CVE-2025-68686, a Fortinet FortiOS information exposure flaw being actively exploited in the wild. Fortinet devices are a persistent target given their widespread deployment at network perimeters across government and enterprise environments. Federal agencies are required to remediate KEV-listed vulnerabilities within mandated timeframes, making prompt patching operationally critical.",
+          "source": "All CISA Advisories",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/07/27/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "headline": "UK court allows spyware lawsuit against Bahrain to proceed, rejecting state immunity claim",
+          "summary": "A UK court rejected Bahrain's claim of state immunity in a case alleging its officials deployed spyware to access devices, intercept communications, and activate microphones and cameras of targeted individuals. The ruling is legally significant as it opens a potential avenue for civil accountability against state-sponsored spyware operations in Western courts. The case adds pressure on governments using commercial surveillance tools against dissidents and may influence how similar cases are litigated internationally.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/uk-court-rejects-bahrain-immunity-claim-spyware-case"
+        }
+      ]
+    },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "Strains are mounting across multiple fronts — from Taiwan's military modernization gap to Russia's eroding war finance — as structural vulnerabilities in key actors come into sharper focus.",
+      "intro": "The Middle East remains the dominant flashpoint, with U.S.-Israel tensions, Iran sanctions policy, and a controversial Saudi nuclear deal reshaping the regional order, while European defense posture continues its post-Ukraine recalibration.",
       "items": [
         {
-          "headline": "Taiwan's AI Military Gap Undermines Deterrence Despite Semiconductor Dominance",
-          "summary": "Despite producing the world's most advanced chips, Taiwan's military is only beginning to integrate AI-enabled systems — while China is aggressively fielding them. This asymmetry means Taiwanese forces could face PLA AI-driven capabilities before developing effective countermeasures or interoperability with coalition partners. The gap is not just a capability problem but a deterrence credibility problem that Beijing can exploit in its calculus.",
-          "source": "War on the Rocks",
-          "url": "https://warontherocks.com/cogs-of-war/taiwans-tech-hurdles-threaten-military-capability-and-potential-coalition-defense/"
-        },
-        {
-          "headline": "Russia's War Financing Is Becoming Politically Costly as Easy Revenue Dries Up",
-          "summary": "Moscow has exhausted the low-friction funding mechanisms that cushioned its war economy in the early stages of the Ukraine conflict, forcing it toward more politically sensitive measures like asset confiscation and deeper taxation. This signals a shift from financial convenience to financial coercion domestically, which carries longer-term risks to regime stability. Watch for further economic deterioration as a potential variable in Russian war-termination calculations.",
+          "headline": "Trump's Saudi Nuclear Deal Undermines Decades of U.S. Nonproliferation Policy",
+          "summary": "A new U.S.-Saudi nuclear agreement would grant Riyadh civilian nuclear capabilities without the standard safeguards that have anchored American counterproliferation efforts since the Atomic Energy Act. The deal risks triggering a regional nuclear cascade, with other Gulf states likely to demand equivalent terms. Watch whether Congress pushes back or Israel—already at odds with Washington over Iran—raises formal objections.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/07/27/russia-ukraine-war-money-spending-defense-budget-taxes-asset-confiscation-sanctions-finance/"
+          "url": "https://foreignpolicy.com/2026/07/27/trump-nuclear-saudi-arabia-deal-iran-israel/"
         },
         {
-          "headline": "Norway and Finland Face Pressure to Maintain Arctic and Baltic Demilitarized Zones",
-          "summary": "Two longstanding demilitarized zones — Svalbard in the Arctic and an area in the Baltic — are under renewed scrutiny as NATO's northern flank becomes more strategically active following Finland's accession. Preserving these zones serves as a confidence-building mechanism with Russia, but their relevance is being tested by a security environment that looks nothing like the 1920 treaty era. How Oslo and Helsinki handle this will signal broader European willingness to maintain legacy arms control frameworks under pressure.",
-          "source": "War on the Rocks",
-          "url": "https://warontherocks.com/why-norway-and-finland-should-preserve-two-of-europes-most-important-demilitarized-zones/"
+          "headline": "Trump and Netanyahu Set for Confrontation as Iran War Strains Alliance",
+          "summary": "Once ideologically aligned, Trump and Netanyahu are now on a collision course ahead of their upcoming meeting, divided over war aims, the pace of a ceasefire, and post-conflict governance in Gaza and Iran. The rift reflects deeper disagreements about whether military pressure on Tehran has achieved its strategic objectives. The outcome of this meeting could determine whether the U.S. maintains operational alignment with Israel or begins distancing itself publicly.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/07/27/netanyahu-trump-visit-israel-iran-war-elections-mamdani-united-nations/"
+        },
+        {
+          "headline": "Iran Sanctions Are Inflicting Economic Pain But Failing to Deliver Strategic Results",
+          "summary": "Sweeping economic pressure has severely damaged Iran's economy, but analysts find no clear link between that damage and meaningful shifts in Iranian strategic behavior or nuclear posture. The disconnect raises fundamental questions about whether economic coercion alone can achieve U.S. objectives, particularly as Tehran adapts through oil smuggling networks and regional partners. The gap between economic effect and political outcome is a key vulnerability in current U.S. Iran strategy.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/07/28/iran-war-economy-oil-sanctions-reconstruction/"
+        },
+        {
+          "headline": "EU Defense Chief: Europe Must Now Learn Military Lessons Directly From Ukraine",
+          "summary": "The EU's top defense official signaled a fundamental shift in how Europe frames its relationship with Ukraine—from donor to student—acknowledging that Ukrainian forces have accumulated battlefield expertise that NATO members lack. This reorientation has direct implications for European defense procurement, doctrine development, and force structure as the continent accelerates its own rearmament. The statement reflects growing institutional recognition that Europe's military credibility depends on integrating hard-won Ukrainian lessons before any potential direct confrontation with Russia.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/07/27/europe-eu-ukraine-defense-kubilius-interview-nato/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "U.S. casualties in the Iran war are higher than disclosed, Ukraine has opened a new front in the Caspian Sea, and Indo-Pacific navies are accelerating indigenous weapons development.",
+      "intro": "Today's military picture is dominated by power projection in the South China Sea, opaque casualty reporting from the Iran war, and urgent Pentagon efforts to accelerate affordable long-range strike capability.",
       "items": [
         {
-          "headline": "Pentagon Acknowledges Over 600 U.S. Troops Wounded in Iran War, Far More Than Previously Admitted",
-          "summary": "The Defense Department disclosed Saturday that more than 600 American service members have been wounded in the Iran conflict — nearly 200 more than prior official figures indicated. The undercount raises serious questions about transparency and information management during an active conflict. Watch for congressional pressure on DoD reporting standards and whether the revised figures shift domestic political support for the war.",
-          "source": "Task & Purpose",
-          "url": "https://taskandpurpose.com/news/iran-war-us-troops-casualty-numbers/"
-        },
-        {
-          "headline": "Ukraine Strikes Iranian Vessel in Caspian Sea, Killing One Sailor",
-          "summary": "Iran confirmed a Ukrainian attack on one of its vessels in the Caspian Sea resulted in at least one sailor's death, calling it an act of aggression and accusing Kyiv of deliberately expanding the war's geographic scope. The strike marks a significant escalation, as the Caspian has not previously been a theater of the Ukraine conflict. The move likely reflects Ukrainian efforts to pressure Iran over its military support to Russia, but risks drawing in other Caspian littoral states and complicating regional diplomacy.",
+          "headline": "USS George Washington Carrier Strike Group Deploys to South China Sea Amid China-Philippines Clashes",
+          "summary": "The George Washington CSG has moved into the South China Sea following two maritime confrontations between Chinese and Philippine forces this month. The deployment signals a deliberate U.S. show of force intended to deter further Chinese aggression against a treaty ally. Watch whether Beijing responds with its own naval movements or escalatory rhetoric toward Manila or Washington.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/global/mideast-africa/2026/07/26/iran-says-ukrainian-attack-on-vessel-in-caspian-sea-killed-sailor/"
+          "url": "https://www.militarytimes.com/news/your-navy/2026/07/27/uss-george-washington-operating-in-south-china-sea-as-china-philippines-tension-escalates/"
         },
         {
-          "headline": "Taiwan Commissions First Batch 2 Tuo Chiang Corvette as Cross-Strait Tensions Persist",
-          "summary": "Taiwan's navy formally commissioned ROCS Tan Chiang, its first Batch 2 Tuo Chiang-class catamaran corvette, in a ceremony presided over by President Lai Ching-te at Tsoying Naval Base. The upgraded Batch 2 variant represents a continued push to field fast, missile-armed surface combatants suited to Taiwan Strait defensive operations. The commissioning signals Taipei's sustained investment in asymmetric naval capability at a moment of heightened cross-strait military activity.",
-          "source": "Naval News",
-          "url": "https://www.navalnews.com/naval-news/2026/07/taiwan-navy-commissions-first-batch-2-tuo-chiang-class-corvette/"
+          "headline": "Pentagon Quietly Reclassifies Four Iran War KIA into Ambiguous 'Overseas Operations' Category",
+          "summary": "The Defense Department revised its Iran war casualty count from 18 to 14 killed in action, moving four deaths into a newly created conflict category that obscures their operational context. The change raises transparency concerns and may reflect an effort to manage public perception of costs from the Iran conflict. Analysts should track whether this reclassification practice expands to other theaters.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/news/your-military/2026/07/27/pentagon-moves-recent-kia-numbers-from-iran-war-into-overseas-operations-category/"
         },
         {
-          "headline": "South Korea Begins Prototype Assembly of Indigenous Naval Air Defense Missile to Replace SM-2",
-          "summary": "LIG Defense & Aerospace has started assembling flight-test prototypes for South Korea's KSAM-II ship-to-air missile, an indigenous replacement for the U.S.-supplied SM-2 intended for future ROK Navy surface combatants. The program reflects a broader South Korean drive to reduce dependence on foreign weapons systems for critical naval defense roles. Successful flight testing would mark a major milestone in Seoul's defense industrial self-sufficiency agenda.",
-          "source": "Naval News",
-          "url": "https://www.navalnews.com/naval-news/2026/07/lig-da-begins-assembly-prototype-ksam-ii-missile-rok-navy/"
+          "headline": "Pentagon Launches Accelerated Push for Sub-$250K Long-Range Strike Weapons",
+          "summary": "The Defense Department is soliciting industry proposals for long-range strike munitions priced below $250,000 each, with a requirement for functional demonstrations within just three months. The initiative reflects lessons from high-volume attrition warfare—particularly the depletion of expensive precision munitions stockpiles—and prioritizes cost and speed over traditional acquisition timelines. This is a significant signal that the Pentagon is reorienting procurement doctrine toward mass and affordability.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/news/2026/07/27/pentagon-calls-for-cheaper-long-range-strike-weapons-with-testing-in-just-3-months/"
+        },
+        {
+          "headline": "French Wildfires Put Nuclear Deterrence Supply Chain and Rafale Production at Risk",
+          "summary": "Wildfires near Bordeaux are encroaching on multiple French defense-industrial facilities, including sites tied to the nuclear deterrence supply chain and Rafale fighter assembly. Disruption to these facilities would carry strategic implications well beyond France, affecting NATO air power commitments and nuclear credibility. The situation underscores the growing intersection of climate-driven events and critical defense infrastructure vulnerability.",
+          "source": "Defense News",
+          "url": "https://www.defensenews.com/global/europe/2026/07/28/french-wildfires-threaten-nuclear-deterrence-industry-rafale-assembly/"
+        }
+      ]
+    },
+    {
+      "id": "intel_osint",
+      "title": "Intel / OSINT",
+      "intro": "Today's intelligence picture is dominated by state-linked targeting of civil society via social platforms and ongoing pressure on government and critical infrastructure security posture.",
+      "items": [
+        {
+          "headline": "Targeted Telegram phishing campaign hit Belarusian dissident and post-Soviet users",
+          "summary": "Researchers identified a sophisticated, personalized phishing operation using Telegram as the attack vector against an exiled Belarusian activist and users in Russia and Kazakhstan. The high degree of personalization suggests a state-linked or well-resourced threat actor with prior intelligence on the targets. This pattern of using encrypted messaging platforms to target dissidents and civil society in authoritarian-adjacent contexts is accelerating and warrants close monitoring by NGO security teams.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/telegram-belarus-activist-russia-cyberattack"
+        },
+        {
+          "headline": "Senator pushes federal agencies to audit and eliminate legacy VPN infrastructure",
+          "summary": "Senator Ron Wyden is calling on CISA, OMB, and NIST to coordinate a government-wide purge of outdated VPN systems, citing persistent vulnerabilities exploited by foreign adversaries. Aging VPN appliances have been a recurring entry point in major intrusions, including those attributed to Chinese and Russian actors. The proposal reflects growing legislative recognition that passive vulnerability management is insufficient for federal network defense.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/federal-purge-outdated-vpns-wyden-letter"
+        },
+        {
+          "headline": "Malware forces South Carolina and Georgia health system to shut down offices",
+          "summary": "AnMed Health confirmed a malware-related cybersecurity disruption over the weekend that forced office closures across its South Carolina and Georgia facilities while staff worked to restore systems and assess the breach's scope. Healthcare remains a high-value target due to sensitive data holdings and operational dependencies that create pressure to pay ransoms or accept downtime. The incident scope and threat actor attribution are still unconfirmed, making this a developing situation to watch.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/health-system-south-carolina-georgia-disruptions-malware"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "The OT/ICS policy landscape is active, with industry coalitions pushing for standards consolidation as ransomware threats against operational sectors continue to climb.",
+      "intro": "Industrial and critical infrastructure environments face active exploitation pressure today, with a ransomware campaign targeting engineering software, a Russian state-linked group hitting OT-adjacent government networks, and regulatory fragmentation complicating the defensive picture.",
       "items": [
         {
-          "headline": "Industry coalition calls on U.S. federal government to adopt ISA/IEC 62443 as unified OT security standard",
-          "summary": "The Operational Technology Cybersecurity Coalition is pressing U.S. policymakers to formally designate ISA/IEC 62443 as the national OT cybersecurity standard, arguing that regulatory fragmentation across agencies creates compliance burdens and security gaps for critical infrastructure operators. Adopting a single recognized framework would streamline requirements for sectors subject to overlapping mandates from CISA, EPA, NERC, and others. Watch whether the push gains traction in any forthcoming executive or legislative action on critical infrastructure security.",
-          "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/isa-iec-62443/otcc-paper-urges-federal-adoption-of-isa-iec-62443-to-unify-ot-cybersecurity-reduce-regulatory-fragmentation/"
+          "headline": "Ransomware Actors Actively Exploiting Critical Flaw in PTC Windchill PLM Platform",
+          "summary": "A critical unsafe deserialization vulnerability in PTC Windchill, a widely used product lifecycle management platform common in manufacturing and engineering environments, is being leveraged in active ransomware campaigns, enabling unauthenticated remote code execution. The targeting of Windchill is significant because PLM systems often sit at the intersection of IT and OT networks and hold sensitive design data. Organizations running on-premises Windchill instances should treat patching as urgent and audit for signs of lateral movement into adjacent OT segments.",
+          "source": "SecurityWeek",
+          "url": "https://www.securityweek.com/ptc-windchill-vulnerability-exploited-in-ransomware-campaign/"
         },
         {
-          "headline": "Ransomware volume hits 2,229 attacks in Q2 2026 as supply chain targeting intensifies",
-          "summary": "NCC Group's latest threat report records a 3% quarter-over-quarter increase in ransomware incidents, with software supply chain attacks accelerating as a vector — a trend with direct implications for OT environments that depend on third-party vendor software and remote access tools. Industrial sectors remain high-value targets given operational disruption leverage. The supply chain angle is particularly concerning for asset owners who may have limited visibility into upstream software integrity.",
+          "headline": "Russian Group Laundry Bear Exploits Zero-Click Zimbra Flaw Against Critical Infrastructure Targets",
+          "summary": "A joint advisory from CISA, NSA, and FBI attributes active exploitation of a Zimbra zero-click vulnerability to Laundry Bear, a Russian threat actor targeting Western government entities and critical infrastructure operators. Zero-click vulnerabilities require no user interaction, significantly lowering the barrier for initial access and making detection harder. Critical infrastructure operators relying on Zimbra for email should apply available patches immediately and review mail server logs for anomalous access patterns.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/ransomware/ncc-group-ransomware-groups-expand-operations-as-software-supply-chain-attacks-accelerate/"
+          "url": "https://industrialcyber.co/cisa/russian-hacker-group-laundry-bear-exploits-zimbra-zero-click-flaw-to-target-western-government-critical-infrastructure/"
         },
         {
-          "headline": "ENISA opens public consultation on EU managed security services cybersecurity certification scheme",
-          "summary": "ENISA has published a draft certification framework for managed security services providers under the EU Cybersecurity Act, seeking stakeholder feedback before finalization. For OT operators in the EU relying on MSSPs for monitoring and incident response, the scheme could set baseline expectations for provider competency and accountability. The outcome will shape how critical infrastructure sectors procure and evaluate third-party security services across member states.",
+          "headline": "AI Integration in OT Security Tools Outpacing Governance Frameworks",
+          "summary": "A new analysis finds that AI capabilities embedded in OT detection and vulnerability management platforms are advancing faster than the governance structures needed to oversee their decision-making and accountability. In operational environments where automated responses can trigger physical consequences, undefined accountability for AI-driven actions poses direct safety and liability risks. Watch for regulatory bodies to begin addressing AI-specific oversight requirements in OT security standards in the near term.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/managed-services/enisa-launches-draft-eumss-cybersecurity-certification-scheme-for-managed-security-services-seeks-feedback/"
+          "url": "https://industrialcyber.co/features/growing-ai-adoption-in-ot-cybersecurity-exposes-gaps-in-governance-oversight-decision-making-accountability/"
+        },
+        {
+          "headline": "GAO Flags Overlapping Federal Cybersecurity Rules as Compliance Burden for Critical Infrastructure Sectors",
+          "summary": "A GAO report identifies a growing problem of duplicative and conflicting federal cybersecurity regulations across critical infrastructure sectors, driving up compliance costs without proportionate security gains. The report signals that fragmented regulatory oversight may be undermining the resilience it is intended to produce, particularly for operators subject to multiple agency mandates simultaneously. Legislative or executive action to harmonize sector-specific frameworks could emerge as a policy priority, though near-term relief for operators appears unlikely.",
+          "source": "Industrial Cyber",
+          "url": "https://industrialcyber.co/regulation-standards-and-compliance/gao-warns-duplicative-federal-cybersecurity-regulations-increasing-compliance-burdens-across-critical-infrastructure/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 17,
-    "items_published": 10
+    "articles_reviewed": 85,
+    "items_published": 19
   }
 }
