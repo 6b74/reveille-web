@@ -1,162 +1,162 @@
 {
-  "date": "2026-08-04",
-  "generated_at": "2026-08-04T09:04:12.934124+00:00",
-  "issue": 96,
-  "executive_summary": "Today's intelligence picture is dominated by two converging pressures: accelerating adversary activity against critical infrastructure and a deteriorating security environment across multiple strategic theaters that is straining U.S. and allied capacity to respond. The cyber and ICS sections are tightly linked, with the coordinated attacks on Minnesota water utilities and the FBI/EPA joint warning on PLC vulnerabilities representing a clear escalation in targeting of operational technology systems — likely reflecting both opportunistic criminal activity and possible state-directed probing of infrastructure resilience at a moment of heightened geopolitical tension. The geopolitical and military sections reinforce each other: collapsed U.S.-Iran nuclear talks, intensifying Russian missile pressure on NATO Europe, and the carrier positioning data from OSINT tracking all point toward a simultaneously heating threat environment across the Middle East and European flanks, while the Pentagon's push to surge Patriot and THAAD production and the submarine redesignations signal Washington is recalibrating for extended high-intensity deterrence rather than near-term de-escalation. The intelligence and data breach reporting adds a further concern — the Liechtenstein beneficial ownership leak and Amgen compromise suggest adversaries are actively harvesting financial and proprietary data in parallel with kinetic and cyber operations, a pattern consistent with pre-conflict intelligence preparation. Taken together, today's reporting reflects a strategic environment in which adversaries are probing vulnerabilities across multiple domains simultaneously",
+  "date": "2026-08-05",
+  "generated_at": "2026-08-05T09:05:48.089061+00:00",
+  "issue": 97,
+  "executive_summary": "Today's intelligence picture is defined by two reinforcing mega-trends: the accelerating weaponization of AI and cloud infrastructure across the full spectrum of adversarial activity, and a U.S. military and diplomatic posture that is simultaneously overstretched and realigning. On the technology threat side, the threads are tightly connected - AI tools are being exploited for cybercrime by scam networks, actively exploited vulnerabilities are targeting AI development platforms like Langflow, cyberattacks are causing confirmed physical disruption to water utilities across twelve states, and the window between vulnerability disclosure and exploitation is narrowing as adversaries leverage the same AI capabilities that defenders are racing to adopt. The military picture compounds this concern: the U.S. depleted virtually all long-range precision missiles in the Iran conflict, raising immediate questions about deterrence capacity at precisely the moment diplomatic channels with Iran remain fragile and active through Qatar, while congressional scrutiny of both the Pentagon's casualty accounting and Chinese AI penetration of critical infrastructure suggests institutional trust and oversight are under simultaneous pressure. Geopolitically, Washington appears to be executing a deliberate strategic tightening - leveraging the Abraham Accords, USMCA renewal, and trade policy as coordinated pressure instruments oriented around China containment - but this consolidation strategy carries escalation risk given depleted munitions stocks and the unresolved Iran nuclear track. The connective thread across all four",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Today's threat landscape spans state-sponsored espionage, critical infrastructure attacks, high-value data breaches, and emerging AI gateway vulnerabilities — signaling broad and escalating adversary activity.",
+      "intro": "Today's cyber landscape is defined by AI weaponization at scale, active exploitation of critical vulnerabilities, and persistent third-party supply chain risks.",
       "items": [
         {
-          "headline": "Russian state hackers targeting hotel Wi-Fi networks to steal credentials and deploy spyware",
-          "summary": "Microsoft has attributed a campaign of hotel Wi-Fi compromises to Russian state-sponsored actors, who are intercepting traveler credentials and installing espionage malware on connected devices. The tactic exploits trust in hospitality network infrastructure, making it particularly dangerous for government officials, executives, and journalists traveling abroad. Organizations should enforce VPN usage on all travel devices and treat any public Wi-Fi as hostile.",
+          "headline": "Cisco Talos documents how threat actors are systematically exploiting cloud AI tools for attacks",
+          "summary": "Talos researchers analyzed prompt logs recovered from threat actor endpoints running tools like Claude Code, Gemini, and Cursor, providing rare empirical data on how adversaries operationalize AI. The findings show attackers using AI for code development, social engineering, and vulnerability research — moving beyond speculation to documented tradecraft. Security teams should treat AI platform access logs as threat intelligence sources and expect AI-assisted attack tempo to accelerate.",
+          "source": "Cisco Talos Blog",
+          "url": "https://blog.talosintelligence.com/keep-going-bro-youve-got-this-a-data-driven-look-at-how-adversaries-are-weaponizing-ai/"
+        },
+        {
+          "headline": "CISA flags three actively exploited vulnerabilities including IBM Langflow code injection flaw",
+          "summary": "CISA added three CVEs to its Known Exploited Vulnerabilities catalog, with the IBM Langflow code injection vulnerability among the most concerning given Langflow's use in AI pipeline orchestration. Active exploitation of N-able N-central — widely used for managed service provider remote management — compounds supply chain risk across downstream clients. Federal agencies face binding remediation deadlines, but the broader MSP and AI tooling exposure warrants immediate attention from private sector defenders.",
+          "source": "All CISA Advisories",
+          "url": "https://www.cisa.gov/news-events/alerts/2026/08/04/cisa-adds-three-known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "headline": "OpenAI bans ChatGPT accounts tied to Cambodian scam centers running investment fraud and human trafficking",
+          "summary": "OpenAI acted on a WhatsApp tip to disrupt multiple accounts linked to Southeast Asian cyber-scam operations that used ChatGPT to craft convincing lures targeting Indian nationals for investment fraud. The case illustrates that AI platforms are now integral infrastructure for transnational criminal enterprises, not just nation-state actors. Expect pressure on AI providers to implement stronger know-your-user controls as regulatory scrutiny of platform abuse intensifies.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/russian-wifi-hackers-hotels"
+          "url": "https://therecord.media/openai-chatgpt-cambodia-scam-centers-disruption"
         },
         {
-          "headline": "Coordinated cyberattacks hit over 30 Minnesota water utilities, disrupting industrial control systems",
-          "summary": "Minnesota IT Services confirmed a coordinated attack targeting more than 30 community water utilities, briefly disrupting treatment operations in Braham and compromising industrial control systems. The simultaneous targeting of multiple utilities suggests a deliberate stress-test of critical infrastructure defenses rather than opportunistic intrusion. Water sector operators should audit ICS network segmentation and remote access controls immediately.",
-          "source": "Check Point Research",
-          "url": "https://research.checkpoint.com/2026/3rd-august-threat-intelligence-report/"
-        },
-        {
-          "headline": "Bitcoin hardware wallet firm destroys inventory after $88 million stolen via firmware exploit",
-          "summary": "A firmware vulnerability in Coldcard's popular bitcoin hardware wallet allowed attackers to siphon over $88 million from customers, forcing the company to destroy affected inventory. The breach undermines confidence in hardware wallets as the gold standard for cryptocurrency custody, and raises serious questions about firmware signing and supply chain integrity. Affected users should assume compromise and transfer holdings to freshly verified devices.",
+          "headline": "Polish retail giant Żabka confirms breach via compromised third-party account exposing Jira and sensitive data",
+          "summary": "Attackers gained access to Żabka's Jira environment and other internal systems in late July through a third-party account, highlighting persistent risks from federated access and contractor credential exposure. Jira environments routinely contain project roadmaps, vulnerability tracking, and internal communications, making them high-value targets for espionage and extortion. The incident reinforces the need for zero-trust segmentation of developer tooling from core business systems.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/bitcoin-theft-coldcard-cyberattack"
-        },
-        {
-          "headline": "Security researchers expose multi-vector attack paths against LiteLLM AI gateway",
-          "summary": "Researchers demonstrated that LiteLLM, a widely deployed AI gateway managing access to multiple LLM providers, is vulnerable to traffic interception, API key theft, and malicious tool-call injection. Because LiteLLM holds backend provider credentials and sits in-line with AI traffic, a successful compromise grants attackers both data access and the ability to manipulate AI outputs at scale. Enterprises running LiteLLM in production should audit exposure and apply available patches without delay.",
-          "source": "Embrace The Red",
-          "url": "https://embracethered.com/blog/posts/2026/hijacking-litellm-for-fun-and-profit/"
+          "url": "https://therecord.media/poland-convenience-store-chain-zabka-cyberattack"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "Diplomatic stalling on Iran, Gulf realignment, European air defense gaps, and U.S.-China trade maneuvering define a geopolitical landscape marked by deferred decisions with mounting costs.",
+      "intro": "U.S. diplomatic positioning is under strain across multiple fronts, with contradictory signals on the Saudi nuclear deal, fragile U.S.-Iran talks, and USMCA renegotiation all surfacing simultaneously.",
       "items": [
         {
-          "headline": "U.S.-Iran Nuclear Talks Collapse After Washington Cancels Threatened Strikes",
-          "summary": "Tehran has rejected the premise of ongoing peace negotiations following the Trump administration's cancellation of what it described as imminent military strikes, exposing the limits of coercive diplomacy as a negotiating tool. The episode underscores a credibility problem: repeated threats without follow-through reduce U.S. leverage in future standoffs. Watch whether Oman remains available as a back-channel and whether Iran accelerates enrichment activity in the absence of diplomatic pressure.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/08/03/us-iran-war-peace-talks-trump-empty-threats-strikes-oman/"
+          "headline": "Trump's Abraham Accords Ultimatum Threatens to Derail Saudi Nuclear Agreement",
+          "summary": "Less than 48 hours after the Trump administration announced a landmark civilian nuclear deal with Saudi Arabia, Trump posted that the agreement is contingent on Riyadh normalizing ties with Israel — a condition not included in the official announcement. The contradiction between presidential messaging and administration policy introduces significant uncertainty for Riyadh, which has consistently tied any Israel normalization to Palestinian statehood progress. Watch whether the White House clarifies or doubles down, as Saudi officials will need a coherent U.S. position before committing to either track.",
+          "source": "War on the Rocks",
+          "url": "https://warontherocks.com/why-trumps-israel-normalization-demand-may-kill-the-saudi-nuclear-deal/"
         },
         {
-          "headline": "Saudi-UAE Rapprochement Opens Window for Coordinated Gulf Deterrence Against Iran",
-          "summary": "A warming of relations between Riyadh and Abu Dhabi is creating conditions for a more unified Gulf posture on missile defense, sanctions enforcement, and freedom of navigation through the Strait of Hormuz. The strategic logic is straightforward: neither power can credibly contain Iran alone, and prior intra-Gulf friction had been a force multiplier for Tehran. The test will be whether the thaw translates into operationally integrated defense structures or remains a diplomatic signal.",
+          "headline": "Qatar Confirms Progress in Indirect U.S.-Iran Negotiations",
+          "summary": "Qatar has publicly confirmed that indirect talks between Washington and Tehran are advancing, framing the current moment as a potential last window for a negotiated settlement before tensions over the Strait of Hormuz escalate further. The involvement of both Qatar and Oman as intermediaries suggests a structured back-channel, but Iran's domestic political constraints and U.S. maximalist positions remain significant obstacles. The Hormuz dimension makes this high-stakes — any breakdown could have immediate implications for global energy markets.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/08/03/saudi-arabia-emirates-iran-israel-uae-missile-defense-sanctions-hormuz/"
+          "url": "https://foreignpolicy.com/2026/08/04/iran-us-indirect-peace-talks-qatar-oman-strait-hormuz-trump/"
         },
         {
-          "headline": "NATO Europe Faces Acute Air Defense Shortage as Russia's Ballistic Missile Campaign Intensifies",
-          "summary": "Russia's sustained ballistic missile strikes on Ukraine are forcing NATO members to confront an uncomfortable arithmetic: European air defense inventories are insufficient to simultaneously supply Ukraine and protect NATO territory. The gap is not merely industrial—it reflects years of underinvestment in layered air defense doctrine. Upcoming NATO planning cycles will need to address whether Patriot and SAMP/T systems are being produced fast enough to matter on the current timeline.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/08/03/nato-europe-russia-missiles-air-defense-ukraine-patriots/"
-        },
-        {
-          "headline": "Washington Uses USMCA Review to Pressure Canada and Mexico on China Economic Access",
-          "summary": "The Trump administration's decision to delay renewal of the U.S.-Mexico-Canada Agreement signals that trade architecture is being actively weaponized to limit Chinese economic penetration of North American supply chains, with deficit reduction serving as public cover for a deeper economic security agenda. Industry sources indicate the real friction centers on rules of origin and Chinese investment in Mexican manufacturing. The outcome will shape whether USMCA evolves into a China-exclusionary bloc or fractures under retaliatory pressure from Ottawa and Mexico City.",
+          "headline": "Washington Withholds USMCA Renewal, Signaling China-Focused Trade Realignment",
+          "summary": "The Trump administration declined to renew the U.S.-Mexico-Canada Agreement during its mandatory July 1 review, using the leverage point to press Canada and Mexico on economic security priorities — particularly supply chain exposure to China. Industry sources indicate the China dimension is driving negotiations more than the publicly stated concern over trade deficits. This sets up a prolonged renegotiation period with two of America's largest trading partners at a moment when North American economic integration is being actively tested.",
           "source": "War on the Rocks",
           "url": "https://warontherocks.com/is-washington-rewriting-the-north-american-trade-agreement-around-china/"
+        },
+        {
+          "headline": "Anti-Government Protests in India Test Modi's Political Resilience",
+          "summary": "A growing protest movement — dubbed the 'Cockroach protesters' — is challenging the political atmosphere under Prime Minister Modi, signaling rising public discontent that analysts say represents a genuine shift in India's domestic political landscape. If the government responds with increased repression rather than accommodation, it risks accelerating opposition consolidation ahead of future electoral cycles. India's internal political stability carries regional significance given its role as a counterweight to China and a key partner in U.S. Indo-Pacific strategy.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/08/04/india-cockroach-protests-modi-politics-change/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "U.S. defense posture is shifting toward expanded strike capacity and air defense production, while readiness challenges in aviation manufacturing and submarine classification signal both ambition and strain.",
+      "intro": "Post-Iran war readiness gaps, accelerating counter-drone procurement, and contested casualty data are defining today's U.S. military picture.",
       "items": [
         {
-          "headline": "Pentagon pursues major surge in Patriot and THAAD interceptor output",
-          "summary": "The Defense Department announced framework agreements aimed at tripling Patriot missile production and quadrupling THAAD interceptor manufacturing. The move reflects urgent lessons from global conflicts demonstrating that interceptor stockpiles are rapidly exhausted in sustained combat. Watch whether industrial base constraints — the same ones plaguing Air Force jet engines — limit execution.",
+          "headline": "US Depleted 'Virtually All' Long-Range Precision Missiles in Iran War",
+          "summary": "Five months of combat against Iran consumed nearly the entire U.S. stockpile of long-range precision missiles, sources tell Military Times. The disclosure exposes a critical readiness gap at a moment of elevated global tension and raises urgent questions about industrial base capacity to replenish stocks. Watch for accelerated procurement announcements and potential shifts in theater posture as commanders reassess available strike options.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/08/03/pentagon-moves-to-triple-patriot-quadruple-thaad-interceptor-production/"
+          "url": "https://www.militarytimes.com/industry/techwatch/2026/08/04/us-used-virtually-all-long-range-precision-missiles-during-iran-war-sources-say/"
         },
         {
-          "headline": "Navy redesignates 19 Virginia-class submarines to reflect expanded strike payload",
-          "summary": "The Navy is formally reclassifying 19 Virginia-class boats equipped with the Virginia Payload Module, which significantly increases their capacity to carry Tomahawk and other munitions. The redesignation signals a doctrinal shift toward submarines as primary long-range strike platforms. This aligns with broader Pentagon strategy to offset adversary anti-access capabilities in the Pacific.",
+          "headline": "Democrats Probe Pentagon Alterations to Iran War Casualty Count",
+          "summary": "House Oversight Committee Democrats have formally requested records explaining changes the Pentagon made to its public Iran war casualty database. The investigation signals mounting congressional concern over data transparency and potential manipulation of wartime accountability figures. This bears watching as a civil-military oversight flashpoint, particularly if document production is resisted or delayed.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-navy/2026/08/04/us-navy-is-reclassifying-19-virginia-class-submarines-to-reflect-increased-attack-capabilities/"
+          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/08/04/house-oversight-democrats-seek-records-behind-pentagon-changes-to-iran-war-casualty-database/"
         },
         {
-          "headline": "Air Force jet engine production facing delays, quality failures, and material shortfalls",
-          "summary": "The Air Force publicly acknowledged that jet engine manufacturing is beset by production delays, quality control breakdowns, and persistent material shortages. The disclosure raises direct readiness concerns for current and next-generation aircraft fleets. Combined with the Patriot production ramp-up, this underscores a systemic stress on the U.S. defense industrial base.",
+          "headline": "Army Pursues Sub-$150K Surface-to-Air Missiles Designed to Kill Small Drones",
+          "summary": "The U.S. Army has issued requirements for cost-capped surface-to-air missiles specifically engineered to defeat small unmanned aerial systems, reflecting lessons absorbed from recent conflicts where cheap drones overwhelmed expensive legacy air defenses. The $150,000 per-unit ceiling is a deliberate attempt to avoid an economically unsustainable cost exchange ratio. Industry responses will reveal whether the defense sector can actually close that price gap at scale.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/industry/techwatch/2026/08/03/us-air-force-jet-engine-manufacturing-plagued-by-significant-challenges/"
+          "url": "https://www.militarytimes.com/industry/techwatch/2026/08/04/us-army-wants-a-surface-to-air-missile-that-can-destroy-small-drones/"
         },
         {
-          "headline": "24th Marine Expeditionary Unit makes first Panama Canal transit since 2008",
-          "summary": "The 24th MEU aboard USS San Antonio transited the Panama Canal, the first such passage by a Marine expeditionary unit in nearly two decades. The transit demonstrates renewed U.S. military emphasis on hemispheric power projection and follows elevated political attention to Canal access under the current administration. It signals operational flexibility to shift amphibious forces between the Atlantic and Pacific rapidly.",
-          "source": "Department of War News Feed",
-          "url": "https://www.war.gov/News/News-Stories/Article/Article/4562420/marine-expeditionary-unit-transits-panama-canal/"
+          "headline": "Army's Next-Generation Command System Cleared for Broad Deployment",
+          "summary": "The Army's NGC2 battlefield command network, designed to unify communications and accelerate decision-making under fire, has been declared ready for large-scale rollout. The system represents a foundational piece of the service's modernization push following operational gaps exposed during the Iran campaign. Successful fielding at scale will depend on integration with existing platforms and adversary electronic warfare resilience.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/news/your-military/2026/08/04/armys-new-battlefield-command-system-ready-to-scale/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Open-source tracking of naval deployments and a pair of significant data breaches highlight today's intelligence picture, with corporate and financial transparency records emerging as high-value targets.",
+      "intro": "Today's intelligence picture is shaped by Western transparency initiatives, Kremlin information control, and ongoing legal battles over encrypted data access.",
       "items": [
         {
-          "headline": "Breach of Liechtenstein corporate registry exposes 31,000 beneficial ownership records",
-          "summary": "Attackers exfiltrated tens of thousands of records identifying the real people behind Liechtenstein-registered companies, foundations, and trusts — exactly the kind of beneficial ownership data that governments and financial intelligence units rely on to trace illicit finance. Liechtenstein has activated a crisis unit, suggesting the breach is assessed as serious. Watch for downstream exploitation: this data is a ready-made tool for sanctions evasion, blackmail, or targeted fraud against high-net-worth individuals.",
+          "headline": "Former UK Defence Intelligence Chief Reflects on Decision to Publicize Russia's Ukraine Invasion Plans",
+          "summary": "General Sir Jim Hockenhull, ex-Chief of Defence Intelligence, discusses the deliberate choice to declassify and release British intelligence on Russia's pre-invasion movements, including troop routes — a direct attempt to preempt and counter Russian information operations. The strategy marked a significant shift in how Western intelligence agencies use public disclosure as an active tool rather than a last resort. Watch for whether NATO allies institutionalize this approach ahead of future conflict scenarios.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/hackers-steal-records-liechtenstein-companies-foundations"
+          "url": "https://therecord.media/interview-jim-hockenhull-uk-defence-intelligence-russia-ukraine"
         },
         {
-          "headline": "Amgen discloses patient and proprietary data stolen via third-party cloud compromise",
-          "summary": "Biotech giant Amgen has notified regulators that a breach of third-party cloud infrastructure exposed both patient information and sensitive company data, reinforcing the pattern of attackers targeting supply-chain access points rather than hitting large enterprises directly. The dual nature of the stolen data — personal health records and proprietary R&D or commercial information — suggests either broad opportunistic access or a deliberate actor with multiple objectives. Third-party cloud exposure in the pharma sector warrants close monitoring given ongoing interest from state-linked actors in biomedical IP.",
+          "headline": "Russia Labels Durov a Terrorist Ally, Forcing Businesses to Purge Telegram-Linked Products",
+          "summary": "Following FSB charges that Telegram facilitated Ukrainian intelligence operations and extremist activity, Russian businesses are removing Durov-associated products under the new 'terrorist' designation. The move is a dual-purpose action: it pressures Telegram operationally while serving as a domestic narrative tool against a platform Moscow cannot fully control. This signals an intensifying effort by Russia to reshape its information environment as the war continues.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/amgen-hackers-cyberattack-sec"
+          "url": "https://therecord.media/russian-businesses-erase-durov-linked-products-terrorist-designation"
         },
         {
-          "headline": "OSINT carrier tracking shows USS George Washington in Vietnam, two flattops holding Arabian Sea blockade line",
-          "summary": "The latest open-source carrier positioning update places USS George Washington in Vietnam — the first U.S. carrier visit since 2023 — signaling a deliberate reassertion of presence in Southeast Asia amid South China Sea tensions. Simultaneously, two carriers are reportedly maintaining a blockade posture in the Arabian Sea, indicating sustained high operational tempo across two major theaters. This kind of publicly trackable deployment data illustrates both U.S. strategic messaging and the intelligence value of routine OSINT naval monitoring.",
-          "source": "TWZ",
-          "url": "https://www.twz.com/sea/where-are-the-aircraft-carriers-august-3-2026"
+          "headline": "Apple Opens New Legal Front Against UK Government Over iCloud Encryption Backdoor Demands",
+          "summary": "Apple is challenging British authorities' demands for access to iCloud data protected by Advanced Data Protection, escalating a legal confrontation with significant implications for end-to-end encryption globally. The UK's Technical Capability Notice framework, if upheld, could set a precedent compelling tech firms to undermine their own security architecture for state access. The outcome will be closely watched by intelligence agencies and privacy advocates alike, as it could redefine the boundaries of lawful intercept in democratic nations.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/apple-uk-tcn-icloud-new-legal-challenge"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "Water infrastructure is the dominant threat focus today, with active PLC attacks, multi-state disruptions, and mounting pressure on regulators to mandate OT security standards.",
+      "intro": "Water utility infrastructure faces its broadest confirmed cyberattack campaign in recent memory, while the OT vendor landscape responds to AI-accelerated threats with new capabilities and government-focused offerings.",
       "items": [
         {
-          "headline": "FBI and EPA Issue Joint Warning on PLC Attacks Disrupting U.S. Water Utilities",
-          "summary": "Hackers are actively targeting internet-exposed programmable logic controllers at water and wastewater facilities across at least seven U.S. states, causing operational disruptions. The joint federal advisory signals that these are not isolated incidents but part of a coordinated campaign against a sector with historically weak cyber defenses. Water utilities with internet-facing OT devices should treat this as an active threat requiring immediate network exposure review.",
-          "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/utilities-energy-power-water-waste/fbi-and-epa-warn-hackers-target-internet-connected-plcs-at-us-water-utilities-leading-to-operational-disruptions/"
-        },
-        {
-          "headline": "Industry Coalition Pushes CISA to Issue Binding OT Security Directive for Water Sector",
-          "summary": "The OT Cybersecurity Coalition is calling on CISA to move beyond voluntary guidance and issue a mandatory directive specifically targeting OT security in water utilities, citing the ongoing multi-state attack campaign as justification. This marks an escalation in the regulatory debate around critical infrastructure protection, where voluntary frameworks have consistently failed to raise baseline security. Watch for CISA's response, as a binding directive would set a precedent with implications well beyond the water sector.",
-          "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/utilities-energy-power-water-waste/otcc-urges-cisa-to-issue-binding-ot-cybersecurity-directive-after-cyberattacks-disrupt-water-utilities/"
-        },
-        {
-          "headline": "New York Commits $9 Million in Grants to Harden Cybersecurity at 153 Water Systems",
-          "summary": "New York State is distributing $9 million to help local governments assess and improve cyber defenses across 153 water and wastewater utilities, directly responding to the multistate attack campaign. The grants address a critical gap: many smaller water systems lack dedicated IT or security staff, making even basic hardening measures difficult to fund and implement. This state-level action reflects growing frustration with the pace of federal response and could prompt similar programs in other states.",
+          "headline": "Cyberattacks on US water utilities confirmed across at least 12 states, with physical disruption reported in Georgia",
+          "summary": "A wave of cyberattacks targeting water sector infrastructure has been confirmed in at least 12 states, with Clayton County, Georgia reporting an operational disruption at a pump station — indicating attacks reached physical process levels, not just IT systems. The breadth of the campaign signals either a coordinated threat actor or exploitation of a common vulnerability across utilities. Water sector defenders should prioritize reviewing remote access controls and HMI exposure given the confirmed operational impact.",
           "source": "SecurityWeek",
-          "url": "https://www.securityweek.com/new-york-awards-9-million-to-strengthen-cybersecurity-at-153-water-systems/"
+          "url": "https://www.securityweek.com/water-sector-cyberattacks-reportedly-hit-at-least-12-states/"
         },
         {
-          "headline": "ERP Systems Emerge as Critical Attack Surface in Manufacturing OT Environments",
-          "summary": "A new analysis highlights how the deep integration of ERP platforms into manufacturing operations has blurred the traditional IT/OT boundary, creating pathways where enterprise system compromises can directly impact production continuity. As manufacturers rely on ERP for production scheduling and supply chain coordination, a breach at the IT layer increasingly carries OT-level consequences. Security teams should map ERP-to-OT data flows and apply network segmentation principles typically reserved for SCADA environments.",
+          "headline": "Congressional probe into Chinese AI models expands to cover critical infrastructure and data security risks",
+          "summary": "House lawmakers are broadening an investigation into national security risks posed by Chinese-developed AI models, with critical infrastructure exposure as a central concern. The inquiry reflects growing legislative attention to the potential for adversarial AI to facilitate reconnaissance, lateral movement, or data exfiltration within OT-adjacent environments. Watch for this to accelerate procurement restrictions on Chinese AI tools in government and regulated infrastructure sectors.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/features/rethinking-manufacturing-cybersecurity-as-erp-and-enterprise-it-become-critical-to-production-continuity-and-resilience/"
+          "url": "https://industrialcyber.co/critical-infrastructure/us-congress-deepens-investigation-into-chinese-ai-models-over-critical-infrastructure-and-data-security-risks/"
+        },
+        {
+          "headline": "Claroty establishes dedicated public sector entity and pursues FedRAMP High authorization for CPS protection",
+          "summary": "Claroty has spun out Claroty Public Sector LLC as an independent subsidiary and is advancing toward FedRAMP High authorization, positioning its cyber-physical systems security platform for use across federal agencies and sensitive government OT environments. FedRAMP High authorization is required for systems handling the most sensitive unclassified data, signaling Claroty's intent to serve defense and intelligence-adjacent infrastructure. This move reflects broader demand for OT security tools that meet federal compliance baselines as critical infrastructure protection mandates tighten.",
+          "source": "Industrial Cyber",
+          "url": "https://industrialcyber.co/news/claroty-launches-public-sector-subsidiary-advances-fedramp-high-authorization-for-government-cps-security/"
+        },
+        {
+          "headline": "Xage expands zero trust Critical Asset Protection offering as AI shortens window between vulnerability disclosure and exploitation",
+          "summary": "Xage Security has extended its Critical Asset Protection platform, citing AI-driven threat acceleration that is compressing the time organizations have to respond to newly disclosed vulnerabilities in OT and high-stakes environments. The product expansion focuses on identity-based zero trust controls designed to limit blast radius when vulnerabilities exist but cannot yet be patched. For asset owners running legacy OT with slow patch cycles, compensating controls of this type are increasingly the practical frontline defense.",
+          "source": "Industrial Cyber",
+          "url": "https://industrialcyber.co/news/xage-expands-critical-asset-protection-as-ai-driven-cyber-threats-compress-vulnerability-response-timelines/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 86,
+    "articles_reviewed": 81,
     "items_published": 19
   }
 }
