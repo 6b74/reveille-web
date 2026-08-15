@@ -1,159 +1,128 @@
 {
-  "date": "2026-08-14",
-  "generated_at": "2026-08-14T09:01:32.433201+00:00",
-  "issue": 106,
-  "executive_summary": "Today's intelligence picture is defined by the convergence of state-sponsored cyber activity, drone warfare proliferation, and an accelerating normalization of offensive operations by both governments and private actors. The Iran conflict is generating second and third-order effects that extend well beyond the Middle East: Iranian drone doctrine is establishing new deterrence thresholds against Gulf infrastructure, while combat-proven drone technology from Ukraine is now migrating into Latin American armed groups, a proliferation trend that directly connects to SOUTHCOM's reorganization and signals that U.S. military planners are responding to an emerging regional threat vector. On the cyber and intelligence front, a consistent theme of escalation is visible across multiple actors simultaneously — Germany is expanding hacking and sabotage authorities, the Trump administration is authorizing private firms to conduct offensive cyber operations, China-linked Jewelbug is actively targeting critical infrastructure across Asia, and CISA is flagging unpatched vulnerabilities in ICS and medical devices that represent exactly the kind of attack surface these actors exploit. The overall picture is one of threshold erosion: the boundaries between state and private offensive action, between cyber and physical infrastructure targeting, and between regional conflicts and global technology proliferation are all becoming less defined, increasing the likelihood that multiple overlapping crises could interact in ways that outpace current policy and defensive frameworks.",
+  "date": "2026-08-15",
+  "generated_at": "2026-08-15T09:02:28.080936+00:00",
+  "issue": 107,
+  "executive_summary": "Today's intelligence picture is defined by two reinforcing threat arcs: the exploitation of critical infrastructure and industrial control systems, and the growing entanglement of offensive cyber and kinetic military capabilities as instruments of state competition. The Citrix RCE vulnerability, the French tax authority breach, and China-linked Jewelbug espionage against OT networks in Asia collectively signal that adversaries are pursuing both opportunistic financial gain and deliberate, strategic access to systems that underpin essential services — a pattern consistent with pre-positioning for coercive leverage. Iran's water infrastructure threat and the Trump administration's bundling of cyber directives with drone and shipbuilding policy reflect a broader recognition by state actors that critical infrastructure targeting and advanced unmanned systems are now central to deterrence calculus, not peripheral concerns. The CENTCOM multinational drone task force standup and Pentagon long-term missile production contracts suggest the U.S. is responding by accelerating force modernization, though delays in the Patriot license for Ukraine indicate that alliance commitments remain subject to political friction even as the operational threat environment intensifies. Analysts should watch for convergence between the OT vulnerability landscape and adversary infrastructure targeting activity, as the refrigeration system findings and Jewelbug reporting together suggest the attack surface being scoped by state-aligned actors is broader and less monitored than enterprise security programs currently account for.",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Today's cyber landscape is defined by a critical pre-auth RCE in Citrix NetScaler, a newly exposed phishing framework targeting payment platforms, shifting ransomware dynamics, and a wave of ICS vulnerabilities spanning industrial and medical devices.",
+      "intro": "Today's cyber landscape features a critical pre-auth RCE vulnerability in widely-deployed Citrix infrastructure, a significant European government data breach, and coordinated international law enforcement action against banking hackers.",
       "items": [
         {
-          "headline": "Citrix NetScaler pre-authentication RCE vulnerability under scrutiny from researchers",
-          "summary": "WatchTowr Labs has published analysis of CVE-2026-8452, a pre-authentication remote code execution vulnerability in Citrix NetScaler — a widely deployed enterprise network gateway. Pre-auth RCE in perimeter infrastructure is about as severe as vulnerabilities get, as it requires no credentials and gives attackers direct footholds into enterprise networks. Organizations running NetScaler should treat patching as urgent and review perimeter logs for anomalous activity.",
+          "headline": "Critical Pre-Authentication RCE Flaw Discovered in Citrix NetScaler",
+          "summary": "WatchTowr Labs has disclosed a pre-authentication remote code execution vulnerability in Citrix NetScaler, tracked as CVE-2026-8452, meaning attackers can compromise systems without any valid credentials. NetScaler is a staple of enterprise network infrastructure, making this class of vulnerability particularly dangerous and likely to attract rapid exploitation by threat actors. Organizations running NetScaler should treat patching as urgent and monitor for indicators of compromise while a patch is applied.",
           "source": "watchTowr Labs",
           "url": "https://labs.watchtowr.com/youre-back-in-the-room-citrix-netscaler-pre-auth-rce-cve-2026-8452/"
         },
         {
-          "headline": "Ransomware ecosystem showing signs of fragmentation as dominant RaaS groups face new challengers",
-          "summary": "Check Point Research's Q2 2026 ransomware report finds that while leading Ransomware-as-a-Service operations remain dominant, the long-running trend of extreme market concentration is beginning to reverse, with smaller groups gaining ground. This matters because fragmentation historically correlates with increased attack volume and experimentation with new tactics, as groups compete for victims. Defenders should expect a broader and less predictable threat actor landscape in the second half of 2026.",
-          "source": "Check Point Research",
-          "url": "https://research.checkpoint.com/2026/the-state-of-ransomware-q2-2026/"
+          "headline": "French Tax Authority Breach Exposes Up to 600,000 Citizens' Data",
+          "summary": "France's Directorate General of Public Finances confirmed unauthorized access to its systems in late June, with a hacker claiming 600,000 individuals were affected after credentials were stolen or misused. A breach of a national tax authority carries serious downstream risks including identity fraud, phishing campaigns leveraging official financial data, and erosion of public trust in government digital infrastructure. The scope and full method of intrusion remain under active investigation.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/french-tax-authority-dgfip-confirms-data-breach"
         },
         {
-          "headline": "Newly documented phishing framework impersonates major payment and retail platforms",
-          "summary": "Cisco Talos identified a previously undocumented phishing-as-a-service framework called JWR, purpose-built to clone checkout and login pages for major payment processors and e-commerce sites. The framework's internal branding suggests an organized developer operation rather than an ad-hoc campaign, indicating it may be available to other threat actors. Fraud and security teams at payment platforms should update detection rules to account for JWR's spoofing techniques.",
-          "source": "Cisco Talos Blog",
-          "url": "https://blog.talosintelligence.com/dissecting-the-jwr-phishing-framework/"
+          "headline": "Seven Arrested in Germany and Brazil Over International Banking Hack",
+          "summary": "Germany's BKA and Brazil's federal police coordinated to arrest seven suspects—three in Europe and four in Brazil—on fraud charges linked to a banking system intrusion. The cross-continental operation signals growing effectiveness of joint law enforcement action against financially motivated cybercrime networks that exploit jurisdictional boundaries. Details on the targeted institutions and the full extent of losses have not yet been publicly disclosed.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/investigation-into-banking-hack-leads-to-arrests-germany-brazil"
         },
         {
-          "headline": "CISA issues advisories for critical ICS and medical device vulnerabilities across multiple vendors",
-          "summary": "CISA released a batch of ICS advisories covering flaws in Siemens products (including Siveillance Video RCE, Parasolid arbitrary code execution, and Desigo controller DoS), Johnson Controls Airwall and Metasys, and a medical device advisory for the Flow Neuroscience FL-100 brain stimulation headset — where exploitation could allow manipulation of stimulation parameters over Bluetooth. The breadth and severity of these advisories, spanning video surveillance, building automation, and medical equipment, underscores persistent security debt in OT and medical device ecosystems. Asset owners should prioritize patching Siveillance Video and FL-100 given their remote code execution and patient safety implications respectively.",
-          "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-225-09"
+          "headline": "New Free Tool Exposes the Ad-Tech Ecosystem Tracking Your Devices",
+          "summary": "A service called DecryptAds aggregates and correlates semi-public adtech data to reveal which entities are harvesting data from websites and mobile apps, information previously siloed within large advertising platforms. For privacy advocates and security researchers, this democratizes visibility into a tracking ecosystem that has long operated with little transparency to end users. The tool has potential applications for threat intelligence as well, since adtech infrastructure is increasingly abused for fingerprinting and targeted malvertising.",
+          "source": "Krebs on Security",
+          "url": "https://krebsonsecurity.com/2026/08/whos-tracking-you-use-this-new-service-to-find-out/"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "The Iran conflict continues to reshape strategic calculations globally, exposing U.S. vulnerabilities while accelerating the spread of drone warfare and hardening Iranian leadership for a prolonged fight.",
+      "intro": "The Iran conflict is reshaping regional security calculus, while domestic policy shifts and the death of a reform-era Chinese leader signal broader structural changes across the geopolitical landscape.",
       "items": [
         {
-          "headline": "Iran War Reveals Significant Gaps in U.S. Military Readiness and Stockpiles",
-          "summary": "Sustained operations against Iran have depleted U.S. munitions stockpiles and handed adversaries a detailed map of American operational limitations. The exposure is particularly concerning given simultaneous commitments in other theaters and ongoing tensions with China. Watch whether Congress accelerates industrial base funding and whether Gulf partners recalibrate their dependence on U.S. security guarantees.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/08/13/iran-war-us-stockpile-depleted-gulf/"
-        },
-        {
-          "headline": "Khamenei's Son Shapes Iran's War Appointments, Signaling a Long-Game Strategy",
-          "summary": "Mojtaba Khamenei's influence over recent government appointments suggests Iran's leadership is structuring for a prolonged conflict rather than seeking a near-term off-ramp. The selections prioritize hardliners with military and IRGC ties, indicating continued resistance to negotiated settlements. The consolidation of power around the supreme leader's son also raises succession questions that will shape Iranian strategic behavior for years.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/08/13/iran-mojtaba-khamenei-rezaei-war/"
-        },
-        {
-          "headline": "Iran's Drone Threat to Gulf Water and Energy Infrastructure Establishes a New Deterrence Baseline",
-          "summary": "Iranian Foreign Minister Aragchi explicitly warned Gulf states that U.S. strikes on Iran would trigger retaliation against their critical infrastructure, a threat given credibility by early damage near Kuwaiti desalination facilities during Operation Epic Fury. Cheap, expendable drones have lowered the cost of holding high-value infrastructure at risk, fundamentally altering deterrence calculations for Gulf states hosting U.S. forces. Regional governments now face pressure to harden civilian infrastructure against a threat previously considered a secondary concern.",
+          "headline": "Iran's Water Infrastructure Threat Establishes a New Deterrence Paradigm in the Gulf",
+          "summary": "Iran has explicitly warned Gulf states that renewed U.S. strikes would trigger attacks on their critical water and energy infrastructure, with damage near a Kuwaiti desalination plant during Operation Epic Fury demonstrating the threat is credible. Low-cost drone technology makes this leverage asymmetrically cheap for Iran while potentially catastrophic for water-scarce Gulf nations. Watch whether Gulf states use this pressure to constrain U.S. basing rights or operational freedom in the region.",
           "source": "War on the Rocks",
           "url": "https://warontherocks.com/cheap-drones-dry-taps-the-iran-war-opens-a-new-era-of-water-infrastructure-risk/"
         },
         {
-          "headline": "Combat-Proven Drone Technology From Ukraine Is Now Circulating Among Latin American Armed Groups",
-          "summary": "Drone tactics and hardware refined on the Ukrainian battlefield have migrated to criminal and insurgent organizations in Colombia, Mexico, and beyond, outpacing government countermeasures. The transfer reflects a broader pattern of conflict-zone technology diffusing rapidly to non-state actors with access to global supply chains. Security forces across the region lack the training, equipment, and doctrine to counter drone threats that were, until recently, considered a conventional military problem.",
+          "headline": "Trump Administration Bundles Drone Policy, Cyber Directives, and Shipbuilding into National Security Push",
+          "summary": "The White House rolled out a cluster of national security measures covering drone regulation, cyberwarfare posture, and domestic shipbuilding capacity in a single policy cycle. The bundling suggests an effort to project strategic coherence across military-industrial and cyber domains simultaneously. The specifics of the cyber memo in particular warrant close scrutiny for implications on offensive operations and private sector obligations.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/08/13/latin-america-armed-groups-drones-colombia-mexico-ukraine/"
+          "url": "https://foreignpolicy.com/2026/08/14/trump-drone-tariffs-cyber-memo-zambia-election/"
+        },
+        {
+          "headline": "Death of Zhu Rongji Closes the Chapter on China's Market Reform Generation",
+          "summary": "The passing of former Premier Zhu Rongji, the architect of China's late-1990s economic liberalization and WTO accession push, marks a symbolic end to the era when technocratic reform enjoyed political primacy in Beijing. Under Xi Jinping, security imperatives and party control have systematically displaced the reform instincts that figures like Zhu represented. The transition matters for long-term assessments of China's economic trajectory and its willingness to engage in structural market reforms.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/08/14/zhu-rongji-jiang-zemin-reform-china-xi/"
+        },
+        {
+          "headline": "Colombia's New President Faces First Crisis as Earthquake Compounds Political Fragility",
+          "summary": "A major earthquake struck Colombia this week, landing at a moment when the new president is already navigating a complex foreign policy reset involving strained ties with the U.S. and Israel. The disaster response will serve as an early credibility test for the incoming administration's governing capacity. How quickly international and domestic aid is coordinated will shape both domestic approval and the country's diplomatic positioning in the weeks ahead.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/08/14/colombia-earthquake-espriella-foreign-policy-trump-us-israel/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "U.S. military posture is shifting on multiple fronts simultaneously, with expanded Latin American operations, Indo-Pacific force projection, accelerated AI contracting, and a presidential directive reshaping naval procurement.",
+      "intro": "Today's military picture is defined by accelerating drone warfare investment, missile defense production deals, and friction over Ukraine's Patriot ambitions.",
       "items": [
         {
-          "headline": "Trump orders carriers back to steam catapults, mandates fifth public shipyard",
-          "summary": "A White House memo directs the Navy to revert from electromagnetic launch systems to steam catapults on future carriers and establish a fifth public shipyard alongside a new component repair center to address chronic submarine maintenance backlogs. The decision reverses a costly modernization program and signals prioritization of reliability and industrial capacity over technology advancement. Watch whether Congress pushes back on the cost implications and timeline disruption to the carrier construction pipeline.",
-          "source": "Breaking Defense",
-          "url": "https://breakingdefense.com/2026/08/trump-orders-return-of-steam-catapults-on-carriers-fifth-public-shipyard/"
+          "headline": "CENTCOM stands up first multinational one-way attack drone task force",
+          "summary": "Task Force Falcon Strike will integrate unmanned systems operating across air, surface, and subsurface domains, drawn from U.S. forces and regional partners. The move signals CENTCOM's intent to institutionalize drone strike capability as a coalition warfare tool, not just a U.S.-only asset. Watch for which partner nations contribute systems and whether the task force sees operational deployment in contested areas.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/08/14/centcom-launches-multinational-attack-drone-task-force/"
         },
         {
-          "headline": "Pentagon awards Palantir up to $244M in sole-source contract with no stated justification",
-          "summary": "A DoD memo directs agencies to identify uses for Palantir software and authorizes up to $244M in no-bid work, bypassing the standard competitive procurement process without providing the required sole-source justifications. The arrangement raises transparency and accountability concerns at a time of heightened scrutiny over defense contracting practices. This warrants close monitoring for whether inspector general oversight or congressional inquiry follows.",
-          "source": "Defense One",
-          "url": "https://www.defenseone.com/business/2026/08/pentagon-palantir-no-bid/415400/"
+          "headline": "Lockheed and Raytheon stall on Ukraine Patriot production license despite Trump pledge",
+          "summary": "Despite a White House commitment last month to allow Ukraine to locally produce Patriot interceptors, both prime contractors have slowed the process, raising questions about whether legal, security, or commercial concerns are driving the delay. This creates a visible gap between U.S. political commitments and industrial execution at a moment when Ukrainian air defense demand is acute. The holdout could undermine confidence in U.S. defense partnership assurances.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/global/europe/2026/08/14/patriot-makers-hedge-on-ukraine-production-deal-as-officials-question-cause-of-hold-up/"
         },
         {
-          "headline": "SOUTHCOM reorganizes amid signals of expanded Latin American military footprint",
-          "summary": "New U.S. task force and coordinating body structures within SOUTHCOM, paired with Secretary Hegseth's visit to Panama emphasizing sovereignty protection and jungle warfare training, indicate a deliberate escalation of operational engagement across Latin America. The institutional changes suggest SOUTHCOM is building coordination infrastructure for sustained, multi-partner operations rather than episodic deployments. Regional governments and adversary actors—particularly those with existing influence in the Sahel corridor—should be watched for responses.",
-          "source": "Defense One",
-          "url": "https://www.defenseone.com/ideas/2026/08/security-entities-latin-american-operations/415420/"
+          "headline": "Pentagon locks in seven-year deals with Boeing and RTX to scale SM-3 missile production",
+          "summary": "The long-term framework agreements are designed to expand industrial capacity for Standard Missile-3 components, a key interceptor in U.S. ballistic missile defense architecture. Seven-year contracts provide manufacturers the demand signal needed to invest in supply chain expansion, suggesting the Pentagon is planning for sustained high-volume missile defense needs. This aligns with broader concerns about interceptor stockpile depth amid simultaneous demands from Pacific deterrence and European commitments.",
+          "source": "Military Times",
+          "url": "https://www.militarytimes.com/industry/techwatch/2026/08/14/pentagon-inks-deals-with-boeing-rtx-to-boost-production-of-sm-3-components/"
         },
         {
-          "headline": "Russia sustains military air bridge into sub-Saharan Africa with at least 75 documented flights",
-          "summary": "Flight-tracking analysis from the Center for Advanced Defense Studies confirms Russian state-aligned forces conducted a minimum of 75 flights into the Central Sahel, demonstrating continued logistical commitment to the region despite Western pressure. The data underscores that Russian military influence in Africa is not receding but is being maintained through consistent resupply and force-support operations. This air bridge directly competes with U.S. and European partner-nation influence efforts and merits integration into broader AFRICOM and EUCOM threat assessments.",
-          "source": "Defense News",
-          "url": "https://www.defensenews.com/global/europe/2026/08/13/flight-tracking-data-shows-continued-russian-air-bridge-to-sub-saharan-africa/"
-        }
-      ]
-    },
-    {
-      "id": "intel_osint",
-      "title": "Intel / OSINT",
-      "intro": "Intelligence postures are shifting on multiple fronts today, with Germany expanding spy agency mandates, the U.S. authorizing private-sector offensive cyber operations, Australia projecting new ISR capability into contested waters, and Flock Safety tightening surveillance oversight after documented abuses.",
-      "items": [
-        {
-          "headline": "Germany grants intelligence agencies unprecedented hacking, sabotage, and disinformation powers",
-          "summary": "Berlin's cabinet approved sweeping legislation enabling German spy agencies to penetrate foreign networks, disrupt adversary supply chains, and conduct influence operations against extremists on German soil — the most significant expansion of intelligence authority since WWII. The move reflects growing European willingness to match adversary tactics rather than absorb them passively. Watch for legal challenges from civil liberties groups and scrutiny over how 'foreign systems' and 'extremists' get defined in practice.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/germany-spy-agency-powers"
-        },
-        {
-          "headline": "Trump administration authorizes private cybersecurity firms to conduct offensive operations against criminal groups",
-          "summary": "The White House announced a policy shift allowing private companies to actively attack cybercriminal organizations, moving beyond purely defensive postures. This marks a significant legal and strategic threshold — private offensive cyber action has historically operated in a murky gray zone, and formalizing it raises questions about oversight, attribution risk, and potential escalation if operations misfire. The scope and rules of engagement will be critical details to watch as implementation guidance emerges.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/trump-cyber-crime-offensive"
-        },
-        {
-          "headline": "Australia deploys MC-55 Peregrine electronic warfare jet to South China Sea for first time",
-          "summary": "Canberra's first overseas deployment of the MC-55 Peregrine — a highly capable signals intelligence and electronic warfare platform — puts a potent new ISR asset directly in China's strategic periphery. The timing aligns with heightened allied attention to Chinese naval and air activity in the region and signals Australia's intent to contribute meaningfully to the intelligence picture rather than rely solely on U.S. collection. This deployment will be closely watched by Beijing and may draw a diplomatic response.",
-          "source": "TWZ",
-          "url": "https://www.twz.com/air/australias-mc-55-electronic-warfare-jet-has-entered-the-south-china-sea"
-        },
-        {
-          "headline": "Flock Safety mandates audit controls and shortens data retention after officer misuse scandals",
-          "summary": "License plate recognition vendor Flock Safety is requiring all law enforcement customers to activate its anomalous-use tracking feature and will cap data retention at seven days in most cases, responding to documented cases of officers exploiting the system for personal surveillance. The changes are meaningful but self-imposed, leaving enforcement dependent on Flock's own monitoring rather than independent oversight. Analysts tracking police surveillance technology should note this as a test case for whether vendor-driven accountability can substitute for regulatory mandates.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/flock-safety-audit-assistance-police-departments"
+          "headline": "Army grounds Apache training flights following fatal Fort Hood crash",
+          "summary": "Two soldiers were killed earlier this week when an Apache went down during a maintenance test flight near Fort Hood, Texas; the Army has now paused Apache training operations pending investigation. Groundings of this scale are relatively rare and indicate safety command is treating the incident as potentially systemic rather than isolated. The outcome of the investigation could affect readiness timelines for Apache units across the force.",
+          "source": "Task & Purpose",
+          "url": "https://taskandpurpose.com/news/army-grounds-apache-training-flights/"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "State-linked espionage campaigns targeting critical infrastructure across Asia dominate today's OT threat landscape, while vendor partnerships aim to close persistent IT/OT visibility gaps.",
+      "intro": "Critical infrastructure faces active espionage pressure from state-linked actors while the OT security vendor ecosystem accelerates integration efforts to close persistent IT/OT visibility gaps.",
       "items": [
         {
-          "headline": "China-Linked Jewelbug Group Targets Government and Critical Infrastructure Across Asia",
-          "summary": "Symantec's Threat Hunter Team exposed Jewelbug, a Chinese hackers-for-hire group conducting sustained espionage against governments, militaries, telecoms, and critical infrastructure operators across Asia. The campaign fits an established pattern of state-adjacent contractors providing plausible deniability for Beijing while pursuing strategic intelligence objectives. OT and critical infrastructure defenders in the region should treat this as an active threat and audit for indicators of compromise across IT/OT boundaries.",
+          "headline": "China-Linked Mercenary Group Jewelbug Conducting Espionage Against Critical Infrastructure in Asia",
+          "summary": "Symantec's Threat Hunter Team has identified Jewelbug, a Chinese hackers-for-hire group, running targeted espionage campaigns against Asian governments, militaries, telecoms, and critical infrastructure operators. The group's commercial nature—selling access and intelligence rather than acting as a direct state arm—complicates attribution and raises the risk of secondary buyers. OT and critical infrastructure operators in the Asia-Pacific region should treat this as an active threat and audit network perimeters for indicators of long-dwell intrusion.",
           "source": "Industrial Cyber",
           "url": "https://industrialcyber.co/ransomware/symantec-reveals-jewelbug-espionage-campaign-targeting-asian-governments-telecoms-critical-infrastructure/"
         },
         {
-          "headline": "Patchcord Espionage Campaign Hits Afghan Telecoms and Critical Infrastructure",
-          "summary": "Acronis Threat Research Unit identified an ongoing campaign dubbed Patchcord targeting Afghan telecommunications providers and critical infrastructure, representing a focused effort to compromise communications backbone in a strategically sensitive region. Persistent access to telecom infrastructure enables traffic interception, lateral movement into dependent OT systems, and long-term intelligence collection. The campaign's targeting of South Asian critical infrastructure warrants attention from regional operators and their security partners.",
-          "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/critical-infrastructure/acronis-exposes-patchcord-cyber-espionage-campaign-targeting-telecom-and-critical-infrastructure-in-south-asia/"
-        },
-        {
-          "headline": "Nozomi Networks and Sophos Integrate OT Threat Intelligence into Enterprise Security Workflows",
-          "summary": "Nozomi Networks and Sophos announced integration between Nozomi's cloud-native Vantage OT platform and Sophos's IT security stack, aiming to surface OT-specific threat data directly within IT security investigations. The partnership addresses a persistent weakness in converged environments where OT anomalies go undetected because they never surface in IT security tooling. As espionage actors increasingly pivot from IT to OT environments, tighter detection integration across both domains reduces dwell time.",
+          "headline": "Nozomi Networks and Sophos Partner to Feed OT Threat Intelligence Into Enterprise Security Operations",
+          "summary": "Nozomi Networks and Sophos are integrating Nozomi's Vantage OT platform with Sophos's IT security tooling, aiming to surface OT-specific threat data inside standard IT security investigations. The move addresses a chronic blind spot: most SOC workflows lack visibility into industrial network behavior, leaving OT anomalies undetected until significant damage occurs. Watch whether this integration drives broader adoption of unified IT/OT detection workflows, a gap adversaries have historically exploited.",
           "source": "Industrial Cyber",
           "url": "https://industrialcyber.co/news/nozomi-sophos-bring-ot-intelligence-into-it-security-investigations-target-detection-and-visibility-gap/"
         },
         {
-          "headline": "Crytica and Forescout Combine Deterministic Threat Detection for OT Device Security",
-          "summary": "Crytica Security announced integration of its Rapid Detection, Alert, and Isolation technology with Forescout's Vistaro platform, targeting improved threat detection for connected devices in OT and critical infrastructure environments. Deterministic detection approaches are particularly valuable in OT settings where behavioral anomaly tools struggle with infrequent or highly structured device communication patterns. The integration signals growing vendor focus on device-level security as ICS endpoints remain a primary entry point for adversaries.",
+          "headline": "Refrigeration System Vulnerabilities Highlight Overlooked OT Attack Surface",
+          "summary": "Security researchers have identified exploitable vulnerabilities in industrial refrigeration control systems, a category of OT equipment common in food supply chains, pharmaceuticals, and data center cooling. These systems are frequently internet-exposed with minimal authentication, making them attractive targets for disruption or ransomware leverage. The disclosure reinforces that critical infrastructure risk extends well beyond power and water utilities into less scrutinized operational environments.",
+          "source": "SecurityWeek",
+          "url": "https://www.securityweek.com/in-other-news-rapid7-layoffs-hacking-a-boeing-737-refrigeration-system-vulnerabilities/"
+        },
+        {
+          "headline": "Crytica Security and Forescout Integrate to Strengthen Deterministic Threat Detection Across OT Devices",
+          "summary": "Crytica Security has integrated its patented Rapid Detection, Alert, and Isolation technology with Forescout's Vistaro platform, targeting faster identification and containment of compromised OT and IoT devices. The combination of deterministic detection—which flags deviations from known-good device states—with Forescout's network access control capabilities could meaningfully reduce dwell time in industrial environments. This is part of a broader trend of point-solution consolidation in the OT security market as operators seek fewer, better-integrated tools.",
           "source": "Industrial Cyber",
           "url": "https://industrialcyber.co/news/crytica-security-forescout-integrate-deterministic-threat-detection-with-vistaro-to-strengthen-device-security/"
         }
@@ -162,7 +131,7 @@
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 97,
-    "items_published": 20
+    "articles_reviewed": 67,
+    "items_published": 16
   }
 }
