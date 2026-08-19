@@ -1,162 +1,156 @@
 {
-  "date": "2026-08-18",
-  "generated_at": "2026-08-18T09:03:36.247809+00:00",
-  "issue": 110,
-  "executive_summary": "Today's intelligence picture is defined by two converging macro-themes: the accelerating weaponization of artificial intelligence across both offensive and defensive domains, and a broad retrenchment of Western security commitments creating potential power vacuums in contested regions. On the AI-military nexus, the precedent set by AI-driven targeting in Operation Epic Fury connects directly to satellite confirmation of Russia's expanding drone launch infrastructure and OSINT tracking of carrier deployments, suggesting all major powers are racing to operationalize automated warfighting at a pace that is outrunning governance frameworks, as the SANS industrial cybersecurity survey explicitly warns. The cyber picture reinforces this theme, with CISA flagging active exploitation of an AI development framework, ransomware groups leveraging AI to accelerate exploit weaponization, and a string of large-scale data breaches spanning healthcare, finance, and crypto that collectively suggest adversaries are systematically harvesting identity and financial data at scale, possibly in preparation for influence or fraud operations. Geopolitically, the US scaling back South Korea drills while the Pentagon pressures universities on foreign research ties represents a contradictory posture, simultaneously signaling strategic restraint to Pyongyang and Beijing while trying to harden the domestic research base, a tension China's newly expanded extraterritorial legal reach appears designed to exploit. The thread connecting all four sections is a single underlying dynamic: AI is simultaneously expanding",
+  "date": "2026-08-19",
+  "generated_at": "2026-08-19T09:01:36.051433+00:00",
+  "issue": 111,
+  "executive_summary": "Today's intelligence picture reflects a convergence of accelerating cyber threats against critical infrastructure and government systems alongside a U.S. strategic posture marked by significant internal contradictions. The ransomware surge — Medusa surpassing 500 victims, widespread WordPress exploitation, and attacks against a Ukrainian government agency and a U.S. university — combined with the discovery of 6,300 internet-exposed ICS and BAS devices in American data centers, suggests adversaries are actively mapping and targeting the seam between IT and operational technology environments at scale. This cyber pressure is unfolding against a geopolitical backdrop where U.S. alliance credibility is fraying: European partners are accelerating autonomous defense arrangements including an Anglo-French nuclear umbrella, while Colby's Indo-Pacific tour was undermined by Washington's own policy incoherence, and Vance's reframing of Iran policy around energy prices rather than regional security signals a transactional drift from traditional alliance commitments. The military thread compounds the strategic risk — U.S.-funded research inadvertently advancing China's battlefield robotics capability, gaps in the Trump AI military strategy, and a massive GMLRS order reflecting preparation for sustained high-intensity conflict all point to a defense establishment simultaneously accelerating capability development and leaking strategic advantage, at a moment when both cyber and kinetic threat environments are intensifying.",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "Today's cyber landscape is dominated by large-scale data breaches affecting millions, active exploitation of AI and open-source vulnerabilities, and escalating hybrid cyber-physical operations in the Russia-Ukraine conflict.",
+      "intro": "A broad sweep of ransomware escalation, active exploits, and government network breaches underscores a high-tempo threat environment across both public and private sectors.",
       "items": [
         {
-          "headline": "Polish healthcare software breach potentially exposes records of 19 million patients",
-          "summary": "MyDr, which provides software to doctors and clinics across Poland, confirmed attackers accessed its systems before being detected and removed. With up to 19 million individuals potentially affected, this ranks among the largest healthcare data incidents in European history and will draw immediate scrutiny from Polish data protection authorities under GDPR. Watch for downstream phishing campaigns exploiting leaked patient data and potential regulatory action against the company.",
+          "headline": "Medusa ransomware surpasses 500 confirmed victims, CISA and FBI update joint advisory",
+          "summary": "CISA and the FBI revised their Medusa ransomware advisory to reflect more than 500 victims as of April 2026, up from 300 reported in 2025, with critical infrastructure sectors disproportionately targeted. The pace of victim accumulation — over 200 in roughly one year — signals an accelerating and maturing operation. Organizations in energy, healthcare, and transport should treat this as an active threat requiring immediate review of exposure and backup integrity.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/poland-probes-mydr-healthcare-software-breach"
+          "url": "https://therecord.media/more-than-200-medusa-ransomware-victims-in-last-year-cisa"
         },
         {
-          "headline": "Ukraine claims coordinated cyberattack on Russian e-commerce giant Wildberries timed with drone strikes",
-          "summary": "Ukrainian military intelligence says it disrupted Wildberries, Russia's largest online marketplace, combining a cyberattack with drone strikes on the company's physical infrastructure to maximize operational impact. The operation signals a deliberate escalation in Ukraine's use of synchronized cyber-physical targeting of Russian commercial infrastructure. This hybrid approach will likely become a template for future Ukrainian operations as the conflict continues.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/russia-wildberries-cyberattack-ukraine"
+          "headline": "StopAndProtect ransomware campaign exploits thousands of compromised WordPress sites via ClickFix social engineering",
+          "summary": "Check Point Research traced a newly identified ransomware family, StopAndProtect, to an infection chain that begins with ClickFix lures on hacked WordPress sites, prompting victims to run malicious PowerShell commands that pull down multi-stage downloaders. The scale of compromised WordPress infrastructure suggests a well-resourced, deliberate operation rather than opportunistic attacks. Website administrators and security teams should audit WordPress installations for unauthorized modifications and monitor for ClickFix-style prompt injections.",
+          "source": "Check Point Research",
+          "url": "https://research.checkpoint.com/2026/thousands-of-hacked-wordpress-sites-one-operation-unmasking-stopandprotect/"
         },
         {
-          "headline": "CISA flags actively exploited code injection flaw in open-source AI framework Ray",
-          "summary": "CISA added CVE-2025-62593, a code injection vulnerability in Anyscale's Ray distributed computing framework, to its Known Exploited Vulnerabilities catalog based on evidence of active in-the-wild exploitation. Ray is widely used in AI and machine learning workloads, meaning the attack surface spans research institutions and enterprise AI deployments. Organizations running Ray clusters should treat patching as urgent given the framework's typical exposure on internal networks with broad compute access.",
+          "headline": "CISA adds four actively exploited vulnerabilities to known exploited catalog, including a Microsoft IKE double-free flaw",
+          "summary": "CISA's KEV catalog now includes four newly confirmed exploited vulnerabilities, among them CVE-2026-33824, a double-free vulnerability in Microsoft's Internet Key Exchange service that could allow remote code execution at a critical network layer. Active exploitation evidence means federal agencies face mandatory patching deadlines, and private sector defenders should treat these as high-priority regardless of compliance obligations. The IKE flaw is particularly consequential given its position in VPN and encrypted communications infrastructure.",
           "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/alerts/2026/08/17/cisa-adds-one-known-exploited-vulnerability-catalog"
+          "url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
         },
         {
-          "headline": "South Carolina loan company breach leaks SSNs and financial data on nearly 750,000 people",
-          "summary": "A breach at an unnamed South Carolina-based debt consolidation firm exposed Social Security numbers and financial information for approximately 750,000 individuals, including people who only inquired about loan products through third-party partners. The third-party exposure widens the victim pool beyond direct customers and complicates notification efforts. Affected individuals face elevated identity theft and fraud risk and should monitor credit reports closely.",
+          "headline": "Berlin isolates two state ministries from government network following security breach",
+          "summary": "German authorities severed the urban development and transport ministries from Berlin's government network after detecting a security breach, with both offices remaining isolated since Friday as an active investigation continues. The incident highlights persistent vulnerability in regional government IT infrastructure, where network segmentation is often underdeveloped. The timing and targeting — ministries overseeing physical infrastructure and construction — warrants scrutiny for potential intelligence-gathering motivations.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/financial-info-leak-debt-consolidator"
+          "url": "https://therecord.media/berlin-cuts-two-state-ministries-off-government-breach"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "Today's geopolitical landscape is defined by shifting U.S. alliance commitments in Asia, China's aggressive legal countermeasures against Western firms, and the accelerating role of AI in American warfighting doctrine.",
+      "intro": "Prolonged conflicts in Ukraine and Iran are reshaping alliance calculations in Europe and Asia, while Washington's strategic messaging struggles to keep pace with its own policy contradictions.",
       "items": [
         {
-          "headline": "Trump Administration Scales Back US-South Korea Drills in Apparent Concession to Pyongyang",
-          "summary": "Washington has reduced the scope of joint military exercises with Seoul, a move widely read as a goodwill gesture toward North Korea amid renewed diplomatic outreach. The decision risks undermining deterrence on the peninsula and signals to allies that security commitments may be negotiable. Watch whether South Korea accelerates its own independent defense buildout and how Japan recalibrates its threat calculus.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/08/17/trump-south-north-korea-military-drills-iran-israel-hamas-deals/"
-        },
-        {
-          "headline": "China Expands Extraterritorial Legal Reach to Counter Western Sanctions on Multinational Firms",
-          "summary": "Beijing is systematically deploying new laws that impose liability on Western companies operating in China for compliance with U.S. and EU sanctions regimes, creating a direct legal conflict of laws for multinationals. This represents a maturation of China's economic statecraft from reactive to proactive, forcing firms to choose between regulatory regimes. Companies with significant China exposure should expect escalating compliance complexity and potential asset seizure risk.",
-          "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/08/17/china-sanctions-laws-companies-legal-risk-extraterritorial-trade-embargo/"
-        },
-        {
-          "headline": "AI-Driven Targeting in Operation Epic Fury Sets New Precedent for Automated Warfighting",
-          "summary": "CENTCOM's use of Palantir's Maven Smart System, powered by Claude, generated and prioritized roughly 1,000 targets in the first 24 hours of the campaign—more than double the operational tempo of the 2003 Iraq invasion's opening phase, reaching 13,000 total strikes over 38 days. The scale and speed demonstrate that AI has moved from experimental to operationally central in U.S. warfighting, compressing decision cycles in ways that existing legal and oversight frameworks were not designed to handle. The critical question now is whether adversary adoption of similar systems erodes the tactical advantage and how liability for targeting errors will be adjudicated.",
+          "headline": "Iran and Ukraine wars settling into the same political deadlock despite operational differences",
+          "summary": "Both conflicts share a common failure: a larger power anticipated that overwhelming force would deliver rapid political results, and in both cases that expectation collapsed. The analysis warns this produces 'managed instability' — wars that neither side can decisively end, sustained by enough external support to continue but not enough to conclude. The risk is that decision-makers in Washington treat prolonged conflict as acceptable rather than as a strategic failure requiring reassessment.",
           "source": "War on the Rocks",
-          "url": "https://warontherocks.com/ai-and-the-risks-of-tearing-down-an-old-system/"
+          "url": "https://warontherocks.com/managed-instability-why-the-wars-against-iran-and-ukraine-can-go-on-and-on-and-on/"
         },
         {
-          "headline": "Turkey's Kurdish Settlement Remains Fragile Despite Öcalan's Ceasefire Call",
-          "summary": "Erdoğan's government is presenting recent PKK disarmament overtures as a resolution to the decades-long Kurdish conflict, but analysts argue the underlying political grievances—autonomy, cultural rights, and governance in Kurdish-majority regions—remain unaddressed. The situation in northern Syria adds a complicating variable, as Kurdish political structures there are directly linked to PKK-affiliated networks. A durable settlement would require constitutional changes Ankara has shown no appetite to pursue.",
+          "headline": "Vance reframes Iran war goals around U.S. energy prices, not regional security",
+          "summary": "Vice President Vance has publicly identified lowering gas prices for American consumers as the primary objective of the Iran war, a significant departure from traditional security-based justifications for military action. This framing raises questions about what an acceptable endstate looks like and whether it aligns with the interests of regional partners. Watch whether allies and adversaries alike adjust their calculations based on this narrowed, transactional rationale.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/08/17/turkey-kurds-ocalan-erdogan-bahceli-syria/"
+          "url": "https://foreignpolicy.com/2026/08/18/vance-iran-war-objectives-gas-prices/"
+        },
+        {
+          "headline": "Anglo-French nuclear umbrella concept gains renewed traction as European autonomy debate sharpens",
+          "summary": "Following Macron's landmark nuclear speech, analysts are revisiting the feasibility of a UK-France nuclear deterrent covering Europe independent of U.S. extended deterrence. The conversation has shifted from theoretical to operational, driven by sustained uncertainty about Washington's security commitments to NATO. The core challenge remains credibility — whether a bilateral European arrangement can convincingly deter Russian nuclear coercion at scale.",
+          "source": "War on the Rocks",
+          "url": "https://warontherocks.com/how-feasible-is-a-european-nuclear-deterrent-without-washington/"
+        },
+        {
+          "headline": "Colby's Indo-Pacific tour undercut by the administration's own policy contradictions",
+          "summary": "Elbridge Colby's Southeast Asia diplomatic push aimed at building regional coalitions against China is being undermined by U.S. actions that signal unpredictability to the very partners he is courting. Critics argue his 'flexible realism' framework offers allies little concrete assurance and may accelerate hedging behavior toward Beijing rather than consolidating alignment. The disconnect between Colby's messaging and Washington's broader conduct is precisely the credibility gap China is positioned to exploit.",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/08/18/elbridge-colby-trump-asia-indo-pacific-china-strategy-defense-geopolitics-alliances-flexible-realism/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "Today's military picture is defined by alliance strain, readiness concerns, leadership turbulence, and accelerating investment in advanced capabilities.",
+      "intro": "Today's military picture is defined by technology competition with China, aggressive munitions procurement, and a cautionary tale about dual-use innovation.",
       "items": [
         {
-          "headline": "Trump orders significant reduction in US-South Korea joint military exercises",
-          "summary": "President Trump directed the Pentagon to substantially scale back joint exercises with South Korea, a cornerstone of the alliance's deterrence posture against North Korea. The move echoes his first-term pressure on Seoul over burden-sharing and risks signaling reduced US commitment to Indo-Pacific partners at a moment of heightened regional competition. Watch whether South Korea responds with independent capability investments or diplomatic concessions.",
+          "headline": "U.S. military-funded research inadvertently supercharged China's battlefield robot dogs",
+          "summary": "Chinese robotics firm Unitree built its most capable robot dogs—now appearing in military contexts globally—on design innovations originally funded by the U.S. military. The case illustrates the persistent failure to constrain dual-use technology transfer from American research ecosystems to Chinese competitors. Watch for congressional or DoD response on research security controls around robotics and AI hardware.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-military/2026/08/17/trump-orders-pentagon-to-cut-back-military-exercises-with-south-korea/"
+          "url": "https://www.militarytimes.com/industry/techwatch/2026/08/18/how-us-military-funding-propelled-chinas-robot-dogs/"
         },
         {
-          "headline": "CENTCOM commander boards USS Abraham Lincoln after sailors attempt to jump overboard",
-          "summary": "Admiral Brad Cooper visited the Lincoln following alarming reports of sailors attempting to jump overboard, indicating a serious mental health crisis aboard a forward-deployed combatant. A commander-level visit signals the severity of the situation and potential command climate concerns that could affect operational readiness. The incident raises broader questions about deployment tempo, sailor welfare, and whether systemic issues are being addressed.",
+          "headline": "Army places massive GMLRS rocket order, signaling sustained high-intensity warfare posture",
+          "summary": "The U.S. Army issued a request for over 133,000 Guided Multiple Launch Rocket System rockets to be delivered by 2034, a procurement scale reflecting lessons from high-consumption conflicts and preparation for potential large-scale peer conflict. GMLRS has been a critical precision strike munition in Ukraine, and this order signals the Army is prioritizing deep magazine depth over near-term cost savings. The timeline and contracting outcome will test whether the defense industrial base can meet demand.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-navy/2026/08/17/centcom-commander-visits-uss-abraham-lincoln-amid-mental-health-concerns/"
+          "url": "https://www.militarytimes.com/news/your-military/2026/08/18/us-army-requests-133000-gmlrs-rockets-by-2034/"
         },
         {
-          "headline": "Pentagon gives 30 universities until month's end to disclose foreign research ties or lose funding",
-          "summary": "The Defense Department ordered 30 academic institutions to audit and report foreign financial and research entanglements by August 31, with funding eligibility on the line. The action reflects escalating concern about foreign—primarily Chinese—influence in US defense-relevant research pipelines. Universities that fail to comply or surface problematic ties could face cuts that ripple through Pentagon-funded science and technology programs.",
-          "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-military/2026/08/17/pentagon-scrutinizes-foreign-research-ties-at-30-us-academic-institutions/"
+          "headline": "Trump tech strategy charts AI and innovation priorities for military but leaves critical gaps",
+          "summary": "The administration's new technology strategy includes measures to accelerate defense innovation and frame AI development around deterring China, but analysts flag a significant omission that could undermine its effectiveness. The strategy's implementation will depend heavily on how the Pentagon integrates commercial AI pipelines with operational requirements. The missing element—unreported in the summary but flagged as glaring—warrants close attention as the strategy moves toward execution.",
+          "source": "Defense One",
+          "url": "https://www.defenseone.com/technology/2026/08/what-trumps-tech-strategy-means-military-deterring-china-and-future-ai/415504/"
         },
         {
-          "headline": "US Space Force and Japan jointly launch Indo-Pacific space surveillance sensor",
-          "summary": "A Space Domain Awareness payload was successfully launched aboard Japan's Quasi-Zenith Satellite 7, expanding allied surveillance coverage over the Indo-Pacific. The bilateral effort deepens US-Japan space cooperation and directly counters Chinese and Russian counter-space activities in a strategically contested region. This marks a meaningful step in burden-sharing for space security, offsetting to a degree the alliance friction seen elsewhere in today's news.",
+          "headline": "DARPA's drone lift challenge pushes payload boundaries but falls short of fourfold threshold",
+          "summary": "DARPA's Lift Challenge produced drones approaching—but not achieving—the goal of lifting four times their own weight, a capability that would transform autonomous logistics and contested resupply missions. Even near-miss results advance the state of the art and inform future development cycles. Progress here has direct implications for reducing human exposure in forward resupply and casualty evacuation scenarios.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/industry/techwatch/2026/08/17/us-space-force-japan-launch-sensor-to-bolster-space-surveillance-above-indo-pacific/"
+          "url": "https://www.militarytimes.com/industry/techwatch/2026/08/18/darpa-came-close-to-finding-a-drone-that-can-lift-four-times-its-own-weight/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Open-source satellite imagery continues to reveal Russian military expansion while AI security transparency debates and a crypto data breach round out today's intelligence picture.",
+      "intro": "Today's intelligence picture is dominated by targeted cyberattacks against institutions managing strategically sensitive assets, from Ukrainian state agencies to U.S. academic infrastructure.",
       "items": [
         {
-          "headline": "Satellite Imagery Exposes Russia's Growing One-Way Attack Drone Launch Network",
-          "summary": "Commercial satellite data shows Russia is significantly expanding the infrastructure supporting its Geran-family kamikaze drone operations, including facilities capable of launching heavier, longer-range variants. This OSINT finding indicates Russia is investing in sustained, scalable long-range strike capability rather than treating drone campaigns as temporary measures. Watch for increased strike tempo and geographic reach as new launch sites come online.",
-          "source": "TWZ",
-          "url": "https://www.twz.com/news-features/russia-is-expanding-its-long-range-strike-drone-network"
-        },
-        {
-          "headline": "Open-Source Tracking Places Both Pacific and Middle East Carrier Deployments in Focus",
-          "summary": "Publicly available vessel tracking shows USS George Washington heading to the Middle East to relieve USS Abraham Lincoln, leaving no carrier currently positioned in the Pacific. This gap is a notable OSINT signal at a time of elevated tensions with China and reduced U.S. military engagement with South Korea. The deployment pattern reflects how the Iran conflict is consuming assets that would otherwise backstop Indo-Pacific deterrence.",
-          "source": "TWZ",
-          "url": "https://www.twz.com/sea/where-are-the-aircraft-carriers-august-17-2026"
-        },
-        {
-          "headline": "AI Security Firm Faces Backlash Over Evasive Post-Incident Report on Real-World System Compromises",
-          "summary": "Irregular, the company whose AI models successfully compromised live computer systems during security evaluations, released a postmortem that experts say obscures more than it reveals. The criticism centers on unresolved questions about scope, methodology, and safeguards — raising concerns about accountability standards as AI is integrated into offensive security research. This case is becoming a reference point for how the industry should — and shouldn't — handle AI-driven incident disclosure.",
+          "headline": "Hackers strike Ukrainian agency overseeing assets seized from sanctioned Russians",
+          "summary": "Ukraine's agency responsible for managing assets confiscated from sanctioned Russian entities was hit by a cyberattack timed to a sensitive procurement decision involving IDS Ukraine, a major beverage producer. The targeting suggests adversaries are monitoring Ukrainian state processes and acting to disrupt or surveil high-value asset management functions. Watch for follow-on intrusion disclosures as Ukraine accelerates seizure and redistribution of Russian-linked corporate holdings.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/irregular-ai-hacking-model-blog"
+          "url": "https://therecord.media/hackers-target-ukraine-agency-sanctioned-russians"
         },
         {
-          "headline": "SafePal Crypto Wallet Breach Exposes Data on Nearly 40,000 Customers",
-          "summary": "Hardware wallet maker SafePal confirmed a breach affecting approximately 40,000 users, with customer information exfiltrated during the incident. Crypto hardware wallet users are considered high-value targets given the direct link between compromised identity data and potential asset theft. Organizations in the digital asset space should treat this as a prompt to audit third-party data handling and customer notification protocols.",
+          "headline": "University of Texas San Antonio takes systems offline following weekend cyberattack",
+          "summary": "UTSA, a large public university with 40,000 students across six campuses, detected threat activity on its academic network over the weekend and proactively took phone and other systems offline to contain the incident. Universities remain high-value targets due to their research data, weak network segmentation, and large user bases. The timing and scope of the shutdown suggest defenders acted quickly, but the nature and attribution of the threat activity have not yet been disclosed.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/safepal-crypto-hardware-breach"
+          "url": "https://therecord.media/university-of-texas-forced-to-take-systems-offline-cyberattack-san-antonio"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "The OT/ICS threat landscape continues to broaden, with ransomware actors accelerating exploit weaponization, AI adoption outpacing governance in industrial security, and new U.S. legislation targeting water utility cyber defenses.",
+      "intro": "OT security exposure in critical infrastructure is expanding, with thousands of internet-facing industrial devices in US data centers drawing fresh scrutiny alongside policy moves from CISA and NIST.",
       "items": [
         {
-          "headline": "U.S. Senators Introduce Water Utility Cybersecurity Legislation Amid Escalating Threats",
-          "summary": "Senators Schiff and Klobuchar have proposed the Water Cyber Shield Act to expand federal cybersecurity oversight across drinking water and wastewater utilities. Water systems have been a persistent target for nation-state and criminal actors, and current regulatory frameworks leave many smaller utilities without meaningful security requirements. Watch whether the bill attracts bipartisan support and how it intersects with EPA and CISA jurisdictional tensions that have stalled similar efforts in recent years.",
+          "headline": "6,300 ICS and BAS Devices Found Internet-Exposed in US Data Centers, Newer Facilities Most at Risk",
+          "summary": "TrendAI research identified over 6,300 high-confidence industrial control system and building automation system devices accessible online within US data centers, with newer facilities showing greater exposure than older ones. The findings highlight a persistent gap between IT security maturity and OT security practice, particularly as data center buildout accelerates. Security teams should treat internet-exposed BAS and ICS as critical-priority targets given their potential to affect physical infrastructure like cooling, power, and access control.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/utilities-energy-power-water-waste/schiff-klobuchar-introduce-water-cyber-shield-act-to-boost-cybersecurity-address-growing-cyber-threats-across-water-utilities/"
+          "url": "https://industrialcyber.co/industrial-cyber-attacks/trendai-finds-newer-us-data-centers-more-exposed-to-ot-risks-with-6300-ics-and-bas-devices-accessible-online/"
         },
         {
-          "headline": "Check Point Report Finds Ransomware Groups Weaponizing Exploits Faster Using AI",
-          "summary": "Check Point's Q2 2026 ransomware report documents elevated attack volumes alongside a structural shift in how threat actors operate, with AI tools accelerating the gap between vulnerability disclosure and active exploitation. For OT and industrial environments, where patching cycles are slow and legacy systems common, faster weaponization directly compresses the defensive window. The report also flags ecosystem expansion beyond traditional ransomware-as-a-service models, suggesting a wider pool of actors capable of targeting critical infrastructure.",
+          "headline": "CISA Opens Public Comment Period on Extending Voluntary Vulnerability Assessments for Critical Infrastructure",
+          "summary": "CISA's Infrastructure Security Division is soliciting public feedback on continuing its voluntary vulnerability assessment program for critical infrastructure operators. The move signals an effort to institutionalize assessment services that remain opt-in amid ongoing debate about mandatory OT security requirements. Stakeholder input will likely shape whether these assessments gain broader adoption or remain underutilized by asset owners reluctant to expose operational gaps.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/reports/check-point-ransomware-report-signals-rising-ai-use-faster-exploit-weaponization-widening-threat-landscape/"
+          "url": "https://industrialcyber.co/cisa/cisa-seeks-public-comment-on-extending-voluntary-vulnerability-assessments-for-critical-infrastructure/"
         },
         {
-          "headline": "SANS Survey: AI Deployment in Industrial Cybersecurity Outrunning Governance and Validation",
-          "summary": "The SANS Institute's 2026 AI survey finds that cybersecurity teams, including those in OT environments, are deploying AI tools faster than they are establishing validation frameworks or governance controls. In ICS/SCADA contexts this carries specific risk, as unvalidated AI-driven decisions could affect safety-critical processes or generate false confidence in threat detection. Organizations should treat AI tool deployment in OT security as requiring the same change-management rigor applied to any operational technology change.",
+          "headline": "AI in OT Cyber Conference Signals Shift from Experimentation to Deployment in Industrial Security",
+          "summary": "Practitioners at the AI in OT Cyber event reported a tangible transition from evaluating AI tools to deploying them operationally within industrial environments. Key themes centered on anomaly detection, alert triage, and reducing analyst fatigue in environments where traditional IT security tools fail to account for OT protocol and uptime constraints. The emerging consensus is that AI adoption in OT is accelerating but must be matched by governance frameworks specific to industrial risk tolerances.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/ai/sans-2026-ai-survey-reveals-cybersecurity-ai-adoption-outpaces-governance-validation-and-operational-readiness/"
+          "url": "https://industrialcyber.co/features/from-hype-to-operational-reality-what-we-learned-at-ai-in-ot-cyber/"
+        },
+        {
+          "headline": "NIST Proposes Human-Centered Cybersecurity Framework, Citing Failures in Standard Awareness Training",
+          "summary": "NIST is requesting public comment on a proposed human-centered approach to cybersecurity, acknowledging that conventional employee awareness training has not meaningfully reduced risk. The initiative targets the behavioral and organizational factors that undermine technical controls, an issue particularly acute in OT environments where operators prioritize availability over security procedures. How NIST frames human factors in any resulting guidance could influence future compliance standards for industrial sectors.",
+          "source": "Industrial Cyber",
+          "url": "https://industrialcyber.co/nist/nist-calls-for-input-on-human-centered-cybersecurity-as-employee-awareness-training-falls-short/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 81,
-    "items_published": 19
+    "articles_reviewed": 82,
+    "items_published": 18
   }
 }
