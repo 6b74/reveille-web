@@ -1,156 +1,162 @@
 {
-  "date": "2026-08-19",
-  "generated_at": "2026-08-19T09:01:36.051433+00:00",
-  "issue": 111,
-  "executive_summary": "Today's intelligence picture reflects a convergence of accelerating cyber threats against critical infrastructure and government systems alongside a U.S. strategic posture marked by significant internal contradictions. The ransomware surge — Medusa surpassing 500 victims, widespread WordPress exploitation, and attacks against a Ukrainian government agency and a U.S. university — combined with the discovery of 6,300 internet-exposed ICS and BAS devices in American data centers, suggests adversaries are actively mapping and targeting the seam between IT and operational technology environments at scale. This cyber pressure is unfolding against a geopolitical backdrop where U.S. alliance credibility is fraying: European partners are accelerating autonomous defense arrangements including an Anglo-French nuclear umbrella, while Colby's Indo-Pacific tour was undermined by Washington's own policy incoherence, and Vance's reframing of Iran policy around energy prices rather than regional security signals a transactional drift from traditional alliance commitments. The military thread compounds the strategic risk — U.S.-funded research inadvertently advancing China's battlefield robotics capability, gaps in the Trump AI military strategy, and a massive GMLRS order reflecting preparation for sustained high-intensity conflict all point to a defense establishment simultaneously accelerating capability development and leaking strategic advantage, at a moment when both cyber and kinetic threat environments are intensifying.",
+  "date": "2026-08-20",
+  "generated_at": "2026-08-20T09:03:41.592534+00:00",
+  "issue": 112,
+  "executive_summary": "Today's intelligence picture is defined by a convergence of accelerating technological competition and deliberate adversarial pressure on Western critical infrastructure, with Iran, China, and Russia each actively probing or exploiting vulnerabilities across cyber, military, and gray-zone domains simultaneously. The cyber and ICS/OT reporting is particularly alarming in its coherence: AI-augmented attacks targeting Siemens industrial controllers appear in both the NSA/FBI warning and the ICS/SCADA section, while the DOJ's charges against Iranian hackers connect directly to Tehran's broader geopolitical posture of economic defiance and covert aggression reflected in the geopolitical briefs. Russia's escalating gray-zone operations against Germany and NATO's concurrent EA-37B reconnaissance deployment over Kaliningrad suggest both sides are actively testing escalation thresholds in Europe, even as Berlin seeks accommodation. Underlying all four sections is a thread of Western institutional lag: the U.S. military is fielding Chinese commercial drones near nuclear assets, reducing allied exercises, and leaving gaps in its AI strategy, while adversaries - China narrowing the space launch gap, Iran conducting sustained cyber campaigns, and ransomware actors compromising industrial platforms at scale - are moving with greater operational urgency and coordination than current U.S. and allied posture appears equipped to match.",
   "sections": [
     {
       "id": "cyber",
       "title": "Cyber",
-      "intro": "A broad sweep of ransomware escalation, active exploits, and government network breaches underscores a high-tempo threat environment across both public and private sectors.",
+      "intro": "A convergence of state-sponsored infrastructure attacks, a major healthcare data breach, and new DOJ indictments signals an unusually active 24-hour period across both geopolitical and criminal cyber threats.",
       "items": [
         {
-          "headline": "Medusa ransomware surpasses 500 confirmed victims, CISA and FBI update joint advisory",
-          "summary": "CISA and the FBI revised their Medusa ransomware advisory to reflect more than 500 victims as of April 2026, up from 300 reported in 2025, with critical infrastructure sectors disproportionately targeted. The pace of victim accumulation — over 200 in roughly one year — signals an accelerating and maturing operation. Organizations in energy, healthcare, and transport should treat this as an active threat requiring immediate review of exposure and backup integrity.",
+          "headline": "NSA and FBI warn of AI-assisted attacks actively targeting Siemens industrial controllers",
+          "summary": "A joint advisory from NSA, FBI, and CISA identifies an active campaign targeting Siemens S7 Series PLCs using tools developed with AI assistance, exploiting known vulnerabilities to threaten critical infrastructure. The use of AI-generated offensive tooling marks a significant escalation in attacker capability and accessibility. Operators of all PLC systems — not just Siemens — are urged to apply mitigations immediately, as agencies warn the broader ICS threat landscape is widening.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/more-than-200-medusa-ransomware-victims-in-last-year-cisa"
+          "url": "https://therecord.media/nsa-fbi-warns-of-hackers-using-ai-generated-tools-critical-infrastructure"
         },
         {
-          "headline": "StopAndProtect ransomware campaign exploits thousands of compromised WordPress sites via ClickFix social engineering",
-          "summary": "Check Point Research traced a newly identified ransomware family, StopAndProtect, to an infection chain that begins with ClickFix lures on hacked WordPress sites, prompting victims to run malicious PowerShell commands that pull down multi-stage downloaders. The scale of compromised WordPress infrastructure suggests a well-resourced, deliberate operation rather than opportunistic attacks. Website administrators and security teams should audit WordPress installations for unauthorized modifications and monitor for ClickFix-style prompt injections.",
-          "source": "Check Point Research",
-          "url": "https://research.checkpoint.com/2026/thousands-of-hacked-wordpress-sites-one-operation-unmasking-stopandprotect/"
-        },
-        {
-          "headline": "CISA adds four actively exploited vulnerabilities to known exploited catalog, including a Microsoft IKE double-free flaw",
-          "summary": "CISA's KEV catalog now includes four newly confirmed exploited vulnerabilities, among them CVE-2026-33824, a double-free vulnerability in Microsoft's Internet Key Exchange service that could allow remote code execution at a critical network layer. Active exploitation evidence means federal agencies face mandatory patching deadlines, and private sector defenders should treat these as high-priority regardless of compliance obligations. The IKE flaw is particularly consequential given its position in VPN and encrypted communications infrastructure.",
-          "source": "All CISA Advisories",
-          "url": "https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "headline": "Berlin isolates two state ministries from government network following security breach",
-          "summary": "German authorities severed the urban development and transport ministries from Berlin's government network after detecting a security breach, with both offices remaining isolated since Friday as an active investigation continues. The incident highlights persistent vulnerability in regional government IT infrastructure, where network segmentation is often underdeveloped. The timing and targeting — ministries overseeing physical infrastructure and construction — warrants scrutiny for potential intelligence-gathering motivations.",
+          "headline": "DOJ charges 17 Iranians with hacking U.S. agencies and stealing university research",
+          "summary": "The Justice Department indicted 17 individuals with alleged ties to the Iranian government for breaching email accounts at U.S. federal agencies and compromising intellectual property at dozens of universities. The scale and dual focus on government and academic targets suggests a coordinated intelligence collection effort rather than opportunistic cybercrime. Watch for follow-on sanctions designations and potential reciprocal escalation in Iranian cyber activity.",
           "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/berlin-cuts-two-state-ministries-off-government-breach"
+          "url": "https://therecord.media/iran-cyberattacks-us-doj"
+        },
+        {
+          "headline": "CareCloud breach exposed health records of nearly 3.8 million patients",
+          "summary": "Healthcare software firm CareCloud confirmed that a single eight-hour intrusion into its electronic health record environment compromised data belonging to over 3.75 million individuals. The breach underscores persistent vulnerability in healthcare IT infrastructure, where access to EHR environments can yield highly sensitive personal and medical data at scale. Regulators and affected patients should expect disclosure notifications and potential HIPAA enforcement scrutiny to follow.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/electronic-health-record-company-carecloud-data-breach"
+        },
+        {
+          "headline": "Cyberattack on Latvia's road agency exposes data on two-thirds of the population",
+          "summary": "Hackers breached Latvia's road traffic authority and stole data tied to approximately 1.2 million people — roughly 67% of the country's population — prompting senior officials to resign amid public outcry. The incident highlights how a single government agency breach can have nation-scale privacy consequences, particularly in smaller countries. The political fallout may accelerate EU-level scrutiny of member state cybersecurity postures for public sector systems.",
+          "source": "The Record from Recorded Future News",
+          "url": "https://therecord.media/latvia-cyberattack-vehicle-data"
         }
       ]
     },
     {
       "id": "geopolitical",
       "title": "Geopolitical",
-      "intro": "Prolonged conflicts in Ukraine and Iran are reshaping alliance calculations in Europe and Asia, while Washington's strategic messaging struggles to keep pace with its own policy contradictions.",
+      "intro": "Multiple prolonged conflicts are settling into patterns of managed attrition, while regional actors adjust their positions around the Iran war and AI increasingly reshapes military command doctrine.",
       "items": [
         {
-          "headline": "Iran and Ukraine wars settling into the same political deadlock despite operational differences",
-          "summary": "Both conflicts share a common failure: a larger power anticipated that overwhelming force would deliver rapid political results, and in both cases that expectation collapsed. The analysis warns this produces 'managed instability' — wars that neither side can decisively end, sustained by enough external support to continue but not enough to conclude. The risk is that decision-makers in Washington treat prolonged conflict as acceptable rather than as a strategic failure requiring reassessment.",
+          "headline": "Iran War and Ukraine Conflict Share the Same Political Trap",
+          "summary": "Both the US-Iran conflict and the Russia-Ukraine war began with a larger power expecting rapid decisive victory, and both have instead calcified into open-ended stalemates. The political logic now mirrors itself: neither side can achieve its original objectives, but neither is willing to accept loss. Watch for whether either conflict finds an off-ramp or whether domestic political pressures in Washington and Moscow force escalation to break the deadlock.",
           "source": "War on the Rocks",
           "url": "https://warontherocks.com/managed-instability-why-the-wars-against-iran-and-ukraine-can-go-on-and-on-and-on/"
         },
         {
-          "headline": "Vance reframes Iran war goals around U.S. energy prices, not regional security",
-          "summary": "Vice President Vance has publicly identified lowering gas prices for American consumers as the primary objective of the Iran war, a significant departure from traditional security-based justifications for military action. This framing raises questions about what an acceptable endstate looks like and whether it aligns with the interests of regional partners. Watch whether allies and adversaries alike adjust their calculations based on this narrowed, transactional rationale.",
+          "headline": "UAE Bets on Economic Pressure to Force Iranian Capitulation",
+          "summary": "Abu Dhabi has joined the international coalition imposing a trade embargo on Tehran, signaling that Gulf states are aligning with US-led efforts to economically strangle Iran rather than pursue neutrality. This is a significant shift given the UAE's historically substantial trade relationship with Iran. Whether the embargo generates enough pressure to alter Iranian decision-making depends on whether China and other non-Western economies comply or fill the gap.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/08/18/vance-iran-war-objectives-gas-prices/"
+          "url": "https://foreignpolicy.com/2026/08/19/uae-iran-trade-financial-embargo-missile-strikes-war/"
         },
         {
-          "headline": "Anglo-French nuclear umbrella concept gains renewed traction as European autonomy debate sharpens",
-          "summary": "Following Macron's landmark nuclear speech, analysts are revisiting the feasibility of a UK-France nuclear deterrent covering Europe independent of U.S. extended deterrence. The conversation has shifted from theoretical to operational, driven by sustained uncertainty about Washington's security commitments to NATO. The core challenge remains credibility — whether a bilateral European arrangement can convincingly deter Russian nuclear coercion at scale.",
+          "headline": "Xi Pushes PLA Toward AI-Driven Command Despite Institutional Resistance",
+          "summary": "China's military establishment publicly insists human commanders retain final authority in AI-augmented warfare, but Xi Jinping is pressing the PLA to integrate AI more deeply into operational decision-making—creating a visible tension between doctrine and political direction. The gap between official reassurances and actual capability development matters because it shapes how the PLA would perform under real combat conditions. Observers should track whether PLA exercises begin reflecting AI-assisted command structures that contradict official statements.",
           "source": "War on the Rocks",
-          "url": "https://warontherocks.com/how-feasible-is-a-european-nuclear-deterrent-without-washington/"
+          "url": "https://warontherocks.com/chinas-military-says-ai-cant-replace-commanders-xi-is-testing-that/"
         },
         {
-          "headline": "Colby's Indo-Pacific tour undercut by the administration's own policy contradictions",
-          "summary": "Elbridge Colby's Southeast Asia diplomatic push aimed at building regional coalitions against China is being undermined by U.S. actions that signal unpredictability to the very partners he is courting. Critics argue his 'flexible realism' framework offers allies little concrete assurance and may accelerate hedging behavior toward Beijing rather than consolidating alignment. The disconnect between Colby's messaging and Washington's broader conduct is precisely the credibility gap China is positioned to exploit.",
+          "headline": "Russia Escalates Gray-Zone Operations Against Germany as Berlin Seeks Accommodation",
+          "summary": "Russian hybrid warfare targeting Germany is intensifying, exploiting infrastructure, political networks, and information channels, even as elements of German political opinion push for appeasement. The analysis argues that conciliatory postures do not reduce gray-zone pressure and may signal vulnerability. Germany's response will be a bellwether for NATO's broader coherence in managing sub-threshold aggression from Moscow.",
           "source": "Foreign Policy",
-          "url": "https://foreignpolicy.com/2026/08/18/elbridge-colby-trump-asia-indo-pacific-china-strategy-defense-geopolitics-alliances-flexible-realism/"
+          "url": "https://foreignpolicy.com/2026/08/19/gray-zone-germany-russia-hybrid-warfare/"
         }
       ]
     },
     {
       "id": "military",
       "title": "Military",
-      "intro": "Today's military picture is defined by technology competition with China, aggressive munitions procurement, and a cautionary tale about dual-use innovation.",
+      "intro": "Today's military picture is defined by readiness concerns, alliance strain, and unresolved questions about technology policy and force posture.",
       "items": [
         {
-          "headline": "U.S. military-funded research inadvertently supercharged China's battlefield robot dogs",
-          "summary": "Chinese robotics firm Unitree built its most capable robot dogs—now appearing in military contexts globally—on design innovations originally funded by the U.S. military. The case illustrates the persistent failure to constrain dual-use technology transfer from American research ecosystems to Chinese competitors. Watch for congressional or DoD response on research security controls around robotics and AI hardware.",
+          "headline": "USS Benfold Lost Power for Four Days in the South China Sea",
+          "summary": "The Navy destroyer USS Benfold suffered a major engineering failure last month, leaving roughly 300 sailors without power, potable water, or functioning toilets for four days in one of the world's most contested waterways. The incident raises serious questions about fleet readiness and the operational risk of mechanical failures in a high-tension theater where Chinese naval activity is constant. Watch for congressional scrutiny and whether the Navy discloses how long the ship was effectively non-mission-capable.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/industry/techwatch/2026/08/18/how-us-military-funding-propelled-chinas-robot-dogs/"
+          "url": "https://www.militarytimes.com/news/your-military/2026/08/19/us-navy-destroyer-spent-4-days-without-power-in-south-china-sea/"
         },
         {
-          "headline": "Army places massive GMLRS rocket order, signaling sustained high-intensity warfare posture",
-          "summary": "The U.S. Army issued a request for over 133,000 Guided Multiple Launch Rocket System rockets to be delivered by 2034, a procurement scale reflecting lessons from high-consumption conflicts and preparation for potential large-scale peer conflict. GMLRS has been a critical precision strike munition in Ukraine, and this order signals the Army is prioritizing deep magazine depth over near-term cost savings. The timeline and contracting outcome will test whether the defense industrial base can meet demand.",
+          "headline": "Trump Orders Reduction in U.S.-South Korea Joint Military Exercises",
+          "summary": "The U.S. and South Korea are scaling back the length and scope of their annual joint drills following a direct order from President Trump, reducing field training components that are central to combined warfighting readiness. This mirrors Trump's first-term posture of treating allied exercises as negotiating leverage, a move that drew strong criticism from military planners who view the drills as essential deterrence against North Korea. The timing is particularly sensitive given ongoing North Korean weapons development and broader uncertainty about U.S. commitment to the Indo-Pacific alliance network.",
           "source": "Military Times",
-          "url": "https://www.militarytimes.com/news/your-military/2026/08/18/us-army-requests-133000-gmlrs-rockets-by-2034/"
+          "url": "https://www.militarytimes.com/news/pentagon-congress/2026/08/19/us-south-korea-to-cut-length-scope-of-military-drills-after-trump-order/"
         },
         {
-          "headline": "Trump tech strategy charts AI and innovation priorities for military but leaves critical gaps",
-          "summary": "The administration's new technology strategy includes measures to accelerate defense innovation and frame AI development around deterring China, but analysts flag a significant omission that could undermine its effectiveness. The strategy's implementation will depend heavily on how the Pentagon integrates commercial AI pipelines with operational requirements. The missing element—unreported in the summary but flagged as glaring—warrants close attention as the strategy moves toward execution.",
-          "source": "Defense One",
+          "headline": "Air Force Seeks to Train with Chinese DJI Drones at Nuclear-Capable Base",
+          "summary": "Air Force security forces are requesting authorization to use Chinese-manufactured DJI drones for counter-UAS training at a base that hosts nuclear assets, citing the drones' ubiquity in modern combat as justification for familiarization training. The proposal cuts against federal restrictions on Chinese-made drones in sensitive government contexts and highlights a genuine operational dilemma: adversary equipment dominates the battlefield, but training with it near nuclear facilities poses counterintelligence risks. Expect pushback from lawmakers and intelligence officials focused on Chinese data-collection capabilities embedded in DJI hardware.",
+          "source": "Task & Purpose",
+          "url": "https://taskandpurpose.com/news/air-force-dji-drones/"
+        },
+        {
+          "headline": "Trump's National Tech Strategy Shapes Military AI Posture but Leaves Key Gaps",
+          "summary": "Analysis of the Trump administration's technology strategy finds provisions designed to accelerate defense innovation and frame AI development around deterring China, but identifies a significant omission that could undermine implementation. The strategy signals continued prioritization of emerging technologies in military competition with Beijing, but gaps in governance or export control frameworks could blunt its effectiveness. This is worth tracking as the administration translates strategy into budget and acquisition decisions over the coming months.",
+          "source": "Defense One - All Content",
           "url": "https://www.defenseone.com/technology/2026/08/what-trumps-tech-strategy-means-military-deterring-china-and-future-ai/415504/"
-        },
-        {
-          "headline": "DARPA's drone lift challenge pushes payload boundaries but falls short of fourfold threshold",
-          "summary": "DARPA's Lift Challenge produced drones approaching—but not achieving—the goal of lifting four times their own weight, a capability that would transform autonomous logistics and contested resupply missions. Even near-miss results advance the state of the art and inform future development cycles. Progress here has direct implications for reducing human exposure in forward resupply and casualty evacuation scenarios.",
-          "source": "Military Times",
-          "url": "https://www.militarytimes.com/industry/techwatch/2026/08/18/darpa-came-close-to-finding-a-drone-that-can-lift-four-times-its-own-weight/"
         }
       ]
     },
     {
       "id": "intel_osint",
       "title": "Intel / OSINT",
-      "intro": "Today's intelligence picture is dominated by targeted cyberattacks against institutions managing strategically sensitive assets, from Ukrainian state agencies to U.S. academic infrastructure.",
+      "intro": "Open-source imagery and flight tracking are revealing significant military capability developments across multiple domains, from Chinese space ambitions to NATO reconnaissance operations near Russian territory.",
       "items": [
         {
-          "headline": "Hackers strike Ukrainian agency overseeing assets seized from sanctioned Russians",
-          "summary": "Ukraine's agency responsible for managing assets confiscated from sanctioned Russian entities was hit by a cyberattack timed to a sensitive procurement decision involving IDS Ukraine, a major beverage producer. The targeting suggests adversaries are monitoring Ukrainian state processes and acting to disrupt or surveil high-value asset management functions. Watch for follow-on intrusion disclosures as Ukraine accelerates seizure and redistribution of Russian-linked corporate holdings.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/hackers-target-ukraine-agency-sanctioned-russians"
+          "headline": "NATO Deploys EA-37B Electronic Warfare Aircraft in Kaliningrad Reconnaissance Package",
+          "summary": "The USAF's EA-37B Compass Call, a next-generation electronic warfare and signals intelligence platform, was observed flying along the Kaliningrad border as part of a coordinated NATO reconnaissance and EW package. The mission signals active NATO interest in mapping and potentially suppressing Russian electronic emissions from its strategically critical Baltic exclave. Watch for increased tempo of such flights as Russia-NATO tensions persist and the EA-37B's operational envelope continues to be tested in live environments.",
+          "source": "TWZ",
+          "url": "https://www.twz.com/air/ea-37b-flew-along-kaliningrad-border-as-part-of-specialized-recon-ew-flight-package"
         },
         {
-          "headline": "University of Texas San Antonio takes systems offline following weekend cyberattack",
-          "summary": "UTSA, a large public university with 40,000 students across six campuses, detected threat activity on its academic network over the weekend and proactively took phone and other systems offline to contain the incident. Universities remain high-value targets due to their research data, weak network segmentation, and large user bases. The timing and scope of the shutdown suggest defenders acted quickly, but the nature and attribution of the threat activity have not yet been disclosed.",
-          "source": "The Record from Recorded Future News",
-          "url": "https://therecord.media/university-of-texas-forced-to-take-systems-offline-cyberattack-san-antonio"
+          "headline": "China's Reusable Rocket Recovery Narrows U.S. Space Launch Advantage with Military Consequences",
+          "summary": "China has demonstrated reusable orbital booster recovery capability comparable to SpaceX's Falcon 9, a development with direct implications for rapid satellite deployment and reconstitution in a conflict scenario. Lower launch costs and faster turnaround cycles would allow China to replenish or expand military satellite constellations under wartime attrition—eroding a structural U.S. advantage that has underpinned space-based ISR and communications superiority. This milestone should accelerate U.S. DoD reassessment of space resilience assumptions built around adversary launch constraints.",
+          "source": "TWZ",
+          "url": "https://www.twz.com/space/chinas-reusable-space-launch-booster-recoveries-have-major-military-implications"
+        },
+        {
+          "headline": "Open-Source Images Confirm Singapore Frigate Fielding Israeli Blue Spear Anti-Ship Missiles",
+          "summary": "First publicly available imagery shows a Blue Spear cruise missile launcher installed aboard the RSS Steadfast, confirming Singapore's acquisition of the Israeli-developed system and marking a notable upgrade to its naval strike capability. Blue Spear offers a long-range, sea-skimming strike option with land-attack potential, meaningfully extending the Republic of Singapore Navy's offensive reach in a congested regional maritime environment. The OSINT confirmation adds to a pattern of Indo-Pacific partners quietly upgrading precision strike inventories amid South China Sea tensions.",
+          "source": "TWZ",
+          "url": "https://www.twz.com/sea/singapores-formidable-class-frigate-appears-armed-with-blue-spear-missiles"
         }
       ]
     },
     {
       "id": "ics_scada_ot",
       "title": "ICS / SCADA / OT",
-      "intro": "OT security exposure in critical infrastructure is expanding, with thousands of internet-facing industrial devices in US data centers drawing fresh scrutiny alongside policy moves from CISA and NIST.",
+      "intro": "AI-assisted attacks on industrial control systems headline a busy day for OT security, alongside new legislative and strategic moves to harden critical infrastructure against emerging threats.",
       "items": [
         {
-          "headline": "6,300 ICS and BAS Devices Found Internet-Exposed in US Data Centers, Newer Facilities Most at Risk",
-          "summary": "TrendAI research identified over 6,300 high-confidence industrial control system and building automation system devices accessible online within US data centers, with newer facilities showing greater exposure than older ones. The findings highlight a persistent gap between IT security maturity and OT security practice, particularly as data center buildout accelerates. Security teams should treat internet-exposed BAS and ICS as critical-priority targets given their potential to affect physical infrastructure like cooling, power, and access control.",
-          "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/industrial-cyber-attacks/trendai-finds-newer-us-data-centers-more-exposed-to-ot-risks-with-6300-ics-and-bas-devices-accessible-online/"
+          "headline": "NSA and CISA Warn of AI-Augmented Attacks Targeting Siemens PLCs in US Critical Infrastructure",
+          "summary": "A joint advisory from NSA, CISA, and partner agencies details threat actors using AI tools to probe and attack Siemens programmable logic controllers deployed across critical US sectors. The use of AI to accelerate vulnerability discovery and exploit development against OT hardware marks a meaningful escalation in adversary capability. Operators of Siemens PLC environments should treat the advisory's mitigations as urgent, not advisory.",
+          "source": "SecurityWeek",
+          "url": "https://www.securityweek.com/hackers-using-ai-to-target-siemens-plcs-in-critical-us-sectors/"
         },
         {
-          "headline": "CISA Opens Public Comment Period on Extending Voluntary Vulnerability Assessments for Critical Infrastructure",
-          "summary": "CISA's Infrastructure Security Division is soliciting public feedback on continuing its voluntary vulnerability assessment program for critical infrastructure operators. The move signals an effort to institutionalize assessment services that remain opt-in amid ongoing debate about mandatory OT security requirements. Stakeholder input will likely shape whether these assessments gain broader adoption or remain underutilized by asset owners reluctant to expose operational gaps.",
-          "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/cisa/cisa-seeks-public-comment-on-extending-voluntary-vulnerability-assessments-for-critical-infrastructure/"
+          "headline": "Cl0p Ransomware Lists 40+ Victims of PTC Windchill PLM Platform Campaign",
+          "summary": "Cl0p has publicly named more than 40 organizations compromised through its campaign targeting PTC Windchill, a widely used product lifecycle management platform with deep integration into industrial and manufacturing environments. Victims include major industrial and technology firms such as Shell, Philips, and Mindray, suggesting broad supply-chain exposure across OT-adjacent operations. The public naming is consistent with Cl0p's extortion playbook and signals victims who have not yet paid are at risk of further data disclosure.",
+          "source": "SecurityWeek",
+          "url": "https://www.securityweek.com/cl0p-ransomware-group-names-over-40-victims-of-ptc-windchill-campaign/"
         },
         {
-          "headline": "AI in OT Cyber Conference Signals Shift from Experimentation to Deployment in Industrial Security",
-          "summary": "Practitioners at the AI in OT Cyber event reported a tangible transition from evaluating AI tools to deploying them operationally within industrial environments. Key themes centered on anomaly detection, alert triage, and reducing analyst fatigue in environments where traditional IT security tools fail to account for OT protocol and uptime constraints. The emerging consensus is that AI adoption in OT is accelerating but must be matched by governance frameworks specific to industrial risk tolerances.",
+          "headline": "Bipartisan Quantum-GUARD Act Introduced to Protect US Electric Grid from Quantum Cyber Threats",
+          "summary": "Two US senators have introduced legislation directing federal agencies to accelerate post-quantum cryptography adoption specifically for electric grid infrastructure. The bill recognizes that quantum computing poses a credible future threat to the cryptographic protections underpinning grid control systems, and seeks to get ahead of the transition timeline. Watch for how NERC CIP standards bodies respond, as any legislative mandate will likely cascade into new compliance requirements for utilities.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/features/from-hype-to-operational-reality-what-we-learned-at-ai-in-ot-cyber/"
+          "url": "https://industrialcyber.co/utilities-energy-power-water-waste/senators-introduce-bipartisan-quantum-guard-act-to-boost-us-electric-grid-against-emerging-quantum-cyber-threats/"
         },
         {
-          "headline": "NIST Proposes Human-Centered Cybersecurity Framework, Citing Failures in Standard Awareness Training",
-          "summary": "NIST is requesting public comment on a proposed human-centered approach to cybersecurity, acknowledging that conventional employee awareness training has not meaningfully reduced risk. The initiative targets the behavioral and organizational factors that undermine technical controls, an issue particularly acute in OT environments where operators prioritize availability over security procedures. How NIST frames human factors in any resulting guidance could influence future compliance standards for industrial sectors.",
+          "headline": "White House National Security Science and Technology Strategy Elevates OT/ICS Resilience as a Core Pillar",
+          "summary": "The newly released White House NSSTS explicitly calls out OT/ICS resilience and technology supply chain security as priorities within its four-pillar framework, signaling elevated federal focus on industrial cybersecurity at the policy level. The strategy's emphasis on supply chain integrity is directly relevant to ICS vendors and integrators who may face new vetting or compliance expectations. This sets a policy backdrop that will likely shape CISA guidance and agency procurement requirements in the near term.",
           "source": "Industrial Cyber",
-          "url": "https://industrialcyber.co/nist/nist-calls-for-input-on-human-centered-cybersecurity-as-employee-awareness-training-falls-short/"
+          "url": "https://industrialcyber.co/critical-infrastructure/nssts-strategy-targets-cybersecurity-ot-ics-resilience-and-technology-supply-chains-outlines-four-pillars/"
         }
       ]
     }
   ],
   "stats": {
     "feeds_processed": 47,
-    "articles_reviewed": 82,
-    "items_published": 18
+    "articles_reviewed": 75,
+    "items_published": 19
   }
 }
